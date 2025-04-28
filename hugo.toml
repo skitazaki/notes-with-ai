@@ -1,0 +1,8 @@
+baseURL = 'https://skitazaki.github.io/notes-with-ai/'
+languageCode = 'ja-jp'
+# languageCode = 'en-us'
+title = 'Personal Notes with AI'
+
+[module]
+[[module.imports]]
+path = 'github.com/alex-shpak/hugo-book'
