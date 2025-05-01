@@ -1,3 +1,9 @@
++++
+date = '2025-05-01T21:23:12+09:00'
+draft = false
+title = 'Notes with AI'
++++
+
 # Notes with AI
 
 *My Personal Notes on Software Engineering, Data, and AI, Enhanced by Artificial Intelligence*
@@ -6,34 +12,18 @@
 Each note is a collaboration between human curiosity and AI's capacity to organize, extend, and refine learnings, explorations, and experiments.
 This repository serves as an open, evolving notebook — a space for reflection, sharing, and continuous learning.
 
-**Purpose of Notes with AI**
+## Purpose of Notes with AI
 
 - To organize and share knowledge in software engineering, data, and AI.
 - To document personal growth and exploration in these fields.
 - To create a living resource which evolves over time.
 
-**Topics Covered**
-
+## Topics Covered
 - Software Architecture, Development Practices, Engineering Principles, and System Design
 - Data Engineering, Analytics, Data Systems, and best practices for managing and leveraging data
 - Machine Learning, Deep Learning, Generative AI, and applications of AI techniques
 
-**How to Read These Notes**
+## How to Read These Notes
 
 They are not final answers, but starting points — prompts for further thinking, discussion, and creation. Each note is a window into a moment of curiosity, made richer by technology but rooted in human perspective.
 Notes are collaboratively created between human-driven exploration and AI assistance.
-
-## Writers Guide
-
-Run `hugo` development server on a local machine.
-
-```bash
-hugo server --minify
-```
-
-Go to `http://localhost:1313/notes-with-ai/` with your web browser.
-
-## Deploy on GitHub Pages
-
-See the official document [Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/).
-`.github/workflows/hugo.yaml` has configurations of build and deployment jobs.

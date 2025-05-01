@@ -1,7 +1,7 @@
 baseURL = 'https://skitazaki.github.io/notes-with-ai/'
-languageCode = 'ja-jp'
-# languageCode = 'en-us'
-title = 'Personal Notes with AI'
+title = 'Notes with AI'
+languageCode = 'en-us'
+defaultContentLanguage = 'en'
 
 [module]
 [[module.imports]]
@@ -10,3 +10,12 @@ path = 'github.com/alex-shpak/hugo-book'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[languages]
+[languages.en]
+  languageName = 'English'
+  weight = 1
+
+[languages.ja]
+  languageName = '日本語'
+  weight = 2
