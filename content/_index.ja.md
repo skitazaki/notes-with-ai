@@ -30,3 +30,9 @@ _ソフトウェアエンジニアリング、データ、AIに関する個人�
 これらのノートは「完成した答え」ではなく、あくまで出発点です。さらなる思考や議論、創造のためのきっかけとしてご活用ください。
 各ノートは、人間による探究とAIの支援との共同作業によって生み出されています。
 テクノロジーによって豊かになりつつも、人間の視点を軸にした、ある瞬間の好奇心を切り取った記録です。
+
+<!-- deno-fmt-ignore-start -->
+{{< cards >}}
+  {{< card link="docs/data-analytics" title="Data & Analytics" icon="document-text" >}}
+{{< /cards >}}
+<!-- deno-fmt-ignore-end -->

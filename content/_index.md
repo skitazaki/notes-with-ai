@@ -1,7 +1,7 @@
 +++
 date = '2025-05-01T21:23:12+09:00'
-draft = false
 title = 'Notes with AI'
+# layout = 'hextra-home'
 +++
 
 # Notes with AI
@@ -30,3 +30,9 @@ serves as an open, evolving notebook — a space for reflection, sharing, and co
 They are not final answers, but starting points — prompts for further thinking, discussion, and creation. Each note is a
 window into a moment of curiosity, made richer by technology but rooted in human perspective. Notes are collaboratively
 created between human-driven exploration and AI assistance.
+
+<!-- deno-fmt-ignore-start -->
+{{< cards >}}
+  {{< card link="docs/data-analytics" title="Data & Analytics" icon="document-text" >}}
+{{< /cards >}}
+<!-- deno-fmt-ignore-end -->
