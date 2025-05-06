@@ -2,6 +2,7 @@ baseURL = 'http://localhost:1313'
 title = 'Notes with AI'
 languageCode = 'en-us'
 defaultContentLanguage = 'en'
+hasCJKLanguage = true
 
 [module]
 [[module.imports]]
@@ -19,6 +20,34 @@ dir = ':cacheDir/images'
 [languages.ja]
   languageName = '日本語'
   weight = 2
+
+[menu]
+# [[menu.main]]
+#   identifier = 'documentation'
+#   name = 'Documentation'
+#   pageRef = '/docs'
+#   weight = 1
+# [[menu.main]]
+#   identifier = 'blog'
+#   name = 'Blog'
+#   pageRef = '/blog'
+#   weight = 2
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  pageRef = '/about'
+  weight = 3
+# [[menu.main]]
+#   name = 'Search'
+#   weight = 4
+#   [menu.main.params]
+#     type = 'search'
+[[menu.main]]
+  name = 'GitHub'
+  weight = 5
+  url = 'https://github.com/skitazaki/notes-with-ai'
+  [menu.main.params]
+    icon = 'github'
 
 [params]
 [params.navbar]
