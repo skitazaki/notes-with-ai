@@ -1,10 +1,11 @@
 # Notes with AI
 
-*My Personal Notes on Software Engineering, Data, and AI, Enhanced by Artificial Intelligence*
+_My Personal Notes on Software Engineering, Data, and AI, Enhanced by Artificial Intelligence_
 
-**Notes with AI** is a collection of personal notes focused on **software engineering**, **data**, and **artificial intelligence**, co-created with the help of artificial intelligence.
-Each note is a collaboration between human curiosity and AI's capacity to organize, extend, and refine learnings, explorations, and experiments.
-This repository serves as an open, evolving notebook — a space for reflection, sharing, and continuous learning.
+**Notes with AI** is a collection of personal notes focused on **software engineering**, **data**, and **artificial
+intelligence**, co-created with the help of artificial intelligence. Each note is a collaboration between human
+curiosity and AI's capacity to organize, extend, and refine learnings, explorations, and experiments. This repository
+serves as an open, evolving notebook — a space for reflection, sharing, and continuous learning.
 
 **Purpose of Notes with AI**
 
@@ -20,8 +21,9 @@ This repository serves as an open, evolving notebook — a space for reflection,
 
 **How to Read These Notes**
 
-They are not final answers, but starting points — prompts for further thinking, discussion, and creation. Each note is a window into a moment of curiosity, made richer by technology but rooted in human perspective.
-Notes are collaboratively created between human-driven exploration and AI assistance.
+They are not final answers, but starting points — prompts for further thinking, discussion, and creation. Each note is a
+window into a moment of curiosity, made richer by technology but rooted in human perspective. Notes are collaboratively
+created between human-driven exploration and AI assistance.
 
 ## Writers Guide
 
@@ -31,7 +33,14 @@ Run `hugo` development server on a local machine.
 hugo server --minify
 ```
 
-Go to `http://localhost:1313/notes-with-ai/` with your web browser.
+Go to `http://localhost:1313/` with your web browser.
+
+### Format Markdown files
+
+This project uses `deno fmt` in order to format Markdown files. See
+[Formatting with Deno fmt](https://docs.deno.com/examples/deno_fmt/) for getting started.
+
+It runs `deno fmt --check` on GitHub Actions.
 
 ## Deploy on GitHub Pages
 
