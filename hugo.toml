@@ -57,7 +57,7 @@ dir = ':cacheDir/images'
     path = 'images/logo.svg'
     dark = 'images/logo-dark.svg'
     # link = '/'
-    # width = 40
+    width = 32
     # height = 20
 [params.footer]
   displayCopyright = true
