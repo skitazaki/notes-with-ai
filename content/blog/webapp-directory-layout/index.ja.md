@@ -1,17 +1,14 @@
 +++
 date = '2025-05-22T20:37:23+09:00'
-title = 'Webapp Directory Layout'
+title = 'Webアプリケーションのディレクトリ構成'
 +++
 
-When building web applications, choosing the right directory structure is crucial for maintaining clean, scalable, and
-efficient code. Each web framework has its own conventions and best practices for organizing code into folders and
-files. Whether you're working with JavaScript, Go, Python, Java, Ruby, or PHP, following these conventions will help
-ensure your project is maintainable and easily understood by other developers.
+Webアプリケーションを構築する際、適切なディレクトリ構成を選ぶことは、クリーンでスケーラブル、かつ効率的なコードを維持するために非常に重要です。
+各Webフレームワークには、コードをフォルダやファイルに整理するための独自の慣習やベストプラクティスがあります。
+JavaScript、Go、Python、Java、Ruby、PHPなど、どの言語・フレームワークを使う場合でも、これらの慣習に従うことで、プロジェクトの保守性や他の開発者からの理解が格段に向上します。
 
-In this article, we explore the recommended directory structures for some of the most popular web frameworks in the
-industry. You'll find folder-by-folder breakdowns along with official documentation links to help you dive deeper.
-Whether you're starting a new project or restructuring an existing one, this article is a handy reference to keep your
-projects organized and professional.
+本記事では、業界で広く使われている主要なWebフレームワークの推奨ディレクトリ構成を紹介します。各フォルダの役割を詳しく解説し、公式ドキュメントへのリンクも掲載しています。
+新規プロジェクトの立ち上げ時はもちろん、既存プロジェクトのリファクタリング時にも役立つ、実践的なリファレンスとしてご活用ください。
 
 ## Node.js Frameworks
 
@@ -656,12 +653,10 @@ your-laravel-app/
 
 - [Laravel Directory Structure](https://laravel.com/docs/structure)
 
-## Summary
+## まとめ
 
-In summary, understanding and following the recommended directory structures of web frameworks is essential for building
-scalable, maintainable, and efficient applications. Whether you're working with frontend frameworks like Next.js,
-backend powerhouses like Spring Boot and Django, or microframeworks such as Flask and Express, each framework promotes a
-structure that reflects its core philosophy and development workflow. Adhering to these conventions not only helps you
-onboard faster but also aligns your codebase with community standards—making collaboration, testing, and deployment much
-smoother. As your project grows, a well-organized structure becomes a powerful ally in managing complexity and promoting
-clean, modular code.
+各Webフレームワークの推奨ディレクトリ構成を理解し、それに従うことは、スケーラブルで保守性の高い効率的なアプリケーション開発に不可欠です。
+Next.js のようなフロントエンドフレームワーク、Spring Boot や Django のようなバックエンドフレームワーク、 Flask や
+Expressといったマイクロフレームワークなど、 どのフレームワークも独自の思想や開発フローを反映した構成を推奨しています。
+これらの慣習に従うことで、プロジェクトの立ち上げや他の開発者との協業、テストやデプロイがスムーズになり、コミュニティ標準に沿ったコードベースを維持できます。
+プロジェクトが大規模化するほど、整理されたディレクトリ構成は複雑さの管理やクリーンでモジュール化されたコードの実現に大きく貢献します。
