@@ -30,10 +30,26 @@ created between human-driven exploration and AI assistance.
 Run `hugo` development server on a local machine.
 
 ```bash
-hugo server --minify
+hugo server --minify --buildDrafts
 ```
 
 Go to `http://localhost:1313/` with your web browser.
+
+### Create a new page
+
+Create a documentation page.
+
+```bash
+hugo new content/docs/data-analytics/data-management/index.md
+```
+
+Create a blog entry.
+
+```bash
+hugo new content/blog/webapp-directory-layout/index.md
+```
+
+Once you finish a writing, change `draft` value to `false` in front matter.
 
 ### Format Markdown files
 

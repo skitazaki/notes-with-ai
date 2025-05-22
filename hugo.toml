@@ -27,11 +27,11 @@ dir = ':cacheDir/images'
   name = 'Documentation'
   pageRef = '/docs'
   weight = 1
-# [[menu.main]]
-#   identifier = 'blog'
-#   name = 'Blog'
-#   pageRef = '/blog'
-#   weight = 2
+[[menu.main]]
+  identifier = 'blog'
+  name = 'Blog'
+  pageRef = '/blog'
+  weight = 2
 [[menu.main]]
   identifier = 'about'
   name = 'About'
