@@ -1,6 +1,7 @@
 +++
 date = '2025-05-06T20:17:09+09:00'
 title = 'Data & Analytics'
+weight = 1
 +++
 
 Data analytics is a series of activities that involve recognizing patterns in data, uncovering insights from the past to

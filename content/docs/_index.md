@@ -6,5 +6,6 @@ title = 'Docs'
 <!-- deno-fmt-ignore-start -->
 {{< cards >}}
   {{< card link="data-analytics" title="Data & Analytics" icon="document-text" >}}
+  {{< card link="quantum-computing" title="Quantum Computing" icon="document-text" >}}
 {{< /cards >}}
 <!-- deno-fmt-ignore-end -->
