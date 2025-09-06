@@ -58,6 +58,11 @@ This project uses `deno fmt` in order to format Markdown files. See
 
 It runs `deno fmt --check` on GitHub Actions.
 
+### Site Design
+
+This site uses [Hextra](https://imfing.github.io/hextra/) theme. See the site to find configuration options and
+shortcodes.
+
 ## Deploy on GitHub Pages
 
 See the official document [Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/).
