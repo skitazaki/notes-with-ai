@@ -1,6 +1,6 @@
 ---
-title: '2025年の AI Agents 技術動向'
-date: '2025-09-20T11:28:29+09:00'
+title: "2025年の AI Agents 技術動向"
+date: "2025-09-20T11:28:29+09:00"
 tags: ["AI Agents", "MCP", "A2A", "Cloud", "Open Source", "Architecture"]
 categories: ["Technology", "AI"]
 draft: false
