@@ -429,8 +429,10 @@ sequenceDiagram
   MCPClient-->>Agent: structured output + tool logs
 ```
 
-The **MCP (Model Context Protocol) Registry** is the official community-driven directory of MCP servers, clients, and tools. It lists implementations, libraries, and integrations that enable AI agents and applications to communicate via the Model Context Protocol, helping developers discover reusable components and ensure interoperability across the ecosystem.
-([MCP Registry][94], [GitHub][95], [InfoQ][93])
+The **MCP (Model Context Protocol) Registry** is the official community-driven directory of MCP servers, clients, and
+tools. It lists implementations, libraries, and integrations that enable AI agents and applications to communicate via
+the Model Context Protocol, helping developers discover reusable components and ensure interoperability across the
+ecosystem. ([MCP Registry][94], [GitHub][95], [InfoQ][93])
 
 ### A2A — Agent-to-Agent Protocol
 
@@ -459,14 +461,18 @@ sequenceDiagram
 
 ### AgentGateway
 
-**AgentGateway** is an open-source platform designed to standardize and simplify how AI agents interact with external systems through the **Model Context Protocol (MCP)**. It provides a registry of MCP servers and tools, enabling developers to discover, connect, and compose AI agents across multiple providers and ecosystems.
+**AgentGateway** is an open-source platform designed to standardize and simplify how AI agents interact with external
+systems through the **Model Context Protocol (MCP)**. It provides a registry of MCP servers and tools, enabling
+developers to discover, connect, and compose AI agents across multiple providers and ecosystems.
 ([agentgateway.dev][91], [GitHub][92], [Linux Foundation][96])
 
-By supporting both **MCP** and **Agent-to-Agent (A2A)** communication, AgentGateway helps unify fragmented agent architectures, allowing enterprises to build multi-agent workflows that are interoperable, secure, and scalable.
+By supporting both **MCP** and **Agent-to-Agent (A2A)** communication, AgentGateway helps unify fragmented agent
+architectures, allowing enterprises to build multi-agent workflows that are interoperable, secure, and scalable.
 
-* It acts as a **“hub” for AI agents**, similar to an API gateway, but tailored for MCP-compliant ecosystems.
-* The platform supports governance, observability, and integration with enterprise systems.
-* Consulting firms and enterprises can leverage AgentGateway to accelerate **proof-of-concepts (PoCs)** for multi-cloud, multi-agent AI systems.
+- It acts as a **“hub” for AI agents**, similar to an API gateway, but tailored for MCP-compliant ecosystems.
+- The platform supports governance, observability, and integration with enterprise systems.
+- Consulting firms and enterprises can leverage AgentGateway to accelerate **proof-of-concepts (PoCs)** for multi-cloud,
+  multi-agent AI systems.
 
 ## Architecture Patterns
 
@@ -567,8 +573,10 @@ that engineers can reuse in internal agent projects.
 Global Consulting Firms
 
 - **Accenture**: Multi-cloud AI agent architectures, PoCs with MCP/A2A. ([AI Refinery][81], [A2AClientAgent][82])
-- **Deloitte**: Launched Zora AI, which are digital workers that interact with existing systems built on Trustworthy AI. ([Zora AI][88], [Global Agentic Network][89])
-- **EY**: Launched the EY.ai Agentic Platform, built with NVIDIA, using private/domain-specific reasoning models, edge/cloud/on-prem deployments. ([EY.ai][90])
+- **Deloitte**: Launched Zora AI, which are digital workers that interact with existing systems built on Trustworthy AI.
+  ([Zora AI][88], [Global Agentic Network][89])
+- **EY**: Launched the EY.ai Agentic Platform, built with NVIDIA, using private/domain-specific reasoning models,
+  edge/cloud/on-prem deployments. ([EY.ai][90])
 - **PwC**: PwC and Microsoft announce strategic collaboration to transform industries with AI agents. ([PwC][80])
 
 Japanese Consultancies & SIers
@@ -710,8 +718,7 @@ This is where engineers can lead.
 [86]: https://www.nttdata.com/jp/ja/trends/data-insight/2025/082702/ "AIエージェントが切り開く、業務変革の最新事例 | DATA INSIGHT | NTTデータ - NTT DATA"
 [87]: https://www.hitachi.co.jp/New/cnews/month/2025/03/0326.html "日立、数百の事例で獲得したOTナレッジの活用手法によりお客さま専用のAIエージェントを迅速に提供：2025年3月26日"
 [88]: https://www.deloitte.com/us/en/services/consulting/services/zora-generative-ai-agent.html "Introducing Zora AI™ | Deloitte US"
-[89]: https://www.deloitte.com/global/en/about/press-room/deloitte-launches-global-agentic-network-to-power-digital-workforce-solutions.html
- "Deloitte launches Global Agentic Network to power digital workforce solutions | Deloitte Global"
+[89]: https://www.deloitte.com/global/en/about/press-room/deloitte-launches-global-agentic-network-to-power-digital-workforce-solutions.html "Deloitte launches Global Agentic Network to power digital workforce solutions | Deloitte Global"
 [90]: https://www.ey.com/en_gl/newsroom/2025/03/ey-launching-ey-ai-agentic-platform-created-with-nvidia-ai-to-drive-multi-sector-transformation-starting-with-tax-risk-and-finance-domains "EY launching EY.ai Agentic Platform, created with NVIDIA AI, to drive multi-sector transformation starting with tax, risk and finance domains | EY - Global"
 [91]: https://agentgateway.dev/ "agentgateway | Agent Connectivity Solved"
 [92]: https://github.com/agentgateway/agentgateway "agentgateway/agentgateway: Next Generation Agentic Proxy for AI Agents and MCP servers"

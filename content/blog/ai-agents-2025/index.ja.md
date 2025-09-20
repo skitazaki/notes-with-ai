@@ -408,7 +408,8 @@ sequenceDiagram
 	MCPClient-->>Agent: 構造化出力＋ツールログ
 ```
 
-**MCP（Model Context Protocol）Registry** は、MCP サーバー、クライアント、ツールの公式なコミュニティ主導ディレクトリです。AIエージェントやアプリケーションがMCPを介して相互通信できるようにする実装・ライブラリ・統合を整理し、開発者が再利用可能なコンポーネントを見つけやすくし、エコシステム全体での相互運用性を促進します。
+**MCP（Model Context Protocol）Registry** は、MCP
+サーバー、クライアント、ツールの公式なコミュニティ主導ディレクトリです。AIエージェントやアプリケーションがMCPを介して相互通信できるようにする実装・ライブラリ・統合を整理し、開発者が再利用可能なコンポーネントを見つけやすくし、エコシステム全体での相互運用性を促進します。
 ([MCP Registry][94], [GitHub][95], [InfoQ][93])
 
 ### A2A — Agent-to-Agent Protocol
@@ -437,15 +438,19 @@ sequenceDiagram
 
 ### AgentGateway
 
-**AgentGateway** は、AIエージェントが外部システムと **Model Context Protocol (MCP)** を通じてやり取りする方法を標準化・簡素化するために設計されたオープンソースプラットフォームです。
+**AgentGateway** は、AIエージェントが外部システムと **Model Context Protocol (MCP)**
+を通じてやり取りする方法を標準化・簡素化するために設計されたオープンソースプラットフォームです。
 MCPサーバーやツールのレジストリを提供し、開発者が複数のプロバイダーやエコシステムにまたがってAIエージェントを発見・接続・構成できるようにします。
 ([agentgateway.dev][91], [GitHub][92], [Linux Foundation][96])
 
-MCPと **Agent-to-Agent (A2A)** 通信の両方をサポートすることで、AgentGatewayは分断されたエージェントアーキテクチャを統合し、相互運用可能で安全かつスケーラブルなマルチエージェントワークフローの構築を可能にします。
+MCPと **Agent-to-Agent (A2A)**
+通信の両方をサポートすることで、AgentGatewayは分断されたエージェントアーキテクチャを統合し、相互運用可能で安全かつスケーラブルなマルチエージェントワークフローの構築を可能にします。
 
-- このプラットフォームはMCP準拠エコシステム向けに特化した「APIゲートウェイ」に相当する **AIエージェントのハブ** として機能します。
+- このプラットフォームはMCP準拠エコシステム向けに特化した「APIゲートウェイ」に相当する **AIエージェントのハブ**
+  として機能します。
 - ガバナンス、オブザーバビリティ、企業システムとの統合をサポートしています。
-- コンサルティング企業やエンタープライズは、マルチクラウド・マルチエージェントAIシステムの **PoC（概念実証）** を加速するためにAgentGatewayを活用することができます。
+- コンサルティング企業やエンタープライズは、マルチクラウド・マルチエージェントAIシステムの **PoC（概念実証）**
+  を加速するためにAgentGatewayを活用することができます。
 
 ## アーキテクチャパターン {#architecture-patterns}
 
@@ -539,7 +544,8 @@ AIエージェントの本番導入では、OSSやクラウドサービスだけ
 グローバルコンサルティングファーム
 
 - **Accenture**：マルチクラウドAIエージェントアーキテクチャ、MCP/A2AのPoC ([AI Refinery][81], [A2AClientAgent][82])
-- **Deloitte**：Zora AI をリリースしました。Trustworthy AI 上に構築された既存システムと連携して動作するデジタルワーカーです。 ([Zora AI][88], [Global Agentic Network][89])
+- **Deloitte**：Zora AI をリリースしました。Trustworthy AI
+  上に構築された既存システムと連携して動作するデジタルワーカーです。 ([Zora AI][88], [Global Agentic Network][89])
 - **EY**：NVIDIA AI を活用した EY.ai Agentic Platform を発表しました。 ([EY.ai][90])
 - **PwC**：GitHub CopilotやMicrosoft Copilotのエンタープライズワークフロー統合 ([PwC][80])
 
@@ -567,8 +573,8 @@ AIエージェントの本番導入では、OSSやクラウドサービスだけ
 - **クラウドプロバイダー**：Amazon Bedrock Agents/AgentCore、Azure AI Foundry Agent Service、Google Vertex AI Agent
   Builder。ホスティング・ツール安全性・ID・可観測性・コネクタを標準搭載。
 - **OSS＆開発者フレームワーク**：LangGraph、AutoGen、Semantic Kernel（Agent
-  Framework）、CrewAI、Haystack、LlamaIndex（Workflows/agent
-  framework）、Pydantic AI（型安全エージェント）、Genkit（Google）、OpenAI Agents SDK、Strands Agents（AWS）
+  Framework）、CrewAI、Haystack、LlamaIndex（Workflows/agent framework）、Pydantic
+  AI（型安全エージェント）、Genkit（Google）、OpenAI Agents SDK、Strands Agents（AWS）
 - **SaaSプラットフォーム**：Dust、Zapier Agents、Fixieなど。エージェント運用・コネクタ・Human-in-the-loop
   UXを製品化。資金調達・リリースも活発。
 - **オープンプロトコル**：MCP（Model Context
@@ -674,8 +680,7 @@ AIエージェントの未来は、単なるLLMの進化だけではありませ
 [86]: https://www.nttdata.com/jp/ja/trends/data-insight/2025/082702/ "AIエージェントが切り開く、業務変革の最新事例 | DATA INSIGHT | NTTデータ - NTT DATA"
 [87]: https://www.hitachi.co.jp/New/cnews/month/2025/03/0326.html "日立、数百の事例で獲得したOTナレッジの活用手法によりお客さま専用のAIエージェントを迅速に提供：2025年3月26日"
 [88]: https://www.deloitte.com/us/en/services/consulting/services/zora-generative-ai-agent.html "Introducing Zora AI™ | Deloitte US"
-[89]: https://www.deloitte.com/global/en/about/press-room/deloitte-launches-global-agentic-network-to-power-digital-workforce-solutions.html
- "Deloitte launches Global Agentic Network to power digital workforce solutions | Deloitte Global"
+[89]: https://www.deloitte.com/global/en/about/press-room/deloitte-launches-global-agentic-network-to-power-digital-workforce-solutions.html "Deloitte launches Global Agentic Network to power digital workforce solutions | Deloitte Global"
 [90]: https://www.ey.com/en_gl/newsroom/2025/03/ey-launching-ey-ai-agentic-platform-created-with-nvidia-ai-to-drive-multi-sector-transformation-starting-with-tax-risk-and-finance-domains "EY launching EY.ai Agentic Platform, created with NVIDIA AI, to drive multi-sector transformation starting with tax, risk and finance domains | EY - Global"
 [91]: https://agentgateway.dev/ "agentgateway | Agent Connectivity Solved"
 [92]: https://github.com/agentgateway/agentgateway "agentgateway/agentgateway: Next Generation Agentic Proxy for AI Agents and MCP servers"
