@@ -74,6 +74,14 @@ weight = 10
 
 それぞれに長所と課題があり、特に「量子誤り訂正（Quantum Error Correction）」の確立が今後の技術的鍵です。
 
+ここでは主なプレイヤーとハードウェアの簡単な記載に留めます。 詳細は「レイヤー別のプレイヤー」の文書を確認してください。
+
+<!-- deno-fmt-ignore-start -->
+{{< cards >}}
+  {{< card link="layers" title="レイヤー別のプレイヤー" icon="document-text" >}}
+{{< /cards >}}
+<!-- deno-fmt-ignore-end -->
+
 ## 今後の展望: 2025年–2030年
 
 ### 短期（1〜3年）
