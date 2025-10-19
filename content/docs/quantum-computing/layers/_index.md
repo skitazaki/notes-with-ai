@@ -161,7 +161,7 @@ Quantum annealing solves optimization problems via adiabatic evolution toward gr
 Quantum cryptography leverages quantum mechanics for secure communication beyond classical limits.
 
 - **Notable algorithms:** BB84 protocol, E91 entanglement-based key exchange, post-quantum schemes.
-- **Keywords:** QKD (Quantum Key Distribution), no-cloning theorem, quantum channel, security proofs.
+- **Keywords:** Quantum Key Distribution (QKD), no-cloning theorem, quantum channel, security proofs.
 - **Players:** ID Quantique, Toshiba, NEC, Quantum Xchange, China’s QuantumCTek.
 - Aimed at unhackable communications and quantum-safe infrastructures.
 
