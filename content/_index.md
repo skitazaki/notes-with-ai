@@ -31,8 +31,12 @@ They are not final answers, but starting points — prompts for further thinking
 window into a moment of curiosity, made richer by technology but rooted in human perspective. Notes are collaboratively
 created between human-driven exploration and AI assistance.
 
+**"Documentation"** is structured by technical topics while **"Blog"** is a collection of random thoughts and technical
+snapshots.
+
 <!-- deno-fmt-ignore-start -->
 {{< cards >}}
-  {{< card link="docs/data-analytics" title="Data & Analytics" icon="document-text" >}}
+  {{< card link="docs/" title="Documentation" icon="document-text" >}}
+  {{< card link="blog/" title="Blog" icon="document-text" >}}
 {{< /cards >}}
 <!-- deno-fmt-ignore-end -->

@@ -13,7 +13,7 @@ advantage.
 This article outlines the core principles, current enterprise use cases, limitations, and strategic opportunities
 quantum computing presents over the next 3–7 years.
 
-## What Is Quantum Computing?
+## What is Quantum Computing?
 
 At its core, quantum computing leverages the principles of **quantum mechanics** to process information. Unlike
 classical computers that use bits (0 or 1), quantum computers use **quantum bits** or **qubits**, which can be in a
@@ -86,6 +86,15 @@ For enterprises, this translates to:
 Each architecture has trade-offs in fidelity, scalability, and error correction. **Quantum error correction** remains
 one of the biggest engineering challenges today.
 
+Here shows just major players and hardware architectures. For more details about "Players by Layers", see the page
+below.
+
+<!-- deno-fmt-ignore-start -->
+{{< cards >}}
+  {{< card link="layers" title="Players by Layers" icon="document-text" >}}
+{{< /cards >}}
+<!-- deno-fmt-ignore-end -->
+
 ## The Road Ahead: 2025–2030
 
 ### Near-Term (1–3 years)
@@ -119,7 +128,7 @@ Enterprise leaders should:
 5. **Educate and recruit**: Quantum talent is scarce. Encourage upskilling in quantum algorithms, quantum programming
    languages (like Qiskit, Cirq, and Q#), and quantum physics foundations.
 
-## Conclusion
+## Summary
 
 Quantum computing won’t replace classical systems—but it will augment them in revolutionary ways. For enterprise
 leaders, now is the time to explore where quantum can fit within your innovation strategy. Early adoption will not only

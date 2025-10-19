@@ -31,8 +31,12 @@ _ソフトウェアエンジニアリング、データ、AIに関する個人�
 各ノートは、人間による探究とAIの支援との共同作業によって生み出されています。
 テクノロジーによって豊かになりつつも、人間の視点を軸にした、ある瞬間の好奇心を切り取った記録です。
 
+「**ドキュメント**」 は技術トピックごとに整理してまとめます。「**ブログ**」
+はその時々で気になったトピックと、トレンドの深堀りを記載します。
+
 <!-- deno-fmt-ignore-start -->
 {{< cards >}}
-  {{< card link="docs/data-analytics" title="Data & Analytics" icon="document-text" >}}
+  {{< card link="docs/" title="ドキュメント" icon="document-text" >}}
+  {{< card link="blog/" title="ブログ" icon="document-text" >}}
 {{< /cards >}}
 <!-- deno-fmt-ignore-end -->
