@@ -201,9 +201,9 @@ cloud-native / 12-Factor (or similar) applications. I highlight what each guide 
 **“AWS アーキテクチャで学ぶ The Twelve Factors App 本格入門”** ([AWS builders.flash][21])
 
 - **What it’s about**: A Japanese-language AWS article that goes through each of the 12 factors, explains _why_ they
-  matter, and shows _how_ to implement them on AWS (ECS/Fargate, ECR, CodeBuild/CodePipeline, CloudWatch, etc.)
+  matter, and shows _how_ to implement them on AWS.
 - **Why it’s useful**: Great for implementing 12-Factor on AWS — walks through each factor in AWS context (build →
-  deploy → runtime) and maps them to AWS services (ECR, ECS/Fargate, CloudWatch).
+  deploy → runtime) and maps them to AWS services (ECS/Fargate, ECR, CodeBuild/CodePipeline, CloudWatch).
 
 **“Developing Twelve-Factor Apps using Amazon ECS and AWS Fargate”** ([AWS Blogs][22])
 
