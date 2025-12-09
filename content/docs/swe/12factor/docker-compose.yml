@@ -1,0 +1,153 @@
+---
+services:
+  webapp:
+    build:
+      context: ./webapp
+      dockerfile: Dockerfile
+    depends_on:
+      - pgdb
+      - redis
+    networks:
+      - appnet
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: "8080"
+      DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD}@pgdb:5432/appdb?sslmode=disable
+      REDIS_URL: redis://redis:6379/0
+
+  pgdb:
+    image: postgres:18
+    volumes:
+      - pgdata:/var/lib/postgresql
+    networks:
+      - appnet
+    secrets:
+      - postgres-passwd
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: appdb
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres-passwd
+
+  pgadmin:
+    image: dpage/pgadmin4:9.10
+    depends_on:
+      - pgdb
+    networks:
+      - appnet
+    ports:
+      - "5050:80"
+    secrets:
+      - pdadmin-passwd
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD_FILE: /run/secrets/pdadmin-passwd
+      PGADMIN_DISABLE_POSTFIX: "true"
+    configs:
+      - source: pgadmin-servers
+        target: /pgadmin4/servers.json
+
+  redis:
+    image: redis:8.4
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redisdata:/data
+    networks:
+      - appnet
+
+  # --------------------------
+  # Observability stack
+  # --------------------------
+
+  prometheus:
+    image: prom/prometheus
+    depends_on:
+      - webapp
+    networks:
+      - appnet
+    configs:
+      - source: prometheus-config
+        target: /etc/prometheus/prometheus.yml
+
+  grafana:
+    image: grafana/grafana
+    depends_on:
+      - prometheus
+    volumes:
+      - grafana:/var/lib/grafana
+    networks:
+      - appnet
+    ports:
+      - "3000:3000"
+    configs:
+      - source: grafana-datasources-config
+        target: /etc/grafana/provisioning/datasources/ds.yaml
+
+  loki:
+    image: grafana/loki:3.6
+    command: -config.file=/etc/loki/loki-config.yaml
+    volumes:
+      - lokidata:/loki
+    networks:
+      - appnet
+    configs:
+      - source: loki-config
+        target: /etc/loki/loki-config.yaml
+
+  alloy:
+    image: grafana/alloy:v1.12.0
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command:  run --server.http.listen-addr=0.0.0.0:12345 --storage.path=/var/lib/alloy/data /etc/alloy/config.alloy
+    depends_on:
+      - loki
+    ports:
+      - 12345:12345
+    networks:
+      - appnet
+    configs:
+      - source: alloy-config
+        target: /etc/alloy/config.alloy
+
+networks:
+  appnet:
+
+volumes:
+  pgdata:
+  redisdata:
+  grafana:
+  lokidata:
+
+configs:
+  prometheus-config:
+    file: ./observability/prometheus.yml
+  loki-config:
+    file: ./observability/loki-local-config.yaml
+  alloy-config:
+    file: ./observability/alloy-local-config.alloy
+  grafana-datasources-config:
+    file: ./observability/grafana-datasources.yaml
+  pgadmin-servers:
+    content: |-
+      {
+        "Servers": {
+          "1": {
+            "Name": "Backend Database",
+            "Group": "Twelve-Factor Example",
+            "Port": 5432,
+            "Username": "postgres",
+            "Host": "pgdb",
+            "MaintenanceDB": "postgres",
+            "ConnectionParameters": {
+                "sslmode": "prefer",
+                "connect_timeout": 10
+            }
+          }
+        }
+      }
+
+secrets:
+  postgres-passwd:
+    environment: "POSTGRES_PASSWORD"
+  pdadmin-passwd:
+    environment: "PGADMIN_DEFAULT_PASSWORD"
