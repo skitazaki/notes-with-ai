@@ -100,14 +100,13 @@ Go コミュニティの多くの例では、Twelve-Factor に沿って `envconf
 
 ### 例：`envconfig` を使用した Go 設定
 
-```go
-// config.go
+```go {filename="config.go"}
 package config
 
 import "github.com/kelseyhightower/envconfig"
 
 type Config struct {
-    Port        int    `envconfig:"PORT" default:"8080"`
+    Port        string `envconfig:"PORT" default:"8080"`
     DatabaseURL string `envconfig:"DATABASE_URL" required:"true"`
     LogLevel    string `envconfig:"LOG_LEVEL" default:"info"`
 }
@@ -162,8 +161,7 @@ Python チームはフレームワーク（Django、Flask、FastAPI）を使用�
 
 ### 例：Pydantic `BaseSettings`
 
-```python
-# settings.py
+```python {filename="settings.py"}
 from pydantic import BaseSettings, AnyUrl
 
 class Settings(BaseSettings):
@@ -272,6 +270,65 @@ settings = Settings()
   Twelve-Factor が提唱するものものです。これらのドキュメントは Twelve-Factor
   の原則をプロバイダー固有のベストプラクティスに根付かせるのに役立ちます。
 
+## アプリケーションの例
+
+ここでは、Twelve-Factor のパターンに従ったサンプルアプリを示します。以下の内容が含まれます。
+
+- Go 製 Web アプリ（$PORT にバインドし、環境変数を読み取り、PostgreSQL や Redis といったバックエンドサービスに接続）
+- PostgreSQL（メインDB）
+- Redis（キャッシュ）
+- pgAdmin（データベース管理 UI）
+- Prometheus + Grafana（オブザーバビリティ）
+- Alloy + Loki（ログ集約 ― 任意だが一般的）
+- クリーンな分離のためのネットワークとボリューム
+
+これらは Docker Compose を使って構築できます。 Compose の `secrets` セクションで参照される **POSTGRES_PASSWORD** と
+**PGADMIN_DEFAULT_PASSWORD** を含む `.env` ファイルが必要です。
+
+<!-- deno-fmt-ignore-start -->
+{{< filetree/container >}}
+  {{< filetree/folder name="project-root/" >}}
+    {{< filetree/file name="docker-compose.yml" >}}
+    {{< filetree/file name=".env" >}}
+    {{< filetree/folder name="webapp/" >}}
+      {{< filetree/file name="Dockerfile" >}}
+      {{< filetree/file name="main.go" >}}
+      {{< filetree/file name="go.mod" >}}
+      {{< filetree/file name="go.sum" >}}
+    {{< /filetree/folder >}}
+    {{< filetree/folder name="observability/" state="closed" >}}
+      {{< filetree/file name="grafana-datasources.yaml" >}}
+      {{< filetree/file name="prometheus.yml" >}}
+      {{< filetree/file name="loki-local-config.yaml" >}}
+      {{< filetree/file name="alloy-local-config.alloy" >}}
+    {{< /filetree/folder >}}
+  {{< /filetree/folder >}}
+{{< /filetree/container >}}
+<!-- deno-fmt-ignore-end -->
+
+`docker-compose.yml` を例示します。 最上段の要素で [`configs`][30] と [`secrets`][31]
+を使い、開発環境から導入しやすくします。
+
+<!-- deno-fmt-ignore-start -->
+{{< codefile fname="docker-compose.yml" language="yaml" >}}
+<!-- deno-fmt-ignore-end -->
+
+サンプルの Go アプリでは、オブザーバビリティのための "/healthz"、"/readyz"、"/metrics"
+といった基本的なハンドラーを定義しています。
+
+<!-- deno-fmt-ignore-start -->
+{{< codefile fname="webapp/main.go" language="go" >}}
+<!-- deno-fmt-ignore-end -->
+
+- `GET /healthz` はプロセスが生存している限り常に 200 を返します。
+- `GET /readyz` は DB 接続（DB.PingContext）と Redis
+  接続（Redis.Ping）を確認します。依存サービスが準備できていない場合は 503 を返します。
+- Prometheus が "/metrics" エンドポイントをスクレイプします。
+
+Liveness と Readiness については [Kubernetes のドキュメント][32] を参照してください。 Prometheus
+では、ターゲットからメトリクスを取得する HTTP パスを示す **metrics_path** のデフォルト値は "/metrics" です。
+([Prometheus][33])
+
 [1]: https://12factor.net/ "The Twelve-Factor App"
 [1ja]: https://12factor.net/ja/ "The Twelve-Factor App"
 [2]: https://12factor.net/config "Store config in the environment"
@@ -294,3 +351,7 @@ settings = Settings()
 [25]: https://docs.cloud.google.com/architecture/scalable-and-resilient-apps?hl=en "Patterns for scalable and resilient apps  |  Cloud Architecture Center  |  Google Cloud Documentation"
 [25ja]: https://docs.cloud.google.com/architecture/scalable-and-resilient-apps?hl=ja "スケーラブルで復元性の高いアプリのためのパターン  |  Cloud Architecture Center  |  Google Cloud Documentation"
 [26]: https://cloud.google.com/transform/from-the-twelve-to-sixteen-factor-app "Rethinking the Twelve-Factor App framework for AI"
+[30]: https://docs.docker.com/reference/compose-file/configs/ "Configs | Docker Docs"
+[31]: https://docs.docker.com/reference/compose-file/secrets/ "Secrets | Docker Docs"
+[32]: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ "Configure Liveness, Readiness and Startup Probes | Kubernetes"
+[33]: https://prometheus.io/docs/prometheus/latest/configuration/configuration/ "Configuration | Prometheus"

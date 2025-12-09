@@ -98,14 +98,13 @@ For example, **Viper** can read a `config.yaml`, allow env overrides via `Automa
 
 ### Example: Go config using `envconfig`
 
-```go
-// config.go
+```go {filename="config.go"}
 package config
 
 import "github.com/kelseyhightower/envconfig"
 
 type Config struct {
-    Port        int    `envconfig:"PORT" default:"8080"`
+    Port        string `envconfig:"PORT" default:"8080"`
     DatabaseURL string `envconfig:"DATABASE_URL" required:"true"`
     LogLevel    string `envconfig:"LOG_LEVEL" default:"info"`
 }
@@ -158,8 +157,7 @@ good for apps that want a single library to offer both file and env layering.
 
 ### Example: Pydantic `BaseSettings`
 
-```python
-# settings.py
+```python {filename="settings.py"}
 from pydantic import BaseSettings, AnyUrl
 
 class Settings(BaseSettings):
@@ -263,6 +261,64 @@ cloud-native / 12-Factor (or similar) applications. I highlight what each guide 
   processes), backing services as managed cloud services — exactly what 12-Factor advocates. These docs help ground
   12-Factor theory into provider-specific best practices.
 
+## Example app
+
+Here shows an example app that follows Twelve-Factor patterns which includes:
+
+- Go webapp (binds to $PORT, reads env, connects to backing services like Postgres and Redis)
+- PostgreSQL (main DB)
+- Redis (cache)
+- pgAdmin (DB admin UI)
+- Prometheus + Grafana (observability)
+- Alloy + Loki (log aggregation — optional but common)
+- Networks and volumes for clean isolation
+
+We can set it up using Docker Compose with the folloing files. You need a `.env` file that contains settings of
+**POSTGRES_PASSWORD** and **PGADMIN_DEFAULT_PASSWORD** which Docker Compose refer in `secrets` section.
+
+<!-- deno-fmt-ignore-start -->
+{{< filetree/container >}}
+  {{< filetree/folder name="project-root/" >}}
+    {{< filetree/file name="docker-compose.yml" >}}
+    {{< filetree/file name=".env" >}}
+    {{< filetree/folder name="webapp/" >}}
+      {{< filetree/file name="Dockerfile" >}}
+      {{< filetree/file name="main.go" >}}
+      {{< filetree/file name="go.mod" >}}
+      {{< filetree/file name="go.sum" >}}
+    {{< /filetree/folder >}}
+    {{< filetree/folder name="observability/" state="closed" >}}
+      {{< filetree/file name="grafana-datasources.yaml" >}}
+      {{< filetree/file name="prometheus.yml" >}}
+      {{< filetree/file name="loki-local-config.yaml" >}}
+      {{< filetree/file name="alloy-local-config.alloy" >}}
+    {{< /filetree/folder >}}
+  {{< /filetree/folder >}}
+{{< /filetree/container >}}
+<!-- deno-fmt-ignore-end -->
+
+Below is a developer-friendly `docker-compose.yml` example. It’s suitable as a local development stack using
+[`configs`][30] and [`secrets`][31] in the top-level element.
+
+<!-- deno-fmt-ignore-start -->
+{{< codefile fname="docker-compose.yml" language="yaml" >}}
+<!-- deno-fmt-ignore-end -->
+
+An example Go app has basic handlers of "/healthz", "/readyz", and "/metrics" for observability.
+
+<!-- deno-fmt-ignore-start -->
+{{< codefile fname="webapp/main.go" language="go" >}}
+<!-- deno-fmt-ignore-end -->
+
+- `GET /healthz` always returns 200 as long as process is alive.
+- `GET /readyz` checks DB connectivity (DB.PingContext) and Redis connectivity (Redis.Ping). It returns 503 if
+  dependencies are not ready.
+- Prometheus will scrape "/metrics" endpoint.
+
+For liveness and readiness, take a look at [Kubernetes Documentation][32]. For metrics, default **metrics_path** in
+Prometheus, which specifies the HTTP resource path on which to fetch metrics from targets, is "/metrics".
+([Prometheus][33])
+
 [1]: https://12factor.net/ "The Twelve-Factor App"
 [1ja]: https://12factor.net/ja/ "The Twelve-Factor App"
 [2]: https://12factor.net/config "Store config in the environment"
@@ -285,3 +341,7 @@ cloud-native / 12-Factor (or similar) applications. I highlight what each guide 
 [25]: https://docs.cloud.google.com/architecture/scalable-and-resilient-apps?hl=en "Patterns for scalable and resilient apps  |  Cloud Architecture Center  |  Google Cloud Documentation"
 [25ja]: https://docs.cloud.google.com/architecture/scalable-and-resilient-apps?hl=ja "スケーラブルで復元性の高いアプリのためのパターン  |  Cloud Architecture Center  |  Google Cloud Documentation"
 [26]: https://cloud.google.com/transform/from-the-twelve-to-sixteen-factor-app "Rethinking the Twelve-Factor App framework for AI"
+[30]: https://docs.docker.com/reference/compose-file/configs/ "Configs | Docker Docs"
+[31]: https://docs.docker.com/reference/compose-file/secrets/ "Secrets | Docker Docs"
+[32]: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ "Configure Liveness, Readiness and Startup Probes | Kubernetes"
+[33]: https://prometheus.io/docs/prometheus/latest/configuration/configuration/ "Configuration | Prometheus"
