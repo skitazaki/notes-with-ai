@@ -62,3 +62,7 @@ dir = ':cacheDir/images'
 [params.footer]
   displayCopyright = true
   displayPoweredBy = false
+
+[markup]
+[markup.highlight]
+  noClasses = false

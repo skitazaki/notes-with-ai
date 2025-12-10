@@ -40,7 +40,7 @@ Go to `http://localhost:1313/` with your web browser.
 Create a documentation page.
 
 ```bash
-hugo new content/docs/data-analytics/data-management/index.md
+hugo new content/docs/data-analytics/data-management/_index.md
 ```
 
 Create a blog entry.

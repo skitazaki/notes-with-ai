@@ -1,5 +1,9 @@
 {
   "fmt": {
-    "lineWidth": 120
+    "lineWidth": 120,
+    "exclude": [
+      "**/*.html",
+      "**/*.alloy"
+    ]
   }
 }
