@@ -12,3 +12,6 @@ package.json
 # Ignore vendor directories
 vendor/
 Godeps/
+
+# Ignore specific files
+layouts/shortcodes/codefile.html

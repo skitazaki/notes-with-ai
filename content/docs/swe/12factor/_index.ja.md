@@ -337,29 +337,29 @@ Liveness と Readiness については [Kubernetes のドキュメント][32] �
 では、ターゲットからメトリクスを取得する HTTP パスを示す **metrics_path** のデフォルト値は "/metrics" です。
 ([Prometheus][33])
 
-[1]: https://12factor.net/ 'The Twelve-Factor App'
-[1ja]: https://12factor.net/ja/ 'The Twelve-Factor App'
-[2]: https://12factor.net/config 'Store config in the environment'
-[3]: https://github.com/kelseyhightower/envconfig 'kelseyhightower/envconfig: Golang library for managing ... | GitHub'
-[4]: https://github.com/spf13/viper 'spf13/viper: Go configuration with fangs | GitHub'
+[1]: https://12factor.net/ "The Twelve-Factor App"
+[1ja]: https://12factor.net/ja/ "The Twelve-Factor App"
+[2]: https://12factor.net/config "Store config in the environment"
+[3]: https://github.com/kelseyhightower/envconfig "kelseyhightower/envconfig: Golang library for managing ... | GitHub"
+[4]: https://github.com/spf13/viper "spf13/viper: Go configuration with fangs | GitHub"
 [5]: https://github.com/joho/godotenv "joho/godotenv: A Go port of Ruby's dotenv library (Loads ... | GitHub"
-[6]: https://github.com/spf13/cobra 'spf13/cobra: A Commander for modern Go CLI interactions | GitHub'
-[7]: https://blog.gopheracademy.com/advent-2013/day-03-building-a-twelve-factor-app-in-go/ 'Go Advent Day 3 - Building a Twelve Factor App in Go'
-[8]: https://pypi.org/project/python-dotenv/ 'python-dotenv | PyPI'
-[9]: https://docs.pydantic.dev/latest/api/pydantic_settings/ 'Pydantic Settings - Pydantic Validation'
-[10]: https://dynaconf.com/ 'Dynaconf'
-[11]: https://pypi.org/project/environs/ 'environs | PyPI'
-[13]: https://django-environ.readthedocs.io/ 'django-environ'
-[15]: https://www.heroku.com/blog/heroku-open-sources-twelve-factor-app-definition/ 'Heroku Open Sources the Twelve-Factor App Definition'
-[21]: https://aws.amazon.com/jp/builders-flash/202208/introductions-twelve-factors-app/ 'AWS アーキテクチャで学ぶ The Twelve Factors App 本格入門 | AWS builders.flash'
-[22]: https://aws.amazon.com/blogs/containers/developing-twelve-factor-apps-using-amazon-ecs-and-aws-fargate/ 'Developing Twelve-Factor Apps using Amazon ECS and AWS Fargate | AWS Blogs'
-[22ja]: https://aws.amazon.com/jp/blogs/news/developing-twelve-factor-apps-using-amazon-ecs-and-aws-fargate/ 'Amazon ECS と AWS Fargate を利用した Twelve-Factor Apps の開発 | AWS ブログ'
-[23]: https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/definition 'What is Cloud Native? - .NET'
-[24]: https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview 'What is Azure App Configuration?'
-[25]: https://docs.cloud.google.com/architecture/scalable-and-resilient-apps?hl=en 'Patterns for scalable and resilient apps  |  Cloud Architecture Center  |  Google Cloud Documentation'
-[25ja]: https://docs.cloud.google.com/architecture/scalable-and-resilient-apps?hl=ja 'スケーラブルで復元性の高いアプリのためのパターン  |  Cloud Architecture Center  |  Google Cloud Documentation'
-[26]: https://cloud.google.com/transform/from-the-twelve-to-sixteen-factor-app 'Rethinking the Twelve-Factor App framework for AI'
-[30]: https://docs.docker.com/reference/compose-file/configs/ 'Configs | Docker Docs'
-[31]: https://docs.docker.com/reference/compose-file/secrets/ 'Secrets | Docker Docs'
-[32]: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ 'Configure Liveness, Readiness and Startup Probes | Kubernetes'
-[33]: https://prometheus.io/docs/prometheus/latest/configuration/configuration/ 'Configuration | Prometheus'
+[6]: https://github.com/spf13/cobra "spf13/cobra: A Commander for modern Go CLI interactions | GitHub"
+[7]: https://blog.gopheracademy.com/advent-2013/day-03-building-a-twelve-factor-app-in-go/ "Go Advent Day 3 - Building a Twelve Factor App in Go"
+[8]: https://pypi.org/project/python-dotenv/ "python-dotenv | PyPI"
+[9]: https://docs.pydantic.dev/latest/api/pydantic_settings/ "Pydantic Settings - Pydantic Validation"
+[10]: https://dynaconf.com/ "Dynaconf"
+[11]: https://pypi.org/project/environs/ "environs | PyPI"
+[13]: https://django-environ.readthedocs.io/ "django-environ"
+[15]: https://www.heroku.com/blog/heroku-open-sources-twelve-factor-app-definition/ "Heroku Open Sources the Twelve-Factor App Definition"
+[21]: https://aws.amazon.com/jp/builders-flash/202208/introductions-twelve-factors-app/ "AWS アーキテクチャで学ぶ The Twelve Factors App 本格入門 | AWS builders.flash"
+[22]: https://aws.amazon.com/blogs/containers/developing-twelve-factor-apps-using-amazon-ecs-and-aws-fargate/ "Developing Twelve-Factor Apps using Amazon ECS and AWS Fargate | AWS Blogs"
+[22ja]: https://aws.amazon.com/jp/blogs/news/developing-twelve-factor-apps-using-amazon-ecs-and-aws-fargate/ "Amazon ECS と AWS Fargate を利用した Twelve-Factor Apps の開発 | AWS ブログ"
+[23]: https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/definition "What is Cloud Native? - .NET"
+[24]: https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview "What is Azure App Configuration?"
+[25]: https://docs.cloud.google.com/architecture/scalable-and-resilient-apps?hl=en "Patterns for scalable and resilient apps  |  Cloud Architecture Center  |  Google Cloud Documentation"
+[25ja]: https://docs.cloud.google.com/architecture/scalable-and-resilient-apps?hl=ja "スケーラブルで復元性の高いアプリのためのパターン  |  Cloud Architecture Center  |  Google Cloud Documentation"
+[26]: https://cloud.google.com/transform/from-the-twelve-to-sixteen-factor-app "Rethinking the Twelve-Factor App framework for AI"
+[30]: https://docs.docker.com/reference/compose-file/configs/ "Configs | Docker Docs"
+[31]: https://docs.docker.com/reference/compose-file/secrets/ "Secrets | Docker Docs"
+[32]: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ "Configure Liveness, Readiness and Startup Probes | Kubernetes"
+[33]: https://prometheus.io/docs/prometheus/latest/configuration/configuration/ "Configuration | Prometheus"

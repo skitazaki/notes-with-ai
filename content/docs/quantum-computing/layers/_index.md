@@ -1,6 +1,6 @@
 ---
-date: '2025-10-18T16:00:00+09:00'
-title: 'Players by Layers'
+date: "2025-10-18T16:00:00+09:00"
+title: "Players by Layers"
 description: |-
   Here is a technical report on **Quantum Computing Players by Layers**, covering the technical landscape, companies & solutions, and underlying mechanisms.
 weight: 10
@@ -272,60 +272,60 @@ As the field progresses, integration across layers (hardware ↔ firmware ↔ so
 increasingly important. Companies that can effectively operate at multiple layers (or partner well) may have strategic
 advantage.
 
-[1]: https://www.quantumbw.de/wp-content/uploads/2024/06/QuantumBW_Strategy-Paper_EN.pdf 'WHERE'
-[2]: https://thequantuminsider.com/2025/03/19/the-quantum-supply-chain-mapping-the-market-and-key-players/ 'The Quantum Supply Chain: Mapping the Market and Key Players'
-[3]: https://quantum.cloud.ibm.com/ 'IBM Quantum Platform'
-[4]: https://aws.amazon.com/en/braket/ 'Amazon Braket - AWS'
-[5]: https://azure.microsoft.com/en-us/solutions/quantum-computing 'Azure Quantum Computing | Microsoft Azure'
-[6]: https://quantumai.google/ 'Google Quantum AI'
-[7]: https://www.dwavequantum.com/solutions-and-products/cloud-platform/ 'The Leap™ Quantum Cloud Service | D-Wave'
-[8]: https://terraquantum.swiss/ 'Terra Quantum'
-[9]: https://sitsi.pacanalyst.com/part-7-quantum-computing-vendors-navigating-the-emerging-ecosystem/ 'Part 7: Quantum Computing Vendors – Navigating the Emerging Ecosystem | sitsi'
-[10]: https://www.dwavequantum.com/ 'D-Wave Quantum'
-[11]: https://www.qcware.com/ 'QC Ware'
-[12]: https://1qbit.com/ '1QBit'
-[13]: https://algorithmiq.fi/ 'algorithmiq.fi'
-[14]: https://www.quantistry.ai/ 'Quantistry - Materials Intelligence & Chemical Simulation Platform for R&D'
-[20]: https://www.ibm.com/quantum/qiskit 'Qiskit | IBM Quantum Computing'
-[21]: https://github.com/amazon-braket/amazon-braket-sdk-python 'amazon-braket/amazon-braket-sdk-python: A Python SDK for interacting with quantum devices on Amazon Braket'
-[22]: https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview 'Build Quantum Solutions with the Azure Quantum Development Kit - Azure Quantum | Microsoft Learn'
-[23]: https://quantumai.google/cirq 'Cirq | Google Quantum AI'
-[24]: https://pennylane.ai/ 'Quantum Programming Software — PennyLane'
-[25]: https://arxiv.org/abs/1811.04968 'PennyLane: Automatic differentiation of hybrid quantum-classical computations'
-[26]: https://www.dwavequantum.com/solutions-and-products/ocean/ 'Ocean™ Developer Tools | D-Wave'
+[1]: https://www.quantumbw.de/wp-content/uploads/2024/06/QuantumBW_Strategy-Paper_EN.pdf "WHERE"
+[2]: https://thequantuminsider.com/2025/03/19/the-quantum-supply-chain-mapping-the-market-and-key-players/ "The Quantum Supply Chain: Mapping the Market and Key Players"
+[3]: https://quantum.cloud.ibm.com/ "IBM Quantum Platform"
+[4]: https://aws.amazon.com/en/braket/ "Amazon Braket - AWS"
+[5]: https://azure.microsoft.com/en-us/solutions/quantum-computing "Azure Quantum Computing | Microsoft Azure"
+[6]: https://quantumai.google/ "Google Quantum AI"
+[7]: https://www.dwavequantum.com/solutions-and-products/cloud-platform/ "The Leap™ Quantum Cloud Service | D-Wave"
+[8]: https://terraquantum.swiss/ "Terra Quantum"
+[9]: https://sitsi.pacanalyst.com/part-7-quantum-computing-vendors-navigating-the-emerging-ecosystem/ "Part 7: Quantum Computing Vendors – Navigating the Emerging Ecosystem | sitsi"
+[10]: https://www.dwavequantum.com/ "D-Wave Quantum"
+[11]: https://www.qcware.com/ "QC Ware"
+[12]: https://1qbit.com/ "1QBit"
+[13]: https://algorithmiq.fi/ "algorithmiq.fi"
+[14]: https://www.quantistry.ai/ "Quantistry - Materials Intelligence & Chemical Simulation Platform for R&D"
+[20]: https://www.ibm.com/quantum/qiskit "Qiskit | IBM Quantum Computing"
+[21]: https://github.com/amazon-braket/amazon-braket-sdk-python "amazon-braket/amazon-braket-sdk-python: A Python SDK for interacting with quantum devices on Amazon Braket"
+[22]: https://learn.microsoft.com/en-us/azure/quantum/qdk-main-overview "Build Quantum Solutions with the Azure Quantum Development Kit - Azure Quantum | Microsoft Learn"
+[23]: https://quantumai.google/cirq "Cirq | Google Quantum AI"
+[24]: https://pennylane.ai/ "Quantum Programming Software — PennyLane"
+[25]: https://arxiv.org/abs/1811.04968 "PennyLane: Automatic differentiation of hybrid quantum-classical computations"
+[26]: https://www.dwavequantum.com/solutions-and-products/ocean/ "Ocean™ Developer Tools | D-Wave"
 [27]: https://github.com/dwavesystems/dwave-ocean-sdk/ "dwavesystems/dwave-ocean-sdk: Installer for D-Wave's Ocean tools"
-[28]: https://projectq.ch/ 'ProjectQ – Open Source Software for Quantum Computing'
-[29]: https://github.com/ProjectQ-Framework/ProjectQ 'ProjectQ-Framework/ProjectQ: ProjectQ: An open source software framework for quantum computing'
-[30]: https://arxiv.org/abs/1612.08091 'ProjectQ: An Open Source Software Framework for Quantum Computing'
-[31]: https://xacc.readthedocs.io/en/latest/ '— XACC 1.0.0 documentation'
-[32]: https://github.com/eclipse-xacc/xacc 'eclipse-xacc/xacc: XACC - eXtreme-scale Accelerator programming framework'
-[33]: https://arxiv.org/abs/1911.02452 'XACC: A System-Level Software Infrastructure for Heterogeneous Quantum-Classical Computing'
-[34]: https://openqasm.com/ 'OpenQASM Live Specification'
-[35]: https://q-ctrl.com/ 'We make quantum technology useful | Q-CTRL'
-[36]: https://www.classiq.io/ 'Classiq - Quantum Computing Software'
-[37]: https://github.com/Classiq/classiq-library 'Classiq/classiq-library: The Classiq Library is the largest collection of quantum algorithms and applications.'
-[38]: https://docs.rigetti.com/qcs/guides/quil/quil 'What is Quil? | QCS Documentation'
-[39]: https://github.com/Qiskit/qiskit 'Qiskit/qiskit: Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.'
-[40]: https://github.com/quantumlib/cirq 'quantumlib/Cirq: Python framework for creating, editing, and invoking Noisy Intermediate-Scale Quantum (NISQ) circuits.'
-[41]: https://github.com/microsoft/qdk 'microsoft/qdk: Azure Quantum Development Kit, including the Q# programming language, resource estimator, and Quantum Katas'
-[50]: https://research.cisco.com/quantum-research/quantum-labs 'Cisco Research | Quantum Labs'
-[51]: https://blogs.cisco.com/news/cisco-quantum-labs-announces-software-that-networks-quantum-computers-together-and-enables-new-classical-applications 'Cisco Quantum Labs Announces Software That Networks Quantum Computers Together and Enables New Classical Applications - Cisco Blogs'
-[52]: https://www.pasqal.com/ 'Pasqal'
-[53]: https://www.nvidia.com/en-us/solutions/quantum-computing/ 'Accelerated Quantum Computing Solutions | NVIDIA'
-[54]: https://www.quantinuum.com/ 'Quantinuum'
-[55]: https://www.rigetti.com/ 'Rigetti Computing'
-[56]: https://ionq.com/ 'IonQ - Trapped Ion Quantum Computing'
-[57]: https://www.psiquantum.com/ 'PsiQuantum'
-[58]: https://www.xanadu.ai/ 'Xanadu'
-[59]: https://www.quera.com/ 'QuEra - Quantum Computing with Neutral Atoms'
-[60]: https://quantum.microsoft.com/en-us/solutions/microsoft-quantum-hardware 'Microsoft Quantum Hardware'
-[61]: https://news.microsoft.com/source/features/ai/microsofts-majorana-1-chip-carves-new-path-for-quantum-computing/ 'Microsoft’s Majorana 1 chip carves new path for quantum computing'
-[62]: https://newsroom.ibm.com/2025-06-23-ibm-and-riken-unveil-first-ibm-quantum-system-two-outside-of-the-u-s 'IBM and RIKEN Unveil First IBM Quantum System Two Outside of the U.S.'
-[62ja]: https://www.riken.jp/pr/news/2025/20250624_1/index.html '量子コンピュータIBM Quantum System Twoを神戸で本格稼働 | 理化学研究所'
+[28]: https://projectq.ch/ "ProjectQ – Open Source Software for Quantum Computing"
+[29]: https://github.com/ProjectQ-Framework/ProjectQ "ProjectQ-Framework/ProjectQ: ProjectQ: An open source software framework for quantum computing"
+[30]: https://arxiv.org/abs/1612.08091 "ProjectQ: An Open Source Software Framework for Quantum Computing"
+[31]: https://xacc.readthedocs.io/en/latest/ "— XACC 1.0.0 documentation"
+[32]: https://github.com/eclipse-xacc/xacc "eclipse-xacc/xacc: XACC - eXtreme-scale Accelerator programming framework"
+[33]: https://arxiv.org/abs/1911.02452 "XACC: A System-Level Software Infrastructure for Heterogeneous Quantum-Classical Computing"
+[34]: https://openqasm.com/ "OpenQASM Live Specification"
+[35]: https://q-ctrl.com/ "We make quantum technology useful | Q-CTRL"
+[36]: https://www.classiq.io/ "Classiq - Quantum Computing Software"
+[37]: https://github.com/Classiq/classiq-library "Classiq/classiq-library: The Classiq Library is the largest collection of quantum algorithms and applications."
+[38]: https://docs.rigetti.com/qcs/guides/quil/quil "What is Quil? | QCS Documentation"
+[39]: https://github.com/Qiskit/qiskit "Qiskit/qiskit: Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives."
+[40]: https://github.com/quantumlib/cirq "quantumlib/Cirq: Python framework for creating, editing, and invoking Noisy Intermediate-Scale Quantum (NISQ) circuits."
+[41]: https://github.com/microsoft/qdk "microsoft/qdk: Azure Quantum Development Kit, including the Q# programming language, resource estimator, and Quantum Katas"
+[50]: https://research.cisco.com/quantum-research/quantum-labs "Cisco Research | Quantum Labs"
+[51]: https://blogs.cisco.com/news/cisco-quantum-labs-announces-software-that-networks-quantum-computers-together-and-enables-new-classical-applications "Cisco Quantum Labs Announces Software That Networks Quantum Computers Together and Enables New Classical Applications - Cisco Blogs"
+[52]: https://www.pasqal.com/ "Pasqal"
+[53]: https://www.nvidia.com/en-us/solutions/quantum-computing/ "Accelerated Quantum Computing Solutions | NVIDIA"
+[54]: https://www.quantinuum.com/ "Quantinuum"
+[55]: https://www.rigetti.com/ "Rigetti Computing"
+[56]: https://ionq.com/ "IonQ - Trapped Ion Quantum Computing"
+[57]: https://www.psiquantum.com/ "PsiQuantum"
+[58]: https://www.xanadu.ai/ "Xanadu"
+[59]: https://www.quera.com/ "QuEra - Quantum Computing with Neutral Atoms"
+[60]: https://quantum.microsoft.com/en-us/solutions/microsoft-quantum-hardware "Microsoft Quantum Hardware"
+[61]: https://news.microsoft.com/source/features/ai/microsofts-majorana-1-chip-carves-new-path-for-quantum-computing/ "Microsoft’s Majorana 1 chip carves new path for quantum computing"
+[62]: https://newsroom.ibm.com/2025-06-23-ibm-and-riken-unveil-first-ibm-quantum-system-two-outside-of-the-u-s "IBM and RIKEN Unveil First IBM Quantum System Two Outside of the U.S."
+[62ja]: https://www.riken.jp/pr/news/2025/20250624_1/index.html "量子コンピュータIBM Quantum System Twoを神戸で本格稼働 | 理化学研究所"
 [63]: https://newsroom.ibm.com/2025-10-14-the-basque-government-and-ibm-inaugurate-europes-first-ibm-quantum-system-two-in-donostia-san-sebastian "The Basque Government and IBM Inaugurate Europe's first IBM Quantum System Two in Donostia-San Sebastián"
-[64]: https://www.quantinuum.com/press-releases/quantinuums-reimei-quantum-computer-now-fully-operational-at-riken-ushering-in-a-new-era-of-hybrid-quantum-high-performance-computing 'Quantinuum’s “Reimei” Quantum Computer Now Fully Operational at RIKEN, Ushering in a New Era of Hybrid Quantum High-Performance Computing'
-[64ja]: https://quantinuum.co.jp/20250212-2/ '量子コンピュータ「黎明」が理化学研究所で本格稼働、量子ハイブリッド高性能コンピューティング新時代を切り拓く ～理化学研究所の世界最高水準の施設に設置された量子コンピュータ「黎明」は、物理、化学、その他の応用分野における量子コンピューティング技術の進歩をリード～ ｜ Quantinuum – クオンティニュアム株式会社'
-[70]: https://arxiv.org/html/2410.00916v1 'IBM Quantum Computers: Evolution, Performance, and Future Directions | arxiv'
-[80]: https://www.intel.com/content/www/us/en/research/quantum-computing.html 'Quantum Computing and Systems with Intel Labs | Intel®'
-[100]: https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing 'List of companies involved in quantum computing, communication or sensing - Wikipedia'
+[64]: https://www.quantinuum.com/press-releases/quantinuums-reimei-quantum-computer-now-fully-operational-at-riken-ushering-in-a-new-era-of-hybrid-quantum-high-performance-computing "Quantinuum’s “Reimei” Quantum Computer Now Fully Operational at RIKEN, Ushering in a New Era of Hybrid Quantum High-Performance Computing"
+[64ja]: https://quantinuum.co.jp/20250212-2/ "量子コンピュータ「黎明」が理化学研究所で本格稼働、量子ハイブリッド高性能コンピューティング新時代を切り拓く ～理化学研究所の世界最高水準の施設に設置された量子コンピュータ「黎明」は、物理、化学、その他の応用分野における量子コンピューティング技術の進歩をリード～ ｜ Quantinuum – クオンティニュアム株式会社"
+[70]: https://arxiv.org/html/2410.00916v1 "IBM Quantum Computers: Evolution, Performance, and Future Directions | arxiv"
+[80]: https://www.intel.com/content/www/us/en/research/quantum-computing.html "Quantum Computing and Systems with Intel Labs | Intel®"
+[100]: https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing "List of companies involved in quantum computing, communication or sensing - Wikipedia"
 [101]: https://en.wikipedia.org/wiki/DiVincenzo%27s_criteria "DiVincenzo's criteria - Wikipedia"

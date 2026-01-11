@@ -36,7 +36,7 @@ jobs:
     env:
       HUGO_VERSION: 0.150.0
       HUGO_ENVIRONMENT: production
-      TZ: America/Los_Angeles
+      TZ: Asia/Tokyo
     steps:
       - name: Install Hugo CLI
         run: |
@@ -49,11 +49,6 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x # Run with latest stable Deno.
-      - name: Check if markdown files are formatted.
-        run: deno fmt --check
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

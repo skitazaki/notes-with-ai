@@ -1,8 +1,8 @@
 ---
-title: 'AI Agents Tech Landscape 2025'
-date: '2025-09-20T11:28:23+09:00'
-tags: ['AI Agents', 'MCP', 'A2A', 'Cloud', 'Open Source', 'Architecture']
-categories: ['Technology', 'AI']
+title: "AI Agents Tech Landscape 2025"
+date: "2025-09-20T11:28:23+09:00"
+tags: ["AI Agents", "MCP", "A2A", "Cloud", "Open Source", "Architecture"]
+categories: ["Technology", "AI"]
 draft: false
 ---
 
@@ -634,93 +634,93 @@ This is where engineers can lead.
 
 <!-- deno-fmt-ignore-end -->
 
-[1]: https://aws.amazon.com/bedrock/agents/ 'Amazon Bedrock Agents | AWS'
-[2]: https://cloud.google.com/vertex-ai/generative-ai/docs/agent-builder/overview 'Vertex AI Agent Builder overview | Google Cloud'
-[3]: https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview 'What is Azure AI Foundry Agent Service? | Microsoft Learn'
-[4]: https://azure.microsoft.com/en-us/products/ai-agent-service 'Azure AI Foundry Agent Service'
-[5]: https://www.anthropic.com/news/model-context-protocol 'Introducing the Model Context Protocol - Anthropic'
-[6]: https://modelcontextprotocol.io/ 'Model Context Protocol: Introduction'
-[7]: https://docs.ag-ui.com/introduction 'Introduction - Agent User Interaction Protocol'
-[8]: https://www.theverge.com/decoder-podcast-with-nilay-patel/669409/microsoft-cto-kevin-scott-interview-ai-natural-language-search-openai 'Microsoft CTO Kevin Scott on how AI can save the web, not destroy it'
-[9]: https://en.wikipedia.org/wiki/Model_Context_Protocol 'Model Context Protocol - Wikipedia'
-[10]: https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/ 'Announcing the Agent2Agent Protocol (A2A)'
-[11]: https://a2aprotocol.ai/ 'A2A Protocol - Agent2Agent Communication'
-[12]: https://github.com/a2aproject/A2A 'a2aproject/A2A: An open protocol enabling communication ... - GitHub'
-[13]: https://www.langchain.com/langgraph 'LangGraph - LangChain'
-[14]: https://microsoft.github.io/autogen/stable//index.html 'AutoGen'
-[15]: https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/ 'Semantic Kernel Agent Framework | Microsoft Learn'
-[16]: https://github.com/microsoft/semantic-kernel 'microsoft/semantic-kernel: Integrate cutting-edge LLM ... - GitHub'
-[17]: https://www.crewai.com/open-source 'Open source - CrewAI'
-[18]: https://docs.haystack.deepset.ai/docs/agents 'Agents - Haystack Documentation'
-[19]: https://www.llamaindex.ai/blog/announcing-workflows-1-0-a-lightweight-framework-for-agentic-systems 'Announcing Workflows 1.0: A Lightweight Framework for Agentic ...'
-[20]: https://ai.pydantic.dev/ 'Pydantic AI'
-[21]: https://www.anthropic.com/customers/dust 'Dust helps enterprises create actionable AI agents with MCP and ...'
-[22]: https://temporal.io/blog/how-dust-builds-agentic-ai-temporal 'How Dust Builds Agentic AI with Temporal Workflows'
-[23]: https://venturebeat.com/ai/dust-hits-6m-arr-helping-enterprises-build-ai-agents-that-actually-do-stuff-instead-of-just-talking/ 'Dust hits $6M ARR helping enterprises build AI agents that actually do stuff instead of just talking'
-[24]: https://zapier.com/agents 'Build AI teammates with Zapier Agents'
-[25]: https://fixie.ai/ 'Fixie.ai'
-[26]: https://zapier.com/blog/ai-agent/ 'What are AI agents? How they work and how to use them - Zapier'
-[27]: https://ai.pydantic.dev/ag-ui/ 'AG-UI - Pydantic AI'
-[28]: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-bedrock-agent.html 'AWS::Bedrock::Agent - AWS CloudFormation - AWS Documentation'
-[29]: https://cloud.google.com/products/agent-builder 'Vertex AI Agent Builder | Google Cloud'
-[30]: https://actions.zapier.com/ 'Zapier AI Actions: Get Started'
-[31]: https://www.deepchecks.com/llm-tools/fixie-ai/ 'What is Fixie AI? Features & Getting Started - Deepchecks'
-[32]: https://www.reuters.com/technology/ai-agent-startup-tinyfish-raises-47-million-iconiq-led-round-2025-08-20/ 'AI agent startup TinyFish raises $47 million in ICONIQ-led round'
-[33]: https://docs.smith.langchain.com/langgraph_cloud 'LangGraph Platform | 🦜️🛠️ LangSmith'
-[34]: https://www.microsoft.com/en-us/research/project/autogen/ 'AutoGen - Microsoft Research'
-[35]: https://github.com/crewAIInc/crewAI 'crewAIInc/crewAI - GitHub'
-[36]: https://docs.crewai.com/ 'Introduction - CrewAI'
-[37]: https://haystack.deepset.ai/cookbook/swarm 'Create a Swarm of Agents - Haystack - Deepset'
-[38]: https://github.com/pydantic/pydantic-ai 'Agent Framework / shim to use Pydantic with LLMs - GitHub'
-[39]: https://codelabs.developers.google.com/devsite/codelabs/building-ai-agents-vertexai 'Building AI Agents with Vertex AI Agent Builder - Codelabs - Google'
-[40]: https://blog.crewai.com/getting-started-with-crewai-build-your-first-crew/ 'Build your First CrewAI Agents'
-[41]: https://docs.haystack.deepset.ai/docs/agent 'Agent - Haystack Documentation'
-[42]: https://dust.tt/ 'Accelerate your entire organization with custom AI agents'
-[43]: https://haystack.deepset.ai/ 'Haystack - Deepset'
-[44]: https://www.llamaindex.ai/ 'LlamaIndex'
-[45]: https://cursor.com/ja 'The AI Code Editor'
-[46]: https://strandsagents.com/latest/ 'Strands Agents'
-[47]: https://genkit.dev/ 'Genkit'
-[48]: https://openai.github.io/openai-agents-python/ 'OpenAI Agents SDK'
-[49]: https://n8n.io/ 'AI Workflow Automation Platform & Tools - n8n'
-[50]: https://github.com/n8n-io/n8n 'n8n-io/n8n'
-[51]: https://cognition.ai/blog/introducing-devin 'Introducing Devin, the first AI software engineer - Cognition'
-[53]: https://en.wikipedia.org/wiki/Devin_AI 'Devin AI'
-[54]: https://devin.ai/ 'Devin | The AI Software Engineer'
-[55]: https://en.wikipedia.org/wiki/Cognition_AI 'Cognition AI'
-[56]: https://www.adept.ai/ 'Adept: AI that powers the workforce'
-[57]: https://www.adept.ai/blog/adept-update 'An update from Adept'
-[58]: https://claralabs.com/ 'Clara'
-[59]: https://www.usemotion.com/ 'AI Employees That 10x Your Team’s Output | Motion'
-[61]: https://manus.im/ 'Manus is a general AI agent that bridges mind and action.'
-[63]: https://bardai.ai/2025/05/25/how-manus-ai-is-redefining-autonomous-workflow-automation-across-industries/ 'How Manus AI is Redefining Autonomous Workflow Automation Across Industries | BARD AI'
-[65]: https://superhuman.com/ 'The most productive email app ever made | Superhuman'
-[66]: https://www.rabbit.tech/ 'rabbit r1 | rabbit intern | rabbitOS'
-[67]: https://en.wikipedia.org/wiki/Rabbit_r1 'Rabbit r1 - Wikipedia'
-[68]: https://en.wikipedia.org/wiki/Humane_Inc. 'Humane Inc. - Wikipedia'
-[69]: https://pi.ai/ 'Pi, your personal AI'
-[70]: https://inflection.ai/ 'Inflection AI'
-[71]: https://character.ai/ 'AI Chat, Reimagined–Your Words. | character.ai'
-[72]: https://www.harvey.ai/ 'Harvey'
-[73]: https://www.evenuplaw.com/ 'EvenUp | Personal Injury AI — From Intake to Resolution'
-[74]: https://glass.health/ 'Glass | AI Diagnosis & Clinical Decision Support (CDS)'
-[75]: https://www.hippocraticai.com/ 'Hippocratic AI'
-[76]: https://kasisto.com/ 'Kasisto | The Trusted Agentic AI Platform for Financial Services'
-[77]: https://www.unitq.com/ 'unitQ'
-[80]: https://www.pwc.com/gx/en/news-room/press-releases/2025/pwc-and-microsoft-strategic-collaboration.html 'PwC and Microsoft announce strategic collaboration to transform industries with AI agents | PwC'
-[81]: https://newsroom.accenture.com/news/2025/accenture-expands-ai-refinery-and-launches-new-industry-agent-solutions-to-accelerate-agentic-ai-adoption 'Accenture Expands AI Refinery and Launches New Industry Agent Solutions to Accelerate Agentic AI Adoption | Accenture'
-[82]: https://sdk.airefinery.accenture.com/tutorial/a2a_agents/a2a_currency_converter/ 'Utilize A2A-exposed Agents - Accenture AI Refinery SDK'
-[83]: https://www.fujitsu.com/global/services/kozuchi/ 'Fujitsu Kozuchi : Fujitsu Global'
-[84]: https://pr.fujitsu.com/jp/news/2024/10/23.html 'AIが人と協調して自律的に高度な業務を推進する「Fujitsu Kozuchi AI Agent」を提供開始 : 富士通'
-[85]: https://www.nttdata.com/global/en/news/press-release/2025/may/051600 'NTT DATA Unveils Smart AI Agent™ Ecosystem, Revolutionizing Industry Solutions with Intelligent Automation and Strategic Alliances | NTT DATA Group'
-[86]: https://www.nttdata.com/jp/ja/trends/data-insight/2025/082702/ 'AIエージェントが切り開く、業務変革の最新事例 | DATA INSIGHT | NTTデータ - NTT DATA'
-[87]: https://www.hitachi.co.jp/New/cnews/month/2025/03/0326.html '日立、数百の事例で獲得したOTナレッジの活用手法によりお客さま専用のAIエージェントを迅速に提供：2025年3月26日'
-[88]: https://www.deloitte.com/us/en/services/consulting/services/zora-generative-ai-agent.html 'Introducing Zora AI™ | Deloitte US'
-[89]: https://www.deloitte.com/global/en/about/press-room/deloitte-launches-global-agentic-network-to-power-digital-workforce-solutions.html 'Deloitte launches Global Agentic Network to power digital workforce solutions | Deloitte Global'
-[90]: https://www.ey.com/en_gl/newsroom/2025/03/ey-launching-ey-ai-agentic-platform-created-with-nvidia-ai-to-drive-multi-sector-transformation-starting-with-tax-risk-and-finance-domains 'EY launching EY.ai Agentic Platform, created with NVIDIA AI, to drive multi-sector transformation starting with tax, risk and finance domains | EY - Global'
-[91]: https://agentgateway.dev/ 'agentgateway | Agent Connectivity Solved'
-[92]: https://github.com/agentgateway/agentgateway 'agentgateway/agentgateway: Next Generation Agentic Proxy for AI Agents and MCP servers'
-[93]: https://www.infoq.com/news/2025/09/introducing-mcp-registry/ 'Introducing the MCP Registry'
-[94]: https://github.com/mcp 'MCP Registry'
-[95]: https://github.com/modelcontextprotocol/registry/ 'modelcontextprotocol/registry: A community driven registry service for Model Context Protocol (MCP) servers.'
-[96]: https://www.linuxfoundation.org/press/linux-foundation-welcomes-agentgateway-project-to-accelerate-ai-agent-adoption-while-maintaining-security-observability-and-governance 'Linux Foundation Welcomes Agentgateway Project to Accelerate AI Agent Adoption While Maintaining Security, Observability and Governance'
+[1]: https://aws.amazon.com/bedrock/agents/ "Amazon Bedrock Agents | AWS"
+[2]: https://cloud.google.com/vertex-ai/generative-ai/docs/agent-builder/overview "Vertex AI Agent Builder overview | Google Cloud"
+[3]: https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview "What is Azure AI Foundry Agent Service? | Microsoft Learn"
+[4]: https://azure.microsoft.com/en-us/products/ai-agent-service "Azure AI Foundry Agent Service"
+[5]: https://www.anthropic.com/news/model-context-protocol "Introducing the Model Context Protocol - Anthropic"
+[6]: https://modelcontextprotocol.io/ "Model Context Protocol: Introduction"
+[7]: https://docs.ag-ui.com/introduction "Introduction - Agent User Interaction Protocol"
+[8]: https://www.theverge.com/decoder-podcast-with-nilay-patel/669409/microsoft-cto-kevin-scott-interview-ai-natural-language-search-openai "Microsoft CTO Kevin Scott on how AI can save the web, not destroy it"
+[9]: https://en.wikipedia.org/wiki/Model_Context_Protocol "Model Context Protocol - Wikipedia"
+[10]: https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/ "Announcing the Agent2Agent Protocol (A2A)"
+[11]: https://a2aprotocol.ai/ "A2A Protocol - Agent2Agent Communication"
+[12]: https://github.com/a2aproject/A2A "a2aproject/A2A: An open protocol enabling communication ... - GitHub"
+[13]: https://www.langchain.com/langgraph "LangGraph - LangChain"
+[14]: https://microsoft.github.io/autogen/stable//index.html "AutoGen"
+[15]: https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/ "Semantic Kernel Agent Framework | Microsoft Learn"
+[16]: https://github.com/microsoft/semantic-kernel "microsoft/semantic-kernel: Integrate cutting-edge LLM ... - GitHub"
+[17]: https://www.crewai.com/open-source "Open source - CrewAI"
+[18]: https://docs.haystack.deepset.ai/docs/agents "Agents - Haystack Documentation"
+[19]: https://www.llamaindex.ai/blog/announcing-workflows-1-0-a-lightweight-framework-for-agentic-systems "Announcing Workflows 1.0: A Lightweight Framework for Agentic ..."
+[20]: https://ai.pydantic.dev/ "Pydantic AI"
+[21]: https://www.anthropic.com/customers/dust "Dust helps enterprises create actionable AI agents with MCP and ..."
+[22]: https://temporal.io/blog/how-dust-builds-agentic-ai-temporal "How Dust Builds Agentic AI with Temporal Workflows"
+[23]: https://venturebeat.com/ai/dust-hits-6m-arr-helping-enterprises-build-ai-agents-that-actually-do-stuff-instead-of-just-talking/ "Dust hits $6M ARR helping enterprises build AI agents that actually do stuff instead of just talking"
+[24]: https://zapier.com/agents "Build AI teammates with Zapier Agents"
+[25]: https://fixie.ai/ "Fixie.ai"
+[26]: https://zapier.com/blog/ai-agent/ "What are AI agents? How they work and how to use them - Zapier"
+[27]: https://ai.pydantic.dev/ag-ui/ "AG-UI - Pydantic AI"
+[28]: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-bedrock-agent.html "AWS::Bedrock::Agent - AWS CloudFormation - AWS Documentation"
+[29]: https://cloud.google.com/products/agent-builder "Vertex AI Agent Builder | Google Cloud"
+[30]: https://actions.zapier.com/ "Zapier AI Actions: Get Started"
+[31]: https://www.deepchecks.com/llm-tools/fixie-ai/ "What is Fixie AI? Features & Getting Started - Deepchecks"
+[32]: https://www.reuters.com/technology/ai-agent-startup-tinyfish-raises-47-million-iconiq-led-round-2025-08-20/ "AI agent startup TinyFish raises $47 million in ICONIQ-led round"
+[33]: https://docs.smith.langchain.com/langgraph_cloud "LangGraph Platform | 🦜️🛠️ LangSmith"
+[34]: https://www.microsoft.com/en-us/research/project/autogen/ "AutoGen - Microsoft Research"
+[35]: https://github.com/crewAIInc/crewAI "crewAIInc/crewAI - GitHub"
+[36]: https://docs.crewai.com/ "Introduction - CrewAI"
+[37]: https://haystack.deepset.ai/cookbook/swarm "Create a Swarm of Agents - Haystack - Deepset"
+[38]: https://github.com/pydantic/pydantic-ai "Agent Framework / shim to use Pydantic with LLMs - GitHub"
+[39]: https://codelabs.developers.google.com/devsite/codelabs/building-ai-agents-vertexai "Building AI Agents with Vertex AI Agent Builder - Codelabs - Google"
+[40]: https://blog.crewai.com/getting-started-with-crewai-build-your-first-crew/ "Build your First CrewAI Agents"
+[41]: https://docs.haystack.deepset.ai/docs/agent "Agent - Haystack Documentation"
+[42]: https://dust.tt/ "Accelerate your entire organization with custom AI agents"
+[43]: https://haystack.deepset.ai/ "Haystack - Deepset"
+[44]: https://www.llamaindex.ai/ "LlamaIndex"
+[45]: https://cursor.com/ja "The AI Code Editor"
+[46]: https://strandsagents.com/latest/ "Strands Agents"
+[47]: https://genkit.dev/ "Genkit"
+[48]: https://openai.github.io/openai-agents-python/ "OpenAI Agents SDK"
+[49]: https://n8n.io/ "AI Workflow Automation Platform & Tools - n8n"
+[50]: https://github.com/n8n-io/n8n "n8n-io/n8n"
+[51]: https://cognition.ai/blog/introducing-devin "Introducing Devin, the first AI software engineer - Cognition"
+[53]: https://en.wikipedia.org/wiki/Devin_AI "Devin AI"
+[54]: https://devin.ai/ "Devin | The AI Software Engineer"
+[55]: https://en.wikipedia.org/wiki/Cognition_AI "Cognition AI"
+[56]: https://www.adept.ai/ "Adept: AI that powers the workforce"
+[57]: https://www.adept.ai/blog/adept-update "An update from Adept"
+[58]: https://claralabs.com/ "Clara"
+[59]: https://www.usemotion.com/ "AI Employees That 10x Your Team’s Output | Motion"
+[61]: https://manus.im/ "Manus is a general AI agent that bridges mind and action."
+[63]: https://bardai.ai/2025/05/25/how-manus-ai-is-redefining-autonomous-workflow-automation-across-industries/ "How Manus AI is Redefining Autonomous Workflow Automation Across Industries | BARD AI"
+[65]: https://superhuman.com/ "The most productive email app ever made | Superhuman"
+[66]: https://www.rabbit.tech/ "rabbit r1 | rabbit intern | rabbitOS"
+[67]: https://en.wikipedia.org/wiki/Rabbit_r1 "Rabbit r1 - Wikipedia"
+[68]: https://en.wikipedia.org/wiki/Humane_Inc. "Humane Inc. - Wikipedia"
+[69]: https://pi.ai/ "Pi, your personal AI"
+[70]: https://inflection.ai/ "Inflection AI"
+[71]: https://character.ai/ "AI Chat, Reimagined–Your Words. | character.ai"
+[72]: https://www.harvey.ai/ "Harvey"
+[73]: https://www.evenuplaw.com/ "EvenUp | Personal Injury AI — From Intake to Resolution"
+[74]: https://glass.health/ "Glass | AI Diagnosis & Clinical Decision Support (CDS)"
+[75]: https://www.hippocraticai.com/ "Hippocratic AI"
+[76]: https://kasisto.com/ "Kasisto | The Trusted Agentic AI Platform for Financial Services"
+[77]: https://www.unitq.com/ "unitQ"
+[80]: https://www.pwc.com/gx/en/news-room/press-releases/2025/pwc-and-microsoft-strategic-collaboration.html "PwC and Microsoft announce strategic collaboration to transform industries with AI agents | PwC"
+[81]: https://newsroom.accenture.com/news/2025/accenture-expands-ai-refinery-and-launches-new-industry-agent-solutions-to-accelerate-agentic-ai-adoption "Accenture Expands AI Refinery and Launches New Industry Agent Solutions to Accelerate Agentic AI Adoption | Accenture"
+[82]: https://sdk.airefinery.accenture.com/tutorial/a2a_agents/a2a_currency_converter/ "Utilize A2A-exposed Agents - Accenture AI Refinery SDK"
+[83]: https://www.fujitsu.com/global/services/kozuchi/ "Fujitsu Kozuchi : Fujitsu Global"
+[84]: https://pr.fujitsu.com/jp/news/2024/10/23.html "AIが人と協調して自律的に高度な業務を推進する「Fujitsu Kozuchi AI Agent」を提供開始 : 富士通"
+[85]: https://www.nttdata.com/global/en/news/press-release/2025/may/051600 "NTT DATA Unveils Smart AI Agent™ Ecosystem, Revolutionizing Industry Solutions with Intelligent Automation and Strategic Alliances | NTT DATA Group"
+[86]: https://www.nttdata.com/jp/ja/trends/data-insight/2025/082702/ "AIエージェントが切り開く、業務変革の最新事例 | DATA INSIGHT | NTTデータ - NTT DATA"
+[87]: https://www.hitachi.co.jp/New/cnews/month/2025/03/0326.html "日立、数百の事例で獲得したOTナレッジの活用手法によりお客さま専用のAIエージェントを迅速に提供：2025年3月26日"
+[88]: https://www.deloitte.com/us/en/services/consulting/services/zora-generative-ai-agent.html "Introducing Zora AI™ | Deloitte US"
+[89]: https://www.deloitte.com/global/en/about/press-room/deloitte-launches-global-agentic-network-to-power-digital-workforce-solutions.html "Deloitte launches Global Agentic Network to power digital workforce solutions | Deloitte Global"
+[90]: https://www.ey.com/en_gl/newsroom/2025/03/ey-launching-ey-ai-agentic-platform-created-with-nvidia-ai-to-drive-multi-sector-transformation-starting-with-tax-risk-and-finance-domains "EY launching EY.ai Agentic Platform, created with NVIDIA AI, to drive multi-sector transformation starting with tax, risk and finance domains | EY - Global"
+[91]: https://agentgateway.dev/ "agentgateway | Agent Connectivity Solved"
+[92]: https://github.com/agentgateway/agentgateway "agentgateway/agentgateway: Next Generation Agentic Proxy for AI Agents and MCP servers"
+[93]: https://www.infoq.com/news/2025/09/introducing-mcp-registry/ "Introducing the MCP Registry"
+[94]: https://github.com/mcp "MCP Registry"
+[95]: https://github.com/modelcontextprotocol/registry/ "modelcontextprotocol/registry: A community driven registry service for Model Context Protocol (MCP) servers."
+[96]: https://www.linuxfoundation.org/press/linux-foundation-welcomes-agentgateway-project-to-accelerate-ai-agent-adoption-while-maintaining-security-observability-and-governance "Linux Foundation Welcomes Agentgateway Project to Accelerate AI Agent Adoption While Maintaining Security, Observability and Governance"
