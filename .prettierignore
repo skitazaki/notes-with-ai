@@ -1,0 +1,14 @@
+# Ignore artifacts:
+public
+resources
+node_modules
+go.sum
+go.mod
+package-lock.json
+package.json
+.DS_Store
+*.lock
+
+# Ignore vendor directories
+vendor/
+Godeps/

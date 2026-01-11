@@ -27,3 +27,4 @@ go.work.sum
 .hugo_build.lock
 public/
 resources/
+node_modules/

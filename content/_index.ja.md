@@ -35,8 +35,10 @@ _ソフトウェアエンジニアリング、データ、AIに関する個人�
 はその時々で気になったトピックと、トレンドの深堀りを記載します。
 
 <!-- deno-fmt-ignore-start -->
+
 {{< cards >}}
-  {{< card link="docs/" title="ドキュメント" icon="document-text" >}}
-  {{< card link="blog/" title="ブログ" icon="document-text" >}}
+{{< card link="docs/" title="ドキュメント" icon="document-text" >}}
+{{< card link="blog/" title="ブログ" icon="document-text" >}}
 {{< /cards >}}
+
 <!-- deno-fmt-ignore-end -->

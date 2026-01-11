@@ -1,0 +1,26 @@
+{
+  "name": "notes-with-ai",
+  "version": "1.0.0",
+  "description": "My Personal Notes on Software Engineering, Data, and AI, Enhanced by Artificial Intelligence",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skitazaki/notes-with-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/skitazaki/notes-with-ai/issues"
+  },
+  "homepage": "https://github.com/skitazaki/notes-with-ai",
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}

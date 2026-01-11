@@ -35,8 +35,10 @@ created between human-driven exploration and AI assistance.
 snapshots.
 
 <!-- deno-fmt-ignore-start -->
+
 {{< cards >}}
-  {{< card link="docs/" title="Documentation" icon="document-text" >}}
-  {{< card link="blog/" title="Blog" icon="document-text" >}}
+{{< card link="docs/" title="Documentation" icon="document-text" >}}
+{{< card link="blog/" title="Blog" icon="document-text" >}}
 {{< /cards >}}
+
 <!-- deno-fmt-ignore-end -->

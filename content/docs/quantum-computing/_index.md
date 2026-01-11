@@ -90,9 +90,11 @@ Here shows just major players and hardware architectures. For more details about
 below.
 
 <!-- deno-fmt-ignore-start -->
+
 {{< cards >}}
-  {{< card link="layers" title="Players by Layers" icon="document-text" >}}
+{{< card link="layers" title="Players by Layers" icon="document-text" >}}
 {{< /cards >}}
+
 <!-- deno-fmt-ignore-end -->
 
 ## The Road Ahead: 2025–2030
