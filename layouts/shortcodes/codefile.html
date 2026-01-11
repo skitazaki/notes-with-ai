@@ -1,23 +1,23 @@
-{{-
-  /* A custom component to display a page bundle resource in collapsible format.
+{{- /*
+A custom component to display a page bundle resource in collapsible format.
 
-  This shortcode and CSS classes are derived from the Hextra theme.
-  - `layouts/_shortcodes/details.html`
-  - `layouts/_markup/render-codeblock.html`
+This shortcode and CSS classes are derived from the Hextra theme.
+- `layouts/_shortcodes/details.html`
+- `layouts/_markup/render-codeblock.html`
 
-  @param {string} [fname] The file name in the page bundle.
-  @param {string} [language="go"] The programming language for syntax highlighting.
-  @param {string} [options] Additional options for syntax highlighting.
-  @param {bool} [open=false] Whether to initially display the content of the details element.
-  @example {{< codefile fname="docker-compose.yml" language="yaml" >}}
-  */
--}}
+@param {string} [fname] The file name in the page bundle.
+@param {string} [language="go"] The programming language for syntax highlighting.
+@param {string} [options] Additional options for syntax highlighting.
+@param {bool} [open=false] Whether to initially display the content of the details element.
+
+@example {{< codefile fname="docker-compose.yml" language="yaml" >}}
+*/ -}}
+
 {{- $fname := .Get "fname" -}}
 {{- $language := .Get "language" | default "go" -}}
 {{- $options := .Get "options" -}}
 {{- $open := false }}
-
-{{-if in (slice "false" false 0) (.Get "open") }}
+{{- if in (slice "false" false 0) (.Get "open") }}
   {{- $open = false }}
 {{- else if in (slice "true" true 1) (.Get "open") }}
   {{- $open = true }}
@@ -25,18 +25,16 @@
 
 <details
   class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group"
-  {{- with $open}}open{{- end }}
+  {{- with $open }} open {{- end }}
 >
-  <summary
-    class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90"
-  >
+  <summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
     <code>{{ $fname }}</code>:
   </summary>
   <div class="hx:p-2 hx:overflow-hidden">
     <div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-      {{ with .Page.Resources.Get $fname }}
-        {{ highlight (trim .Content "\n\r") $language $options }}
-      {{ end }}
+    {{ with .Page.Resources.Get $fname }}
+      {{ highlight (trim .Content "\n\r") $language $options }}
+    {{ end }}
     </div>
   </div>
 </details>

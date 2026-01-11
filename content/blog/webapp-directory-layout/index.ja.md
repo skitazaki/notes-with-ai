@@ -21,7 +21,7 @@ mobile applications.
 
 > There is no definitive answer to this question. The answer depends on the scale of your application and the team that
 > is involved. To be as flexible as possible, Express makes no assumptions in terms of structure.
-> <br>- <cite>[Express FAQ](https://expressjs.com/en/starter/faq.html)</cite>
+> -- [Express FAQ](https://expressjs.com/en/starter/faq.html)
 
 I asked ChatGPT (4o) and Google Gemini (2.0 Flash) to make **Recommended Structure**, anyhow. Here is a file tree with
 some markup for writing on a blog post. You can click the folder icons to expand or collapse the contents.
@@ -123,7 +123,7 @@ bundling, route pre-fetching, and more.
 
 > This page provides an overview of all the folder and file conventions in Next.js, and recommendations for organizing
 > your project.
-> <br>- [Next.js Project Structure and Organization](https://nextjs.org/docs/pages/getting-started/project-structure)
+> -- [Next.js Project Structure and Organization](https://nextjs.org/docs/pages/getting-started/project-structure)
 
 📁 **Top-level folders**:
 
