@@ -4,7 +4,7 @@
   "description": "My Personal Notes on Software Engineering, Data, and AI, Enhanced by Artificial Intelligence",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "hugo server --minify",
     "format": "prettier --write .",
     "lint": "prettier --check ."
   },

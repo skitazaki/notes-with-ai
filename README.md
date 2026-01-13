@@ -30,7 +30,13 @@ created between human-driven exploration and AI assistance.
 Run `hugo` development server on a local machine.
 
 ```bash
-hugo server --minify --buildDrafts
+npm run server
+```
+
+or
+
+```bash
+hugo server --minify
 ```
 
 Go to `http://localhost:1313/` with your web browser.
