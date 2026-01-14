@@ -1,13 +1,13 @@
 +++
-date = '2026-01-11T23:03:45+09:00'
+date = '2026-01-14T20:00:00+09:00'
 draft = false
 title = 'Technology Prospect in 2026'
 tags = ["Software Engineering", "Data & AI", "Robotics", "Quantum Computing"]
 categories= ["Technology"]
 +++
 
-Below is a **2026 Technology Prospect** that synthesizes near-term realities and credible trajectories across **software engineering, data & AI, robotics, and quantum computing**.
-It is written for **engineering leaders, architects, and technology strategists** making decisions with a 1–3 year horizon.
+With AI, here shows a **2026 Technology Prospect** that synthesizes near-term realities and credible trajectories across **software engineering**, **data & AI**, **robotics**, and **quantum computing**.
+It is written for **engineering leaders**, **architects**, and **technology strategists** making decisions with a 1–3 year horizon.
 
 ## Executive Summary
 
