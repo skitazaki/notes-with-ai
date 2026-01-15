@@ -130,6 +130,7 @@ quadrantChart
      - Often deployed inside corporate SaaS apps
 
 <!-- deno-fmt-ignore-start -->
+
 {{< callout >}}
 This 2×2 map helps teams decide **which type of agent to prioritize**:
 
@@ -170,7 +171,6 @@ mindmap
 ```
 
 1. **Knowledge Work & Personal Productivity**
-
    - **Manus** — Personal workflow automation: emails, docs, calendars, and tasks coordinated across tools.
      ([Manus][61])
    - **Adept** (Amazon acqui-hired co-founders) — pioneered **“action agents”** that operate your desktop apps.
@@ -180,7 +180,6 @@ mindmap
    - 👉 Agents here act as **knowledge assistants**, blending memory + automation.
 
 2. **Enterprise Productivity Suites**
-
    - **Microsoft Copilot (Office 365)** — Embedded agents in Word, Excel, Teams; not just assistants, but **workflow
      agents** across the suite.
    - **Google Duet AI (Workspace)** — Document drafting, meeting summaries, and Gmail actions.
@@ -189,7 +188,6 @@ mindmap
    - 👉 These agents are **domain specialists**, leveraging enterprise data.
 
 3. **Developer Productivity Agents**
-
    - **GitHub Copilot** — now beyond autocomplete to a **developer companion agent**: generating functions, writing
      tests, and suggesting fixes, and even orchestrating workflows across repos and services.
    - **Cursor** — An IDE with a built-in agent that can refactor, explain, and run code iteratively. ([Cursor][45])
@@ -198,7 +196,6 @@ mindmap
    - 👉 These tools embed agents _where developers work_, creating tight feedback loops.
 
 4. **Communication & Scheduling Agents**
-
    - **Clara / Motion** — Calendar & scheduling agents that negotiate meetings automatically via email/Slack.
      ([Clara][58], [Motion][59])
    - **Superhuman** — An AI-driven email assistant that drafts, summarizes, and follows up automatically.
@@ -206,7 +203,6 @@ mindmap
    - 👉 These succeed when they blend **autonomy** (do it for you) with **transparency** (you stay in the loop).
 
 5. **Consumer Lifestyle Agents**
-
    - **Rabbit R1** — A pocket-sized device with a **Large Action Model (LAM)** agent that executes tasks across apps via
      natural language. ([Rabbit][66], [Wikipedia][67])
    - **Humane AI Pin** (Discontinued) — A wearable agent projecting voice/visual interaction, designed for **ambient AI
@@ -218,7 +214,6 @@ mindmap
    - 👉 These are pushing agents **into devices and everyday interactions**.
 
 6. **Specialized Domain Agents**
-
    - **Legal / Compliance Agents** (Harvey, EvenUp) — Draft contracts, briefs, and filings with law-specific knowledge.
      ([Harvey][72], [EvenUp][73])
    - **Healthcare Agents** (Glass Health, Hippocratic AI) — Provide diagnostic reasoning, triage, or patient
@@ -242,10 +237,12 @@ So the frontier is:
 - **Personal/lifestyle agents** → building trust, transparency, and multimodality (voice, wearable, ambient).
 
 <!-- deno-fmt-ignore-start -->
+
 {{< callout icon="sparkles" >}}
- End-user agents are a great starting point to understand **interaction design**
- and how **protocols like MCP** may one day unify agents across tools.
+End-user agents are a great starting point to understand **interaction design**
+and how **protocols like MCP** may one day unify agents across tools.
 {{< /callout >}}
+
 <!-- deno-fmt-ignore-end -->
 
 ## Notable Solutions
@@ -335,6 +332,7 @@ It represents a significant step toward general intelligence rather than mere AI
 - Use cases such as market research, document and web automation, and content workflows
 
 <!-- deno-fmt-ignore-start -->
+
 {{< callout type="warning" >}}
 Manus has a lot of unofficial sites. Please check the domain before you visit.
 Followings are websites which ChatGPT showed at first.
@@ -477,22 +475,18 @@ architectures, allowing enterprises to build multi-agent workflows that are inte
 ## Architecture Patterns
 
 1. **Tool-First Agents with MCP**
-
    - Use MCP servers for internal systems (payments, CRM, inventory) so agents can **discover** and **call** tools
      consistently.
    - Layer approval policies + logging at the MCP boundary.
 
 2. **Graph Orchestration for Reliability**
-
    - Represent the agent as a **graph** with explicit states (plan, act, reflect, finish) and backoffs/retries.
    - LangGraph and Semantic Kernel both push this **deterministic** shape.
 
 3. **Human-in-the-Loop Checkpoints**
-
    - Approval nodes for risky actions (purchases, deletions). Cloud runtimes help enforce content safety + identity.
 
 4. **Multi-Agent via A2A**
-
    - Use A2A to **discover** domain agents (e.g., Finance/Procurement) and contract scopes/SLAs, rather than ad-hoc
      webhooks.
 
@@ -564,10 +558,12 @@ and integration. For engineers, these services offer practical insights into how
 protocols (like MCP and A2A) can be combined effectively.
 
 <!-- deno-fmt-ignore-start -->
+
 {{< callout type="info" >}}
 Consulting firms are not just for strategy — they publish reference architectures and SDK blueprints
 that engineers can reuse in internal agent projects.
 {{< /callout >}}
+
 <!-- deno-fmt-ignore-end -->
 
 Global Consulting Firms
@@ -629,11 +625,13 @@ Meanwhile, user-oriented tools (Copilot, Manus) are making agents feel real to e
 Agents SDK, Genkit, and Strands Agents are making it easier than ever to build robust, production-ready agents.
 
 <!-- deno-fmt-ignore-start -->
+
 {{< callout >}}
 The future of AI agents is not just about better LLMs.
 It’s about standardized protocols, orchestration frameworks, and integration into enterprise systems.
 This is where engineers can lead.
 {{< /callout >}}
+
 <!-- deno-fmt-ignore-end -->
 
 [1]: https://aws.amazon.com/bedrock/agents/ "Amazon Bedrock Agents | AWS"

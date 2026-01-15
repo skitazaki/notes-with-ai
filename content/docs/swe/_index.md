@@ -5,7 +5,9 @@ weight = 1
 +++
 
 <!-- deno-fmt-ignore-start -->
+
 {{< cards >}}
-  {{< card link="12factor/" title="Twelve-Factor App" icon="document-text" >}}
+{{< card link="12factor/" title="Twelve-Factor App" icon="document-text" >}}
 {{< /cards >}}
+
 <!-- deno-fmt-ignore-end -->

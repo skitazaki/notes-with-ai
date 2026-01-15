@@ -56,7 +56,7 @@ chemistry, logistics, materials science, etc.
 | **Amazon Braket (AWS)**     | A multi-vendor cloud service; orchestration over multiple QC hardware and simulators. ([AWS][4])                    |
 | **Azure Quantum Computing** | Provides cloud access plus QDK and Q# for developers. ([Microsoft Azure][5])                                        |
 | **Google Quantum AI**       | Cloud platform and research collaborations; strong in algorithmic and hardware research. ([Google][6])              |
-| **D-Wave Leap**             | Cloud-based annealing access and hybrid solvers	([D-Wave][7])                                                       |
+| **D-Wave Leap**             | Cloud-based annealing access and hybrid solvers ([D-Wave][7])                                                       |
 | **Terra Quantum**           | Hybrid quantum-cloud platform; quantum algorithms as a service; quantum safety / cryptography. ([Terra Quantum][8]) |
 
 There are various players focusing on chemical simulation, finance, etc., using QC as a backend. For instance

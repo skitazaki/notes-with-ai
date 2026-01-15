@@ -55,11 +55,13 @@ project was open-sourced by Heroku to let the community evolve it. Use the canon
 rationale. ([Heroku blog][15] on November 12, 2024)
 
 <!-- deno-fmt-ignore-start -->
+
 {{< callout type="warning" >}}
 **When is Twelve-Factor not a perfect fit?** — State-heavy apps (rich client state, low-latency on-device logic), some
-  legacy monoliths, and certain edge/IoT apps may need adaptations. Also Twelve-Factor predates some patterns (service
-  meshes, sidecars, complex mesh networking), so treat it as a _baseline_ and adapt.
+legacy monoliths, and certain edge/IoT apps may need adaptations. Also Twelve-Factor predates some patterns (service
+meshes, sidecars, complex mesh networking), so treat it as a _baseline_ and adapt.
 {{< /callout >}}
+
 <!-- deno-fmt-ignore-end -->
 
 ## Core idea in Go
@@ -277,37 +279,43 @@ We can set it up using Docker Compose with the folloing files. You need a `.env`
 **POSTGRES_PASSWORD** and **PGADMIN_DEFAULT_PASSWORD** which Docker Compose refer in `secrets` section.
 
 <!-- deno-fmt-ignore-start -->
+
 {{< filetree/container >}}
-  {{< filetree/folder name="project-root/" >}}
-    {{< filetree/file name="docker-compose.yml" >}}
-    {{< filetree/file name=".env" >}}
-    {{< filetree/folder name="webapp/" >}}
-      {{< filetree/file name="Dockerfile" >}}
-      {{< filetree/file name="main.go" >}}
-      {{< filetree/file name="go.mod" >}}
-      {{< filetree/file name="go.sum" >}}
-    {{< /filetree/folder >}}
-    {{< filetree/folder name="observability/" state="closed" >}}
-      {{< filetree/file name="grafana-datasources.yaml" >}}
-      {{< filetree/file name="prometheus.yml" >}}
-      {{< filetree/file name="loki-local-config.yaml" >}}
-      {{< filetree/file name="alloy-local-config.alloy" >}}
-    {{< /filetree/folder >}}
-  {{< /filetree/folder >}}
+{{< filetree/folder name="project-root/" >}}
+{{< filetree/file name="docker-compose.yml" >}}
+{{< filetree/file name=".env" >}}
+{{< filetree/folder name="webapp/" >}}
+{{< filetree/file name="Dockerfile" >}}
+{{< filetree/file name="main.go" >}}
+{{< filetree/file name="go.mod" >}}
+{{< filetree/file name="go.sum" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="observability/" state="closed" >}}
+{{< filetree/file name="grafana-datasources.yaml" >}}
+{{< filetree/file name="prometheus.yml" >}}
+{{< filetree/file name="loki-local-config.yaml" >}}
+{{< filetree/file name="alloy-local-config.alloy" >}}
+{{< /filetree/folder >}}
+{{< /filetree/folder >}}
 {{< /filetree/container >}}
+
 <!-- deno-fmt-ignore-end -->
 
 Below is a developer-friendly `docker-compose.yml` example. It’s suitable as a local development stack using
 [`configs`][30] and [`secrets`][31] in the top-level element.
 
 <!-- deno-fmt-ignore-start -->
+
 {{< codefile fname="docker-compose.yml" language="yaml" >}}
+
 <!-- deno-fmt-ignore-end -->
 
 An example Go app has basic handlers of "/healthz", "/readyz", and "/metrics" for observability.
 
 <!-- deno-fmt-ignore-start -->
+
 {{< codefile fname="webapp/main.go" language="go" >}}
+
 <!-- deno-fmt-ignore-end -->
 
 - `GET /healthz` always returns 200 as long as process is alive.

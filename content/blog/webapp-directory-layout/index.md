@@ -24,7 +24,7 @@ mobile applications.
 
 > There is no definitive answer to this question. The answer depends on the scale of your application and the team that
 > is involved. To be as flexible as possible, Express makes no assumptions in terms of structure.
-> <br>- <cite>[Express FAQ](https://expressjs.com/en/starter/faq.html)</cite>
+> -- [Express FAQ](https://expressjs.com/en/starter/faq.html)
 
 I asked ChatGPT (4o) and Google Gemini (2.0 Flash) to make **Recommended Structure**, anyhow. Here is a file tree with
 some markup for writing on a blog post. You can click the folder icons to expand or collapse the contents.
@@ -32,71 +32,73 @@ some markup for writing on a blog post. You can click the folder icons to expand
 📁 Recommended Structure:
 
 <!-- deno-fmt-ignore-start -->
+
 {{< filetree/container >}}
-  {{< filetree/folder name="project-root" >}}
-    {{< filetree/folder name="src" >}}
-      {{< filetree/file name="app.js" >}}
-      {{< filetree/folder name="config" >}}
-        {{< filetree/file name="index.js" >}}
-        {{< filetree/file name="development.js" >}}
-        {{< filetree/file name="production.js" >}}
-      {{< /filetree/folder >}}
-      {{< filetree/folder name="controllers" state="closed" >}}
-        {{< filetree/file name="user.controller.js" >}}
-        {{< filetree/file name="product.controller.js" >}}
-      {{< /filetree/folder >}}
-      {{< filetree/folder name="middlewares" state="closed" >}}
-        {{< filetree/file name="auth.middleware.js" >}}
-        {{< filetree/file name="error.middleware.js" >}}
-      {{< /filetree/folder >}}
-      {{< filetree/folder name="models" state="closed" >}}
-        {{< filetree/file name="user.model.js" >}}
-        {{< filetree/file name="product.model.js" >}}
-      {{< /filetree/folder >}}
-      {{< filetree/folder name="routes" state="closed" >}}
-        {{< filetree/file name="index.js" >}}
-        {{< filetree/file name="user.routes.js" >}}
-        {{< filetree/file name="product.routes.js" >}}
-      {{< /filetree/folder >}}
-      {{< filetree/folder name="services" state="closed" >}}
-        {{< filetree/file name="user.service.js" >}}
-        {{< filetree/file name="product.service.js" >}}
-      {{< /filetree/folder >}}
-      {{< filetree/folder name="utils" state="closed" >}}
-        {{< filetree/file name="logger.js" >}}
-        {{< filetree/file name="helper.js" >}}
-      {{< /filetree/folder >}}
-      {{< filetree/folder name="validations" state="closed" >}}
-        {{< filetree/file name="user.validation.js" >}}
-        {{< filetree/file name="product.validation.js" >}}
-      {{< /filetree/folder >}}
-      {{< filetree/folder name="views" state="closed" >}}
-        {{< filetree/folder name="layouts" state="closed" >}}
-          {{< filetree/file name="main.ejs" >}}
-        {{< /filetree/folder >}}
-        {{< filetree/folder name="partials" state="closed" >}}
-          {{< filetree/file name="header.ejs" >}}
-        {{< /filetree/folder >}}
-        {{< filetree/file name="index.ejs" >}}
-      {{< /filetree/folder >}}
-      {{< filetree/folder name="public" state="closed" >}}
-        {{< filetree/folder name="css" state="closed" >}}
-          {{< filetree/file name="style.css" >}}
-        {{< /filetree/folder >}}
-        {{< filetree/folder name="js" state="closed" >}}
-          {{< filetree/file name="script.js" >}}
-        {{< /filetree/folder >}}
-        {{< filetree/folder name="images" state="closed" >}}
-          {{< filetree/file name="logo.png" >}}
-        {{< /filetree/folder >}}
-      {{< /filetree/folder >}}
-    {{< /filetree/folder >}}
-    {{< filetree/folder name="tests" state="closed" >}}{{< /filetree/folder >}}
-    {{< filetree/folder name="node_modules" state="closed" >}}{{< /filetree/folder >}}
-    {{< filetree/file name="package.json" >}}
-    {{< filetree/file name=".env" >}}
-  {{< /filetree/folder >}}
+{{< filetree/folder name="project-root" >}}
+{{< filetree/folder name="src" >}}
+{{< filetree/file name="app.js" >}}
+{{< filetree/folder name="config" >}}
+{{< filetree/file name="index.js" >}}
+{{< filetree/file name="development.js" >}}
+{{< filetree/file name="production.js" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="controllers" state="closed" >}}
+{{< filetree/file name="user.controller.js" >}}
+{{< filetree/file name="product.controller.js" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="middlewares" state="closed" >}}
+{{< filetree/file name="auth.middleware.js" >}}
+{{< filetree/file name="error.middleware.js" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="models" state="closed" >}}
+{{< filetree/file name="user.model.js" >}}
+{{< filetree/file name="product.model.js" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="routes" state="closed" >}}
+{{< filetree/file name="index.js" >}}
+{{< filetree/file name="user.routes.js" >}}
+{{< filetree/file name="product.routes.js" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="services" state="closed" >}}
+{{< filetree/file name="user.service.js" >}}
+{{< filetree/file name="product.service.js" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="utils" state="closed" >}}
+{{< filetree/file name="logger.js" >}}
+{{< filetree/file name="helper.js" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="validations" state="closed" >}}
+{{< filetree/file name="user.validation.js" >}}
+{{< filetree/file name="product.validation.js" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="views" state="closed" >}}
+{{< filetree/folder name="layouts" state="closed" >}}
+{{< filetree/file name="main.ejs" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="partials" state="closed" >}}
+{{< filetree/file name="header.ejs" >}}
+{{< /filetree/folder >}}
+{{< filetree/file name="index.ejs" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="public" state="closed" >}}
+{{< filetree/folder name="css" state="closed" >}}
+{{< filetree/file name="style.css" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="js" state="closed" >}}
+{{< filetree/file name="script.js" >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="images" state="closed" >}}
+{{< filetree/file name="logo.png" >}}
+{{< /filetree/folder >}}
+{{< /filetree/folder >}}
+{{< /filetree/folder >}}
+{{< filetree/folder name="tests" state="closed" >}}{{< /filetree/folder >}}
+{{< filetree/folder name="node_modules" state="closed" >}}{{< /filetree/folder >}}
+{{< filetree/file name="package.json" >}}
+{{< filetree/file name=".env" >}}
+{{< /filetree/folder >}}
 {{< /filetree/container >}}
+
 <!-- deno-fmt-ignore-end -->
 
 Key Components:
@@ -124,7 +126,7 @@ bundling, route pre-fetching, and more.
 
 > This page provides an overview of all the folder and file conventions in Next.js, and recommendations for organizing
 > your project.
-> <br>- [Next.js Project Structure and Organization](https://nextjs.org/docs/pages/getting-started/project-structure)
+> -- [Next.js Project Structure and Organization](https://nextjs.org/docs/pages/getting-started/project-structure)
 
 📁 **Top-level folders**:
 
@@ -366,7 +368,7 @@ your_project/
 
 🧠 Key Concepts
 
-- App Factory Pattern: Define a **create\_app()** function in `app/__init__.py` to create and configure the Flask
+- App Factory Pattern: Define a **create_app()** function in `app/__init__.py` to create and configure the Flask
   application dynamically.
 - Blueprints: Organize views into reusable components using Flask blueprints (e.g., one per feature or module).
 - Extensions: Initialize Flask extensions (SQLAlchemy, Migrate, LoginManager, etc.) in extensions.py and import them in

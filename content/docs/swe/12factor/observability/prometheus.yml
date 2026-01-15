@@ -2,6 +2,6 @@ global:
   scrape_interval: 5s
 
 scrape_configs:
-  - job_name: "webapp"
+  - job_name: 'webapp'
     static_configs:
-      - targets: ["webapp:8080"]
+      - targets: ['webapp:8080']

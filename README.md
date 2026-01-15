@@ -30,7 +30,13 @@ created between human-driven exploration and AI assistance.
 Run `hugo` development server on a local machine.
 
 ```bash
-hugo server --minify --buildDrafts
+npm run server
+```
+
+or
+
+```bash
+hugo server --minify
 ```
 
 Go to `http://localhost:1313/` with your web browser.
@@ -53,10 +59,8 @@ Once you finish a writing, change `draft` value to `false` in front matter.
 
 ### Format Markdown files
 
-This project uses `deno fmt` in order to format Markdown files. See
-[Formatting with Deno fmt](https://docs.deno.com/examples/deno_fmt/) for getting started.
-
-It runs `deno fmt --check` on GitHub Actions.
+This project uses Prettier in order to format Markdown files.
+It runs for every pull request on GitHub Actions.
 
 ### Site Design
 

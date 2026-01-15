@@ -10,9 +10,9 @@ services:
     networks:
       - appnet
     ports:
-      - "8080:8080"
+      - '8080:8080'
     environment:
-      PORT: "8080"
+      PORT: '8080'
       DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD}@pgdb:5432/appdb?sslmode=disable
       REDIS_URL: redis://redis:6379/0
 
@@ -36,20 +36,20 @@ services:
     networks:
       - appnet
     ports:
-      - "5050:80"
+      - '5050:80'
     secrets:
       - pdadmin-passwd
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
       PGADMIN_DEFAULT_PASSWORD_FILE: /run/secrets/pdadmin-passwd
-      PGADMIN_DISABLE_POSTFIX: "true"
+      PGADMIN_DISABLE_POSTFIX: 'true'
     configs:
       - source: pgadmin-servers
         target: /pgadmin4/servers.json
 
   redis:
     image: redis:8.4
-    command: ["redis-server", "--appendonly", "yes"]
+    command: ['redis-server', '--appendonly', 'yes']
     volumes:
       - redisdata:/data
     networks:
@@ -78,7 +78,7 @@ services:
     networks:
       - appnet
     ports:
-      - "3000:3000"
+      - '3000:3000'
     configs:
       - source: grafana-datasources-config
         target: /etc/grafana/provisioning/datasources/ds.yaml
@@ -148,6 +148,6 @@ configs:
 
 secrets:
   postgres-passwd:
-    environment: "POSTGRES_PASSWORD"
+    environment: 'POSTGRES_PASSWORD'
   pdadmin-passwd:
-    environment: "PGADMIN_DEFAULT_PASSWORD"
+    environment: 'PGADMIN_DEFAULT_PASSWORD'
