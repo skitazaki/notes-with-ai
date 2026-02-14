@@ -25,18 +25,12 @@ They are not final answers, but starting points — prompts for further thinking
 window into a moment of curiosity, made richer by technology but rooted in human perspective. Notes are collaboratively
 created between human-driven exploration and AI assistance.
 
-## Writers Guide
+## Writer's Guide
 
 Run `hugo` development server on a local machine.
 
 ```bash
 npm run server
-```
-
-or
-
-```bash
-hugo server --minify
 ```
 
 Go to `http://localhost:1313/` with your web browser.
@@ -60,6 +54,11 @@ Once you finish a writing, change `draft` value to `false` in front matter.
 ### Format Markdown files
 
 This project uses Prettier in order to format Markdown files.
+
+```bash
+npm run format
+```
+
 It runs for every pull request on GitHub Actions.
 
 ### Site Design
