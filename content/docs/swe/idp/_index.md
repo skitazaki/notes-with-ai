@@ -46,6 +46,8 @@ An **Internal Developer Portal**, by contrast, is the interface through which th
 
 In simple terms, the platform does the work; the portal makes the platform understandable and usable. An organization may have a developer platform without a formal portal, but in such cases, developers often rely on ad hoc knowledge and scattered documentation to interact with it.
 
+For more architectural deep dives or implementation steps, see documents from major cloud providers and tool vendors by [AWS][1], [Google Cloud][2], [Azure][3], and [RedHat][4].
+
 ## 5. How IDPs Fit into Modern Software Organizations
 
 In modern organizations, software development is often distributed across many teams, each owning parts of a larger system. Autonomy is encouraged, but complete independence is rarely feasible due to shared infrastructure, standards, and dependencies.
@@ -83,3 +85,8 @@ IDPs arose as a pragmatic response: a way to restore shared understanding withou
 **Summary**
 
 An Internal Developer Portal is a conceptual layer that brings clarity to complex software ecosystems. By centralizing visibility into systems, ownership, and documentation, it helps developers navigate their environment more effectively. IDPs do not replace platforms or tools; they contextualize them. Their emergence reflects a need for shared understanding in organizations where software systems—and the teams that build them—have grown increasingly distributed.
+
+[1]: https://docs.aws.amazon.com/prescriptive-guidance/latest/internal-developer-platform/capabilities.html "Capabilities of an internal developer platform | Amazon Web Services"
+[2]: https://cloud.google.com/discover/what-is-an-internal-developer-platform "What is an internal developer platform (IDP)? | Google Cloud"
+[3]: https://learn.microsoft.com/en-us/platform-engineering/developer-self-service "Design a Developer Self-Service Foundation | Microsoft Learn"
+[4]: https://www.redhat.com/en/topics/platform-engineering/what-is-an-internal-developer-platform "What is an internal developer platform? | Red Hat"
