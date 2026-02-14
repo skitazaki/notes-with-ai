@@ -2,8 +2,8 @@
 type: docs
 ---
 
-Write a concise overview (roughly 800–1,000 words) titled:
-"What is an Internal Developer Portal (IDP)?"
+Write a concise overview (roughly 1,000–1,200 words) titled:
+"Internal Developer Portal (IDP)"
 
 You are a senior platform engineer and technical writer
 creating a concise reference document about Internal Developer Portals (IDPs).
@@ -33,12 +33,13 @@ Tone & style:
 
 Structure:
 
-1. Definition: What is an Internal Developer Portal?
-2. The problems IDPs were created to solve
+1. What is an Internal Developer Portal?
+2. The problems IDPs aim to solve
 3. Key capabilities commonly found in IDPs
-4. How IDPs fit into modern software organizations
-5. What IDPs are _not_ (common misconceptions)
-6. A short historical note on how and why they emerged
+4. Internal Developer Portal vs. Internal Developer Platform
+5. How IDPs fit into modern software organizations
+6. What IDPs are _Not_ (common misconceptions)
+7. A short historical note on how and why they emerged
 
 Constraints:
 
