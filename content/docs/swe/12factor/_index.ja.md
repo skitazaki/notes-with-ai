@@ -1,6 +1,7 @@
 +++
 date = '2025-12-04T22:29:49+09:00'
 title = 'Twelve-Factor App'
+weight = 1
 +++
 
 **Twelve-Factor** は、クラウドネイティブな SaaS

@@ -8,6 +8,7 @@ weight = 1
 
 {{< cards >}}
 {{< card link="12factor/" title="Twelve-Factor App" icon="document-text" >}}
+{{< card link="idp/" title="内部開発者ポータル（IDP）" icon="document-text" >}}
 {{< /cards >}}
 
 <!-- deno-fmt-ignore-end -->
