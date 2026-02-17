@@ -1,6 +1,6 @@
 +++
 date = '2025-05-06T20:17:09+09:00'
-title = 'Data & Analytics'
+title = 'データ'
 weight = 1
 +++
 
