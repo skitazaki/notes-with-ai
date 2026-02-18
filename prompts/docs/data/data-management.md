@@ -47,6 +47,7 @@ Data Management ensures that data remains trustworthy, usable, and sustainable o
 
 - **Data Quality Management** – Validation rules, profiling, anomaly detection, and continuous quality monitoring
 - **Data Accessibility** – Role-based access, discoverability, and governed self-service capabilities
+- **Master Data Management** (MDM) - Authoritative, consistent core entities (golden record) across systems and domains, entity resolution & matching, reference data management
 - **Lifecycle Management** – Retention policies, archival strategies, and controlled data decommissioning
 - **Operational Sustainability** – Cost optimization, capacity planning, and long-term maintainability
 - **Standardization & Documentation** – Naming conventions, data standards, and shared definitions

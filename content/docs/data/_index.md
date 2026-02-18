@@ -1,5 +1,5 @@
 +++
-date = '2025-05-06T20:17:09+09:00'
+date = '2026-02-18T21:00:00+09:00'
 title = 'Data'
 weight = 1
 +++
@@ -95,6 +95,7 @@ Data Management ensures that data remains trustworthy, usable, and sustainable o
 
 - **Data Quality Management** – Validation rules, profiling, anomaly detection, and continuous quality monitoring
 - **Data Accessibility** – Role-based access, discoverability, and governed self-service capabilities
+- **Master Data Management** (MDM) - Authoritative entities across systems and domains, entity resolution & matching, reference data management
 - **Lifecycle Management** – Retention policies, archival strategies, and controlled data decommissioning
 - **Operational Sustainability** – Cost optimization, capacity planning, and long-term maintainability
 - **Standardization & Documentation** – Naming conventions, data standards, and shared definitions
@@ -130,7 +131,7 @@ This layer defines the boundaries between external reality and internal data pla
 
 ### Data Collection
 
-- **Source Integration** – APIs, databases, streaming systems, third-party feeds
+- **Source Integration** – APIs, databases, streaming systems, third-party feeds, CDC (Change Data Capture)
 - **Automated Extraction** – Scheduled scraping, batch ingestion, and event-driven capture
 - **Open Data & External Acquisition** – Public datasets, partner data, licensed sources
 - **Consent & Compliance Handling** – Legal basis tracking, usage restrictions, and policy alignment
@@ -175,6 +176,7 @@ People define ownership, accountability, and capability maturity across the data
 
 Processes define how data flows through the organization from creation to value realization.
 They operationalize the lifecycle across Source, Enablement, Value, and Control layers.
+**DataOps** is a delivery methodology which governs how data engineering and analytics operate, applying DevOps principles to data lifecycle delivery, improving reliability and speed.
 
 - **Source** – Collect datasets systematically and manually from internal systems, external partners, APIs, and public sources
 - **Enable** – Organize, validate, transform, and maintain datasets on a governed data platform
