@@ -2,6 +2,7 @@
 date = '2026-02-17T22:00:00+09:00'
 title = 'Data Analytics'
 weight = 1
+prev = '/docs/data'
 +++
 
 Data analytics is a series of activities that involve recognizing patterns in data, uncovering insights from the past to

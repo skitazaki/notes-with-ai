@@ -3,6 +3,8 @@ title = 'Notes with AI'
 languageCode = 'en-us'
 defaultContentLanguage = 'en'
 hasCJKLanguage = true
+enableGitInfo = true
+enableInlineShortcodes = true
 
 [module]
 [[module.imports]]
@@ -20,6 +22,7 @@ dir = ':cacheDir/images'
 [languages.ja]
   languageName = '日本語'
   weight = 2
+  title = 'AIと作るノート'
 
 [menu]
 [[menu.main]]
@@ -49,7 +52,15 @@ dir = ':cacheDir/images'
   [menu.main.params]
     icon = 'github'
 
+
 [params]
+# Display the last modification date
+displayUpdatedDate = true
+dateFormat = "January 2, 2006"
+
+# Display the author name of the last modified date
+displayUpdatedAuthor = false
+
 [params.navbar]
   displayTitle = true
   displayLogo = true
