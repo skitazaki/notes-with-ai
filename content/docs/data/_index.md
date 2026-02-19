@@ -56,8 +56,6 @@ Data Sharing enables controlled distribution and monetization of data assets acr
 
 **Objective:** Extend the value of data beyond internal analytics while maintaining trust, compliance, and control.
 
-Here is an enriched and structurally aligned version of your **Enablement Layer** section, keeping a consistent capability-oriented tone with the Value Layer.
-
 ## 2. Enablement Layer
 
 The Enablement Layer provides the technical and organizational foundations required to build scalable, reliable, and evolvable data systems.
