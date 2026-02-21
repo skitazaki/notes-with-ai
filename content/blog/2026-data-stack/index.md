@@ -164,6 +164,8 @@ Transformation and orchestration:
 - **Apache Airflow** is a platform created by the community to programmatically author, schedule and monitor workflows. ([airflow.apache.org][10])
 - **Prefect** orchestrate workflows on top of Python framework. ([www.prefect.io][8])
 - **Dagster** is a unified control plane for teams to build, scale, and observe their AI & data pipelines with confidence. ([dagster.io][11])
+- **Qlik Talend**
+- **Alteryx**
 
 Streaming platforms:
 
@@ -191,7 +193,7 @@ Observability platforms frequently combine orchestration with metadata-driven au
 
 ### 4. Data Management
 
-As data volumes grow, management disciplines become critical.
+As data volumes and varieties grow, management disciplines become critical.
 
 See [Data Management](/docs/data/management) documentation page for more understandings.
 
@@ -307,6 +309,12 @@ Object storage (S3, GCS, Azure Blob) remains dominant with cloud-native policy f
 
 Governance is embedded across the stack rather than centralized.
 Practical governance depends less on tools and more on clear role definitions and review processes.
+
+Representative vendors include:
+
+- **Privacera** is a unified data access, security and governance platform for analytics and AI on top of Apache Ranger. ([privacera.com][22])
+- **Immuta** is a platform that orchestrates every aspect of data provisioning from policies to provisioning to continuous monitoring, automatically and safely. ([www.immuta.com][23])
+- **BigID** delivers a unified experience for security, compliance, governance, and privacy across data and AI in one platform. ([bigid.com][24])
 
 #### Policy Framework & Enforcement
 
@@ -492,3 +500,6 @@ Organizations that understand this balance are better positioned to operate stab
 [19]: https://datahub.com/ "DataHub | Modern Data Catalog & Metadata Platform"
 [20]: https://debezium.io/ "Debezium"
 [21]: https://nightlies.apache.org/flink/flink-cdc-docs-stable/ "Apache Flink CDC"
+[22]: https://privacera.com/ "Privacera - Data Security, Access Control, Privacy Compliance"
+[23]: https://www.immuta.com/ "Immuta - The Data Provisioning Company"
+[24]: https://bigid.com/ "BigID: Enterprise Data Security Platform for DSPM & AI"
