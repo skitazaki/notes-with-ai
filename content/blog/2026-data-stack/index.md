@@ -1,5 +1,5 @@
 ---
-date: "2026-02-21T11:00:00+09:00"
+date: "2026-02-22T10:00:00+09:00"
 title: "Data Stack in 2026"
 ---
 
@@ -214,6 +214,9 @@ See [Data Management](/docs/data/management) documentation page for more underst
 
 Data observability platforms often integrate with orchestration and metadata systems.
 
+A **data contract** is a document that defines the ownership, structure, semantics, quality, and terms of use for exchanging data between a data producer and their consumers. Think of an API, but for data ([datacontract.com][27]).
+**Open Data Contract Standard** (ODCS), hosted by the Linux Foundation under the Bitol project, defines the agreement between a data producer and consumers across several sections. ([bitol.io][29], [bitol-io.github.io][28])
+
 #### Master Data Management (MDM)
 
 MDM remains relevant for:
@@ -248,6 +251,8 @@ Representative solutions:
 - **Collibra** delivers a complete platform for data and AI governance, giving teams the visibility, control and confidence to turn data into a trusted asset. ([www.collibra.com][15])
 - **Alation** gives one powerful hub where cataloging, governance, lineage, and quality converge. ([www.alation.com][16])
 - **Atlan** is an active metadata platform for modern data teams, that helps them discover, understand, trust, and collaborate on data assets. ([atlan.com][17])
+- **Amazon DataZone** is a data management service that makes it faster and easier for customers to catalog, discover, share, and govern data stored across AWS, on premises, and third-party sources. ([aws.amazon.com][26])
+- **Workflow Data Fabric** (ServiceNow aquired data.world) connects data across systems, adds business context via a unified data catalog, and applies policy‑based governance controls. ([www.servicenow.com][25])
 - **OpenMetadata** is an open and unified metadata platform for data discovery, observability, and governance. ([open-metadata.org][18])
 - **DataHub** is an open-source data catalog for the modern data stack helping teams discover, understand, and govern their data assets. ([datahub.com][19])
 
@@ -258,6 +263,8 @@ Build vs. buy decisions here depend on:
 - Custom governance workflows
 
 Active metadata enables automated enforcement of data contracts and security policies.
+
+Data lineage is the foundation for a new generation of powerful, context-aware data tools and best practices. **OpenLineage** enables consistent collection of lineage metadata, creating a deeper understanding of how data is produced and used. ([openlineage.io][30])
 
 ### 5. Data Sources
 
@@ -279,6 +286,9 @@ Data collection patterns include:
 - Event-driven architectures
 - API-based ingestion
 - Batch file ingestion
+- Scraping; Web or gated sites
+- Hand pick and curation
+- License datasets management
 
 Tools vary by environment but often integrate directly with warehouse or streaming systems.
 
@@ -316,6 +326,8 @@ Representative vendors include:
 - **Immuta** is a platform that orchestrates every aspect of data provisioning from policies to provisioning to continuous monitoring, automatically and safely. ([www.immuta.com][23])
 - **BigID** delivers a unified experience for security, compliance, governance, and privacy across data and AI in one platform. ([bigid.com][24])
 
+Note that data catalog systems are listed under the Metadata Management section.
+
 #### Policy Framework & Enforcement
 
 Governance platforms often integrate with metadata systems to enforce policies at query time.
@@ -339,6 +351,7 @@ Common requirements:
 - Encryption at rest and in transit
 - Audit logging
 - Data masking and pseudonymization
+- Personally Identifiable Information (PII) data security
 - Differential access
 - Tokenization
 
@@ -503,3 +516,9 @@ Organizations that understand this balance are better positioned to operate stab
 [22]: https://privacera.com/ "Privacera - Data Security, Access Control, Privacy Compliance"
 [23]: https://www.immuta.com/ "Immuta - The Data Provisioning Company"
 [24]: https://bigid.com/ "BigID: Enterprise Data Security Platform for DSPM & AI"
+[25]: https://www.servicenow.com/platform/workflow-data-fabric.html "Workflow Data Fabric - ServiceNow"
+[26]: https://aws.amazon.com/datazone/ "Govern Analytics – Amazon DataZone – AWS"
+[27]: https://datacontract.com/ "Data Contracts: The Complete Guide to Data Contract Standards, Tools & Best Practices"
+[28]: https://bitol-io.github.io/open-data-contract-standard/latest/home/ "Open Data Contract Standard (ODCS) - Open Data Contract Standard"
+[29]: https://bitol.io/ "Bitol"
+[30]: https://openlineage.io/ "OpenLineage"

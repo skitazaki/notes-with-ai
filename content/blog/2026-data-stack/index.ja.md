@@ -1,5 +1,5 @@
 ---
-date: "2026-02-21T11:00:00+09:00"
+date: "2026-02-22T10:00:00+09:00"
 title: "2026年のデータスタック"
 ---
 
@@ -214,6 +214,9 @@ BIツールはUXと保守コストが高いため、内製されることはほ�
 
 データ可観測性プラットフォームは、オーケストレーションとメタデータシステムと統合されることがよくあります。
 
+データコントラクト（data contract）とは、データ提供者とその利用者の間でデータをやり取りする際の、所有権、構造、意味論、品質、利用条件を定義した文書です。APIのデータ版と考えると分かりやすいでしょう ([datacontract.com][27])。
+**Open Data Contract Standard** (ODCS) は、Linux Foundation の Bitol プロジェクトのもとでホストされており、複数のセクションにわたってデータ提供者と利用者の間の合意内容を定義しています ([bitol.io][29], [bitol-io.github.io][28]) 。
+
 #### マスターデータ管理（MDM）
 
 マスターデータ管理（Master Data Management、MDM）は、以下の領域で引き続き重要です。
@@ -248,6 +251,8 @@ BIツールはUXと保守コストが高いため、内製されることはほ�
 - **Collibra** はデータとAIのガバナンスを統合的に提供し、可視性、統制、信頼性を高めます。([www.collibra.com][15])
 - **Alation** は、カタログ／ガバナンス／リネージ／品質を一つのハブに統合します。([www.alation.com][16])
 - **Atlan** は、データ資産の発見／理解／信頼／コラボレーションを支援するアクティブメタデータプラットフォームです。([atlan.com][17])
+- **Amazon DataZone** は、AWS、オンプレミス、サードパーティのデータソースに保存されたデータを、より迅速かつ容易にカタログ化、検索、共有、ガバナンスできるようにするデータ管理サービスです。 ([aws.amazon.com][26])
+- **Workflow Data Fabric** (ServiceNow が data.worldを買収) は、システム間のデータを接続し、統合データカタログを通じてビジネスコンテキストを付加し、ポリシーベースのガバナンス制御を適用します。 ([www.servicenow.com][25])
 - **OpenMetadata** は、データ発見／可観測性／ガバナンスのためのオープンかつ統合的なメタデータプラットフォームです。([open-metadata.org][18])
 - **DataHub** はOSSのデータカタログで、データ資産の発見／理解／ガバナンスを支援します。([datahub.com][19])
 
@@ -258,6 +263,9 @@ BIツールはUXと保守コストが高いため、内製されることはほ�
 - カスタムガバナンスワークフロー
 
 アクティブメタデータは、データコントラクトやセキュリティポリシーの自動的な強制を可能にします。
+
+データリネージは、強力でコンテキスト認識型の新世代データツールおよびベストプラクティスの基盤です。
+**OpenLineage** は、リネージメタデータの一貫した収集を可能にし、データがどのように生成され、利用されているかについてのより深い理解を生み出します。 ([openlineage.io][30])
 
 ### 5. データソース
 
@@ -279,6 +287,9 @@ BIツールはUXと保守コストが高いため、内製されることはほ�
 - イベント駆動アーキテクチャ
 - APIベースの取り込み
 - バッチファイル取り込み
+- スクレイピング（Webサイトやアクセス制限のあるサイト）
+- 手動選定およびキュレーション
+- ライセンスデータセット管理
 
 ツールは環境によって異なりますが、ウェアハウスやストリーミングシステムと直接統合されることが多いです。
 
@@ -316,6 +327,8 @@ BIツールはUXと保守コストが高いため、内製されることはほ�
 - **Immuta** は、ポリシーからプロビジョニング、継続的な監視まで、データ提供の全過程を自動かつ安全にオーケストレーションするプラットフォームです。([www.immuta.com][23])
 - **BigID** は、データとAIに対するセキュリティ／コンプライアンス／ガバナンス／プライバシーを一つのプラットフォームで提供します。([bigid.com][24])
 
+データカタログシステムは、メタデータ管理セクションに記載しています。
+
 #### ポリシーフレームワークと強制
 
 ポリシーフレームワークは、ガバナンスプラットフォームやメタデータシステムと統合し、クエリ実行時にポリシーを強制することがよくあります。
@@ -339,6 +352,7 @@ BIツールはUXと保守コストが高いため、内製されることはほ�
 - 保存時および転送時の暗号化
 - 監査ログ
 - データマスキングと仮名化
+- 個人識別情報（PII）データのセキュリティ
 - 差分アクセス
 - トークナイゼーション
 
@@ -502,3 +516,9 @@ BIツールはUXと保守コストが高いため、内製されることはほ�
 [22]: https://privacera.com/ "Privacera - Data Security, Access Control, Privacy Compliance"
 [23]: https://www.immuta.com/ "Immuta - The Data Provisioning Company"
 [24]: https://bigid.com/ "BigID: Enterprise Data Security Platform for DSPM & AI"
+[25]: https://www.servicenow.com/platform/workflow-data-fabric.html "Workflow Data Fabric - ServiceNow"
+[26]: https://aws.amazon.com/datazone/ "Govern Analytics – Amazon DataZone – AWS"
+[27]: https://datacontract.com/ "Data Contracts: The Complete Guide to Data Contract Standards, Tools & Best Practices"
+[28]: https://bitol-io.github.io/open-data-contract-standard/latest/home/ "Open Data Contract Standard (ODCS) - Open Data Contract Standard"
+[29]: https://bitol.io/ "Bitol"
+[30]: https://openlineage.io/ "OpenLineage"
