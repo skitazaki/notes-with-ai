@@ -99,9 +99,9 @@ Becomes fragmented and costly; analytics trust erodes.
 
 ---
 
-### 3. Hub-and-Spoke
+### 3. Federated Model
 
-(Federated Model)
+(Hub-and-Spoke)
 
 This is the most common enterprise pattern.
 
@@ -109,8 +109,6 @@ This is the most common enterprise pattern.
 
 - **Central Platform Team (Hub)**: owns infrastructure, governance, standards, shared tooling.
 - **Domain Data Teams (Spokes)**: embedded in business units, own transformation, analytics, domain models.
-
-This model aligns closely with ideas popularized in domain-oriented architectures such as Data Mesh.
 
 **When It Works**
 
@@ -138,15 +136,17 @@ Hub becomes controlling; spokes bypass it.
 
 ---
 
-### 4. Data Mesh-Inspired Domain Ownership
+### 4. Domain Ownership
+
+(Data Mesh-Inspired)
+
+This is an evolution of hub-and-spoke, with stronger domain accountability.
 
 **Structure**
 
 - Domains own their data as products.
 - Platform provides self-serve infrastructure.
 - Governance is federated.
-
-This is an evolution of hub-and-spoke, with stronger domain accountability.
 
 **When It Works**
 
@@ -177,6 +177,8 @@ Becomes “data mesh theater” — new labels, same silos.
 
 ### 5. Platform-Centric Model
 
+Domain teams consume platform services but do not own heavy data engineering.
+
 **Structure**
 
 Strong central data platform team:
@@ -186,8 +188,6 @@ Strong central data platform team:
 - Observability
 - AI/ML infrastructure
 - Self-service analytics environment
-
-Domain teams consume platform services but do not own heavy data engineering.
 
 **When It Works**
 
@@ -250,8 +250,6 @@ Often layered on top of another model.
 
 ### 7. Hybrid AI-Augmented Model
 
-(Emerging Pattern 2026+)
-
 Increasingly, organizations are restructuring around:
 
 - Data Platform Team
@@ -278,20 +276,20 @@ The model becomes less about “who writes SQL” and more about:
 Instead of asking “Which model is best?”, ask:
 
 1. **What is our primary constraint?**
-   - Governance?
-   - Speed?
-   - Talent?
-   - Platform maturity?
+   - Governance
+   - Speed
+   - Talent
+   - Platform maturity
 2. **What is our organizational topology?**
-   - Functional?
-   - Product-based?
-   - Geographic?
-   - Domain-driven?
+   - Functional
+   - Product-based
+   - Geographic
+   - Domain-driven
 3. **What is our data maturity level?**
-   - Reporting-focused?
-   - Self-serve analytics?
-   - ML-enabled?
-   - AI-native?
+   - Reporting-focused
+   - Self-serve analytics
+   - ML-enabled
+   - AI-native
 
 ### Organizational Design Dimensions
 
@@ -305,16 +303,16 @@ Regardless of pattern, large organizations must define clearly:
 
 **Funding Model**
 
-- Central budget?
-- Chargeback?
-- Domain P&L?
-- Platform tax?
+- Central budget
+- Chargeback
+- Domain P&L
+- Platform tax
 
 **Governance Model**
 
-- Command-and-control?
-- Federated?
-- Policy-as-code?
+- Command-and-control
+- Federated
+- Policy-as-code
 
 **Career Path**
 
@@ -335,7 +333,7 @@ Most large organizations evolve in stages:
 
 Trying to “jump” directly to a data mesh model without platform maturity usually fails.
 
-## Key Insight
+### Key Insight
 
 Data team design is not a technical problem.
 It is an **organizational architecture problem** involving:
