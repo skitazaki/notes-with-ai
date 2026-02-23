@@ -42,6 +42,8 @@ The CDO typically:
 
 The CDO operates at the intersection of business leadership, technology leadership, and compliance.
 
+---
+
 ### Chief Technology Officer (CTO)
 
 The Chief Technology Officer is responsible for the overall technology strategy, including systems that store, process, and serve data.
@@ -54,6 +56,8 @@ Primary focus:
 - Technology risk
 
 While the CDO focuses on data as an asset, the CTO focuses on the technical environment in which that data lives. Effective coordination between these roles ensures that governance requirements and technical realities remain aligned.
+
+---
 
 ### Data and Analytics Manager
 
@@ -84,6 +88,8 @@ Responsibilities include:
 Data Architects provide the blueprint that enables scalable and coherent data ecosystems.
 For example, a data architect defines how customer data is represented consistently across systems. The emphasis is on structure, standards, and long-term maintainability.
 
+---
+
 ### Platform Engineer
 
 The Platform Engineer builds and maintains the infrastructure that supports data workloads.
@@ -96,6 +102,8 @@ Primary focus:
 - Performance management
 
 This role ensures that data systems are operationally stable and scalable.
+
+---
 
 ### Database Administrator (DBA)
 
@@ -127,6 +135,8 @@ Typical responsibilities:
 Data engineers ensure that data is delivered in a consistent and operationally sound manner.
 For example, a data engineer ensures that transactional system data is reliably processed and made available for reporting or analytics.
 
+---
+
 ### Analytics Engineer
 
 Analytics Engineers operate between data engineering and analytics. They focus on transforming raw data into structured, analysis-ready datasets aligned with business definitions.
@@ -139,6 +149,8 @@ Responsibilities include:
 - Improving consistency across reports
 
 This role reduces fragmentation in definitions and supports reusable analytical foundations, while improving clarity and consistency in reporting environments.
+
+---
 
 ### ML Engineer
 
@@ -153,6 +165,8 @@ Typical responsibilities:
 
 This role ensures that predictive models move from experimentation to dependable operational components.
 If a data scientist builds a predictive model, a ML engineer ensures it runs reliably within operational systems.
+
+---
 
 ### AI Engineer
 
@@ -185,6 +199,8 @@ Responsibilities often include:
 Data analysts translate structured data into insights that inform decisions.
 For example, a data analyst may evaluate customer retention trends and present findings to operational teams.
 
+---
+
 ### Business Analyst
 
 Business Analysts bridge operational teams and technical teams. They focus on clarifying requirements, metrics, and processes.
@@ -198,6 +214,8 @@ Typical responsibilities:
 
 While data analysts work primarily with data, business analysts focus primarily on business processes and interpretation.
 
+---
+
 ### Data Scientist
 
 Data Scientists apply statistical and computational methods to extract patterns and build predictive or inferential models.
@@ -210,6 +228,8 @@ Their work typically involves:
 - Evaluating model performance with statistical validation
 
 Data scientists often work on forecasting, classification, or optimization problems that go beyond descriptive reporting.
+
+---
 
 ### Statistician
 
@@ -240,6 +260,8 @@ Primary focus:
 
 The Data Owner holds decision authority over how data within a domain is used.
 
+---
+
 ### Data Steward
 
 A Data Steward is accountable for the definition, quality, and proper use of specific data domains (e.g., customer, product, finance). They ensure that shared data assets are consistent, accurate, and well-documented.
@@ -253,6 +275,8 @@ Typical responsibilities include:
 
 Data stewardship formalizes ownership at the domain level and supports long-term trust.
 If a metric definition changes, the Data Steward ensures the change is documented and consistently applied.
+
+---
 
 ### Security and Compliance Officers
 
