@@ -52,8 +52,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
       - name: Install Node.js dependencies
-        run: '[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true'
+        run: '[[ -f pnpm-lock.yaml ]] && pnpm install || true'
       - name: Cache Restore
         id: cache-restore
         uses: actions/cache/restore@v4
