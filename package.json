@@ -21,9 +21,6 @@
     "url": "https://github.com/skitazaki/notes-with-ai/issues"
   },
   "homepage": "https://github.com/skitazaki/notes-with-ai",
-  "lint-staged": {
-    "*": "oxfmt --no-error-on-unmatched-pattern"
-  },
   "devDependencies": {
     "oxfmt": "^0.48.0"
   }
