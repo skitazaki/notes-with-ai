@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "server": "hugo server --minify",
-    "format": "prettier --write .",
-    "lint": "prettier --check ."
+    "format": "oxfmt .",
+    "lint": "oxfmt --check ."
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,10 @@
     "url": "https://github.com/skitazaki/notes-with-ai/issues"
   },
   "homepage": "https://github.com/skitazaki/notes-with-ai",
+  "lint-staged": {
+    "*": "oxfmt --no-error-on-unmatched-pattern"
+  },
   "devDependencies": {
-    "prettier": "^3.7.4"
+    "oxfmt": "^0.48.0"
   }
 }
