@@ -1,0 +1,24 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": false,
+  "singleQuote": false,
+  "trailingComma": "all",
+  "arrowParens": "always",
+  "printWidth": 120,
+  "tabWidth": 2,
+  "sortPackageJson": false,
+  "ignorePatterns": [
+    "public",
+    "resources",
+    "node_modules",
+    "go.sum",
+    "go.mod",
+    "pnpm-lock.yaml",
+    "package.json",
+    ".DS_Store",
+    "*.lock",
+    "vendor/",
+    "Godeps/",
+    "layouts/shortcodes/codefile.html"
+  ]
+}

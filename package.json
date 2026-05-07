@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "server": "hugo server --minify",
-    "format": "prettier --write .",
-    "lint": "prettier --check ."
+    "format": "oxfmt .",
+    "lint": "oxfmt --check ."
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/skitazaki/notes-with-ai",
   "devDependencies": {
-    "prettier": "^3.7.4"
+    "oxfmt": "^0.48.0"
   }
 }

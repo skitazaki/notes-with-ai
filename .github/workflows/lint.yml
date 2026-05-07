@@ -1,4 +1,4 @@
-name: Prettier
+name: Oxfmt
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  prettier:
+  oxfmt:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,10 +17,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version-file: '.node-version'
+          node-version-file: ".node-version"
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
       - name: Install dependencies
         run: pnpm install
-      - name: Run Prettier for linting
-        run: pnpm run lint
+      - name: Run oxfmt check
+        run: pnpm exec oxfmt --check .

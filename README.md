@@ -53,13 +53,13 @@ Once you finish a writing, change `draft` value to `false` in front matter.
 
 ### Format Markdown files
 
-This project uses Prettier in order to format Markdown files.
+This project uses Oxfmt to format supported files, including Markdown.
 
 ```bash
 pnpm run format
 ```
 
-It runs for every pull request on GitHub Actions.
+Formatting is checked on every pull request in GitHub Actions.
 
 ### Site Design
 
