@@ -4,7 +4,7 @@ resources
 node_modules
 go.sum
 go.mod
-package-lock.json
+pnpm-lock.yaml
 package.json
 .DS_Store
 *.lock

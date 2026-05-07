@@ -30,7 +30,7 @@ created between human-driven exploration and AI assistance.
 Run `hugo` development server on a local machine.
 
 ```bash
-npm run server
+pnpm run server
 ```
 
 Go to `http://localhost:1313/` with your web browser.
@@ -56,7 +56,7 @@ Once you finish a writing, change `draft` value to `false` in front matter.
 This project uses Prettier in order to format Markdown files.
 
 ```bash
-npm run format
+pnpm run format
 ```
 
 It runs for every pull request on GitHub Actions.

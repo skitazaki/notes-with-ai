@@ -15,6 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "packageManager": "pnpm@10.33.2",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/skitazaki/notes-with-ai/issues"

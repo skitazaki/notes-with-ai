@@ -17,8 +17,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '25'
+          node-version-file: '.node-version'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
       - name: Run Prettier for linting
-        run: npm run lint
+        run: pnpm run lint
