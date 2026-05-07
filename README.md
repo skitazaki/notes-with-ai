@@ -27,6 +27,14 @@ created between human-driven exploration and AI assistance.
 
 ## Writer's Guide
 
+### Install dependencies
+
+Install Hugo on macOS with Homebrew Bundle.
+
+```bash
+brew bundle install
+```
+
 Run `hugo` development server on a local machine.
 
 ```bash
