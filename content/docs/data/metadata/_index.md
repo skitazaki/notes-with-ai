@@ -9,7 +9,7 @@ Metadata describes data about data. It provides the structural, operational, and
 
 Metadata acts as a coordination mechanism across data engineering, architecture, analytics, governance, and platform operations. Without metadata, data assets remain technically present but operationally opaque: teams struggle to discover relevant datasets, definitions drift across domains, lineage becomes unclear, and automation is limited.
 
-Metadata is therefore not only documentation. It is an operational asset that supports transparency, consistency, and machine-assisted control across the data ecosystem.
+Metadata is therefore more than documentation. It is an operational asset that supports transparency, consistency, and machine-assisted control across the data ecosystem.
 
 ## Why Metadata Matters
 
@@ -125,8 +125,6 @@ Important capabilities include:
 - **Governance integration** so metadata reflects real accountability and policy state
 - **Feedback loops** that incorporate usage, incidents, and quality events
 
-Metadata quality matters. Incomplete or stale metadata rapidly becomes ignored. For metadata to remain useful, ownership and refresh mechanisms must be explicit.
-
 ### Data Classification and Access Control
 
 Data classification and access control are foundational operating capabilities because metadata is what makes controlled access scalable and explainable.
@@ -190,6 +188,8 @@ In practice, metadata supports these concerns by:
 - **Connecting technical effort to ROI** by clarifying which assets justify investment, remediation, or retirement
 
 This matters because data estates tend to grow faster than the discipline used to manage them. Without metadata, cost reduction can become indiscriminate, observability remains fragmented, and ROI discussions rely on anecdote rather than evidence. With metadata, teams can optimize spend more precisely, prioritize reliability where it matters most, and evaluate whether data products and platforms are producing durable organizational value.
+
+Across all of these capabilities, metadata quality remains decisive. Incomplete, inconsistent, or stale metadata is quickly ignored by both people and systems. For metadata to remain useful, ownership, refresh mechanisms, and quality expectations must be explicit.
 
 ## Future Directions
 
