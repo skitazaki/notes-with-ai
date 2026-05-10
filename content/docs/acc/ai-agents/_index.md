@@ -26,6 +26,37 @@ An agent may act:
 
 These modes should not be conflated. "Acting for a user" is not enough as a trust model. Systems must record who delegated what, for how long, to which tools, and under which policy constraints.
 
+### Principal versus subject under delegation
+
+Delegation creates an important distinction between the principal that is currently executing and the subject whose authority or business intent is being referenced.
+
+In a direct human request, these are often the same. Alice signs in, requests access to a document, and the policy engine evaluates Alice as both the executing principal and the subject of the access rule. In an agent workflow, however, the agent may become the executing principal while Alice remains the subject whose delegation, task scope, approval state, or data ownership relationship must still be considered.
+
+That distinction matters because different control questions attach to each identity:
+
+- **Principal** answers: who is making the live call, holding the credential, invoking the tool, and producing side effects right now?
+- **Subject** answers: on whose behalf is the action being considered, whose entitlements are relevant, and whose approvals or constraints should the policy reference?
+
+If a system collapses principal and subject into one field, it becomes hard to answer whether the action was performed by the user directly, by an agent using delegated authority, or by a service acting under its own standing privileges. That ambiguity weakens auditability and can hide confused-deputy failures.
+
+For delegated agent flows, policy evaluation should usually preserve both identities explicitly. The principal may be `agent://research-assistant/session-123`, while the subject may be `user://alice`, with additional context such as task scope, delegation expiry, approved tools, and resource sensitivity.
+
+```mermaid
+flowchart LR
+	U[User / Delegator] -->|defines task and grants bounded delegation| A[AI Agent]
+	A -->|requests tool action with agent credential| PEP[Policy Enforcement Point]
+	PEP -->|sends principal, subject, task scope, resource, action| PDP[Policy Decision Point]
+	PDP -->|principal = agent identity| C1[Execution Context]
+	PDP -->|subject = delegating user or business owner| C2[Delegation Context]
+	PDP -->|checks policy, approvals, expiry, tool scope| D{Allow?}
+	D -->|yes| T[Tool / Target System]
+	D -->|no| X[Deny and log]
+	T --> L[Audit Log]
+	X --> L
+```
+
+In practice, this means logs and policy inputs should retain at least five fields: executing principal, delegated subject, target resource, requested action, and delegation constraints. Without that structure, post-incident reconstruction becomes unnecessarily difficult.
+
 ### Key risk areas
 
 - **Prompt injection** can alter tool use or data interpretation.

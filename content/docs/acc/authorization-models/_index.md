@@ -18,12 +18,12 @@ Classical models such as DAC and MAC still matter conceptually, but modern enter
 
 ### Model overview
 
-- **DAC**: resource owners grant access. Useful in collaborative systems, weak for centralized governance.
-- **MAC**: labels and clearance levels are centrally enforced. Strong for regulated environments, rigid for fast-changing business systems.
-- **RBAC**: permissions map to roles, roles map to principals. Easy to explain, vulnerable to role explosion.
-- **ABAC**: decisions use attributes about subject, resource, action, and environment. Flexible, but policy sprawl is a risk.
-- **ReBAC**: access depends on graph relationships such as owner, viewer, approver, or team member. Strong for collaborative and multi-tenant products.
-- **PBAC**: policy logic is expressed in a dedicated system or language and evaluated independently of application code.
+- **DAC (Discretionary Access Control)**: resource owners grant access. Useful in collaborative systems, weak for centralized governance.
+- **MAC (Mandatory Access Control)**: labels and clearance levels are centrally enforced. Strong for regulated environments, rigid for fast-changing business systems.
+- **RBAC (Role-Based Access Control)**: permissions map to roles, roles map to principals. Easy to explain, vulnerable to role explosion.
+- **ABAC (Attribute-Based Access Control)**: decisions use attributes about subject, resource, action, and environment. Flexible, but policy sprawl is a risk.
+- **ReBAC (Relationship-Based Access Control)**: access depends on graph relationships such as owner, viewer, approver, or team member. Strong for collaborative and multi-tenant products.
+- **PBAC (Policy-Based Access Control)**: policy logic is expressed in a dedicated system or language and evaluated independently of application code.
 
 ### RBAC versus ABAC
 
