@@ -13,7 +13,7 @@ weight = 2
 推奨する読書順は次のとおりです。
 
 1. ビジョンと原則
-2. ランドスケープと分類体系
+2. 全体像と分類体系
 3. 人のアイデンティティ、認可モデル、ワークロード ID、AI エージェント制御
 4. 多層防御とガバナンス
 5. パターン、脅威モデル、設計トレードオフ、参照アーキテクチャ
@@ -28,7 +28,7 @@ weight = 2
 
 {{< cards >}}
 {{< card link="vision/" title="ビジョンと原則" icon="sparkles" subtitle="アイデンティティ中心のセキュリティを支える北極星" >}}
-{{< card link="landscape/" title="ランドスケープ概要" icon="document-text" subtitle="アクセス制御の全体像と分類" >}}
+{{< card link="landscape/" title="アクセス制御の全体像" icon="document-text" subtitle="アクセス制御の全体像と分類体系" >}}
 {{< card link="human-identity/" title="人のアイデンティティとエンタープライズ IAM" icon="users" subtitle="ライフサイクル、連携、PAM、統制" >}}
 {{< card link="authorization-models/" title="認可モデルとポリシーシステム" icon="shield-check" subtitle="DAC、MAC、RBAC、ABAC、ReBAC、PBAC とポリシー評価" >}}
 {{< card link="workload-identity/" title="ワークロードとマシン ID" icon="document-text" subtitle="分散システムにおけるマシン間信頼" >}}

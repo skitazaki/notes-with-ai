@@ -31,6 +31,28 @@ RBAC is operationally attractive when responsibilities are stable. It becomes br
 
 The tradeoff is not simply static versus dynamic. It is administrative simplicity versus decision precision.
 
+### Entitlement versus capability
+
+Entitlements and capabilities are related, but they are not interchangeable.
+
+An **entitlement** is a granted permission structure within an administrative model. It often appears as a role assignment, group membership, policy grant, or standing permission that tells the system what a principal is generally allowed to do. Entitlements are useful for durable operating models because they align with organization structure, job function, ownership, and review workflows.
+
+A **capability** is a bounded authority to perform a specific operation under specific conditions. It is often narrower, more contextual, and more suitable for delegation than a standing entitlement. Capabilities are frequently scoped by resource, time window, tool, transaction type, or task boundary.
+
+In practice, the distinction often looks like this:
+
+- **Entitlement**: "Alice belongs to the finance-approver role."
+- **Capability**: "This agent may approve invoice 12345 for the next 10 minutes using only the payment-review tool."
+
+That difference matters architecturally:
+
+- Entitlements are usually designed for administration, review, and long-lived governance.
+- Capabilities are usually designed for execution, delegation, and tight blast-radius control.
+- Entitlements answer what a principal is broadly allowed to do.
+- Capabilities answer what this principal may do right now, on this target, within these limits.
+
+Systems often need both. An entitlement may establish the baseline authority to request or receive a capability, while the capability constrains the actual runtime action. This pattern is especially important for privileged operations, workflow approvals, service-to-service calls, and AI-agent delegation.
+
 ### Policy engines and evaluation flow
 
 Modern policy systems often separate:
