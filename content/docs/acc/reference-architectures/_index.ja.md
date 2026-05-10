@@ -8,38 +8,38 @@ next = '/docs/acc/concept-dictionary'
 
 参照アーキテクチャは万能の設計図ではありません。原則、制御、トレードオフが現実的な環境でどう組み合わさるかを示す、調整済みの例です。
 
-## Executive Summary
+## 概要
 
 繰り返し現れる代表的な 3 パターンがあります。
 
-- federation、PAM、governance を中核に据えた workforce architecture
-- workload identity と policy enforcement を中核に据えた cloud-native platform architecture
-- constrained delegation と approval boundary を中核に据えた AI-agent architecture
+- フェデレーション、PAM、ガバナンスを中核に据えた従業員向けアーキテクチャ
+- ワークロードアイデンティティとポリシー適用を中核に据えたクラウドネイティブ基盤アーキテクチャ
+- 制約付き委譲と承認境界を中核に据えた AI エージェントアーキテクチャ
 
 これらの例は、単一制御だけを最適化するのではなく、システム境界をまたいで全体を考える助けになります。
 
-## Core Concepts
+## 主要概念
 
-### Enterprise workforce architecture
+### 従業員向けアーキテクチャ
 
-authoritative HR が lifecycle event を identity platform に供給します。federation は社内アプリと SaaS への SSO を提供します。MFA と conditional access が assurance を高めます。高感度な管理経路は JIT elevation を伴う PAM を使います。governance system は access review と SoD check を回します。SIEM は identity、policy、privileged session のイベントを収集します。
+信頼できる HR システムがライフサイクルイベントをアイデンティティ基盤に供給します。フェデレーションは社内アプリと SaaS への SSO を提供します。MFA と条件付きアクセスが保証水準を高めます。高感度な管理経路は JIT 権限昇格を伴う PAM を使います。ガバナンスシステムはアクセスレビューと職務分掌チェックを回します。SIEM はアイデンティティ、ポリシー、特権セッションのイベントを収集します。
 
-### Cloud-native service architecture
+### クラウドネイティブサービスアーキテクチャ
 
-開発者は platform-issued identity を持つ workload を配備します。service mesh や gateway が mTLS と service policy を検証します。細粒度認可はアプリまたは policy engine 層で行います。シークレットは最小化し、ephemeral credential を優先します。observability system は service identity、deployment metadata、access decision を相関します。
+開発者は基盤発行のアイデンティティを持つワークロードを配備します。サービスメッシュやゲートウェイが mTLS とサービスポリシーを検証します。細粒度認可はアプリまたはポリシーエンジン層で行います。シークレットは最小化し、短命資格情報を優先します。可観測性システムはサービスアイデンティティ、デプロイメタデータ、アクセス判断を相関します。
 
-### AI-agent architecture
+### AI エージェントアーキテクチャ
 
-エージェントには常在の user privilege ではなく、task-bounded capability を与えます。tool call は policy check を通ります。memory は tenant と task class で分割します。高リスク操作は approval または cryptographic delegation を要求します。decision log には user intent、delegated scope、selected tool、outcome を残します。
+エージェントには常在の利用者権限ではなく、タスク境界付きの権能を与えます。ツール呼び出しはポリシーチェックを通ります。メモリはテナントとタスク区分で分割します。高リスク操作は承認または暗号的委譲を要求します。判断ログには利用者の意図、委譲範囲、選択されたツール、結果を残します。
 
-## Implementation and Operations
+## 実装と運用
 
 ### これらに共通する点
 
-- 明示的な trust boundary
-- identity issuance と authorization decision の分離
-- 短命または revocable な資格情報
-- 分散 enforcement を支える中央ガバナンス
-- 復元と封じ込めに使える decision record
+- 明示的な信頼境界
+- アイデンティティ発行と認可判断の分離
+- 短命または取り消し可能な資格情報
+- 分散適用を支える中央ガバナンス
+- 復元と封じ込めに使える判断記録
 
-参照アーキテクチャが最も役立つのは、規制負荷、latency 許容度、チーム成熟度といったローカル制約に合わせて調整されるときであり、機械的にコピーされるときではありません。
+参照アーキテクチャが最も役立つのは、規制負荷、遅延許容度、チーム成熟度といったローカル制約に合わせて調整されるときであり、機械的にコピーされるときではありません。

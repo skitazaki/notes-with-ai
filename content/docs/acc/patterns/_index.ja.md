@@ -6,45 +6,45 @@ prev = '/docs/acc/governance'
 next = '/docs/acc/threat-models'
 +++
 
-アーキテクチャパターンは、繰り返し現れる enforcement と trust distribution の問題に対する再利用可能な答えです。
+アーキテクチャパターンは、繰り返し現れる適用と信頼分配の問題に対する再利用可能な答えです。
 
-## Executive Summary
+## 概要
 
-パターンが重要なのは、アクセス制御が個別アルゴリズムの品質よりも、統合点で失敗しやすいからです。再利用可能なパターンは、policy がどこにあり、判断がどう伝播し、どこで trust assumption が危険になるかを整理する助けになります。
+パターンが重要なのは、アクセス制御が個別アルゴリズムの品質よりも、統合点で失敗しやすいからです。再利用可能なパターンは、ポリシーがどこにあり、判断がどう伝播し、どこで信頼前提が危険になるかを整理する助けになります。
 
-## Core Concepts
+## 主要概念
 
-### Centralized authorization
+### 集中型認可
 
-中央の policy service が多数のアプリケーションの判断を行います。一貫性とガバナンスは強まりますが、latency、availability、policy distribution が論点になります。
+中央のポリシーサービスが多数のアプリケーションの判断を行います。一貫性とガバナンスは強まりますが、遅延、可用性、ポリシー配布が論点になります。
 
-### Embedded authorization
+### 組み込み型認可
 
-アプリケーションがプロセス内でポリシーを評価します。自律性とローカル耐障害性は高まりますが、意味論が標準化されていないと policy drift を招きます。
+アプリケーションがプロセス内でポリシーを評価します。自律性とローカル耐障害性は高まりますが、意味論が標準化されていないとポリシードリフトを招きます。
 
-### Sidecar / service mesh enforcement
+### サイドカー / サービスメッシュ適用
 
-プロキシや sidecar が workload の近くで identity と粗粒度ポリシーを強制します。service-to-service 制御、mTLS、統一テレメトリには有効ですが、業務固有の認可は依然としてアプリ内ロジックが必要になりやすいです。
+プロキシやサイドカーがワークロードの近くでアイデンティティと粗粒度ポリシーを強制します。サービス間制御、mTLS、統一テレメトリには有効ですが、業務固有の認可は依然としてアプリ内ロジックが必要になりやすいです。
 
-### API gateway enforcement
+### API ゲートウェイ適用
 
-ゲートウェイは、認証、トークン検証、tenant routing、粗い rate control、広域 API policy に向きます。ただし高感度な業務認可をそこだけに押し込むべきではありません。
+ゲートウェイは、認証、トークン検証、テナントルーティング、粗いレート制御、広域 API ポリシーに向きます。ただし高感度な業務認可をそこだけに押し込むべきではありません。
 
 ### Multi-tenant / B2B federation パターン
 
-共有プラットフォームでは、tenant isolation、delegated administration、外部 identity federation、partner ごとの policy overlay が必要です。この領域では ReBAC と scoped delegation が重要になります。
+共有プラットフォームでは、テナント分離、委任管理、外部アイデンティティ連携、パートナーごとのポリシー上書きが必要です。この領域では ReBAC と範囲付き委譲が重要になります。
 
-## Implementation and Operations
+## 実装と運用
 
 ### パターン選択の基準
 
-- latency 許容度
-- consistency 要件
-- team autonomy モデル
-- auditability / explainability の要求
-- trust boundary の位置
-- policy rollout / rollback を運用できる成熟度
+- 遅延の許容度
+- 整合性要件
+- チーム自律性のモデル
+- 監査可能性 / 説明可能性の要求
+- 信頼境界の位置
+- ポリシー展開 / 巻き戻しを運用できる成熟度
 
 ### 実務的な推奨
 
-大規模システムの多くは最終的にハイブリッドになります。中央で policy semantics を定義し、enforcement は分散し、業務不変条件はアプリが確認します。重要なのは純粋性ではなく、責任分界を明示することです。
+大規模システムの多くは最終的にハイブリッドになります。中央でポリシー意味論を定義し、適用は分散し、業務不変条件はアプリが確認します。重要なのは純粋性ではなく、責任分界を明示することです。
