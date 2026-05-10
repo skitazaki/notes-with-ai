@@ -41,6 +41,8 @@ If a system collapses principal and subject into one field, it becomes hard to a
 
 For delegated agent flows, policy evaluation should usually preserve both identities explicitly. The principal may be `agent://research-assistant/session-123`, while the subject may be `user://alice`, with additional context such as task scope, delegation expiry, approved tools, and resource sensitivity.
 
+In this flow, a user delegates a bounded task to an AI agent, the agent request is enforced by a PEP, the PDP evaluates principal/subject plus delegation constraints, and every allow-or-deny outcome is recorded to the audit log.
+
 ```mermaid
 flowchart LR
 	U[User / Delegator] -->|defines task and grants bounded delegation| A[AI Agent]
