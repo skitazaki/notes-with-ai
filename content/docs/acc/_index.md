@@ -10,6 +10,8 @@ In modern systems, that question spans employees, customers, workloads, APIs, th
 This section is organized as a security architecture library rather than a single long report.
 It separates guiding principles, technical domains, operational controls, and reusable reference material so readers can move from strategy to implementation without losing the conceptual model.
 
+![Access Control Overview](access-control-overview-ChatGPT.png)
+
 The recommended reading flow is:
 
 1. Vision and principles
