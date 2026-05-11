@@ -40,7 +40,7 @@ Not all permissions should be granted through ordinary role assignment. Sensitiv
 - session recording or command logging
 - recurring access certification
 
-PAM sits at the intersection of identity, approval, and runtime monitoring. It should not be treated as a disconnected vault product.
+Privileged Access Management (PAM) sits at the intersection of identity, approval, and runtime monitoring. It should not be treated as a disconnected vault product.
 
 ## Implementation and Operations
 
@@ -60,7 +60,7 @@ That separation matters operationally. A team may use SAML or OpenID Connect for
 
 ### Operating PAM as a control plane
 
-Privileged Access Management (PAM) should be designed as a control plane for high-risk operations, not as a password locker alone. Effective PAM programs bind approval, JIT elevation, session recording, command logging, and revocation into one operating flow.
+PAM should be designed as a control plane for high-risk operations, not as a password locker alone. Effective PAM programs bind approval, JIT elevation, session recording, command logging, and revocation into one operating flow.
 
 In practice, that means privileged paths should use separate identities or elevation workflows, short-lived access grants, and strong post-use review. Break-glass accounts may still exist for recovery, but they should remain isolated from day-to-day administration and be governed like emergency controls rather than convenience shortcuts.
 
