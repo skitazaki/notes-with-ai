@@ -81,6 +81,12 @@ Promising patterns include capability-based delegation, ephemeral execution iden
 - Treat tool invocation as a policy enforcement point.
 - Log intent, prompt context class, selected tools, approvals, and outcomes.
 
+### PEP and PDP responsibilities
+
+The Policy Enforcement Point (PEP) is the component that intercepts the tool call, API request, or workflow step and turns it into an authorization request. The Policy Decision Point (PDP) is the component that evaluates the request against policy, delegation context, approvals, and resource state, then returns allow, deny, or sometimes conditional obligations.
+
+For agent systems, the PEP should sit as close as possible to the real side effect, not only at the chat interface. The PDP may be centralized, but the PEP must still pass the executing principal, delegated subject, tool name, resource, action, and task scope with enough fidelity that the decision remains reconstructable during review.
+
 ### A practical approval model
 
 Low-risk actions may be pre-authorized within a bounded policy. Medium-risk actions may require secondary checks such as data-classification validation or anomaly detection. High-risk actions such as privilege changes, production writes, or regulated data export should require explicit approval or cryptographic delegation.

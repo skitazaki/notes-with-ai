@@ -45,6 +45,12 @@ Shared platforms often need tenant isolation, delegated administration, external
 - trust boundary placement
 - operational maturity for policy rollout and rollback
 
+### Tenant and partner federation operations
+
+Multi-tenant and B2B federation patterns work best when tenant identity, partner identity, and platform operator identity remain distinct in both data model and policy evaluation. In practice that means tenant-scoped identifiers, issuer-aware claim mapping, delegated administration bounded to a tenant or partner boundary, and explicit handling for home-realm discovery plus partner onboarding.
+
+ReBAC often becomes important because partner access is rarely a flat role lookup. Policies may need to express that a reseller can administer only customers they sponsor, that a supplier can view only purchase orders tied to its own legal entity, or that a tenant admin may invite users but not cross tenant boundaries.
+
 ### Practical recommendation
 
 Most large systems end up hybrid: centralized policy semantics, distributed enforcement, and local application checks for business invariants. The important design choice is not purity. It is making the division of responsibility explicit.

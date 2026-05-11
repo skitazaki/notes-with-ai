@@ -75,6 +75,14 @@ Technologies such as OPA, Cedar, Zanzibar-inspired graph systems, and XACML-styl
 - Keep policy code versioned, tested, and reviewable like application code.
 - Design for explicit deny semantics where risk requires clear conflict resolution.
 
+### Choosing a policy-engine style
+
+OPA is a strong fit when teams want general-purpose policy-as-code and can manage policy distribution plus input shaping themselves. Cedar favors a smaller authorization-specific language and clear policy structure, which can reduce accidental complexity when the decision model is already well defined.
+
+Zanzibar-inspired graph systems are useful when permissions depend heavily on relationships such as parent-child resources, sharing links, delegated access, or tenant graphs. XACML-style engines are most common in environments that already depend on attribute-heavy policy models, centralized decision services, and standardized request-response formats.
+
+Regardless of engine choice, most systems still need a clear split between the Policy Decision Point and the enforcement path. The decision engine can evaluate policy centrally or locally, but the application, gateway, sidecar, or service that actually blocks or allows the request must preserve enough input context to make the result explainable.
+
 ### Scaling concerns
 
 At scale, the hard parts are usually not syntax. They are data freshness, cache invalidation, relationship graph consistency, and explaining why two similar requests produced different results.

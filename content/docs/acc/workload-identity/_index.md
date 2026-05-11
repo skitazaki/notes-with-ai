@@ -34,7 +34,17 @@ Short-lived, automatically issued credentials improve containment and observabil
 
 ### SPIFFE, SPIRE, and workload trust
 
-Frameworks such as SPIFFE/SPIRE formalize workload identity using standardized identifiers and issuance workflows. The architectural value is not only interoperability. It is the explicit binding of identity to a verifiable workload context.
+Workload trust is the idea that a system should trust a running software entity because it can prove what it is, not merely because it sits on a familiar network segment. That distinction matters in Kubernetes, multi-cloud, and auto-scaling environments where IP addresses, hosts, and runtime placement change constantly.
+
+SPIFFE, the Secure Production Identity Framework For Everyone, is the specification layer. It standardizes how workload identity is represented, most visibly through the SPIFFE ID URI format such as `spiffe://company.internal/payments/api`. The role of the identifier is similar to a login identifier for a human, except that it names a service, workload, or runtime identity inside a trust domain.
+
+SPIRE, the SPIFFE Runtime Environment, is the reference implementation that makes this practical. It attests nodes and workloads, decides whether a workload really is what it claims to be, and then issues short-lived identity documents. Those documents are usually X.509 SVIDs for mTLS or JWT-SVIDs for token-based cases, where SVID means SPIFFE Verifiable Identity Document.
+
+In practice, the flow looks like this: a pod or service starts, SPIRE verifies runtime evidence such as node, namespace, service account, or platform metadata, assigns a SPIFFE ID, and rotates short-lived credentials for the workload. Other services can then authenticate that workload cryptographically and make authorization decisions based on identity instead of IP location.
+
+This is why SPIFFE/SPIRE shows up frequently in zero-trust architectures, service meshes, and Kubernetes security designs. Systems such as Istio often rely on SPIFFE-form identities internally, which makes SPIFFE less of a niche feature and more of a general identity foundation for machine-to-machine trust.
+
+Official references: [SPIFFE home](https://spiffe.io/), [SPIFFE overview and specifications](https://spiffe.io/docs/latest/spiffe-about/overview/), [SPIRE project](https://spiffe.io/spire/).
 
 ## Implementation and Operations
 
@@ -45,6 +55,12 @@ Frameworks such as SPIFFE/SPIRE formalize workload identity using standardized i
 - Bind identities to platform evidence such as pod, namespace, cluster, image signature, or build provenance.
 - Separate authentication of the workload from authorization of its actions.
 - Rotate credentials automatically and monitor issuance anomalies.
+
+### SPIFFE and federation deployment choices
+
+SPIFFE and SPIRE are most useful when teams need portable workload identity across clusters, runtimes, or platforms instead of relying only on platform-specific service-account semantics. The strongest deployment pattern is to bind issuance to attestation evidence and keep credentials short-lived enough that compromise windows stay narrow.
+
+Workload federation can also use OIDC or OAuth tokens rather than certificates, especially when one cloud or CI system needs to assume identity in another environment. The operational question is less "certificate versus token" than whether issuance is short-lived, audience-bound, and tied to verifiable runtime evidence. In environments that already use a service mesh, SPIFFE-compatible identities often become the common layer that allows mTLS, policy checks, and telemetry correlation to line up.
 
 ### High-risk areas
 

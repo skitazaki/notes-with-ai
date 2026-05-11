@@ -48,6 +48,12 @@ Emergency access is necessary in real operations, but it must remain exceptional
 - runtime containment such as sandboxing and egress controls
 - SIEM integration and response playbooks
 
+### Operating break-glass safely
+
+Break-glass access should use isolated identities, narrowly pre-defined scopes, and short expiration that is enforced automatically rather than by operator memory. The request path should capture who invoked it, why normal access was insufficient, which systems were touched, and whether out-of-band approval was obtained.
+
+After use, the emergency grant should trigger immediate review, credential rotation where appropriate, and a root-cause check on why the standard control path failed. If break-glass becomes a frequent workflow, that is usually evidence that the normal access model or approval latency is broken.
+
 ### What to monitor
 
 - unusual elevation or token issuance
