@@ -2,7 +2,7 @@
 date = '2026-05-10T13:00:00+09:00'
 title = 'AI エージェントと自律的認可'
 weight = 6
-prev = '/docs/acc/workload-identity'
+prev = '/docs/acc/nonhuman-identity'
 next = '/docs/acc/defense-in-depth'
 +++
 
