@@ -1,24 +1,30 @@
 +++
 date = '2026-05-10T12:50:00+09:00'
-title = 'Workload & Machine Identity'
+title = 'Workload, Machine, and Non-Human Identity'
 weight = 5
 prev = '/docs/acc/authorization-models'
 next = '/docs/acc/ai-agents'
 +++
 
-Machine identity is now one of the fastest-growing parts of access-control architecture because modern systems contain far more services, workloads, pipelines, and devices than human operators.
+Identity for non-human actors is now one of the fastest-growing parts of access-control architecture because modern systems contain far more services, workloads, pipelines, devices, and agents than human operators.
 
 ## Executive Summary
 
-Workload identity answers a foundational trust question: how does one machine know what another machine is, and under what conditions should it trust it? Traditional answers relied heavily on static secrets and long-lived service accounts. Modern answers favor attestation, short-lived credentials, certificate-based identity, and tightly scoped service-to-service authorization.
+This domain needs three related but distinct terms. Non-human identity is the umbrella concept for managing every identity that does not belong to a person. Machine identity refers more broadly to the credentials and identifiers used by machines, services, devices, jobs, bots, and automation. Workload identity is the narrower concept of a dynamic identity bound to a running workload such as a pod, container, VM, function, job, or service instance.
 
-This domain spans Kubernetes, serverless platforms, CI/CD pipelines, APIs, service meshes, robotic automation, and IoT fleets. The security challenge is not only authenticating workloads. It is ensuring those workloads receive the minimum identity and capability required for their runtime role.
+Traditional designs relied heavily on static secrets and long-lived service accounts. Modern designs favor attestation, short-lived credentials, certificate-based identity, and tightly scoped service-to-service authorization. This domain spans Kubernetes, serverless platforms, CI/CD pipelines, APIs, service meshes, robotic automation, and IoT fleets. The security challenge is not only authenticating workloads. It is giving running workloads the minimum dynamic identity and capability required for their runtime role while governing the broader non-human identity estate.
 
 ## Core Concepts
 
-### Identity forms
+### Terminology boundaries
 
-Machine identity commonly appears as:
+- **Non-human identity**: the management lens for every identity that is not a human user, including services, workloads, CI/CD systems, robots, devices, agents, and other automation
+- **Machine identity**: the broader set of machine-used credentials and identifiers such as certificates, keys, tokens, service accounts, cloud roles, and device credentials
+- **Workload identity**: the dynamic identity of a running workload such as a pod, container, VM, function, job, or live service instance
+
+### Identity forms in practice
+
+In practice, machine identity and workload identity commonly appear as:
 
 - service accounts and cloud roles
 - X.509 certificates and mTLS identities
@@ -28,7 +34,7 @@ Machine identity commonly appears as:
 
 ### Why static secrets fail
 
-Long-lived shared secrets create large blast radius, weak attribution, and difficult rotation. They also obscure which workload is acting because multiple services may present the same credential.
+Long-lived shared secrets create large blast radius, weak attribution, and difficult rotation. They also obscure which workload is acting because multiple services may present the same credential. This is a machine-identity problem broadly, but it is especially damaging when the goal is workload identity tied to a live runtime context.
 
 Short-lived, automatically issued credentials improve containment and observability when combined with attestation, rotation, and policy checks tied to workload metadata.
 
@@ -70,4 +76,4 @@ Workload federation can also use OIDC or OAuth tokens rather than certificates, 
 - Kubernetes service accounts mounted into over-privileged workloads
 - Device fleets without revocation or attestation support
 
-The operational goal is to turn machine trust from a secret-distribution problem into an identity-and-policy problem.
+The operational goal is to turn machine trust from a secret-distribution problem into an identity-and-policy problem. Doing that well requires teams to keep machine identity, workload identity, and non-human identity conceptually separate instead of using them as interchangeable labels.

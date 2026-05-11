@@ -53,9 +53,17 @@ The bounded range within which a credential, permission, or delegated authority 
 
 The point across which assumptions about identity, control, or data handling must be re-evaluated.
 
+### Non-human identity
+
+The management concept for all identities that do not belong to people, including services, workloads, CI/CD systems, robots, devices, agents, and other automation.
+
+### Machine identity
+
+The broad category of credentials and identifiers used by machines, such as certificates, keys, tokens, service accounts, cloud roles, and device credentials.
+
 ### Workload identity
 
-The machine-verifiable identity of a running service, job, container, function, or device.
+The dynamic, machine-verifiable identity of a running workload such as a service, job, container, function, VM, or pod. It is part of machine identity, but narrower than it.
 
 ### Agent
 

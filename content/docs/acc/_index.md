@@ -33,7 +33,7 @@ Every document follows a similar shape:
 {{< card link="landscape/" title="Landscape Overview" icon="document-text" subtitle="Taxonomy of the access-control ecosystem" >}}
 {{< card link="human-identity/" title="Human Identity & Enterprise IAM" icon="users" subtitle="Lifecycle, federation, PAM, and governance" >}}
 {{< card link="authorization-models/" title="Authorization Models & Policy Systems" icon="shield-check" subtitle="DAC, MAC, RBAC, ABAC, ReBAC, PBAC, and policy engines" >}}
-{{< card link="workload-identity/" title="Workload & Machine Identity" icon="document-text" subtitle="Machine-to-machine trust in distributed systems" >}}
+{{< card link="workload-identity/" title="Workload, Machine, and Non-Human Identity" icon="document-text" subtitle="Machine credentials, dynamic runtime identity, and non-human identity" >}}
 {{< card link="ai-agents/" title="AI Agents & Autonomous Authorization" icon="document-text" subtitle="Agent identities, constrained execution, and approval boundaries" >}}
 {{< card link="defense-in-depth/" title="Defense-in-Depth Architecture" icon="document-text" subtitle="Layered controls across identity, network, runtime, and telemetry" >}}
 {{< card link="governance/" title="Governance, Compliance & Auditability" icon="document-text" subtitle="Evidence, explainability, entitlement governance, and regulation" >}}
