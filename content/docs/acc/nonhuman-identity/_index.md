@@ -42,7 +42,7 @@ Short-lived, automatically issued credentials improve containment and observabil
 
 Workload trust is the idea that a system should trust a running software entity because it can prove what it is, not merely because it sits on a familiar network segment. That distinction matters in Kubernetes, multi-cloud, and auto-scaling environments where IP addresses, hosts, and runtime placement change constantly.
 
-SPIFFE, the Secure Production Identity Framework For Everyone, is the specification layer. It standardizes how workload identity is represented, most visibly through the SPIFFE ID URI format such as `spiffe://company.internal/payments/api`. The role of the identifier is similar to a login identifier for a human, except that it names a service, workload, or runtime identity inside a trust domain.
+SPIFFE, the Secure Production Identity Framework for Everyone, is the specification layer. It standardizes how workload identity is represented, most visibly through the SPIFFE ID URI format such as `spiffe://company.internal/payments/api`. The role of the identifier is similar to a login identifier for a human, except that it names a service, workload, or runtime identity inside a trust domain.
 
 SPIRE, the SPIFFE Runtime Environment, is the reference implementation that makes this practical. It attests nodes and workloads, decides whether a workload really is what it claims to be, and then issues short-lived identity documents. Those documents are usually X.509 SVIDs for mTLS or JWT-SVIDs for token-based cases, where SVID means SPIFFE Verifiable Identity Document.
 

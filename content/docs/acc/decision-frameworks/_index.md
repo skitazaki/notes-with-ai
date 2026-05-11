@@ -40,7 +40,7 @@ Architectural choices such as RBAC versus ABAC, JWT versus opaque tokens, centra
 - Prefer reversible migration paths, such as adding contextual checks around existing RBAC.
 - Measure operational cost, not just theoretical expressiveness.
 
-### JWT versus opaque-token operating model
+### JWT versus opaque token operating model
 
 JWTs work well when many services need to verify tokens locally with low latency and limited dependence on a central introspection service. The tradeoff is that revocation, claim minimization, signing-key rotation, and audience discipline become critical because the token may be accepted by many components without a callback.
 

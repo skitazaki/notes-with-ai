@@ -42,7 +42,7 @@ next = '/docs/acc/ai-agents'
 
 ワークロード信頼とは、動いているソフトウェア実体を「どのネットワークにいるか」ではなく、「その実体が何者かを証明できるか」で信頼する考え方です。Kubernetes、マルチクラウド、オートスケール環境では IP アドレスや配置先が絶えず変わるため、IP ベース信頼だけでは破綻しやすくなります。
 
-SPIFFE は仕様です。正式には Secure Production Identity Framework For Everyone といい、ワークロード ID をどう表現するかを標準化します。代表例は `spiffe://company.internal/payments/api` のような SPIFFE ID で、人間にとってのログイン ID に近い役割を、サービスや Pod や実行中ワークロードに与えるイメージです。
+SPIFFE は仕様です。正式には Secure Production Identity Framework for Everyone といい、ワークロード ID をどう表現するかを標準化します。代表例は `spiffe://company.internal/payments/api` のような SPIFFE ID で、人間にとってのログイン ID に近い役割を、サービスや Pod や実行中ワークロードに与えるイメージです。
 
 SPIRE は実装です。SPIFFE Runtime Environment と呼ばれ、ノードやワークロードを attestation し、本当にそのワークロードなのかを確かめたうえで、短命な身分証を発行します。ここで発行されるのは、mTLS で使う X.509 SVID や、トークン用途で使う JWT-SVID です。SVID は SPIFFE Verifiable Identity Document、つまり SPIFFE 形式の検証可能な身分証です。
 
