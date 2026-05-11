@@ -33,7 +33,7 @@ weight = 2
 {{< card link="landscape/" title="アクセス制御の全体像" icon="document-text" subtitle="アクセス制御の全体像と分類体系" >}}
 {{< card link="human-identity/" title="人のアイデンティティとエンタープライズ IAM" icon="users" subtitle="ライフサイクル、連携、PAM、統制" >}}
 {{< card link="authorization-models/" title="認可モデルとポリシーシステム" icon="shield-check" subtitle="DAC、MAC、RBAC、ABAC、ReBAC、PBAC とポリシー評価" >}}
-{{< card link="workload-identity/" title="ワークロードとマシン ID" icon="document-text" subtitle="分散システムにおけるマシン間信頼" >}}
+{{< card link="nonhuman-identity/" title="ワークロード、マシン、非人間 ID" icon="document-text" subtitle="機械の認証情報、動的ワークロード ID、非人間 ID の整理" >}}
 {{< card link="ai-agents/" title="AI エージェントと自律的認可" icon="document-text" subtitle="エージェント ID、制約付き実行、承認境界" >}}
 {{< card link="defense-in-depth/" title="多層防御アーキテクチャ" icon="document-text" subtitle="ID、ネットワーク、ランタイム、可観測性をまたぐ防御" >}}
 {{< card link="governance/" title="ガバナンス、コンプライアンス、監査可能性" icon="document-text" subtitle="証跡、説明可能性、権限統制、規制対応" >}}

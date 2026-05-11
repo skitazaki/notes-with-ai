@@ -40,7 +40,7 @@ Not all permissions should be granted through ordinary role assignment. Sensitiv
 - session recording or command logging
 - recurring access certification
 
-PAM sits at the intersection of identity, approval, and runtime monitoring. It should not be treated as a disconnected vault product.
+Privileged Access Management (PAM) sits at the intersection of identity, approval, and runtime monitoring. It should not be treated as a disconnected vault product.
 
 ## Implementation and Operations
 
@@ -51,6 +51,18 @@ PAM sits at the intersection of identity, approval, and runtime monitoring. It s
 - Prefer JIT provisioning or JIT elevation for sensitive systems.
 - Make delegated administration scoped, auditable, and revocable.
 - Align access reviews to risk, not only to calendar schedules.
+
+### Federation protocols in practice
+
+SSO is the user-facing outcome, not a single protocol. In enterprise deployments, SAML is still common for browser-based federation to SaaS, OpenID Connect is usually the better fit for modern web and mobile applications, and SCIM is used to provision and deprovision accounts rather than to authenticate a live session.
+
+That separation matters operationally. A team may use SAML or OpenID Connect for sign-in, SCIM for lifecycle synchronization, and directory sync for group or attribute propagation. Incidents often occur when these responsibilities are blurred, for example when login succeeds but SCIM deprovisioning lags and leaves stale entitlements behind.
+
+### Operating PAM as a control plane
+
+PAM should be designed as a control plane for high-risk operations, not as a password locker alone. Effective PAM programs bind approval, JIT elevation, session recording, command logging, and revocation into one operating flow.
+
+In practice, that means privileged paths should use separate identities or elevation workflows, short-lived access grants, and strong post-use review. Break-glass accounts may still exist for recovery, but they should remain isolated from day-to-day administration and be governed like emergency controls rather than convenience shortcuts.
 
 ### Common anti-patterns
 

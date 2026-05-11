@@ -40,4 +40,10 @@ Architectural choices such as RBAC versus ABAC, JWT versus opaque tokens, centra
 - Prefer reversible migration paths, such as adding contextual checks around existing RBAC.
 - Measure operational cost, not just theoretical expressiveness.
 
+### JWT versus opaque token operating model
+
+JWTs work well when many services need to verify tokens locally with low latency and limited dependence on a central introspection service. The tradeoff is that revocation, claim minimization, signing-key rotation, and audience discipline become critical because the token may be accepted by many components without a callback.
+
+Opaque tokens shift more control back to the authorization server or gateway because the token has little meaning without introspection or lookup. That improves server-side revocation and claim changes, but it adds a dependency on online validation, cache policy, and failure handling. Many large systems therefore use JWTs at the edge for scale and opaque or reference tokens for higher-risk internal delegation paths.
+
 Tradeoff documents are valuable because they preserve architectural intent. When teams understand why a choice was made, they are less likely to erode it through ad hoc exceptions.

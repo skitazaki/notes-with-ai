@@ -2,7 +2,7 @@
 date = '2026-05-10T13:00:00+09:00'
 title = 'AI Agents & Autonomous Authorization'
 weight = 6
-prev = '/docs/acc/workload-identity'
+prev = '/docs/acc/nonhuman-identity'
 next = '/docs/acc/defense-in-depth'
 +++
 
@@ -41,7 +41,7 @@ If a system collapses principal and subject into one field, it becomes hard to a
 
 For delegated agent flows, policy evaluation should usually preserve both identities explicitly. The principal may be `agent://research-assistant/session-123`, while the subject may be `user://alice`, with additional context such as task scope, delegation expiry, approved tools, and resource sensitivity.
 
-In this flow, a user delegates a bounded task to an AI agent, the agent request is enforced by a PEP, the PDP evaluates principal/subject plus delegation constraints, and every allow-or-deny outcome is recorded to the audit log.
+In this flow, a user delegates a bounded task to an AI agent, the agent request is enforced by a Policy Enforcement Point (PEP), the Policy Decision Point (PDP) evaluates principal/subject plus delegation constraints, and every allow-or-deny outcome is recorded to the audit log.
 
 ```mermaid
 flowchart LR
@@ -80,6 +80,12 @@ Promising patterns include capability-based delegation, ephemeral execution iden
 - Isolate agent memory by tenant, workflow, and retention class.
 - Treat tool invocation as a policy enforcement point.
 - Log intent, prompt context class, selected tools, approvals, and outcomes.
+
+### PEP and PDP responsibilities
+
+The PEP is the component that intercepts the tool call, API request, or workflow step and turns it into an authorization request. The PDP is the component that evaluates the request against policy, delegation context, approvals, and resource state, then returns allow, deny, or sometimes conditional obligations.
+
+For agent systems, the PEP should sit as close as possible to the real side effect, not only at the chat interface. The PDP may be centralized, but the PEP must still pass the executing principal, delegated subject, tool name, resource, action, and task scope with enough fidelity that the decision remains reconstructable during review.
 
 ### A practical approval model
 
