@@ -259,6 +259,23 @@ It helps humans understand data systems and helps machines operate them more saf
 
 Organizations that treat metadata as a first-class capability are better positioned to scale data use without losing clarity, control, or trust.
 
+## Additional Topics
+
+The overview on this page remains the foundation. The following additional documents expand specific areas such as active metadata, data mesh, product contracts, semantic interoperability, governance, and maturity evolution.
+
+<!-- deno-fmt-ignore-start -->
+
+{{< cards >}}
+{{< card link="active-metadata/" title="Active Metadata" icon="sparkles" subtitle="From passive catalog to event-driven control plane" >}}
+{{< card link="data-mesh/" title="Data Mesh & Metadata" icon="document-text" subtitle="Why metadata is the coordination layer for federated domains" >}}
+{{< card link="data-products/" title="Data Products & Contracts" icon="book-open" subtitle="Metadata as product interface, SLA surface, and change boundary" >}}
+{{< card link="semantic-layer/" title="Semantic Layer & Interoperability" icon="document-text" subtitle="Shared business meaning across domains, tools, and AI systems" >}}
+{{< card link="federated-governance/" title="Federated Governance" icon="shield-check" subtitle="Policy-as-code, stewardship, trust signals, and auditability" >}}
+{{< card link="maturity-model/" title="Metadata Maturity Model" icon="scale" subtitle="Evolution from documentation to autonomous metadata systems" >}}
+{{< /cards >}}
+
+<!-- deno-fmt-ignore-end -->
+
 ## Standards and Resources
 
 - **ISO/IEC 11179** - Metadata registry standard family for defining and governing data elements and metadata registries
