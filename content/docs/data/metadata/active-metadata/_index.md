@@ -87,6 +87,13 @@ Active metadata programs often fail when teams automate on top of stale or weakl
 
 Another failure mode is over-automation. If every metadata change triggers a heavy process, teams stop trusting the platform and look for bypasses. Mature implementations treat metadata events as signals that require prioritization, confidence scoring, and clear escalation boundaries.
 
+### Concrete implementation examples
+
+- **OpenMetadata** or **DataHub** can act as the central metadata system that stores ownership, lineage, classification, and usage context.
+- **OpenLineage** can publish runtime lineage events from orchestration and transformation tools so metadata changes arrive as operational signals rather than static documentation.
+- **Atlan** can provide a managed active-metadata layer where alerts, trust signals, and governance workflows are exposed to users through a service interface.
+- **Apache Iceberg** can serve as an example data plane input because snapshot, schema, and partition changes in an open table format can trigger downstream metadata-aware checks and notifications.
+
 ### Why this matters for modern platforms
 
 Active metadata becomes especially important in data mesh, self-service platforms, and AI-enabled data operations. In those environments, central teams cannot manually inspect every dataset, every schema change, or every downstream dependency. Metadata must participate directly in coordination or the platform becomes slow, opaque, and brittle.

@@ -75,6 +75,13 @@ In that sense, contracts, SLOs, and version metadata are not administrative over
 
 One anti-pattern is calling every table a product without adding any operational commitment. Another is making contracts so heavy that publication slows to a crawl. Good product metadata is opinionated enough to create trust, but light enough that teams can keep it current.
 
+### Concrete implementation examples
+
+- **Apache Iceberg** can be used as the table-level implementation of a product contract because snapshot-based versioning, schema evolution, and partition metadata provide a durable technical interface for consumers.
+- **OpenMetadata** or **DataHub** can expose the product surface itself by publishing owners, SLA or SLO expectations, downstream dependencies, and lifecycle state.
+- **Open Table Format** adoption at the platform level can help product teams separate storage contracts from a single compute engine, which makes product interfaces more portable across analytics stacks.
+- **Open Semantic Interchange** can be used to exchange business meaning and semantic definitions between tools so a data product carries not only schema but also reusable semantic context.
+
 ### Why this matters
 
 Data products are often described as "data treated like a product." The missing detail is that products need interfaces. Metadata is that interface. It gives producers a publishable boundary and gives consumers something concrete to evaluate before they integrate or depend on the asset.

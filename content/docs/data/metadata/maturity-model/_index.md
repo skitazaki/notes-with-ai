@@ -87,6 +87,14 @@ The answers usually reveal whether the organization is operating across one matu
 - From L3 to L4: strengthen semantic models, trust signals, and federated stewardship.
 - From L4 to L5: add AI-assisted enrichment only after metadata quality and governance are already strong.
 
+### Concrete implementation examples
+
+- At **L1**, teams often start with **OpenMetadata**, **DataHub**, or **Collibra** as catalog-centric systems for discovery and ownership.
+- At **L2**, they usually add operational signals from observability and lineage tooling such as **OpenLineage**, quality checks, and usage telemetry.
+- At **L3**, **Atlan** or automation built on top of **OpenMetadata** or **DataHub** can drive active metadata workflows such as alert routing, policy enforcement, or schema-change handling.
+- At **L4**, shared semantic standards and exchange layers such as **Open Semantic Interchange** become more relevant because domains need interoperable meaning, not only local catalogs.
+- At **L4** and **L5**, open table formats such as **Apache Iceberg** often appear as the storage substrate that keeps product boundaries portable while metadata systems coordinate policy, trust, and automation above them.
+
 ### Strategic takeaway
 
 Organizations often talk about data mesh, self-service, or AI-powered operations as if they are independent goals. In practice, they depend heavily on metadata maturity. The more metadata evolves from description to coordinated action, the more scalable and trustworthy the overall data platform becomes.

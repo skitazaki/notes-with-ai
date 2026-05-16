@@ -81,6 +81,13 @@ The practical value is not only stronger control. It is also better explainabili
 
 A common failure mode is calling governance federated while still routing all meaningful decisions through one overloaded central committee. Another is publishing policies without standard metadata fields needed to enforce them. Governance becomes scalable only when local teams can publish high-quality metadata into a shared control model.
 
+### Concrete implementation examples
+
+- **Collibra**, **Atlan**, or **Amazon DataZone** can provide the service layer for stewardship workflows, classification, approval routing, and audit-ready policy views.
+- **OpenMetadata** or **DataHub** can provide the shared metadata model where domains publish ownership, sensitivity, lifecycle, and trust signals into a common governance surface.
+- **OpenLineage** can support governance explainability by showing how regulated data flows across jobs, tables, dashboards, and consuming domains.
+- **Apache Iceberg** in combination with metadata-driven governance can help teams attach policy and lifecycle controls to open table assets without hard-coding rules into one query engine.
+
 ### Why this matters
 
 Federated governance is often described as a balance between autonomy and control. Metadata is what makes that balance technically real. Without it, decentralization produces inconsistency. With it, decentralization can still be legible, governable, and auditable.

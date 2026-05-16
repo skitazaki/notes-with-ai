@@ -76,6 +76,13 @@ The design implication is straightforward: the mesh does not need one monolithic
 
 The most common anti-pattern is "data mesh theater": teams rename datasets as products, but ownership, contracts, and platform interfaces remain informal. Another is forcing every domain into identical semantic models before they are ready. Mesh succeeds through bounded standardization, not total uniformity.
 
+### Concrete implementation examples
+
+- **OpenMetadata** or **DataHub** can provide the shared metadata fabric where domains publish ownership, lineage, contracts, and discoverability metadata.
+- **Atlan**, **Collibra**, or **Amazon DataZone** can provide service-level capabilities for cross-domain discovery, stewardship workflows, and governance views without forcing all operations into one central team.
+- **OpenLineage** can capture cross-domain dependencies so a domain can publish local changes while consumers in other domains still receive impact visibility.
+- **Apache Iceberg** and other open table format implementations can provide a portable storage boundary for domain-owned data products, while metadata systems describe ownership, contracts, and policy around those assets.
+
 ### Strategic implication
 
 Data mesh maturity is closely tied to metadata maturity. If metadata only documents assets after the fact, domains cannot coordinate safely at scale. Once metadata becomes operational, explainable, and federated, data mesh moves from aspiration to workable architecture.

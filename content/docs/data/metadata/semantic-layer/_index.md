@@ -78,6 +78,13 @@ That is why semantic architecture is not a cosmetic layer. It is what allows int
 
 One anti-pattern is forcing all domains into one rigid enterprise ontology too early. Another is leaving semantics entirely local and hoping consumers will reconcile differences manually. Durable interoperability usually comes from layered semantics: local concepts where needed, shared concepts where comparison and governance matter.
 
+### Concrete implementation examples
+
+- **Open Semantic Interchange** is a direct example of a semantic portability layer: it aims to move reusable business meaning across tools rather than leaving definitions trapped inside one product.
+- **dbt Semantic Layer**, **Looker**, or **Cube** can provide software-level implementations of metric and business-definition reuse for analytics consumers.
+- **OpenMetadata** and **DataHub** can act as the metadata registry that connects glossary terms, metrics, lineage, and technical schemas into one discoverable semantic surface.
+- **Apache Iceberg** and other open table format assets can provide the physical data objects underneath the semantic layer, while the semantic metadata keeps business meaning stable even if storage layouts evolve.
+
 ### Why this matters now
 
 As analytics, applications, and AI systems all depend on the same data estate, semantic metadata becomes more valuable. It is the mechanism that keeps reuse from collapsing into ambiguity.
