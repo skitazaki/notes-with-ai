@@ -47,6 +47,22 @@ A catalog is often the first visible metadata product, but data mesh needs more 
 
 The more distributed the architecture becomes, the more important this shared fabric becomes.
 
+## Coordination Fabric for the Mesh
+
+The central idea for data mesh is that decentralization only works when coordination is built into the platform. Metadata provides that coordination.
+
+### Mesh principles need coordination
+
+Each mesh principle depends on it. Domain ownership needs clear product and owner identity. Data as a product needs discoverability, contracts, and lifecycle context. Self-serve infrastructure needs standard metadata interfaces so domains can publish and consume information consistently. Federated governance needs classifications, stewardship, and policy context that can travel across domains.
+
+### Shared infrastructure, not sidecar docs
+
+This is why metadata should be understood as shared operating infrastructure rather than optional documentation. Without it, domains become locally optimized but globally opaque. With it, domain teams can move independently while still participating in a common system of discovery, trust, lineage, and policy.
+
+### Thin standards, broad reuse
+
+The design implication is straightforward: the mesh does not need one monolithic central team, but it does need thin shared metadata standards that every domain can publish into and every platform service can read from.
+
 ## Implementation and Operations
 
 ### Practical operating guidance
@@ -59,6 +75,13 @@ The more distributed the architecture becomes, the more important this shared fa
 ### Common anti-patterns
 
 The most common anti-pattern is "data mesh theater": teams rename datasets as products, but ownership, contracts, and platform interfaces remain informal. Another is forcing every domain into identical semantic models before they are ready. Mesh succeeds through bounded standardization, not total uniformity.
+
+### Concrete implementation examples
+
+- **OpenMetadata** or **DataHub** can provide the shared metadata fabric where domains publish ownership, lineage, contracts, and discoverability metadata.
+- **Atlan**, **Collibra**, or **Amazon DataZone** can provide service-level capabilities for cross-domain discovery, stewardship workflows, and governance views without forcing all operations into one central team.
+- **OpenLineage** can capture cross-domain dependencies so a domain can publish local changes while consumers in other domains still receive impact visibility.
+- **Apache Iceberg** and other open table format implementations can provide a portable storage boundary for domain-owned data products, while metadata systems describe ownership, contracts, and policy around those assets.
 
 ### Strategic implication
 
