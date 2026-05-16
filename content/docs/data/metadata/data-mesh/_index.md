@@ -47,6 +47,22 @@ A catalog is often the first visible metadata product, but data mesh needs more 
 
 The more distributed the architecture becomes, the more important this shared fabric becomes.
 
+## Coordination Fabric for the Mesh
+
+The central idea for data mesh is that decentralization only works when coordination is built into the platform. Metadata provides that coordination.
+
+### Mesh principles need coordination
+
+Each mesh principle depends on it. Domain ownership needs clear product and owner identity. Data as a product needs discoverability, contracts, and lifecycle context. Self-serve infrastructure needs standard metadata interfaces so domains can publish and consume information consistently. Federated governance needs classifications, stewardship, and policy context that can travel across domains.
+
+### Shared infrastructure, not sidecar docs
+
+This is why metadata should be understood as shared operating infrastructure rather than optional documentation. Without it, domains become locally optimized but globally opaque. With it, domain teams can move independently while still participating in a common system of discovery, trust, lineage, and policy.
+
+### Thin standards, broad reuse
+
+The design implication is straightforward: the mesh does not need one monolithic central team, but it does need thin shared metadata standards that every domain can publish into and every platform service can read from.
+
 ## Implementation and Operations
 
 ### Practical operating guidance

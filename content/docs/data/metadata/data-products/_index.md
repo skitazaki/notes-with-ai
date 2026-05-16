@@ -46,6 +46,22 @@ Strong product models distinguish between additive evolution and breaking change
 
 This is where metadata matters operationally. Version identifiers, dependency graphs, downstream usage patterns, and deprecation state allow the platform to manage change deliberately instead of reactively.
 
+## Metadata as Product Interface
+
+The most important idea for data products is that metadata defines the interface consumers rely on. A dataset becomes a product only when its purpose, ownership, contract, quality expectations, and lifecycle are explicit enough for others to depend on safely.
+
+### What the interface contains
+
+This is a deeper shift than adding a description field to a catalog. Product metadata tells consumers what the asset means, how stable it is, what level of service to expect, and how change will be communicated. That makes reuse practical because teams do not have to negotiate expectations from scratch each time they integrate with a new asset.
+
+### What it changes for producers
+
+It also changes how producers operate. Once metadata is treated as the interface, producers must manage compatibility, deprecation, and quality with the same discipline used for APIs. That is what makes the product boundary durable rather than informal.
+
+### Why contracts matter
+
+In that sense, contracts, SLOs, and version metadata are not administrative overhead. They are the mechanism that turns local data publication into something other teams can trust.
+
 ## Implementation and Operations
 
 ### Practical guidance

@@ -40,6 +40,32 @@ L3 is where metadata becomes a control plane. This is usually the point at which
 
 Below this threshold, metadata may be useful but it is not yet structurally central to platform operations.
 
+## Maturity Model Progression
+
+The main progression across the maturity model is that each level expands metadata from static description toward system coordination and adaptation.
+
+### Visibility stages
+
+At **L0**, metadata is implicit. Knowledge exists mostly in documents, diagrams, spreadsheets, and people. It can describe the environment, but only after the fact, and usually in fragmented ways. Governance is discussion-driven because the platform has almost no machine-readable context to work with.
+
+At **L1**, metadata becomes visible through catalogs, ownership records, and basic lineage. This is the first stage where organizations can reliably discover assets and assign accountability. The important gain is visibility, but metadata is still mostly a reference surface for humans rather than a runtime input for the platform.
+
+### Operational stages
+
+At **L2**, metadata becomes operational. Freshness, quality, usage, and pipeline state begin to reflect what the system is doing now rather than only what it is supposed to be. This creates observability, measurable trust, and stronger incident response, but the platform is still primarily reporting conditions rather than acting on them.
+
+At **L3**, metadata becomes active. This is the control-plane threshold described in the active metadata model: events such as schema drift, quality degradation, or policy changes trigger explainable actions. Governance becomes enforceable, contracts become operational, and metadata starts shaping runtime behavior instead of only recording history.
+
+### Federated stages
+
+At **L4**, metadata becomes a federated semantic fabric. The platform is no longer only reacting to isolated events; it is coordinating domains through shared meaning, cross-domain lineage, and interoperable policy context. This is where data mesh becomes substantially more workable because autonomy and alignment can coexist.
+
+At **L5**, metadata becomes adaptive. The platform uses accumulated metadata to recommend, predict, and optimize. AI-assisted enrichment, impact analysis, and proactive intervention become realistic because the earlier stages have already established visibility, trust, and control.
+
+### Reading the model
+
+Read this way, the model is not just a ladder of tooling sophistication. It is a map of how metadata evolves from documentation, to observability, to control, to coordination, and finally to adaptive system behavior.
+
 ## Implementation and Operations
 
 ### How to assess current state
