@@ -15,7 +15,7 @@ A strong target is:
 - each centered around one “metadata boundary”
 - each ending with a bridge to the next layer.
 
-Series Title is **Metadata Systems — From Column Comments to Distributed Control Planes**.
+The series title is **Metadata Systems — From Column Comments to Distributed Control Planes**.
 
 ## Part 1 — Metadata Starts as Column Names
 
