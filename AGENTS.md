@@ -278,6 +278,11 @@ Constraints:
 ### Template for a translation prompt
 
 ```md
+---
+type: docs
+path: /docs/section/topic
+---
+
 # 日本語の翻訳版の作成
 
 あなたはデジタルテクノロジーの専門家であり、ドキュメント作成のプロフェッショナルです。
