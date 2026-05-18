@@ -28,6 +28,12 @@ Constraints:
 - Do not replace **Uniqueness** with only implementation terms such as deduplication or key constraints without first naming it as a dimension.
 - Do not expand the Data Management page into a full taxonomy of every possible quality attribute.
 
+Japanese terminology guidance:
+
+- In Japanese output, avoid translating `dimensions` as `次元`.
+- Prefer `品質観点` when describing the core set or a perspective for evaluating quality.
+- Prefer `品質特性` when referring to adjacent or extended quality properties.
+
 Use the references and comparative analysis below to justify the core model and sharpen the wording.
 
 ---

@@ -17,15 +17,16 @@ The following domains describe the core elements required to maintain high level
 
 Data Quality Management concerns whether data accurately and consistently represents the real-world entities or events it is intended to model.
 
-Quality is multi-dimensional. Common dimensions include:
+Quality is multi-dimensional, but most enterprise frameworks converge on a stable core set of six dimensions:
 
 - **Accuracy** – correctness of recorded values
 - **Completeness** – presence of required attributes
 - **Consistency** – alignment across systems and datasets
 - **Timeliness** – relevance relative to time-sensitive use
 - **Validity** – conformity to defined formats and constraints
+- **Uniqueness** – absence of unintended duplicate records or entity representations
 
-Quality management establishes measurable expectations for these dimensions and monitors whether they are met over time.
+These dimensions form a practical universal core because they apply across most data architectures and can be translated into measurable expectations over time. Other concerns such as integrity, reliability, relevance, and runtime observability remain important, but they are better treated as adjacent or extended quality concerns rather than part of the smallest common core.
 
 Core conceptual elements include:
 
@@ -34,7 +35,7 @@ Core conceptual elements include:
 - **Anomaly detection** to identify unexpected deviations or structural shifts
 - **Continuous monitoring** to observe quality trends over time
 
-For example, an order record may require a non-null identifier, a valid currency code, and a transaction date that is not in the future. These checks do not eliminate errors entirely, but they make data conditions observable and measurable.
+For example, an order record may require a non-null identifier, a valid currency code, a transaction date that is not in the future, and no duplicate representation of the same transaction. These checks do not eliminate errors entirely, but they make data conditions observable and measurable.
 
 Quality transparency reduces uncertainty. When quality is monitored and visible, downstream users can evaluate its suitability for specific purposes and enables informed decision-making.
 This prevents silent propagation of errors and strengthens trust in analytical and operational outputs.
