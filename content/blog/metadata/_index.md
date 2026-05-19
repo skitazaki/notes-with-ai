@@ -34,15 +34,15 @@ Across the series, the focus stays on implementation details rather than governa
 
 ## Reading Order
 
-| Part | Title                                                                                 | Core Boundary                                     |
-| ---- | ------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| 1    | Metadata Starts as Column Names <br/> [↗ Article](/blog/metadata/part1-field-schema/) | Dataset schema and field semantics                |
-| 2    | Types Become Contracts                                                                | Compatibility between producers and consumers     |
-| 3    | Parquet and the Rise of Physical Metadata                                             | File-level performance metadata                   |
-| 4    | Metadata at Lakehouse Scale                                                           | Dataset coordination across many files            |
-| 5    | Metadata as Query Planning                                                            | Statistics, catalogs, and execution decisions     |
-| 6    | AI Systems Need Semantic Metadata                                                     | Features, embeddings, chunks, and retrieval       |
-| 7    | Metadata as the Control Plane                                                         | Orchestration, governance, and autonomous systems |
+| Part | Title                                                                 | Core Boundary                                     |
+| ---- | --------------------------------------------------------------------- | ------------------------------------------------- |
+| 1    | [Metadata Starts as Column Names](/blog/metadata/part1-field-schema/) | Dataset schema and field semantics                |
+| 2    | Types Become Contracts                                                | Compatibility between producers and consumers     |
+| 3    | Parquet and the Rise of Physical Metadata                             | File-level performance metadata                   |
+| 4    | Metadata at Lakehouse Scale                                           | Dataset coordination across many files            |
+| 5    | Metadata as Query Planning                                            | Statistics, catalogs, and execution decisions     |
+| 6    | AI Systems Need Semantic Metadata                                     | Features, embeddings, chunks, and retrieval       |
+| 7    | Metadata as the Control Plane                                         | Orchestration, governance, and autonomous systems |
 
 ## Why The Series Is Structured This Way
 

@@ -1,6 +1,6 @@
 ---
 type: blog
-path: /blog/metadata-intro
+path: /blog/metadata
 ---
 
 # メタデータ連載記事の日本語翻訳
@@ -11,14 +11,14 @@ path: /blog/metadata-intro
 
 ## 対象
 
-- `content/blog/metadata-intro/index.md`
+- `content/blog/metadata/_index.md`
 - 今後追加されるメタデータ連載の記事
 
 各記事の日本語版は、元ファイルと同じディレクトリに `.ja.md` を付けて保存してください。
 
 例:
 
-- `content/blog/metadata-intro/index.md` -> `content/blog/metadata-intro/index.ja.md`
+- `content/blog/metadata/_index.md` -> `content/blog/metadata/_index.ja.md`
 
 ## 翻訳方針
 

@@ -14,7 +14,7 @@ This is where metadata usually starts: not in a catalog or governance platform, 
 
 The first article in this series stays deliberately close to that problem. Before metadata becomes a control plane, it first becomes a way to make fields interpretable. The core point is simple: even basic schema metadata already behaves like a contract.
 
-It extends the foundation in [Metadata](/docs/data/metadata/) and the series overview in [Metadata Systems — From Column Comments to Distributed Control Planes](/blog/metadata-intro/), but keeps the focus on the smallest useful unit: the field.
+It extends the foundation in [Metadata](/docs/data/metadata/) and the series overview in [Metadata Systems — From Column Comments to Distributed Control Planes](/blog/metadata/), but keeps the focus on the smallest useful unit: the field.
 
 ## Column Names Are Helpful, But Not Sufficient
 
