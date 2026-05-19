@@ -17,7 +17,7 @@ It extends the ideas in [Metadata](/docs/data/metadata/) and turns them into a m
 <!-- deno-fmt-ignore-start -->
 
 {{< callout icon="sparkles" >}}
-This page is the landing page for a planned series. The article links below are intentionally listed as planned paths so they are easy to replace with real links as each post is published.
+This page is the landing page for an in-progress series. Published entries are linked below, and unpublished entries remain listed as planned titles so the page stays easy to update as new posts arrive.
 {{< /callout >}}
 
 <!-- deno-fmt-ignore-end -->
@@ -34,15 +34,15 @@ Across the series, the focus stays on implementation details rather than governa
 
 ## Reading Order
 
-| Part | Working Title                             | Core Boundary                                     |
-| ---- | ----------------------------------------- | ------------------------------------------------- |
-| 1    | Metadata Starts as Column Names           | Dataset schema and field semantics                |
-| 2    | Types Become Contracts                    | Compatibility between producers and consumers     |
-| 3    | Parquet and the Rise of Physical Metadata | File-level performance metadata                   |
-| 4    | Metadata at Lakehouse Scale               | Dataset coordination across many files            |
-| 5    | Metadata as Query Planning                | Statistics, catalogs, and execution decisions     |
-| 6    | AI Systems Need Semantic Metadata         | Features, embeddings, chunks, and retrieval       |
-| 7    | Metadata as the Control Plane             | Orchestration, governance, and autonomous systems |
+| Part | Title                                                                 | Core Boundary                                     |
+| ---- | --------------------------------------------------------------------- | ------------------------------------------------- |
+| 1    | [Metadata Starts as Column Names](/blog/metadata/part1-field-schema/) | Dataset schema and field semantics                |
+| 2    | Types Become Contracts                                                | Compatibility between producers and consumers     |
+| 3    | Parquet and the Rise of Physical Metadata                             | File-level performance metadata                   |
+| 4    | Metadata at Lakehouse Scale                                           | Dataset coordination across many files            |
+| 5    | Metadata as Query Planning                                            | Statistics, catalogs, and execution decisions     |
+| 6    | AI Systems Need Semantic Metadata                                     | Features, embeddings, chunks, and retrieval       |
+| 7    | Metadata as the Control Plane                                         | Orchestration, governance, and autonomous systems |
 
 ## Why The Series Is Structured This Way
 
@@ -52,11 +52,11 @@ A CSV with unclear column names creates local confusion. A stream with multiple 
 
 That escalation is the point of the series: metadata evolves from annotation into coordination infrastructure.
 
-## Planned Articles
+## Series Articles
 
 ### 1. Metadata Starts as Column Names
 
-The opening article grounds the series in familiar pain: CSV files, column comments, primitive types, nullability, units, and business meaning. It will use Frictionless Data examples to show that even basic schema metadata already behaves like a contract.
+The opening article grounds the series in familiar pain: CSV files, column comments, primitive types, nullability, units, and business meaning. It uses [Frictionless Data](https://frictionlessdata.io/) examples to show that even basic schema metadata already behaves like a contract.
 
 Expected themes:
 

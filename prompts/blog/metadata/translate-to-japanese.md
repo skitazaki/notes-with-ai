@@ -1,6 +1,6 @@
 ---
 type: blog
-path: /blog/metadata-intro
+path: /blog/metadata
 ---
 
 # メタデータ連載記事の日本語翻訳
@@ -11,14 +11,14 @@ path: /blog/metadata-intro
 
 ## 対象
 
-- `content/blog/metadata-intro/index.md`
+- `content/blog/metadata/_index.md`
 - 今後追加されるメタデータ連載の記事
 
 各記事の日本語版は、元ファイルと同じディレクトリに `.ja.md` を付けて保存してください。
 
 例:
 
-- `content/blog/metadata-intro/index.md` -> `content/blog/metadata-intro/index.ja.md`
+- `content/blog/metadata/_index.md` -> `content/blog/metadata/_index.ja.md`
 
 ## 翻訳方針
 
@@ -60,6 +60,17 @@ path: /blog/metadata-intro
 - `semantic metadata` -> `意味メタデータ`
 - `feature store` -> `特徴量ストア`
 - `retrieval` -> `検索`
+- `runtime behavior` -> `実行時の挙動`
+- `nullability` -> `null 許容`
+- `retention window` -> 文脈に応じて `リテンション期間`、`計測期間`、`対象期間` など自然な日本語にする
+
+## 表記と語感のガイド
+
+- `AIシステム` ではなく `AI システム` と表記してください。
+- `null許容` のように語を詰めず、`null 許容` のように読みやすさを優先してください。
+- 英語をそのままカタカナ化した不自然な訳は避けてください。例: `プロデューサー`、`コンシューマー`、`データコントラクト`、`ランタイム挙動`
+- `window` は文脈を無視して `窓` と直訳しないでください。期間、範囲、対象期間、計測期間など、その文脈で自然な語に置き換えてください。
+- 直訳で意味が伝わりにくい場合は、英語の語順を保つことより、日本語として自然で技術的に正確な言い換えを優先してください。
 
 ## 品質基準
 
@@ -75,5 +86,9 @@ path: /blog/metadata-intro
 - `Data Producer` 系の語が `生産者` になっていないか
 - `Producer` / `Consumer` 系の訳語が、人・組織とシステムの文脈で適切に訳し分けられているか
 - `Producer` / `Consumer` 系の語が記事内で混在していないか
+- `data contract` が `データ契約` で統一されているか
+- `runtime behavior` 系が `実行時の挙動` など自然な日本語になっているか
+- `window` が文脈に関係なく `窓` と直訳されていないか
+- `AI システム`、`null 許容` などの表記が記事内で揺れていないか
 - 表、コードブロック、リンク、shortcode が壊れていないか
 - 日本語として不自然な直訳が残っていないか
