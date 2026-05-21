@@ -33,6 +33,7 @@ Tone & style:
 - No hype or marketing language
 - Use short implementation examples where they sharpen the point
 - Treat compatibility as a systems concern, not a policy slogan
+- The first major section heading may be sentence-like if it improves the setup, but subsequent section headings should be compact enough to fit cleanly in the sidebar table of contents
 
 Structure:
 
@@ -50,6 +51,8 @@ Include:
 - At least one example of a compatible change and one incompatible change
 - A concrete streaming or event-driven example such as Kafka with a schema registry
 - A discussion of semantic compatibility, not only syntactic compatibility
+- Official links for Avro, JSON Schema, and Protobuf when those formats are introduced
+- Concrete schema registry tooling references with links, such as commonly used registry implementations, when discussing registry operations
 
 Constraints:
 

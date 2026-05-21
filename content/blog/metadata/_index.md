@@ -37,7 +37,7 @@ Across the series, the focus stays on implementation details rather than governa
 | Part | Title                                                                 | Core Boundary                                     |
 | ---- | --------------------------------------------------------------------- | ------------------------------------------------- |
 | 1    | [Metadata Starts as Column Names](/blog/metadata/part1-field-schema/) | Dataset schema and field semantics                |
-| 2    | Types Become Contracts                                                | Compatibility between producers and consumers     |
+| 2    | [Types Become Contracts](/blog/metadata/part2-schema-contracts/)      | Compatibility between producers and consumers     |
 | 3    | Parquet and the Rise of Physical Metadata                             | File-level performance metadata                   |
 | 4    | Metadata at Lakehouse Scale                                           | Dataset coordination across many files            |
 | 5    | Metadata as Query Planning                                            | Statistics, catalogs, and execution decisions     |
@@ -67,7 +67,7 @@ Expected themes:
 
 ### 2. Types Become Contracts
 
-Once multiple systems exchange structured data, metadata becomes operational. This article will focus on schema evolution, compatibility rules, data contracts, and the differences between formats such as Avro, JSON Schema, and Protobuf.
+Now published as [Types Become Contracts](/blog/metadata/part2-schema-contracts/), this article examines schema evolution, compatibility rules, data contracts, and the differences between formats such as Avro, JSON Schema, and Protobuf.
 
 Expected themes:
 
