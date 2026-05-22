@@ -77,6 +77,8 @@ Metadata begins coordinating producers and consumers.
 - Kafka schema registry examples
 - version compatibility examples
 - migration failures
+- official specification links for Avro, JSON Schema, and Protobuf
+- concrete schema registry tooling references with links when discussing registry operations
 
 ### Ending Hook
 
@@ -265,6 +267,7 @@ Keep each article:
 - one dominant idea,
 - one architectural escalation,
 - one memorable systems insight.
+- one opening section that may use a sentence-style heading, followed by compact section titles that fit the site sidebar table of contents.
 
 Avoid:
 
