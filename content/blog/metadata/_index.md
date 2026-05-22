@@ -39,7 +39,7 @@ Across the series, the focus stays on implementation details rather than governa
 | 1    | [Metadata Starts as Column Names](/blog/metadata/part1-field-schema/)                        | Dataset schema and field semantics                |
 | 2    | [Types Become Contracts](/blog/metadata/part2-schema-contracts/)                             | Compatibility between producers and consumers     |
 | 3    | [Parquet and the Rise of Physical Metadata](/blog/metadata/part3-parquet-physical-metadata/) | File-level performance metadata                   |
-| 4    | Metadata at Lakehouse Scale                                                                  | Dataset coordination across many files            |
+| 4    | [Metadata at Lakehouse Scale](/blog/metadata/part4-lakehouse-metadata/)                      | Dataset coordination across many files            |
 | 5    | Metadata as Query Planning                                                                   | Statistics, catalogs, and execution decisions     |
 | 6    | AI Systems Need Semantic Metadata                                                            | Features, embeddings, chunks, and retrieval       |
 | 7    | Metadata as the Control Plane                                                                | Orchestration, governance, and autonomous systems |
@@ -89,7 +89,7 @@ Expected themes:
 
 ### 4. Metadata at Lakehouse Scale
 
-At lakehouse scale, metadata is no longer attached to a single file. It becomes a distributed layer spanning manifests, snapshots, partition specs, catalogs, and transaction logs.
+Now published as [Metadata at Lakehouse Scale](/blog/metadata/part4-lakehouse-metadata/), this article explains why table state in object storage cannot be managed as a loose directory of Parquet files once concurrency, rewrites, and many query engines are involved.
 
 Expected themes:
 

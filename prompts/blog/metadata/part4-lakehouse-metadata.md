@@ -31,6 +31,7 @@ Tone & style:
 - Neutral, explanatory, and implementation-oriented
 - No hype or vendor positioning
 - Keep the emphasis on metadata behavior under scale, concurrency, and change
+- The first major section heading may be sentence-like if it improves the setup, but subsequent section headings should be compact enough to fit cleanly in the sidebar table of contents
 
 Structure:
 
@@ -49,6 +50,7 @@ Include:
 - One simplified Delta log example or explanation of append and commit behavior
 - A clear distinction between file metadata and table metadata
 - Practical examples of why snapshots and manifests reduce expensive listing and coordination work
+- Official links for notable tools or systems mentioned, especially Apache Iceberg, Delta Lake, and Apache Hive where relevant
 
 Constraints:
 
