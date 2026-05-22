@@ -40,7 +40,7 @@ Across the series, the focus stays on implementation details rather than governa
 | 2    | [Types Become Contracts](/blog/metadata/part2-schema-contracts/)                             | Compatibility between producers and consumers     |
 | 3    | [Parquet and the Rise of Physical Metadata](/blog/metadata/part3-parquet-physical-metadata/) | File-level performance metadata                   |
 | 4    | [Metadata at Lakehouse Scale](/blog/metadata/part4-lakehouse-metadata/)                      | Dataset coordination across many files            |
-| 5    | Metadata as Query Planning                                                                   | Statistics, catalogs, and execution decisions     |
+| 5    | [Metadata as Query Planning](/blog/metadata/part5-query-planning-metadata/)                  | Statistics, catalogs, and execution decisions     |
 | 6    | AI Systems Need Semantic Metadata                                                            | Features, embeddings, chunks, and retrieval       |
 | 7    | Metadata as the Control Plane                                                                | Orchestration, governance, and autonomous systems |
 
@@ -100,7 +100,7 @@ Expected themes:
 
 ### 5. Metadata as Query Planning
 
-Query engines do not just read data. They reason over metadata first. Statistics, catalogs, lineage, partition maps, and pruning rules influence what compute actually runs.
+Now published as [Metadata as Query Planning](/blog/metadata/part5-query-planning-metadata/), this article explains how query engines consume metadata before scanning data files. Statistics, catalogs, lineage, partition maps, and pruning rules influence what compute actually runs.
 
 Expected themes:
 
