@@ -31,6 +31,7 @@ Tone & style:
 - Neutral, explanatory, and technically serious
 - Forward-looking but grounded
 - No sci-fi framing, no hype, no vague “platformization” language
+- The first major section heading may be sentence-like if it improves the setup, but subsequent section headings should be compact enough to fit cleanly in the sidebar table of contents
 
 Structure:
 
@@ -48,6 +49,7 @@ Include:
 - Concrete examples of metadata driving orchestration or policy decisions
 - A discussion of observability and reproducibility as metadata problems
 - A practical explanation of active metadata or machine-operable metadata
+- Official links for notable tools, standards, or platforms mentioned, especially orchestration, lineage, observability, or metadata systems where relevant
 
 Constraints:
 

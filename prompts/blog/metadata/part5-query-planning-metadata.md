@@ -31,6 +31,7 @@ Tone & style:
 - Neutral, explanatory, and systems-oriented
 - No hype and no generic optimizer descriptions detached from metadata
 - Prefer concrete planning examples over abstract architecture slogans
+- The first major section heading may be sentence-like if it improves the setup, but subsequent section headings should be compact enough to fit cleanly in the sidebar table of contents
 
 Structure:
 
@@ -49,6 +50,7 @@ Include:
 - An explanation of file or partition elimination using metadata rather than full scans
 - A discussion of the limits of cost-based optimization when metadata quality is poor
 - A brief comparison across at least two engines to show different planning behaviors
+- Official links for notable engines, catalogs, or projects mentioned, especially DuckDB, Apache Spark, and Trino
 
 Constraints:
 

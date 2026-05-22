@@ -31,6 +31,7 @@ Tone & style:
 - Neutral, explanatory, and engineering-heavy
 - No hype, no generic “AI transformation” language, no product marketing
 - Treat semantics as operational infrastructure for machines, not only documentation for humans
+- The first major section heading may be sentence-like if it improves the setup, but subsequent section headings should be compact enough to fit cleanly in the sidebar table of contents
 
 Structure:
 
@@ -49,6 +50,7 @@ Include:
 - At least one feature registry style example
 - A discussion of provenance and lineage for retrieval pipelines
 - A clear explanation of why semantic metadata affects machine behavior, not only discoverability
+- Official links for notable tools or systems mentioned, such as feature stores, vector databases, lineage projects, or retrieval infrastructure where relevant
 
 Constraints:
 
