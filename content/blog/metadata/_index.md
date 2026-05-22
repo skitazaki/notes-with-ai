@@ -41,7 +41,7 @@ Across the series, the focus stays on implementation details rather than governa
 | 3    | [Parquet and the Rise of Physical Metadata](/blog/metadata/part3-parquet-physical-metadata/) | File-level performance metadata                   |
 | 4    | [Metadata at Lakehouse Scale](/blog/metadata/part4-lakehouse-metadata/)                      | Dataset coordination across many files            |
 | 5    | [Metadata as Query Planning](/blog/metadata/part5-query-planning-metadata/)                  | Statistics, catalogs, and execution decisions     |
-| 6    | AI Systems Need Semantic Metadata                                                            | Features, embeddings, chunks, and retrieval       |
+| 6    | [AI Systems Need Semantic Metadata](/blog/metadata/part6-ai-semantic-metadata/)              | Features, embeddings, chunks, and retrieval       |
 | 7    | Metadata as the Control Plane                                                                | Orchestration, governance, and autonomous systems |
 
 ## Why The Series Is Structured This Way
@@ -112,6 +112,8 @@ Expected themes:
 ### 6. AI Systems Need Semantic Metadata
 
 AI-native systems need more than table schemas. Feature stores, embedding records, chunk metadata, semantic layers, and lineage for retrieval pipelines all require richer machine-readable semantics.
+
+Now published as [AI Systems Need Semantic Metadata](/blog/metadata/part6-ai-semantic-metadata/), this article explains why typed columns and file statistics are insufficient for retrieval systems, feature registries, and semantic AI pipelines.
 
 Expected themes:
 
