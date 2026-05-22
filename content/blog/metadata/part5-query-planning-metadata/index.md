@@ -14,7 +14,7 @@ That is where metadata becomes query planning.
 
 This article extends [Metadata at Lakehouse Scale](/blog/metadata/part4-lakehouse-metadata/) and the series overview in [Metadata Systems - From Column Comments to Distributed Control Planes](/blog/metadata/). The practical question is not whether optimizers are clever in the abstract. It is what information they need before execution begins, how that information changes the plan, and what happens when the metadata is weak, stale, or misleading.
 
-## Before A Query Reads Data, It Reads Metadata
+## Before a Query Reads Data, It Reads Metadata
 
 Consider a straightforward analytical query:
 
@@ -200,7 +200,7 @@ The planning pattern is familiar even though the operators are changing.
 
 The next step for metadata is therefore not abandoning query planning. It is extending planning inputs beyond classic tables and file statistics into semantic, provenance, and retrieval context that machine-facing systems require.
 
-## Conclusion
+## Planning Depends on Metadata
 
 Metadata matters to query engines because planning is an information problem before it is a compute problem.
 
