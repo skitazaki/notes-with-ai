@@ -17,7 +17,7 @@ It extends the ideas in [Metadata](/docs/data/metadata/) and turns them into a m
 <!-- deno-fmt-ignore-start -->
 
 {{< callout icon="sparkles" >}}
-This page is the landing page for an in-progress series. Published entries are linked below, and unpublished entries remain listed as planned titles so the page stays easy to update as new posts arrive.
+This page is the landing page for the full series. Published entries are linked below, and the progression is kept in one place so the control-plane argument is easy to follow end to end.
 {{< /callout >}}
 
 <!-- deno-fmt-ignore-end -->
@@ -42,7 +42,7 @@ Across the series, the focus stays on implementation details rather than governa
 | 4    | [Metadata at Lakehouse Scale](/blog/metadata/part4-lakehouse-metadata/)                      | Dataset coordination across many files            |
 | 5    | [Metadata as Query Planning](/blog/metadata/part5-query-planning-metadata/)                  | Statistics, catalogs, and execution decisions     |
 | 6    | [AI Systems Need Semantic Metadata](/blog/metadata/part6-ai-semantic-metadata/)              | Features, embeddings, chunks, and retrieval       |
-| 7    | Metadata as the Control Plane                                                                | Orchestration, governance, and autonomous systems |
+| 7    | [Metadata as the Control Plane](/blog/metadata/part7-metadata-control-plane/)                | Orchestration, governance, and autonomous systems |
 
 ## Why The Series Is Structured This Way
 
@@ -124,7 +124,7 @@ Expected themes:
 
 ### 7. Metadata as the Control Plane
 
-The final article will synthesize the series. By this point, metadata is no longer passive description. It is part of orchestration, governance, observability, reproducibility, and machine-managed infrastructure.
+Now published as [Metadata as the Control Plane](/blog/metadata/part7-metadata-control-plane/), this final article synthesizes the series. By this point, metadata is no longer passive description. It is part of orchestration, governance, observability, reproducibility, and machine-managed infrastructure.
 
 Expected themes:
 
