@@ -59,7 +59,7 @@ That escalation is the point of the series: metadata evolves from annotation int
 
 ### 1. Metadata Starts as Column Names
 
-The opening article grounds the series in familiar pain: CSV files, column comments, primitive types, nullability, units, and business meaning. It uses [Frictionless Data](https://frictionlessdata.io/) examples to show that even basic schema metadata already behaves like a contract.
+Now published as [Metadata Starts as Column Names](/blog/metadata/part1-field-schema/), this opening article grounds the series in familiar pain: CSV files, column comments, primitive types, nullability, units, and business meaning. It uses Frictionless Data examples to show that even basic schema metadata already behaves like a contract.
 
 Expected themes:
 
