@@ -4,6 +4,7 @@ date: "2026-05-21T10:00:00+09:00"
 tags: ["Metadata", "Data", "Schema", "Architecture"]
 categories: ["Technology", "Data"]
 draft: false
+weight: 3
 ---
 
 Part 2 ended at the boundary where schema becomes operational. Once producers and consumers depend on the same structure, metadata is no longer just descriptive. It constrains change.

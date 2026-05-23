@@ -4,6 +4,7 @@ date: "2026-05-22T18:00:00+09:00"
 tags: ["Metadata", "Data", "AI", "Architecture"]
 categories: ["Technology", "Data"]
 draft: false
+weight: 7
 ---
 
 Part 6 ended at the point where metadata became semantic infrastructure for AI systems.

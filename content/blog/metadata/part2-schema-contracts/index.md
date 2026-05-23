@@ -4,6 +4,7 @@ date: "2026-05-20T10:00:00+09:00"
 tags: ["Metadata", "Data", "Schema", "Architecture"]
 categories: ["Technology", "Data"]
 draft: false
+weight: 2
 ---
 
 Part 1 ended at an important boundary. Once field meaning becomes explicit, ambiguity drops, but coordination work does not.

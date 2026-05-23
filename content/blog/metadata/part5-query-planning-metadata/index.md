@@ -4,6 +4,7 @@ date: "2026-05-22T10:00:00+09:00"
 tags: ["Metadata", "Data", "SQL", "Architecture"]
 categories: ["Technology", "Data"]
 draft: false
+weight: 5
 ---
 
 Part 4 ended at the point where lakehouse tables became authoritative metadata structures.

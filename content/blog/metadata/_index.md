@@ -4,6 +4,9 @@ date: "2026-05-17T10:00:00+09:00"
 tags: ["Metadata", "Data", "Architecture", "AI"]
 categories: ["Technology", "Data"]
 draft: false
+cascade:
+  params:
+    reversePagination: false
 ---
 
 Metadata is often introduced as a descriptive layer: column names, comments, table definitions, and glossary terms. That framing is too small for modern systems.

@@ -4,6 +4,7 @@ date: "2026-05-22T14:00:00+09:00"
 tags: ["Metadata", "AI", "Architecture", "Data"]
 categories: ["Technology", "Data"]
 draft: false
+weight: 6
 ---
 
 Part 5 ended at the point where metadata became part of query planning.

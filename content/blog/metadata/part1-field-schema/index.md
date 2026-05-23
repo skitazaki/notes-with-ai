@@ -4,6 +4,7 @@ date: "2026-05-19T10:00:00+09:00"
 tags: ["Metadata", "Data", "Schema", "Architecture"]
 categories: ["Technology", "Data"]
 draft: false
+weight: 1
 ---
 
 Metadata sounds abstract until a CSV breaks something important.

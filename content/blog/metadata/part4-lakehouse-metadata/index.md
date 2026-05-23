@@ -4,6 +4,7 @@ date: "2026-05-21T12:00:00+09:00"
 tags: ["Metadata", "Data", "Architecture", "Lakehouse"]
 categories: ["Technology", "Data"]
 draft: false
+weight: 4
 ---
 
 Part 3 ended at the point where metadata outgrew a single file.
