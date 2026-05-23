@@ -4,6 +4,9 @@ date: "2026-05-17T10:00:00+09:00"
 tags: ["Metadata", "Data", "Architecture", "AI"]
 categories: ["Technology", "Data"]
 draft: false
+cascade:
+  params:
+    reversePagination: false
 ---
 
 Metadata is often introduced as a descriptive layer: column names, comments, table definitions, and glossary terms. That framing is too small for modern systems.
@@ -17,7 +20,7 @@ It extends the ideas in [Metadata](/docs/data/metadata/) and turns them into a m
 <!-- deno-fmt-ignore-start -->
 
 {{< callout icon="sparkles" >}}
-This page is the landing page for an in-progress series. Published entries are linked below, and unpublished entries remain listed as planned titles so the page stays easy to update as new posts arrive.
+This page is the landing page for the full series. Published entries are linked below, and the progression is kept in one place so the control-plane argument is easy to follow end to end.
 {{< /callout >}}
 
 <!-- deno-fmt-ignore-end -->
@@ -40,9 +43,9 @@ Across the series, the focus stays on implementation details rather than governa
 | 2    | [Types Become Contracts](/blog/metadata/part2-schema-contracts/)                             | Compatibility between producers and consumers     |
 | 3    | [Parquet and the Rise of Physical Metadata](/blog/metadata/part3-parquet-physical-metadata/) | File-level performance metadata                   |
 | 4    | [Metadata at Lakehouse Scale](/blog/metadata/part4-lakehouse-metadata/)                      | Dataset coordination across many files            |
-| 5    | Metadata as Query Planning                                                                   | Statistics, catalogs, and execution decisions     |
-| 6    | AI Systems Need Semantic Metadata                                                            | Features, embeddings, chunks, and retrieval       |
-| 7    | Metadata as the Control Plane                                                                | Orchestration, governance, and autonomous systems |
+| 5    | [Metadata as Query Planning](/blog/metadata/part5-query-planning-metadata/)                  | Statistics, catalogs, and execution decisions     |
+| 6    | [AI Systems Need Semantic Metadata](/blog/metadata/part6-ai-semantic-metadata/)              | Features, embeddings, chunks, and retrieval       |
+| 7    | [Metadata as the Control Plane](/blog/metadata/part7-metadata-control-plane/)                | Orchestration, governance, and autonomous systems |
 
 ## Why The Series Is Structured This Way
 
@@ -56,7 +59,7 @@ That escalation is the point of the series: metadata evolves from annotation int
 
 ### 1. Metadata Starts as Column Names
 
-The opening article grounds the series in familiar pain: CSV files, column comments, primitive types, nullability, units, and business meaning. It uses [Frictionless Data](https://frictionlessdata.io/) examples to show that even basic schema metadata already behaves like a contract.
+Now published as [Metadata Starts as Column Names](/blog/metadata/part1-field-schema/), this opening article grounds the series in familiar pain: CSV files, column comments, primitive types, nullability, units, and business meaning. It uses Frictionless Data examples to show that even basic schema metadata already behaves like a contract.
 
 Expected themes:
 
@@ -100,7 +103,7 @@ Expected themes:
 
 ### 5. Metadata as Query Planning
 
-Query engines do not just read data. They reason over metadata first. Statistics, catalogs, lineage, partition maps, and pruning rules influence what compute actually runs.
+Now published as [Metadata as Query Planning](/blog/metadata/part5-query-planning-metadata/), this article explains how query engines consume metadata before scanning data files. Statistics, catalogs, lineage, partition maps, and pruning rules influence what compute actually runs.
 
 Expected themes:
 
@@ -113,6 +116,8 @@ Expected themes:
 
 AI-native systems need more than table schemas. Feature stores, embedding records, chunk metadata, semantic layers, and lineage for retrieval pipelines all require richer machine-readable semantics.
 
+Now published as [AI Systems Need Semantic Metadata](/blog/metadata/part6-ai-semantic-metadata/), this article explains why typed columns and file statistics are insufficient for retrieval systems, feature registries, and semantic AI pipelines.
+
 Expected themes:
 
 - Feature registry structure
@@ -122,7 +127,7 @@ Expected themes:
 
 ### 7. Metadata as the Control Plane
 
-The final article will synthesize the series. By this point, metadata is no longer passive description. It is part of orchestration, governance, observability, reproducibility, and machine-managed infrastructure.
+Now published as [Metadata as the Control Plane](/blog/metadata/part7-metadata-control-plane/), this final article synthesizes the series. By this point, metadata is no longer passive description. It is part of orchestration, governance, observability, reproducibility, and machine-managed infrastructure.
 
 Expected themes:
 

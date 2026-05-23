@@ -32,6 +32,7 @@ Tone & style:
 - Forward-looking but grounded
 - No sci-fi framing, no hype, no vague “platformization” language
 - The first major section heading may be sentence-like if it improves the setup, but subsequent section headings should be compact enough to fit cleanly in the sidebar table of contents
+- In section titles, use lowercase `and` rather than title-cased `And`
 
 Structure:
 

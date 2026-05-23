@@ -4,6 +4,7 @@ date: "2026-05-19T10:00:00+09:00"
 tags: ["Metadata", "Data", "Schema", "Architecture"]
 categories: ["Technology", "Data"]
 draft: false
+weight: 1
 ---
 
 メタデータという言葉は、重要な CSV が何かを壊すまでは抽象的に聞こえがちです。
