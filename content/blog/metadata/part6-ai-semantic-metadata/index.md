@@ -13,7 +13,7 @@ Before an engine reads data, it resolves schemas, snapshots, file inventories, a
 
 That is where metadata becomes semantic infrastructure.
 
-This article extends [Metadata as Query Planning](/blog/metadata/part5-query-planning-metadata/) and the series overview in [Metadata Systems - From Column Comments to Distributed Control Planes](/blog/metadata/). The practical question is not whether AI applications use metadata somewhere in the stack. They already do. The question is which metadata fields directly change machine behavior, how those fields support retrieval and model serving, and what breaks when they are missing or stale.
+This article extends [Metadata as Query Planning](/blog/metadata/part5-query-planning-metadata/) and the series overview in [Metadata Systems — From Column Comments to Distributed Control Planes](/blog/metadata/). The practical question is not whether AI applications use metadata somewhere in the stack. They already do. The question is which metadata fields directly change machine behavior, how those fields support retrieval and model serving, and what breaks when they are missing or stale.
 
 ## AI Systems Need More Than Typed Structure
 

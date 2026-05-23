@@ -13,7 +13,7 @@ An engine no longer treats a dataset as a loose directory of files. It resolves 
 
 That is where metadata becomes query planning.
 
-This article extends [Metadata at Lakehouse Scale](/blog/metadata/part4-lakehouse-metadata/) and the series overview in [Metadata Systems - From Column Comments to Distributed Control Planes](/blog/metadata/). The practical question is not whether optimizers are clever in the abstract. It is what information they need before execution begins, how that information changes the plan, and what happens when the metadata is weak, stale, or misleading.
+This article extends [Metadata at Lakehouse Scale](/blog/metadata/part4-lakehouse-metadata/) and the series overview in [Metadata Systems — From Column Comments to Distributed Control Planes](/blog/metadata/). The practical question is not whether optimizers are clever in the abstract. It is what information they need before execution begins, how that information changes the plan, and what happens when the metadata is weak, stale, or misleading.
 
 ## Before a Query Reads Data, It Reads Metadata
 

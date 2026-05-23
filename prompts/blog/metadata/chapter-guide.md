@@ -268,6 +268,7 @@ Keep each article:
 - one architectural escalation,
 - one memorable systems insight.
 - one opening section that may use a sentence-style heading, followed by compact section titles that fit the site sidebar table of contents.
+- in section titles, use lowercase `and` rather than title-cased `And`.
 
 Avoid:
 

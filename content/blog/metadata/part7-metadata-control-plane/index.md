@@ -13,7 +13,7 @@ Once a platform needs machine-readable context about freshness, lineage, policy,
 
 That is where metadata becomes the control plane.
 
-This article extends [AI Systems Need Semantic Metadata](/blog/metadata/part6-ai-semantic-metadata/) and the series overview in [Metadata Systems - From Column Comments to Distributed Control Planes](/blog/metadata/). The practical question is not whether modern platforms store a lot of metadata. They do. The question is which metadata directly controls system behavior, how that metadata coordinates data and AI infrastructure, and what tradeoffs appear once platforms start acting on metadata rather than merely displaying it.
+This article extends [AI Systems Need Semantic Metadata](/blog/metadata/part6-ai-semantic-metadata/) and the series overview in [Metadata Systems — From Column Comments to Distributed Control Planes](/blog/metadata/). The practical question is not whether modern platforms store a lot of metadata. They do. The question is which metadata directly controls system behavior, how that metadata coordinates data and AI infrastructure, and what tradeoffs appear once platforms start acting on metadata rather than merely displaying it.
 
 ## From field semantics to coordination
 
