@@ -1,5 +1,5 @@
 ---
-title: "Parquetと物理メタデータの台頭"
+title: "Parquet と物理メタデータの台頭"
 date: "2026-05-21T10:00:00+09:00"
 tags: ["Metadata", "Data", "Schema", "Architecture"]
 categories: ["Technology", "Data"]
