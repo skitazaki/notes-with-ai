@@ -13,7 +13,7 @@ Metadata is often introduced as a descriptive layer: column names, comments, tab
 
 At scale, metadata decides whether producers and consumers remain compatible, whether a query scans terabytes or megabytes, whether a lakehouse can coordinate concurrent writers, and whether AI systems can retrieve the right context with enough structure to act safely. In practice, metadata has become part of the control plane.
 
-This series is a technical walkthrough of that evolution. It starts with broken CSVs and ambiguous column names, then moves through schemas, contracts, Parquet internals, query planning, lakehouse metadata layers, and semantic metadata for AI workloads.
+This series is a technical walkthrough of that evolution. It starts with CSV files and ambiguous column names, then moves through schemas, contracts, Parquet internals, query planning, lakehouse metadata layers, and semantic metadata for AI workloads.
 
 It extends the ideas in [Metadata](/docs/data/metadata/) and turns them into a more implementation-oriented systems journey.
 
@@ -35,7 +35,7 @@ Across the series, the focus stays on implementation details rather than governa
 - How Iceberg, Delta Lake, catalogs, and manifests turn metadata into distributed coordination
 - How query planners and AI systems rely on metadata as executable infrastructure
 
-## Reading Order
+### Reading Order
 
 | Part | Title                                                                                        | Core Boundary                                     |
 | ---- | -------------------------------------------------------------------------------------------- | ------------------------------------------------- |
@@ -47,7 +47,7 @@ Across the series, the focus stays on implementation details rather than governa
 | 6    | [AI Systems Need Semantic Metadata](/blog/metadata/part6-ai-semantic-metadata/)              | Features, embeddings, chunks, and retrieval       |
 | 7    | [Metadata as the Control Plane](/blog/metadata/part7-metadata-control-plane/)                | Orchestration, governance, and autonomous systems |
 
-## Why The Series Is Structured This Way
+### Why The Series Is Structured This Way
 
 The progression follows real implementation pressure.
 
@@ -55,7 +55,7 @@ A CSV with unclear column names creates local confusion. A stream with multiple 
 
 That escalation is the point of the series: metadata evolves from annotation into coordination infrastructure.
 
-## Series Articles
+## Series Overview
 
 ### 1. Metadata Starts as Column Names
 
@@ -136,14 +136,10 @@ Expected themes:
 - Control-plane thinking for modern platforms
 - Why this shift is already visible in production systems
 
-## Operating Assumption
+## Series Articles
+
+### Operating Assumption
 
 This series assumes the reader already knows SQL, object storage, and distributed systems basics. The goal is not to define metadata in the abstract, but to show how real systems use it to coordinate behavior.
 
 If you are building data platforms, analytics infrastructure, lakehouses, feature stores, or retrieval systems, metadata is not a side topic. It is increasingly the layer that tells the rest of the stack what can run, what is compatible, what can be skipped, and what can be trusted.
-
-<!--
-## Future Link Updates
-
-When each article is published, replace the planned entries in the reading-order table with real Markdown links for the published posts. Keeping the structure stable here should make the series page easy to maintain as the individual documents arrive.
--->
