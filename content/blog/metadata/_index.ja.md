@@ -87,7 +87,7 @@ cascade:
 扱う論点:
 
 - 論理型と物理型の違い
-- min/max 統計と predicate pushdown
+- min/max 統計と Predicate Pushdown（フィルタ条件の押し下げ）
 - Arrow との相互運用
 - メタデータがスキャン効率を支配する理由
 
