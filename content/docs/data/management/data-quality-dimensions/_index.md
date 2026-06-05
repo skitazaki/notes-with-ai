@@ -224,6 +224,8 @@ The same distinction appears in runtime quality. Freshness may be treated as a d
 
 The model can be visualized as a single data quality domain with a stable center and several surrounding extension layers.
 
+![Layered data quality model showing a stable core of six dimensions surrounded by structural, runtime, semantic, governance, and AI extension layers](data-quality-dimensions-ChatGPT.webp)
+
 At the top level sits Data Quality as the overall concern. Directly beneath it is Core Dimensions, containing accuracy, completeness, consistency, timeliness, uniqueness, and validity. This is the smallest common model that most organizations can apply to nearly every dataset.
 
 Around that core sit five extensions.
