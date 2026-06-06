@@ -20,6 +20,8 @@ A practical data quality architecture therefore needs two things:
 
 This approach preserves conceptual clarity while making implementation more realistic. It supports measurable controls, metadata-driven governance, and automated quality operations without collapsing fundamentally different concerns into one overloaded taxonomy.
 
+![Layered data quality model showing a stable core of six dimensions surrounded by structural, runtime, semantic, governance, and AI extension layers](data-quality-dimensions-ChatGPT.webp)
+
 ## Why Modern Platforms Need a Layered Model
 
 Traditional data quality discussions emerged in a world where the main concern was whether stored data correctly represented business reality. That concern still matters. A customer identifier can still be duplicated, a product category can still be invalid, and an order amount can still be wrong.
@@ -220,23 +222,7 @@ The dimension might be completeness. The metric could be the percentage of order
 
 The same distinction appears in runtime quality. Freshness may be treated as a dimension in some tooling, but operationally it is often better modeled as a signal or SLA-backed metric tied to timeliness and delivery behavior. Separating the concepts improves architecture because it allows platforms to manage controls precisely: dimensions organize meaning, metrics quantify, checks enforce, signals observe, and incidents trigger response.
 
-## The Conceptual Diagram
-
-The model can be visualized as a single data quality domain with a stable center and several surrounding extension layers.
-
-![Layered data quality model showing a stable core of six dimensions surrounded by structural, runtime, semantic, governance, and AI extension layers](data-quality-dimensions-ChatGPT.webp)
-
-At the top level sits Data Quality as the overall concern. Directly beneath it is Core Dimensions, containing accuracy, completeness, consistency, timeliness, uniqueness, and validity. This is the smallest common model that most organizations can apply to nearly every dataset.
-
-Around that core sit five extensions.
-
-Structural Extensions capture schema and relationship quality where formal structure exists.
-Runtime Extensions capture operational signals produced by pipelines, monitoring, and observability systems.
-Semantic Extensions capture whether data is understandable and usable for consumers.
-Governance Extensions capture whether data is controlled, traceable, and compliant.
-AI Extensions capture whether data is fit for statistical learning and model operation.
-
-The diagram is not meant to suggest a strict processing order. It expresses an architectural dependency. Organizations should stabilize the core first, then attach the extension layers according to their platform design, metadata maturity, regulatory requirements, and AI usage.
+![Data quality control concepts showing the relationship between dimensions, metrics, checks, constraints, rules, signals, incidents, and SLAs](data-quality-control-concepts-ChatGPT.webp)
 
 ## Designing a Metadata-Driven Quality System
 
