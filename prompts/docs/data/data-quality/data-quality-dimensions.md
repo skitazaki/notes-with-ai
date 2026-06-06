@@ -1,964 +1,283 @@
 ---
 type: docs
-path: /docs/data/management/
+path: /docs/data/management/data-quality-dimensions/
 ---
 
-Revise `content/docs/data/management/_index.md` so the `Data Quality Management` section defines a stable core model for data quality dimensions.
+# System / Authoring Prompt
 
-Writer role:
+You are an experienced technical author specializing in data management, metadata systems, data platforms, and enterprise architecture.
 
-- You are a senior data architect and technical writer.
+Write a public technical article titled:
 
-Primary objective:
+```
+Data Quality Dimensions: A Practical Model for Modern Data Platforms
+```
 
-- Define the core data quality dimensions for the Data Management page using the industry-standard core six.
-- Explicitly include **Uniqueness** as a core dimension, not as an optional extension.
-- Keep the treatment concise, concept-first, and aligned with the tone of the existing page.
+The article will be published on a technology document site for data architects, platform engineers, analytics engineers, and data governance practitioners.
 
-Required outcome for the target page:
+## Primary Objective
 
-- The `Data Quality Management` section must name these six core dimensions: **Accuracy, Completeness, Consistency, Timeliness, Validity, and Uniqueness**.
-- Briefly explain **Uniqueness** as control of unintended duplicates in records or entities.
-- Present **Integrity**, **Reliability**, **Relevance**, observability metrics, and AI-specific concerns as adjacent or extended concerns rather than part of the universal core.
-- Preserve the page's neutral explanatory style and avoid turning the section into a tooling guide.
+Explain how the industry has historically defined Data Quality Dimensions and present a practical framework that organizes those dimensions into a layered model suitable for modern data platforms.
 
-Constraints:
+The article should synthesize ideas from:
 
-- Do not reduce the core model to five dimensions.
-- Do not replace **Uniqueness** with only implementation terms such as deduplication or key constraints without first naming it as a dimension.
-- Do not expand the Data Management page into a full taxonomy of every possible quality attribute.
-
-Japanese terminology guidance:
-
-- In Japanese output, avoid translating `dimensions` as `次元`.
-- Prefer `品質観点` when describing the core set or a perspective for evaluating quality.
-- Prefer `品質特性` when referring to adjacent or extended quality properties.
-
-Use the references and comparative analysis below to justify the core model and sharpen the wording.
-
----
-
-Here’s a curated list of widely referenced articles, frameworks, standards, and research papers about **data quality dimensions** — from practical engineering guides to formal data management theory.
-
-# Foundational & Industry References
-
-## 1. Atlan — What Are Data Quality Dimensions?
-
-What Are Data Quality Dimensions? Do They Matter In 2025? | Atlan ([atlan.com][1])
-
-Good modern overview aimed at data platform teams.
-
-Covers:
-
-- Accuracy
-- Completeness
-- Consistency
-- Timeliness
-- Validity
-- Uniqueness
-- Integrity
-- Reliability
-- Relevance
-
-Useful because it connects dimensions to:
-
-- metadata platforms
-- observability
-- governance
-- AI readiness
-
----
-
-## 2. GOV.UK — Meet the Data Quality Dimensions
-
-Meet the data quality dimensions | GOV.UK ([gov.uk][2])
-
-One of the clearest public-sector explanations.
-
-Based heavily on DAMA UK guidance.
-
-Strong on:
-
-- “fit for purpose”
-- operational interpretation
-- examples from government systems
-- tradeoffs between dimensions
-
-Notable because it treats dimensions as measurable operational properties rather than abstract theory.
-
----
-
-## 3. IBM — What Are Data Quality Dimensions
-
-What Are Data Quality Dimensions? | IBM ([ibm.com][3])
-
-Enterprise-oriented summary with historical context.
-
-Important because it references:
-
+- DAMA DMBOK
+- DAMA UK Data Quality Framework
+- ISO/IEC 25012
 - Wang & Strong (1996)
-- the evolution from 15 dimensions to the modern “core six”
+- IBM
+- Collibra
+- Atlan
+- dbt
+- Soda
 
-Good bridge between:
+The goal is not to invent new dimensions, but to organize existing dimensions into a coherent architecture that helps practitioners reason about implementation, governance, metadata, observability, and AI systems.
 
-- academic theory
-- enterprise governance
-- AI/analytics use cases
+## Required Background Source
 
----
+Use the following documentation as the conceptual foundation of the article:
 
-## 4. Collibra — The 6 Dimensions of Data Quality
+https://skitazaki.github.io/notes-with-ai/docs/data/management/
 
-The 6 Dimensions of Data Quality | Collibra ([collibra.com][10])
+The article should align with the document's perspective that:
 
-Popular governance-centric explanation.
+- data management exists to support machine-operated systems
+- metadata provides context and control
+- operational systems require explicit models rather than implicit assumptions
+- architecture evolves through abstraction layers and control planes
+- governance should be implemented through metadata and automation whenever possible
 
-Strong on:
+Do not merely summarize the document. Use it as a framing philosophy.
 
-- stewardship
-- governance workflows
-- operational accountability
-- enterprise trust
+## Target Audience
 
-Often cited in data governance programs.
+Primary readers:
 
----
+- Data Architects
+- Data Platform Engineers
+- Analytics Engineers
+- Data Governance Leaders
+- MDM Practitioners
 
-## 5. dbt Labs — Data Quality Dimensions
+Assume readers understand:
 
-Data Quality Dimensions | dbt Labs ([getdbt.com][11])
+- ETL/ELT
+- Data Warehouses
+- Lakehouses
+- Data Contracts
+- Data Observability
+- Metadata Management
 
-Modern analytics-engineering perspective.
+Avoid introductory explanations of these topics.
 
-Useful because it reframes dimensions around:
+## Central Thesis
 
-- ELT pipelines
-- tests
-- contracts
+Most discussions of Data Quality Dimensions focus on individual dimensions such as Accuracy, Completeness, or Timeliness.
+
+However, modern data platforms require a broader view because quality concerns now span:
+
+- datasets
+- schemas
+- pipelines
+- metadata
+- governance
+- AI systems
+
+Instead of endlessly expanding the list of dimensions, organizations should establish:
+
+1. A small stable Core Model
+2. Several Extension Layers
+
+This creates a scalable and implementation-friendly quality architecture.
+
+## Required Framework
+
+Present the following model.
+
+### Core Six Dimensions
+
+The universal dimensions that apply to nearly every dataset:
+
+- Accuracy
+- Completeness
+- Consistency
+- Timeliness
+- Uniqueness
+- Validity
+
+Explain:
+
+- historical origins
+- DAMA alignment
+- why these dimensions remain stable
+- examples of measurable checks
+
+### Optional Structural Extensions
+
+Used when datasets have structural relationships.
+
+Include examples such as:
+
+- Referential Integrity
+- Entity Integrity
+- Constraint Integrity
+- Conformity
+
+Explain:
+
+- relationship to relational models
+- applicability to data contracts
+- why not all data assets require them
+
+### Runtime Extensions
+
+Focus on operational quality of data systems.
+
+Include examples such as:
+
+- Freshness
+- Volume Anomalies
+- Distribution Drift
+- Schema Evolution
+- Pipeline Reliability
+
+Explain:
+
 - observability
-- transformation layers
+- monitoring
+- data operations
+- why runtime signals are not intrinsic data properties
 
-Particularly relevant for:
+Reference modern practices from dbt and Soda where appropriate.
 
-- warehouse-native stacks
-- analytics engineering
-- CI/CD for data
+### Semantic Extensions
 
----
+Focus on consumer understanding and usability.
 
-## 6. Soda — Guide to Data Quality Dimensions
-
-Guide to Data Quality Dimensions | Soda ([soda.io][12])
-
-Operational monitoring / observability viewpoint.
-
-Strong practical mapping between:
-
-- dimensions
-- automated checks
-- incidents
-- SLAs
-
-Good for production data platform discussions.
-
----
-
-# Standards & Formal Frameworks
-
-## 7. DAMA International — DMBOK / DAMA UK
-
-The most influential practitioner framework.
-
-Especially important:
-
-- DAMA DMBOK2
-- DAMA UK Data Quality dimensions guidance
-
-Defines the widely adopted core dimensions:
-
-- Accuracy
-- Completeness
-- Consistency
-- Timeliness
-- Validity
-- Uniqueness
-
-This framework strongly influenced:
-
-- government standards
-- enterprise governance tools
-- vendor terminology
-
----
-
-## 8. IBM Documentation — Data Quality Dimensions
-
-Data quality dimensions | IBM Documentation ([ibm.com][4])
-
-Technical implementation-oriented documentation.
-
-Interesting because it extends DAMA’s six dimensions with:
-
-- Conformity
-- Coverage
-- Homogeneity
-
-Useful for implementation-level discussions.
-
----
-
-## 9. The Government Data Quality Framework
-
-The Government Data Quality Framework | GOV.UK ([gov.uk][5])
-
-Broader operational framework around measurement and governance.
-
-Useful for:
-
-- metrics
-- quality management
-- organizational rollout
-- measurement programs
-
----
-
-## 10. ISO/IEC 25012 Data Quality Model
-
-ISO/IEC 25012 Data Quality Model ([iso25000.com][13])
-
-Formal international standard.
-
-Defines:
-
-- inherent quality
-- system-dependent quality
-- multiple detailed dimensions
-
-Important academically and for regulated industries.
-
----
-
-# Academic & Research-Oriented References
-
-## 11. Beyond Accuracy: What Data Quality Means to Data Consumers
-
-Beyond Accuracy: What Data Quality Means to Data Consumers ([dl.acm.org][14])
-
-By Richard Y. Wang and Diane M. Strong (1996).
-
-This is the seminal paper.
-
-Historically important because it:
-
-- moved the field beyond “accuracy only”
-- introduced multidimensional quality thinking
-- influenced DAMA and modern governance
-
-Introduced categories like:
-
-- intrinsic
-- contextual
-- representational
-- accessibility quality
-
-Referenced directly by IBM.
-
----
-
-## 12. Unfolding Data Quality Dimensions in Practice: A Survey
-
-Unfolding Data Quality Dimensions in Practice: A Survey ([arxiv.org][6])
-
-Modern survey mapping:
-
-- quality dimensions
-- actual tooling
-- implementation techniques
-
-Very useful if you want to connect:
-
-- theory
-- observability tooling
-- validation frameworks
-
----
-
-## 13. A Survey of Open-Source Data Quality Tools
-
-A survey of open-source data quality tools: shedding light on the materialization of data quality dimensions in practice ([arxiv.org][7])
-
-Focuses on how tools operationalize dimensions.
-
-Useful for implementation-level articles because it bridges:
-
-- dimensions
-- concrete checks
-- engineering systems
-
----
-
-## 14. Data Quality Dimensions for Fair AI
-
-Data quality dimensions for fair AI ([arxiv.org][8])
-
-Interesting modern angle:
-
-- fairness
-- bias
-- AI datasets
-- labeling quality
-
-Shows how classic dimensions evolve in ML contexts.
-
----
-
-# Useful Meta References
-
-## 15. Data Management Wiki — Overview of Data Quality Dimensions
-
-Overview data quality dimensions | Data Management Wiki ([datamanagement.wiki][9])
-
-Massive catalog of dimensions beyond the “core six.”
-
-Useful for exploring advanced concepts like:
-
-- provenance
-- traceability
-- recoverability
-- reproducibility
-- accessibility
-- plausibility
-
-Great reference for building a taxonomy.
-
----
-
-# Suggested Classification for Your Blog Series
-
-Given your metadata-oriented article direction, you could classify these references into:
-
-| Perspective              | Representative Sources   |
-| ------------------------ | ------------------------ |
-| Governance-centric       | DAMA, Collibra, GOV.UK   |
-| Data engineering-centric | dbt, Soda                |
-| Metadata-centric         | Atlan, IBM               |
-| Academic/theoretical     | Wang & Strong, ISO 25012 |
-| Observability-centric    | Soda, surveys            |
-| AI-era evolution         | Fair AI paper            |
-
----
-
-# Comparative Analysis of Data Quality Dimensions
-
-A striking thing about “data quality dimensions” literature is that most sources converge on a small stable nucleus, while differing mainly in:
-
-- operational scope,
-- governance maturity,
-- metadata sophistication,
-- and target architecture (BI, MDM, streaming, AI, observability, etc.).
-
-This makes it possible to design:
-
-1. a **small canonical core model**, and
-2. a layered extension system.
-
-That structure is much more scalable than trying to standardize dozens of overlapping dimensions.
-
----
-
-# 1. Concrete Dimensions by Reference
-
-## DAMA DMBOK / DAMA UK
-
-The de facto enterprise baseline.
-
-| Dimension    | Meaning                           |
-| ------------ | --------------------------------- |
-| Accuracy     | Correct representation of reality |
-| Completeness | Required values exist             |
-| Consistency  | No contradiction across systems   |
-| Timeliness   | Up-to-date for intended use       |
-| Validity     | Conforms to format/rules          |
-| Uniqueness   | No unintended duplicates          |
-
-### Characteristics
-
-- Operationally practical
-- Governance-oriented
-- Human-manageable
-- Minimal stable vocabulary
-
-This is effectively the “industry core six.”
-
----
-
-# GOV.UK Data Quality Dimensions
-
-Closely aligned with DAMA.
-
-| Dimension    | Notes        |
-| ------------ | ------------ |
-| Accuracy     | Same as DAMA |
-| Completeness | Same         |
-| Consistency  | Same         |
-| Uniqueness   | Same         |
-| Validity     | Same         |
-| Timeliness   | Same         |
-
-### Important Addition
-
-GOV.UK strongly emphasizes:
-
-- “fitness for purpose”
-- contextual interpretation
-- measurable operational definitions
-
-Meaning:
-
-> dimensions alone are insufficient without domain context.
-
----
-
-# IBM
-
-IBM mixes classic governance with platform implementation concerns.
-
-| Dimension    | Notes                         |
-| ------------ | ----------------------------- |
-| Accuracy     | Core                          |
-| Completeness | Core                          |
-| Consistency  | Core                          |
-| Timeliness   | Core                          |
-| Validity     | Core                          |
-| Uniqueness   | Core                          |
-| Integrity    | Referential/logical integrity |
-| Conformity   | Structural/schema conformity  |
-| Coverage     | Breadth of represented data   |
-| Reliability  | Stability/trustworthiness     |
-
-### Characteristics
-
-IBM begins transitioning from:
-
-- business/governance dimensions
-  toward:
-- implementation/runtime quality properties.
-
----
-
-# Collibra
-
-Mostly the canonical six.
-
-| Dimension    | Notes |
-| ------------ | ----- |
-| Accuracy     | Core  |
-| Completeness | Core  |
-| Consistency  | Core  |
-| Timeliness   | Core  |
-| Validity     | Core  |
-| Uniqueness   | Core  |
-
-### Characteristics
-
-- Governance/stewardship centric
-- Organizational accountability focus
-- Minimalist vocabulary
-
----
-
-# dbt Labs
-
-dbt reframes dimensions through analytics engineering.
-
-| Dimension             | Interpretation          |
-| --------------------- | ----------------------- |
-| Freshness             | Timeliness in pipelines |
-| Uniqueness            | Key constraints         |
-| Non-nullness          | Completeness            |
-| Valid values          | Validity                |
-| Referential integrity | Integrity               |
-| Consistency           | Cross-model coherence   |
-
-### Important Observation
-
-dbt translates abstract dimensions into:
-
-- executable tests,
-- CI checks,
-- contracts.
-
-This is crucial.
-
-It suggests:
-
-> dimensions should map to executable assertions.
-
----
-
-# Soda
-
-Operational observability perspective.
-
-| Dimension             | Operationalized As    |
-| --------------------- | --------------------- |
-| Freshness             | Pipeline latency      |
-| Volume                | Distribution/coverage |
-| Schema                | Structural validity   |
-| Validity              | Rule compliance       |
-| Accuracy              | Expected values       |
-| Uniqueness            | Duplicate detection   |
-| Referential integrity | Relationship checks   |
-
-### Characteristics
-
-- Monitoring-centric
-- Runtime anomaly-oriented
-- Strongly statistical
-
-This introduces:
-
-- distributional quality,
-- observability metrics,
-- anomaly detection.
-
----
-
-# Atlan
-
-Expands toward metadata-aware systems.
-
-| Dimension    | Notes                     |
-| ------------ | ------------------------- |
-| Accuracy     | Core                      |
-| Completeness | Core                      |
-| Consistency  | Core                      |
-| Timeliness   | Core                      |
-| Validity     | Core                      |
-| Uniqueness   | Core                      |
-| Integrity    | Referential/logical       |
-| Reliability  | Trust stability           |
-| Relevance    | Suitability for consumers |
-
-### Characteristics
-
-Atlan adds consumer-oriented metadata semantics:
-
-- discoverability,
-- usability,
-- trust signals.
-
----
-
-# Wang & Strong (1996)
-
-Academic foundational model.
-
-## Intrinsic Quality
-
-| Dimension     |
-| ------------- |
-| Accuracy      |
-| Objectivity   |
-| Believability |
-| Reputation    |
-
-## Contextual Quality
-
-| Dimension          |
-| ------------------ |
-| Relevancy          |
-| Value-added        |
-| Timeliness         |
-| Completeness       |
-| Appropriate amount |
-
-## Representational Quality
-
-| Dimension             |
-| --------------------- |
-| Interpretability      |
-| Ease of understanding |
-| Consistency           |
-| Conciseness           |
-
-## Accessibility Quality
-
-| Dimension     |
-| ------------- |
-| Accessibility |
-| Security      |
-
-### Characteristics
-
-This is not merely operational quality.
-It models:
-
-- human trust,
-- usability,
-- interpretation,
-- cognition.
-
-Very influential philosophically.
-
----
-
-# ISO/IEC 25012
-
-Most comprehensive formal model.
-
-## Inherent Quality
-
-Examples:
-
-- Accuracy
-- Completeness
-- Credibility
-- Currentness
-
-## System-dependent Quality
-
-Examples:
-
-- Availability
-- Portability
-- Recoverability
-- Accessibility
-- Compliance
-- Traceability
-
-### Characteristics
-
-ISO expands quality into:
-
-- platform/system behavior,
-- operational resilience,
-- lifecycle management.
-
-This begins overlapping with:
-
-- reliability engineering,
-- governance,
-- security,
-- platform architecture.
-
----
-
-# 2. Dimension Consolidation
-
-When normalized semantically, many dimensions collapse into the same concepts.
-
----
-
-## Canonical Semantic Clusters
-
-| Canonical Cluster | Synonyms / Variants         |
-| ----------------- | --------------------------- |
-| Accuracy          | Correctness, Precision      |
-| Completeness      | Coverage, Non-nullness      |
-| Consistency       | Coherence                   |
-| Validity          | Conformity, Schema validity |
-| Timeliness        | Freshness, Currentness      |
-| Uniqueness        | Deduplication               |
-| Integrity         | Referential integrity       |
-| Relevance         | Fitness for purpose         |
-| Reliability       | Trustworthiness, Stability  |
-| Accessibility     | Availability, Usability     |
-| Interpretability  | Understandability           |
-| Security          | Confidentiality             |
-| Traceability      | Lineage, Provenance         |
-
----
-
-# 3. Proposed Core Model
-
-A practical architecture should keep the core intentionally small.
-
-Too many “core” dimensions cause:
-
-- governance confusion,
-- duplicated checks,
-- overlapping semantics,
-- implementation inconsistency.
-
----
-
-# Recommended Core Dimensions
-
-## Tier 1 — Universal Core
-
-These appear across nearly every framework.
-
-| Core Dimension | Why Core                         |
-| -------------- | -------------------------------- |
-| Accuracy       | Fundamental semantic correctness |
-| Completeness   | Missingness is universal         |
-| Consistency    | Multi-system coherence           |
-| Validity       | Rule/schema conformance          |
-| Timeliness     | Data decays                      |
-| Uniqueness     | Duplicate control                |
-
-This is effectively:
-
-> the irreducible operational core.
-
-These dimensions:
-
-- are measurable,
-- map to executable checks,
-- apply to almost every architecture,
-- remain understandable across organizations.
-
-For [content/docs/data/management/\_index.md](content/docs/data/management/_index.md), use this six-dimension set as the canonical core list.
-Do not omit **Uniqueness** from the core definition.
-
----
-
-# 4. Recommended Extension Architecture
-
-Instead of endlessly growing the core model:
-
-Create layered extensions.
-
----
-
-# Extension Layer A — Relational Integrity
-
-## Domain
-
-Database semantics and structural correctness.
-
-| Dimension             |
-| --------------------- |
-| Referential Integrity |
-| Entity Integrity      |
-| Constraint Integrity  |
-
-### Why Extension?
-
-Not all datasets are relational.
-Examples:
-
-- documents,
-- vectors,
-- event streams,
-- logs.
-
----
-
-# Extension Layer B — Observability & Runtime
-
-## Domain
-
-Operational platform monitoring.
-
-| Dimension            |
-| -------------------- |
-| Freshness latency    |
-| Volume anomalies     |
-| Distribution drift   |
-| Schema evolution     |
-| Pipeline reliability |
-
-### Why Extension?
-
-These are:
-
-- runtime behaviors,
-- statistical properties,
-- operational signals.
-
-Not intrinsic data properties.
-
----
-
-# Extension Layer C — Consumer & Semantic Quality
-
-## Domain
-
-Human usability and trust.
-
-| Dimension         |
-| ----------------- |
-| Relevance         |
-| Interpretability  |
-| Understandability |
-| Accessibility     |
-| Reputation        |
-| Believability     |
-
-### Why Extension?
-
-These are contextual and subjective.
-Often domain-dependent.
-
----
-
-# Extension Layer D — Governance & Compliance
-
-## Domain
-
-Organizational controls.
-
-| Dimension            |
-| -------------------- |
-| Traceability         |
-| Auditability         |
-| Lineage completeness |
-| Policy compliance    |
-| Retention compliance |
-
-### Why Extension?
-
-These concern:
-
-- lifecycle management,
-- accountability,
-- regulation,
-  not raw data itself.
-
----
-
-# Extension Layer E — AI/ML Quality
-
-Increasingly important.
-
-| Dimension          |
-| ------------------ |
-| Label quality      |
-| Bias/fairness      |
-| Feature stability  |
-| Drift              |
-| Representativeness |
-| Reproducibility    |
-
-### Why Extension?
-
-ML systems introduce:
-
-- probabilistic correctness,
-- training-serving skew,
-- population representation concerns.
-
-These differ fundamentally from classical BI quality.
-
----
-
-# 5. Proposed Meta-Model
-
-A very scalable organization is:
-
-| Layer                | Purpose                                 |
-| -------------------- | --------------------------------------- |
-| Core                 | Universal intrinsic operational quality |
-| Structural Extension | Relational/data model semantics         |
-| Runtime Extension    | Observability & pipelines               |
-| Semantic Extension   | Human interpretation                    |
-| Governance Extension | Organizational control                  |
-| AI Extension         | Statistical/ML quality                  |
-
-This prevents:
-
-- semantic overload,
-- duplicated terminology,
-- governance sprawl.
-
----
-
-# 6. Important Insight: “Dimensions” vs “Checks”
-
-One of the biggest confusions in the industry:
-
-People mix:
-
-- dimensions,
-- metrics,
-- checks,
-- symptoms,
-- SLAs,
-- platform signals.
-
-Example:
-
-| Concept            | Type      |
-| ------------------ | --------- |
-| Completeness       | Dimension |
-| Null percentage    | Metric    |
-| NOT NULL test      | Check     |
-| Missing rows alert | Incident  |
-| <1% missing SLA    | Policy    |
-
-dbt and Soda implicitly expose this distinction very well.
-
-This distinction is extremely important for implementation-level architecture.
-
----
-
-# 7. Recommended Final Model
-
-For the `Data Quality Management` section in [content/docs/data/management/\_index.md](content/docs/data/management/_index.md), present the model below as the recommended framing.
-
-If you are designing a modern metadata/data quality platform, a strong model would be:
-
-## Core Dimensions
-
-- Accuracy
-- Completeness
-- Consistency
-- Validity
-- Timeliness
-- Uniqueness
-
-## Optional Structural Extensions
-
-- Integrity
-- Conformity
-
-## Runtime Extensions
-
-- Drift
-- Volume anomalies
-- Latency
-- Reliability
-
-## Semantic Extensions
+Include examples such as:
 
 - Relevance
 - Interpretability
 - Accessibility
+- Understandability
+- Believability
 
-## Governance Extensions
+Connect these dimensions to:
+
+- metadata
+- catalogs
+- semantic layers
+- knowledge management
+
+Reference Wang & Strong where appropriate.
+
+### Governance Extensions
+
+Focus on organizational control.
+
+Include examples such as:
 
 - Traceability
-- Compliance
+- Lineage Completeness
 - Auditability
+- Policy Compliance
+- Retention Compliance
 
-## AI Extensions
+Explain how metadata systems enable governance automation.
 
-- Bias
+### AI Extensions
+
+Focus on machine learning and AI workloads.
+
+Include examples such as:
+
 - Representativeness
-- Feature stability
+- Bias
+- Fairness
+- Feature Stability
+- Training-Serving Consistency
 - Reproducibility
 
-That gives:
+Explain why traditional data quality models are insufficient for AI systems.
 
-- a stable canonical base,
-- compatibility with DAMA,
-- compatibility with observability tooling,
-- extensibility toward AI systems,
-- and clear implementation boundaries.
+## Required Section
 
-[1]: https://atlan.com/data-quality-dimensions/ "What Are Data Quality Dimensions? Do They Matter In 2025?"
-[2]: https://www.gov.uk/government/news/meet-the-data-quality-dimensions "Meet the data quality dimensions - GOV.UK"
-[3]: https://www.ibm.com/think/topics/data-quality-dimensions "What Are Data Quality Dimensions? | IBM"
-[4]: https://www.ibm.com/docs/en/cloud-paks/cp-data/5.3.x?topic=quality-data-dimensions "Data quality dimensions"
-[5]: https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework/ "The Government Data Quality Framework - GOV.UK"
-[6]: https://arxiv.org/abs/2507.17507 "Unfolding Data Quality Dimensions in Practice: A Survey"
-[7]: https://arxiv.org/abs/2407.18649 "A survey of open-source data quality tools: shedding light on the materialization of data quality dimensions in practice"
-[8]: https://arxiv.org/abs/2305.06967 "Data quality dimensions for fair AI"
-[9]: https://datamanagement.wiki/overview/overview_data_quality_dimension "Overview data quality dimensions [Data Management Wiki]"
-[10]: https://www.collibra.com/blog/the-6-dimensions-of-data-quality "The 6 Dimensions of Data Quality | Collibra"
-[11]: https://www.getdbt.com/blog/data-quality-dimensions "Data Quality Dimensions | dbt Labs"
-[12]: https://soda.io/blog/guide-to-data-quality-dimensions "Guide to Data Quality Dimensions | Soda"
-[13]: https://iso25000.com/index.php/en/iso-25000-standards/iso-25012 "ISO/IEC 25012 Data Quality Model"
-[14]: https://dl.acm.org/doi/10.1145/240455.240479 "Beyond Accuracy: What Data Quality Means to Data Consumers"
+Include a dedicated section explaining the distinction between:
+
+- Dimension
+- Metric
+- Check
+- Constraint
+- Rule
+- Signal
+- Incident
+- SLA
+
+Use examples to demonstrate why these concepts are frequently confused.
+
+Include a table similar to:
+
+| Concept   | Purpose                             |
+| --------- | ----------------------------------- |
+| Dimension | What aspect of quality is evaluated |
+| Metric    | How quality is measured             |
+| Check     | How quality is verified             |
+| Signal    | Evidence of behavior                |
+| Incident  | Quality failure event               |
+| SLA       | Quality objective                   |
+
+Explain why separating these concepts improves architecture design.
+
+## Required Architectural Diagram
+
+Describe a conceptual diagram that contains:
+
+```text
+Data Quality
+│
+├── Core Dimensions
+│
+├── Structural Extensions
+│
+├── Runtime Extensions
+│
+├── Semantic Extensions
+│
+├── Governance Extensions
+│
+└── AI Extensions
+```
+
+The diagram should be explained in prose rather than rendered as ASCII art.
+
+## Writing Style
+
+Requirements:
+
+- Technical but accessible
+- Vendor-neutral
+- Architecture-oriented
+- Evidence-based
+- Practical rather than academic
+
+Avoid:
+
+- marketing language
+- product promotion
+- exaggerated claims
+- "best practices" lists without rationale
+
+## Desired Length
+
+Approximately 2,500–4,000 words.
+
+The article should be readable within 10–15 minutes.
+
+## Desired Outcome
+
+Readers should leave with:
+
+1. A clear understanding of the major industry data quality frameworks.
+2. A practical mental model for organizing quality dimensions.
+3. A way to distinguish intrinsic data quality from runtime, governance, and AI concerns.
+4. A blueprint for designing future metadata-driven data quality systems.
