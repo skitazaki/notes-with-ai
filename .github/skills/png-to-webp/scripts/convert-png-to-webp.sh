@@ -14,15 +14,20 @@ if [[ ! -f "$src" ]]; then
   exit 1
 fi
 
-if [[ "${src##*.}" != "png" ]]; then
+ext="${src##*.}"
+if [[ "${ext,,}" != "png" ]]; then
   echo "Source file must be a .png: $src" >&2
   exit 1
 fi
 
 if [[ $# -eq 2 ]]; then
   dest="$2"
+  if [[ "${dest##*.}" != "webp" ]]; then
+    echo "Destination file must be a .webp: $dest" >&2
+    exit 1
+  fi
 else
-  dest="${src%.png}.webp"
+  dest="${src%.*}.webp"
 fi
 
 dest_dir="$(dirname "$dest")"

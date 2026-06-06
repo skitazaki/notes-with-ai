@@ -1,6 +1,6 @@
 ---
 type: docs
-path: /docs/data/management/data-quality-dimensions
+path: /docs/data/management/data-quality-dimensions/
 ---
 
 # System / Authoring Prompt
