@@ -99,7 +99,7 @@ Consistency does not require values to be identical everywhere. It requires diff
 
 Timeliness evaluates whether data is available at the time it is needed for its intended use. This dimension has long existed in enterprise frameworks because information can be technically correct and still operationally useless if it arrives too late.
 
-Timeliness remains part of the core because many data assets have an implicit decision window. Fraud detection, supply planning, and regulatory reporting all depend on freshness relative to a business deadline.
+Timeliness remains part of the core because many data assets have an implicit decision window. Fraud detection, supply planning, and regulatory reporting all depend on data arriving in time for a business deadline. Freshness is a common operational metric for evaluating that timeliness, but it is not identical to timeliness itself.
 
 Typical measurable checks include:
 
@@ -168,6 +168,14 @@ These matter because a high-quality dataset that fails to arrive, arrives partia
 The important distinction is architectural. A freshness breach is often evidence about the delivery system. A volume anomaly is a signal that something may be wrong in source behavior, ingestion logic, or business activity. Distribution drift indicates a change pattern that may be benign, expected, or harmful depending on context. Pipeline reliability measures whether the system repeatedly produces outputs as promised.
 
 These concerns should be modeled as runtime extensions because they are not always intrinsic data properties. They are signals from the operation of the data system. They support incident response, SLO management, and proactive detection, but they should not replace the core dimensions that describe the data itself.
+
+<!-- deno-fmt-ignore-start -->
+
+{{< callout >}}
+Timeliness is a quality dimension about whether data is available early enough for its intended use. Freshness is an operational metric that describes how much time has elapsed since the data was last updated, and it is one of the most common ways to evaluate timeliness.
+{{< /callout >}}
+
+<!-- deno-fmt-ignore-end -->
 
 ## Semantic Extensions
 
