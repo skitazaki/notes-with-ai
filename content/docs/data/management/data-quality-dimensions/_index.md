@@ -41,7 +41,7 @@ The architectural mistake is to treat all of these as if they were interchangeab
 
 Industry literature does not use identical terminology, but there is broad convergence around a recognizable foundation.
 
-DAMA DMBOK and the DAMA UK Data Quality Framework both emphasize dimensions such as accuracy, completeness, consistency, timeliness, validity, and uniqueness as practical enterprise controls. ISO/IEC 25012 broadens the conversation by distinguishing inherent and system-dependent quality characteristics. Wang and Strong introduced a wider view that included not only intrinsic quality, but also contextual, representational, and accessibility concerns. Vendor frameworks from IBM, Collibra, and Atlan commonly restate the classic dimensions while connecting them to governance, metadata, and operational workflows. Modern data tooling such as dbt and Soda extends quality practice further into testing, observability, and runtime detection.
+[DAMA-DMBOK][1] and the DAMA UK Data Quality Framework both emphasize dimensions such as accuracy, completeness, consistency, timeliness, validity, and uniqueness as practical enterprise controls. [ISO/IEC 25012][2] broadens the conversation by distinguishing inherent and system-dependent quality characteristics. [Wang and Strong][3] introduced a wider view that included not only intrinsic quality, but also contextual, representational, and accessibility concerns. Vendor frameworks from IBM, Collibra, and Atlan commonly restate the classic dimensions while connecting them to governance, metadata, and operational workflows. Modern data tooling such as dbt and Soda extends quality practice further into testing, observability, and runtime detection.
 
 These frameworks are not contradictory. They operate at different levels of abstraction.
 
@@ -169,7 +169,7 @@ These concerns should be modeled as runtime extensions because they are not alwa
 
 ## Semantic Extensions
 
-Semantic extensions address whether consumers can interpret and use data correctly. Wang and Strong's work is especially helpful here because it distinguished intrinsic quality from contextual and representational concerns such as relevance, interpretability, and understandability.
+Semantic extensions address whether consumers can interpret and use data correctly. [Wang and Strong's work][3] is especially helpful here because it distinguished intrinsic quality from contextual and representational concerns such as relevance, interpretability, and understandability. Later academic work such as [AIMQ: A Methodology for Information Quality Assessment][4] helped operationalize those ideas for assessment.
 
 Representative semantic dimensions include relevance, interpretability, accessibility, understandability, and believability.
 
@@ -262,3 +262,8 @@ Data quality dimensions remain useful, but only when they are organized with arc
 The complexity of modern platforms does not require abandoning that core. It requires surrounding it with extension layers for structural, runtime, semantic, governance, and AI concerns. This layered approach clarifies which properties belong to the data itself, which belong to system operation, which depend on metadata and policy, and which emerge only in AI contexts.
 
 For organizations building modern data platforms, that distinction is not academic. It is what makes a quality architecture implementable. A clear model allows metrics, checks, signals, SLAs, and governance controls to be attached to the right layer, and it makes metadata the mechanism through which quality becomes observable, enforceable, and scalable.
+
+[1]: https://www.dama.org/cpages/body-of-knowledge "DAMA Data Management Body of Knowledge (DAMA-DMBOK)"
+[2]: https://www.iso.org/standard/35736.html "ISO/IEC 25012:2008 Data quality model"
+[3]: https://doi.org/10.1080/07421222.1996.11518099 "Beyond Accuracy: What Data Quality Means to Data Consumers"
+[4]: https://doi.org/10.1016/S0378-7206(02)00043-5 "AIMQ: A Methodology for Information Quality Assessment"
