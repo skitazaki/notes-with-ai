@@ -39,15 +39,15 @@ This means data quality now spans multiple control surfaces:
 
 The architectural mistake is to treat all of these as if they were interchangeable. They are related, but they are not identical. A layered model makes the boundary explicit.
 
-## Framework Convergence
+## A Shared Core Model
 
-Industry literature does not use identical terminology, but there is broad convergence around a recognizable foundation.
+Industry literature does not use identical terminology or the same level of granularity, but when the major frameworks are compared, a shared set of core quality dimensions can be extracted as a common model.
 
 [DAMA-DMBOK][1] and the DAMA UK Data Quality Framework both emphasize dimensions such as accuracy, completeness, consistency, timeliness, validity, and uniqueness as practical enterprise controls. [ISO/IEC 25012][2] broadens the conversation by distinguishing inherent and system-dependent quality characteristics. [Wang and Strong][3] introduced a wider view that included not only intrinsic quality, but also contextual, representational, and accessibility concerns. Vendor frameworks from IBM, Collibra, and Atlan commonly restate the classic dimensions while connecting them to governance, metadata, and operational workflows. Modern data tooling such as dbt and Soda extends quality practice further into testing, observability, and runtime detection.
 
 These frameworks are not contradictory. They operate at different levels of abstraction.
 
-The most durable conclusion is that a small set of intrinsic dimensions remains stable across time, while the surrounding practice continues to expand as data platforms become more automated and more operationally complex.
+The most durable conclusion is that a small common core of intrinsic dimensions can be identified, while the surrounding practice continues to expand as data platforms become more automated and more operationally complex.
 
 ## The Core Six Dimensions
 
@@ -251,7 +251,7 @@ When these layers are explicit, organizations can scale quality without turning 
 
 ## Summary
 
-Data quality dimensions remain useful, but only when they are organized with architectural discipline. The universal core is still small: accuracy, completeness, consistency, timeliness, uniqueness, and validity. That core reflects the long-running convergence across DAMA-style enterprise frameworks and remains the most practical baseline for broad implementation.
+Data quality dimensions remain useful, but only when they are organized with architectural discipline. The universal core is still small: accuracy, completeness, consistency, timeliness, uniqueness, and validity. That core is the common model that becomes visible when major quality frameworks are compared, and it remains the most practical baseline for broad implementation.
 
 The complexity of modern platforms does not require abandoning that core. It requires surrounding it with extension layers for structural, runtime, semantic, governance, and AI concerns. This layered approach clarifies which properties belong to the data itself, which belong to system operation, which depend on metadata and policy, and which emerge only in AI contexts.
 
