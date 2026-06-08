@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T14:00:00+09:00'
-title = 'Reference Architectures'
-weight = 12
-prev = '/docs/acc/decision-frameworks'
-next = '/docs/acc/concept-dictionary'
-+++
+---
+date: "2026-05-10T14:00:00+09:00"
+title: "Reference Architectures"
+weight: 12
+prev: "/docs/acc/decision-frameworks"
+next: "/docs/acc/concept-dictionary"
+---
 
 Reference architectures are not universal blueprints. They are calibrated examples that show how principles, controls, and tradeoffs fit together in realistic environments.
 

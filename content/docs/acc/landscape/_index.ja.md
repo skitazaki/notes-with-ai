@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T12:20:00+09:00'
-title = 'アクセス制御の全体像'
-weight = 2
-prev = '/docs/acc/vision'
-next = '/docs/acc/human-identity'
-+++
+---
+date: "2026-05-10T12:20:00+09:00"
+title: "アクセス制御の全体像"
+weight: 2
+prev: "/docs/acc/vision"
+next: "/docs/acc/human-identity"
+---
 
 アクセス制御の世界は、単一製品の比較ではなく、相互に連携するシステム群として理解するのが適切です。
 

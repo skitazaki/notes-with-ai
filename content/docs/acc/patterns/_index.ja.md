@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:30:00+09:00'
-title = 'アーキテクチャパターン集'
-weight = 9
-prev = '/docs/acc/governance'
-next = '/docs/acc/threat-models'
-+++
+---
+date: "2026-05-10T13:30:00+09:00"
+title: "アーキテクチャパターン集"
+weight: 9
+prev: "/docs/acc/governance"
+next: "/docs/acc/threat-models"
+---
 
 アーキテクチャパターンは、繰り返し現れる適用と信頼分配の問題に対する再利用可能な答えです。
 

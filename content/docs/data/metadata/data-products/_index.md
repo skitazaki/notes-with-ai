@@ -1,10 +1,10 @@
-+++
-date = '2026-05-16T09:20:00+09:00'
-title = 'Data Products & Contracts'
-weight = 3
-prev = '/docs/data/metadata/data-mesh'
-next = '/docs/data/metadata/semantic-layer'
-+++
+---
+date: "2026-05-16T09:20:00+09:00"
+title: "Data Products & Contracts"
+weight: 3
+prev: "/docs/data/metadata/data-mesh"
+next: "/docs/data/metadata/semantic-layer"
+---
 
 In data-centric organizations, a data product is not just a dataset. It is a consumable asset with a clear interface, ownership model, reliability expectation, and lifecycle.
 

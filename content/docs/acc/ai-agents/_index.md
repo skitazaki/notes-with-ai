@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:00:00+09:00'
-title = 'AI Agents & Autonomous Authorization'
-weight = 6
-prev = '/docs/acc/nonhuman-identity'
-next = '/docs/acc/defense-in-depth'
-+++
+---
+date: "2026-05-10T13:00:00+09:00"
+title: "AI Agents & Autonomous Authorization"
+weight: 6
+prev: "/docs/acc/nonhuman-identity"
+next: "/docs/acc/defense-in-depth"
+---
 
 AI agents should be treated as constrained operating identities rather than as a user-interface feature layered on top of existing permissions.
 

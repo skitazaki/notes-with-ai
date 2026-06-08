@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T12:30:00+09:00'
-title = '人のアイデンティティとエンタープライズ IAM'
-weight = 3
-prev = '/docs/acc/landscape'
-next = '/docs/acc/authorization-models'
-+++
+---
+date: "2026-05-10T12:30:00+09:00"
+title: "人のアイデンティティとエンタープライズ IAM"
+weight: 3
+prev: "/docs/acc/landscape"
+next: "/docs/acc/authorization-models"
+---
 
 人のアイデンティティは、説明責任、承認、法的義務が最終的には人に紐づくため、依然としてエンタープライズアクセス制御の基盤です。
 

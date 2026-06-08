@@ -1,7 +1,7 @@
-+++
-date = '2025-05-06T20:18:15+09:00'
-title = 'Docs'
-+++
+---
+date: "2025-05-06T20:18:15+09:00"
+title: "Docs"
+---
 
 {{< cards >}}
 {{< card link="swe" title="Software Engineering" icon="document-text" >}}

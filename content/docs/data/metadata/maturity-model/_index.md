@@ -1,9 +1,9 @@
-+++
-date = '2026-05-16T09:50:00+09:00'
-title = 'Metadata Maturity Model'
-weight = 6
-prev = '/docs/data/metadata/federated-governance'
-+++
+---
+date: "2026-05-16T09:50:00+09:00"
+title: "Metadata Maturity Model"
+weight: 6
+prev: "/docs/data/metadata/federated-governance"
+---
 
 Metadata maturity is a useful way to understand how organizations evolve from documentation-heavy data estates into automation-capable and eventually adaptive platforms.
 

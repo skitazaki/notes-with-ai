@@ -1,8 +1,8 @@
-+++
-date = '2026-05-10T12:00:00+09:00'
-title = 'Access Control'
-weight = 2
-+++
+---
+date: "2026-05-10T12:00:00+09:00"
+title: "Access Control"
+weight: 2
+---
 
 Access control is the architectural discipline that decides who or what may do what, under which conditions, and with what degree of assurance.
 In modern systems, that question spans employees, customers, workloads, APIs, third-party services, and AI agents operating across cloud and on-premises boundaries.

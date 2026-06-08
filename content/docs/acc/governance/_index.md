@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:20:00+09:00'
-title = 'Governance, Compliance & Auditability'
-weight = 8
-prev = '/docs/acc/defense-in-depth'
-next = '/docs/acc/patterns'
-+++
+---
+date: "2026-05-10T13:20:00+09:00"
+title: "Governance, Compliance & Auditability"
+weight: 8
+prev: "/docs/acc/defense-in-depth"
+next: "/docs/acc/patterns"
+---
 
 Access control becomes trustworthy at organizational scale only when permissions, policies, and exceptions are governable, explainable, and reviewable over time.
 

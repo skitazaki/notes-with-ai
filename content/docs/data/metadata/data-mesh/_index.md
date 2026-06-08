@@ -1,10 +1,10 @@
-+++
-date = '2026-05-16T09:10:00+09:00'
-title = 'Data Mesh & Metadata'
-weight = 2
-prev = '/docs/data/metadata/active-metadata'
-next = '/docs/data/metadata/data-products'
-+++
+---
+date: "2026-05-16T09:10:00+09:00"
+title: "Data Mesh & Metadata"
+weight: 2
+prev: "/docs/data/metadata/active-metadata"
+next: "/docs/data/metadata/data-products"
+---
 
 Data mesh depends on domain ownership, self-serve infrastructure, and federated governance, but metadata is what turns those principles into a coordinated operating system.
 

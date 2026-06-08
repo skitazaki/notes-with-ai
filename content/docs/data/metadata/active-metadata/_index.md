@@ -1,10 +1,10 @@
-+++
-date = '2026-05-16T09:00:00+09:00'
-title = 'Active Metadata'
-weight = 1
-prev = '/docs/data/metadata'
-next = '/docs/data/metadata/data-mesh'
-+++
+---
+date: "2026-05-16T09:00:00+09:00"
+title: "Active Metadata"
+weight: 1
+prev: "/docs/data/metadata"
+next: "/docs/data/metadata/data-mesh"
+---
 
 Active metadata is the point where metadata stops being a passive description of the system and starts participating in system behavior.
 

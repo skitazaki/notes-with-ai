@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:20:00+09:00'
-title = 'ガバナンス、コンプライアンス、監査可能性'
-weight = 8
-prev = '/docs/acc/defense-in-depth'
-next = '/docs/acc/patterns'
-+++
+---
+date: "2026-05-10T13:20:00+09:00"
+title: "ガバナンス、コンプライアンス、監査可能性"
+weight: 8
+prev: "/docs/acc/defense-in-depth"
+next: "/docs/acc/patterns"
+---
 
 アクセス制御が組織規模で信頼できるものになるのは、権限、ポリシー、例外が時間を通じて統制可能で、説明可能で、レビュー可能である場合だけです。
 

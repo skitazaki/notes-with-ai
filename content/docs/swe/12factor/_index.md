@@ -1,8 +1,8 @@
-+++
-date = '2025-12-04T22:29:49+09:00'
-title = 'Twelve-Factor App'
-weight = 1
-+++
+---
+date: "2025-12-04T22:29:49+09:00"
+title: "Twelve-Factor App"
+weight: 1
+---
 
 **Twelve-Factor** is a concise, language-agnostic manifesto for building cloud-native SaaS apps, which are single
 codebase tracked in VCS, clear separation of config from code, stateless processes, backing services as attached

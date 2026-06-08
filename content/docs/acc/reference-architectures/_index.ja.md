@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T14:00:00+09:00'
-title = '参照アーキテクチャ'
-weight = 12
-prev = '/docs/acc/decision-frameworks'
-next = '/docs/acc/concept-dictionary'
-+++
+---
+date: "2026-05-10T14:00:00+09:00"
+title: "参照アーキテクチャ"
+weight: 12
+prev: "/docs/acc/decision-frameworks"
+next: "/docs/acc/concept-dictionary"
+---
 
 参照アーキテクチャは万能の設計図ではありません。原則、制御、トレードオフが現実的な環境でどう組み合わさるかを示す、調整済みの例です。
 

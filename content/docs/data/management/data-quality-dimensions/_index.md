@@ -1,9 +1,9 @@
-+++
-date = '2026-06-05T10:00:00+09:00'
-title = 'Data Quality Dimensions'
-weight = 1
-prev = '/docs/data/management'
-+++
+---
+date: "2026-06-05T10:00:00+09:00"
+title: "Data Quality Dimensions"
+weight: 1
+prev: "/docs/data/management"
+---
 
 Data quality is often discussed as a flat list of attributes such as accuracy, completeness, and timeliness. That list is useful, but it is no longer sufficient on its own. Modern data platforms operate across batch and streaming pipelines, metadata systems, semantic layers, governance controls, and AI workloads. In that environment, quality is not a single checklist. It is an architectural model.
 

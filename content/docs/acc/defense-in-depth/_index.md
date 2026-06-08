@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:10:00+09:00'
-title = 'Defense-in-Depth Architecture'
-weight = 7
-prev = '/docs/acc/ai-agents'
-next = '/docs/acc/governance'
-+++
+---
+date: "2026-05-10T13:10:00+09:00"
+title: "Defense-in-Depth Architecture"
+weight: 7
+prev: "/docs/acc/ai-agents"
+next: "/docs/acc/governance"
+---
 
 Access control is strongest when identity and authorization are supported by surrounding controls that reduce the consequences of error, misuse, or compromise.
 
