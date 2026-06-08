@@ -39,15 +39,15 @@ This means data quality now spans multiple control surfaces:
 
 The architectural mistake is to treat all of these as if they were interchangeable. They are related, but they are not identical. A layered model makes the boundary explicit.
 
-## Framework Convergence
+## A Shared Core Model
 
-Industry literature does not use identical terminology, but there is broad convergence around a recognizable foundation.
+Industry literature does not use identical terminology or the same level of granularity, but when the major frameworks are compared, a shared set of core quality dimensions can be extracted as a common model.
 
 [DAMA-DMBOK][1] and the DAMA UK Data Quality Framework both emphasize dimensions such as accuracy, completeness, consistency, timeliness, validity, and uniqueness as practical enterprise controls. [ISO/IEC 25012][2] broadens the conversation by distinguishing inherent and system-dependent quality characteristics. [Wang and Strong][3] introduced a wider view that included not only intrinsic quality, but also contextual, representational, and accessibility concerns. Vendor frameworks from IBM, Collibra, and Atlan commonly restate the classic dimensions while connecting them to governance, metadata, and operational workflows. Modern data tooling such as dbt and Soda extends quality practice further into testing, observability, and runtime detection.
 
 These frameworks are not contradictory. They operate at different levels of abstraction.
 
-The most durable conclusion is that a small set of intrinsic dimensions remains stable across time, while the surrounding practice continues to expand as data platforms become more automated and more operationally complex.
+The most durable conclusion is that a small common core of intrinsic dimensions can be identified, while the surrounding practice continues to expand as data platforms become more automated and more operationally complex.
 
 ## The Core Six Dimensions
 
@@ -99,7 +99,7 @@ Consistency does not require values to be identical everywhere. It requires diff
 
 Timeliness evaluates whether data is available at the time it is needed for its intended use. This dimension has long existed in enterprise frameworks because information can be technically correct and still operationally useless if it arrives too late.
 
-Timeliness remains part of the core because many data assets have an implicit decision window. Fraud detection, supply planning, and regulatory reporting all depend on freshness relative to a business deadline.
+Timeliness remains part of the core because many data assets have an implicit decision window. Fraud detection, supply planning, and regulatory reporting all depend on data arriving in time for a business deadline. Freshness is a common operational metric for evaluating that timeliness, but it is not identical to timeliness itself.
 
 Typical measurable checks include:
 
@@ -168,6 +168,14 @@ These matter because a high-quality dataset that fails to arrive, arrives partia
 The important distinction is architectural. A freshness breach is often evidence about the delivery system. A volume anomaly is a signal that something may be wrong in source behavior, ingestion logic, or business activity. Distribution drift indicates a change pattern that may be benign, expected, or harmful depending on context. Pipeline reliability measures whether the system repeatedly produces outputs as promised.
 
 These concerns should be modeled as runtime extensions because they are not always intrinsic data properties. They are signals from the operation of the data system. They support incident response, SLO management, and proactive detection, but they should not replace the core dimensions that describe the data itself.
+
+<!-- deno-fmt-ignore-start -->
+
+{{< callout >}}
+Timeliness is a quality dimension about whether data is available early enough for its intended use. Freshness is an operational metric that describes how much time has elapsed since the data was last updated, and it is one of the most common ways to evaluate timeliness.
+{{< /callout >}}
+
+<!-- deno-fmt-ignore-end -->
 
 ## Semantic Extensions
 
@@ -243,7 +251,7 @@ When these layers are explicit, organizations can scale quality without turning 
 
 ## Summary
 
-Data quality dimensions remain useful, but only when they are organized with architectural discipline. The universal core is still small: accuracy, completeness, consistency, timeliness, uniqueness, and validity. That core reflects the long-running convergence across DAMA-style enterprise frameworks and remains the most practical baseline for broad implementation.
+Data quality dimensions remain useful, but only when they are organized with architectural discipline. The universal core is still small: accuracy, completeness, consistency, timeliness, uniqueness, and validity. That core is the common model that becomes visible when major quality frameworks are compared, and it remains the most practical baseline for broad implementation.
 
 The complexity of modern platforms does not require abandoning that core. It requires surrounding it with extension layers for structural, runtime, semantic, governance, and AI concerns. This layered approach clarifies which properties belong to the data itself, which belong to system operation, which depend on metadata and policy, and which emerge only in AI contexts.
 

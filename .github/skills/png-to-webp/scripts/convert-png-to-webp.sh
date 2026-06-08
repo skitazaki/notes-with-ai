@@ -15,14 +15,14 @@ if [[ ! -f "$src" ]]; then
 fi
 
 ext="${src##*.}"
-if [[ "${ext,,}" != "png" ]]; then
+if [[ ! "$ext" =~ ^[Pp][Nn][Gg]$ ]]; then
   echo "Source file must be a .png: $src" >&2
   exit 1
 fi
 
 if [[ $# -eq 2 ]]; then
   dest="$2"
-  if [[ "${dest##*.}" != "webp" ]]; then
+  if [[ ! "${dest##*.}" =~ ^[Ww][Ee][Bb][Pp]$ ]]; then
     echo "Destination file must be a .webp: $dest" >&2
     exit 1
   fi
