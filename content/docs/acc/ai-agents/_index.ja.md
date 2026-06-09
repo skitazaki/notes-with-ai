@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:00:00+09:00'
-title = 'AI エージェントと自律的認可'
-weight = 6
-prev = '/docs/acc/nonhuman-identity'
-next = '/docs/acc/defense-in-depth'
-+++
+---
+date: "2026-05-10T13:00:00+09:00"
+title: "AI エージェントと自律的認可"
+weight: 6
+prev: "/docs/acc/nonhuman-identity"
+next: "/docs/acc/defense-in-depth"
+---
 
 AI エージェントは、既存権限の上に載る単なる UI 機能ではなく、制約付きで動作する運用上のアイデンティティとして扱うべきです。
 

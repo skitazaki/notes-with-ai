@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T12:10:00+09:00'
-title = 'Vision & Principles'
-weight = 1
-prev = '/docs/acc'
-next = '/docs/acc/landscape'
-+++
+---
+date: "2026-05-10T12:10:00+09:00"
+title: "Vision & Principles"
+weight: 1
+prev: "/docs/acc"
+next: "/docs/acc/landscape"
+---
 
 Access control is no longer a narrow authorization concern at the edge of an application. It is a system-wide discipline for continuously establishing trustworthy intent between principals, resources, policies, and execution environments.
 

@@ -1,9 +1,9 @@
-+++
-date = '2026-02-18T20:00:00+09:00'
-title = 'Data Management'
-weight = 2
-prev = '/docs/data'
-+++
+---
+date: "2026-02-18T20:00:00+09:00"
+title: "Data Management"
+weight: 2
+prev: "/docs/data"
+---
 
 Data Management ensures that data remains trustworthy, usable, and sustainable over time.
 

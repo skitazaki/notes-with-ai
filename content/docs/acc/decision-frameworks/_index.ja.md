@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:50:00+09:00'
-title = '意思決定フレームワークとトレードオフ'
-weight = 11
-prev = '/docs/acc/threat-models'
-next = '/docs/acc/reference-architectures'
-+++
+---
+date: "2026-05-10T13:50:00+09:00"
+title: "意思決定フレームワークとトレードオフ"
+weight: 11
+prev: "/docs/acc/threat-models"
+next: "/docs/acc/reference-architectures"
+---
 
 良いアクセス制御設計は、普遍的な正解よりも、明示的なトレードオフ管理に依存します。
 

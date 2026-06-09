@@ -1,10 +1,10 @@
-+++
-date = '2026-01-14T20:00:00+09:00'
-draft = false
-title = '2026年のテクノロジーの展望'
-tags = ["Software Engineering", "Data & AI", "Robotics", "Quantum Computing"]
-categories= ["Technology"]
-+++
+---
+date: "2026-01-14T20:00:00+09:00"
+draft: false
+title: "2026年のテクノロジーの展望"
+tags: ["Software Engineering", "Data & AI", "Robotics", "Quantum Computing"]
+categories: ["Technology"]
+---
 
 **ソフトウェアエンジニアリング**、**データ&AI**、**ロボティクス**、**量子コンピューティング** に関する **2026年のテクノロジーの展望**を作成しました。
 本文書は、1～3年の時間軸で意思決定を行う **エンジニアリングリーダー**、**アーキテクト**、**テクノロジー戦略家** を対象としています。

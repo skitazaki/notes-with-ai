@@ -1,9 +1,9 @@
-+++
-date = '2026-05-16T09:50:00+09:00'
-title = 'メタデータ成熟度モデル'
-weight = 6
-prev = '/docs/data/metadata/federated-governance'
-+++
+---
+date: "2026-05-16T09:50:00+09:00"
+title: "メタデータ成熟度モデル"
+weight: 6
+prev: "/docs/data/metadata/federated-governance"
+---
 
 メタデータ成熟度は、文書中心のデータ基盤が、自動化可能で、最終的には適応的なプラットフォームへ進化していく過程を理解するうえで有効な見方です。
 

@@ -1,10 +1,10 @@
-+++
-date = '2026-05-16T09:40:00+09:00'
-title = 'フェデレーテッドガバナンス'
-weight = 5
-prev = '/docs/data/metadata/semantic-layer'
-next = '/docs/data/metadata/maturity-model'
-+++
+---
+date: "2026-05-16T09:40:00+09:00"
+title: "フェデレーテッドガバナンス"
+weight: 5
+prev: "/docs/data/metadata/semantic-layer"
+next: "/docs/data/metadata/maturity-model"
+---
 
 フェデレーテッドガバナンスは、多くのドメインが独立して動きながらも、ポリシー整合性、説明責任、監査可能性を失わないための運用モデルです。
 

@@ -1,10 +1,10 @@
-+++
-date = '2026-05-16T09:30:00+09:00'
-title = 'Semantic Layer & Interoperability'
-weight = 4
-prev = '/docs/data/metadata/data-products'
-next = '/docs/data/metadata/federated-governance'
-+++
+---
+date: "2026-05-16T09:30:00+09:00"
+title: "Semantic Layer & Interoperability"
+weight: 4
+prev: "/docs/data/metadata/data-products"
+next: "/docs/data/metadata/federated-governance"
+---
 
 Metadata cannot scale across domains if every team uses the same words differently or encodes business logic only inside local dashboards and pipelines.
 

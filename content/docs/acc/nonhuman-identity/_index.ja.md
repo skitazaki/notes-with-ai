@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T12:50:00+09:00'
-title = 'ワークロード、マシン、非人間 ID'
-weight = 5
-prev = '/docs/acc/authorization-models'
-next = '/docs/acc/ai-agents'
-+++
+---
+date: "2026-05-10T12:50:00+09:00"
+title: "ワークロード、マシン、非人間 ID"
+weight: 5
+prev: "/docs/acc/authorization-models"
+next: "/docs/acc/ai-agents"
+---
 
 人間以外の主体に対するアイデンティティ管理は、アクセス制御アーキテクチャの中でも急速に重要性を増している領域です。現代のシステムには、人間の運用者よりもはるかに多くのサービス、ワークロード、パイプライン、デバイス、エージェントが存在します。
 

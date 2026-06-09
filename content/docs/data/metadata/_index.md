@@ -1,9 +1,9 @@
-+++
-date = '2026-05-08T10:00:00+09:00'
-title = 'Metadata'
-weight = 3
-prev = '/docs/data'
-+++
+---
+date: "2026-05-08T10:00:00+09:00"
+title: "Metadata"
+weight: 3
+prev: "/docs/data"
+---
 
 Metadata describes data about data. It provides the structural, operational, and semantic context that allows people and systems to find, understand, trust, and govern data assets at scale.
 

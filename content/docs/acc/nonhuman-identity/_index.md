@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T12:50:00+09:00'
-title = 'Workload, Machine, and Non-Human Identity'
-weight = 5
-prev = '/docs/acc/authorization-models'
-next = '/docs/acc/ai-agents'
-+++
+---
+date: "2026-05-10T12:50:00+09:00"
+title: "Workload, Machine, and Non-Human Identity"
+weight: 5
+prev: "/docs/acc/authorization-models"
+next: "/docs/acc/ai-agents"
+---
 
 Identity for non-human actors is now one of the fastest-growing parts of access-control architecture because modern systems contain far more services, workloads, pipelines, devices, and agents than human operators.
 

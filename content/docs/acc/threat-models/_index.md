@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:40:00+09:00'
-title = 'Threat Model Catalog'
-weight = 10
-prev = '/docs/acc/patterns'
-next = '/docs/acc/decision-frameworks'
-+++
+---
+date: "2026-05-10T13:40:00+09:00"
+title: "Threat Model Catalog"
+weight: 10
+prev: "/docs/acc/patterns"
+next: "/docs/acc/decision-frameworks"
+---
 
 Threat models help teams move from generic security concern to explicit attack paths, trust-boundary analysis, and mitigation choices.
 

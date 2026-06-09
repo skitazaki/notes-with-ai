@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T12:40:00+09:00'
-title = '認可モデルとポリシーシステム'
-weight = 4
-prev = '/docs/acc/human-identity'
-next = '/docs/acc/nonhuman-identity'
-+++
+---
+date: "2026-05-10T12:40:00+09:00"
+title: "認可モデルとポリシーシステム"
+weight: 4
+prev: "/docs/acc/human-identity"
+next: "/docs/acc/nonhuman-identity"
+---
 
 認可は、認証済みの主体が、特定の文脈において、特定のリソースに対して、特定の操作を実行できるかを判断する仕組みです。
 

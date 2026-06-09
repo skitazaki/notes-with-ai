@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:30:00+09:00'
-title = 'Architecture Patterns Catalog'
-weight = 9
-prev = '/docs/acc/governance'
-next = '/docs/acc/threat-models'
-+++
+---
+date: "2026-05-10T13:30:00+09:00"
+title: "Architecture Patterns Catalog"
+weight: 9
+prev: "/docs/acc/governance"
+next: "/docs/acc/threat-models"
+---
 
 Architecture patterns are reusable answers to recurring enforcement and trust-distribution problems.
 
