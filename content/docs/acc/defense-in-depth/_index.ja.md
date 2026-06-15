@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:10:00+09:00'
-title = '多層防御アーキテクチャ'
-weight = 7
-prev = '/docs/acc/ai-agents'
-next = '/docs/acc/governance'
-+++
+---
+date: "2026-05-10T13:10:00+09:00"
+title: "多層防御アーキテクチャ"
+weight: 7
+prev: "/docs/acc/ai-agents"
+next: "/docs/acc/governance"
+---
 
 アクセス制御は、アイデンティティと認可を取り巻く追加制御によって、誤設定・誤用・侵害の影響を抑えられるときに最も強くなります。
 

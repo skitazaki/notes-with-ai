@@ -1,7 +1,7 @@
-+++
-date = '2025-05-22T20:37:23+09:00'
-title = 'Webapp Directory Layout'
-+++
+---
+date: "2025-05-22T20:37:23+09:00"
+title: "Webapp Directory Layout"
+---
 
 When building web applications, choosing the right directory structure is crucial for maintaining clean, scalable, and
 efficient code. Each web framework has its own conventions and best practices for organizing code into folders and

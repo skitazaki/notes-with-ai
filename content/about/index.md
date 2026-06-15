@@ -1,8 +1,8 @@
-+++
-date = '2025-05-06T15:54:11+09:00'
-draft = false
-title = 'About'
-+++
+---
+date: "2025-05-06T15:54:11+09:00"
+draft: false
+title: "About"
+---
 
 Hi, I'm Shigeru Kitazaki, who is a software engineer specialized in data engineering. This site is a collection of
 personal notes focused on **software engineering**, **data**, and **artificial intelligence**, co-created with the help

@@ -1,10 +1,10 @@
-+++
-date = '2026-05-16T09:00:00+09:00'
-title = 'アクティブメタデータ'
-weight = 1
-prev = '/docs/data/metadata'
-next = '/docs/data/metadata/data-mesh'
-+++
+---
+date: "2026-05-16T09:00:00+09:00"
+title: "アクティブメタデータ"
+weight: 1
+prev: "/docs/data/metadata"
+next: "/docs/data/metadata/data-mesh"
+---
 
 アクティブメタデータは、メタデータが受動的な説明情報にとどまらず、システム挙動に直接関与し始める段階を指します。
 

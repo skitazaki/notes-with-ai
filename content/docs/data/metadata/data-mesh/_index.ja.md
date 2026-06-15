@@ -1,10 +1,10 @@
-+++
-date = '2026-05-16T09:10:00+09:00'
-title = 'データメッシュとメタデータ'
-weight = 2
-prev = '/docs/data/metadata/active-metadata'
-next = '/docs/data/metadata/data-products'
-+++
+---
+date: "2026-05-16T09:10:00+09:00"
+title: "データメッシュとメタデータ"
+weight: 2
+prev: "/docs/data/metadata/active-metadata"
+next: "/docs/data/metadata/data-products"
+---
 
 データメッシュは、ドメインオーナーシップ、セルフサービス基盤、フェデレーテッドガバナンスに依存しますが、それらを協調的な運用体系に変えるのはメタデータです。
 

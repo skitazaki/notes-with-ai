@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T12:40:00+09:00'
-title = 'Authorization Models & Policy Systems'
-weight = 4
-prev = '/docs/acc/human-identity'
-next = '/docs/acc/nonhuman-identity'
-+++
+---
+date: "2026-05-10T12:40:00+09:00"
+title: "Authorization Models & Policy Systems"
+weight: 4
+prev: "/docs/acc/human-identity"
+next: "/docs/acc/nonhuman-identity"
+---
 
 Authorization determines whether an authenticated principal may perform a specific action on a specific resource in a specific context.
 

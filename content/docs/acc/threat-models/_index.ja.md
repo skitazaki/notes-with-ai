@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:40:00+09:00'
-title = '脅威モデル集'
-weight = 10
-prev = '/docs/acc/patterns'
-next = '/docs/acc/decision-frameworks'
-+++
+---
+date: "2026-05-10T13:40:00+09:00"
+title: "脅威モデル集"
+weight: 10
+prev: "/docs/acc/patterns"
+next: "/docs/acc/decision-frameworks"
+---
 
 脅威モデルは、一般論の不安を、具体的な攻撃経路、信頼境界分析、緩和策の選択へ落とし込むための道具です。
 

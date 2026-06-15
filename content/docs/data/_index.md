@@ -1,8 +1,8 @@
-+++
-date = '2026-02-18T21:00:00+09:00'
-title = 'Data'
-weight = 1
-+++
+---
+date: "2026-02-18T21:00:00+09:00"
+title: "Data"
+weight: 1
+---
 
 Data is a structured or unstructured representation of real-world or system-generated phenomena, stored in a persistent form to enable processing, analysis, sharing, and control.
 This section organizes principles, architectures, practices, and operational models that enable scalable, reliable, and compliant data systems.

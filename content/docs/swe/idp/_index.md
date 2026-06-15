@@ -1,8 +1,8 @@
-+++
-date = '2026-02-14T12:00:00+09:00'
-title = 'Internal Developer Portal (IDP)'
-weight = 10
-+++
+---
+date: "2026-02-14T12:00:00+09:00"
+title: "Internal Developer Portal (IDP)"
+weight: 10
+---
 
 ## 1. What is an Internal Developer Portal?
 

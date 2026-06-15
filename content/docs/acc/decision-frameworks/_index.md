@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T13:50:00+09:00'
-title = 'Decision Frameworks & Tradeoffs'
-weight = 11
-prev = '/docs/acc/threat-models'
-next = '/docs/acc/reference-architectures'
-+++
+---
+date: "2026-05-10T13:50:00+09:00"
+title: "Decision Frameworks & Tradeoffs"
+weight: 11
+prev: "/docs/acc/threat-models"
+next: "/docs/acc/reference-architectures"
+---
 
 Good access-control design depends less on universal best practices than on explicit tradeoff management.
 

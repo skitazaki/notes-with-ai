@@ -1,9 +1,9 @@
-+++
-date = '2026-05-10T14:10:00+09:00'
-title = '用語集'
-weight = 13
-prev = '/docs/acc/reference-architectures'
-+++
+---
+date: "2026-05-10T14:10:00+09:00"
+title: "用語集"
+weight: 13
+prev: "/docs/acc/reference-architectures"
+---
 
 アクセス制御アーキテクチャでは、言葉の小さな違いが信頼前提の大きな違いを隠すため、共通語彙が不可欠です。
 

@@ -1,10 +1,10 @@
-+++
-date = '2026-05-10T12:30:00+09:00'
-title = 'Human Identity & Enterprise IAM'
-weight = 3
-prev = '/docs/acc/landscape'
-next = '/docs/acc/authorization-models'
-+++
+---
+date: "2026-05-10T12:30:00+09:00"
+title: "Human Identity & Enterprise IAM"
+weight: 3
+prev: "/docs/acc/landscape"
+next: "/docs/acc/authorization-models"
+---
 
 Human identity remains the foundation of enterprise access control because business accountability, approvals, and legal obligations are still anchored to people.
 

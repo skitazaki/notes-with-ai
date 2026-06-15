@@ -1,10 +1,10 @@
-+++
-date = '2026-05-16T09:40:00+09:00'
-title = 'Federated Governance'
-weight = 5
-prev = '/docs/data/metadata/semantic-layer'
-next = '/docs/data/metadata/maturity-model'
-+++
+---
+date: "2026-05-16T09:40:00+09:00"
+title: "Federated Governance"
+weight: 5
+prev: "/docs/data/metadata/semantic-layer"
+next: "/docs/data/metadata/maturity-model"
+---
 
 Federated governance is the operating model that lets many domains move independently without giving up policy consistency, accountability, or auditability.
 

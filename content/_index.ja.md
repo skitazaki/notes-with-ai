@@ -1,8 +1,8 @@
-+++
-date = '2025-05-01T21:23:12+09:00'
-draft = false
-title = 'Notes with AI'
-+++
+---
+date: "2025-05-01T21:23:12+09:00"
+draft: false
+title: "Notes with AI"
+---
 
 # Notes with AI
 

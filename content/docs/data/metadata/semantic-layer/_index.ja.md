@@ -1,10 +1,10 @@
-+++
-date = '2026-05-16T09:30:00+09:00'
-title = 'セマンティックレイヤーと相互運用性'
-weight = 4
-prev = '/docs/data/metadata/data-products'
-next = '/docs/data/metadata/federated-governance'
-+++
+---
+date: "2026-05-16T09:30:00+09:00"
+title: "セマンティックレイヤーと相互運用性"
+weight: 4
+prev: "/docs/data/metadata/data-products"
+next: "/docs/data/metadata/federated-governance"
+---
 
 チームごとに同じ言葉を異なる意味で使い、業務ロジックがローカルのダッシュボードやパイプラインに閉じ込められている限り、メタデータはドメイン横断で拡張できません。
 

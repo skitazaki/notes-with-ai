@@ -1,9 +1,9 @@
-+++
-date = '2026-05-10T14:10:00+09:00'
-title = 'Concept Dictionary'
-weight = 13
-prev = '/docs/acc/reference-architectures'
-+++
+---
+date: "2026-05-10T14:10:00+09:00"
+title: "Concept Dictionary"
+weight: 13
+prev: "/docs/acc/reference-architectures"
+---
 
 Shared terminology is essential in access-control architecture because small differences in language often hide large differences in trust assumptions.
 

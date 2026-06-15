@@ -1,8 +1,8 @@
-+++
-date = '2025-05-01T21:23:12+09:00'
-title = 'Notes with AI'
+---
+date: "2025-05-01T21:23:12+09:00"
+title: "Notes with AI"
 # layout = 'hextra-home'
-+++
+---
 
 # Notes with AI
 
