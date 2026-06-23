@@ -1,12 +1,12 @@
 # Image Generation Prompt — Figure 2
 
-Create a publication-quality architecture diagram titled:
+Create a publication-quality architecture diagram image titled:
 
-"Agent Operating Model 2026"
+"Harness Engineering in 2026"
 
 Subtitle:
 
-"From Context Engineering to Meta-Harness Engineering"
+"Why reliable agents need an operating environment around the model"
 
 Style:
 
@@ -20,127 +20,90 @@ Style:
 
 Central thesis:
 
-AI agents are becoming machine-operated infrastructure.
+An agent is not just a model.
 
-The critical innovation is not the model itself.
+An agent becomes production-ready only when a harness manages context, tools, permissions, evaluation, and control.
 
-The critical innovation is the operating environment around the model.
+This figure should fit the Harness Engineering section of the article.
+It should explain the idea clearly to a technical reader in one diagram.
 
-Create a layered architecture.
+Create a central architecture diagram built around this formula:
 
-Top Layer
+Agent = Model + Harness
 
-Enterprise Applications
+Place the formula near the top or center in a refined way.
 
-Examples:
+Below it, show three main zones.
 
-- Coding Agents
-- Data Agents
-- Research Agents
-- Operations Agents
-- Knowledge Agents
+Zone 1: Model
 
-Layer 2
-
-Meta-Harness Engineering
-
-Capabilities:
-
-- Multi-Agent Coordination
-- Harness Selection
-- Collaboration
-- Model Debate
-- Budget Optimization
-- Policy Enforcement
-- Model Routing
-- Risk Management
-- Secure OS Sandbox
+- reasoning
+- planning
+- generation
 
 Caption:
 
-"Systems that manage agent systems"
+"The intelligence component"
 
-Layer 3
+Zone 2: Harness Engineering
 
-Harness Engineering
+Show the harness as the dominant visual layer around or beside the model.
 
 Capabilities:
 
-- Agent Loop
-- Context Management
-- Memory
-- Evaluation
-- Guardrails
-- Tool Execution
-- Governance
-- Observability
+- context selection
+- memory
+- permission control
+- tool routing
+- guardrails
+- evaluation
+- verification
+- rollback
+- observability
+- governance
 
 Caption:
 
 "The runtime environment for reliable agents"
 
-Layer 4
+Zone 3: Business Action
 
-Tools & Data
-
-Examples:
-
-- Enterprise APIs
-- SaaS Applications
-- Knowledge Bases
-- Data Products
-- MCP Servers
-- External Services
-
-Layer 5
-
-Foundation Models
-
-Examples:
-
-- OpenAI
-- Anthropic
-- Google
-- Meta
-- Qwen
-- Mistral
-- MAI from Microsoft
+- enterprise APIs
+- SaaS applications
+- tickets and workflows
+- data systems
+- human approvals
 
 Caption:
 
-"The reasoning substrate"
+"Where agent decisions create side effects"
 
-On the right side add:
+On the right side, add a vertical band titled:
 
-AGENT CONTROL PLANE
+"Control and Trust"
 
-- Identity
-- Authorization
+Include:
+
+- identity
+- authorization
 - OBO
-- Policy
-- Memory Management
-- Governance
-- Evaluation
+- policy
+- auditability
 - FinOps
 
-The control plane spans every layer.
+Below that, add another vertical band titled:
 
-Below it add:
+"Reliability Loop"
 
-AGENT OPERATIONS
+Include:
 
-- Telemetry
-- Tracing
-- Observability
-- Reliability
-- Lineage
-- Provenance
+- telemetry
+- tracing
+- evaluation
+- rollback
+- human review
 
-The operations plane also spans every layer.
-
-On the left side add:
-
-Evolution of Engineering
+At the left side, add a compact evolution strip:
 
 Prompt Engineering (2024)
 ↓
@@ -148,12 +111,19 @@ Context Engineering (2025)
 ↓
 Harness Engineering (2026)
 ↓
-Meta-Harness Engineering (2027)
+Meta-Harness Engineering (emerging)
 
-At the bottom include:
+At the bottom, add a short practical takeaway box:
 
-"Meta-Harnesses are becoming the control plane of agent systems."
+"Prompt engineering improves demos.
+Harness engineering improves production behavior."
 
-Do not show vendors except where necessary.
+Do not make this a vendor landscape.
+Do not overload the diagram with product names.
+Focus on runtime responsibilities and operational clarity.
 
-Create a timeless architecture model rather than a vendor landscape.
+Audience:
+
+- platform engineers
+- AI engineers
+- enterprise architects

@@ -1,137 +1,112 @@
 ---
 type: image
 path: /blog/ai-agents-2026
-draft: true
-description: This was an initial version which showed an unused overview.
+description: Executive summary figure for the AI Agents 2026 article.
 ---
 
-# Image Generation Prompt
+# Image Generation Prompt — Executive Summary
 
-Create a publication-quality technology landscape infographic titled:
+Create a publication-quality summary infographic image titled:
 
 "AI Agents Tech Landscape 2026"
 
+Subtitle:
+
+"From model choice to agent operating infrastructure"
+
 Style:
 
-- Gartner-style strategic landscape
-- professional conference keynote quality
+- executive summary infographic
+- enterprise strategy whitepaper quality
 - clean vector graphics
 - white background
-- modern enterprise architecture aesthetic
-- readable in a laptop with 16:9 display size
-- suitable for a technology blog
+- minimalist enterprise architecture aesthetic
+- readable at laptop width
+- 16:9 aspect ratio
+- suitable for the opening of a technical blog
+- prioritize clarity over completeness
 
-Visualize the evolution from 2025 to 2026.
+Central message:
 
-The central message:
+The defining shift of 2026 was not smarter models.
+It was the emergence of infrastructure required to run agents safely, reliably, and economically at scale.
 
-AI Agents evolved from model-centric systems into infrastructure-centric systems.
+Do not create a dense market map.
+This figure should summarize the thesis of the article in one glance.
 
-Organize the diagram into six horizontal layers.
+Create a simple left-to-right evolution diagram with four major stages.
 
-Layer 1: Foundation Models
+Stage 1: Model-Centric AI
 
-- OpenAI
-- Anthropic
-- Google
-- Meta
-- Qwen
-- Mistral
-- xAI
+- model selection
+- prompt engineering
+- isolated tool calls
+- single-agent demos
 
-Layer 2: Protocol Layer
+Caption:
+
+"2025 focus: which model should I use?"
+
+Stage 2: Managed Agent Platforms
+
+- managed runtimes
+- deployment workflows
+- memory and evaluation
+- workflow control
+- enterprise connectors
+
+Stage 3: Protocol Ecosystem
 
 - MCP
 - A2A
-- ACP (Agent Communication Protocol)
-- ACP (Agentic Commerce Protocol) and UCP (Universal Commerce Protocol)
-- emerging interoperability protocols
+- interoperable agent interfaces
+- human approval loops
 
-Label:
+Stage 4: Agent Operating Infrastructure
 
-"The TCP/IP layer of agents"
+- harness engineering
+- identity and OBO
+- governance
+- observability
+- FinOps
 
-Layer 3: Agent Runtime Layer
+Add one soft horizontal band underneath stages 2 to 4 labeled:
 
-- LangGraph
-- CrewAI
-- LlamaIndex
-- Amazon Bedrock AgentCore
-- Microsoft Agent Framework
-- Agent Development Kit (ADK) from Google
+"Operational requirements"
 
-<!-- NOTE:
-Semantic Kernel and AutoGen pioneered the concepts of AI agents and multi-agent orchestration. The Agent Framework is the direct successor, created by the same teams. It combines AutoGen's simple abstractions for single- and multi-agent patterns with Semantic Kernel's enterprise-grade features such as session-based state management, type safety, filters, telemetry, and extensive model and embedding support. Beyond merging the two, Agent Framework introduces workflows that give developers explicit control over multi-agent execution paths, plus a robust state management system for long-running and human-in-the-loop scenarios. In short, Agent Framework is the next generation of both Semantic Kernel and AutoGen.
+Include:
 
-https://learn.microsoft.com/en-us/agent-framework/overview/
--->
+- trust
+- control
+- auditability
+- cost discipline
 
-Layer 4: Harness Layer
+On the right side, add a compact takeaway box titled:
 
-Capabilities:
+"What changed in 2026"
 
-- Agent loop
-- Context Management
-- Memory
-- Evaluation
-- Guardrails
-- Observability
-- Governance
-- Tool Execution
+Include these bullets:
 
-Label:
+- model quality became table stakes
+- platforms began owning the full agent lifecycle
+- protocols reduced integration friction
+- enterprises treated agents as governed systems
 
-"Harness Engineering"
+At the bottom add a short evolution line:
 
-Layer 5: Meta-Harness Layer
+Foundation Models → Managed Agent Platforms → Protocols → Agent Operating Infrastructure
 
-Capabilities:
+Footer caption:
 
-- Multi-Agent Coordination
-- Harness Selection
-- Model Debate
-- Policy Enforcement
-- Budget Optimization
-- Model Routing
-- Risk Management
-- Secure OS Sandbox
-- Collaboration
+"The defining trend of 2026 was not smarter models, but the infrastructure required to operate agents at scale."
 
-Label:
+Do not use many vendor logos.
+Use abstract shapes, labels, and a small number of iconic symbols so the figure reads as an executive summary rather than a product catalog.
 
-"Meta-Harness Engineering"
+Audience:
 
-Layer 6: Enterprise Applications
-
-- Coding Agents
-- Data Agents
-- Customer Service Agents
-- Operations Agents
-- Knowledge Agents
-- Research Agents
-
-On the right side, add a vertical trust stack:
-
-Identity
-Authorization
-OBO
-Audit
-Compliance
-
-On the left side, add a maturity timeline:
-
-2024 → Prompt Engineering
-
-2025 → Context Engineering
-
-2026 → Harness Engineering
-
-2027 → Meta-Harness Engineering
-
-At the bottom include a caption:
-
-"The defining trend of 2026 was not smarter models, but the emergence of **infrastructure** required to operate agents at scale."
+- enterprise architects
+- platform engineers
+- technology strategists
 
 Do not create a marketing slide.
-
-Create an architecture-thinking diagram suitable for senior engineers and enterprise architects.

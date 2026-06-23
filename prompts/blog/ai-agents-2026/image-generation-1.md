@@ -1,131 +1,153 @@
 # Image Generation Prompt — Figure 1
 
-Create a publication-quality technology landscape infographic titled:
+Create a publication-quality ecosystem diagram image titled:
 
-"AI Agents Tech Landscape 2026"
+"The Agent Platform Wars"
 
 Subtitle:
 
-"From Models to Agent Infrastructure"
+"How vendors expanded from models into managed agent platforms"
 
 Style:
 
-- Gartner-style technology landscape
-- professional conference keynote quality
+- strategic ecosystem landscape
+- enterprise conference keynote quality
 - clean vector graphics
 - white background
 - modern enterprise architecture aesthetic
 - 16:9 aspect ratio
 - suitable for a technical blog
 - prioritize readability over density
+- architecture-thinking rather than market analysis
 
 Central message:
 
-The AI industry evolved from foundation models into complete agent infrastructure platforms.
+Competition shifted from model APIs to full agent lifecycle management.
 
-Organize the diagram as a layered ecosystem map.
-Make the Agent Platforms layer stand out softly.
+Major vendors appear different on the surface but are converging toward a common operating model.
 
-Layer 1: Foundation Models
+Layout:
 
-- OpenAI
-- Anthropic
-- Google
-- Meta
-- Qwen
-- Mistral
-- xAI
-- Microsoft
+At the top, show seven platform vendor cards arranged horizontally.
 
-Caption:
-
-"The intelligence layer"
-
-Layer 2: Agent Platforms
+Vendor cards:
 
 - OpenAI Frontier
 - Claude Managed Agents
+- AWS Bedrock Agents
 - Gemini Enterprise Agent Platform
-- AWS Bedrock
-- Microsoft Foundry
-- Databricks
+- Microsoft Foundry + Copilot
+- Agent Bricks + Unity AI Gateway
 - Cloudflare Agents
 
-Caption:
+Do not emphasize any vendor over another.
 
-"Managed agent infrastructure"
+Below the vendor cards, visually converge into a shared architecture stack.
 
-Layer 3: Protocol Layer
+Add a label:
 
-- MCP
-- A2A
-- ACP (Agent Communication Protocol)
-- Commerce Protocols
-  - ACP (Agentic Commerce Protocol)
-  - UCP (Universal Commerce Protocol)
-- Emerging Interoperability Protocols
+"Converging Platform Architecture"
 
-Label:
+Shared Layer 1
 
-"The interoperable standards of agents"
+Applications and Copilots
 
-Layer 4: Agent Runtime Layer
+Examples:
 
-- LangGraph
-- CrewAI
-- LlamaIndex
-- Amazon Bedrock AgentCore
-- Microsoft Agent Framework
-- Google ADK
+- Enterprise Applications
+- Internal Copilots
+- Workflow Agents
 
-Caption:
+Shared Layer 2
 
-"Agent execution frameworks"
+Managed Agent Runtime
 
-Layer 5: Enterprise Applications
+Capabilities:
 
-- Coding Agents
-- Data Agents
-- Research Agents
-- Customer Service Agents
-- Operations Agents
-- Knowledge Agents
+- Orchestration
+- Memory
+- Tool Execution
+- Human Approval Loops
 
-Caption:
+Shared Layer 3
 
-"Business outcomes"
+Operations and Governance
 
-On the right side add:
+Capabilities:
+
+- Policy
+- Safety
+- Evaluation
+- Observability
+- Telemetry
+
+Shared Layer 4
+
+Connectors and Enterprise Data
+
+Examples:
+
+- APIs
+- SaaS Systems
+- Knowledge Bases
+- Data Platforms
+
+Shared Layer 5
+
+Foundation Models
+
+Examples:
+
+- Reasoning Models
+- Multimodal Models
+- Coding Models
+
+On the right side create a vertical pillar:
 
 TRUST & CONTROL PLANE
+
+Spanning every layer.
+
+Include:
 
 - Identity
 - Authorization
 - OBO
-- Policy
-- Evaluation
-- Telemetry
 - Governance
+- Auditability
 - FinOps
 
-Make the OBO stand out softly.
+Use a single consistent color family for this pillar.
 
-The Trust & Control Plane should visually span all layers.
+At the bottom add a concise takeaway box:
 
-At the bottom add:
+"By 2026, vendors were no longer competing only on model quality. They were competing on who could operate agents in production."
 
-Technology Evolution
+Visual Guidance:
 
-Foundation Models
-→ Agent Platforms
-→ Protocol Ecosystems
-→ Agent Runtimes
-→ Enterprise Applications
+- Use official company logos for vendor cards where recognizable.
+- Keep all logos visually balanced and similar in size.
+- Do not use logos elsewhere in the diagram.
+- Use architectural icons only for shared platform capabilities.
+- Make the shared stack visually more prominent than individual vendors.
+- The diagram should communicate convergence, not competition.
+- Do not create a benchmark chart.
+- Do not imply winners or losers.
+- Do not visually emphasize any individual capability.
+- Avoid highlighting, callouts, color accents, glow effects, badges, or special framing for any single capability.
 
-Footer caption without CAPITALIZATION:
+Audience:
 
-"The defining trend of 2026 was not smarter models, but the emergence of infrastructure required to operate agents at scale."
+- Enterprise architects
+- Platform engineers
+- Technology leaders evaluating platform direction
 
-Do not create a marketing slide.
+Visual hierarchy requirements:
 
-Create an ecosystem landscape suitable for enterprise architects and technology strategists.
+1. Shared Converging Platform Architecture is the primary focus.
+2. Vendor cards are secondary.
+3. Trust & Control Plane is tertiary.
+
+The final impression should be:
+
+"Different vendors, same destination."
