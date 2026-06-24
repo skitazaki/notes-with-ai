@@ -24,6 +24,8 @@ Agents are no longer judged only by whether they can produce a clever answer. Th
 - Enterprise adoption exposed identity, delegated authorization, audit trails, and cost control as first-class requirements.
 - The teams that will win with agents are not the ones with the flashiest prompt demos. They are the ones that can run agentic workloads repeatedly, safely, and at scale.
 
+![AI Agent Tech Landscape in 2026](ai-agents-landscape-2026.webp)
+
 ## 1. Looking Back: What the 2025 Landscape Predicted Correctly
 
 The 2025 landscape was directionally right about five major themes: reasoning models, tool use, autonomous workflows, coding agents, and multi-agent coordination.
@@ -80,25 +82,7 @@ Cloudflare emphasized edge-native agent execution close to APIs, events, and use
 
 These offerings differ in packaging, but they are converging on the same basic stack.
 
-```mermaid
-flowchart TB
-  Users[Users and Business Systems]
-  Apps[Agent Applications]
-  Runtime[Managed Agent Runtime]
-  Policy[Policy, Identity, and Safety]
-  Memory[Memory and State]
-  Eval[Evaluation and Observability]
-  Tools[Tools, Connectors, and APIs]
-  Models[Models]
-
-  Users --> Apps
-  Apps --> Runtime
-  Runtime --> Policy
-  Runtime --> Memory
-  Runtime --> Eval
-  Runtime --> Tools
-  Runtime --> Models
-```
+![The Agent Platform Wars](fig1-platforms.webp)
 
 The competition is no longer only about best model wins.
 It is about who can own the full lifecycle:
@@ -202,12 +186,7 @@ An Omnigent-style architecture is a useful illustration of the pattern.
 The point is not the brand name; the point is the design move.
 Agents are no longer manually stitched together one by one. They are supervised by a higher-order execution layer that can swap harnesses, isolate failures, and enforce global rules.
 
-```mermaid
-flowchart TD
-  Prompt[Prompt Engineering] --> Context[Context Engineering]
-  Context --> Harness[Harness Engineering]
-  Harness --> Meta[Meta-Harness Engineering]
-```
+![Harness Engineering](fig2-harness-engineering.webp)
 
 This progression may define the next durable moat in agent systems.
 As model quality converges, the strategic advantage shifts toward the intelligence of the execution layer around the models.
@@ -216,17 +195,7 @@ As model quality converges, the strategic advantage shifts toward the intelligen
 
 The agent stack in 2026 looks increasingly like a layered platform architecture rather than a single application pattern.
 
-```mermaid
-flowchart BT
-  Models[Models]
-  Tools[Tools and Data]
-  Protocols[Protocols: MCP, A2A, ACP]
-  Orchestration[Agent Orchestration]
-  Platforms[Agent Platforms]
-  Apps[Applications]
-
-  Models --> Tools --> Protocols --> Orchestration --> Platforms --> Apps
-```
+![The Agent Stack](fig3-ai-agent-stack.webp)
 
 Each layer matured during 2026.
 
@@ -242,7 +211,7 @@ The industry moved from virtual machines to containers to Kubernetes because ope
 Agent systems are following a similar path:
 
 ```
-LLMs -> Agents -> Agent Platforms
+LLMs -> Agents -> Harness -> Agent Platforms
 ```
 
 The important point is not that every organization needs the most elaborate stack immediately.
