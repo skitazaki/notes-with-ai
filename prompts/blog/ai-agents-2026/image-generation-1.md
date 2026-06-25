@@ -37,7 +37,7 @@ Vendor cards:
 - AWS Bedrock Agents
 - Gemini Enterprise Agent Platform
 - Microsoft Foundry + Copilot
-- Agent Bricks + Unity AI Gateway
+- Databricks Agent Bricks + Unity AI Gateway
 - Cloudflare Agents
 
 Do not emphasize any vendor over another.

@@ -62,6 +62,8 @@ Caption:
 
 "Platforms package and operate the layers below"
 
+Add a clear grouping brace/label spanning Layers 3–6 with this text:
+
 Agent Infrastructure (Agent Runtime & Orchestration, Protocol Layer, Tools & Data, Models)
 
 Layer 3: Agent Runtime & Orchestration

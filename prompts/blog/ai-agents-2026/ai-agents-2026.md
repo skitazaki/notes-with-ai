@@ -126,7 +126,7 @@ Cover:
 - A2A (Agent-to-Agent)
 - ACP (Agent Communication Protocol)
 - Commerce Protocols
-  - ACP (Agentic Commerce Protocol)
+  - Agentic Commerce Protocol
   - UCP (Universal Commerce Protocol)
 - emerging UI protocols
 - interoperability efforts

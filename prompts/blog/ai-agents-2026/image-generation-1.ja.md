@@ -37,7 +37,7 @@
 - AWS Bedrock Agents
 - Gemini Enterprise Agent Platform
 - Microsoft Foundry + Copilot
-- Agent Bricks + Unity AI Gateway
+- Databricks Agent Bricks + Unity AI Gateway
 - Cloudflare Agents
 
 どのベンダーも他より強調しないでください。
