@@ -5,7 +5,7 @@ title: "ドキュメント"
 
 {{< cards >}}
 {{< card link="swe" title="ソフトウェア開発" icon="document-text" >}}
-{{< card link="data" title="データ" icon="document-text" >}}
 {{< card link="acc" title="アクセス制御" icon="lock-closed" >}}
+{{< card link="data" title="データ" icon="document-text" >}}
 {{< card link="quantum-computing" title="量子コンピューティング" icon="document-text" >}}
 {{< /cards >}}

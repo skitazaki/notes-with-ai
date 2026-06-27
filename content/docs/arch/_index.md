@@ -1,7 +1,7 @@
 ---
 date: "2026-06-28T00:00:00+09:00"
 title: "Software Architecture"
-weight: 3
+weight: 1
 ---
 
 Software architecture is the discipline of reasoning about systems and communicating that reasoning clearly.

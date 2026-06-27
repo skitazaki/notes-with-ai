@@ -1,7 +1,7 @@
 ---
 date: "2025-07-26T16:34:59+09:00"
 title: "Quantum Computing"
-weight: 10
+weight: 50
 ---
 
 Quantum computing has emerged from the realm of theoretical physics into the edge of enterprise innovation. While still

@@ -1,7 +1,7 @@
 ---
 date: "2026-02-18T21:00:00+09:00"
 title: "Data"
-weight: 1
+weight: 10
 ---
 
 Data is a structured or unstructured representation of real-world or system-generated phenomena, stored in a persistent form to enable processing, analysis, sharing, and control.
