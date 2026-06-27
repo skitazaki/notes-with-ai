@@ -80,8 +80,8 @@ Structure:
      - Architecture Dimensions
      - Layers
      - Planes
-     - Pillars
      - Flows and Pipelines
+     - Pillars
      - Ownership Boundaries
      - Views and Viewpoints
      - Decision Frameworks

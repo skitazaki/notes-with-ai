@@ -7,5 +7,6 @@ title: "Docs"
 {{< card link="swe" title="Software Engineering" icon="document-text" >}}
 {{< card link="data" title="Data" icon="document-text" >}}
 {{< card link="acc" title="Access Control" icon="lock-closed" >}}
+{{< card link="arch" title="Software Architecture" icon="document-text" >}}
 {{< card link="quantum-computing" title="Quantum Computing" icon="document-text" >}}
 {{< /cards >}}
