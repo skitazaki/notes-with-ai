@@ -70,7 +70,7 @@ A pillar becomes useful only when it shapes a real decision. In practice, pillar
 
 For example, if reliability is a top pillar, teams may prefer simpler dependencies, degraded-mode behavior, and strong observability over maximum feature flexibility. If developer experience is a strong pillar, the platform may invest in self-service workflows even when that increases short-term implementation cost.
 
-## Pillars Versus Layers and Planes
+## Pillars vs. Layers and Planes
 
 | Concept | What it represents              | Typical use                                 |
 | ------- | ------------------------------- | ------------------------------------------- |

@@ -51,7 +51,7 @@ The policy plane evaluates or distributes rules that govern behavior, access, sa
 
 The workflow plane coordinates long-running or multi-step execution. It is useful when a system includes jobs, retries, approvals, asynchronous orchestration, or agent-style task planning across several services.
 
-## Planes Versus Layers
+## Planes vs. Layers
 
 Layers and planes solve different problems. A layered model explains dependency and abstraction. A plane model explains operational responsibility.
 
@@ -65,7 +65,7 @@ Layers and planes solve different problems. A layered model explains dependency 
 
 The same system can be layered and also have several planes. That is normal. A control plane may cross API gateways, service registries, schedulers, and policy stores that sit in different structural layers.
 
-## Example: Cloud-Native or AI Platform
+## Example: Cloud-Native AI Platform
 
 Consider a platform that supports agent execution and enterprise policy enforcement.
 

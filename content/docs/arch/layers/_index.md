@@ -49,7 +49,7 @@ A cloud platform may be understood as infrastructure, container runtime, platfor
 
 An AI system can also be described structurally: model providers and vector stores at one level, orchestration services above them, domain workflows above orchestration, and product interfaces above that. This view helps engineers reason about substitution, dependency containment, and integration boundaries.
 
-## What Layers Are Good For
+## What Layers are Good for
 
 ### Dependency Reasoning
 
@@ -95,7 +95,7 @@ Layers are poor tools for explaining asynchronous pipelines, workflow orchestrat
 | Module  | A concrete unit of code or capability           | What is packaged or implemented together? |
 | Tier    | A deployment or runtime placement grouping      | Where does this run?                      |
 
-## Example View
+## Example: Developer Platform
 
 Imagine a developer platform for internal applications. A useful layered view might show cloud infrastructure at the base, platform services above it, shared developer capabilities above that, domain applications above those capabilities, and user-facing channels at the top.
 

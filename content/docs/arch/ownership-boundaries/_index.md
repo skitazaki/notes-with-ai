@@ -14,7 +14,7 @@ Ownership boundaries divide responsibility for changing, operating, and governin
 
 These boundaries are related to the technical architecture, but they are not identical to services, modules, layers, or deployment units.
 
-## Why Ownership Is Architectural
+## Why Ownership is Architectural
 
 Ownership affects delivery speed, reliability, incident handling, platform strategy, and the ability to evolve a system without constant coordination. A clean technical boundary with unclear ownership is usually fragile in practice. A slightly imperfect technical boundary with clear responsibility may be far easier to operate.
 
@@ -55,7 +55,7 @@ Some architectures introduce cells, regions, or tenant partitions as ownership a
 
 Shared capabilities such as search, eventing, or model routing may need explicit ownership even when several teams depend on them. Shared does not mean ownerless.
 
-## Ownership Versus Technical Structure
+## Ownership vs. Technical Structure
 
 | Concept            | Main focus                              | Typical question                                  |
 | ------------------ | --------------------------------------- | ------------------------------------------------- |
@@ -81,7 +81,7 @@ Ownership documentation becomes useful when it answers concrete questions:
 
 If those answers are unclear, the architecture will often feel slower and riskier than the diagrams suggest.
 
-## Example: Platform Plus Product Teams
+## Example: Platform + Product Teams
 
 A common modern model combines product-domain ownership with shared platform ownership. Product teams may own customer-facing workflows and domain models. A platform team may own deployment foundations, observability, secrets handling, and internal developer tooling. A security team may own identity standards and policy frameworks. A data team may own canonical event models and governance controls.
 

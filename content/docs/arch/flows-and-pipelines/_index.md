@@ -56,7 +56,7 @@ AI pipelines often include ingestion, labeling, feature extraction, evaluation, 
 
 Some systems depend on human or policy approvals for schema changes, access requests, release gates, or model promotion. These steps belong in the architecture when they materially affect delivery or risk.
 
-## Flow Views Versus Other Architecture Models
+## Flow Views vs. Other Architecture Models
 
 | Model                | Best at explaining                              | Usually weak at explaining                   |
 | -------------------- | ----------------------------------------------- | -------------------------------------------- |

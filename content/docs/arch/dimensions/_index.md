@@ -48,7 +48,7 @@ The ownership dimension focuses on responsibility. It helps teams reason about w
 
 ### Communication
 
-The communication dimension focuses on explanation. It is concerned with which concerns are selected for a particular audience and how they are presented. Views, viewpoints, review artifacts, and audience-specific summaries belong in this dimension.
+The communication dimension focuses on explanation. It helps teams decide which concerns should be selected, framed, and presented for a particular audience. Views, viewpoints, review artifacts, and audience-specific summaries belong here because they turn architecture reasoning into communication.
 
 ## Comparison Table
 
@@ -72,13 +72,13 @@ From a strategic perspective, the platform may prioritize reliability, security,
 
 From an ownership perspective, the platform team may own the shared runtime, product teams may own domain-specific prompts and integrations, and security may own policy guardrails. That distribution affects how quickly the system can evolve.
 
-From a communication perspective, executives may need a business capability view, operators may need a runtime dependency view, and security reviewers may need a trust-boundary view.
+From a communication perspective, the same reasoning may be packaged differently: executives may need a business capability view, operators may need a runtime dependency view, and security reviewers may need a trust-boundary view.
 
 An image should appear here showing one system projected into multiple architecture dimensions.
 
 ## Relationship to Views
 
-Dimensions support reasoning. Views support communication. The distinction matters because a team often reasons in one dimension before it decides how to communicate the result.
+Dimensions support reasoning. Views are the communication artifacts produced from that reasoning. The distinction matters because a team often reasons through one or more dimensions before deciding how to package the result for a specific audience and purpose.
 
 One useful chain is:
 
