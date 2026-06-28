@@ -25,6 +25,8 @@ Planes help answer questions that structural models cannot answer clearly:
 
 These questions matter in modern platforms because the system often behaves as several overlapping runtime paths. A request path may move through gateways and model-serving components, a policy path may consult a centralized decision service, and an observability path may collect traces and logs from nearly every part of the system.
 
+![Operational planes crossing shared system structure, including control, data, policy, and observability responsibilities.](planes.webp)
+
 ## Common Planes
 
 ### Control Plane
@@ -77,21 +79,13 @@ An image should appear here showing planes crossing structural layers.
 
 ## Common Mistakes
 
-### Treating Every Subsystem as a Plane
+**Treating Every Subsystem as a Plane.** Not every labeled box deserves plane status. A plane should describe a meaningful runtime responsibility that crosses structural components or helps explain system behavior.
 
-Not every labeled box deserves plane status. A plane should describe a meaningful runtime responsibility that crosses structural components or helps explain system behavior.
+**Using Plane Terminology for Static Organization Charts.** Planes are about operation, not reporting relationships or static ownership maps.
 
-### Using Plane Terminology for Static Organization Charts
+**Hiding Reliability or Security Concerns behind Vague Labels.** Calling something a policy plane or management plane is not enough. The documentation still needs to explain what decisions are made there, what depends on it, and how failure is handled.
 
-Planes are about operation, not reporting relationships or static ownership maps.
-
-### Hiding Reliability or Security Concerns Behind Vague Labels
-
-Calling something a policy plane or management plane is not enough. The documentation still needs to explain what decisions are made there, what depends on it, and how failure is handled.
-
-### Confusing Control Paths With User Request Paths
-
-Many incidents happen because teams assume the system that configures behavior is the same system that carries the primary workload. Keeping those paths distinct improves diagnosis and design review.
+**Confusing Control Paths with User Request Paths.** Many incidents happen because teams assume the system that configures behavior is the same system that carries the primary workload. Keeping those paths distinct improves diagnosis and design review.
 
 ## Summary
 

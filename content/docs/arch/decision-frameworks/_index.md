@@ -23,7 +23,7 @@ A decision framework improves the quality of discussion by forcing the team to s
 - What evidence is needed
 - What consequences the team is accepting
 
-## Start With the Concern
+## Start with the Concern
 
 Most useful decisions begin with a tightly framed concern rather than a preferred design.
 
@@ -51,6 +51,10 @@ The mistake is not using the wrong word. The mistake is choosing the wrong dimen
 ## Compare Options Explicitly
 
 A decision is stronger when options are compared in a consistent format instead of defended rhetorically.
+
+That comparison works best when the team looks at each option through the same set of lenses. Otherwise one proposal is framed around speed, another around governance, and a third around implementation convenience, which makes the discussion look precise while hiding the real tradeoffs.
+
+The table below provides a simple structure for comparing options on terms that are visible, debatable, and tied to consequences.
 
 | Option                         | Benefits                                                          | Costs                                                   | Risks                                                 | Reversibility | Evidence needed                                            |
 | ------------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------- | ------------- | ---------------------------------------------------------- |
@@ -83,21 +87,13 @@ The important point is not the template. It is preserving why the decision was r
 
 ## Common Mistakes
 
-### Choosing a Diagram Before Identifying the Decision
+**Choosing a Diagram before Identifying the Decision.** If the team starts by drawing, it often documents assumptions instead of testing them.
 
-If the team starts by drawing, it often documents assumptions instead of testing them.
+**Treating Pillars as Equal in Every Context.** A decision framework should reveal which priorities dominate for this choice, not assume every quality carries the same weight.
 
-### Treating Pillars as Equal in Every Context
+**Ignoring Reversibility.** Some choices are easy to change later. Others are deep commitments. Treating them as equivalent leads to poor risk management.
 
-A decision framework should reveal which priorities dominate for this choice, not assume every quality carries the same weight.
-
-### Ignoring Reversibility
-
-Some choices are easy to change later. Others are deep commitments. Treating them as equivalent leads to poor risk management.
-
-### Recording Conclusions Without Tradeoffs
-
-A decision record that states only the outcome becomes much less useful when the context changes or the choice is challenged later.
+**Recording Conclusions without Tradeoffs.** A decision record that states only the outcome becomes much less useful when the context changes or the choice is challenged later.
 
 ## Summary
 

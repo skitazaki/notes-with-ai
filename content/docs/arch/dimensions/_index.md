@@ -28,6 +28,8 @@ Dimensions matter because they separate concerns that otherwise get conflated:
 
 That separation does not fragment architecture. It makes reasoning explicit. One system still exists, but engineers need different lenses to understand it well.
 
+![One architecture system shown through structural, operational, strategic, ownership, and communication dimensions.](architecture-dimensions.webp)
+
 ## The Core Dimensions
 
 ### Structural

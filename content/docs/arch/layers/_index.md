@@ -27,6 +27,8 @@ Those questions appear in many contexts. Application teams need them when separa
 
 Layers exist because software systems become fragile when dependency direction is unclear. If every part of the system can directly reach every other part, change spreads unpredictably and reasoning becomes expensive.
 
+![A structural view of a platform organized by dependency, responsibility, and insulation from change.](software-layers.webp)
+
 ## Common Examples
 
 ### OSI Model
@@ -51,41 +53,29 @@ An AI system can also be described structurally: model providers and vector stor
 
 ## What Layers are Good for
 
-### Dependency Reasoning
+**Dependency Reasoning.** Layers make dependency direction explicit. If the domain layer should not depend on infrastructure details, the layered model provides a way to state and review that rule.
 
-Layers make dependency direction explicit. If the domain layer should not depend on infrastructure details, the layered model provides a way to state and review that rule.
+**Abstraction Management.** Layers help teams place concepts at the right level. A low-level transport concern should not leak into a high-level business abstraction unless there is a deliberate reason.
 
-### Abstraction Management
+**Change Isolation.** When the structural boundaries are well chosen, teams can replace or modify lower-level implementations without rewriting higher-level intent. This is one reason layers remain valuable even in modern distributed systems.
 
-Layers help teams place concepts at the right level. A low-level transport concern should not leak into a high-level business abstraction unless there is a deliberate reason.
-
-### Change Isolation
-
-When the structural boundaries are well chosen, teams can replace or modify lower-level implementations without rewriting higher-level intent. This is one reason layers remain valuable even in modern distributed systems.
-
-### Teaching and Onboarding
-
-Layered models are effective for explaining complex systems. They give new engineers a stable mental map before they have to learn the full runtime detail.
+**Teaching and Onboarding.** Layered models are effective for explaining complex systems. They give new engineers a stable mental map before they have to learn the full runtime detail.
 
 ## Common Mistakes
 
-### Treating Layers as Deployment Tiers
+**Treating Layers as Deployment Tiers.** Layers describe structural abstraction, not necessarily physical placement. A service deployed in one cluster may still participate in several conceptual layers, and several layers may be deployed together.
 
-Layers describe structural abstraction, not necessarily physical placement. A service deployed in one cluster may still participate in several conceptual layers, and several layers may be deployed together.
+**Assuming All Dependencies are Strictly Vertical.** Real systems often include carefully controlled cross-layer interactions, shared utilities, or supporting infrastructure. A layered model should clarify the intended dependency rules, not pretend the world is simpler than it is.
 
-### Assuming All Dependencies Are Strictly Vertical
+**Confusing Layers with Ownership Boundaries.** A layer is not a team. Teams may own capabilities across several layers, and one layer may involve several teams.
 
-Real systems often include carefully controlled cross-layer interactions, shared utilities, or supporting infrastructure. A layered model should clarify the intended dependency rules, not pretend the world is simpler than it is.
+**Forcing Runtime Control Paths into Structural Diagrams.** Layers are poor tools for explaining asynchronous pipelines, workflow orchestration, or control/data separation. Those are usually better expressed as flows or planes.
 
-### Confusing Layers With Ownership Boundaries
+## Comparison with Other Concepts
 
-A layer is not a team. Teams may own capabilities across several layers, and one layer may involve several teams.
+Layer terminology is often stretched to cover ideas that belong to a different architecture lens. That is where confusion begins. A layer is useful when the question is about structural abstraction and dependency direction, but other concepts are better suited to runtime behavior, strategic priorities, implementation units, or deployment placement.
 
-### Forcing Runtime Control Paths Into Structural Diagrams
-
-Layers are poor tools for explaining asynchronous pipelines, workflow orchestration, or control/data separation. Those are usually better expressed as flows or planes.
-
-## Layers Compared With Other Concepts
+The comparison below keeps those distinctions explicit so teams can choose the right model for the question they are trying to answer.
 
 | Concept | What it represents                              | Primary question                          |
 | ------- | ----------------------------------------------- | ----------------------------------------- |
@@ -100,8 +90,6 @@ Layers are poor tools for explaining asynchronous pipelines, workflow orchestrat
 Imagine a developer platform for internal applications. A useful layered view might show cloud infrastructure at the base, platform services above it, shared developer capabilities above that, domain applications above those capabilities, and user-facing channels at the top.
 
 That picture would help answer structural questions such as where an identity service belongs, which capabilities application teams may rely on directly, and how much of the runtime should be treated as shared platform rather than product code.
-
-An image should appear here showing a layered view of the example system.
 
 ## Summary
 

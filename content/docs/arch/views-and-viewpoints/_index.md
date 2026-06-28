@@ -20,7 +20,13 @@ Different stakeholders need different information to act effectively. A reliabil
 
 Every useful view hides detail. That is not a weakness. It is the whole point. A view should select the concerns that matter and remove the rest.
 
+![The same system presented through several audience-specific architecture views and viewpoints.](views-and-viewpoints.webp)
+
 ## Views, Viewpoints, Diagrams, Models, and Dimensions
+
+These terms are closely related, which is why teams often blur them in practice. The problem is that each term describes a different role in architecture communication: some define the reasoning lens, some define the framing, and some define the artifact used to present the result.
+
+The comparison below separates those roles so the documentation process stays deliberate rather than accidental.
 
 | Term      | Meaning                                            | Practical role                               |
 | --------- | -------------------------------------------------- | -------------------------------------------- |
@@ -86,21 +92,13 @@ An image should appear here showing multiple audience-specific views derived fro
 
 ## Common Mistakes
 
-### Creating One Giant Diagram
+**Creating One Giant Diagram.** Trying to satisfy every audience with one artifact usually creates a diagram that is too detailed for some readers and too vague for others.
 
-Trying to satisfy every audience with one artifact usually creates a diagram that is too detailed for some readers and too vague for others.
+**Confusing Accuracy with Completeness.** A view can be accurate without showing everything. Good architecture communication depends on selection, not accumulation.
 
-### Confusing Accuracy With Completeness
+**Reusing an Implementation Diagram for Executive Alignment.** Implementation detail is often the wrong level of abstraction for leadership discussions. The audience should shape the view.
 
-A view can be accurate without showing everything. Good architecture communication depends on selection, not accumulation.
-
-### Reusing an Implementation Diagram for Executive Alignment
-
-Implementation detail is often the wrong level of abstraction for leadership discussions. The audience should shape the view.
-
-### Omitting Audience and Purpose
-
-If a view has no named audience or question, it becomes difficult to judge whether it is successful.
+**Omitting Audience and Purpose.** If a view has no named audience or question, it becomes difficult to judge whether it is successful.
 
 ## Summary
 

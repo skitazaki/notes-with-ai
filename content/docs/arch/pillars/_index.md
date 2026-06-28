@@ -24,6 +24,8 @@ Pillars help teams answer three recurring questions:
 
 Without that framing, architecture discussions tend to drift toward local preferences. One engineer may optimize for latency, another for implementation speed, and another for compliance. Pillars make those priorities explicit so tradeoffs can be discussed honestly.
 
+![Architecture pillars shown as strategic decision lenses such as reliability, security, cost, and developer experience.](pillars.webp)
+
 ## Common Pillars
 
 ### Reliability
@@ -72,6 +74,10 @@ For example, if reliability is a top pillar, teams may prefer simpler dependenci
 
 ## Pillars vs. Layers and Planes
 
+Pillars are often confused with other architecture concepts because teams use the same diagrams and conversations to discuss structure, runtime behavior, and decision criteria. The distinction matters because a pillar does not describe how a system is arranged or how it executes. It describes what the design is trying to optimize for.
+
+The comparison below separates pillars from structural and operational concepts so the role of each model stays clear.
+
 | Concept | What it represents              | Typical use                                 |
 | ------- | ------------------------------- | ------------------------------------------- |
 | Pillar  | Strategic quality or priority   | Evaluate tradeoffs and review designs       |
@@ -93,21 +99,13 @@ An image should appear here showing pillars as decision lenses applied to one ar
 
 ## Common Mistakes
 
-### Listing Too Many Pillars
+**Listing Too Many Pillars.** If everything is a top priority, nothing helps resolve tradeoffs. A useful set of pillars is selective enough to create design pressure.
 
-If everything is a top priority, nothing helps resolve tradeoffs. A useful set of pillars is selective enough to create design pressure.
+**Treating Pillars as Branding Language.** Pillars are not slogans for slide decks. They should lead to standards, questions, and constraints that influence real designs.
 
-### Treating Pillars as Branding Language
+**Ignoring Tradeoffs between Pillars.** Security, speed, cost, and developer experience often pull in different directions. Good architecture makes those tensions visible instead of pretending they disappear.
 
-Pillars are not slogans for slide decks. They should lead to standards, questions, and constraints that influence real designs.
-
-### Ignoring Tradeoffs Between Pillars
-
-Security, speed, cost, and developer experience often pull in different directions. Good architecture makes those tensions visible instead of pretending they disappear.
-
-### Confusing Aspirational Values With Enforceable Criteria
-
-It is reasonable to value simplicity or innovation. It is more useful to translate those values into observable criteria that can guide reviews and decisions.
+**Confusing Aspirational Values with Enforceable Criteria.** It is reasonable to value simplicity or innovation. It is more useful to translate those values into observable criteria that can guide reviews and decisions.
 
 ## Summary
 

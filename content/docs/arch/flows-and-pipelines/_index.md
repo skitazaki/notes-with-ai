@@ -26,6 +26,8 @@ Flow views help answer questions such as:
 
 These are critical questions for performance, resilience, compliance, and operations. A static system diagram cannot show queue buildup, eventual consistency, or approval delays with the same clarity.
 
+![An end-to-end architecture flow showing movement, transformation, queues, and feedback across system boundaries.](flows-and-pipelines.webp)
+
 ## Types of Flows
 
 ### Request Flow
@@ -56,7 +58,11 @@ AI pipelines often include ingestion, labeling, feature extraction, evaluation, 
 
 Some systems depend on human or policy approvals for schema changes, access requests, release gates, or model promotion. These steps belong in the architecture when they materially affect delivery or risk.
 
-## Flow Views vs. Other Architecture Models
+## Flow Views vs. Other Models
+
+Flow views are most useful when the main question is about sequence, handoff, and movement through time. They become less useful when teams expect them to explain every structural dependency or every deployment detail at once.
+
+The comparison below clarifies where flow-oriented documentation is strong and where other architecture models provide a better primary lens.
 
 | Model                | Best at explaining                              | Usually weak at explaining                   |
 | -------------------- | ----------------------------------------------- | -------------------------------------------- |
@@ -90,21 +96,13 @@ An image should appear here showing an end-to-end request or data flow across th
 
 ## Common Mistakes
 
-### Omitting Failure Paths
+**Omitting Failure Paths.** The happy path is rarely enough. If retries, fallbacks, or manual intervention matter in production, they belong in the flow documentation.
 
-The happy path is rarely enough. If retries, fallbacks, or manual intervention matter in production, they belong in the flow documentation.
+**Drawing Every Internal Call.** Too much detail turns the view into noise. A flow should highlight the decisions, transformations, and handoffs that matter to the question being answered.
 
-### Drawing Every Internal Call
+**Mixing Static Dependency Diagrams with Runtime Sequence.** Combining both models into one artifact often makes each less clear. It is better to let the flow view focus on movement.
 
-Too much detail turns the view into noise. A flow should highlight the decisions, transformations, and handoffs that matter to the question being answered.
-
-### Mixing Static Dependency Diagrams With Runtime Sequence
-
-Combining both models into one artifact often makes each less clear. It is better to let the flow view focus on movement.
-
-### Hiding Queues, Retries, and Eventual Consistency
-
-These are often where latency, backlog, and correctness problems emerge. Omitting them creates false confidence.
+**Hiding Queues, Retries, and Eventual Consistency.** These are often where latency, backlog, and correctness problems emerge. Omitting them creates false confidence.
 
 ## Summary
 

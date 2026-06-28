@@ -25,6 +25,8 @@ Ownership is architectural because it changes how work flows through the organiz
 - It determines whether policy, schema, or interface changes require broad negotiation.
 - It influences whether shared capabilities become effective platforms or neglected dependencies.
 
+![Ownership boundaries mapped across a shared system to show responsibility for change, operation, and governance.](ownership-boundaries.webp)
+
 ## Common Ownership Concepts
 
 ### Domain
@@ -56,6 +58,10 @@ Some architectures introduce cells, regions, or tenant partitions as ownership a
 Shared capabilities such as search, eventing, or model routing may need explicit ownership even when several teams depend on them. Shared does not mean ownerless.
 
 ## Ownership vs. Technical Structure
+
+Ownership is often confused with the technical shape of a system because responsibility tends to cluster around services, domains, or shared platforms. Even so, ownership is a different kind of architectural concern. It is about accountability for change and operation, not just how software is packaged or deployed.
+
+The comparison below helps separate ownership boundaries from the technical structures they often overlap with.
 
 | Concept            | Main focus                              | Typical question                                  |
 | ------------------ | --------------------------------------- | ------------------------------------------------- |
@@ -91,21 +97,13 @@ An image should appear here showing ownership boundaries overlaid on a system vi
 
 ## Common Mistakes
 
-### Assuming Every Service Maps to One Team
+**Assuming Every Service Maps to One Team.** Service count and team topology rarely stay perfectly aligned. Forcing them to match can create awkward boundaries or unnecessary fragmentation.
 
-Service count and team topology rarely stay perfectly aligned. Forcing them to match can create awkward boundaries or unnecessary fragmentation.
+**Treating Shared Platforms as Ownerless Utilities.** Shared infrastructure and developer platforms need explicit product thinking, operational ownership, and lifecycle decisions.
 
-### Treating Shared Platforms as Ownerless Utilities
+**Ignoring Data and Policy Ownership.** Teams often define service ownership clearly while leaving schema semantics, access policy, or audit responsibility ambiguous. That gap becomes expensive later.
 
-Shared infrastructure and developer platforms need explicit product thinking, operational ownership, and lifecycle decisions.
-
-### Ignoring Data and Policy Ownership
-
-Teams often define service ownership clearly while leaving schema semantics, access policy, or audit responsibility ambiguous. That gap becomes expensive later.
-
-### Confusing Escalation Paths With Architecture Boundaries
-
-An escalation route may cross several teams during an incident. That does not mean the system lacks coherent ownership. It means the boundaries and dependencies need to be documented honestly.
+**Confusing Escalation Paths with Architecture Boundaries.** An escalation route may cross several teams during an incident. That does not mean the system lacks coherent ownership. It means the boundaries and dependencies need to be documented honestly.
 
 ## Summary
 
