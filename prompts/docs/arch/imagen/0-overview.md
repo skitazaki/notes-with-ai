@@ -34,8 +34,8 @@ Around it, arrange six labeled dimensions as distinct but connected lenses:
 
 - Layers
 - Planes
-- Pillars
 - Flows
+- Pillars
 - Ownership Boundaries
 - Views
 
@@ -43,8 +43,8 @@ Each dimension should appear as a different visual treatment:
 
 - Layers as stacked bands
 - Planes as crossing operational slices
-- Pillars as strategic quality markers
 - Flows as directional paths
+- Pillars as strategic quality markers
 - Ownership Boundaries as grouped zones
 - Views as framed audience-specific windows
 
