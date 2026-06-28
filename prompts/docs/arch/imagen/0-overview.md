@@ -10,10 +10,12 @@ Create a publication-quality conceptual illustration titled:
 
 "Software Architecture"
 
+Subtitle: Reasoning and communication for complex systems.
+
 Purpose:
 
-This image should introduce software architecture as a multi-dimensional discipline.
-It should show that one system can be understood through several complementary reasoning models rather than one master diagram.
+Introduce software architecture as the discipline of reasoning about systems and communicating that reasoning clearly.
+The figure should show that architecture is not one complete diagram. It is a set of complementary models and views that help teams answer different questions about the same software.
 
 Style:
 
@@ -26,34 +28,55 @@ Style:
 - 16:9 aspect ratio
 - suitable for a docs landing page hero figure
 - concept-first, not product-marketing style
+- vendor-neutral, with no logos or product branding
 
 Composition:
 
-Show one central system silhouette, represented as a compact cloud-native platform.
-Around it, arrange six labeled dimensions as distinct but connected lenses:
+Show one central abstract software system, represented as a compact cloud-native platform made of composable services, data stores, events, policy controls, and operational signals.
+The central system should be neutral gray so it reads as the shared subject being examined, not as the answer.
 
-- Layers
-- Planes
-- Flows
-- Pillars
-- Ownership Boundaries
-- Views
+Around the central system, arrange five labeled reasoning dimensions as distinct but connected lenses:
 
-Each dimension should appear as a different visual treatment:
+- Structural
+- Operational
+- Strategic
+- Ownership
+- Communication
 
-- Layers as stacked bands
-- Planes as crossing operational slices
-- Flows as directional paths
-- Pillars as strategic quality markers
-- Ownership Boundaries as grouped zones
-- Views as framed audience-specific windows
+Each dimension should include one or two short concept labels that match the article:
+
+- Structural: layers, modules, components, services
+- Operational: planes, flows, pipelines
+- Strategic: pillars, principles, policies
+- Ownership: domains, boundaries, cells
+- Communication: views, viewpoints, perspectives
+
+Use different visual treatments for the concepts while keeping the five dimensions visually balanced:
+
+- Structural as layered bands or dependency blocks
+- Operational as crossing runtime paths or planes
+- Strategic as priority markers or pillar indicators
+- Ownership as grouped zones or responsibility boundaries
+- Communication as framed audience-specific views
+
+Add a subtle left-to-right or top-to-bottom progression that echoes the article:
+
+Concern -> Dimension -> Reasoning -> View -> Decision
+
+Include concise question labels near the dimensions:
+
+- What is built, and what depends on what?
+- How does the system behave at runtime?
+- What qualities and constraints shape decisions?
+- Who is responsible for change and operation?
+- How should this be explained?
 
 Central message:
 
-Software architecture is not one diagram.
-It is a set of complementary ways to reason about and communicate the same system.
+Architecture is not one perfect diagram.
+It is a set of complementary ways to reason about systems, make decisions, and communicate clearly.
 
-Include a small caption area with this idea in plain language:
+Small caption:
 
 "Different architecture concepts answer different questions about the same system."
 
@@ -61,13 +84,17 @@ Do:
 
 - emphasize relationships between concepts
 - keep the system abstract and vendor-neutral
-- make the figure feel like a map of the documentation library
+- make the figure feel like a map of the architecture documentation library
+- show that no single view is the whole architecture
+- make the communication view look like an output derived from reasoning, not a separate system
 
 Do not:
 
 - use logos
 - turn the image into a detailed deployment diagram
 - make any single dimension visually dominant
+- imply that layers, planes, flows, pillars, ownership, and views are interchangeable
+- overload the figure with tiny technical labels
 
 Audience:
 
