@@ -87,9 +87,13 @@ The comparison below keeps those distinctions explicit so teams can choose the r
 
 ## Example: Developer Platform
 
-Imagine a developer platform for internal applications. A useful layered view might show cloud infrastructure at the base, platform services above it, shared developer capabilities above that, domain applications above those capabilities, and user-facing channels at the top.
+Consider a mid-size software company that operates an internal developer platform used by product teams to build and run customer-facing applications. The platform includes cloud infrastructure, shared runtime services, developer self-service capabilities, domain applications, and external integration channels.
 
-That picture would help answer structural questions such as where an identity service belongs, which capabilities application teams may rely on directly, and how much of the runtime should be treated as shared platform rather than product code.
+In a layered view, cloud infrastructure sits at the base, platform runtime services build on it, shared developer capabilities sit above the runtime, domain applications consume those shared capabilities, and user or integration channels appear at the top. Representative capabilities may include networking, compute, and storage at the foundation; container runtime, secrets, identity, and observability in the runtime layer; CI/CD, a service catalog, an internal portal, and templates in the shared capability layer; and domain services such as orders, billing, and support in the application layer.
+
+![Example layered developer platform showing cloud infrastructure, runtime services, shared developer capabilities, domain applications, and user or integration channels.](example-developer-platform.png)
+
+That structure helps teams answer practical structural questions such as where identity belongs, which capabilities product teams should depend on directly, and which parts of the platform should remain shared rather than duplicated inside each domain application.
 
 ## Summary
 

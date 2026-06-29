@@ -1,59 +1,63 @@
 ---
 type: image
 path: /docs/arch/layers
-description: Concrete example figure showing a developer platform as a layered structural stack.
+description: Real-world example diagram showing an internal developer platform as layers.
 ---
 
 # Image Generation Prompt - Layers Example
 
-Create a publication-quality example figure titled:
+Create a clean architecture example diagram titled:
 
 "Example: Developer Platform as Layers"
 
-Purpose:
+Use case:
 
-Show a concrete developer platform as a layered structural view that explains abstraction, dependency direction, and shared platform boundaries.
+A mid-size software company operates an internal developer platform used by product teams to build and run customer-facing applications.
+The platform includes cloud infrastructure, shared runtime services, developer self-service capabilities, domain applications, and external integration channels.
 
-Style:
+Image content:
 
-- architecture documentation graphic
-- crisp vector blocks
-- light background
-- restrained enterprise palette
-- strong label clarity
-- 16:9 aspect ratio
-
-Composition:
-
-Create a stacked platform view with five layers from bottom to top:
+Create five stacked layers from bottom to top:
 
 - Cloud Infrastructure
-- Platform Services
+- Platform Runtime Services
 - Shared Developer Capabilities
 - Domain Applications
 - User and Integration Channels
 
-Add a few controlled dependency arrows upward or inward.
-Show one or two representative capabilities in each layer, such as identity, CI/CD, observability, APIs, internal portals, and domain applications.
+Place representative capabilities inside the layers:
 
-Include subtle side annotations for:
+- networking, compute, storage
+- container runtime, secrets, identity, observability
+- CI/CD, service catalog, internal portal, templates
+- orders service, billing service, support service
+- web app, mobile app, partner API
 
-- dependency direction
-- abstraction level
-- change isolation
+Show a small number of dependency arrows upward or inward.
 
-Central message:
+Style:
 
-The layered view helps explain what builds on what in a developer platform.
+- precise technical architecture diagram
+- clean vector blocks
+- light background
+- restrained enterprise palette
+- 16:9 aspect ratio
+- documentation-ready
+
+Text rules:
+
+- Use short component labels only.
+- Do not include a takeaway, caption, or explanatory note.
+- Keep all labels readable.
 
 Do:
 
-- keep the platform realistic but generic
-- emphasize structure rather than runtime traffic
-- make shared platform capabilities distinct from domain applications
+- make the layered platform look like a real internal engineering platform
+- emphasize structural layering and dependency direction
+- keep the example vendor-neutral
 
 Do not:
 
-- draw a sequence or request flow diagram
-- treat layers as team ownership bands
-- imply every dependency is perfectly vertical
+- show people, desks, screens, or room interiors
+- draw a runtime request flow
+- use decorative pillar metaphors or product logos
