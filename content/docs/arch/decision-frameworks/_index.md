@@ -23,6 +23,8 @@ A decision framework improves the quality of discussion by forcing the team to s
 - What evidence is needed
 - What consequences the team is accepting
 
+![Decision flow showing how a concrete architecture concern moves through dimensions, tradeoffs, evidence, and final choice.](decision-frameworks.webp)
+
 ## Start with the Concern
 
 Most useful decisions begin with a tightly framed concern rather than a preferred design.
@@ -70,8 +72,6 @@ Consider a decision about whether an internal platform should separate control-p
 The concern may involve reliability, security, and operability. The operational dimension helps explain runtime paths. The strategic dimension clarifies whether consistency or latency is the dominant priority. The ownership dimension shows who will run each capability. A communication view may then present the conclusion differently to platform engineers and leadership.
 
 This progression is more useful than debating terminology in isolation because it connects the concept directly to the decision.
-
-An image should appear here showing the decision process from concern to dimension to view to decision.
 
 ## Recording the Decision
 
