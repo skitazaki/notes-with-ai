@@ -64,19 +64,19 @@ The communication dimension focuses on explanation. It helps teams decide which 
 
 ## Example: One Platform, Many Dimensions
 
-Consider a cloud-native AI platform that supports retrieval, model inference, policy enforcement, audit logging, and developer self-service.
+Consider a customer support organization that runs an internal AI assistant to help support engineers answer tickets. The platform connects identity, a ticketing system, an internal knowledge base, retrieval services, a model gateway, policy controls, audit logging, and observability.
 
-From a structural perspective, the platform may be described as gateways, orchestration services, retrieval services, model adapters, policy engines, and observability components. The key concern is how those parts depend on one another.
+From a structural perspective, the platform can be described as a gateway, ticket adapter, retrieval service, model gateway, policy service, audit store, and observability components. The key concern is how those capabilities depend on one another and where change should be isolated.
 
-From an operational perspective, the same platform may be described as a control plane that manages configuration, a data plane that handles requests and embeddings, and an observability plane that captures traces and audit signals. The key concern is how work flows and where failures or delays can occur.
+From an operational perspective, the same system can be understood through a request path, control path, audit path, and observability path. The key concern is how support requests move through the platform, where policy is enforced, and where failures, delays, or evidence collection occur.
 
-From a strategic perspective, the platform may prioritize reliability, security, and cost efficiency over raw feature flexibility. That changes design choices such as isolation levels, caching policy, and deployment patterns.
+From a strategic perspective, the platform may prioritize reliability, security, latency, cost efficiency, and support quality. Those priorities shape decisions such as caching strategy, control placement, runtime isolation, and how much automation is acceptable in customer-facing support workflows.
 
-From an ownership perspective, the platform team may own the shared runtime, product teams may own domain-specific prompts and integrations, and security may own policy guardrails. That distribution affects how quickly the system can evolve.
+From an ownership perspective, the support product team may own ticket workflows and assistant behavior, the platform team may own the shared runtime and model gateway, the security team may own policy controls, and the data team may own knowledge and retrieval quality. That division of responsibility affects both delivery speed and operational accountability.
 
-From a communication perspective, the same reasoning may be packaged differently: executives may need a business capability view, operators may need a runtime dependency view, and security reviewers may need a trust-boundary view.
+From a communication perspective, the same platform may be presented differently to each audience: executives may need a compact capability view, operators may need the runtime and audit paths, and security reviewers may need the trust boundaries and policy enforcement points.
 
-An image should appear here showing one system projected into multiple architecture dimensions.
+![Example customer support AI platform shown through structural, operational, strategic, ownership, and communication dimensions.](example-architecture-dimensions.webp)
 
 ## Relationship to Views
 

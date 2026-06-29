@@ -1,53 +1,54 @@
 ---
 type: image
 path: /docs/arch/dimensions
-description: Concrete example figure showing one AI platform through multiple architecture dimensions.
+description: Real-world example diagram showing several architecture representations of one customer support AI platform.
 ---
 
 # Image Generation Prompt - Architecture Dimensions Example
 
-Create a documentation-quality example figure titled:
+Create a clean architecture example diagram titled:
 
-"Example: One Platform, Many Dimensions"
+"Example: Customer Support AI Platform"
 
-Purpose:
+Use case:
 
-Illustrate one cloud-native AI platform as several different but valid architecture representations: structural, operational, strategic, ownership, and communication.
+A customer support organization runs an internal AI assistant that helps support engineers answer tickets.
+The platform connects to identity, a ticketing system, an internal knowledge base, retrieval services, model gateways, policy controls, audit logging, and observability.
+
+Image content:
+
+Show one shared platform in the center and five surrounding panels that reuse the same concrete system:
+
+- Structural: gateway, ticket adapter, retrieval service, model gateway, policy service, audit store, observability.
+- Operational: request path, control path, audit path, and observability path.
+- Strategic: reliability, security, latency, cost, and support quality as short priority tags.
+- Ownership: support product team, platform team, security team, and data team boundaries.
+- Communication: compact executive, operator, and security-review views of the same platform.
 
 Style:
 
-- editorial technical infographic
-- clean vector design
+- precise technical architecture diagram
+- clean vector-style layout
 - light background
-- professional documentation tone
-- clear visual separation between lenses
+- restrained color palette
 - 16:9 aspect ratio
+- suitable for a public technical documentation page
+- concrete and vendor-neutral
 
-Composition:
+Text rules:
 
-Use one shared platform as the anchor system, with a central neutral system silhouette or platform core.
-Around it, show five distinct panels or projections:
-
-- Structural view: gateways, orchestration, retrieval, model adapters, policy, observability
-- Operational view: control plane, data plane, observability plane
-- Strategic view: reliability, security, cost efficiency as decision priorities
-- Ownership view: platform team, product teams, security ownership
-- Communication view: executive view, operator view, security review view
-
-Make it visually obvious that the system is the same in every panel, but each panel selects different details.
-
-Central message:
-
-Architecture dimensions are different reasoning lenses for the same system.
+- Use short architecture labels only.
+- Do not include slogans, captions, summary statements, or explanatory paragraphs.
+- Avoid tiny unreadable labels.
 
 Do:
 
-- keep the example platform vendor-neutral
-- emphasize contrast between the dimensions
-- make each projection readable as a distinct architecture lens
+- make every panel visibly refer to the same customer support AI platform
+- keep the scenario practical and realistic
+- make the diagram readable at article width
 
 Do not:
 
-- turn the image into five unrelated systems
-- overload each panel with tiny labels
-- imply that one dimension is the correct or complete architecture
+- show people, desks, screens, or room interiors
+- use cloud provider logos or real product names
+- make the panels look like unrelated systems
