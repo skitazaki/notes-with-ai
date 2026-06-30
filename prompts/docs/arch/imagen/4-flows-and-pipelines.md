@@ -1,62 +1,62 @@
 ---
 type: image
-path: /docs/arch/pillars
-description: Figure showing architecture pillars as decision lenses for one system.
+path: /docs/arch/flows-and-pipelines
+description: End-to-end flow view across a modern software platform.
 ---
 
-# Image Generation Prompt - Pillars
+# Image Generation Prompt - Flows and Pipelines
 
-Create a conceptual architecture infographic titled:
+Create a documentation-quality dynamic architecture figure titled:
 
-"Pillars"
+"Flows and Pipelines"
 
 Purpose:
 
-Illustrate pillars as strategic qualities that guide tradeoffs and architecture decisions.
-The image should show that pillars are priorities, not components.
+Show how work moves through a system over time.
+The image should emphasize sequencing, transformation, handoffs, queues, and feedback rather than static structure.
 
 Style:
 
-- executive-technical hybrid infographic
-- clean vector artwork
+- clear flow-oriented infographic
+- modern vector diagram aesthetic
 - light background
-- subtle but distinct color coding
-- balanced, sober visual tone
+- directional arrows and motion cues
+- concise labels
 - 16:9 aspect ratio
 
 Composition:
 
-Place one architecture decision in the center, such as an abstract platform design choice.
-Around it, arrange 6 to 8 pillar markers or lens panels labeled:
+Show one end-to-end platform flow from left to right.
+Use a realistic but generic sequence such as:
 
-- Reliability
-- Security
-- Scalability
-- Performance
-- Cost Efficiency
-- Operability
-- Maintainability
-- Developer Experience
+- client or event source
+- gateway or entry point
+- processing or orchestration step
+- queue or asynchronous handoff
+- worker or transformation stage
+- storage or output target
+- observability and audit checkpoints
 
-Show each pillar exerting directional influence on the decision, with small visual tensions or tradeoff arrows between selected pairs.
+Include visible markers for:
+
+- transformation
+- retry path
+- failure path
+- approval or policy checkpoint
+- feedback loop
 
 Central message:
 
-Pillars define what matters in a decision.
-They help teams evaluate tradeoffs rather than describe topology.
-
-Include a short caption area with this idea:
-
-"Architecture pillars are decision criteria, not system parts."
+Flows and pipelines explain movement, ordering, and failure behavior across boundaries.
 
 Do:
 
-- emphasize tradeoffs
-- keep the central decision abstract and reusable
-- make the image useful for documentation, not marketing
+- prioritize time and movement over topology
+- show at least one asynchronous handoff
+- include a simple failure or retry branch
 
 Do not:
 
-- render literal building pillars in a decorative way
-- imply all pillars are equally weighted in every decision
-- use vendor framework branding
+- draw every internal service call
+- confuse the image with a layered dependency diagram
+- make the diagram tool-specific
