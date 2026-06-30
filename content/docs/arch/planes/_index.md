@@ -69,13 +69,15 @@ The same system can be layered and also have several planes. That is normal. A c
 
 ## Example: Cloud-Native AI Platform
 
-Consider a platform that supports agent execution and enterprise policy enforcement.
+Consider a customer support AI platform that serves ticket-answering requests while separate runtime responsibilities manage configuration, traffic, policy, telemetry, and audit evidence.
 
-The control plane might handle tool registration, policy distribution, workload placement, and model-routing rules. The data plane might handle user prompts, retrieval requests, inference calls, and output assembly. The observability plane might capture traces, safety events, and evaluation metrics. The policy plane might decide whether a tool call, data access, or model action is permitted.
+The shared platform may include a support portal, an API gateway, an orchestration service, a retrieval service, a model gateway, a policy engine, a queue, an audit store, and an observability sink. Those components remain the same even when the runtime paths are viewed differently.
 
-All of those planes can operate across the same gateways, services, queues, and storage systems. That is why plane terminology is useful: it reflects operational purpose rather than purely structural placement.
+The control plane manages configuration, routing, and rollout controls. The data plane carries the ticket request, retrieval step, model response, and returned answer. The policy plane handles authorization, prompt policy, and output checks. The observability plane captures traces, metrics, and audit events. All four planes cross the same underlying components for different runtime purposes.
 
-An image should appear here showing planes crossing structural layers.
+![Example customer support AI platform showing control, data, policy, and observability planes across shared components.](example-support-platform-plane.webp)
+
+That is why plane terminology is useful: it explains operational responsibility across one shared platform rather than pretending each runtime concern belongs to a separate isolated subsystem.
 
 ## Common Mistakes
 

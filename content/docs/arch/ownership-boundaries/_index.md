@@ -89,11 +89,13 @@ If those answers are unclear, the architecture will often feel slower and riskie
 
 ## Example: Platform + Product Teams
 
-A common modern model combines product-domain ownership with shared platform ownership. Product teams may own customer-facing workflows and domain models. A platform team may own deployment foundations, observability, secrets handling, and internal developer tooling. A security team may own identity standards and policy frameworks. A data team may own canonical event models and governance controls.
+A common modern model combines product-domain ownership with shared platform ownership. Imagine a company running several product applications on a shared internal platform, where product teams own customer-facing services, the platform team owns shared runtime capabilities, the security team owns identity and policy controls, and the data team owns shared event and analytics contracts.
 
-This is not a flaw in the architecture. It reflects the fact that one system can carry several valid ownership boundaries at once. The important design task is to make the contracts and escalation paths explicit.
+In that system, components such as a storefront app, billing service, support service, API gateway, deployment platform, runtime platform, identity service, policy service, observability stack, event stream, and analytics model may all participate in different ownership relationships. Handoffs such as service contracts, policy standards, schema approval, and incident escalation matter as much as the boxes themselves.
 
-An image should appear here showing ownership boundaries overlaid on a system view.
+![Example shared platform architecture showing product-team, platform, security, and data ownership boundaries over real system components.](example-team-ownership.webp)
+
+This is not a flaw in the architecture. It reflects the fact that one system can carry several valid ownership boundaries at once, and the important design task is to make the contracts, responsibilities, and escalation paths explicit.
 
 ## Common Mistakes
 

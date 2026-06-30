@@ -1,57 +1,63 @@
 ---
 type: image
 path: /docs/arch/flows-and-pipelines
-description: Concrete example figure showing an end-to-end AI assistant request flow with checks, handoffs, and feedback.
+description: Real-world example diagram showing an end-to-end support ticket AI assistant flow.
 ---
 
 # Image Generation Prompt - Flows and Pipelines Example
 
-Create a publication-quality example figure titled:
+Create a clean architecture example diagram titled:
 
-"Example: One End-to-End Flow"
+"Example: Support Ticket AI Flow"
 
-Purpose:
+Use case:
 
-Illustrate an internal AI assistant request flowing through identity, policy, retrieval, model execution, safety checks, audit logging, and asynchronous evaluation.
+A support engineer asks an internal AI assistant to draft an answer for a customer ticket.
+The request must pass through identity checks, policy validation, retrieval from internal knowledge, model execution, safety review, audit logging, and asynchronous quality evaluation.
+
+Image content:
+
+Create a left-to-right flow with these stages:
+
+- support engineer
+- support portal
+- identity check
+- policy validation
+- ticket context
+- knowledge retrieval
+- model gateway
+- safety check
+- draft response
+- audit log
+- async evaluation job
+
+Show one queue or asynchronous handoff after audit logging.
+Show one alternate path for human review when the safety check fails.
+Use boundary boxes for user-facing app, platform services, data sources, and governance controls.
 
 Style:
 
-- technical process infographic
+- precise technical flow diagram
 - clean vector sequence layout
 - light background
-- readable handoff arrows and annotations
-- sober documentation tone
+- restrained colors
 - 16:9 aspect ratio
+- documentation-ready
 
-Composition:
+Text rules:
 
-Create a left-to-right flow beginning with a support engineer user request.
-Include major stages such as:
-
-- user request
-- identity and access check
-- policy validation
-- retrieval from internal knowledge base
-- model invocation with bounded tools
-- output safety check
-- response returned to user
-- audit log capture
-- asynchronous evaluation or review job
-
-Show at least one queue or async handoff and at least one retry or alternate review path.
-
-Central message:
-
-Flow views explain sequence, transformation, handoffs, and failure paths that static structure alone cannot show.
+- Use short stage and system labels only.
+- Do not include captions, takeaways, or explanatory notes.
+- Avoid long annotations.
 
 Do:
 
-- show both synchronous and asynchronous movement
-- make trust or control boundaries visible
-- keep the end-to-end story concrete and readable
+- show synchronous and asynchronous movement clearly
+- make the support ticket scenario concrete
+- include audit, retry, and review behavior
 
 Do not:
 
+- show people, desks, screens, or room interiors
 - draw every internal microservice call
-- make the diagram look like a generic UML sequence screenshot
-- omit audit, retry, or review behavior
+- use product logos or vendor-specific UI

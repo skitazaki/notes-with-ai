@@ -89,13 +89,15 @@ Pillars do not describe topology, code packaging, deployment placement, or owner
 
 ## Example: Tradeoff Analysis
 
-Consider a decision about whether policy enforcement for an internal AI platform should be centralized in one gateway or distributed across several runtime components.
+Consider an AI support platform team deciding whether policy enforcement should be centralized in one gateway or distributed across each product workflow.
 
-Security may favor stronger central control and consistent audit behavior. Reliability may question whether the centralized component becomes a hard dependency. Performance may favor local evaluation on latency-sensitive paths. Operability may favor consistent policy rollout and evidence collection. Cost efficiency may favor reuse of a shared enforcement mechanism.
+Both options are plausible. Centralized enforcement may improve consistent audit behavior, simplify rollout, and give security stronger control over customer data protection. Distributed checks may reduce local latency, increase team autonomy, and let product workflows adapt more quickly to domain-specific needs.
 
-None of those pillars is wrong. The architecture decision becomes clearer when the team states which pillars dominate in this context and what compromises are acceptable.
+The tradeoff becomes clearer when the team evaluates each option through concrete pillars such as security, reliability, performance, operability, and cost efficiency. One pillar may favor consistent evidence collection, another may highlight added dependency risk, and another may emphasize latency or policy-drift concerns.
 
-An image should appear here showing pillars as decision lenses applied to one architecture choice.
+![Example policy enforcement tradeoff comparing centralized and distributed options through security, reliability, performance, operability, and cost efficiency.](example-policy-enforcement-tradeoff.webp)
+
+None of those pillars is wrong. The architectural value comes from making the tensions visible so the team can state which priorities dominate and what compromises are acceptable.
 
 ## Common Mistakes
 

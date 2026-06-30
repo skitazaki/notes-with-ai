@@ -1,55 +1,61 @@
 ---
 type: image
 path: /docs/arch/views-and-viewpoints
-description: Concrete example figure showing one system presented through several audience-specific views.
+description: Real-world example diagram showing audience-specific views of one AI support platform.
 ---
 
 # Image Generation Prompt - Views and Viewpoints Example
 
-Create a publication-quality example figure titled:
+Create a clean architecture example diagram titled:
 
 "Example: One System, Several Views"
 
-Purpose:
+Use case:
 
-Show how the same enterprise AI platform can be represented differently for executives, developers, operators, and security reviewers.
+One AI support platform must be communicated to different audiences: executives, developers, operators, and security reviewers.
+Each audience sees a different view of the same underlying platform.
 
-Style:
+Image content:
 
-- documentation-first infographic
-- clean vector panel layout
-- light background
-- strong visual consistency across views
-- 16:9 aspect ratio
-
-Composition:
-
-Use one common system model as the source and show four audience-specific panels:
+Show four coordinated panels:
 
 - Executive view
 - Developer view
 - Operations view
 - Security view
 
-The executive view should emphasize capabilities, major dependencies, and operating model.
-The developer view should emphasize services, interfaces, and orchestration boundaries.
-The operations view should emphasize runtime paths, queues, observability, and failure points.
-The security view should emphasize trust boundaries, identity, policy enforcement, and data sensitivity.
+Use the same underlying AI support platform in all panels.
 
-Make it visually obvious that these are different views of the same system rather than four separate architectures.
+Panel content:
 
-Central message:
+- Executive view: support capability, customer ticketing, shared platform, operating model, major risk areas.
+- Developer view: support portal, API gateway, orchestration service, retrieval service, model gateway, integration contracts.
+- Operations view: request path, queue, observability, retry path, failure point, audit sink.
+- Security view: identity boundary, data sensitivity, policy enforcement, model access, audit evidence.
 
-Architecture views are audience-specific communication artifacts derived from one shared system.
+Style:
+
+- precise multi-panel architecture diagram
+- clean vector layout
+- light background
+- consistent visual language across panels
+- 16:9 aspect ratio
+- documentation-ready
+
+Text rules:
+
+- Use panel titles and concise architecture labels only.
+- Do not include captions, takeaways, or explanatory copy.
+- Avoid tiny labels.
 
 Do:
 
-- keep the four panels aligned and comparable
-- vary the selected detail by audience
-- emphasize intentional omission as part of the design
+- make the four panels clearly related to the same platform
+- vary the selected details by audience
+- keep the use case vendor-neutral
 
 Do not:
 
-- collapse everything into one giant diagram
-- make the visual styles of the panels unrelated
-- imply that any single panel is the full architecture
+- show people, desks, screens, or room interiors
+- collapse all details into one giant diagram
+- make the panels look like unrelated systems

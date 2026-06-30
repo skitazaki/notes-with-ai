@@ -88,11 +88,13 @@ The goal is not to draw every method call. The goal is to make the important mov
 
 ## Example: One End-to-End Flow
 
-Imagine an internal AI assistant used by support engineers. A good end-to-end flow might begin with a user request, pass through identity and policy checks, retrieve relevant documentation, invoke a model with bounded tools, route outputs through safety checks, and record audit events before returning a response.
+Imagine a support engineer asking an internal AI assistant to draft an answer for a customer ticket. The request passes through identity checks, policy validation, ticket context retrieval, internal knowledge retrieval, model execution, safety review, audit logging, and asynchronous quality evaluation.
 
-That same flow may include asynchronous evaluation jobs, retries for retrieval failures, and human review for high-risk outputs. A structural diagram would not show those timing and handoff concerns clearly enough. A flow view would.
+In a concrete flow view, the request begins in a support portal, moves through identity and policy checks, collects ticket context and supporting knowledge, passes through a model gateway, and returns a draft response if the safety check succeeds. Audit logging happens as part of the flow, and an asynchronous evaluation job continues after the main response path completes.
 
-An image should appear here showing an end-to-end request or data flow across the system.
+![Example support ticket AI flow showing identity, policy, retrieval, model execution, safety review, audit logging, and async evaluation.](example-support-ticket-flow.webp)
+
+The same flow may also include a human-review branch when the safety check fails, along with a queued asynchronous handoff after audit logging. Those timing, control, and review paths are exactly the details that a flow-oriented view makes visible.
 
 ## Common Mistakes
 

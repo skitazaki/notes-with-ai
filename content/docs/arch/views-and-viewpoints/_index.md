@@ -82,13 +82,15 @@ For example, a platform operations view may use operational and ownership dimens
 
 ## Example: One System, Several Views
 
-Consider the same enterprise AI platform described in several ways.
+Consider one AI support platform that must be communicated to several audiences.
 
-An executive view may show shared capabilities, policy guardrails, and the relationship between product teams and the platform team. A developer view may show service boundaries, orchestration components, and integration contracts. An operations view may focus on control and data paths, queues, audit signals, and failure concentration. A security view may focus on identity boundaries, privileged tools, data classifications, and policy checkpoints.
+An executive view may focus on the support capability, shared platform, operating model, and major risk areas. A developer view may show the support portal, API gateway, orchestration service, retrieval service, model gateway, and integration contracts. An operations view may focus on request paths, queues, observability, retry paths, failure points, and audit sinks. A security view may emphasize identity boundaries, data sensitivity, policy enforcement, model access, and audit evidence.
+
+All of those views describe the same underlying platform, but each one selects different details and suppresses others. That is the point of a view: it is not a reduced-quality version of the architecture, but an intentional representation shaped for a specific audience.
+
+![Example AI support platform shown through coordinated executive, developer, operations, and security views.](example-different-views.webp)
 
 None of these views is the full architecture by itself. Each is a deliberate projection of the same system for a specific purpose.
-
-An image should appear here showing multiple audience-specific views derived from the same system.
 
 ## Common Mistakes
 

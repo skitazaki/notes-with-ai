@@ -71,6 +71,8 @@ Consider a decision about whether an internal platform should separate control-p
 
 The concern may involve reliability, security, and operability. The operational dimension helps explain runtime paths. The strategic dimension clarifies whether consistency or latency is the dominant priority. The ownership dimension shows who will run each capability. A communication view may then present the conclusion differently to platform engineers and leadership.
 
+![Example control-plane orchestration decision showing two architecture options, supporting evidence, and decision notes for an AI workflow platform.](example-control-plane-decision.webp)
+
 This progression is more useful than debating terminology in isolation because it connects the concept directly to the decision.
 
 ## Recording the Decision

@@ -1,56 +1,63 @@
 ---
 type: image
 path: /docs/arch/decision-frameworks
-description: Concrete example figure showing an AI platform decision from concern through dimensions to a final choice.
+description: Real-world example diagram showing an architecture decision for control-plane orchestration.
 ---
 
 # Image Generation Prompt - Decision Frameworks Example
 
-Create a documentation-quality example figure titled:
+Create a clean architecture example diagram titled:
 
-"Example: Architecture Decision"
+"Example: Control-Plane Orchestration Decision"
 
-Purpose:
+Use case:
 
-Illustrate a concrete decision about whether control-plane orchestration should be separated from the main request path in an AI-assisted workflow platform.
+An AI workflow platform team must decide whether control-plane orchestration should be separated from the main ticket-answering request path.
+The decision affects reliability, latency, policy consistency, ownership, and operational recovery.
+
+Image content:
+
+Show a compact decision artifact with these areas:
+
+- Concern: reliability, security, operability, latency
+- Option A: separate control-plane orchestration
+- Option B: combine orchestration with main request path
+- Evidence: runtime path, failure mode, ownership, latency budget
+- Decision notes: rationale, accepted risk, review trigger
+
+Include small architecture sketches for both options using shared components:
+
+- support portal
+- gateway
+- workflow service
+- policy service
+- queue
+- model gateway
+- observability
 
 Style:
 
-- decision-oriented technical infographic
-- clean vector process design
+- precise architecture decision diagram
+- clean vector layout
 - light background
-- strong information hierarchy
+- restrained colors
 - 16:9 aspect ratio
+- suitable for documentation
 
-Composition:
+Text rules:
 
-Show a left-to-right or top-to-bottom flow of one concrete decision with these stages:
-
-- Concern: reliability, security, operability, latency
-- Relevant dimensions: operational, strategic, ownership, communication
-- Options: separate control-plane orchestration vs combine it with the main request path
-- Evidence: runtime path analysis, ownership implications, tradeoff review
-- Decision outcome: chosen approach with rationale summary
-
-Include concise side notes for:
-
-- stakeholder
-- constraint
-- risk
-- reversibility
-
-Central message:
-
-Decision frameworks become useful when they connect a real concern to the right reasoning lenses and an explicit tradeoff.
+- Use short labels and brief note fragments only.
+- Do not include generic process explanation, slogan, or summary statement.
+- Avoid dense ADR boilerplate.
 
 Do:
 
-- keep the decision concrete and tied to one platform scenario
-- show why multiple dimensions are needed
-- make the final choice legible without oversimplifying the tradeoff
+- keep the decision tied to a plausible AI support workflow platform
+- show both options as credible alternatives
+- make the decision artifact concrete without declaring a universal answer
 
 Do not:
 
-- turn the image into a generic business process chart
-- overload it with ADR boilerplate
-- present the decision as purely subjective or purely mechanical
+- show people, desks, screens, or room interiors
+- turn the image into a generic business flowchart
+- use logos, real company names, or vendor-specific icons

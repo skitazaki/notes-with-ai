@@ -1,61 +1,65 @@
 ---
 type: image
 path: /docs/arch/planes
-description: Concrete example figure showing runtime planes in a cloud-native AI platform.
+description: Real-world example diagram showing runtime planes across a customer support AI platform.
 ---
 
 # Image Generation Prompt - Planes Example
 
-Create a documentation-quality example figure titled:
+Create a clean architecture example diagram titled:
 
-"Example: Cloud-Native AI Platform as Planes"
+"Example: AI Support Platform as Planes"
 
-Purpose:
+Use case:
 
-Show a concrete platform where control, data, observability, and policy planes cross the same shared runtime components.
+A customer support AI platform serves ticket-answering requests while separate runtime responsibilities manage configuration, traffic, policy, telemetry, and audit evidence.
 
-Style:
+Image content:
 
-- modern enterprise architecture graphic
-- clean vector artwork
-- light background
-- distinct but restrained color coding per plane
-- easy to scan at page width
-- 16:9 aspect ratio
+Show shared platform components:
 
-Composition:
-
-Depict a cloud-native AI platform with shared components such as:
-
+- support portal
 - API gateway
 - orchestration service
 - retrieval service
-- model runtime
-- queues
+- model gateway
 - policy engine
+- queue
+- audit store
 - observability sink
 
-Overlay four operational planes across those components:
+Overlay four operational planes across those shared components:
 
-- Control plane
-- Data plane
-- Observability plane
-- Policy plane
+- Control plane: configuration, routing, rollout controls
+- Data plane: ticket request, retrieval, model response
+- Policy plane: authorization, prompt policy, output checks
+- Observability plane: traces, metrics, audit events
 
-Make it clear that the same components participate in multiple planes for different runtime purposes.
+Use distinct paths or bands for each plane while keeping the same underlying components visible.
 
-Central message:
+Style:
 
-Planes describe operational responsibility across structure, not separate isolated subsystems.
+- precise technical architecture diagram
+- clean vector paths and component boxes
+- light background
+- restrained color coding per plane
+- 16:9 aspect ratio
+- suitable for documentation
+
+Text rules:
+
+- Use short component and plane labels only.
+- Do not include captions, slogans, or summary text.
+- Avoid dense microtext.
 
 Do:
 
-- emphasize crossing paths and runtime roles
-- keep the example vendor-neutral
-- make data and control paths clearly distinguishable
+- make the runtime responsibilities concrete
+- keep the use case vendor-neutral
+- show that multiple planes cross the same components
 
 Do not:
 
-- present planes as a static org chart
-- duplicate the whole system once per plane
-- hide the shared runtime components
+- show people, desks, screens, or room interiors
+- duplicate the full platform once per plane
+- use cloud provider logos or brand marks

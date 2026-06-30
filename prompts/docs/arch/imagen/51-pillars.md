@@ -1,36 +1,28 @@
 ---
 type: image
 path: /docs/arch/pillars
-description: Concrete example figure showing a tradeoff analysis for centralized versus distributed policy enforcement.
+description: Real-world example diagram showing a policy enforcement tradeoff for an AI support platform.
 ---
 
 # Image Generation Prompt - Pillars Example
 
-Create a documentation-quality example figure titled:
+Create a clean architecture example diagram titled:
 
-"Example: Tradeoff Analysis Through Pillars"
+"Example: Policy Enforcement Tradeoff"
 
-Purpose:
+Use case:
 
-Show a concrete architecture choice, centralized versus distributed policy enforcement, evaluated through several strategic pillars.
+An AI support platform team is comparing centralized policy enforcement with distributed policy checks inside each product workflow.
+The decision affects customer data protection, latency, audit consistency, operational ownership, and rollout complexity.
 
-Style:
+Image content:
 
-- decision-focused architecture infographic
-- clean vector design
-- light background
-- restrained color coding
-- balanced technical and executive readability
-- 16:9 aspect ratio
-
-Composition:
-
-Place the architecture choice in the center as two competing options:
+Show two architecture options side by side:
 
 - Centralized Policy Enforcement
 - Distributed Policy Enforcement
 
-Around the choice, place pillar lenses such as:
+Between or around the options, show five evaluation areas:
 
 - Security
 - Reliability
@@ -38,20 +30,38 @@ Around the choice, place pillar lenses such as:
 - Operability
 - Cost Efficiency
 
-Show directional influence from each pillar toward one option or the other, with small annotations indicating why, such as consistency, latency, evidence collection, or dependency risk.
+Use compact markers or short note fragments for concrete tradeoffs:
 
-Central message:
+- consistent audit
+- added dependency
+- lower local latency
+- policy drift risk
+- simpler rollout
+- team autonomy
 
-Pillars do not describe the system layout. They help weigh competing design options.
+Style:
+
+- precise architecture decision diagram
+- clean vector layout
+- light background
+- restrained color palette
+- 16:9 aspect ratio
+- suitable for documentation
+
+Text rules:
+
+- Use short labels and note fragments only.
+- Do not include a conclusion, score, slogan, or summary statement.
+- Avoid fake precision.
 
 Do:
 
-- emphasize visible tradeoffs
-- keep the decision concrete and realistic
-- make it clear that pillars can pull in different directions
+- make both options look plausible
+- keep the tradeoff tied to the AI support platform use case
+- show practical consequences without declaring a winner
 
 Do not:
 
-- render the pillars as literal decorative columns
-- imply one option wins under every priority
-- turn the figure into a scorecard with fake precision
+- show people, desks, screens, or room interiors
+- render pillars as literal temple columns
+- use real product names or logos
