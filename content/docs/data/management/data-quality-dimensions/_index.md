@@ -169,13 +169,9 @@ The important distinction is architectural. A freshness breach is often evidence
 
 These concerns should be modeled as runtime extensions because they are not always intrinsic data properties. They are signals from the operation of the data system. They support incident response, SLO management, and proactive detection, but they should not replace the core dimensions that describe the data itself.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout >}}
 Timeliness is a quality dimension about whether data is available early enough for its intended use. Freshness is an operational metric that describes how much time has elapsed since the data was last updated, and it is one of the most common ways to evaluate timeliness.
 {{< /callout >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## Semantic Extensions
 

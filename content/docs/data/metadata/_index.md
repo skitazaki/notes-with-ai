@@ -263,8 +263,6 @@ Organizations that treat metadata as a first-class capability are better positio
 
 The overview on this page remains the foundation. The following additional documents expand specific areas such as active metadata, data mesh, product contracts, semantic interoperability, governance, and maturity evolution.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
 {{< card link="active-metadata/" title="Active Metadata" icon="sparkles" subtitle="From passive catalog to event-driven control plane" >}}
 {{< card link="data-mesh/" title="Data Mesh & Metadata" icon="document-text" subtitle="Why metadata is the coordination layer for federated domains" >}}
@@ -273,8 +271,6 @@ The overview on this page remains the foundation. The following additional docum
 {{< card link="federated-governance/" title="Federated Governance" icon="shield-check" subtitle="Policy-as-code, stewardship, trust signals, and auditability" >}}
 {{< card link="maturity-model/" title="Metadata Maturity Model" icon="scale" subtitle="Evolution from documentation to autonomous metadata systems" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## Standards and Resources
 

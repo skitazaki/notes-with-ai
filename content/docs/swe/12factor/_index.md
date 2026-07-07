@@ -55,15 +55,11 @@ Twelve-Factor was created from Heroku’s experience and remains the canonical g
 project was open-sourced by Heroku to let the community evolve it. Use the canonical site for the authoritative list and
 rationale. ([Heroku blog][15] on November 12, 2024)
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout type="warning" >}}
 **When is Twelve-Factor not a perfect fit?** — State-heavy apps (rich client state, low-latency on-device logic), some
 legacy monoliths, and certain edge/IoT apps may need adaptations. Also Twelve-Factor predates some patterns (service
 meshes, sidecars, complex mesh networking), so treat it as a _baseline_ and adapt.
 {{< /callout >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## Core idea in Go
 
@@ -279,8 +275,6 @@ Here shows an example app that follows Twelve-Factor patterns which includes:
 We can set it up using Docker Compose with the folloing files. You need a `.env` file that contains settings of
 **POSTGRES_PASSWORD** and **PGADMIN_DEFAULT_PASSWORD** which Docker Compose refer in `secrets` section.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< filetree/container >}}
 {{< filetree/folder name="project-root/" >}}
 {{< filetree/file name="docker-compose.yml" >}}
@@ -300,24 +294,14 @@ We can set it up using Docker Compose with the folloing files. You need a `.env`
 {{< /filetree/folder >}}
 {{< /filetree/container >}}
 
-<!-- deno-fmt-ignore-end -->
-
 Below is a developer-friendly `docker-compose.yml` example. It’s suitable as a local development stack using
 [`configs`][30] and [`secrets`][31] in the top-level element.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< codefile fname="docker-compose.yml" language="yaml" >}}
-
-<!-- deno-fmt-ignore-end -->
 
 An example Go app has basic handlers of "/healthz", "/readyz", and "/metrics" for observability.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< codefile fname="webapp/main.go" language="go" >}}
-
-<!-- deno-fmt-ignore-end -->
 
 - `GET /healthz` always returns 200 as long as process is alive.
 - `GET /readyz` checks DB connectivity (DB.PingContext) and Redis connectivity (Redis.Ping). It returns 503 if

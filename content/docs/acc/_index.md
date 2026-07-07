@@ -26,8 +26,6 @@ Every document follows a similar shape:
 - **Core Concepts** for the conceptual model
 - **Implementation and Operations** for architecture tradeoffs and operating guidance
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
 {{< card link="vision/" title="Vision & Principles" icon="sparkles" subtitle="North-star principles for identity-centric security" >}}
 {{< card link="landscape/" title="Landscape Overview" icon="document-text" subtitle="Taxonomy of the access-control ecosystem" >}}
@@ -43,5 +41,3 @@ Every document follows a similar shape:
 {{< card link="reference-architectures/" title="Reference Architectures" icon="document-text" subtitle="End-to-end example architectures" >}}
 {{< card link="concept-dictionary/" title="Concept Dictionary" icon="book-open" subtitle="Shared terminology for principals, policies, scopes, and trust boundaries" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->

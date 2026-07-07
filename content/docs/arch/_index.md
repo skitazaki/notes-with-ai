@@ -160,8 +160,6 @@ If the concern is executive alignment, the best view may hide most implementatio
 This section is organized as an architecture documentation library rather than one long article.
 Start with the overview, then use the detailed pages according to the question you need to answer.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
 {{< card link="dimensions/" title="Architecture Dimensions" icon="document-text" subtitle="The core reasoning lenses for understanding one system from multiple perspectives" >}}
 {{< card link="layers/" title="Layers" icon="document-text" subtitle="Structural abstraction, dependency direction, and change isolation" >}}
@@ -172,8 +170,6 @@ Start with the overview, then use the detailed pages according to the question y
 {{< card link="views-and-viewpoints/" title="Views and Viewpoints" icon="document-text" subtitle="Audience-specific communication artifacts derived from architecture concerns" >}}
 {{< card link="decision-frameworks/" title="Decision Frameworks" icon="scale" subtitle="How to connect concerns, dimensions, tradeoffs, and decisions" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## Summary
 

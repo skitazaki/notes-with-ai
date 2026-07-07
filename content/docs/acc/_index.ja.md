@@ -26,8 +26,6 @@ weight: 5
 - **主要概念**: 概念モデルの理解
 - **実装と運用**: 実装・運用上の論点
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
 {{< card link="vision/" title="ビジョンと原則" icon="sparkles" subtitle="アイデンティティ中心のセキュリティを支える北極星" >}}
 {{< card link="landscape/" title="アクセス制御の全体像" icon="document-text" subtitle="アクセス制御の全体像と分類体系" >}}
@@ -43,5 +41,3 @@ weight: 5
 {{< card link="reference-architectures/" title="参照アーキテクチャ" icon="document-text" subtitle="全体像を掴むための代表構成" >}}
 {{< card link="concept-dictionary/" title="用語集" icon="book-open" subtitle="主体、ポリシー、スコープ、信頼境界などの共通語彙" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->

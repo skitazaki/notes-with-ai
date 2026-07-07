@@ -89,13 +89,9 @@ one of the biggest engineering challenges today.
 Here shows just major players and hardware architectures. For more details about "Players by Layers", see the page
 below.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
 {{< card link="layers" title="Players by Layers" icon="document-text" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## The Road Ahead: 2025–2030
 

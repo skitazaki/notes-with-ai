@@ -129,16 +129,13 @@ quadrantChart
      - Multi-agent orchestration for enterprise workflows
      - Often deployed inside corporate SaaS apps
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout >}}
 This 2×2 map helps teams decide **which type of agent to prioritize**:
 
 - If you’re B2C → focus on **customer-facing** agents.
 - If you’re internal engineering → **corporate team-facing** tools (copilots, automation agents) are more relevant.
 - Interactive vs. non-interactive dictates **UI/UX and infra requirements**.
-{{< /callout >}}
-<!-- deno-fmt-ignore-end -->
+  {{< /callout >}}
 
 ### End-User AI Agents in 2025
 
@@ -236,14 +233,10 @@ So the frontier is:
 - **Enterprise copilots** → connecting with enterprise systems via MCP/A2A.
 - **Personal/lifestyle agents** → building trust, transparency, and multimodality (voice, wearable, ambient).
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout icon="sparkles" >}}
 End-user agents are a great starting point to understand **interaction design**
 and how **protocols like MCP** may one day unify agents across tools.
 {{< /callout >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## Notable Solutions
 
@@ -331,8 +324,6 @@ It represents a significant step toward general intelligence rather than mere AI
 - Parallel orchestration of data, coding, and planning tasks
 - Use cases such as market research, document and web automation, and content workflows
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout type="warning" >}}
 Manus has a lot of unofficial sites. Please check the domain before you visit.
 Followings are websites which ChatGPT showed at first.
@@ -341,8 +332,7 @@ Followings are websites which ChatGPT showed at first.
 - `https://www.manus.is/`
 - `https://www.manusagent.io/`
 - `https://manusagent.im/`
-{{< /callout >}}
-<!-- deno-fmt-ignore-end -->
+  {{< /callout >}}
 
 ### Case Study - Devin
 
@@ -557,14 +547,10 @@ but also on **consulting firms** and **system integrators (SIers)** that provide
 and integration. For engineers, these services offer practical insights into how OSS, cloud platforms, and emerging
 protocols (like MCP and A2A) can be combined effectively.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout type="info" >}}
 Consulting firms are not just for strategy — they publish reference architectures and SDK blueprints
 that engineers can reuse in internal agent projects.
 {{< /callout >}}
-
-<!-- deno-fmt-ignore-end -->
 
 Global Consulting Firms
 
@@ -624,15 +610,11 @@ AI agents are moving quickly from tools to ecosystems. In 2025, engineers will n
 Meanwhile, user-oriented tools (Copilot, Manus) are making agents feel real to end-users. On the developer side, OpenAI
 Agents SDK, Genkit, and Strands Agents are making it easier than ever to build robust, production-ready agents.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout >}}
 The future of AI agents is not just about better LLMs.
 It’s about standardized protocols, orchestration frameworks, and integration into enterprise systems.
 This is where engineers can lead.
 {{< /callout >}}
-
-<!-- deno-fmt-ignore-end -->
 
 [1]: https://aws.amazon.com/bedrock/agents/ "Amazon Bedrock Agents | AWS"
 [2]: https://cloud.google.com/vertex-ai/generative-ai/docs/agent-builder/overview "Vertex AI Agent Builder overview | Google Cloud"

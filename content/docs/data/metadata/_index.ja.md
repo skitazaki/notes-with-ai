@@ -263,8 +263,6 @@ AIシステムは、表面化していなくても大量のメタデータに依
 
 このページの長文概要はそのまま土台として残しつつ、アクティブメタデータ、データメッシュ、データプロダクト、意味相互運用性、ガバナンス、成熟度モデルを個別文書として追加しています。
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
 {{< card link="active-metadata/" title="アクティブメタデータ" icon="sparkles" subtitle="受動的カタログからイベント駆動のコントロールプレーンへ" >}}
 {{< card link="data-mesh/" title="データメッシュとメタデータ" icon="document-text" subtitle="フェデレーテッドなドメインをつなぐ調整レイヤー" >}}
@@ -273,8 +271,6 @@ AIシステムは、表面化していなくても大量のメタデータに依
 {{< card link="federated-governance/" title="フェデレーテッドガバナンス" icon="shield-check" subtitle="ポリシーコード化、スチュワードシップ、信頼シグナル、監査性" >}}
 {{< card link="maturity-model/" title="メタデータ成熟度モデル" icon="scale" subtitle="文書化から自律的メタデータシステムへの進化" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## 標準と参考資料
 

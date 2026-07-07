@@ -28,8 +28,6 @@ some markup for writing on a blog post. You can click the folder icons to expand
 
 📁 Recommended Structure:
 
-<!-- deno-fmt-ignore-start -->
-
 {{< filetree/container >}}
 {{< filetree/folder name="project-root" >}}
 {{< filetree/folder name="src" >}}
@@ -95,8 +93,6 @@ some markup for writing on a blog post. You can click the folder icons to expand
 {{< filetree/file name=".env" >}}
 {{< /filetree/folder >}}
 {{< /filetree/container >}}
-
-<!-- deno-fmt-ignore-end -->
 
 Key Components:
 

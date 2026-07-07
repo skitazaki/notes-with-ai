@@ -160,8 +160,6 @@ weight: 1
 このセクションは、1 本の長い記事というより、アーキテクチャ文書のライブラリとして構成しています。
 まずこの概要を読み、その後は答えたい問いに応じて詳細ページを参照してください。
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
 {{< card link="dimensions/" title="アーキテクチャの観点" icon="document-text" subtitle="1 つのシステムを複数の視点から理解するための中核的な考え方" >}}
 {{< card link="layers/" title="レイヤー" icon="document-text" subtitle="構造上の抽象化、依存方向、変更の隔離" >}}
@@ -172,8 +170,6 @@ weight: 1
 {{< card link="views-and-viewpoints/" title="ビューとビューポイント" icon="document-text" subtitle="関心事から導かれる、対象読者別の伝達成果物" >}}
 {{< card link="decision-frameworks/" title="意思決定フレームワーク" icon="scale" subtitle="関心事、観点、トレードオフ、判断をつなぐ方法" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## 要約
 

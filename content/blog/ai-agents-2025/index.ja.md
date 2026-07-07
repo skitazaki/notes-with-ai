@@ -126,16 +126,13 @@ quadrantChart
      - エンタープライズワークフロー向けマルチエージェントオーケストレーション
      - 社内SaaSアプリに組み込み
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout >}}
 この2×2マップは、**どのタイプのエージェントを優先すべきか**を判断するのに役立ちます：
 
 - B2Cなら→**顧客向け**エージェントに注力
 - 社内エンジニアリングなら→**社内向け**ツールが重要
 - インタラクティブか否かで**UI/UXやインフラ要件**が変わる
-{{< /callout >}}
-<!-- deno-fmt-ignore-end -->
+  {{< /callout >}}
 
 ### エンドユーザー向けツール {#end-user-ai-agents}
 
@@ -227,13 +224,9 @@ mindmap
 - **エンタープライズコパイロット**→MCP/A2A経由で企業システムと連携
 - **パーソナル/ライフスタイルエージェント**→信頼・透明性・マルチモーダル（音声・ウェアラブル・アンビエント）
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout icon="sparkles" >}}
 エンドユーザーエージェントは**インタラクション設計**や**MCPのようなプロトコル**が将来ツール横断で統一される可能性を理解するのに最適な出発点です。
 {{< /callout >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## 注目すべきソリューション {#notable-solutions}
 
@@ -316,8 +309,6 @@ mindmap
 - データ・コーディング・計画タスクの並列オーケストレーション
 - 市場調査、ドキュメントやWeb自動化、コンテンツワークフローなど
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout type="warning" >}}
 Manusには非公式サイトが多く存在します。アクセス時はドメインを必ず確認してください。
 以下はChatGPTが最初に示したサイト例です。
@@ -326,8 +317,7 @@ Manusには非公式サイトが多く存在します。アクセス時はドメ
 - `https://www.manus.is/`
 - `https://www.manusagent.io/`
 - `https://manusagent.im/`
-{{< /callout >}}
-<!-- deno-fmt-ignore-end -->
+  {{< /callout >}}
 
 ### 事例紹介 - Devin {#case-study-devin}
 
@@ -533,13 +523,9 @@ AIエージェントの本番導入では、OSSやクラウドサービスだけ
 (SIer)**
 の知見も活用されます。これらのサービスは、OSS・クラウド・新興プロトコル（MCP/A2A）の効果的な組み合わせ方をエンジニアに示してくれます。
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout type="info" >}}
 コンサルティングファームは戦略だけでなく、リファレンスアーキテクチャやSDKの設計図も公開しており、社内エージェント開発の参考になります。
 {{< /callout >}}
-
-<!-- deno-fmt-ignore-end -->
 
 グローバルコンサルティングファーム
 
@@ -591,14 +577,10 @@ AIエージェントはツールからエコシステムへと急速に進化し
 CopilotやManusのようなユーザー向けツールがエージェントを身近にする一方、OpenAI Agents SDKやGenkit、Strands
 Agentsが堅牢な本番エージェント構築を容易にしています。
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout >}}
 AIエージェントの未来は、単なるLLMの進化だけではありません。
 標準化プロトコル、オーケストレーションフレームワーク、エンタープライズ統合こそがエンジニアの活躍領域です。
 {{< /callout >}}
-
-<!-- deno-fmt-ignore-end -->
 
 [1]: https://aws.amazon.com/bedrock/agents/ "Amazon Bedrock Agents | AWS"
 [2]: https://cloud.google.com/vertex-ai/generative-ai/docs/agent-builder/overview "Vertex AI Agent Builder overview | Google Cloud"
