@@ -64,7 +64,9 @@ Structure:
    - Include a comparison table.
 
 5. Example: cloud-native or AI platform
-   - Show how control, data, observability, and policy planes operate across the same platform.
+   - Start with a generic cloud-native or AI platform example that shows how control, data, observability, and policy planes operate across the same platform.
+   - Add OpenChoreo as an additional real-world example because its documentation explicitly describes a multi-plane architecture.
+   - For the OpenChoreo example, describe how its control, data, workflow, and observability planes span platform APIs, workloads, automation, and telemetry.
    - Mention that an image should appear here showing planes crossing structural layers.
 
 6. Common mistakes
@@ -77,4 +79,9 @@ Constraints:
 
 - Do not include implementation instructions for Kubernetes, service mesh, or cloud services.
 - Do not include image-generation instructions.
-- Keep examples vendor-neutral.
+- Keep the overall explanation vendor-neutral, while allowing OpenChoreo as an additional concrete example in the example section.
+
+Source note:
+
+- Use the OpenChoreo overview docs as background for the example section, especially the description of its control plane, data plane, workflow plane, and observability plane.
+- OpenChoreo - [What is OpenChoreo](https://openchoreo.dev/docs/)

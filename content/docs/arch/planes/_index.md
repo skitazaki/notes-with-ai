@@ -79,6 +79,14 @@ The control plane manages configuration, routing, and rollout controls. The data
 
 That is why plane terminology is useful: it explains operational responsibility across one shared platform rather than pretending each runtime concern belongs to a separate isolated subsystem.
 
+## OpenChoreo as a Real-World Example
+
+[OpenChoreo](https://openchoreo.dev/docs/) is a useful concrete reference because it explicitly documents its platform as a multi-plane architecture. Its architecture separates control, data, workflow, and observability responsibilities while still presenting one cohesive internal developer platform.
+
+In OpenChoreo, the control plane acts as the central orchestrator. It reconciles desired platform and developer state through platform and developer APIs, then coordinates what other planes should do. The data plane runs application workloads, applies runtime isolation, and exposes traffic through gateway topologies. The workflow plane handles CI, GitOps, and other automation tasks that should not be confused with the main request path. The observability plane collects logs, metrics, traces, and alerts across the workflow and data planes so teams can inspect behavior without routing all evidence through the same path as control actions.
+
+This example is useful because it shows that planes are not just diagram labels. In a real platform, they can have distinct scaling behavior, security boundaries, and deployment lifecycles while still working together as one system. OpenChoreo also illustrates that plane terminology can cross several layers at once: APIs, controllers, workloads, gateways, and telemetry components all participate in different planes depending on the runtime concern being described.
+
 ## Common Mistakes
 
 **Treating Every Subsystem as a Plane.** Not every labeled box deserves plane status. A plane should describe a meaningful runtime responsibility that crosses structural components or helps explain system behavior.
