@@ -272,7 +272,7 @@ Here shows an example app that follows Twelve-Factor patterns which includes:
 - Alloy + Loki (log aggregation — optional but common)
 - Networks and volumes for clean isolation
 
-We can set it up using Docker Compose with the folloing files. You need a `.env` file that contains settings of
+We can set it up using Docker Compose with the following files. You need a `.env` file that contains settings of
 **POSTGRES_PASSWORD** and **PGADMIN_DEFAULT_PASSWORD** which Docker Compose refer in `secrets` section.
 
 {{< filetree/container >}}
