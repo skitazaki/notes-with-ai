@@ -161,13 +161,13 @@ weight: 1
 まずこの概要を読み、その後は答えたい問いに応じて詳細ページを参照してください。
 
 {{< cards >}}
-{{< card link="dimensions/" title="アーキテクチャの観点" icon="document-text" subtitle="1 つのシステムを複数の視点から理解するための中核的な考え方" >}}
-{{< card link="layers/" title="レイヤー" icon="document-text" subtitle="構造上の抽象化、依存方向、変更の隔離" >}}
-{{< card link="planes/" title="プレーン" icon="document-text" subtitle="制御、データ、ポリシー、可観測性などの運用責務" >}}
-{{< card link="flows-and-pipelines/" title="フローとパイプライン" icon="document-text" subtitle="時間の中での移動、順序、変換、障害経路" >}}
-{{< card link="pillars/" title="ピラー" icon="document-text" subtitle="アーキテクチャ上のトレードオフを導く戦略的な品質軸" >}}
-{{< card link="ownership-boundaries/" title="責任境界" icon="document-text" subtitle="変更、運用、契約、説明責任の分担" >}}
-{{< card link="views-and-viewpoints/" title="ビューとビューポイント" icon="document-text" subtitle="関心事から導かれる、対象読者別の伝達成果物" >}}
+{{< card link="dimensions/" title="アーキテクチャの観点" icon="cube" subtitle="1 つのシステムを複数の視点から理解するための中核的な考え方" >}}
+{{< card link="layers/" title="レイヤー" icon="collection" subtitle="構造上の抽象化、依存方向、変更の隔離" >}}
+{{< card link="planes/" title="プレーン" icon="server" subtitle="制御、データ、ポリシー、可観測性などの運用責務" >}}
+{{< card link="flows-and-pipelines/" title="フローとパイプライン" icon="arrow-right" subtitle="時間の中での移動、順序、変換、障害経路" >}}
+{{< card link="pillars/" title="ピラー" icon="library" subtitle="アーキテクチャ上のトレードオフを導く戦略的な品質軸" >}}
+{{< card link="ownership-boundaries/" title="責任境界" icon="map" subtitle="変更、運用、契約、説明責任の分担" >}}
+{{< card link="views-and-viewpoints/" title="ビューとビューポイント" icon="eye" subtitle="関心事から導かれる、対象読者別の伝達成果物" >}}
 {{< card link="decision-frameworks/" title="意思決定フレームワーク" icon="scale" subtitle="関心事、観点、トレードオフ、判断をつなぐ方法" >}}
 {{< /cards >}}
 

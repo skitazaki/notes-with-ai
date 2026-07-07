@@ -28,16 +28,16 @@ Every document follows a similar shape:
 
 {{< cards >}}
 {{< card link="vision/" title="Vision & Principles" icon="sparkles" subtitle="North-star principles for identity-centric security" >}}
-{{< card link="landscape/" title="Landscape Overview" icon="document-text" subtitle="Taxonomy of the access-control ecosystem" >}}
+{{< card link="landscape/" title="Landscape Overview" icon="map" subtitle="Taxonomy of the access-control ecosystem" >}}
 {{< card link="human-identity/" title="Human Identity & Enterprise IAM" icon="users" subtitle="Lifecycle, federation, PAM, and governance" >}}
 {{< card link="authorization-models/" title="Authorization Models & Policy Systems" icon="shield-check" subtitle="DAC, MAC, RBAC, ABAC, ReBAC, PBAC, and policy engines" >}}
-{{< card link="nonhuman-identity/" title="Workload, Machine, and Non-Human Identity" icon="document-text" subtitle="Machine credentials, dynamic runtime identity, and non-human identity" >}}
-{{< card link="ai-agents/" title="AI Agents & Autonomous Authorization" icon="document-text" subtitle="Agent identities, constrained execution, and approval boundaries" >}}
-{{< card link="defense-in-depth/" title="Defense-in-Depth Architecture" icon="document-text" subtitle="Layered controls across identity, network, runtime, and telemetry" >}}
-{{< card link="governance/" title="Governance, Compliance & Auditability" icon="document-text" subtitle="Evidence, explainability, entitlement governance, and regulation" >}}
-{{< card link="patterns/" title="Architecture Patterns Catalog" icon="document-text" subtitle="Reusable enforcement and deployment patterns" >}}
-{{< card link="threat-models/" title="Threat Model Catalog" icon="document-text" subtitle="Common failure modes, attack paths, and mitigations" >}}
+{{< card link="nonhuman-identity/" title="Workload, Machine, and Non-Human Identity" icon="server" subtitle="Machine credentials, dynamic runtime identity, and non-human identity" >}}
+{{< card link="ai-agents/" title="AI Agents & Autonomous Authorization" icon="chip" subtitle="Agent identities, constrained execution, and approval boundaries" >}}
+{{< card link="defense-in-depth/" title="Defense-in-Depth Architecture" icon="shield-exclamation" subtitle="Layered controls across identity, network, runtime, and telemetry" >}}
+{{< card link="governance/" title="Governance, Compliance & Auditability" icon="clipboard-list" subtitle="Evidence, explainability, entitlement governance, and regulation" >}}
+{{< card link="patterns/" title="Architecture Patterns Catalog" icon="collection" subtitle="Reusable enforcement and deployment patterns" >}}
+{{< card link="threat-models/" title="Threat Model Catalog" icon="exclamation" subtitle="Common failure modes, attack paths, and mitigations" >}}
 {{< card link="decision-frameworks/" title="Decision Frameworks & Tradeoffs" icon="scale" subtitle="How to choose between competing designs" >}}
-{{< card link="reference-architectures/" title="Reference Architectures" icon="document-text" subtitle="End-to-end example architectures" >}}
+{{< card link="reference-architectures/" title="Reference Architectures" icon="cube" subtitle="End-to-end example architectures" >}}
 {{< card link="concept-dictionary/" title="Concept Dictionary" icon="book-open" subtitle="Shared terminology for principals, policies, scopes, and trust boundaries" >}}
 {{< /cards >}}
