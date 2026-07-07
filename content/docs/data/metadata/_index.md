@@ -265,11 +265,11 @@ The overview on this page remains the foundation. The following additional docum
 
 {{< cards >}}
 {{< card link="active-metadata/" title="Active Metadata" icon="sparkles" subtitle="From passive catalog to event-driven control plane" >}}
-{{< card link="data-mesh/" title="Data Mesh & Metadata" icon="document-text" subtitle="Why metadata is the coordination layer for federated domains" >}}
-{{< card link="data-products/" title="Data Products & Contracts" icon="book-open" subtitle="Metadata as product interface, SLA surface, and change boundary" >}}
-{{< card link="semantic-layer/" title="Semantic Layer & Interoperability" icon="document-text" subtitle="Shared business meaning across domains, tools, and AI systems" >}}
+{{< card link="data-mesh/" title="Data Mesh & Metadata" icon="share" subtitle="Why metadata is the coordination layer for federated domains" >}}
+{{< card link="data-products/" title="Data Products & Contracts" icon="clipboard-list" subtitle="Metadata as product interface, SLA surface, and change boundary" >}}
+{{< card link="semantic-layer/" title="Semantic Layer & Interoperability" icon="globe-alt" subtitle="Shared business meaning across domains, tools, and AI systems" >}}
 {{< card link="federated-governance/" title="Federated Governance" icon="shield-check" subtitle="Policy-as-code, stewardship, trust signals, and auditability" >}}
-{{< card link="maturity-model/" title="Metadata Maturity Model" icon="scale" subtitle="Evolution from documentation to autonomous metadata systems" >}}
+{{< card link="maturity-model/" title="Metadata Maturity Model" icon="chart-bar" subtitle="Evolution from documentation to autonomous metadata systems" >}}
 {{< /cards >}}
 
 ## Standards and Resources

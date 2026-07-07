@@ -265,11 +265,11 @@ AIシステムは、表面化していなくても大量のメタデータに依
 
 {{< cards >}}
 {{< card link="active-metadata/" title="アクティブメタデータ" icon="sparkles" subtitle="受動的カタログからイベント駆動のコントロールプレーンへ" >}}
-{{< card link="data-mesh/" title="データメッシュとメタデータ" icon="document-text" subtitle="フェデレーテッドなドメインをつなぐ調整レイヤー" >}}
-{{< card link="data-products/" title="データプロダクトと契約" icon="book-open" subtitle="プロダクトインターフェース、SLA、変更境界としてのメタデータ" >}}
-{{< card link="semantic-layer/" title="セマンティックレイヤーと相互運用性" icon="document-text" subtitle="ドメイン、ツール、AI を横断する共有意味モデル" >}}
+{{< card link="data-mesh/" title="データメッシュとメタデータ" icon="share" subtitle="フェデレーテッドなドメインをつなぐ調整レイヤー" >}}
+{{< card link="data-products/" title="データプロダクトと契約" icon="clipboard-list" subtitle="プロダクトインターフェース、SLA、変更境界としてのメタデータ" >}}
+{{< card link="semantic-layer/" title="セマンティックレイヤーと相互運用性" icon="globe-alt" subtitle="ドメイン、ツール、AI を横断する共有意味モデル" >}}
 {{< card link="federated-governance/" title="フェデレーテッドガバナンス" icon="shield-check" subtitle="ポリシーコード化、スチュワードシップ、信頼シグナル、監査性" >}}
-{{< card link="maturity-model/" title="メタデータ成熟度モデル" icon="scale" subtitle="文書化から自律的メタデータシステムへの進化" >}}
+{{< card link="maturity-model/" title="メタデータ成熟度モデル" icon="chart-bar" subtitle="文書化から自律的メタデータシステムへの進化" >}}
 {{< /cards >}}
 
 ## 標準と参考資料
