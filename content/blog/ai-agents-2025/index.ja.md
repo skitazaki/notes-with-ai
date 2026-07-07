@@ -132,6 +132,7 @@ quadrantChart
 - B2Cなら→**顧客向け**エージェントに注力
 - 社内エンジニアリングなら→**社内向け**ツールが重要
 - インタラクティブか否かで**UI/UXやインフラ要件**が変わる
+
 {{< /callout >}}
 
 ### エンドユーザー向けツール {#end-user-ai-agents}
@@ -317,6 +318,7 @@ Manusには非公式サイトが多く存在します。アクセス時はドメ
 - `https://www.manus.is/`
 - `https://www.manusagent.io/`
 - `https://manusagent.im/`
+
 {{< /callout >}}
 
 ### 事例紹介 - Devin {#case-study-devin}

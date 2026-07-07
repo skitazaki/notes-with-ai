@@ -135,6 +135,7 @@ This 2×2 map helps teams decide **which type of agent to prioritize**:
 - If you’re B2C → focus on **customer-facing** agents.
 - If you’re internal engineering → **corporate team-facing** tools (copilots, automation agents) are more relevant.
 - Interactive vs. non-interactive dictates **UI/UX and infra requirements**.
+
 {{< /callout >}}
 
 ### End-User AI Agents in 2025
@@ -332,6 +333,7 @@ The following are websites which ChatGPT showed at first.
 - `https://www.manus.is/`
 - `https://www.manusagent.io/`
 - `https://manusagent.im/`
+
 {{< /callout >}}
 
 ### Case Study - Devin
