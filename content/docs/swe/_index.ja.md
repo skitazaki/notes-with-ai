@@ -4,11 +4,7 @@ title: "ソフトウェア開発"
 weight: 2
 ---
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
 {{< card link="12factor/" title="Twelve-Factor App" icon="document-text" >}}
 {{< card link="idp/" title="内部開発者ポータル（IDP）" icon="document-text" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->

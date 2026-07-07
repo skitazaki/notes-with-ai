@@ -26,22 +26,18 @@ weight: 5
 - **主要概念**: 概念モデルの理解
 - **実装と運用**: 実装・運用上の論点
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
 {{< card link="vision/" title="ビジョンと原則" icon="sparkles" subtitle="アイデンティティ中心のセキュリティを支える北極星" >}}
-{{< card link="landscape/" title="アクセス制御の全体像" icon="document-text" subtitle="アクセス制御の全体像と分類体系" >}}
+{{< card link="landscape/" title="アクセス制御の全体像" icon="map" subtitle="アクセス制御の全体像と分類体系" >}}
 {{< card link="human-identity/" title="人のアイデンティティとエンタープライズ IAM" icon="users" subtitle="ライフサイクル、連携、PAM、統制" >}}
 {{< card link="authorization-models/" title="認可モデルとポリシーシステム" icon="shield-check" subtitle="DAC、MAC、RBAC、ABAC、ReBAC、PBAC とポリシー評価" >}}
-{{< card link="nonhuman-identity/" title="ワークロード、マシン、非人間 ID" icon="document-text" subtitle="機械の認証情報、動的ワークロード ID、非人間 ID の整理" >}}
-{{< card link="ai-agents/" title="AI エージェントと自律的認可" icon="document-text" subtitle="エージェント ID、制約付き実行、承認境界" >}}
-{{< card link="defense-in-depth/" title="多層防御アーキテクチャ" icon="document-text" subtitle="ID、ネットワーク、ランタイム、可観測性をまたぐ防御" >}}
-{{< card link="governance/" title="ガバナンス、コンプライアンス、監査可能性" icon="document-text" subtitle="証跡、説明可能性、権限統制、規制対応" >}}
-{{< card link="patterns/" title="アーキテクチャパターン集" icon="document-text" subtitle="再利用可能な適用・配置パターン" >}}
-{{< card link="threat-models/" title="脅威モデル集" icon="document-text" subtitle="典型的な攻撃経路、失敗モード、緩和策" >}}
+{{< card link="nonhuman-identity/" title="ワークロード、マシン、非人間 ID" icon="server" subtitle="機械の認証情報、動的ワークロード ID、非人間 ID の整理" >}}
+{{< card link="ai-agents/" title="AI エージェントと自律的認可" icon="chip" subtitle="エージェント ID、制約付き実行、承認境界" >}}
+{{< card link="defense-in-depth/" title="多層防御アーキテクチャ" icon="shield-exclamation" subtitle="ID、ネットワーク、ランタイム、可観測性をまたぐ防御" >}}
+{{< card link="governance/" title="ガバナンス、コンプライアンス、監査可能性" icon="clipboard-list" subtitle="証跡、説明可能性、権限統制、規制対応" >}}
+{{< card link="patterns/" title="アーキテクチャパターン集" icon="collection" subtitle="再利用可能な適用・配置パターン" >}}
+{{< card link="threat-models/" title="脅威モデル集" icon="exclamation" subtitle="典型的な攻撃経路、失敗モード、緩和策" >}}
 {{< card link="decision-frameworks/" title="意思決定フレームワークとトレードオフ" icon="scale" subtitle="設計選択を整理するための比較軸" >}}
-{{< card link="reference-architectures/" title="参照アーキテクチャ" icon="document-text" subtitle="全体像を掴むための代表構成" >}}
+{{< card link="reference-architectures/" title="参照アーキテクチャ" icon="cube" subtitle="全体像を掴むための代表構成" >}}
 {{< card link="concept-dictionary/" title="用語集" icon="book-open" subtitle="主体、ポリシー、スコープ、信頼境界などの共通語彙" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->

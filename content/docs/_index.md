@@ -4,9 +4,9 @@ title: "Docs"
 ---
 
 {{< cards >}}
-{{< card link="arch" title="Software Architecture" icon="document-text" >}}
-{{< card link="swe" title="Software Engineering" icon="document-text" >}}
+{{< card link="arch" title="Software Architecture" icon="scale" >}}
+{{< card link="swe" title="Software Engineering" icon="users" >}}
 {{< card link="acc" title="Access Control" icon="lock-closed" >}}
-{{< card link="data" title="Data" icon="document-text" >}}
-{{< card link="quantum-computing" title="Quantum Computing" icon="document-text" >}}
+{{< card link="data" title="Data" icon="database" >}}
+{{< card link="quantum-computing" title="Quantum Computing" icon="sparkles" >}}
 {{< /cards >}}

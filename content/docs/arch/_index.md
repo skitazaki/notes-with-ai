@@ -160,20 +160,16 @@ If the concern is executive alignment, the best view may hide most implementatio
 This section is organized as an architecture documentation library rather than one long article.
 Start with the overview, then use the detailed pages according to the question you need to answer.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
-{{< card link="dimensions/" title="Architecture Dimensions" icon="document-text" subtitle="The core reasoning lenses for understanding one system from multiple perspectives" >}}
-{{< card link="layers/" title="Layers" icon="document-text" subtitle="Structural abstraction, dependency direction, and change isolation" >}}
-{{< card link="planes/" title="Planes" icon="document-text" subtitle="Operational responsibilities such as control, data, policy, and observability" >}}
-{{< card link="flows-and-pipelines/" title="Flows and Pipelines" icon="document-text" subtitle="Movement, sequencing, transformation, and failure paths over time" >}}
-{{< card link="pillars/" title="Pillars" icon="document-text" subtitle="Strategic qualities that guide architectural tradeoffs" >}}
-{{< card link="ownership-boundaries/" title="Ownership Boundaries" icon="document-text" subtitle="Responsibility for change, operation, contracts, and accountability" >}}
-{{< card link="views-and-viewpoints/" title="Views and Viewpoints" icon="document-text" subtitle="Audience-specific communication artifacts derived from architecture concerns" >}}
+{{< card link="dimensions/" title="Architecture Dimensions" icon="cube" subtitle="The core reasoning lenses for understanding one system from multiple perspectives" >}}
+{{< card link="layers/" title="Layers" icon="collection" subtitle="Structural abstraction, dependency direction, and change isolation" >}}
+{{< card link="planes/" title="Planes" icon="server" subtitle="Operational responsibilities such as control, data, policy, and observability" >}}
+{{< card link="flows-and-pipelines/" title="Flows and Pipelines" icon="arrow-right" subtitle="Movement, sequencing, transformation, and failure paths over time" >}}
+{{< card link="pillars/" title="Pillars" icon="library" subtitle="Strategic qualities that guide architectural tradeoffs" >}}
+{{< card link="ownership-boundaries/" title="Ownership Boundaries" icon="map" subtitle="Responsibility for change, operation, contracts, and accountability" >}}
+{{< card link="views-and-viewpoints/" title="Views and Viewpoints" icon="eye" subtitle="Audience-specific communication artifacts derived from architecture concerns" >}}
 {{< card link="decision-frameworks/" title="Decision Frameworks" icon="scale" subtitle="How to connect concerns, dimensions, tradeoffs, and decisions" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## Summary
 

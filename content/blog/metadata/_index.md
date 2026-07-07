@@ -17,13 +17,9 @@ This series is a technical walkthrough of that evolution. It starts with CSV fil
 
 It extends the ideas in [Metadata](/docs/data/metadata/) and turns them into a more implementation-oriented systems journey.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< callout icon="sparkles" >}}
 This page is the landing page for the full series. Published entries are linked below, and the progression is kept in one place so the control-plane argument is easy to follow end to end.
 {{< /callout >}}
-
-<!-- deno-fmt-ignore-end -->
 
 ## What This Series Covers
 

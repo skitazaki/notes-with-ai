@@ -34,11 +34,7 @@ created between human-driven exploration and AI assistance.
 **"Documentation"** is structured by technical topics while **"Blog"** is a collection of random thoughts and technical
 snapshots.
 
-<!-- deno-fmt-ignore-start -->
-
 {{< cards >}}
 {{< card link="docs/" title="Documentation" icon="document-text" >}}
 {{< card link="blog/" title="Blog" icon="document-text" >}}
 {{< /cards >}}
-
-<!-- deno-fmt-ignore-end -->
