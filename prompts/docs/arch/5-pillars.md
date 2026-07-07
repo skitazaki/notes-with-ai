@@ -32,6 +32,17 @@ Scope:
 - Cover common pillars such as reliability, security, scalability, performance, cost efficiency, operability, maintainability, and developer experience
 - Explain how pillars become principles, requirements, constraints, and review criteria
 - Use examples from cloud architecture, platform engineering, and AI systems
+- Ground the discussion in real-world hyperscaler reference documents, including AWS Well-Architected Framework, Microsoft Azure Well-Architected Framework, and Google Cloud Architecture Framework
+
+Required source anchors:
+
+- AWS Well-Architected Framework as a concrete example of a published pillar model:
+  https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html
+- Microsoft Azure Well-Architected Framework as a contrasting example with overlapping but differently framed priorities:
+  https://learn.microsoft.com/en-us/azure/well-architected/
+- Google Cloud Architecture Framework as another concrete example of how strategic qualities are organized and communicated:
+  https://cloud.google.com/architecture/framework
+- Use these sources to show similarities and differences, but keep the article vendor-neutral and concept-first
 
 Tone and style:
 
@@ -59,6 +70,7 @@ Structure:
    - Operability
    - Maintainability
    - Developer experience
+   - Briefly note how these ideas appear in AWS, Azure, and Google Cloud framework documents, including where names or emphasis differ
 
 4. How pillars influence decisions
    - Show how a pillar can become a principle, policy, standard, review checklist, or design constraint.
@@ -66,11 +78,15 @@ Structure:
 5. Pillars versus layers and planes
    - Include a comparison table showing that pillars are not topology, dependency direction, ownership, or runtime paths.
 
-6. Example: tradeoff analysis
+6. Real-world framework examples
+   - Include a short comparison of AWS Well-Architected Framework, Microsoft Azure Well-Architected Framework, and Google Cloud Architecture Framework.
+   - Explain that these documents are useful real-world examples of pillar-based thinking, but not universal definitions.
+
+7. Example: tradeoff analysis
    - Use a concrete design decision and show how different pillars push the decision in different directions.
    - Mention that an image should appear here showing pillars as decision lenses applied to one architecture choice.
 
-7. Common mistakes
+8. Common mistakes
    - Listing too many pillars
    - Treating pillars as branding language
    - Ignoring tradeoffs between pillars
@@ -79,5 +95,6 @@ Structure:
 Constraints:
 
 - Do not reproduce any vendor framework as the definitive model.
+- Do not turn the page into a vendor survey; use AWS, Azure, and Google Cloud documents as supporting examples.
 - Do not include implementation steps.
 - Do not include image-generation instructions.

@@ -72,6 +72,8 @@ A pillar becomes useful only when it shapes a real decision. In practice, pillar
 
 For example, if reliability is a top pillar, teams may prefer simpler dependencies, degraded-mode behavior, and strong observability over maximum feature flexibility. If developer experience is a strong pillar, the platform may invest in self-service workflows even when that increases short-term implementation cost.
 
+This way of thinking also appears in major cloud guidance. [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html), [Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/), and [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) each publish vendor-specific sets of architectural priorities. Those guides are useful real-world examples of pillar-based design thinking, even though no single vendor framework should be treated as the universal definition.
+
 ## Pillars vs. Layers and Planes
 
 Pillars are often confused with other architecture concepts because teams use the same diagrams and conversations to discuss structure, runtime behavior, and decision criteria. The distinction matters because a pillar does not describe how a system is arranged or how it executes. It describes what the design is trying to optimize for.

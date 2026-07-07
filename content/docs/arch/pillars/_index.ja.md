@@ -89,6 +89,8 @@ next: "/docs/arch/ownership-boundaries"
 たとえば、信頼性が最上位のピラーなら、最大限の機能柔軟性よりも、単純な依存関係、性能劣化時の振る舞い、強い可観測性が好まれるかもしれません。
 開発者体験が強いピラーなら、短期的な実装コストが増えても、基盤はセルフサービスワークフローへの投資を選ぶかもしれません。
 
+この考え方は、主要なクラウドの設計ガイダンスにも見られます。[AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)、[Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)、[Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) は、いずれもベンダー固有の形でアーキテクチャ上の優先順位を整理した文書です。これらはピラーにもとづく設計思考の実例として有用ですが、どれか 1 つを普遍的な定義とみなすべきではありません。
+
 ## ピラーとレイヤー、プレーンの違い
 
 チームはしばしば、構造、実行時の振る舞い、判断基準を同じ図や同じ会話の中で扱うため、ピラーを他のアーキテクチャ概念と混同します。
