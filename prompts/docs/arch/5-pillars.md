@@ -108,89 +108,15 @@ Constraints:
 
 If you're writing about **architecture pillars** in software architecture, it's useful to include the major industry frameworks that explicitly organize architecture into _pillars_, _principles_, _quality attributes_, or _domains_. They all use slightly different terminology, but they represent the same idea: grouping architectural concerns into enduring dimensions.
 
-Here's a comprehensive list you can include in your content-generation prompt.
+Here is the explicit pillar comparison for the three required source anchors:
 
-| Framework                                              | Pillars / Domains                                                                                                   |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| AWS Well-Architected Framework                         | Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability            |
-| Microsoft Azure Well-Architected Framework             | Reliability, Security, Cost Optimization, Operational Excellence, Performance Efficiency                            |
-| Google Cloud Architecture Framework                    | System Design, Operational Excellence, Security & Privacy, Reliability, Cost Optimization, Performance Optimization |
-| Oracle Cloud Infrastructure Well-Architected Framework | Security & Compliance, Reliability & Resilience, Performance & Cost Optimization, Operational Efficiency            |
-| IBM Cloud Architecture Framework                       | Security, Resilience, Performance, Operations, Governance                                                           |
-| Cisco Cloud Architecture Framework                     | Security, Automation, Operations, Connectivity, Governance                                                          |
+| Framework                                  | Pillars / Domains                                                                                                   |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| AWS Well-Architected Framework             | Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability            |
+| Microsoft Azure Well-Architected Framework | Reliability, Security, Cost Optimization, Operational Excellence, Performance Efficiency                            |
+| Google Cloud Architecture Framework        | System Design, Operational Excellence, Security & Privacy, Reliability, Cost Optimization, Performance Optimization |
 
-## Enterprise Architecture Frameworks
-
-These don't always call them "pillars," but define enduring architecture domains.
-
-- The Open Group Architecture Framework
-  - Business
-  - Data
-  - Application
-  - Technology
-
-- Gartner Enterprise Architecture
-  - Business
-  - Information
-  - Technology
-  - Security
-  - Governance
-
-- Federal Enterprise Architecture Framework
-  - Performance
-  - Business
-  - Data
-  - Applications
-  - Infrastructure
-  - Security
-
-## Software Architecture Quality Attribute Models
-
-These are not marketed as "well-architected" frameworks but are foundational references for architecture pillars.
-
-- Software Architecture in Practice
-  - Performance
-  - Availability
-  - Modifiability
-  - Security
-  - Testability
-  - Usability
-  - Interoperability
-
-- ISO/IEC 25010
-  - Functional Suitability
-  - Performance Efficiency
-  - Compatibility
-  - Usability
-  - Reliability
-  - Security
-  - Maintainability
-  - Portability
-
-## Data & AI Architecture
-
-Useful when discussing modern platform architecture.
-
-- Data Mesh
-  - Domain Ownership
-  - Data as a Product
-  - Self-Serve Platform
-  - Federated Computational Governance
-
-- Lakehouse Architecture
-  - Governance
-  - Reliability
-  - Performance
-  - Openness
-  - Scalability
-
-- Responsible AI (implemented by many organizations)
-  - Fairness
-  - Reliability
-  - Privacy
-  - Transparency
-  - Accountability
-  - Safety
+Other well-known frameworks use similar groupings under different names. Enterprise architecture frameworks (TOGAF, Gartner, FEAF) organize concerns into business, data, application, and technology domains. Software quality standards (ISO/IEC 25010, Software Architecture in Practice) list quality attributes such as reliability, security, maintainability, and performance. Data and AI platform frameworks (Data Mesh, Lakehouse Architecture, Responsible AI) add domain-specific concerns such as governance, domain ownership, fairness, and privacy. In every case the intent is the same: naming the enduring qualities a system must optimize for.
 
 ## Common Cross-Industry Architecture Pillars
 

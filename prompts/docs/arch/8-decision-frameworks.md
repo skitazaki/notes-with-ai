@@ -94,7 +94,7 @@ Constraints:
 
 # Architecture Decision Records (ADRs)
 
-**There is no single official standards document** for Architecture Decision Records (ADRs). Instead, the industry has converged around a handful of influential sources that have become de facto standards.
+**There is no single official standard document** for Architecture Decision Records (ADRs). Instead, the industry has converged around a handful of influential sources that have become de facto standards.
 
 The closest thing to a canonical lineage is:
 
@@ -123,39 +123,6 @@ The closest thing to a canonical lineage is:
      - examples
 
    - Many companies adopt these templates almost verbatim.
-
-## The "canonical" template
-
-Today, if you ask 100 software architects to write an ADR, most would produce something very close to this:
-
-```text
-ADR-0007: Use PostgreSQL
-
-Status
-Accepted
-
-Context
-We need a transactional relational database...
-
-Decision
-Use PostgreSQL for all production workloads.
-
-Consequences
-+ Mature ecosystem
-+ Strong replication
-- Requires DBA expertise
-```
-
-Some teams extend it with:
-
-- Alternatives considered
-- Assumptions
-- Risks
-- Compliance implications
-- Links
-- Supersedes / Superseded by
-- Date
-- Decision drivers
 
 ## There are several established formats
 
