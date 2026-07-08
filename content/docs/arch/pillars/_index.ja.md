@@ -89,6 +89,38 @@ next: "/docs/arch/ownership-boundaries"
 たとえば、信頼性が最上位のピラーなら、最大限の機能柔軟性よりも、単純な依存関係、性能劣化時の振る舞い、強い可観測性が好まれるかもしれません。
 開発者体験が強いピラーなら、短期的な実装コストが増えても、基盤はセルフサービスワークフローへの投資を選ぶかもしれません。
 
+この考え方は、主要なクラウドの設計ガイダンスにも見られます。[AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)、[Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)、[Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) は、いずれもベンダー固有の形でアーキテクチャ上の優先順位を整理した文書です。これらはピラーにもとづく設計思考の実例として有用ですが、どれか 1 つを普遍的な定義とみなすべきではありません。
+
+## 実務で使うフレームワークの例
+
+公開されているアーキテクチャフレームワークが有用なのは、戦略的な優先順位を明示してくれるからです。
+それらは、レビュー、トレードオフ分析、ガバナンスのために共通語彙を与えます。
+ただし、これらはピラーにもとづく思考の実例であって、あらゆるアーキテクチャが何を最適化すべきかの究極解ではありません。
+
+主要なハイパースケーラのフレームワークは大きく重なっていますが、整理の仕方には違いがあります。
+
+| フレームワーク                             | 代表的な優先順位                                                                                                      | 分かること                                                                                                   |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| AWS Well-Architected Framework             | Operational Excellence、Security、Reliability、Performance Efficiency、Cost Optimization、Sustainability              | ピラーを使って、クラウドワークロード全体のレビューを進める運用モデルを作れることを示しています。             |
+| Microsoft Azure Well-Architected Framework | Reliability、Security、Cost Optimization、Operational Excellence、Performance Efficiency                              | 中核となる関心事が同じでも、重み付けや名称には違いがあり得ることを示しています。                             |
+| Google Cloud Architecture Framework        | System Design、Operational Excellence、Security and Privacy、Reliability、Cost Optimization、Performance Optimization | 品質特性とより広い設計分野を混ぜて整理していても、同じように意思決定を導く役割を果たせることを示しています。 |
+
+他のフレームワークも同じ傾向を補強しています。
+Oracle OCI Well-Architected、IBM Cloud Architecture Framework、TOGAF、ISO/IEC 25010、Software Architecture in Practice は、ピラーではなくドメイン、原則、品質特性といった言葉を使う場合でも、長期的な関心事を安定的な観点に整理しています。
+データアーキテクチャにおいてはデータメッシュも同様に、ガバナンス、ドメインオーナーシップ、プラットフォームのセルフサービス化を、後付けではなく設計上の優先順位として明示します。
+
+### 責任ある AI
+
+AI システムでは、戦略的な関心事がそのまま受け入れ可能な振る舞いの定義に直結するため、ピラーの役割が特に見えやすくなります。
+たとえば AI プラットフォームでは、公平性、安全性、プライバシー、透明性、説明責任、信頼性を明示的なアーキテクチャピラーとして扱うことがあります。
+
+そのように枠づけると、これらの関心事は具体的な設計判断を変えます。
+モデル選定では、単純なベンチマーク性能より解釈可能性を優先するかもしれません。
+評価では、精度だけでなく、バイアス、ハルシネーション、安全性のしきい値も確認対象になります。
+デプロイ統制では、人手によるレビュー、監査証跡、ポリシー適用、より厳格なデータ取り扱いルールが必要になるかもしれません。
+この意味で責任ある AI（Responsible AI）は、アーキテクチャの外側にある別テーマではありません。
+ピラーにもとづく優先順位が、実際のシステムで設計制約やレビュー基準へ変わる具体例です。
+
 ## ピラーとレイヤー、プレーンの違い
 
 チームはしばしば、構造、実行時の振る舞い、判断基準を同じ図や同じ会話の中で扱うため、ピラーを他のアーキテクチャ概念と混同します。

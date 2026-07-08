@@ -89,3 +89,125 @@ Constraints:
 - Do not write a full ADR template.
 - Do not include implementation steps.
 - Do not include image-generation instructions.
+
+---
+
+# Architecture Decision Records (ADRs)
+
+**There is no single official standard document** for Architecture Decision Records (ADRs). Instead, the industry has converged around a handful of influential sources that have become de facto standards.
+
+The closest thing to a canonical lineage is:
+
+1. **Michael Nygard's "Documenting Architecture Decisions" (2011)** [^nygard]
+   - This is widely regarded as the origin of the modern ADR.
+   - Introduced the now-familiar sections:
+     - Title
+     - Status
+     - Context
+     - Decision
+     - Consequences
+
+   - The original article is still the document most people cite when explaining ADRs.
+
+2. **Thoughtworks Technology Radar** [^thoughtworks]
+   - Thoughtworks has repeatedly recommended ADRs as an engineering practice.
+   - Their guidance helped popularize ADRs across the software industry.
+   - They also maintain templates and examples.
+
+3. **ADR GitHub Organization** [^adr]
+   - The community-maintained GitHub organization has become the practical reference.
+   - It contains:
+     - multiple ADR templates
+     - markdown conventions
+     - tooling
+     - examples
+
+   - Many companies adopt these templates almost verbatim.
+
+## There are several established formats
+
+Although Nygard's template is the most influential, several variants have become common.
+
+| Format                                   | Origin                  | Characteristics                                     |
+| ---------------------------------------- | ----------------------- | --------------------------------------------------- |
+| Nygard ADR [^nygard]                     | Michael Nygard          | Minimal, elegant                                    |
+| MADR (Markdown ADR) [^madr]              | Community               | Rich metadata, decision drivers, alternatives       |
+| Tyree & Akerman Decision Template        | Enterprise architecture | Much more formal and comprehensive                  |
+| Arc42 ADRs [^arc42]                      | Arc42                   | Integrated with software architecture documentation |
+| AWS Architecture Decision Records [^aws] | Internal practice       | Cloud-focused adaptations                           |
+
+## Why there is no ISO or IEEE standard
+
+ADRs deliberately evolved as **lightweight engineering artifacts**, not governance documents.
+
+Unlike architecture descriptions, which are standardized in ISO/IEC/IEEE 42010 [^iso42010], ADRs are intended to be:
+
+- easy to write
+- stored alongside code
+- version controlled
+- inexpensive to maintain
+
+The philosophy is:
+
+> Record the decision while the reasoning is still fresh.
+
+rather than
+
+> Produce exhaustive design documentation.
+
+## Relationship to ISO 42010
+
+This distinction is often overlooked:
+
+- **ISO 42010** [^iso42010] defines **how to describe an architecture**:
+  - stakeholders
+  - concerns
+  - viewpoints
+  - views
+  - architecture description
+
+- **ADRs** describe **why specific architectural decisions were made**.
+
+In other words:
+
+```
+Architecture Description
+    ├── Viewpoints
+    ├── Views
+    └── ...
+           ▲
+           │ supported by
+           │
+Architecture Decision Records
+```
+
+Many organizations use ADRs as the rationale supporting an ISO 42010-compliant architecture description.
+
+---
+
+## If you're writing about software architecture
+
+Given your recent work on architectural dimensions, planes, and reasoning models, I'd recommend treating ADRs not simply as "decision logs," but as **records of architectural reasoning**.
+
+A useful framing is:
+
+- **Architecture descriptions** answer: _What is the architecture?_
+- **Architecture views** answer: _How should we reason about it?_
+- **Architecture Decision Records** answer: _Why did we choose this?_
+- **Architecture principles** answer: _What should consistently guide future decisions?_
+
+This positions ADRs as one part of a broader architectural knowledge system, alongside principles, viewpoints, patterns, and governance. That perspective aligns well with modern architecture practices and provides a richer conceptual model than treating ADRs as isolated Markdown files.
+
+[^nygard]: https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+
+[^thoughtworks]: https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records
+
+[^adr]: https://adr.github.io/
+
+[^madr]: https://adr.github.io/madr/
+
+[^arc42]: https://arc42.org/overview
+
+[^aws]: https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/welcome.html
+
+[^iso42010]: https://www.iso.org/standard/74393.html

@@ -72,6 +72,28 @@ A pillar becomes useful only when it shapes a real decision. In practice, pillar
 
 For example, if reliability is a top pillar, teams may prefer simpler dependencies, degraded-mode behavior, and strong observability over maximum feature flexibility. If developer experience is a strong pillar, the platform may invest in self-service workflows even when that increases short-term implementation cost.
 
+This way of thinking also appears in major cloud guidance. [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html), [Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/), and [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) each publish vendor-specific sets of architectural priorities. Those guides are useful real-world examples of pillar-based design thinking, even though no single vendor framework should be treated as the universal definition.
+
+## Real-World Framework Examples
+
+Published architecture frameworks are useful because they make strategic priorities explicit. They give teams a shared vocabulary for review, tradeoff analysis, and governance. They are examples of pillar-based thinking, not final authorities on what every architecture must optimize for.
+
+The major hyperscaler frameworks overlap heavily, but their framing differs:
+
+| Framework                                  | Illustrative priorities                                                                                               | What it shows                                                                                                               |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| AWS Well-Architected Framework             | Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability              | Pillars can be used as a broad operating model for cloud workload review.                                                   |
+| Microsoft Azure Well-Architected Framework | Reliability, Security, Cost Optimization, Operational Excellence, Performance Efficiency                              | The same core concerns can be organized with slightly different emphasis and naming.                                        |
+| Google Cloud Architecture Framework        | System Design, Operational Excellence, Security and Privacy, Reliability, Cost Optimization, Performance Optimization | Some frameworks mix quality attributes with broader design disciplines while still serving the same decision-guidance role. |
+
+Other frameworks reinforce the same pattern. Oracle OCI Well-Architected, IBM Cloud Architecture Framework, TOGAF, ISO/IEC 25010, and Software Architecture in Practice all group enduring concerns into stable dimensions, even when they use terms such as domains, principles, or quality attributes instead of pillars. Data Mesh plays a similar role in data architecture by making governance, domain ownership, and platform self-service explicit design priorities rather than afterthoughts.
+
+### Responsible AI
+
+AI systems make the role of pillars especially visible because strategic concerns directly shape what is considered acceptable behavior. A team may treat fairness, safety, privacy, transparency, accountability, and reliability as explicit architecture pillars for an AI platform.
+
+Once framed that way, those concerns change concrete decisions. Model selection may favor interpretability over raw benchmark performance. Evaluation may include bias, hallucination, and safety thresholds rather than accuracy alone. Deployment controls may require human review, audit trails, policy enforcement, or tighter data handling rules. In that sense, Responsible AI is not separate from architecture. It is an example of how pillar-based priorities become design constraints and review criteria in a real system.
+
 ## Pillars vs. Layers and Planes
 
 Pillars are often confused with other architecture concepts because teams use the same diagrams and conversations to discuss structure, runtime behavior, and decision criteria. The distinction matters because a pillar does not describe how a system is arranged or how it executes. It describes what the design is trying to optimize for.

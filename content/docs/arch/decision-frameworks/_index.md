@@ -87,6 +87,25 @@ Good architecture records are lightweight but explicit. They usually capture:
 
 The important point is not the template. It is preserving why the decision was reasonable at the time and what would invalidate it later.
 
+## Architecture Decision Records
+
+Architecture Decision Records, or ADRs, are the most common lightweight format teams use to preserve architectural reasoning. There is no single official ADR standard. In practice, teams usually borrow from a small set of widely adopted sources rather than following a formal specification.[^nygard] [^thoughtworks] [^adr]
+
+The simplest and still most influential pattern comes from Michael Nygard's original ADR write-up: capture the context, state the decision, and record the consequences.[^nygard] Many teams extend that structure with alternatives considered, assumptions, risks, review triggers, or decision drivers when the choice has more organizational or operational impact.
+
+Several established variants are common in practice:
+
+| Format                      | Typical use                                                               |
+| --------------------------- | ------------------------------------------------------------------------- |
+| Nygard ADR [^nygard]        | Minimal decision records focused on clarity and speed                     |
+| MADR [^madr]                | Richer metadata, explicit decision drivers, and alternatives              |
+| arc42 ADR guidance [^arc42] | ADRs used alongside broader architecture documentation                    |
+| AWS ADR guidance [^aws]     | Cloud-oriented decision records tied to platform and operational concerns |
+
+The difference between ADRs and architecture description standards matters. ISO/IEC/IEEE 42010 describes how to organize architecture descriptions around stakeholders, concerns, viewpoints, and views.[^iso42010] ADRs answer a different question: why a particular architectural choice was made.
+
+That makes ADRs a useful companion to architecture views rather than a replacement for them. A view helps stakeholders reason about the system. An ADR preserves why the team selected one option over another. Used together, they connect the decision, the evidence behind it, and the representation that best explains it.
+
 ## Common Mistakes
 
 **Choosing a Diagram before Identifying the Decision.** If the team starts by drawing, it often documents assumptions instead of testing them.
@@ -100,3 +119,17 @@ The important point is not the template. It is preserving why the decision was r
 ## Summary
 
 Decision frameworks make architecture concepts practical. They help teams begin with the real concern, choose the right reasoning lens, compare options explicitly, and preserve the logic behind the final choice. That is where architecture vocabulary earns its value.
+
+[^nygard]: https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+
+[^thoughtworks]: https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records
+
+[^adr]: https://adr.github.io/
+
+[^madr]: https://adr.github.io/madr/
+
+[^arc42]: https://arc42.org/overview
+
+[^aws]: https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/welcome.html
+
+[^iso42010]: https://www.iso.org/standard/74393.html
