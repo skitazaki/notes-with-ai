@@ -5,7 +5,7 @@ weight: 2
 prev: "/docs/data/management"
 ---
 
-Master Data Management (MDM) is the discipline of maintaining authoritative, consistent representations of core business entities across systems. It exists because enterprises do not run on one application. Customers, products, suppliers, employees, and locations are usually created and updated in multiple operational systems, each with its own identifiers, validation rules, timing, and data quality problems. MDM provides a way to reconcile that fragmentation without pretending that the enterprise is actually one database.
+Master Data Management (MDM) is the discipline of maintaining authoritative, consistent representations of core business entities across systems. It exists because enterprises do not run on one application. Customers, products, suppliers, employees, and business locations such as stores, warehouses, offices, and sites are usually created and updated in multiple operational systems, each with its own identifiers, validation rules, timing, and data quality problems. MDM provides a way to reconcile that fragmentation without pretending that the enterprise is actually one database.
 
 ## Executive Summary
 
@@ -29,8 +29,8 @@ Typical master data domains include:
 - products
 - suppliers
 - employees
-- assets
-- locations
+- physical assets such as equipment and facilities
+- business locations such as stores, warehouses, offices, and sites
 - organizational units
 
 These entities are usually referenced by transactional systems, analytical systems, and operational workflows. Because they are reused broadly, inconsistency in their representation propagates widely.
@@ -86,16 +86,23 @@ Stewardship is the human operating model around those rules. Data stewards revie
 ```json
 {
   "customerId": "CUST-10042",
-  "sources": ["crm", "billing", "support"],
+  "sourceRecords": [
+    { "system": "crm", "sourceId": "CRM-88271" },
+    { "system": "billing", "sourceId": "BILL-44019" },
+    { "system": "support", "sourceId": "SUP-11804" }
+  ],
   "goldenRecord": {
     "legalName": "Northwind Industrial Ltd.",
+    "legalNameSource": { "system": "billing", "sourceId": "BILL-44019" },
     "billingCountry": "JP",
-    "supportTier": "enterprise"
+    "billingCountrySource": { "system": "billing", "sourceId": "BILL-44019" },
+    "supportTier": "enterprise",
+    "supportTierSource": { "system": "support", "sourceId": "SUP-11804" }
   }
 }
 ```
 
-The example matters because it shows that the golden record is assembled from multiple source systems rather than copied wholesale from one application.
+The example matters because it shows that the golden record is assembled from multiple source systems rather than copied wholesale from one application, and that each mastered attribute can still be traced back to a source system and source record.
 
 ## Architecture Patterns
 
