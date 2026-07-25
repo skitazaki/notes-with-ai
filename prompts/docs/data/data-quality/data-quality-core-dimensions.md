@@ -1,5 +1,5 @@
 ---
-type: docs
+type: prompt
 path: /docs/data/management/
 ---
 

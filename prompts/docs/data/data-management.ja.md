@@ -1,5 +1,6 @@
 ---
-type: docs
+type: prompt
+path: /docs/data/management
 ---
 
 あなたはデジタルテクノロジーの専門家であり、ドキュメント作成のプロフェッショナルです。

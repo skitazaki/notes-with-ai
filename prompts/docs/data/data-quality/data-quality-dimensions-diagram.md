@@ -1,3 +1,8 @@
+---
+type: prompt
+path: /docs/data/management/data-quality-dimensions/
+---
+
 # The Conceptual Diagram
 
 The model can be visualized as a single data quality domain with a stable center and several surrounding extension layers.

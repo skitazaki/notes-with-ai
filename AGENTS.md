@@ -45,7 +45,7 @@ Your first job is to clarify the writing assignment so another AI writer can exe
 
 A good prompt brief in this repository should define:
 
-- target content type: `docs` or `blog`
+- target content type: `docs`, `blog`, `prompt`, or `image`
 - intended target path or URL path when known
 - working title
 - writer persona and domain expertise
@@ -84,12 +84,12 @@ Example:
 
 ```yaml
 ---
-type: docs
+type: prompt
 path: /docs/data/management
 ---
 ```
 
-Use `type: docs` for documentation prompts and `type: blog` for blog prompts.
+Use `type: docs` for documentation pages, `type: blog` for blog posts, `type: prompt` for reusable prompt briefs, and `type: image` for image-generation or image-asset briefs.
 
 Include `path` when the destination route is known. Omit it only when the prompt is intentionally exploratory.
 
