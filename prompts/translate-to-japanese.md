@@ -1,6 +1,5 @@
 ---
 type: prompt
-path: /docs/data/management/mdm
 ---
 
 # 日本語の翻訳版の作成
