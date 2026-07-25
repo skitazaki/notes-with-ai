@@ -98,7 +98,7 @@ Structure:
 
 - Reinforce why MDM matters and the main architectural and organizational principles.
 
-Recommended devices:
+Recommended elements:
 
 - Include at least three useful comparison tables
 - Include a small Mermaid diagram for one architecture pattern or synchronization flow if it adds clarity
