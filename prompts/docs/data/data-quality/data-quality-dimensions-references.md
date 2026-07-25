@@ -1,3 +1,8 @@
+---
+type: prompt
+path: /docs/data/management/data-quality-dimensions/
+---
+
 Here’s a curated list of widely referenced articles, frameworks, standards, and research papers about **data quality dimensions** — from practical engineering guides to formal data management theory.
 
 # Foundational & Industry References

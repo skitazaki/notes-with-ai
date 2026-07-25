@@ -1,3 +1,8 @@
+---
+type: prompt
+path: /docs/data/teams/roles
+---
+
 Write a concise overview titled:
 "Data Team Roles"
 

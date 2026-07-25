@@ -1,5 +1,6 @@
 ---
-type: docs
+type: prompt
+path: /docs/data/management
 ---
 
 Write a concise overview (roughly 1,000–1,200 words) titled:
