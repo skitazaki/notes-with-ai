@@ -19,6 +19,8 @@ Good MDM programs therefore combine three things:
 - an operating model for stewardship and ownership
 - an architecture pattern that fits the existing application landscape
 
+![Conceptual overview of Master Data Management showing fragmented source systems converging into a mastered entity view](mdm-overview.webp)
+
 ## What Master Data Is
 
 Master data describes relatively stable, shared business entities that are used across multiple processes and systems. It is not defined by storage technology. It is defined by enterprise significance and cross-system reuse.
@@ -193,6 +195,8 @@ Operationally, MDM often integrates with:
 - APIs, events, and CDC pipelines for synchronization across applications
 
 Analytically, MDM improves the reliability of warehouses, lakes, and lakehouses by stabilizing entity identity before or during downstream modeling. This does not mean a lakehouse replaces MDM. A lakehouse stores and processes data efficiently. MDM decides how core entities are identified, reconciled, and governed.
+
+![System architecture showing how MDM connects operational systems, integration services, and analytical platforms](mdm-modern-platform-integration.webp)
 
 The same boundary matters for adjacent architectural ideas.
 
