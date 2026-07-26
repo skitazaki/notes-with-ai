@@ -8,6 +8,8 @@ Data is a structured or unstructured representation of real-world or system-gene
 This section organizes principles, architectures, practices, and operational models that enable scalable, reliable, and compliant data systems.
 It covers the full lifecycle of data — from acquisition and engineering to analytics, governance, security, and value realization, which is required to manage **data as a strategic asset**.
 
+![Conceptual overview of data as a strategic asset, showing source, enablement, and value layers from left to right with a cross-cutting control layer beneath them](data-hero.webp)
+
 The data can be understood as a layered system:
 
 - **Value Layer** – Analytics and sharing
