@@ -27,5 +27,5 @@ path: /docs/data
 - Source Layer – データ取得層
 - Control Layer –> 統制層
 - Data Management -> データマネジメント
-- Master Data Management -> マスターデータ管理
+- Master Data Management -> マスタデータ管理
 - Entity resolution -> エンティティ解決
