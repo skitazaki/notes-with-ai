@@ -17,7 +17,7 @@
 用語の翻訳は以下の規則に従ってください。
 
 - Data Management -> データマネジメント
-- Master Data Management -> マスターデータ管理
+- Master Data Management -> マスタデータ管理
 - Build vs. Buy -> 自社構築か購入かの判断
 - Operational databases -> 運用データベース
 - Federated Model -> 連邦型モデル

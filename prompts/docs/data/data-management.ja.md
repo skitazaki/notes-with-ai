@@ -16,10 +16,10 @@ path: /docs/data/management
 用語の翻訳は以下の規則に従ってください。
 
 - Data Management -> データマネジメント
-- Master Data Management -> マスターデータ管理
+- Master Data Management -> マスタデータ管理
 - Entity resolution -> エンティティ解決
 - Value Layer –> 価値創出層
-- Enablement Layer – 基盤実装層
+- Enablement Layer – 活用基盤層
 - Source Layer – データ取得層
 - Control Layer –> 統制層
 
