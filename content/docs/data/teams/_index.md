@@ -6,343 +6,119 @@ prev: /docs/data
 next: /docs/data/teams/roles
 ---
 
-Modeling data teams in a large organization is fundamentally about **optimizing for alignment, scale, and speed** across business domains and technical platforms. There is no single “correct” model — only trade-offs.
+Data-team design is an organizational architecture decision. The central question is: **who owns data work, and how is that work coordinated across the organization?**
 
-## Team Modeling Patterns
+The answer determines where decisions are made, who is accountable for outcomes, and how business context connects to shared technical capabilities. It is not a maturity ladder. A distributed model is not inherently more advanced than a centralized one; each model is appropriate only when it fits the organization’s boundaries, obligations, skills, and ability to coordinate.
 
-Below are the most common patterns used in large enterprises, along with their strengths, weaknesses, and when they work best.
+This page describes four core patterns: Centralized, Embedded, Platform-enabled centralization, and Domain data products. They are conceptual arrangements rather than fixed organizational charts. Real organizations often combine elements of more than one pattern.
 
-### 1. Centralized Data Team
+## Two organizing axes
 
-(Hub Model)
+Two axes make the patterns easier to understand:
 
-**Structure**
+- **Domain ownership:** Is most data work owned by a central team, or by the business domains closest to the data’s meaning and use?
+- **Platform enablement:** Do teams build and operate capabilities independently, or do they use shared platform services and standards?
 
-A single, centralized data organization serves the entire company:
+Governance is the coordination mechanism that connects these choices. It may be exercised through direct management, centrally coordinated standards, or federated policies and decision-making. Cost, delivery speed, organizational scale, and communication overhead are downstream consequences of ownership, enablement, and governance; they do not define the model on their own.
 
-- Data engineering
-- Analytics engineering
-- BI
-- Data science
-- Governance
-- Platform
+## Four core patterns
 
-All business units submit requests to the central team.
+### Centralized
 
-**When It Works**
+**One central data team delivers most data capabilities for the organization.**
 
-- Early-stage data maturity
-- Strong need for governance and control
-- Highly regulated industries
-- Limited data talent
+A centralized team commonly owns data engineering, analytics, governance, and the underlying platform. Business units bring needs to that team, which prioritizes work and establishes common practices.
 
-**Pros**
+This pattern is useful when data expertise is scarce, regulatory requirements demand direct control, or the organization is small enough for a single team to remain close to its users. It can create clear accountability and consistent standards quickly.
 
-- Clear ownership and standards
-- Strong governance and compliance
-- Efficient infrastructure management
-- Easier hiring and skill development
-- Economies of scale
+The trade-off is concentrated demand. As domains and use cases multiply, queues can grow and the central team can lose context about local decisions. The model becomes ineffective when one team is expected to understand and deliver every domain need at the same pace as the business.
 
-**Cons**
+### Embedded
 
-- Bottlenecks and long queues
-- Weak domain understanding
-- “Ticket factory” dynamic
-- Business feels disconnected
-- Low agility
+**Business domains organize and deliver their own local data work with little formal cross-domain coordination.**
 
-**Failure Mode**
+Analysts, data engineers, and data scientists sit within product, commercial, operational, or geographic teams. They choose priorities close to the decisions they support and often maintain local data assets and practices.
 
-Becomes an overloaded service desk.
+Embedded teams fit relatively independent business units with strong domain expertise and enough technical capability to act autonomously. They can respond quickly and develop a detailed understanding of local processes, measures, and customers.
 
----
+The trade-off is fragmentation. Definitions, access practices, and infrastructure may diverge; duplicated work can increase; and combining data across domains becomes more difficult. Local autonomy creates enterprise value only when the organization can also manage the relationships among local choices.
 
-### 2. Fully Embedded
+### Platform-enabled centralization
 
-Decentralized / Spoke Model
+**A central data organization remains accountable for the overall data capability, using a strong shared platform to improve scale and consistency.**
 
-**Structure**
+This pattern is an enhanced form of centralization, not a transfer of primary ownership to domains. The central organization coordinates platform services, standards, governance, and much of the delivery. Domain teams contribute requirements, business expertise, and sometimes local delivery, but the central function remains responsible for making the overall data capability work.
 
-Each business unit owns its own:
+Shared ingestion, transformation frameworks, observability, metadata services, and common access patterns can reduce repeated effort and make central delivery more reliable. The platform improves how the central model operates: it does not by itself make domains owners of independently managed data products.
 
-- Data engineers
-- Analysts
-- Data scientists
+This arrangement suits organizations that need enterprise consistency and centralized accountability, but have sufficient platform capability to serve a growing range of needs. Its central risk remains the same as other centralized models: a platform team can become an internal gatekeeper if it controls every delivery decision rather than providing reusable capabilities and clear service boundaries.
 
-Little to no central coordination.
+### Domain data products
 
-**When It Works**
+**Business domains own interoperable data products for other domains and consumers, supported by self-service platform services and federated governance.**
 
-- Strong domain-driven culture
-- Mature engineering capabilities in domains
-- Fast-moving product organizations
+Domain data products are more than decentralized staffing. A domain is accountable for the lifecycle and consumer value of its products: making them discoverable, understandable, reliable, secure, and usable according to agreed expectations. This accountability is durable; it remains with the domain after the first dataset or pipeline is delivered.
 
-**Pros**
+The model depends on interaction among data products. Domains publish products through agreed interfaces and contracts. Other domains discover, consume, and compose those products to support their own decisions and products. Shared semantics, compatibility expectations, and mechanisms for resolving cross-domain questions allow this network of products to work without a central team directing each product’s delivery.
 
-- Deep domain expertise
-- High agility
-- Tight business alignment
-- Fast iteration
+A self-service platform supplies reusable capabilities such as access, storage, processing, discovery, quality signals, and operational support. Federated governance establishes the policies and interoperability rules that apply across domains. Neither function is a co-owner of every domain product: the domain remains accountable for the outcome its consumers receive.
 
-**Cons**
+This pattern is plausible where business domains are durable, have meaningful engineering capacity, and have reason to serve data beyond their immediate local use. Without those conditions, data-product language can become a label for the same disconnected assets and unclear responsibilities.
 
-- Duplicated infrastructure
-- Inconsistent standards
-- Fragmented tooling
-- Data silos
-- Hard to enforce governance
+## Comparison at a glance
 
-**Failure Mode**
+| Core pattern | Ownership | Platform | Governance | Autonomy |
+| --- | --- | --- | --- | --- |
+| Centralized | Central data team | Centrally owned and operated capabilities | Direct management and enterprise standards | Low for domains |
+| Embedded | Business domains | Local or independently selected capabilities | Minimal formal coordination | High within each domain |
+| Platform-enabled centralization | Central data organization, with domain participation | Shared platform services improve central delivery | Centrally coordinated standards and services | Moderate within central service boundaries |
+| Domain data products | Business domains own product outcomes | Self-service platform consumed by domains | Federated policies, interoperability rules, and shared decision-making | High, with durable consumer-facing responsibilities |
 
-Becomes fragmented and costly; analytics trust erodes.
+The table is not a ranking. It identifies the choices that drive practical consequences. For example, central ownership may reduce duplication but introduce queues; domain autonomy may improve local responsiveness but require stronger platform and governance capabilities to preserve interoperability.
 
----
+## The key distinction
 
-### 3. Federated Model
+Platform-enabled centralization and domain data products can both have strong shared platforms and common standards. Their difference is where primary accountability for data-product outcomes resides.
 
-(Hub-and-Spoke)
+In **platform-enabled centralization**, the central data organization remains accountable for the overall data capability and coordinates much of its delivery. Domains participate, but they do not become the durable owners of products intended for other domains. The platform makes centralized work more scalable and consistent.
 
-This is the most common enterprise pattern.
+In **domain data products**, the domain owns the product outcome for its consumers. The platform provides reusable self-service capabilities, while federated governance supplies the rules for interoperability, risk, and shared meaning. Those functions enable and coordinate the ecosystem; they do not centrally manage the lifecycle of each product.
 
-**Structure**
+Put simply: platform-enabled centralization improves a centrally accountable model. Domain data products distribute product accountability to the domains and require those products to interact as a governed network.
 
-- **Central Platform Team (Hub)**: owns infrastructure, governance, standards, shared tooling.
-- **Domain Data Teams (Spokes)**: embedded in business units, own transformation, analytics, domain models.
+## Variants and capability overlays
 
-**When It Works**
+Several common labels describe refinements or supporting capabilities rather than additional core patterns.
 
-- Medium to high data maturity
-- Multiple business domains
-- Need for both scale and alignment
+### Centers of Excellence
 
-**Pros**
+An analytics, governance, or AI Center of Excellence can define practices, develop specialist capability, or support cross-organizational initiatives. It may sit alongside any core pattern. It does not, by itself, determine who owns operational data work.
 
-- Balance of governance and agility
-- Clear separation of platform vs domain
-- Encourages data product thinking
-- Scales better than centralized
+### Hybrid arrangements
 
-**Cons**
+Organizations frequently centralize selected responsibilities while embedding others. For example, a central organization may operate shared ingestion and governance while domains maintain local analytics. Such arrangements should be understood by identifying their actual ownership and decision boundaries, rather than treating every hybrid as a new topology.
 
-- Requires strong architectural leadership
-- Can create tension between hub and spokes
-- Needs clear responsibility boundaries
-- More complex org design
+### Mesh-inspired practices
 
-**Failure Mode**
+Some organizations adopt data-product language, federated governance practices, or self-service platform components without adopting domain data products as their primary model. These practices can be valuable on their own. They do not create domain product accountability unless domains genuinely own and serve products to other consumers.
 
-Hub becomes controlling; spokes bypass it.
+### AI augmentation
 
----
+AI can support discovery, documentation, data-quality investigation, analysis, and platform operations in any pattern. It does not determine who accepts accountability for data, resolves semantic conflicts, or manages risk. AI is a capability layer, not a data-team topology or a replacement for governance.
 
-### 4. Domain Ownership
+## Typical evolution paths
 
-(Data Mesh-Inspired)
+Organizations change team structures as they grow, reorganize, acquire businesses, or face new product and regulatory needs. No single path is required.
 
-This is an evolution of hub-and-spoke, with stronger domain accountability.
+- **A startup** may begin with a centralized team because a small group can serve the whole company, then embed local capability as product areas become more distinct.
+- **A product company** may strengthen its shared platform while retaining central accountability, or move toward domain data products when its domains are durable and need to exchange reusable data with one another.
+- **A regulated enterprise** may keep strong central accountability for risk and platform operations while delegating selected stewardship and delivery responsibilities to domains.
+- **A rapidly grown organization** may centralize fragmented capabilities temporarily to establish common standards and reduce duplication before deciding which responsibilities should remain shared.
 
-**Structure**
+The relevant question is not which label comes next. It is whether the current arrangement aligns accountability, coordination capacity, and the organization’s real business boundaries.
 
-- Domains own their data as products.
-- Platform provides self-serve infrastructure.
-- Governance is federated.
+## Conclusion
 
-**When It Works**
+Data-team design succeeds when ownership, incentives, platform capabilities, and governance mechanisms reinforce one another. Tooling can support that alignment, but it cannot create it.
 
-- Large enterprises
-- Complex multi-domain organizations
-- Engineering-first culture
-- Executive sponsorship
-
-**Pros**
-
-- Scales organizationally
-- Clear ownership
-- Encourages reusable data products
-- Aligns with domain-driven design
-
-**Cons**
-
-- Hard cultural shift
-- Expensive to implement
-- Requires high engineering maturity
-- Governance becomes socio-technical
-
-**Failure Mode**
-
-Becomes “data mesh theater” — new labels, same silos.
-
----
-
-### 5. Platform-Centric Model
-
-Domain teams consume platform services but do not own heavy data engineering.
-
-**Structure**
-
-Strong central data platform team:
-
-- Provides ingestion
-- Modeling frameworks
-- Observability
-- AI/ML infrastructure
-- Self-service analytics environment
-
-**When It Works**
-
-- Technology-led companies
-- Strong internal platform capabilities
-- Desire for standardization
-
-**Pros**
-
-- Strong reuse
-- Infrastructure efficiency
-- Consistent data stack
-- Better cost management
-
-**Cons**
-
-- Risk of over-centralization
-- Platform backlog can block domains
-- Innovation constrained by platform roadmap
-
-**Failure Mode**
-
-Platform team becomes internal vendor monopoly.
-
----
-
-### 6. Analytics CoE
-
-Center of Excellence (CoE)
-
-**Structure**
-
-A small elite team:
-
-- Defines best practices
-- Supports advanced analytics
-- Leads strategic initiatives
-- Upskills the organization
-
-Often layered on top of another model.
-
-**When It Works**
-
-- Organization transitioning to data-driven
-- Executive-driven AI transformation
-- Need to raise capability baseline
-
-**Pros**
-
-- Accelerates maturity
-- Promotes standards
-- Enables innovation
-- Supports experimentation
-
-**Cons**
-
-- Can become ivory tower
-- Risk of detachment from real business problems
-- Hard to scale impact
-
-### 7. Hybrid AI-Augmented Model
-
-Increasingly, organizations are restructuring around:
-
-- Data Platform Team
-- Domain Data Product Teams
-- AI Enablement Team
-- Governance + Active Metadata Team
-
-The shift is driven by:
-
-- Generative AI
-- Semantic layers
-- Active metadata systems
-- Automated quality monitoring
-
-The model becomes less about “who writes SQL” and more about:
-
-- Who owns data products?
-- Who maintains contracts?
-- Who manages AI model lifecycle?
-- Who enforces data trust?
-
-## Choosing the Right Model
-
-Instead of asking “Which model is best?”, ask:
-
-1. **What is our primary constraint?**
-   - Governance
-   - Speed
-   - Talent
-   - Platform maturity
-2. **What is our organizational topology?**
-   - Functional
-   - Product-based
-   - Geographic
-   - Domain-driven
-3. **What is our data maturity level?**
-   - Reporting-focused
-   - Self-serve analytics
-   - ML-enabled
-   - AI-native
-
-### Organizational Design Dimensions
-
-Regardless of pattern, large organizations must define clearly:
-
-**Ownership**
-
-- Data producers vs consumers
-- Domain data product owners
-- Platform accountability
-
-**Funding Model**
-
-- Central budget
-- Chargeback
-- Domain P&L
-- Platform tax
-
-**Governance Model**
-
-- Command-and-control
-- Federated
-- Policy-as-code
-
-**Career Path**
-
-- Platform engineers
-- Analytics engineers
-- Data product managers
-- ML engineers
-
-### A Practical Evolution Path
-
-Most large organizations evolve in stages:
-
-1. Centralized team
-2. Federated hub-and-spoke
-3. Domain-oriented ownership
-4. Platform + self-serve
-5. AI-augmented data organization
-
-Trying to “jump” directly to a data mesh model without platform maturity usually fails.
-
-### Key Insight
-
-Data team design is not a technical problem.
-It is an **organizational architecture problem** involving:
-
-- Incentives
-- Funding
-- Accountability
-- Skill distribution
-- Governance philosophy
-
-The wrong model doesn’t fail because of tooling.
-It fails because ownership and incentives are misaligned.
+Choose the pattern that makes responsibility clear, gives teams support appropriate to their autonomy, and provides a credible way to coordinate across domains. The appropriate model depends on organizational scale, regulatory obligations, technical capability, and the willingness to sustain shared platform and governance functions over time.
