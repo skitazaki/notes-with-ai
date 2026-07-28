@@ -12,14 +12,18 @@ The answer determines where decisions are made, who is accountable for outcomes,
 
 This page describes four core patterns: Centralized, Embedded, Platform-enabled centralization, and Domain data products. They are conceptual arrangements rather than fixed organizational charts. Real organizations often combine elements of more than one pattern.
 
+![Two-axis overview of data-team patterns showing centralized, embedded, platform-enabled centralization, and domain data products, with AI as a cross-cutting capability layer](data-teams.webp)
+
 ## Two organizing axes
 
 Two axes make the patterns easier to understand:
 
-- **Domain ownership:** Is most data work owned by a central team, or by the business domains closest to the data’s meaning and use?
-- **Platform enablement:** Do teams build and operate capabilities independently, or do they use shared platform services and standards?
+- **Accountability model:** Is primary accountability for data outcomes held by a central data organization, or by the business domains closest to the data's meaning and use?
+- **Coordination model:** Do teams operate largely independently, or do they rely on shared platforms, governance, standards, and reusable capabilities to coordinate data work across the organization?
 
-Governance is the coordination mechanism that connects these choices. It may be exercised through direct management, centrally coordinated standards, or federated policies and decision-making. Cost, delivery speed, organizational scale, and communication overhead are downstream consequences of ownership, enablement, and governance; they do not define the model on their own.
+The horizontal axis runs from **central accountability** to **domain accountability**. The vertical axis runs from **independent coordination** to **shared coordination**. These are design choices, not better-or-worse states.
+
+Governance is one of the main mechanisms through which coordination is achieved. It may appear as direct management, centrally coordinated standards, or federated policies and shared decision-making. Platform capabilities often reinforce shared coordination, but they do not define accountability on their own. Cost, delivery speed, organizational scale, and communication overhead are downstream consequences of accountability and coordination choices; they do not define the model on their own.
 
 ## Four core patterns
 
@@ -67,12 +71,12 @@ This pattern is plausible where business domains are durable, have meaningful en
 
 ## Comparison at a glance
 
-| Core pattern | Ownership | Platform | Governance | Autonomy |
-| --- | --- | --- | --- | --- |
-| Centralized | Central data team | Centrally owned and operated capabilities | Direct management and enterprise standards | Low for domains |
-| Embedded | Business domains | Local or independently selected capabilities | Minimal formal coordination | High within each domain |
-| Platform-enabled centralization | Central data organization, with domain participation | Shared platform services improve central delivery | Centrally coordinated standards and services | Moderate within central service boundaries |
-| Domain data products | Business domains own product outcomes | Self-service platform consumed by domains | Federated policies, interoperability rules, and shared decision-making | High, with durable consumer-facing responsibilities |
+| Core pattern                    | Ownership                                            | Platform                                          | Governance                                                             | Autonomy                                            |
+| ------------------------------- | ---------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------- |
+| Centralized                     | Central data team                                    | Centrally owned and operated capabilities         | Direct management and enterprise standards                             | Low for domains                                     |
+| Embedded                        | Business domains                                     | Local or independently selected capabilities      | Minimal formal coordination                                            | High within each domain                             |
+| Platform-enabled centralization | Central data organization, with domain participation | Shared platform services improve central delivery | Centrally coordinated standards and services                           | Moderate within central service boundaries          |
+| Domain data products            | Business domains own product outcomes                | Self-service platform consumed by domains         | Federated policies, interoperability rules, and shared decision-making | High, with durable consumer-facing responsibilities |
 
 The table is not a ranking. It identifies the choices that drive practical consequences. For example, central ownership may reduce duplication but introduce queues; domain autonomy may improve local responsiveness but require stronger platform and governance capabilities to preserve interoperability.
 
