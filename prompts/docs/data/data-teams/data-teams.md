@@ -30,12 +30,12 @@ Scope:
 
 Organize the page around four core patterns. Treat them as alternative arrangements that can be combined or adapted; do not imply a universal progression from the first to the last.
 
-| Core pattern | Primary ownership | Coordination model | Defining idea |
-| --- | --- | --- | --- |
-| Centralized | Central data team | Direct management | One team delivers most data capabilities for the organization |
-| Embedded | Business domains | Minimal formal coordination | Domains organize and deliver their own local data work |
+| Core pattern                    | Primary ownership                                    | Coordination model                                  | Defining idea                                                                                  |
+| ------------------------------- | ---------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Centralized                     | Central data team                                    | Direct management                                   | One team delivers most data capabilities for the organization                                  |
+| Embedded                        | Business domains                                     | Minimal formal coordination                         | Domains organize and deliver their own local data work                                         |
 | Platform-enabled centralization | Central data organization, with domain participation | Central platform services and coordinated standards | A stronger shared platform improves the scale and consistency of a centrally coordinated model |
-| Domain data products | Business domains | Federated governance and data-product interaction | Domains own interoperable data products for other domains and consumers |
+| Domain data products            | Business domains                                     | Federated governance and data-product interaction   | Domains own interoperable data products for other domains and consumers                        |
 
 Use these names consistently. Do not call the third pattern “Federated,” “hub-and-spoke,” or “federated platform.” Do not call the fourth pattern merely “Domain Ownership” or use “data mesh” as its primary name. You may briefly identify familiar terms as related ideas only after the core distinction is established.
 
