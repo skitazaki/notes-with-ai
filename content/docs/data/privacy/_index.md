@@ -15,6 +15,8 @@ Privacy is therefore more than a compliance obligation. It is a condition for tr
 
 Privacy is closely connected to other data disciplines, but it is not interchangeable with them. Security helps protect data from unauthorized access, alteration, or loss. Privacy asks whether information about people should be processed for a particular purpose at all, and under what conditions. Strong security is necessary for privacy, but it cannot make an unjustified or unexpected use of personal data appropriate.
 
+![Conceptual diagram showing data privacy as a cross-cutting concern connected to information security, data governance, compliance, data quality, AI governance, and the data lifecycle](data-privacy.webp)
+
 Data governance creates the policies, ownership, and decision processes that make privacy operational across a data estate. Data quality ensures that information is accurate and fit for purpose; it also matters to privacy because incorrect data can lead to harmful decisions about people. Compliance translates applicable legal, contractual, and industry obligations into requirements, while privacy provides the broader design discipline that should inform systems before a specific requirement is tested.
 
 | Discipline           | Primary concern                                                 | Relationship to privacy                                                                       |
