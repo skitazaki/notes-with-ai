@@ -34,6 +34,8 @@ The same distinction is important when privacy is discussed alongside confidenti
 
 Privacy principles are useful as decision lenses. They are not a substitute for context, risk assessment, or applicable obligations, but they help teams ask the right questions before data becomes difficult to change or withdraw.
 
+![Conceptual diagram showing seven principles of data privacy](data-privacy-core-principles.webp)
+
 ### Purpose Limitation
 
 Collect and use data for clear, specific, and legitimate purposes. A team that collects an email address to send a service notification should not assume that the same address is available for unrelated profiling or outreach. Purpose gives data use a boundary that can be communicated, governed, and reviewed.
