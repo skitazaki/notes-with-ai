@@ -1,3 +1,8 @@
+---
+type: prompt
+path: /docs/data/privacy
+---
+
 # Prompt — Generate a Documentation Article for "Data Privacy"
 
 You are an expert in data management, data governance, privacy engineering, information security, and technical documentation.
@@ -16,7 +21,7 @@ Assume readers understand data platforms but are not privacy specialists.
 
 - Clear and authoritative
 - Practical and implementation-oriented
-- Neutral and vendor independent
+- Neutral and vendor-neutral
 - Use diagrams where appropriate (described in Mermaid)
 - Explain _why_ before _how_
 - Include examples throughout
