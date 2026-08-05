@@ -7,38 +7,36 @@ weight: 20
 Artificial Intelligence is the broad discipline of building systems that perform tasks requiring perception, prediction, generation, decision-making, or adaptation.
 In practice, AI is not one thing. It is a collection of related fields that span statistical learning, neural architectures, software systems, data pipelines, infrastructure, governance, and domain applications.
 
-That breadth is why this section should be treated as a library rather than a single long article.
+That breadth is why this section should be treated as a documentation hub rather than a single long article.
 The main task is not memorizing every model family or tool category.
 It is understanding how the major parts of the ecosystem fit together so that deeper topics can be placed in the right context.
-
-## AI as a Documentation Section
 
 AI is a cross-cutting domain.
 The same production system may involve training data, retrieval pipelines, model serving, application orchestration, evaluation loops, access control, privacy safeguards, and human approval workflows.
 As a result, AI topics overlap with [Software Architecture](../arch/), [Software Engineering](../swe/), [Data](../data/), and [Access Control](../acc/), but they are not reducible to any one of those areas.
 
-This section organizes the AI landscape into stable conceptual domains.
-Those domains are useful because they remain meaningful even as specific models, vendors, frameworks, and product categories change.
+## Core Navigation Perspectives
 
-## Core Organizing Lenses
+This section organizes AI topics by the main question a reader is trying to answer.
 
-This library separates AI topics by the main question a reader is trying to answer.
+![Conceptual diagram showing six core navigation perspectives for navigating the AI section: Foundations, Learning and Models, Data and Context, Engineering and Operations, Governance and Risk, and Applications and Platforms](ai-lenses.webp)
 
-| Lens                       | Primary question                                               | Typical topics                                                      |
+| Perspective                | Primary question                                               | Typical topics                                                      |
 | -------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------- |
 | Foundations                | What kind of field is AI, and how did it develop?              | AI vs. ML, symbolic methods, statistical learning, neural networks  |
 | Learning and models        | How do systems learn and represent capabilities?               | Supervised learning, deep learning, transformers, foundation models |
-| Data and context           | What information powers or constrains the system?              | Training data, labeling, embeddings, metadata, retrieval            |
-| Engineering and operations | How is the system built, evaluated, deployed, and improved?    | APIs, evaluation, testing, CI/CD, monitoring, model serving         |
+| Data and context           | What information powers or constrains the system?              | Training data, labeling, embeddings, metadata, retrieval, memory    |
+| Engineering and operations | How is the system built, evaluated, deployed, and improved?    | APIs, evaluation, testing, MLOps, observability, model serving      |
 | Governance and risk        | How is the system constrained, reviewed, and made trustworthy? | Security, privacy, fairness, compliance, AI safety                  |
-| Applications and platforms | How is value delivered inside real organizations?              | Copilots, search, enterprise AI, automation, robotics               |
+| Applications and platforms | How is value delivered inside real organizations?              | Chat, search, agents, enterprise AI, automation, robotics           |
 
-These lenses overlap by design.
+These perspectives overlap in practice.
 For example, a retrieval-augmented AI assistant depends on foundation models, data pipelines, application orchestration, evaluation controls, and governance decisions at the same time.
 
-## The Main Domains in This Library
+## The Main Domains in This Section
 
-The AI section is organized around several major domains that will each expand into their own child pages.
+This section organizes the AI landscape into stable conceptual domains that will each expand into their own topic pages.
+Those domains are useful because they remain meaningful even as specific models, vendors, frameworks, and product categories change.
 
 **Foundations** explains the conceptual roots of AI, including the distinction between AI, machine learning, and deep learning, along with the historical and theoretical ideas that still shape modern systems.
 
@@ -77,9 +75,9 @@ The categories above are useful only if their relationships stay visible.
 
 The important pattern is that AI systems are assembled from several interacting layers rather than delivered by one isolated model.
 
-## Recommended Reading Flow
+## Topic Pages
 
-This section is organized as a documentation library rather than one long article. Start here for the shared map, then go deeper according to the question you need to answer.
+This section is organized as a documentation hub rather than one long article. Use the topic pages below to move directly to the areas that match your question.
 
 {{< cards >}}
 {{< card link="foundations/" title="Foundations (TBD)" icon="book-open" subtitle="Core concepts, history, and the major schools of thought in AI" >}}
