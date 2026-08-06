@@ -53,7 +53,7 @@ Composition:
 - Include a tag group inside each lens to hint at representative topics without adding paragraphs:
   - Foundations: AI vs. ML, symbolic methods, neural networks
   - Learning and Models: supervised learning, deep learning, transformers
-  - Data and Context: datasets/medatadata, embeddings/retrieval, memory
+  - Data and Context: datasets/metadata, embeddings/retrieval, memory
   - Engineering and Operations: APIs, evaluation, MLOps, observability, harness
   - Governance and Risk: security, privacy, compliance, AI safety
   - Applications and Platforms: search/automation, chat/agents, enterprise AI

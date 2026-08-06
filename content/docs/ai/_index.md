@@ -24,11 +24,11 @@ This section organizes AI topics by the main question a reader is trying to answ
 | Perspective                | Primary question                                               | Typical topics                                                      |
 | -------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------- |
 | Foundations                | What kind of field is AI, and how did it develop?              | AI vs. ML, symbolic methods, statistical learning, neural networks  |
-| Learning and models        | How do systems learn and represent capabilities?               | Supervised learning, deep learning, transformers, foundation models |
-| Data and context           | What information powers or constrains the system?              | Training data, labeling, embeddings, metadata, retrieval, memory    |
-| Engineering and operations | How is the system built, evaluated, deployed, and improved?    | APIs, evaluation, testing, MLOps, observability, model serving      |
-| Governance and risk        | How is the system constrained, reviewed, and made trustworthy? | Security, privacy, fairness, compliance, AI safety                  |
-| Applications and platforms | How is value delivered inside real organizations?              | Chat, search, agents, enterprise AI, automation, robotics           |
+| Learning and Models        | How do systems learn and represent capabilities?               | Supervised learning, deep learning, transformers, foundation models |
+| Data and Context           | What information powers or constrains the system?              | Training data, labeling, embeddings, metadata, retrieval, memory    |
+| Engineering and Operations | How is the system built, evaluated, deployed, and improved?    | APIs, evaluation, testing, MLOps, observability, model serving      |
+| Governance and Risk        | How is the system constrained, reviewed, and made trustworthy? | Security, privacy, fairness, compliance, AI safety                  |
+| Applications and Platforms | How is value delivered inside real organizations?              | Chat, search, agents, enterprise AI, automation, robotics           |
 
 These perspectives overlap in practice.
 For example, a retrieval-augmented AI assistant depends on foundation models, data pipelines, application orchestration, evaluation controls, and governance decisions at the same time.
