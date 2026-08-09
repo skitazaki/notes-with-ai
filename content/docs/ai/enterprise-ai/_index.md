@@ -10,6 +10,8 @@ Enterprise AI is what happens when isolated AI capability has to operate inside 
 
 This makes enterprise AI a distinct topic from model innovation alone. The challenge is not only what the model can do. It is how the organization can adopt that capability repeatedly, safely, and economically across many teams and domains.
 
+![Enterprise-AI operating model showing shared platforms, governance, integration patterns, and organizational adoption across teams and domains.](enterprise-ai.webp)
+
 ## Definition
 
 Enterprise AI is the discipline of adopting and operating AI capabilities at organization scale through shared platforms, governance, integration patterns, and operating models. It focuses on how AI becomes a manageable institutional capability rather than a collection of isolated experiments.

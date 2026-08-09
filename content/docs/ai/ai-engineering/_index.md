@@ -10,6 +10,8 @@ AI engineering is where model capability becomes product behavior. A strong mode
 
 This is why AI engineering should be treated as a software discipline rather than as a thin wrapper around model APIs. The model is only one component in a broader system that must behave predictably enough for users, operators, and stakeholders.
 
+![AI-engineering system view showing model capability surrounded by application logic, evaluation, guardrails, observability, and operational controls.](ai-engineering.webp)
+
 ## Definition
 
 AI engineering is the discipline of designing, building, and operating software systems that incorporate model-based capability. It focuses on turning probabilistic behavior into bounded application outcomes through composition, control, testing, and lifecycle management.

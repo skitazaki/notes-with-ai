@@ -10,6 +10,8 @@ Foundation models changed the shape of AI system design by separating broad reus
 
 That shift affects more than model selection. It changes how teams think about platforms, interfaces, evaluation, security, cost, and governance. Once a model becomes a reusable capability layer, the surrounding system takes on a larger share of the responsibility for control and fit.
 
+![Foundation-model ecosystem showing a reusable pretrained model adapted for multiple downstream applications through prompting, retrieval, tuning, and workflow composition.](foundation-models.webp)
+
 ## Definition
 
 Foundation models are broad, reusable model bases trained to support many downstream tasks rather than one narrowly defined function. Their value comes from transfer. A single model family can be adapted or guided for different uses without rebuilding everything from scratch.

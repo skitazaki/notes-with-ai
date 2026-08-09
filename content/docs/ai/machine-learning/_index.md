@@ -10,6 +10,8 @@ Machine learning became central to AI because many useful tasks are too variable
 
 That change did not remove the need for engineering judgment. It shifted the problem. Teams now need to reason about data quality, objective design, evaluation, generalization, and operational drift. Machine learning is therefore not only a modeling technique. It is a different way of building and maintaining behavior.
 
+![Machine-learning lifecycle showing examples and objectives informing training, evaluation, deployment, feedback, and ongoing adaptation.](machine-learning.webp)
+
 ## Definition
 
 Machine learning is the discipline of building systems that improve task performance by learning patterns from data. Instead of specifying every decision rule explicitly, engineers define objectives, prepare examples, choose representations, and evaluate how well the resulting model generalizes beyond the training set.

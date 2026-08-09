@@ -10,6 +10,8 @@ Responsible AI is the discipline of keeping AI systems trustworthy under real-wo
 
 The practical mistake is to treat these concerns as a final approval step after the system is already designed. In reality, responsible AI is a cross-cutting design and operating discipline that begins with data selection and continues through deployment, monitoring, and incident response.
 
+![Responsible-AI framework showing safety, fairness, privacy, security, transparency, accountability, governance, and lifecycle controls around an AI system.](responsible-ai.webp)
+
 ## Definition
 
 Responsible AI is the discipline of designing, deploying, and governing AI systems so they remain lawful, safe, fair, secure, reviewable, and accountable across their lifecycle. It combines organizational policy with technical controls.

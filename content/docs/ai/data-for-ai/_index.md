@@ -10,6 +10,8 @@ Data is the information supply chain behind every AI system. It trains models, g
 
 This broader view matters because many AI failures are data failures before they become model failures. Weak provenance, poor coverage, stale retrieval sources, inconsistent labeling, or unclear rights can all distort system behavior long before anyone starts tuning the model.
 
+![Data-for-AI supply chain showing data assets supporting training, retrieval, evaluation, governance, and feedback across the AI lifecycle.](data-for-ai.webp)
+
 ## Definition
 
 Data for AI is the full set of information assets and information flows that support learning, adaptation, retrieval, evaluation, and governance across the AI lifecycle. It includes datasets, labels, metadata, embeddings, retrieved documents, synthetic data, human feedback, and operational measurements.

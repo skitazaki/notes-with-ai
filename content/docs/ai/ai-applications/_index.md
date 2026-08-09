@@ -9,6 +9,8 @@ AI applications are the point where abstract capability becomes concrete value. 
 
 The core design question is simple: what useful task is being supported, for whom, under what constraints? Once that question is clear, the rest of the AI stack can be evaluated in terms of whether it helps the application behave well enough for that purpose.
 
+![AI application landscape showing model capability combined with user interfaces, workflows, data, controls, and domain-specific outcomes.](ai-applications.webp)
+
 ## Definition
 
 AI applications are systems that apply AI capability to a specific user problem, operational need, or domain workflow. They combine model behavior with interfaces, data, control logic, and governance to produce useful outcomes.

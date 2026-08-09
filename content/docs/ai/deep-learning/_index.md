@@ -10,6 +10,8 @@ Deep learning changed AI by making representation learning practical at large sc
 
 That shift matters because many high-value AI tasks involve signals that are hard to describe explicitly. Images, audio, code, and natural language contain structure that is rich, hierarchical, and context-dependent. Deep learning gave the field a way to absorb that structure more effectively.
 
+![Deep-learning concept diagram showing layered neural representations transforming raw inputs into increasingly useful patterns and outputs.](deep-learning.webp)
+
 ## Definition
 
 Deep learning is the family of machine-learning approaches built on multilayer neural networks. These models learn a sequence of internal transformations that map input data to increasingly useful representations for prediction, classification, generation, control, or retrieval.

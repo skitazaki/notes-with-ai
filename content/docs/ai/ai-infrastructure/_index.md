@@ -10,6 +10,8 @@ AI infrastructure is the technical substrate that makes model training, inferenc
 
 This layer matters because AI capability is expensive, stateful, and operationally sensitive. A strong model is not useful if it cannot be served within cost, latency, reliability, or governance constraints.
 
+![AI infrastructure layers showing compute, storage, networking, serving, retrieval, orchestration, and observability supporting training and inference.](ai-infrastructure.webp)
+
 ## Definition
 
 AI infrastructure is the runtime and platform layer that supports the development, deployment, and operation of AI workloads. It provides the compute, storage, networking, serving, and coordination systems needed for training and inference at practical scale.

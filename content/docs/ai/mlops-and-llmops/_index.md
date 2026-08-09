@@ -10,6 +10,8 @@ Model deployment is not the end of AI delivery. It is the beginning of operation
 
 That is the shared logic behind MLOps and LLMOps. Both disciplines exist because AI systems are probabilistic, data-dependent, and sensitive to change in ways that traditional software delivery alone does not fully capture.
 
+![MLOps and LLMOps comparison showing their shared operational lifecycle and the additional prompt, retrieval, safety, runtime, and feedback concerns in LLM-based applications.](mlops-and-llmops.webp)
+
 ## Definition
 
 MLOps is the operational discipline for deploying, monitoring, versioning, and continuously improving machine-learning systems. LLMOps extends similar principles to systems built on large reusable models, where prompts, retrieved context, tool access, and safety constraints play a larger role in behavior.

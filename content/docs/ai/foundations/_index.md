@@ -10,6 +10,8 @@ Artificial Intelligence is easiest to misunderstand when it is treated as one re
 
 That broader view matters because modern AI systems are rarely explained well by one tradition alone. A retrieval-based assistant may depend on neural language models, probabilistic ranking, symbolic policy rules, and explicit workflow control at the same time. Foundations provide the conceptual map that keeps those layers distinct.
 
+![Conceptual map of artificial intelligence, showing the relationships among rules and reasoning, search and planning, probability, and learning from data.](ai-foundations.webp)
+
 ## Definition
 
 Artificial Intelligence is the discipline of building systems that can perform tasks associated with perception, reasoning, learning, generation, decision-making, or action. The field is broader than any single algorithm family or model architecture. It includes approaches based on explicit rules, search procedures, statistical inference, and learned representations.

@@ -10,6 +10,8 @@ Generative AI became widely useful when model output was combined with context, 
 
 That is why generative AI is best understood as an application pattern. Models provide the generative capability, but the product depends on prompts, retrieved context, tool access, approval boundaries, structured outputs, and evaluation loops.
 
+![Generative-AI application composition showing a model guided by prompts, retrieved context, tools, controls, and evaluation feedback.](generative-ai.webp)
+
 ## Definition
 
 Generative AI refers to systems that produce text, code, images, audio, or structured outputs through learned model behavior and runtime context. In practice, the term usually includes not just the model, but the application pattern built around it.
