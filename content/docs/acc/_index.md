@@ -26,6 +26,11 @@ Every document follows a similar shape:
 - **Core Concepts** for the conceptual model
 - **Implementation and Operations** for architecture tradeoffs and operating guidance
 
+## Topic Pages
+
+This section also provides topic pages that you can open directly when you already know the area you want to explore.
+Use the links below to move straight to the domain, control model, or reference material that matches your question.
+
 {{< cards >}}
 {{< card link="vision/" title="Vision & Principles" icon="sparkles" subtitle="North-star principles for identity-centric security" >}}
 {{< card link="landscape/" title="Landscape Overview" icon="map" subtitle="Taxonomy of the access-control ecosystem" >}}

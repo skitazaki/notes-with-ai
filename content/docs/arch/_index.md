@@ -155,10 +155,10 @@ If the concern is runtime policy enforcement, a plane or flow view may be better
 If the concern is accountability, an ownership boundary view may be the right artifact.
 If the concern is executive alignment, the best view may hide most implementation detail.
 
-## Recommended Reading Flow
+## Topic Pages
 
 This section is organized as an architecture documentation library rather than one long article.
-Start with the overview, then use the detailed pages according to the question you need to answer.
+Use the topic pages below to move directly to the areas that match the question you need to answer.
 
 {{< cards >}}
 {{< card link="dimensions/" title="Architecture Dimensions" icon="cube" subtitle="The core reasoning lenses for understanding one system from multiple perspectives" >}}

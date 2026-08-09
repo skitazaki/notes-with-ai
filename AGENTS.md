@@ -37,6 +37,44 @@ Content is organized into source pages and prompt briefs.
 
 English is the default content language. Japanese is handled as a localized follow-up where appropriate.
 
+## Documentation Site Structure
+
+Documentation should follow a hub-and-topic model.
+
+- A section landing page usually lives at `content/docs/<section>/_index.md`.
+- A landing page acts as a hub for a field or domain and links to child topic pages.
+- A topic page usually lives under its own directory such as `content/docs/<section>/<topic>/_index.md`.
+- Topic pages start as relatively long-form articles.
+- When a topic accumulates enough related subtopics, it may later evolve into its own hub page.
+
+When creating or revising documentation, distinguish clearly between these two page types.
+
+### Landing page expectations
+
+A documentation landing page should usually include:
+
+- a short introduction in a few plain paragraphs
+- a tailored introductory section explaining relationships with adjacent or related fields
+- the perspectives or mental models readers should carry through the topic area
+- core principles or core concepts
+- practical navigation from principles to operating models, practices, or domains
+- links to child topic pages
+- a concise summary
+
+### Topic page expectations
+
+A topic page should usually:
+
+- begin as a substantial long-form article
+- establish definitions, context, and scope before diving into detail
+- remain self-contained enough to be useful when linked directly
+- be written so it can later be split into subtopics or expanded into a hub page if the coverage grows
+
+When the user asks for a new documentation area, decide first whether the request should create:
+
+- a landing hub page for a broader field, or
+- a topic page under an existing hub
+
 ## Workflow For AI Services
 
 ### 1. Work as content director first
