@@ -84,9 +84,10 @@ No single technology or policy provides privacy. Effective privacy emerges from 
 
 These capabilities reinforce one another. Classification informs access controls. Purpose information informs reuse and retention decisions. Governance connects technical safeguards with accountable ownership. Together, they make responsible data use easier to sustain as systems, teams, and uses evolve.
 
-## Recommended Reading Flow
+## Topic Pages
 
-This section is organized as a documentation library rather than one long article. Start here for the shared concepts, then choose a deeper topic based on the question you need to answer.
+This section is organized as a documentation library rather than one long article.
+Use the topic pages below to move directly to the area that matches the question you need to answer.
 
 {{< cards >}}
 {{< card link="privacy-fundamentals/" title="Privacy Fundamentals (TBD)" icon="book-open" subtitle="Core principles, terminology, and decision lenses" >}}
