@@ -207,11 +207,19 @@ When the topic is broad, narrow the task with a bounded scope rather than leavin
 
 Place prompts in the directory that mirrors the eventual content location as closely as practical.
 
+Image-generation prompts follow a dedicated subfolder convention:
+
+- place English image-generation briefs in an `imagen/` subfolder under the corresponding prompt directory
+- place Japanese image-generation briefs in an `imagen.ja/` subfolder under the corresponding prompt directory
+- keep documentation or blog writing prompts outside those image-specific folders
+
 Examples:
 
 - documentation prompt for `content/docs/data/management/_index.md` -> `prompts/docs/data/data-management.md`
 - documentation prompt for `content/docs/swe/idp/_index.md` -> `prompts/docs/swe/internal-developer-portal.md`
 - blog prompt for `content/blog/2026-data-stack/index.md` -> `prompts/blog/2026-data-stack.md`
+- image prompt for `content/docs/ai/foundations/_index.md` -> `prompts/docs/ai/imagen/01-foundations-image.md`
+- Japanese image prompt for `content/docs/ai/foundations/_index.ja.md` -> `prompts/docs/ai/imagen.ja/01-foundations-image.ja.md`
 
 Use translation prompt names that clearly point to the source topic, for example:
 

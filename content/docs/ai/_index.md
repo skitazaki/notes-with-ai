@@ -80,18 +80,18 @@ The important pattern is that AI systems are assembled from several interacting 
 This section is organized as a documentation hub rather than one long article. Use the topic pages below to move directly to the areas that match your question.
 
 {{< cards >}}
-{{< card link="foundations/" title="Foundations (TBD)" icon="book-open" subtitle="Core concepts, history, and the major schools of thought in AI" >}}
-{{< card link="machine-learning/" title="Machine Learning (TBD)" icon="document-text" subtitle="Learning paradigms, training logic, evaluation, and optimization" >}}
-{{< card link="deep-learning/" title="Deep Learning (TBD)" icon="sparkles" subtitle="Neural architectures, representation learning, and scaling patterns" >}}
-{{< card link="foundation-models/" title="Foundation Models (TBD)" icon="document-text" subtitle="Large reusable model families, embeddings, and tokenization" >}}
-{{< card link="generative-ai/" title="Generative AI (TBD)" icon="sparkles" subtitle="Prompting, retrieval, fine-tuning, tools, agents, and interaction patterns" >}}
-{{< card link="ai-engineering/" title="AI Engineering (TBD)" icon="users" subtitle="Building dependable applications on top of models and AI services" >}}
-{{< card link="ai-infrastructure/" title="AI Infrastructure (TBD)" icon="database" subtitle="Compute, serving, vector systems, gateways, and orchestration" >}}
-{{< card link="data-for-ai/" title="Data for AI (TBD)" icon="database" subtitle="Training data, metadata, labeling, governance, and retrieval context" >}}
-{{< card link="mlops-and-llmops/" title="MLOps and LLMOps (TBD)" icon="document-text" subtitle="Delivery, monitoring, drift detection, and continuous improvement" >}}
-{{< card link="responsible-ai/" title="Responsible AI (TBD)" icon="shield-check" subtitle="Fairness, safety, privacy, compliance, and explainability" >}}
-{{< card link="enterprise-ai/" title="Enterprise AI (TBD)" icon="scale" subtitle="Platforms, integration, operating models, security, and cost control" >}}
-{{< card link="ai-applications/" title="AI Applications (TBD)" icon="users" subtitle="How AI capabilities are applied across software, operations, and industry domains" >}}
+{{< card link="foundations/" title="Foundations" icon="book-open" subtitle="Core concepts, history, and the major schools of thought in AI" >}}
+{{< card link="machine-learning/" title="Machine Learning" icon="document-text" subtitle="Learning paradigms, training logic, evaluation, and optimization" >}}
+{{< card link="deep-learning/" title="Deep Learning" icon="sparkles" subtitle="Neural architectures, representation learning, and scaling patterns" >}}
+{{< card link="foundation-models/" title="Foundation Models" icon="document-text" subtitle="Large reusable model families, embeddings, and tokenization" >}}
+{{< card link="generative-ai/" title="Generative AI" icon="sparkles" subtitle="Prompting, retrieval, fine-tuning, tools, agents, and interaction patterns" >}}
+{{< card link="ai-engineering/" title="AI Engineering" icon="users" subtitle="Building dependable applications on top of models and AI services" >}}
+{{< card link="ai-infrastructure/" title="AI Infrastructure" icon="database" subtitle="Compute, serving, vector systems, gateways, and orchestration" >}}
+{{< card link="data-for-ai/" title="Data for AI" icon="database" subtitle="Training data, metadata, labeling, governance, and retrieval context" >}}
+{{< card link="mlops-and-llmops/" title="MLOps and LLMOps" icon="document-text" subtitle="Delivery, monitoring, drift detection, and continuous improvement" >}}
+{{< card link="responsible-ai/" title="Responsible AI" icon="shield-check" subtitle="Fairness, safety, privacy, compliance, and explainability" >}}
+{{< card link="enterprise-ai/" title="Enterprise AI" icon="scale" subtitle="Platforms, integration, operating models, security, and cost control" >}}
+{{< card link="ai-applications/" title="AI Applications" icon="users" subtitle="How AI capabilities are applied across software, operations, and industry domains" >}}
 {{< /cards >}}
 
 ## Suggested Starting Points
