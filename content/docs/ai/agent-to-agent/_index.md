@@ -30,15 +30,15 @@ That opacity is both useful and limiting. It preserves implementation freedom, b
 
 A2A organizes collaboration around a small set of externally visible concepts.
 
-| Concept | Responsibility |
-| --- | --- |
-| A2A client | Initiates an interaction on behalf of a user, application, or another agent |
-| A2A server or remote agent | Advertises capabilities and performs delegated work |
-| Agent Card | Describes identity, endpoints, skills, supported features, and authentication requirements |
-| Message | Carries conversational input, clarification, or status information |
-| Task | Represents stateful work created and managed by the server in response to a message |
-| Part | Represents text, a file reference, or structured data within a message or artifact |
-| Artifact | Carries a result produced by a task, such as a document or structured record |
+| Concept                    | Responsibility                                                                             |
+| -------------------------- | ------------------------------------------------------------------------------------------ |
+| A2A client                 | Initiates an interaction on behalf of a user, application, or another agent                |
+| A2A server or remote agent | Advertises capabilities and performs delegated work                                        |
+| Agent Card                 | Describes identity, endpoints, skills, supported features, and authentication requirements |
+| Message                    | Carries conversational input, clarification, or status information                         |
+| Task                       | Represents stateful work created and managed by the server in response to a message        |
+| Part                       | Represents text, a file reference, or structured data within a message or artifact         |
+| Artifact                   | Carries a result produced by a task, such as a document or structured record               |
 
 A client first identifies an appropriate remote agent and reads its declared interface. It then sends a new message to request work. That message initiates the interaction.
 
@@ -122,12 +122,12 @@ Reliable clients should use stable task identifiers, make retry behavior explici
 
 Agent interoperability overlaps with several integration patterns, but the boundaries are different.
 
-| Approach | Primary boundary | Best fit |
-| --- | --- | --- |
-| A2A | Client agent to independent remote agent | Delegating stateful work while preserving the remote agent's autonomy |
-| MCP | AI application or client to tools, resources, and prompts | Exposing contextual data and bounded capabilities through a consistent interface |
-| Direct API | Application to explicitly modeled service operation | Stable, well-defined transactions without an agent-level task abstraction |
-| Internal orchestration | Components controlled inside one application or runtime | Coordinating known workers, models, or tools under one ownership boundary |
+| Approach               | Primary boundary                                          | Best fit                                                                         |
+| ---------------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| A2A                    | Client agent to independent remote agent                  | Delegating stateful work while preserving the remote agent's autonomy            |
+| MCP                    | AI application or client to tools, resources, and prompts | Exposing contextual data and bounded capabilities through a consistent interface |
+| Direct API             | Application to explicitly modeled service operation       | Stable, well-defined transactions without an agent-level task abstraction        |
+| Internal orchestration | Components controlled inside one application or runtime   | Coordinating known workers, models, or tools under one ownership boundary        |
 
 These approaches can be composed. A remote agent reached through A2A may use MCP servers or ordinary APIs to perform its work. An orchestrator may treat an A2A agent as one participant in a larger workflow. The protocols do not need to replace one another because they standardize different relationships.
 
