@@ -15,7 +15,11 @@ An AI system produces better bounded behavior when it deliberately selects, prio
 Composition:
 
 - Use a 16:9 landscape composition on a light background.
-- Show several distinct information sources—instructions, retrieved documents, conversation state, memory, tool results, and policy constraints—as clean modular cards or streams.
+- Place the title **Context Engineering** at the top center.
+- Show six distinct, clearly labeled source cards on the left: **Instructions**, **Retrieved Evidence**, **Conversation State**, **Memory**, **Tool Results**, and **Policy Constraints**.
+- Place a central, clearly labeled assembly layer named **Select and Assemble Context** between the source cards and the model interaction space.
+- Label the central destination **Model Interaction** and label its enclosing boundary **Access • Provenance • Freshness • Token Budget**.
+- Label the focused output **Response or Action** and the returning feedback path **Evaluate and Refresh**.
 - Show a visible selection and assembly layer that filters, ranks, and compresses these inputs before they enter a central model interaction space.
 - Surround the assembled context with a subtle boundary suggesting access control, provenance, freshness, and token budget.
 - Show a focused output emerging from the model interaction, with a small feedback path returning to evaluation and refresh.
@@ -29,6 +33,7 @@ Style:
 
 Constraints:
 
-- Do not include readable text, logos, watermarks, or vendor-specific visual cues.
+- Render every title and label above exactly as written, in clear, legible sans-serif type. Do not add any other text.
+- Do not include logos, watermarks, or vendor-specific visual cues.
 - Do not represent context as only a single prompt or a vector database.
 - Keep the composition spacious and intelligible rather than a dense process diagram.
