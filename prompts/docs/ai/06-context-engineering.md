@@ -31,6 +31,14 @@ Scope:
 - Explain common failure modes including missing, stale, conflicting, excessive, poisoned, and cross-tenant context
 - Relate the topic to prompting, RAG, agents, Data for AI, AI Engineering, and Responsible AI
 
+Child-topic boundaries:
+
+- Keep the parent page as the conceptual hub.
+- Treat **Memory in AI Systems** as the controlled retention and reuse of context across interactions.
+- Treat **Retrieval-Augmented Generation** as the runtime retrieval and assembly of external evidence.
+- Treat **Tools and Model Context Protocol** as the controlled integration of external context and actions through tool interfaces and MCP.
+- Avoid duplicating the detailed coverage assigned to those child pages.
+
 Tone and style:
 
 - Neutral, precise, concept-first, and vendor-agnostic

@@ -73,6 +73,16 @@ Prompt engineering focuses on how instructions and examples frame a model intera
 
 [Data for AI](../data-for-ai/) manages the information assets that may become context, including their quality, provenance, governance, and freshness. Context engineering decides how those assets are used in a particular runtime interaction. [AI Engineering](../ai-engineering/) designs the dependable application around that interaction, including interfaces, orchestration, evaluation, and controls. [Responsible AI](../responsible-ai/) supplies cross-cutting requirements for privacy, safety, fairness, and accountability.
 
+## Subtopics
+
+Use these pages to examine the context sources and integration boundaries in more detail.
+
+{{< cards >}}
+{{< card link="memory/" title="Memory in AI Systems" icon="database" subtitle="Retained context, lifecycle controls, and safe continuity across interactions" >}}
+{{< card link="rag/" title="Retrieval-Augmented Generation" icon="document-text" subtitle="Grounding model interactions in selected external evidence" >}}
+{{< card link="tools-and-mcp/" title="Tools and Model Context Protocol" icon="users" subtitle="Controlled integration of external context and actions" >}}
+{{< /cards >}}
+
 ## Summary
 
 Context engineering turns runtime information from an incidental prompt attachment into a designed system layer. By selecting relevant evidence, preserving boundaries and provenance, managing finite attention, and evaluating outcomes, teams can make model behavior more useful, more reliable, and easier to govern.
