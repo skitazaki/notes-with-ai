@@ -26,6 +26,8 @@ Enterprise AI matters because the risks of duplication, inconsistency, and unman
 
 ## Core Enterprise Concerns
 
+The following concerns show how organizational scale changes the architecture and operating model for AI.
+
 | Concern                       | Architectural consequence                                                                                        |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Platform strategy             | Determines whether capabilities are shared through central services, federated platforms, or ad hoc team choices |

@@ -25,6 +25,8 @@ The application layer therefore determines whether AI is helpful, governable, an
 
 ## Major Application Categories
 
+The following categories distinguish application patterns by the work they support and the design constraints they introduce.
+
 | Application category              | Typical role                                                  | Primary design concern                       |
 | --------------------------------- | ------------------------------------------------------------- | -------------------------------------------- |
 | Search and retrieval              | Help users find relevant information quickly                  | Grounding quality and ranking relevance      |

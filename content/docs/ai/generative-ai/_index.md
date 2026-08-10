@@ -26,6 +26,8 @@ At the same time, the flexibility of the model means the surrounding system must
 
 ## Core Building Blocks
 
+The following building blocks are combined to shape generative behavior into a usable system.
+
 | Building block             | System role                                         | Why it matters                                               |
 | -------------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
 | Prompts and instructions   | Frame the task                                      | Shapes intent, style, and operating boundaries               |

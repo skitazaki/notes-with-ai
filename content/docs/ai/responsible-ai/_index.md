@@ -26,6 +26,8 @@ This is especially important in domains where AI influences customer treatment, 
 
 ## Core Concern Areas
 
+The following areas connect common AI risks to representative controls that can address them.
+
 | Risk area                       | What it means                                         | Representative controls                                      |
 | ------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------ |
 | Fairness and bias               | Uneven or harmful outcomes across groups or contexts  | Dataset review, subgroup evaluation, escalation policy       |

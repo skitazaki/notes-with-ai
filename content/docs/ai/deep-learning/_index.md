@@ -40,6 +40,8 @@ Generalization remains the central goal. A deep model is useful when its learned
 
 ## Major Architecture Families
 
+The following families share the neural approach but make different tradeoffs for different types of input and output.
+
 | Architecture family | Best known for                                | Typical signals                   | Strength                                                 | Common limit                                   |
 | ------------------- | --------------------------------------------- | --------------------------------- | -------------------------------------------------------- | ---------------------------------------------- |
 | CNNs                | Spatial perception                            | Images and grids                  | Strong local pattern learning                            | Less natural for long-range sequence structure |
