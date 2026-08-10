@@ -10,6 +10,8 @@ Retrieval-augmented generation (RAG) is a pattern that retrieves external eviden
 
 RAG is not a synonym for vector search. Its quality depends on the complete path from source material to answer: the corpus, metadata, access rules, retrieval, ranking, context construction, model behavior, and evaluation all matter.
 
+![Retrieval-augmented generation flow from governed sources to a grounded response, with index, query interpretation, ranking, evidence assembly, and quality controls.](rag.webp)
+
 ## Definition
 
 In a RAG system, a request is interpreted as an information need. The system locates candidate evidence, ranks and filters it, and supplies selected material to a model so it can produce an answer or structured result. The result should remain grounded in the retrieved evidence and make its limits visible when evidence is weak or incomplete.

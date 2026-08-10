@@ -10,6 +10,8 @@ Tools connect a model-driven application to external information and actions. Th
 
 The Model Context Protocol (MCP) provides a standard protocol for connecting AI clients to external servers that expose contextual capabilities. It improves interoperability, but it does not remove the need for application-level authorization, validation, and operational controls.
 
+![Tools and Model Context Protocol overview showing an AI client connected to an MCP server with tools, resources, and prompts, controlled by schema, authorization, validation, and audit boundaries.](tools-and-mcp.webp)
+
 ## Definition
 
 A tool is an interface through which an AI application can request a bounded capability from another system. Tool results become context that a model or workflow can interpret. A safe design keeps the tool's contract explicit: what inputs it accepts, what it returns, which identity performs the request, and what side effects are permitted.

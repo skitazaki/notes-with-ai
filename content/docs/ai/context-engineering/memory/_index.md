@@ -10,6 +10,8 @@ Memory in an AI system is information retained beyond one immediate interaction 
 
 Memory is therefore a context source with its own design and governance requirements. A useful system decides what to retain, who may use it, how long it remains valid, and how it can be corrected or removed.
 
+![Memory lifecycle in AI systems, showing capture, retention, selection, model interaction, correction, and six distinct memory types under purpose, consent, access, and freshness controls.](memory.webp)
+
 ## Definition
 
 AI memory is retained state that can be selected and supplied as context for a later model interaction or workflow step. It can preserve a user's stated preference, the status of a bounded task, a summary of a prior session, or an auditable record of an event. It should be distinguished from the model's parameters, which are not application-controlled memory, and from a current context window, which is temporary working context.
