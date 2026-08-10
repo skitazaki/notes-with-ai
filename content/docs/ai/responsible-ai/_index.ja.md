@@ -1,7 +1,7 @@
 ---
 date: "2026-08-09T09:00:00+09:00"
 title: "責任ある AI"
-weight: 10
+weight: 11
 prev: "/docs/ai/mlops-and-llmops"
 next: "/docs/ai/enterprise-ai"
 ---

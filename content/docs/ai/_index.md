@@ -21,14 +21,14 @@ This section organizes AI topics by the main question a reader is trying to answ
 
 ![Conceptual diagram showing six core navigation perspectives for navigating the AI section: Foundations, Learning and Models, Data and Context, Engineering and Operations, Governance and Risk, and Applications and Platforms](ai-lenses.webp)
 
-| Perspective                | Primary question                                               | Typical topics                                                      |
-| -------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------- |
-| Foundations                | What kind of field is AI, and how did it develop?              | AI vs. ML, symbolic methods, statistical learning, neural networks  |
-| Learning and Models        | How do systems learn and represent capabilities?               | Supervised learning, deep learning, transformers, foundation models |
-| Data and Context           | What information powers or constrains the system?              | Training data, labeling, embeddings, metadata, retrieval, memory    |
-| Engineering and Operations | How is the system built, evaluated, deployed, and improved?    | APIs, evaluation, testing, MLOps, observability, model serving      |
-| Governance and Risk        | How is the system constrained, reviewed, and made trustworthy? | Security, privacy, fairness, compliance, AI safety                  |
-| Applications and Platforms | How is value delivered inside real organizations?              | Chat, search, agents, enterprise AI, automation, robotics           |
+| Perspective                | Primary question                                               | Typical topics                                                                        |
+| -------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Foundations                | What kind of field is AI, and how did it develop?              | AI vs. ML, symbolic methods, statistical learning, neural networks                    |
+| Learning and Models        | How do systems learn and represent capabilities?               | Supervised learning, deep learning, transformers, foundation models                   |
+| Data and Context           | What information powers or constrains the system?              | Training data, labeling, embeddings, metadata, retrieval, memory, context engineering |
+| Engineering and Operations | How is the system built, evaluated, deployed, and improved?    | APIs, evaluation, testing, MLOps, observability, model serving                        |
+| Governance and Risk        | How is the system constrained, reviewed, and made trustworthy? | Security, privacy, fairness, compliance, AI safety                                    |
+| Applications and Platforms | How is value delivered inside real organizations?              | Chat, search, agents, enterprise AI, automation, robotics                             |
 
 These perspectives overlap in practice.
 For example, a retrieval-augmented AI assistant depends on foundation models, data pipelines, application orchestration, evaluation controls, and governance decisions at the same time.
@@ -46,7 +46,9 @@ Those domains are useful because they remain meaningful even as specific models,
 
 **Foundation Models** examines large reusable model families such as language, vision, speech, and multimodal models, along with tokenization and embeddings.
 
-**Generative AI** covers interactive and content-producing systems built on prompts, context, retrieval, fine-tuning, tool calling, memory, planning, and agentic execution.
+**Generative AI** covers interactive and content-producing systems built on prompts, retrieval, fine-tuning, tool calling, memory, planning, and agentic execution.
+
+**Context Engineering** explains how AI systems select, structure, deliver, evaluate, and control the runtime information that guides model behavior, including instructions, retrieved evidence, state, memory, tool results, and policy constraints.
 
 **AI Engineering** focuses on how AI capabilities become dependable software through APIs, SDKs, frameworks, evaluation, testing, deployment, and versioning.
 
@@ -85,6 +87,7 @@ This section is organized as a documentation hub rather than one long article. U
 {{< card link="deep-learning/" title="Deep Learning" icon="sparkles" subtitle="Neural architectures, representation learning, and scaling patterns" >}}
 {{< card link="foundation-models/" title="Foundation Models" icon="document-text" subtitle="Large reusable model families, embeddings, and tokenization" >}}
 {{< card link="generative-ai/" title="Generative AI" icon="sparkles" subtitle="Prompting, retrieval, fine-tuning, tools, agents, and interaction patterns" >}}
+{{< card link="context-engineering/" title="Context Engineering" icon="document-text" subtitle="Designing and controlling the runtime information available to AI systems" >}}
 {{< card link="ai-engineering/" title="AI Engineering" icon="users" subtitle="Building dependable applications on top of models and AI services" >}}
 {{< card link="ai-infrastructure/" title="AI Infrastructure" icon="database" subtitle="Compute, serving, vector systems, gateways, and orchestration" >}}
 {{< card link="data-for-ai/" title="Data for AI" icon="database" subtitle="Training data, metadata, labeling, governance, and retrieval context" >}}

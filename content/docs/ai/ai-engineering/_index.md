@@ -1,8 +1,8 @@
 ---
 date: "2026-08-09T09:00:00+09:00"
 title: "AI Engineering"
-weight: 6
-prev: "/docs/ai/generative-ai"
+weight: 7
+prev: "/docs/ai/context-engineering"
 next: "/docs/ai/ai-infrastructure"
 ---
 
