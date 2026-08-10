@@ -16,7 +16,7 @@ Between the panels, show four spacious horizontal exchanges with unmistakable di
 
 - **Agent Card** moves from the server to the client.
 - **Message** is bidirectional.
-- **Task** moves from the client to the server.
+- **Task** moves from the server to the client because the server creates and returns the stateful task representation.
 - **Artifact** moves from the server to the client.
 
 Use a light background and large readable text. Render only these labels exactly as written: **Agent-to-Agent Interoperability**, **A2A Client**, **Initiates and delegates work**, **A2A Server**, **Performs delegated work**, **Agent Card**, **Message**, **Task**, and **Artifact**. Do not add logos, protocol or vendor branding, watermarks, humanoid robots, chat bubbles, photorealism, code snippets, or dense decoration.

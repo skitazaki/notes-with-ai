@@ -36,11 +36,13 @@ A2A organizes collaboration around a small set of externally visible concepts.
 | A2A server or remote agent | Advertises capabilities and performs delegated work |
 | Agent Card | Describes identity, endpoints, skills, supported features, and authentication requirements |
 | Message | Carries conversational input, clarification, or status information |
-| Task | Tracks a stateful unit of delegated work through its lifecycle |
+| Task | Represents stateful work created and managed by the server in response to a message |
 | Part | Represents text, a file reference, or structured data within a message or artifact |
 | Artifact | Carries a result produced by a task, such as a document or structured record |
 
-A client first identifies an appropriate remote agent and reads its declared interface. It then sends a message that may receive a direct message response or create a stateful task. A task can progress over time, request more input, publish status updates, and produce one or more artifacts.
+A client first identifies an appropriate remote agent and reads its declared interface. It then sends a new message to request work. That message initiates the interaction.
+
+The server decides how to represent its response. For a simple interaction, it can return a `Message` directly. When the work needs state, progress tracking, additional input, or asynchronous completion, the server creates a `Task`, generates its unique `taskId`, and returns the `Task` to the client. The task can then progress over time, request more input, publish status updates, and produce one or more artifacts. To continue that interaction, the client sends another message referencing the existing `taskId`.
 
 The distinction between messages and artifacts is important. Messages support communication about the work; artifacts represent task outputs. Keeping those roles separate makes it easier for clients to determine what should be displayed as conversation, processed as a result, retained as evidence, or validated before another action.
 
@@ -108,7 +110,9 @@ The card tells a client where and how to connect, which interaction features are
 
 ## Task Lifecycle and Result Exchange
 
-Agent work is often longer-lived than a conventional request-response call. A delegated task may be submitted, start working, pause for more input or authorization, and eventually complete, fail, be rejected, or be canceled. Clients need to understand these states rather than treating every delayed response as a network failure.
+Agent work is often longer-lived than a conventional request-response call. The client initiates work by sending a message. If the server determines that the request needs a stateful lifecycle, it creates and returns a task; otherwise, it may return a direct message without creating one. A created task may start working, pause for more input or authorization, and eventually complete, fail, be rejected, or be canceled. Clients need to understand these states rather than treating every delayed response as a network failure.
+
+This distinction separates business intent from protocol state. The client requests or delegates the work, while the server owns the resulting task representation and its lifecycle. A later client message may reference the server-generated `taskId` to supply clarification or continue the same task.
 
 Updates can be retrieved by polling or delivered through streaming and push mechanisms when the remote agent declares support. These options address transport and lifecycle concerns; they do not guarantee business-level completion. A completed task may still produce an unusable artifact, and a technically valid artifact may still require review before it can influence another system.
 
