@@ -1,8 +1,8 @@
 ---
 date: "2026-08-09T09:00:00+09:00"
 title: "AI エンジニアリング"
-weight: 7
-prev: "/docs/ai/context-engineering"
+weight: 8
+prev: "/docs/ai/agent-to-agent"
 next: "/docs/ai/ai-infrastructure"
 ---
 

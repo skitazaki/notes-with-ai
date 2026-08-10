@@ -50,6 +50,8 @@ AI は横断的な領域です。
 
 **コンテキストエンジニアリング** では、指示、検索された根拠、状態、メモリ、ツール結果、ポリシー制約を含む、モデルの振る舞いを導く実行時情報をどのように選択、構造化、供給、評価、制御するかを扱います。
 
+**エージェント間の通信** では、能力の発見、タスクの委任、状態と結果の交換、信頼境界など、独立して動作するエージェント間の相互運用性を扱います。
+
 **AI エンジニアリング** では、API、SDK、フレームワーク、評価、テスト、デプロイ、バージョニングを通じて、AI の機能をどのように信頼できるソフトウェアへ変えるかを扱います。
 
 **AI インフラストラクチャ** では、アクセラレータ、分散学習、推論スタック、ベクトルシステム、ゲートウェイ、オーケストレーションなど、モデルを大規模に学習・提供するための実行基盤を扱います。
@@ -88,6 +90,7 @@ AI は横断的な領域です。
 {{< card link="foundation-models/" title="基盤モデル" icon="document-text" subtitle="大規模で再利用可能なモデル群、埋め込み、トークナイゼーション" >}}
 {{< card link="generative-ai/" title="生成 AI" icon="sparkles" subtitle="プロンプト、検索、ファインチューニング、ツール、エージェント、対話パターン" >}}
 {{< card link="context-engineering/" title="コンテキストエンジニアリング" icon="document-text" subtitle="AI システムが実行時に利用する情報を設計・制御する" >}}
+{{< card link="agent-to-agent/" title="エージェント間の通信" icon="users" subtitle="独立したエージェント間の相互運用、タスク委任、信頼境界" >}}
 {{< card link="ai-engineering/" title="AI エンジニアリング" icon="users" subtitle="モデルや AI サービスの上に信頼できるアプリケーションを構築する" >}}
 {{< card link="ai-infrastructure/" title="AI インフラストラクチャ" icon="database" subtitle="計算資源、提供基盤、ベクトルシステム、ゲートウェイ、オーケストレーション" >}}
 {{< card link="data-for-ai/" title="AI のためのデータ" icon="database" subtitle="学習データ、メタデータ、ラベリング、ガバナンス、検索コンテキスト" >}}
