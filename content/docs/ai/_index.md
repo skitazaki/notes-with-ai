@@ -50,6 +50,8 @@ Those domains are useful because they remain meaningful even as specific models,
 
 **Context Engineering** explains how AI systems select, structure, deliver, evaluate, and control the runtime information that guides model behavior, including instructions, retrieved evidence, state, memory, tool results, and policy constraints.
 
+**Agent-to-Agent Communication** covers interoperability between independently operating agents, including capability discovery, task delegation, state exchange, results, and trust boundaries.
+
 **AI Engineering** focuses on how AI capabilities become dependable software through APIs, SDKs, frameworks, evaluation, testing, deployment, and versioning.
 
 **AI Infrastructure** covers the runtime systems required to train and serve models at scale, including accelerators, distributed training, inference stacks, vector systems, gateways, and orchestration.
@@ -88,6 +90,7 @@ This section is organized as a documentation hub rather than one long article. U
 {{< card link="foundation-models/" title="Foundation Models" icon="document-text" subtitle="Large reusable model families, embeddings, and tokenization" >}}
 {{< card link="generative-ai/" title="Generative AI" icon="sparkles" subtitle="Prompting, retrieval, fine-tuning, tools, agents, and interaction patterns" >}}
 {{< card link="context-engineering/" title="Context Engineering" icon="document-text" subtitle="Designing and controlling the runtime information available to AI systems" >}}
+{{< card link="agent-to-agent/" title="Agent-to-Agent Communication" icon="users" subtitle="Interoperability, task delegation, and trust boundaries between independent agents" >}}
 {{< card link="ai-engineering/" title="AI Engineering" icon="users" subtitle="Building dependable applications on top of models and AI services" >}}
 {{< card link="ai-infrastructure/" title="AI Infrastructure" icon="database" subtitle="Compute, serving, vector systems, gateways, and orchestration" >}}
 {{< card link="data-for-ai/" title="Data for AI" icon="database" subtitle="Training data, metadata, labeling, governance, and retrieval context" >}}

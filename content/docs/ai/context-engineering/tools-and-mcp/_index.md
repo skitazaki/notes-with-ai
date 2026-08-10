@@ -3,7 +3,7 @@ date: "2026-08-10T09:00:00+09:00"
 title: "Tools and Model Context Protocol"
 weight: 3
 prev: "/docs/ai/context-engineering/rag"
-next: "/docs/ai/ai-engineering"
+next: "/docs/ai/agent-to-agent"
 ---
 
 Tools connect a model-driven application to external information and actions. They can search a knowledge base, read a business record, execute a calculation, create a ticket, or request approval. This makes them powerful context sources and potential side-effect boundaries at the same time.
@@ -49,7 +49,7 @@ Tool results should be labeled as external data. This reduces the chance that te
 
 ## Relationship to Adjacent Topics
 
-Tools and MCP are part of context engineering because tool results and resources influence runtime behavior. [RAG](../rag/) specializes in retrieving evidence; tool interfaces may expose retrieval or many other capabilities. AI agents add planning and multistep execution, which increases the need for authorization and auditability. [AI Engineering](../../ai-engineering/) covers the broader application discipline around these integrations.
+Tools and MCP are part of context engineering because tool results and resources influence runtime behavior. [RAG](../rag/) specializes in retrieving evidence; tool interfaces may expose retrieval or many other capabilities. [Agent-to-Agent Communication](../../agent-to-agent/) addresses delegation and task exchange between independent agents. [AI Engineering](../../ai-engineering/) covers the broader application discipline around these integrations.
 
 ## Summary
 
