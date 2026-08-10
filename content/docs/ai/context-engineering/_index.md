@@ -3,7 +3,7 @@ date: "2026-08-10T09:00:00+09:00"
 title: "Context Engineering"
 weight: 6
 prev: "/docs/ai/generative-ai"
-next: "/docs/ai/ai-engineering"
+next: "/docs/ai/context-engineering/memory"
 ---
 
 Context engineering is the discipline of deliberately designing the information that an AI system can use while it performs a task. It is broader than writing a prompt. A dependable model interaction may depend on instructions, the user's goal, conversation state, retrieved evidence, memory, tool results, and policy constraints. The system must decide which of those inputs to include, how to order them, and which must remain unavailable.

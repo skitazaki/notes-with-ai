@@ -58,7 +58,7 @@ Structure:
 
 Output requirements:
 
-- Write Markdown with front matter using `title: "Context Engineering"`, `weight: 6`, `prev: "/docs/ai/generative-ai"`, and `next: "/docs/ai/ai-engineering"`.
+- Write Markdown with front matter using `title: "Context Engineering"`, `weight: 6`, `prev: "/docs/ai/generative-ai"`, and `next: "/docs/ai/context-engineering/memory"` so sequential navigation flows into the first subtopic.
 - Include one concise table that maps context sources to their system role and representative risk.
 - Reference the hero image as `context-engineering.webp` with useful alt text.
 
