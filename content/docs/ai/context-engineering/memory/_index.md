@@ -20,14 +20,14 @@ AI memory is retained state that can be selected and supplied as context for a l
 
 Different forms of memory support different purposes and should not share the same retention or access rules.
 
-| Memory type | Typical scope | Representative risk |
-| --- | --- | --- |
-| Working context | One request or model call | Important detail is lost through truncation |
-| Session memory | One conversation or session | Stale state changes the current answer |
-| Task memory | A bounded workflow | Old task artifacts are reused after scope changes |
-| Preference memory | One user over time | Incorrect or unwanted personalization |
-| Organizational knowledge | A defined audience | Unauthorized reuse across teams or tenants |
-| Episodic record | A past action or event | Sensitive history is retained longer than needed |
+| Memory type              | Typical scope               | Representative risk                               |
+| ------------------------ | --------------------------- | ------------------------------------------------- |
+| Working context          | One request or model call   | Important detail is lost through truncation       |
+| Session memory           | One conversation or session | Stale state changes the current answer            |
+| Task memory              | A bounded workflow          | Old task artifacts are reused after scope changes |
+| Preference memory        | One user over time          | Incorrect or unwanted personalization             |
+| Organizational knowledge | A defined audience          | Unauthorized reuse across teams or tenants        |
+| Episodic record          | A past action or event      | Sensitive history is retained longer than needed  |
 
 The scope is as important as the content. A useful preference for one person should not silently become an organization-wide default. A task summary should not become a permanent user profile.
 

@@ -24,14 +24,14 @@ Retrieval does not make an answer correct by itself. It creates an opportunity t
 
 ## End-to-End Flow
 
-| Stage | Purpose | Representative failure mode |
-| --- | --- | --- |
-| Source preparation | Make documents usable and governed | Stale or poorly structured source material |
-| Indexing and metadata | Support discovery and access checks | Missing provenance or sensitivity labels |
-| Query interpretation | Identify the actual information need | Ambiguous request is mapped to the wrong topic |
-| Retrieval and ranking | Select relevant candidate evidence | Important evidence is absent or ranked too low |
-| Context assembly | Supply concise, useful evidence to the model | Excessive or conflicting excerpts obscure the answer |
-| Generation and evaluation | Produce and assess a grounded outcome | Model makes unsupported claims beyond evidence |
+| Stage                     | Purpose                                      | Representative failure mode                          |
+| ------------------------- | -------------------------------------------- | ---------------------------------------------------- |
+| Source preparation        | Make documents usable and governed           | Stale or poorly structured source material           |
+| Indexing and metadata     | Support discovery and access checks          | Missing provenance or sensitivity labels             |
+| Query interpretation      | Identify the actual information need         | Ambiguous request is mapped to the wrong topic       |
+| Retrieval and ranking     | Select relevant candidate evidence           | Important evidence is absent or ranked too low       |
+| Context assembly          | Supply concise, useful evidence to the model | Excessive or conflicting excerpts obscure the answer |
+| Generation and evaluation | Produce and assess a grounded outcome        | Model makes unsupported claims beyond evidence       |
 
 Document preparation may include segmentation, metadata assignment, versioning, and source-quality assessment. Those choices are not incidental preprocessing: they shape what the system can later find and trust.
 

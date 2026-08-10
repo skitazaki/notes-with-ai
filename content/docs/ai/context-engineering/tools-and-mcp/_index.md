@@ -24,14 +24,14 @@ Tool use lets an AI application move beyond static model knowledge. A tool can r
 
 ## Tool Integration Elements
 
-| Element | Responsibility | Representative risk |
-| --- | --- | --- |
-| Tool schema | Defines valid inputs and output structure | Ambiguous fields cause incorrect actions |
-| Tool result | Supplies external observation or data | Untrusted content is treated as instruction |
-| Resource | Exposes contextual data for use or reference | Sensitive data is discovered too broadly |
-| Client and server | Connect the application to a capability | An untrusted server receives credentials or context |
-| Authorization context | Binds a request to scope and identity | Confused delegation or excessive privilege |
-| Audit record | Explains what was requested and done | Missing evidence prevents review or recovery |
+| Element               | Responsibility                               | Representative risk                                 |
+| --------------------- | -------------------------------------------- | --------------------------------------------------- |
+| Tool schema           | Defines valid inputs and output structure    | Ambiguous fields cause incorrect actions            |
+| Tool result           | Supplies external observation or data        | Untrusted content is treated as instruction         |
+| Resource              | Exposes contextual data for use or reference | Sensitive data is discovered too broadly            |
+| Client and server     | Connect the application to a capability      | An untrusted server receives credentials or context |
+| Authorization context | Binds a request to scope and identity        | Confused delegation or excessive privilege          |
+| Audit record          | Explains what was requested and done         | Missing evidence prevents review or recovery        |
 
 Schemas make integration more reliable, but a well-formed request can still be unauthorized or unsafe. The application must evaluate the requested action against policy, user intent, task scope, and resource sensitivity.
 

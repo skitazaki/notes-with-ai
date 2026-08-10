@@ -28,14 +28,14 @@ Context engineering makes these tradeoffs explicit. It treats model input as a d
 
 Runtime context has several sources. They serve different purposes and carry different risks.
 
-| Context source | System role | Representative risk |
-| --- | --- | --- |
-| Instructions and task definition | Establish intent, constraints, and response expectations | Conflicting or overly broad instructions |
-| User, session, and workflow state | Personalize the response and preserve continuity | Incorrect identity or stale task state |
-| Retrieved evidence | Ground answers in current or domain-specific information | Low-quality, outdated, or malicious sources |
-| Memory | Carry useful facts or preferences across interactions | Cross-user leakage or inappropriate retention |
-| Tool results | Bring live observations and system records into reasoning | Untrusted output or mismatched permissions |
-| Policy and authorization context | Define what the system may reveal or do | Missing controls or confused delegation |
+| Context source                    | System role                                               | Representative risk                           |
+| --------------------------------- | --------------------------------------------------------- | --------------------------------------------- |
+| Instructions and task definition  | Establish intent, constraints, and response expectations  | Conflicting or overly broad instructions      |
+| User, session, and workflow state | Personalize the response and preserve continuity          | Incorrect identity or stale task state        |
+| Retrieved evidence                | Ground answers in current or domain-specific information  | Low-quality, outdated, or malicious sources   |
+| Memory                            | Carry useful facts or preferences across interactions     | Cross-user leakage or inappropriate retention |
+| Tool results                      | Bring live observations and system records into reasoning | Untrusted output or mismatched permissions    |
+| Policy and authorization context  | Define what the system may reveal or do                   | Missing controls or confused delegation       |
 
 These categories may arrive from one service or many. The important distinction is not their storage location but their semantic role, trust level, freshness, and permitted use. A retrieved policy document, for example, may be relevant evidence but should not be allowed to replace the application's governing instructions.
 
