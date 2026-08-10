@@ -24,6 +24,9 @@ go.work.sum
 # env file
 .env
 
+# Log files
+*.log
+
 .hugo_build.lock
 public/
 resources/
