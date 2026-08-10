@@ -10,6 +10,8 @@ Agent-to-agent communication is the exchange of requests, task state, and result
 
 The Agent2Agent (A2A) Protocol is an open standard for this boundary. It gives an agent a way to describe its capabilities and lets a client delegate work without requiring either side to expose its internal reasoning, memory, or tool implementation. The protocol structures communication, but it does not establish trust or decide what an agent should be allowed to do.
 
+![Conceptual overview of two independent agents exchanging an Agent Card, a delegated Task, and a returned Artifact across a controlled boundary.](agent-to-agent.webp)
+
 ## Definition
 
 Agent-to-agent interoperability is the ability of one application or agent to discover and engage another agent through explicit capability and task contracts. The initiating side acts as a client; the remote agent accepts a request, performs work through its own internal process, and returns progress or results.
@@ -49,6 +51,60 @@ An Agent Card is a machine-readable description of a remote agent. It can identi
 Capability description helps a client decide whether an agent appears suitable, but discovery is not the same as selection or trust. Free-text skill descriptions can be incomplete, capabilities can change, and a reachable endpoint may still be inappropriate for the user's task. Production systems need an approval or governance layer around discovery, especially when agents cross organizational or data boundaries.
 
 An Agent Card should therefore be treated as service metadata, not as a credential or proof that the remote agent is safe. Clients should authenticate endpoints, apply allowlists or registry controls where appropriate, and avoid sending sensitive context until policy permits it.
+
+### Example Agent Card
+
+The following simplified example describes a document-analysis agent using the A2A 1.0 JSON representation. It advertises one preferred interface, optional streaming, an OpenID Connect authentication scheme, and one skill.
+
+```json
+{
+  "name": "Document Analysis Agent",
+  "description": "Extracts structured findings from technical documents.",
+  "version": "1.0.0",
+  "supportedInterfaces": [
+    {
+      "url": "https://agents.example.com/document-analysis/a2a",
+      "protocolBinding": "HTTP+JSON",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false
+  },
+  "securitySchemes": {
+    "organization-login": {
+      "openIdConnectSecurityScheme": {
+        "openIdConnectUrl": "https://identity.example.com/.well-known/openid-configuration"
+      }
+    }
+  },
+  "securityRequirements": [
+    {
+      "schemes": {
+        "organization-login": {
+          "list": ["openid"]
+        }
+      }
+    }
+  ],
+  "defaultInputModes": ["text/plain", "application/pdf"],
+  "defaultOutputModes": ["application/json", "text/markdown"],
+  "skills": [
+    {
+      "id": "summarize-technical-document",
+      "name": "Summarize Technical Document",
+      "description": "Produces a structured summary with key findings and open questions.",
+      "tags": ["documents", "summarization", "technical-review"],
+      "examples": ["Summarize this architecture decision record."],
+      "inputModes": ["text/plain", "application/pdf"],
+      "outputModes": ["application/json", "text/markdown"]
+    }
+  ]
+}
+```
+
+The card tells a client where and how to connect, which interaction features are available, what media types the agent accepts and returns, and which skill it claims to provide. The client still has to obtain credentials outside the card, verify the endpoint, decide whether the skill is appropriate, and authorize the actual request. Tokens, API keys, and other secrets do not belong in the Agent Card.
 
 ## Task Lifecycle and Result Exchange
 
