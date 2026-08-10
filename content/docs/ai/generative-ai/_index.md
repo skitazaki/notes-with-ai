@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "Generative AI"
 weight: 5
 prev: "/docs/ai/foundation-models"
-next: "/docs/ai/ai-engineering"
+next: "/docs/ai/context-engineering"
 ---
 
 Generative AI became widely useful when model output was combined with context, interaction, and control rather than treated as raw text or image synthesis alone. The practical question is not simply whether a model can generate. It is whether the broader system can guide, constrain, and apply that generation in a way that is reliable enough to create user value.

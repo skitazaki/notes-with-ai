@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "生成 AI"
 weight: 5
 prev: "/docs/ai/foundation-models"
-next: "/docs/ai/ai-engineering"
+next: "/docs/ai/context-engineering"
 ---
 
 生成 AI が広く有用になったのは、モデル出力を単なるテキストや画像の合成として扱うのではなく、コンテキスト、対話、制御と組み合わせたときです。重要なのはモデルが生成できるかだけではありません。利用者価値を生むだけの信頼性で、生成を誘導、制約、適用できるかが問われます。
