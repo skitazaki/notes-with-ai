@@ -26,6 +26,8 @@ This creates strong ecosystem effects. Tooling, evaluation methods, gateways, re
 
 ## Main Model Families
 
+The following model families differ by modality and use, while each can provide a reusable base for downstream systems.
+
 | Model family          | Main modality                      | Typical use                                                | What makes it foundational                            |
 | --------------------- | ---------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------- |
 | Large language models | Text and code tokens               | Generation, reasoning assistance, extraction, conversation | Reusable across many language-centered tasks          |

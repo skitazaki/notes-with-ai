@@ -58,6 +58,8 @@ Their success changed the field, but not by invalidating older traditions. Inste
 
 ## AI, Machine Learning, and Deep Learning
 
+The following comparison clarifies the scope and relationship of these commonly conflated terms.
+
 | Term             | What it covers                                              | Main idea                                                 | Typical strengths                               | Common mistake                                    |
 | ---------------- | ----------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------- |
 | AI               | The broad field of intelligent systems                      | Build systems that reason, learn, decide, or act          | Wide conceptual coverage                        | Treating it as one specific technology            |

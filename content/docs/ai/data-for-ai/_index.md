@@ -26,6 +26,8 @@ This is why data architecture and AI architecture are closely linked.
 
 ## Main Data Roles in AI
 
+The following roles show how distinct data assets contribute to different parts of an AI system.
+
 | Data role                               | What it supports                      | Typical outcome                             |
 | --------------------------------------- | ------------------------------------- | ------------------------------------------- |
 | Training and pretraining data           | General capability learning           | Broader or stronger model behavior          |

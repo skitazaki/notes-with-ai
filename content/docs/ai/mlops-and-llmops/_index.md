@@ -38,6 +38,8 @@ The result is not a completely new discipline, but a broader one.
 
 ## Shared and Distinct Failure Modes
 
+The following comparison separates the shared operational discipline from the additional concerns of LLM-centered systems.
+
 | Concern area      | MLOps emphasis                                | LLMOps emphasis                                               |
 | ----------------- | --------------------------------------------- | ------------------------------------------------------------- |
 | Version control   | Model, feature, and dataset lineage           | Model, prompt, retrieval, tool, and policy lineage            |

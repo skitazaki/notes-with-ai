@@ -80,18 +80,18 @@ AI は横断的な領域です。
 このセクションは、ひとつの長い記事ではなく、ドキュメントハブとして構成されています。以下のトピックページから、自分の問いに合った領域へ直接進んでください。
 
 {{< cards >}}
-{{< card link="foundations/" title="基本概念（予定）" icon="book-open" subtitle="AI に関する中核概念、歴史、主要な考え方" >}}
-{{< card link="machine-learning/" title="機械学習（予定）" icon="document-text" subtitle="学習パラダイム、学習ロジック、評価、最適化" >}}
-{{< card link="deep-learning/" title="深層学習（予定）" icon="sparkles" subtitle="ニューラルアーキテクチャ、表現学習、スケーリングの考え方" >}}
-{{< card link="foundation-models/" title="基盤モデル（予定）" icon="document-text" subtitle="大規模で再利用可能なモデル群、埋め込み、トークナイゼーション" >}}
-{{< card link="generative-ai/" title="生成 AI（予定）" icon="sparkles" subtitle="プロンプト、検索、ファインチューニング、ツール、エージェント、対話パターン" >}}
-{{< card link="ai-engineering/" title="AI エンジニアリング（予定）" icon="users" subtitle="モデルや AI サービスの上に信頼できるアプリケーションを構築する" >}}
-{{< card link="ai-infrastructure/" title="AI インフラストラクチャ（予定）" icon="database" subtitle="計算資源、提供基盤、ベクトルシステム、ゲートウェイ、オーケストレーション" >}}
-{{< card link="data-for-ai/" title="AI のためのデータ（予定）" icon="database" subtitle="学習データ、メタデータ、ラベリング、ガバナンス、検索コンテキスト" >}}
-{{< card link="mlops-and-llmops/" title="MLOps と LLMOps（予定）" icon="document-text" subtitle="デリバリー、監視、ドリフト検知、継続的改善" >}}
-{{< card link="responsible-ai/" title="責任ある AI（予定）" icon="shield-check" subtitle="公平性、安全性、プライバシー、コンプライアンス、説明可能性" >}}
-{{< card link="enterprise-ai/" title="エンタープライズ AI（予定）" icon="scale" subtitle="プラットフォーム、統合、運用モデル、セキュリティ、コスト管理" >}}
-{{< card link="ai-applications/" title="AI アプリケーション（予定）" icon="users" subtitle="ソフトウェア、業務、業界領域における AI 活用" >}}
+{{< card link="foundations/" title="基本概念" icon="book-open" subtitle="AI に関する中核概念、歴史、主要な考え方" >}}
+{{< card link="machine-learning/" title="機械学習" icon="document-text" subtitle="学習パラダイム、学習ロジック、評価、最適化" >}}
+{{< card link="deep-learning/" title="深層学習" icon="sparkles" subtitle="ニューラルアーキテクチャ、表現学習、スケーリングの考え方" >}}
+{{< card link="foundation-models/" title="基盤モデル" icon="document-text" subtitle="大規模で再利用可能なモデル群、埋め込み、トークナイゼーション" >}}
+{{< card link="generative-ai/" title="生成 AI" icon="sparkles" subtitle="プロンプト、検索、ファインチューニング、ツール、エージェント、対話パターン" >}}
+{{< card link="ai-engineering/" title="AI エンジニアリング" icon="users" subtitle="モデルや AI サービスの上に信頼できるアプリケーションを構築する" >}}
+{{< card link="ai-infrastructure/" title="AI インフラストラクチャ" icon="database" subtitle="計算資源、提供基盤、ベクトルシステム、ゲートウェイ、オーケストレーション" >}}
+{{< card link="data-for-ai/" title="AI のためのデータ" icon="database" subtitle="学習データ、メタデータ、ラベリング、ガバナンス、検索コンテキスト" >}}
+{{< card link="mlops-and-llmops/" title="MLOps と LLMOps" icon="document-text" subtitle="デリバリー、監視、ドリフト検知、継続的改善" >}}
+{{< card link="responsible-ai/" title="責任ある AI" icon="shield-check" subtitle="公平性、安全性、プライバシー、コンプライアンス、説明可能性" >}}
+{{< card link="enterprise-ai/" title="エンタープライズ AI" icon="scale" subtitle="プラットフォーム、統合、運用モデル、セキュリティ、コスト管理" >}}
+{{< card link="ai-applications/" title="AI アプリケーション" icon="users" subtitle="ソフトウェア、業務、業界領域における AI 活用" >}}
 {{< /cards >}}
 
 ## 推奨される出発点

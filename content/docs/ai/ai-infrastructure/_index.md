@@ -26,6 +26,8 @@ These are not implementation details. They shape what architectures are viable a
 
 ## Core Infrastructure Layers
 
+The following layers work together to support model development and operation at practical scale.
+
 | Layer                           | Main responsibility                                     | Why it matters                                                 |
 | ------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------- |
 | Compute and accelerators        | Execute training and inference workloads                | Determines throughput, scale, and cost profile                 |

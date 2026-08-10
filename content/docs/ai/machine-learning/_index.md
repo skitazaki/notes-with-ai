@@ -52,6 +52,8 @@ The core challenge is that feedback is delayed and exploration can be costly or 
 
 ## Comparing Learning Paradigms
 
+The following comparison highlights the different signals, uses, and limits of the main learning paradigms.
+
 | Paradigm        | Main signal                          | Typical use                                 | Strength                                  | Common limit                                |
 | --------------- | ------------------------------------ | ------------------------------------------- | ----------------------------------------- | ------------------------------------------- |
 | Supervised      | Human-provided labels                | Classification, regression, ranking         | Clear objective alignment                 | Label cost and label bias                   |

@@ -26,6 +26,8 @@ AI engineering matters because product reliability is an end-to-end property. It
 
 ## Core Engineering Concerns
 
+The following concerns describe the system layers that turn flexible model behavior into dependable product behavior.
+
 | Concern                        | What it covers                                                | Common failure mode                                  |
 | ------------------------------ | ------------------------------------------------------------- | ---------------------------------------------------- |
 | Interfaces and integration     | APIs, schemas, response contracts, application boundaries     | Weak contracts make downstream behavior brittle      |
