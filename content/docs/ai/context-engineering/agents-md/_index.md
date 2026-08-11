@@ -10,6 +10,8 @@ next: "/docs/ai/agent-to-agent"
 
 The format is intentionally simple. It does not replace application-level controls or a user's request. Instead, it supplies durable project context that would otherwise have to be repeated in every task. See the [official AGENTS.md site](https://agents.md/) for the format overview, examples, and FAQ.
 
+![Context for coding agents, showing instructions, repository context including AGENTS.md, task context, and runtime environment feeding a coding agent that produces a verified change.](agents-md-context.webp)
+
 ## Overview
 
 `AGENTS.md` is an open, agent-oriented convention built on standard Markdown. There are no required fields or fixed headings. Teams can organize the file around the information their agents actually need.
