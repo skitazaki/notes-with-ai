@@ -1,1 +1,2 @@
 brew "hugo"
+brew "webp"
