@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "server": "hugo server --minify",
+    "build": "hugo --minify",
     "format": "oxfmt .",
-    "lint": "oxfmt --check ."
+    "lint": "oxfmt --check .",
+    "check": "pnpm lint && pnpm build",
+    "codex:setup": "./scripts/codex/setup.sh",
+    "codex:server": "./scripts/codex/server.sh",
+    "codex:stop": "./scripts/codex/stop.sh"
   },
   "repository": {
     "type": "git",
