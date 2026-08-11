@@ -12,6 +12,9 @@ MAX_PORT=14999
 
 mkdir -p "$RUNTIME"
 
+command -v hugo >/dev/null 2>&1 || { printf 'hugo is required (https://gohugo.io/).\n' >&2; exit 1; }
+command -v curl >/dev/null 2>&1 || { printf 'curl is required for Hugo readiness checks.\n' >&2; exit 1; }
+
 is_our_server() {
   pid=$1
   port=$2
@@ -32,9 +35,13 @@ is_ready() {
 if [ -f "$PID_FILE" ] && [ -f "$PORT_FILE" ]; then
   pid=$(cat "$PID_FILE")
   port=$(cat "$PORT_FILE")
-  if is_our_server "$pid" "$port" && is_ready "$port"; then
-    printf 'Hugo server is already running at http://127.0.0.1:%s/\n' "$port"
-    exit 0
+  if is_our_server "$pid" "$port"; then
+    if is_ready "$port"; then
+      printf 'Hugo server is already running at http://127.0.0.1:%s/\n' "$port"
+      exit 0
+    fi
+    printf 'Hugo server process %s is running on port %s but is not responding; see %s or run pnpm codex:stop.\n' "$pid" "$port" "$LOG_FILE" >&2
+    exit 1
   fi
 fi
 
@@ -56,7 +63,7 @@ while [ "$port" -le "$MAX_PORT" ]; do
     if [ "$candidate" -lt "$MIN_PORT" ] || [ "$candidate" -gt "$MAX_PORT" ]; then
       candidate=$port
     fi
-    port=$((candidate + 1))
+port=$MIN_PORT
   else
     port=$((port + 1))
   fi

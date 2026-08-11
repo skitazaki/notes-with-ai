@@ -7,8 +7,14 @@ RUNTIME="$ROOT/.codex-runtime"
 PID_FILE="$RUNTIME/hugo.pid"
 PORT_FILE="$RUNTIME/hugo.port"
 
-if [ ! -f "$PID_FILE" ] || [ ! -f "$PORT_FILE" ]; then
-  printf 'No Hugo server is recorded for this worktree.\n'
+if [ ! -f "$PID_FILE" ]; then
+  printf 'No Hugo server PID is recorded for this worktree.\n'
+  exit 0
+fi
+
+if [ ! -f "$PORT_FILE" ]; then
+  rm -f "$PID_FILE"
+  printf 'Removed a stale PID file (missing port); no matching server was stopped.\n'
   exit 0
 fi
 
@@ -29,7 +35,7 @@ case "$command" in
       exit 1
     fi
     rm -f "$PID_FILE"
-    printf 'Stopped Hugo server on http://127.0.0.1:%s/.\n' "$port"
+    printf 'Stopped Hugo server on http://127.0.0.1:%s/\n' "$port"
     ;;
   *)
     rm -f "$PID_FILE"
