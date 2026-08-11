@@ -6,7 +6,7 @@ description: Conceptual overview of Agent-to-Agent discovery, task delegation, a
 
 # Image Generation Prompt — Agent-to-Agent Communication
 
-Create a polished 16:9 technical infographic titled **Agent-to-Agent**.
+Create a polished 16:9 technical infographic titled **Agent-to-Agent Interoperability**.
 
 Use the AI hub image at `content/docs/ai/ai-lenses.png` as the visual and typography reference. Match its clean editorial infographic treatment, dark navy humanist sans-serif typography, font-weight hierarchy, rounded outlined panels, thin connector lines, soft off-white background, restrained shadows, and blue, teal, amber, and purple accents.
 

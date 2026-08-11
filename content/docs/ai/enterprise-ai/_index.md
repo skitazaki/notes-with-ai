@@ -1,7 +1,7 @@
 ---
 date: "2026-08-09T09:00:00+09:00"
 title: "Enterprise AI"
-weight: 12
+weight: 13
 prev: "/docs/ai/responsible-ai"
 next: "/docs/ai/ai-applications"
 ---
