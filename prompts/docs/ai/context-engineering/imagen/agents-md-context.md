@@ -34,13 +34,12 @@ Place the title and subtitle across the top. Below them, arrange three large rou
 
 Panel 1 uses blue accents.
 
-Text (verbatim):
+Text (verbatim, without quotation marks):
 
-- “INSTRUCTIONS”
-- “System Prompt”
-- “User Prompt”
-- “Policies & Permissions”
-
+- INSTRUCTIONS
+- System Prompt
+- User Prompt
+- Policies & Permissions
 Use concise icons suggesting governing rules, task intent, and permission boundaries.
 
 Panel 2 uses teal accents and should make `AGENTS.md` clearly visible without making it dominant over the entire diagram.
