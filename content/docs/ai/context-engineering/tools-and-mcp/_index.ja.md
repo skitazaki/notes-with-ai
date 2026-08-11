@@ -3,7 +3,7 @@ date: "2026-08-10T09:00:00+09:00"
 title: "ツールと Model Context Protocol"
 weight: 3
 prev: "/docs/ai/context-engineering/rag"
-next: "/docs/ai/agent-to-agent"
+next: "/docs/ai/context-engineering/agents-md"
 ---
 
 ツールは、モデル駆動のアプリケーションを外部の情報やアクションへ接続します。ナレッジベースの検索、業務レコードの読み取り、計算の実行、チケットの作成、承認の要求などができます。つまりツールは強力なコンテキストの情報源であると同時に、副作用が発生する境界でもあります。
