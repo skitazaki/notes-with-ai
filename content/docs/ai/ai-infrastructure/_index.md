@@ -1,7 +1,7 @@
 ---
 date: "2026-08-09T09:00:00+09:00"
 title: "AI Infrastructure"
-weight: 8
+weight: 9
 prev: "/docs/ai/ai-engineering"
 next: "/docs/ai/data-for-ai"
 ---

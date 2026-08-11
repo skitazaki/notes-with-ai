@@ -1,7 +1,7 @@
 ---
 date: "2026-08-09T09:00:00+09:00"
 title: "MLOps と LLMOps"
-weight: 10
+weight: 11
 prev: "/docs/ai/data-for-ai"
 next: "/docs/ai/responsible-ai"
 ---
