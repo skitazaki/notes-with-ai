@@ -171,6 +171,26 @@ def remove_selected(repo: str, results: Sequence[Result], selected: Sequence[str
             print("Cancelled.")
             return 1
 
+    # Re-scan immediately before deletion to revalidate safety.
+    refreshed_results = scan(repo)
+    refreshed_by_path = {str(Path(result.worktree.path).resolve()): result for result in refreshed_results}
+    refreshed_missing = sorted(normalized - refreshed_by_path.keys())
+    refreshed_unsafe = [
+        refreshed_by_path[path]
+        for path in normalized & refreshed_by_path.keys()
+        if refreshed_by_path[path].category != "SAFE"
+    ]
+    if refreshed_missing or refreshed_unsafe:
+        for path in refreshed_missing:
+            print(f"Refusing unknown worktree: {path}", file=sys.stderr)
+        for result in refreshed_unsafe:
+            print(
+                f"Refusing {result.worktree.path}: now {result.category} ({result.reason})",
+                file=sys.stderr,
+            )
+        return 2
+
+    targets = [refreshed_by_path[path] for path in normalized]
     removed = 0
     for result in targets:
         wt = result.worktree
