@@ -16,6 +16,42 @@ It is a set of complementary models that help people answer different questions 
 
 ![Software architecture overview showing one system understood through layers, planes, pillars, flows, ownership boundaries, and views](software-architecture-overview.webp)
 
+## How to Read This Section
+
+Start with the question you need to answer, then move only as far into the system as that question requires. Most architecture documentation does not need every possible level of detail.
+
+### Where does the system fit?
+
+Begin with the system's purpose, its environment, and the people or systems around it. Use [Architecture Dimensions](dimensions/) to choose a useful reasoning lens, [Ownership Boundaries](ownership-boundaries/) to clarify responsibility, and [Views and Viewpoints](views-and-viewpoints/) to frame the explanation for a particular audience.
+
+### What are its major building blocks?
+
+Move inward to the system's large structural and operational parts. [Layers](layers/) explains abstraction and dependency direction, [Planes](planes/) separates operational responsibilities, and [Pillars](pillars/) identifies the qualities and constraints that shape those choices.
+
+### How do those building blocks interact?
+
+Use [Flows and Pipelines](flows-and-pipelines/) to trace requests, events, data, and failure paths between parts. Use [Decision Frameworks](decision-frameworks/) to connect those interactions to concerns, tradeoffs, and architectural decisions, and return to [Views and Viewpoints](views-and-viewpoints/) when the interaction needs to be communicated to a specific audience.
+
+### Architecture Zoom Map
+
+The map is a navigation aid, not a requirement that every topic fit a strict hierarchy. Move one abstraction level at a time and stop when the view answers the question. In practice, landscape, system, and container views are often enough; code-level detail is intentionally outside this long-lived navigation map and can usually be generated on demand.[^c4-diagrams][^c4-code]
+
+```mermaid
+flowchart LR
+  landscape["System Landscape<br/>Ecosystem and external relationships"] --> system["System<br/>Purpose, scope, and boundaries"]
+  system --> container["Container<br/>Major applications and data stores"]
+  container --> component["Component<br/>Responsibilities within a container"]
+```
+
+| Navigation level     | Representative topics                                                                                    |
+| -------------------- | -------------------------------------------------------------------------------------------------------- |
+| **System Landscape** | [Ownership Boundaries](ownership-boundaries/), [Views and Viewpoints](views-and-viewpoints/)             |
+| **System**           | [Architecture Dimensions](dimensions/), [Pillars](pillars/), [Decision Frameworks](decision-frameworks/) |
+| **Container**        | [Layers](layers/), [Planes](planes/)                                                                     |
+| **Component**        | [Flows and Pipelines](flows-and-pipelines/), [Layers](layers/)                                           |
+
+Keeping scope, labels, and relationships explicit prevents a single diagram from mixing abstraction levels and becoming difficult to interpret.[^c4-introduction]
+
 ## Architecture as Reasoning
 
 Architecture helps engineers think before the cost of change becomes high.
@@ -178,3 +214,9 @@ Layers, planes, pillars, flows, boundaries, and views exist because software sys
 
 The goal of architecture is not to produce one complete diagram.
 The goal is to help people reason about systems, make better decisions, and communicate those decisions clearly enough that teams can build and operate software with shared understanding.
+
+[^c4-diagrams]: [C4 model: Diagrams](https://c4model.com/diagrams)
+
+[^c4-code]: [C4 model: Code diagram](https://c4model.com/diagrams/code)
+
+[^c4-introduction]: [C4 model: Introduction](https://c4model.com/introduction)
