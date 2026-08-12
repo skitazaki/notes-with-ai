@@ -37,10 +37,9 @@ It focuses on insight generation, decision enablement, and value exchange — in
 Data Analytics converts structured and unstructured data into actionable intelligence.
 
 - **Visualization & Reporting** – Interactive dashboards, standardized reporting, and KPI monitoring to provide situational awareness
-- **Decision Support Systems** – Analytical models and scenario simulations that inform operational and strategic decisions
-- **Insight Generation** – Exploratory analysis, hypothesis testing, and pattern discovery to uncover hidden relationships
-- **Classification & Prediction** – Machine learning models for segmentation, forecasting, anomaly detection, and optimization
-- **Self-Service Analytics Enablement** – Semantic layers and governed data access to empower business users
+- **Insight Generation** – Exploratory analysis, factor decomposition, hypothesis testing, and root-cause investigation to explain observed outcomes
+- **Classification & Prediction** – Statistical and machine learning models for segmentation, forecasting, anomaly detection, and risk estimation
+- **Decision Support Systems** – Analytical models, scenario simulations, and optimization that recommend actions and inform operational and strategic decisions
 - **Performance & Impact Measurement** – Closed-loop evaluation of outcomes to continuously refine models and strategies
 
 **Objective:** Reduce uncertainty, accelerate decisions, and improve measurable outcomes.
@@ -85,6 +84,7 @@ Data Architecture defines the structural design principles and system boundaries
 - **Data Products** – Product-oriented thinking applied to datasets, including ownership, SLAs, and lifecycle management
 - **Data Models & Domain Models** – Conceptual, logical, and physical modeling to ensure semantic consistency
 - **Interoperability & Integration Patterns** – Standardized interfaces and data contracts across systems
+- **Analytics Consumption Architecture** – Semantic layers, governed data access, and reusable analytical interfaces that enable self-service analytics
 - **Scalability & Evolution Strategy** – Architectural patterns that support growth and change over time
 
 **Objective:** Provide a coherent structural blueprint that aligns technical systems with organizational design.
