@@ -58,25 +58,30 @@ These properties prevent a formula from appearing reusable when its underlying a
 
 ### Relationships and paths
 
-Relationships describe how entities and datasets connect. Cardinality, join keys, optionality, and valid traversal paths matter because a technically valid join can still duplicate facts or change the meaning of a result. The semantic layer should expose safe paths and make ambiguous or many-to-many relationships explicit.
+Relationships describe how entities and datasets connect. Cardinality specifies whether each record relates to one or many records on the other side, while optionality states whether that relationship must exist. Join keys identify the fields that implement the relationship. These properties matter because a technically valid join can still duplicate facts or silently exclude records. For example, joining one order to many order lines preserves the order-line grain, but summing an order-level amount after that join repeats the amount for every line.
+
+A semantic model should therefore define approved join paths between entities, not leave each query author to infer them from matching column names. A request that connects revenue to customer region might follow `order -> customer -> region`; a second route through billing accounts may represent a different business meaning. The layer should select or constrain the appropriate path, identify ambiguous routes, and require an explicit bridge or allocation rule for many-to-many relationships. This allows query tools to reuse safe joins while making changes in grain visible.
 
 ### Vocabulary and concept mappings
 
-Business glossaries, taxonomies, and ontologies organize terms and relationships at different levels of formality. Their concepts become more useful when mapped to metrics, entities, fields, data products, policies, and owners. Synonyms and local-to-shared mappings allow a domain to retain its own language while showing how it relates to concepts used elsewhere.
+A business glossary provides agreed definitions for terms such as customer, net revenue, or active account. A taxonomy organizes concepts into a navigable hierarchy, such as `product -> electronics -> smartphone`. An ontology goes further by representing multiple kinds of relationships, constraints, and sometimes inference rules—for example, that a subscription belongs to an account, an account may represent an organization, and two classifications are mutually exclusive. Not every semantic layer needs a formal ontology; the required level of formality depends on the questions and interoperability boundaries it must support.
+
+These concepts become operational when they are mapped to metrics, entities, fields, data products, policies, and owners. Synonyms can map “client” and “customer” to the same shared concept, while a local term such as “bookings” can remain distinct from recognized revenue and explicitly describe how the two relate. Such mappings preserve domain language without implying false equivalence and give catalogs, query tools, and AI systems a controlled way to resolve user terminology to the correct semantic object.
 
 ## How It Works at Query Time
 
-A consumer should be able to request a concept without knowing every physical implementation detail. For a request such as “monthly recognized revenue by customer segment,” the semantic layer can:
+A consumer should be able to request a concept without knowing every physical implementation detail. For a request such as “monthly recognized revenue in Japan by customer segment,” the semantic layer can:
 
 1. Resolve the approved revenue metric and its effective version.
 2. Select the source measures, entities, and relationship path.
-3. Apply required filters, currency rules, and calendar semantics.
-4. Generate or constrain a query for the target execution engine.
-5. Return results with definition, provenance, and freshness context.
+3. Resolve whether “Japan” refers to billing country, operating region, or another governed geographic attribute.
+4. Apply the resulting geographic filter together with currency rules and calendar semantics.
+5. Generate or constrain a query for the target execution engine.
+6. Return results with definition, provenance, and freshness context.
 
 The layer may generate SQL, expose an API, or provide metadata to another query planner. The execution mechanism is secondary. The important property is that different clients reuse the same governed intent.
 
-This is also why the semantic layer is useful to AI systems. Natural-language interfaces and agents cannot reliably infer whether “customer,” “revenue,” or “Japan” maps to a particular table, calculation, or geographic attribute. Machine-readable semantic metadata narrows those choices and provides evidence that can be shown with the result. It improves grounding, but it does not eliminate the need for access controls, query validation, or evaluation.
+This is also why the semantic layer is useful to AI systems. Natural-language interfaces and agents cannot reliably infer whether “customer” means an account or a legal entity, which revenue calculation is approved, or whether “Japan” means billing country or operating region. Machine-readable semantic metadata narrows those choices and connects generated queries to governed definitions and source data. It makes results better grounded and easier to explain, but it does not eliminate the need for access controls, query validation, or evaluation.
 
 ## Relationship to Adjacent Capabilities
 
@@ -108,7 +113,7 @@ Separating these concerns allows physical data to evolve without silently changi
 
 Standards and formal models can help where meaning must cross tool or organizational boundaries. **ISO/IEC 11179** provides concepts for data-element definition and metadata registries. **SKOS** supports controlled vocabularies and concept schemes, while **OWL** and **RDF** support richer graph-based semantics. **DCAT** supports catalog interoperability. These standards solve different problems and should be adopted only where their additional rigor supports a concrete exchange or governance need.
 
-Software implementations also vary in scope. Metric-oriented systems such as dbt Semantic Layer, Looker, and Cube focus on reusable analytical definitions and query behavior. Metadata platforms such as OpenMetadata and DataHub can connect glossary terms, lineage, schemas, and ownership. Table formats such as Apache Iceberg provide physical data objects beneath the layer, but do not define business semantics by themselves. Open interchange initiatives can reduce product lock-in, but portability still depends on the semantics each participating system can represent.
+Software implementations also vary in scope. Metric-oriented systems such as dbt Semantic Layer, Looker, and Cube focus on reusable analytical definitions and query behavior. Metadata platforms such as OpenMetadata and DataHub can connect glossary terms, lineage, schemas, and ownership. Table formats such as Apache Iceberg provide physical data objects beneath the layer, but do not define business semantics by themselves. Open interchange specifications such as [Apache Ossie (incubating)](https://ossie.apache.org/), previously known as Open Semantic Interchange (OSI), aim to make semantic models exchangeable across analytics, AI, and BI platforms. Such specifications can reduce product lock-in, but portability still depends on the semantics each participating system can represent.
 
 ## Ownership and Change Management
 
