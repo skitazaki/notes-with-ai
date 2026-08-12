@@ -3,7 +3,7 @@ date: "2026-08-11T09:00:00+09:00"
 title: "AGENTS.md"
 weight: 4
 prev: "/docs/ai/context-engineering/tools-and-mcp"
-next: "/docs/ai/agent-to-agent"
+next: "/docs/ai/context-engineering/agent-skills"
 ---
 
 `AGENTS.md` is a Markdown file for giving coding agents the repository-specific context and instructions they need to work effectively. It can describe setup commands, validation steps, code conventions, architectural boundaries, security considerations, and contribution workflows. Its role is similar to a `README.md`, but its primary audience is an AI coding agent rather than a human contributor.
