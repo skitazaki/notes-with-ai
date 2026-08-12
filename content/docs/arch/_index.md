@@ -100,6 +100,8 @@ One useful progression is:
 4. Create a view for the intended audience.
 5. Use the view to communicate or decide.
 
+![From Concerns to Views: five steps from identifying a concern through reasoning about dimensions and tradeoffs to communicating or deciding with an audience-specific view](from-concerns-to-views.webp)
+
 For example, if the concern is dependency direction, a structural layer view may help.
 If the concern is runtime policy enforcement, a plane or flow view may be better.
 If the concern is accountability, an ownership boundary view may be the right artifact.
