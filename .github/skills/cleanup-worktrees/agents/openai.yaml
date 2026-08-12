@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cleanup Git Worktrees"
+  short_description: "Safely inspect and remove completed PR worktrees"
+  default_prompt: "Use $cleanup-worktrees to inspect stale Git worktrees and safely clean up completed pull request branches."
