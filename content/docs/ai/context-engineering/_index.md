@@ -82,6 +82,7 @@ Use these pages to examine the context sources and integration boundaries in mor
 {{< card link="rag/" title="Retrieval-Augmented Generation" icon="document-text" subtitle="Grounding model interactions in selected external evidence" >}}
 {{< card link="tools-and-mcp/" title="Tools and Model Context Protocol" icon="users" subtitle="Controlled integration of external context and actions" >}}
 {{< card link="agents-md/" title="AGENTS.md" icon="document-text" subtitle="Repository-scoped instructions and context for coding agents" >}}
+{{< card link="agent-skills/" title="Agent Skills and Plugins" icon="puzzle" subtitle="Packaging reusable procedures, resources, and runtime integrations" >}}
 {{< /cards >}}
 
 ## Summary
