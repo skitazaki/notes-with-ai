@@ -81,6 +81,8 @@ A consumer should be able to request a concept without knowing every physical im
 
 The layer may generate SQL, expose an API, or provide metadata to another query planner. The execution mechanism is secondary. The important property is that different clients reuse the same governed intent.
 
+![Three implementation patterns for operationalizing a governed semantic model: generating SQL, exposing a semantic API, or providing metadata to an external query planner](semantic-layer-implementation-patterns.webp)
+
 This is also why the semantic layer is useful to AI systems. Natural-language interfaces and agents cannot reliably infer whether “customer” means an account or a legal entity, which revenue calculation is approved, or whether “Japan” means billing country or operating region. Machine-readable semantic metadata narrows those choices and connects generated queries to governed definitions and source data. It makes results better grounded and easier to explain, but it does not eliminate the need for access controls, query validation, or evaluation.
 
 ## Relationship to Adjacent Capabilities
@@ -142,6 +144,8 @@ For each concept:
 5. Validate results against trusted use cases.
 6. Expose the definition in existing consumption workflows.
 7. Measure reuse, failed queries, duplicated definitions, and change impact.
+
+![Seven-step workflow for adopting a semantic layer one concept at a time, from identifying demand and comparing definitions through validation, workflow integration, and measured improvement](semantic-layer-adoption-workflow.webp)
 
 Adoption succeeds when the governed path is easier to use than recreating logic locally. A large model with little consumption is less valuable than a small model that reliably answers important questions.
 
