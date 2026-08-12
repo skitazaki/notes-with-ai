@@ -81,6 +81,7 @@ next: "/docs/ai/context-engineering/memory"
 {{< card link="memory/" title="AI システムにおけるメモリ" icon="database" subtitle="保持されたコンテキスト、ライフサイクル制御、対話をまたぐ安全な継続性" >}}
 {{< card link="rag/" title="検索拡張生成（RAG）" icon="document-text" subtitle="選択された外部の根拠にモデル対話を基づかせる" >}}
 {{< card link="tools-and-mcp/" title="ツールと Model Context Protocol" icon="users" subtitle="外部コンテキストとアクションを統制して統合する" >}}
+{{< card link="agents-md/" title="AGENTS.md" icon="document-text" subtitle="コーディングエージェントにリポジトリ固有の指示とコンテキストを渡す" >}}
 {{< /cards >}}
 
 ## まとめ

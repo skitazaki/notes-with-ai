@@ -3,7 +3,7 @@ date: "2026-08-10T09:00:00+09:00"
 title: "Tools and Model Context Protocol"
 weight: 3
 prev: "/docs/ai/context-engineering/rag"
-next: "/docs/ai/agent-to-agent"
+next: "/docs/ai/context-engineering/agents-md"
 ---
 
 Tools connect a model-driven application to external information and actions. They can search a knowledge base, read a business record, execute a calculation, create a ticket, or request approval. This makes them powerful context sources and potential side-effect boundaries at the same time.
