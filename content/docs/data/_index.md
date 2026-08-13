@@ -27,6 +27,19 @@ Together, these layers establish a coherent operating model that balances value 
 - Enable discoverability through metadata
 - Align technical architecture with business value
 
+## Explore Data Topics
+
+Use these pages to move from the overall data landscape into a specific capability or operating concern.
+
+{{< cards >}}
+{{< card link="analytics/" title="Data Analytics" icon="chart-bar" subtitle="Turning data into evidence, predictions, decisions, and measurable outcomes" >}}
+{{< card link="sharing/" title="Data Sharing" icon="share" subtitle="Extending governed data value across organizational and ecosystem boundaries" >}}
+{{< card link="management/" title="Data Management" icon="cog" subtitle="Maintaining data quality, accessibility, lifecycle, and operational sustainability" >}}
+{{< card link="metadata/" title="Metadata" icon="tag" subtitle="Enabling discovery, meaning, lineage, interoperability, and automated control" >}}
+{{< card link="privacy/" title="Data Privacy" icon="lock-closed" subtitle="Governing responsible processing and protection of data about people" >}}
+{{< card link="teams/" title="Data Teams" icon="users" subtitle="Organizing roles, ownership, collaboration, and capability development" >}}
+{{< /cards >}}
+
 ## 1. Value Layer
 
 The Value Layer transforms managed data into measurable business impact.
@@ -44,7 +57,7 @@ Data Analytics converts structured and unstructured data into actionable intelli
 
 **Objective:** Reduce uncertainty, accelerate decisions, and improve measurable outcomes.
 
-### Data Sharing
+### [Data Sharing](/docs/data/sharing/)
 
 Data Sharing enables controlled distribution and monetization of data assets across organizational and ecosystem boundaries.
 
