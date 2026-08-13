@@ -16,6 +16,42 @@ It is a set of complementary models that help people answer different questions 
 
 ![Software architecture overview showing one system understood through layers, planes, pillars, flows, ownership boundaries, and views](software-architecture-overview.webp)
 
+## How to Read This Section
+
+Start with the question you need to answer, then move only as far into the system as that question requires. Most architecture documentation does not need every possible level of detail.
+
+### Where does the system fit?
+
+Begin with the system's purpose, its environment, and the people or systems around it. Use [Architecture Dimensions](dimensions/) to choose a useful reasoning lens, [Ownership Boundaries](ownership-boundaries/) to clarify responsibility, and [Views and Viewpoints](views-and-viewpoints/) to frame the explanation for a particular audience.
+
+### What are its major building blocks?
+
+Move inward to the system's large structural and operational parts. [Layers](layers/) explains abstraction and dependency direction, [Planes](planes/) separates operational responsibilities, and [Pillars](pillars/) identifies the qualities and constraints that shape those choices.
+
+### How do those building blocks interact?
+
+Use [Flows and Pipelines](flows-and-pipelines/) to trace requests, events, data, and failure paths between parts. Use [Decision Frameworks](decision-frameworks/) to connect those interactions to concerns, tradeoffs, and architectural decisions, and return to [Views and Viewpoints](views-and-viewpoints/) when the interaction needs to be communicated to a specific audience.
+
+### Architecture Zoom Map
+
+The map is a navigation aid, not a requirement that every topic fit a strict hierarchy. Move one abstraction level at a time and stop when the view answers the question. In practice, landscape, system, and container views are often enough; code-level detail is intentionally outside this long-lived navigation map and can usually be generated on demand.[^c4-diagrams][^c4-code]
+
+```mermaid
+flowchart LR
+  landscape["System Landscape<br/>Ecosystem and external relationships"] --> system["System<br/>Purpose, scope, and boundaries"]
+  system --> container["Container<br/>Major applications and data stores"]
+  container --> component["Component<br/>Responsibilities within a container"]
+```
+
+| Navigation level     | Representative topics                                                                                    |
+| -------------------- | -------------------------------------------------------------------------------------------------------- |
+| **System Landscape** | [Ownership Boundaries](ownership-boundaries/), [Views and Viewpoints](views-and-viewpoints/)             |
+| **System**           | [Architecture Dimensions](dimensions/), [Pillars](pillars/), [Decision Frameworks](decision-frameworks/) |
+| **Container**        | [Layers](layers/), [Planes](planes/)                                                                     |
+| **Component**        | [Flows and Pipelines](flows-and-pipelines/), [Layers](layers/)                                           |
+
+Keeping scope, labels, and relationships explicit prevents a single diagram from mixing abstraction levels and becoming difficult to interpret.[^c4-introduction]
+
 ## Architecture as Reasoning
 
 Architecture helps engineers think before the cost of change becomes high.
@@ -51,92 +87,6 @@ Communication views help teams:
 A single master architecture diagram is usually less useful than several intentional views.
 Each view should answer a question, support a decision, or help a specific audience understand a concern.
 
-## Architecture Is Multi-Dimensional
-
-Modern systems are too complex to understand from one perspective.
-The same platform may need a structural view for dependency reasoning, an operational view for runtime behavior, a strategic view for design priorities, an ownership view for team responsibility, and a communication view for stakeholder alignment.
-
-These dimensions are not competing definitions of architecture.
-They are complementary lenses.
-
-| Dimension     | Primary question                                | Typical concepts                      |
-| ------------- | ----------------------------------------------- | ------------------------------------- |
-| Structural    | What is built, and what depends on what?        | Layers, modules, components, services |
-| Operational   | How does the system behave at runtime?          | Planes, flows, pipelines              |
-| Strategic     | What qualities and constraints shape decisions? | Pillars, principles, policies         |
-| Ownership     | Who is responsible for change and operation?    | Domains, boundaries, cells            |
-| Communication | How should this be explained?                   | Views, viewpoints, perspectives       |
-
-The same system can be represented differently depending on the question.
-A layered diagram may explain dependency direction.
-A control-plane and data-plane diagram may explain operational responsibility.
-A flow diagram may explain request or data movement.
-An ownership map may explain who changes and operates each part.
-A security or reliability view may select details needed for review.
-
-No single view is "the architecture."
-Each view is a projection of the architecture for a particular purpose.
-
-## Core Concepts
-
-### Layers
-
-Layers represent structural abstraction.
-They help answer questions such as:
-
-- What depends on what?
-- Which abstractions build on others?
-- Where should dependencies flow?
-- Which parts should be insulated from change?
-
-Layers are useful for reasoning about application architecture, platform stacks, protocol models, and runtime abstractions.
-They become misleading when teams use them to describe every horizontal box in a diagram or confuse them with deployment topology.
-
-### Planes
-
-Planes represent operational responsibility.
-They help answer questions such as:
-
-- Who controls execution?
-- Who processes traffic or data?
-- Which path handles operations, policy, telemetry, or orchestration?
-- Which concerns cross structural boundaries?
-
-Control planes, data planes, observability planes, policy planes, and workflow planes often cut across layers.
-This is why a system can be structurally layered while also having operational planes that move through those layers.
-
-### Flows and Pipelines
-
-Flows and pipelines represent movement over time.
-They show how requests, events, data, jobs, approvals, or feedback loops pass through system boundaries.
-
-Flow-oriented views are especially useful for understanding sequencing, transformations, failure points, queues, retries, and handoffs.
-They complement structural views by showing what happens during execution.
-
-### Pillars
-
-Pillars represent architectural priorities.
-They describe the qualities a system must optimize for, such as reliability, security, scalability, cost efficiency, maintainability, operability, and developer experience.
-
-Pillars are not runtime components.
-They are decision lenses.
-They help teams explain why one design is preferable to another under a specific set of constraints.
-
-### Ownership Boundaries
-
-Ownership boundaries describe responsibility for change and operation.
-They are related to technical boundaries, but they are not the same thing as services, layers, deployment units, or organization charts.
-
-Ownership views help clarify who can change a system safely, who operates it, who handles incidents, who defines contracts, and who pays the long-term complexity cost.
-
-### Views and Viewpoints
-
-A view is a deliberate communication artifact.
-It selects the concerns, level of detail, and representation needed for a particular audience and purpose.
-
-A viewpoint defines the framing used to construct that view.
-For example, a developer view, platform operations view, security review view, and executive view may all describe the same system while emphasizing different information.
-
 ## From Concerns to Views
 
 Clear architecture documentation usually starts with a concern rather than a diagram.
@@ -149,6 +99,8 @@ One useful progression is:
 3. Reason about options and tradeoffs.
 4. Create a view for the intended audience.
 5. Use the view to communicate or decide.
+
+![From Concerns to Views: five steps from identifying a concern through reasoning about dimensions and tradeoffs to communicating or deciding with an audience-specific view](from-concerns-to-views.webp)
 
 For example, if the concern is dependency direction, a structural layer view may help.
 If the concern is runtime policy enforcement, a plane or flow view may be better.
@@ -178,3 +130,9 @@ Layers, planes, pillars, flows, boundaries, and views exist because software sys
 
 The goal of architecture is not to produce one complete diagram.
 The goal is to help people reason about systems, make better decisions, and communicate those decisions clearly enough that teams can build and operate software with shared understanding.
+
+[^c4-diagrams]: [C4 model: Diagrams](https://c4model.com/diagrams)
+
+[^c4-code]: [C4 model: Code diagram](https://c4model.com/diagrams/code)
+
+[^c4-introduction]: [C4 model: Introduction](https://c4model.com/introduction)
