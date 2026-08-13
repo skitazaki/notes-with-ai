@@ -44,7 +44,7 @@ Data Analytics converts structured and unstructured data into actionable intelli
 
 **Objective:** Reduce uncertainty, accelerate decisions, and improve measurable outcomes.
 
-### Data Sharing
+### [Data Sharing](/docs/data/sharing/)
 
 Data Sharing enables controlled distribution and monetization of data assets across organizational and ecosystem boundaries.
 
