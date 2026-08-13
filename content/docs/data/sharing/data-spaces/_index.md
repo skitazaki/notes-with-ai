@@ -10,6 +10,8 @@ A data space is a federated environment in which independent participants share 
 
 “Data space” names a family of organizational and architectural approaches, not one universal protocol. Implementations differ by industry, jurisdiction, governance, technical stack, and the degree of control retained by each participant.
 
+![Data Spaces: independent participants connected through shared trust and services for identity, catalogs, policy, and semantics](data-spaces.webp)
+
 ## Why a Data Space Is Different
 
 A bilateral share connects a producer and consumer. A marketplace coordinates offers and entitlements. A data space goes further by establishing reusable participation rules and services for many parties that may act as producers, consumers, intermediaries, or operators over time.

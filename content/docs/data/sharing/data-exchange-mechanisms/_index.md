@@ -10,6 +10,8 @@ Data exchange mechanisms are the technical means by which a sharing relationship
 
 A mechanism can move a copy, expose live state, deliver changes, or execute a request near the data. The right choice depends on freshness, scale, sensitivity, interoperability, cost, revocation, and the degree of runtime dependency that participants can accept.
 
+![Data Exchange Mechanisms: a governed data product exposed through files, APIs, streams, live sharing, and federation, supported by identity, policy, metadata, and evidence](data-exchange-mechanisms.webp)
+
 ## Exchange Is Not the Whole Share
 
 An exchange mechanism belongs primarily to the data plane. A governed share also needs a control plane for discovery, identity, entitlement, policy, contracts, lineage, and usage evidence.

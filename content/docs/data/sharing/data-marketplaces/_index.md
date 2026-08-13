@@ -10,6 +10,8 @@ A data marketplace connects producers and consumers around shareable data produc
 
 The marketplace is therefore not the data plane itself. It is a product, governance, and transaction layer that can provision files, APIs, streams, live shares, clean-room access, or other [exchange mechanisms](/docs/data/sharing/data-exchange-mechanisms/).
 
+![Data Marketplaces: governed data products connecting producers and consumers through discovery, approval, access fulfillment, and usage measurement](data-marketplaces.webp)
+
 ## From Catalog to Marketplace
 
 A catalog answers questions such as what data exists, what it means, who owns it, and where it can be accessed. A marketplace extends this surface into action.

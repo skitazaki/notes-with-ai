@@ -10,6 +10,8 @@ A data clean room is a controlled architecture and governance pattern for derivi
 
 The term describes a collaboration boundary, not one product or privacy-enhancing technology. A credible clean room states its participants, purposes, threat model, allowed computations, output controls, evidence, and responsibility boundaries.
 
+![Data Clean Rooms: two participants provide protected data to controlled computation governed by policy, privacy, and evidence, with only approved results leaving](data-clean-rooms.webp)
+
 ## Why Clean Rooms Exist
 
 Organizations may need to answer a joint question while being unable or unwilling to pool raw data conventionally. Examples include audience overlap, campaign measurement, fraud analysis, healthcare research, supply-chain coordination, and model evaluation.

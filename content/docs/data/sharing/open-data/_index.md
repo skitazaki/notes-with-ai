@@ -10,6 +10,8 @@ Open data is data that anyone is free to access, use, modify, and share, subject
 
 Open data is not merely data that can be viewed without payment. Durable openness depends on legal permission, practical accessibility, machine-readable formats, adequate documentation, and governance that protects rights and legitimate restrictions.
 
+![Open Data: a governed flow from review and licensing through publication and discovery to reuse and impact, supported by metadata, quality, maintenance, and safety](open-data.webp)
+
 ## What Makes Data Open
 
 The [Open Definition 2.1](https://opendefinition.org/od/2.1/en/) describes open knowledge as material anyone may access, use, modify, and share. This requires more than a public URL.
