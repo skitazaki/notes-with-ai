@@ -9,7 +9,7 @@ Software engineering is the discipline of designing, building, delivering, opera
 
 This hub presents several ways to navigate that discipline. The domains below describe its major bodies of knowledge; the lifecycle follows work from framing requirements to evolving a production system; and cross-cutting concerns show qualities that influence every stage. These views overlap by design. A topic has one canonical home in the documentation tree but may be approached from several conceptual paths.
 
-![Software engineering landscape organized into building the system, proving and delivering it, and running and evolving it, with security, lifecycle, cross-cutting concerns, and AI-assisted engineering spanning the field](software-engineering-landscape.webp)
+![Software engineering landscape organized into building the system, proving and delivering it, and running and evolving it, with security, lifecycle, cross-cutting concerns, and AI-assisted engineering spanning the field](software-engineering-landscape.webp "Software Engineering landscape")
 
 The three columns group the field by its central work: shaping the system, proving quality and delivering change, and running and evolving software in production. They are not isolated phases. Security spans every activity; the lifecycle supplies a recurring flow of feedback; cross-cutting concerns such as reliability, maintainability, and cost influence decisions throughout; and AI-assisted and agentic engineering changes both how the work is performed and what kinds of systems must be engineered.
 
