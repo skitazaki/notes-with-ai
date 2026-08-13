@@ -8,6 +8,8 @@ prev: "/docs/swe/reliability-operations"
 
 AI can support software-engineering work by helping people understand repositories, draft and transform code, create tests, review changes, investigate failures, and automate bounded workflows. Its value comes from improving feedback and reducing mechanical effort—not from removing engineering judgment or accountability.
 
+![AI as a Software-Engineering Tool: human intent enters a bounded agent workspace with context, tools, and a sandbox before tests and review produce a validated change under human accountability](ai-as-tool-overview.webp "AI as a Software-Engineering Tool")
+
 ## Scope and distinction
 
 This topic concerns **AI as a tool used during software engineering**. It is distinct from software engineering for systems whose product behavior depends on models or autonomous agents. The latter belongs primarily in [AI Engineering](/docs/ai/ai-engineering/), where evaluation, model behavior, data, guardrails, and AI operations are properties of the delivered system.

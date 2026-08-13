@@ -8,6 +8,8 @@ next: "/docs/swe/delivery-devops"
 
 Testing and quality engineering create evidence about whether software is fit for its intended use. They do not prove that a system is perfect. They reduce uncertainty by checking behavior, contracts, system qualities, and important failure modes at useful points in the engineering lifecycle.
 
+![Testing and Quality Engineering: a stack of unit tests, integration and contract tests, end-to-end tests, and production monitoring provides complementary forms of feedback](testing-quality-overview.webp "Testing & Quality Engineering")
+
 ## Quality as a system property
 
 Quality is broader than functional correctness. A system may return the right result and still be too slow, insecure, inaccessible, difficult to operate, or unsafe to change. Quality engineering makes these expectations explicit and builds feedback mechanisms that help teams act on them.

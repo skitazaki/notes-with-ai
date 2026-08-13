@@ -8,6 +8,8 @@ next: "/docs/swe/testing-quality-engineering"
 
 Software development turns intent and design into executable behavior that people can understand, verify, and change. Programming is central to that work, but development also includes the practices that keep code coherent as requirements, dependencies, teams, and production environments evolve.
 
+![Software Development: intent and design move through code, review, and integration to produce maintainable change, supported by dependencies, tooling, and feedback](software-development-overview.webp "Software Development")
+
 ## Definition and scope
 
 Software development is the disciplined construction and evolution of software through code, configuration, tests, review, and supporting tools. It begins once a problem is sufficiently framed to make implementation choices, but it does not end when code compiles. A change remains development work until its behavior is understandable, its dependencies are controlled, and it can participate safely in the wider system lifecycle.

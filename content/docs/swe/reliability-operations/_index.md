@@ -8,6 +8,8 @@ next: "/docs/swe/ai-as-software-engineering-tool"
 
 Reliability and operations connect software design with the conditions a system encounters in the real world. They make behavior visible, define acceptable service, prepare for failure, and turn production evidence into better engineering decisions.
 
+![Reliability and Operations: dependable service emerges from a recurring loop of setting objectives, observing behavior, responding and recovering, and learning and improving](reliability-operations-overview.webp "Reliability & Operations")
+
 ## Reliability is a managed outcome
 
 Reliability is the degree to which a system provides the service people depend on under stated conditions. It is not identical to uptime: correctness, latency, durability, freshness, and recoverability may all matter. A system can be technically available while failing its users.

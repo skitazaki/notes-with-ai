@@ -8,6 +8,8 @@ next: "/docs/swe/reliability-operations"
 
 Delivery connects a source change to a controlled outcome in a running environment. DevOps connects the people, practices, and platform capabilities needed to make that path fast, repeatable, observable, and accountable.
 
+![Delivery and DevOps: a traceable path carries a change through build, artifact creation, deployment, and release, while production feedback returns to the next change](delivery-devops-overview.webp "Delivery & DevOps")
+
 ## From change to production
 
 A delivery system transforms source code and configuration into versioned artifacts, evaluates them, promotes them through environments, and releases behavior to users. Each transformation should preserve identity and evidence: teams need to know what changed, how it was built, which checks ran, where it was deployed, and how to recover.
