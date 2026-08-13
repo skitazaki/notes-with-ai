@@ -2,6 +2,7 @@
 date: "2025-12-04T22:28:46+09:00"
 title: "Software Engineering"
 weight: 2
+next: "/docs/swe/software-development"
 ---
 
 Software engineering is the discipline of designing, building, delivering, operating, and evolving software systems under real-world constraints. It extends beyond programming: engineers must continually balance correctness, maintainability, reliability, security, performance, delivery speed, developer productivity, organizational complexity, and cost.
@@ -32,6 +33,8 @@ This domain manages structural complexity. It establishes boundaries, responsibi
 
 Development turns intent and design into maintainable executable behavior. It covers programming paradigms, languages and runtimes, libraries and frameworks, dependency management, version control, code review, refactoring, code quality, and developer tooling. The central problem is not merely producing code, but making change understandable, safe, and economical over time.
 
+[Explore Software Development →](software-development/)
+
 **Foundations:** version control, readable code, dependency management, and code review.
 
 **Deeper topics:** runtime behavior, refactoring strategies, framework trade-offs, and large-scale code organization.
@@ -39,6 +42,8 @@ Development turns intent and design into maintainable executable behavior. It co
 ### Testing & Quality Engineering
 
 Quality engineering creates fast, credible feedback about whether software satisfies its intended behavior and important system qualities. Unit, integration, contract, end-to-end, property-based, performance, and security tests provide different evidence; static analysis and automation shorten the loop further. Testing is therefore part of design and development, not a gate applied only before release.
+
+[Explore Testing & Quality Engineering →](testing-quality-engineering/)
 
 **Foundations:** test strategy, unit and integration testing, and static analysis.
 
@@ -49,6 +54,7 @@ Quality engineering creates fast, credible feedback about whether software satis
 Delivery connects a source change to a controlled production outcome. Build systems, CI/CD, artifact management, release engineering, deployment strategies, infrastructure as code, and GitOps make that path repeatable and observable. Platform engineering and developer experience reduce the cognitive and operational load placed on individual product teams.
 
 {{< cards >}}
+{{< card link="delivery-devops/" title="Delivery & DevOps" icon="refresh" subtitle="The path from source change to a controlled production outcome" >}}
 {{< card link="idp/" title="Internal Developer Portal" icon="server" subtitle="How portals support platform engineering and developer self-service" >}}
 {{< /cards >}}
 
@@ -59,6 +65,7 @@ Delivery connects a source change to a controlled production outcome. Build syst
 Operations tests software against reality. Observability, logging, metrics, tracing, service-level objectives, incident management, resilience, capacity planning, and performance engineering help teams understand and control production behavior. Site reliability engineering connects these mechanisms to explicit reliability targets and an operating model for balancing change with stability.
 
 {{< cards >}}
+{{< card link="reliability-operations/" title="Reliability & Operations" icon="status-online" subtitle="Objectives, observability, resilience, and production learning" >}}
 {{< card link="12factor/" title="Twelve-Factor App" icon="cube" subtitle="Principles for portable, observable, and operationally manageable services" >}}
 {{< /cards >}}
 
@@ -88,6 +95,8 @@ Two related concerns should remain distinct:
 2. **Software engineering for AI systems** applies architecture, data, evaluation, operations, security, and governance to applications whose behavior includes models or autonomous agents.
 
 Harness engineering sits at their intersection: it designs the context, tools, constraints, feedback, and evaluation environment in which coding agents work reliably. For model foundations, AI engineering, infrastructure, context engineering, and agent protocols, continue through the [Artificial Intelligence hub](/docs/ai/).
+
+[Explore AI as a Software-Engineering Tool →](ai-as-software-engineering-tool/)
 
 ## Explore by lifecycle
 
