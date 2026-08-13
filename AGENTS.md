@@ -216,6 +216,20 @@ Every prompt brief should push the writer toward these qualities:
 
 When the topic is broad, narrow the task with a bounded scope rather than leaving the writer to improvise.
 
+## Image Requirements
+
+When adding an image to a content page:
+
+- set a concise, descriptive image title so the image has a useful visible label and accessible context
+- write meaningful alternative text that communicates the image's purpose or key information
+- localize both the title and alternative text for translated pages
+
+When creating or revising an image-generation prompt:
+
+- specify the exact title that must appear in the generated image
+- specify the required output dimensions or aspect ratio explicitly
+- keep titles, dimensions, layout, and terminology consistent across localized variants unless the brief requires a deliberate difference
+
 ## File Placement Rules
 
 Place prompts in the directory that mirrors the eventual content location as closely as practical.
