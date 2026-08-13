@@ -238,6 +238,18 @@ Data Sharing is a boundary capability supported by the rest of the Data knowledg
 
 Together, these capabilities explain why Data Sharing cannot be reduced to export functionality. The exchange mechanism is only the middle of a producer-consumer relationship that begins with a governed product and continues through consumption, measurement, change, and eventual withdrawal.
 
+## Topic Pages
+
+Use these topic pages to move from the landscape into a specific sharing boundary or operating model.
+
+{{< cards >}}
+{{< card link="data-exchange-mechanisms/" title="Data Exchange Mechanisms" icon="arrow-right" subtitle="How files, APIs, streams, replication, live sharing, and federation move or expose data" >}}
+{{< card link="data-marketplaces/" title="Data Marketplaces" icon="collection" subtitle="Discovery, entitlement, fulfillment, measurement, and transactions around data products" >}}
+{{< card link="data-clean-rooms/" title="Data Clean Rooms" icon="lock-closed" subtitle="Controlled collaboration on sensitive data without unrestricted raw-data exposure" >}}
+{{< card link="data-spaces/" title="Data Spaces" icon="globe-alt" subtitle="Federated multi-party ecosystems built on shared rules and interoperable services" >}}
+{{< card link="open-data/" title="Open Data" icon="book-open" subtitle="Publishing data for broad access, use, modification, and redistribution" >}}
+{{< /cards >}}
+
 ## Emerging Directions
 
 Several directions are reshaping the sharing boundary as of 2026, but they are at different levels of maturity.
@@ -252,7 +264,7 @@ Several directions are reshaping the sharing boundary as of 2026, but they are a
 
 **Data products and marketplaces** are converging on a more operational product surface: discovery linked to entitlement, automated fulfillment, usage telemetry, service management, and commercial or non-commercial value measurement. The durable shift is from publishing assets to managing producer-consumer relationships.
 
-Future child pages can examine Data Marketplaces, Data Clean Rooms, Data Spaces, and open data-sharing protocols in greater depth. This hub establishes their shared architecture and boundaries without locking the documentation to today's product landscape.
+The topic pages in this section examine exchange mechanisms, marketplaces, clean rooms, data spaces, and open data in greater depth. This hub preserves their shared architecture and boundaries without locking the documentation to today's product landscape.
 
 ## Further Reading
 
