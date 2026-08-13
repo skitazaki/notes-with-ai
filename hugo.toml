@@ -61,6 +61,8 @@ dateFormat = "January 2, 2006"
 # Display the author name of the last modified date
 displayUpdatedAuthor = false
 
+externalLinkDecoration = true
+
 [params.navbar]
 displayTitle = true
 displayLogo = true
