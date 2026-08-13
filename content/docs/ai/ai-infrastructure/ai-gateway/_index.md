@@ -145,7 +145,7 @@ The revision also adds caching hints and deterministic ordering to list and read
 
 Together, stateless requests, visible routing metadata, cache hints, extensions, and lifecycle rules make MCP easier to operate on ordinary load-balanced, serverless, and HTTP security infrastructure. This strengthens the potential gateway role: standard infrastructure can understand more of an MCP operation without becoming a full MCP endpoint. It does not eliminate version negotiation, authorization design, payload security, or backward compatibility with session-based revisions. See the MCP maintainers' [release overview](https://blog.modelcontextprotocol.io/posts/2026-07-28/) and Cloudflare's [infrastructure-oriented interpretation](https://blog.cloudflare.com/mcp-v2/) for complementary explanations.
 
-## agentgateway as an Architectural Example
+## The agentgateway project as an Architectural Example
 
 [agentgateway](https://agentgateway.dev/) is an open-source implementation of an AI gateway designed for agentic and conventional traffic. Solo.io originally created the project and contributed it to the Linux Foundation. In June 2026 it became a hosted initiative of the [Agentic AI Foundation (AAIF)](https://agentgateway.dev/blog/2026-06-04-agentgateway-joins-aaif/), under the Linux Foundation. That governance history is important: it is an ecosystem project rather than merely a Solo.io product.
 

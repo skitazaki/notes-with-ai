@@ -117,7 +117,7 @@ Multi Round-Trip Requests（MRTR）は、常時開いた双方向ストリーム
 
 リスト結果のキャッシュヒントと決定的順序、認可の強化、拡張機構、Active・Deprecated・Removed のライフサイクルも導入されました。これらにより MCP は、通常の負荷分散、サーバーレス、HTTP セキュリティ基盤で扱いやすくなり、ゲートウェイの役割を強めます。詳細は MCP メンテナーの [リリース概要](https://blog.modelcontextprotocol.io/posts/2026-07-28/) と Cloudflare の [インフラストラクチャ視点の解説](https://blog.cloudflare.com/mcp-v2/) を参照してください。
 
-## agentgateway という実装例
+## 実装例としての agentgateway
 
 [agentgateway](https://agentgateway.dev/) は、エージェント型トラフィックと通常のトラフィックに対応する AI ゲートウェイのオープンソース実装です。Solo.io が開発を開始して Linux Foundation へ提供し、2026年6月に Linux Foundation 傘下の [Agentic AI Foundation（AAIF）](https://agentgateway.dev/blog/2026-06-04-agentgateway-joins-aaif/) のホストプロジェクトになりました。単なる Solo.io 製品ではなく、エコシステムプロジェクトとして運営されています。
 
