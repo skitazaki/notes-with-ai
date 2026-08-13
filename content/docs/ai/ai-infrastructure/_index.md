@@ -49,6 +49,8 @@ Inference is where infrastructure and product requirements meet directly. Teams 
 
 Modern AI applications frequently depend on more than direct model execution. Retrieval systems, caches, model gateways, and orchestration layers determine how context is attached, how requests are routed, and how policy or safety controls are enforced.
 
+The [AI Gateway](ai-gateway/) topic examines this boundary in depth, from model and provider routing to MCP tool connectivity, agent-to-agent traffic, governance, and AI-specific observability.
+
 ## Key Design Tradeoffs
 
 Performance and cost are always linked. Higher throughput or lower latency usually requires more expensive infrastructure choices. Centralized serving can simplify governance and reuse, while distributed serving may better fit domain-specific performance or data locality needs. Managed services reduce platform burden but can limit control or optimization. Internal platforms provide flexibility but raise operational complexity.

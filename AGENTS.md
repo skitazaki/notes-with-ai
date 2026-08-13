@@ -48,6 +48,8 @@ Content is organized into source pages and prompt briefs.
 
 English is the default content language. Japanese is handled as a localized follow-up where appropriate.
 
+When writing Japanese prose, place one half-width space before and after an inline Markdown link. This improves readability at the boundary between Japanese text and linked text. Standalone links, such as a link that occupies an entire list item, do not require surrounding spaces.
+
 ## Documentation Site Structure
 
 Documentation should follow a hub-and-topic model.
