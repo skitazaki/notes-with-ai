@@ -54,6 +54,8 @@ Similarity is not the same as truth, relevance, or identity. A high score says t
 
 Embeddings make information accessible to algorithms that operate on distances, neighborhoods, and boundaries.
 
+![What Embeddings Enable: an embedding vector branches to semantic search, recommendation, clustering, classification, deduplication, entity matching, anomaly detection, multimodal retrieval, agent memory, and RAG.](what-embeddings-enable.webp "What Embeddings Enable")
+
 - **Semantic and multimodal search** use a query vector to find related items even when they do not share exact words or modalities.
 - **Recommendations** identify items or users with related representation patterns.
 - **Clustering and visualization** reveal groups and structure without predefined labels.
