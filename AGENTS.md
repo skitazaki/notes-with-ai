@@ -50,6 +50,17 @@ English is the default content language. Japanese is handled as a localized foll
 
 When writing Japanese prose, place one half-width space before and after an inline Markdown link. This improves readability at the boundary between Japanese text and linked text. Standalone links, such as a link that occupies an entire list item, do not require surrounding spaces.
 
+## Japanese Translation Terminology
+
+Apply these rules whenever creating or revising Japanese content or translation prompts.
+
+- Translate terms according to their role in the sentence, not by mechanical word substitution.
+- Do not automatically translate `upstream` and `downstream` as 「上流」 and 「下流」. Use those words only when they are literal or when an established domain term makes them the clearest choice.
+- For data flows and systems, prefer concrete expressions such as 「データ生成元」, 「取り込み前の処理」, 「前段の処理」, 「後続処理」, or 「データ利用側」 according to what the text actually means.
+- For business processes, prefer 「前工程」 and 「後工程」 when they describe process order.
+- Preserve an English term when no concise Japanese expression is established and translating it would reduce precision. Explain it at first use when necessary.
+- Treat this section as the repository glossary. Add confirmed terminology decisions here so future agent sessions apply them consistently; include context-specific alternatives rather than forcing one translation across every use.
+
 ## Documentation Site Structure
 
 Documentation should follow a hub-and-topic model.

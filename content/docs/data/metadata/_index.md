@@ -17,6 +17,8 @@ As data environments grow, the number of datasets, pipelines, schemas, dashboard
 
 Metadata addresses this challenge by making data assets interpretable and navigable.
 
+This context is a major input to [Data Understanding](../analytics/data-understanding/), where metadata is combined with profiling, relationship analysis, domain knowledge, and suitability assessment before data is used.
+
 It typically covers several dimensions:
 
 - **Technical metadata** – schemas, table names, column types, pipeline runs, storage locations, and execution details
