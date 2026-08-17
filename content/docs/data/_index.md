@@ -34,6 +34,7 @@ Use these pages to move from the overall data landscape into a specific capabili
 {{< cards >}}
 {{< card link="analytics/" title="Data Analytics" icon="chart-bar" subtitle="Turning data into evidence, predictions, decisions, and measurable outcomes" >}}
 {{< card link="sharing/" title="Data Sharing" icon="share" subtitle="Extending governed data value across organizational and ecosystem boundaries" >}}
+{{< card link="engineering/" title="Data Engineering" icon="server" subtitle="Building and operating reliable data flows, pipelines, and platform capabilities" >}}
 {{< card link="management/" title="Data Management" icon="cog" subtitle="Maintaining data quality, accessibility, lifecycle, and operational sustainability" >}}
 {{< card link="metadata/" title="Metadata" icon="tag" subtitle="Enabling discovery, meaning, lineage, interoperability, and automated control" >}}
 {{< card link="privacy/" title="Data Privacy" icon="lock-closed" subtitle="Governing responsible processing and protection of data about people" >}}
@@ -75,7 +76,7 @@ Data Sharing enables controlled distribution and monetization of data assets acr
 The Enablement Layer provides the technical and organizational foundations required to build scalable, reliable, and evolvable data systems.
 It ensures that data can be produced, governed, discovered, and consumed efficiently across domains.
 
-### Data Engineering
+### [Data Engineering](/docs/data/engineering/)
 
 Data Engineering operationalizes data flows and ensures that pipelines are reliable, scalable, and observable.
 
