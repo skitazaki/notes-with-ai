@@ -215,4 +215,4 @@ flowchart LR
 - [W3C Data Catalog Vocabulary (DCAT) Version 3](https://www.w3.org/TR/vocab-dcat-3/) — データセットおよびデータサービスのカタログメタデータと発見可能性のための標準語彙
 - [ISO/IEC 25012:2008](https://www.iso.org/standard/35736.html) — 一般的なデータ品質モデル
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — AI 支援による解釈を統制して利用する際にも関連するリスク管理ガイダンス
-- Further reading: [Cross-industry standard process for data mining](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) — CRISP-DM とその各フェーズに関する補助的な概要
+- 補足: [Cross-industry standard process for data mining](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) — CRISP-DM とその各フェーズに関する補助的な概要
