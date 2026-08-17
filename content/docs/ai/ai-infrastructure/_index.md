@@ -49,6 +49,8 @@ Inference is where infrastructure and product requirements meet directly. Teams 
 
 Modern AI applications frequently depend on more than direct model execution. Retrieval systems, caches, model gateways, and orchestration layers determine how context is attached, how requests are routed, and how policy or safety controls are enforced.
 
+Vector databases are one infrastructure option for storing, indexing, filtering, managing, and serving embeddings at production scale. They support [vector search](../context-engineering/vector-search/), but the terms are not interchangeable: vector search is a retrieval technique, while a vector database operates data and indexes. General-purpose databases and search engines may also provide vector-search capabilities, and RAG does not require a specialized vector database.
+
 The [AI Gateway](ai-gateway/) topic examines this boundary in depth, from model and provider routing to MCP tool connectivity, agent-to-agent traffic, governance, and AI-specific observability.
 
 ## Key Design Tradeoffs

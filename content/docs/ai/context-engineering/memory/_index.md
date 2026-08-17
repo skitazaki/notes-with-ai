@@ -3,7 +3,7 @@ date: "2026-08-10T09:00:00+09:00"
 title: "Memory in AI Systems"
 weight: 1
 prev: "/docs/ai/context-engineering"
-next: "/docs/ai/context-engineering/rag"
+next: "/docs/ai/context-engineering/vector-search"
 ---
 
 Memory in an AI system is information retained beyond one immediate interaction so that later work can use relevant continuity. It is not simply a longer conversation transcript and it is not a guarantee of truth. A remembered fact may be stale, incorrectly inferred, no longer authorized, or irrelevant to the current task.

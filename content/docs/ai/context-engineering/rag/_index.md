@@ -1,8 +1,8 @@
 ---
 date: "2026-08-10T09:00:00+09:00"
 title: "Retrieval-Augmented Generation"
-weight: 2
-prev: "/docs/ai/context-engineering/memory"
+weight: 3
+prev: "/docs/ai/context-engineering/vector-search"
 next: "/docs/ai/context-engineering/tools-and-mcp"
 ---
 
@@ -23,6 +23,21 @@ Models can be useful without live retrieval, but their built-in knowledge may be
 Retrieval does not make an answer correct by itself. It creates an opportunity to ground the answer in evidence. Poorly chosen or untrusted evidence can make a response sound more convincing while making it less reliable.
 
 ## End-to-End Flow
+
+```mermaid
+flowchart TD
+    Source["Source content"] --> Chunking["Segmentation and metadata"]
+    Chunking --> EmbeddingModel["Embedding model"]
+    EmbeddingModel --> Embeddings["Embeddings"]
+    Embeddings --> Index["Vector or search index"]
+    Request["Request"] --> Retrieval["Retrieval"]
+    Index --> Retrieval
+    Retrieval --> Reranking["Optional reranking"]
+    Reranking --> Assembly["Context assembly"]
+    Assembly --> Model["Foundation model"]
+```
+
+This is a representative vector-enabled path, not a requirement that every RAG system follow it. Retrieval may instead or additionally use lexical search, structured queries, metadata, knowledge graphs, or tools.
 
 | Stage                     | Purpose                                      | Representative failure mode                          |
 | ------------------------- | -------------------------------------------- | ---------------------------------------------------- |
@@ -49,7 +64,7 @@ Common failures include missing evidence, weak ranking, stale material, contradi
 
 ## Relationship to Adjacent Topics
 
-RAG is a context-engineering pattern for external evidence. [Memory](../memory/) preserves selected continuity; RAG retrieves task-relevant material from a governed corpus. Embeddings, keyword search, knowledge graphs, and metadata can all support retrieval, but none alone defines RAG. [Tools and MCP](../tools-and-mcp/) may expose retrieval capabilities through controlled interfaces.
+RAG is a context-engineering pattern for external evidence. [Memory](../memory/) preserves selected continuity; RAG retrieves task-relevant material from a governed corpus. [Embeddings](../../foundation-models/embeddings/) can represent source material, and [Vector Search](../vector-search/) can retrieve similar representations. Keyword search, knowledge graphs, metadata, and tools can also support retrieval, and none of these mechanisms alone defines RAG. A vector database may operate vector storage and indexes at scale, but it is infrastructure rather than a requirement for RAG. [Tools and MCP](../tools-and-mcp/) may expose retrieval capabilities through controlled interfaces.
 
 ## Summary
 
