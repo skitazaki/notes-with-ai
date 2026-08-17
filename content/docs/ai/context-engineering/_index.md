@@ -69,7 +69,7 @@ Useful controls include source allowlists, retrieval quality checks, explicit in
 
 ## Relationship to Adjacent Topics
 
-Prompt engineering focuses on how instructions and examples frame a model interaction. Context engineering includes that work but also manages the broader set of runtime information. Retrieval-augmented generation is one technique for supplying external evidence; it is not the whole discipline. Memory and agent systems extend the problem because they introduce longer-lived state, tool outputs, planning artifacts, and changing authorization boundaries.
+Prompt engineering focuses on how instructions and examples frame a model interaction. Context engineering includes that work but also manages the broader set of runtime information. Retrieval-augmented generation is one technique for supplying external evidence; it is not the whole discipline. [Vector Search](vector-search/) is one retrieval mechanism that can find similar [embeddings](../foundation-models/embeddings/) vectors, while semantic and hybrid search may combine vector, lexical, metadata, and other signals. Memory and agent systems extend the problem because they introduce longer-lived state, tool outputs, planning artifacts, and changing authorization boundaries.
 
 [Data for AI](../data-for-ai/) manages the information assets that may become context, including their quality, provenance, governance, and freshness. Context engineering decides how those assets are used in a particular runtime interaction. [AI Engineering](../ai-engineering/) designs the dependable application around that interaction, including interfaces, orchestration, evaluation, and controls. [Responsible AI](../responsible-ai/) supplies cross-cutting requirements for privacy, safety, fairness, and accountability.
 
@@ -79,6 +79,7 @@ Use these pages to examine the context sources and integration boundaries in mor
 
 {{< cards >}}
 {{< card link="memory/" title="Memory in AI Systems" icon="database" subtitle="Retained context, lifecycle controls, and safe continuity across interactions" >}}
+{{< card link="vector-search/" title="Vector Search" icon="document-text" subtitle="Retrieving similar vector representations as one mechanism for selecting relevant context" >}}
 {{< card link="rag/" title="Retrieval-Augmented Generation" icon="document-text" subtitle="Grounding model interactions in selected external evidence" >}}
 {{< card link="tools-and-mcp/" title="Tools and Model Context Protocol" icon="users" subtitle="Controlled integration of external context and actions" >}}
 {{< card link="agents-md/" title="AGENTS.md" icon="document-text" subtitle="Repository-scoped instructions and context for coding agents" >}}

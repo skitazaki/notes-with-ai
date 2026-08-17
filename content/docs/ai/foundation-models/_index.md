@@ -47,7 +47,7 @@ Other modalities matter just as much in domains where perception is central. Vis
 
 ### Embedding Models
 
-Embedding models deserve separate attention because they often support retrieval and ranking rather than direct generation. They turn inputs into semantic vectors that make similarity search, clustering, and grounding workflows practical.
+Embedding models deserve separate attention because they often support representation, retrieval, and ranking rather than direct generation. They turn text, images, code, and other information into learned numerical representations that capture useful semantic or structural relationships. See [Embeddings](embeddings/) for the representation model, comparison methods, applications, and lifecycle concerns.
 
 ## Core Enabling Concepts
 
@@ -70,6 +70,12 @@ As a result, application architecture shifts toward gateways, orchestration, ret
 ## Relationship to Generative AI
 
 Foundation models are the reusable substrate. Generative AI is the broader application pattern built on top of that substrate. A foundation model can power generation, retrieval support, classification, or transformation. Generative AI describes how those capabilities are assembled into interactive or output-producing systems.
+
+## Subtopics
+
+{{< cards >}}
+{{< card link="embeddings/" title="Embeddings" icon="document-text" subtitle="Learned numerical representations of text, images, code, and other information" >}}
+{{< /cards >}}
 
 ## Summary
 
