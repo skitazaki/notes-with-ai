@@ -3,7 +3,7 @@ date: "2026-08-10T09:00:00+09:00"
 title: "AI システムにおけるメモリ"
 weight: 1
 prev: "/docs/ai/context-engineering"
-next: "/docs/ai/context-engineering/rag"
+next: "/docs/ai/context-engineering/vector-search"
 ---
 
 AI システムにおけるメモリとは、後続の作業で有用な継続性を利用できるように、一つの対話を超えて保持される情報です。単に会話履歴を長くすることではなく、正しさを保証するものでもありません。記憶された事実は、古い、誤って推論された、もはや利用を許可されていない、あるいは現在のタスクに無関係である可能性があります。

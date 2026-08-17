@@ -41,7 +41,11 @@ flowchart TD
     Refine --> Results["Relevant results"]
 ```
 
-Query and document vectors must belong to compatible embedding spaces. Some models use the same encoder and representation strategy for both; others are trained with asymmetric query and document roles. Using the correct task prefix, preprocessing, and encoder path is part of retrieval correctness.
+Query and document vectors must belong to compatible embedding spaces. Some models use the same encoder and representation strategy for both; others are trained with asymmetric query and document roles.
+
+Some embedding models are trained with a short label prepended to the input to identify its role or intended task. This is a **task prefix**. For example, a retrieval request may receive a query prefix while indexed passages receive a document prefix, telling the model which side of the retrieval relationship the same text occupies. A model may also define prefixes that distinguish retrieval from classification, clustering, or semantic-similarity tasks.
+
+The required strings and how they are applied are model-specific, and some models require no prefix. Systems must use the model's specified format consistently during both document indexing and query generation. Omitting a required prefix, reversing query and document roles, or mixing formats from different model versions can still produce vectors while degrading the geometry the model learned for retrieval. Prefixes, preprocessing rules, and encoder paths should therefore be versioned with the embedding model and included in retrieval evaluation.
 
 ## Nearest-Neighbor Search
 
