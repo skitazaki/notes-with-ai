@@ -34,6 +34,7 @@ weight: 10
 {{< cards >}}
 {{< card link="analytics/" title="データ分析" icon="chart-bar" subtitle="データを根拠、予測、意思決定、測定可能な成果へ変換する" >}}
 {{< card link="sharing/" title="データ共有" icon="share" subtitle="統制されたデータの価値を組織やエコシステムの境界を越えて広げる" >}}
+{{< card link="engineering/" title="データエンジニアリング" icon="server" subtitle="信頼できるデータフロー、パイプライン、プラットフォーム機能を構築・運用する" >}}
 {{< card link="management/" title="データマネジメント" icon="cog" subtitle="データの品質、アクセス性、ライフサイクル、運用持続性を維持する" >}}
 {{< card link="metadata/" title="メタデータ" icon="tag" subtitle="発見、意味、リネージ、相互運用性、自動制御を可能にする" >}}
 {{< card link="privacy/" title="データプライバシー" icon="lock-closed" subtitle="人に関するデータの責任ある処理と保護を統制する" >}}

@@ -3,6 +3,7 @@ date: "2026-08-17T09:00:00+09:00"
 title: "Data Observability"
 weight: 4
 prev: "/docs/data/engineering/orchestration"
+next: "/docs/data/engineering"
 ---
 
 Data Observability provides the signals and context needed to understand the operational state of data pipelines and data flows. It helps operators answer: **What is happening in the data system, and why?**

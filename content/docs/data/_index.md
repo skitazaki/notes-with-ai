@@ -76,7 +76,7 @@ Data Sharing enables controlled distribution and monetization of data assets acr
 The Enablement Layer provides the technical and organizational foundations required to build scalable, reliable, and evolvable data systems.
 It ensures that data can be produced, governed, discovered, and consumed efficiently across domains.
 
-### [Data Engineering](/docs/data/engineering/)
+### Data Engineering
 
 Data Engineering operationalizes data flows and ensures that pipelines are reliable, scalable, and observable.
 

@@ -26,11 +26,13 @@ This is a conceptual flow, not a required linear architecture. Real systems cont
 ## Core Engineering Capabilities
 
 {{< cards >}}
-{{< card link="ingestion/" title="Data Ingestion" icon="database" subtitle="Moving data reliably from source systems into a data platform" >}}
+{{< card link="ingestion/" title="Data Ingestion" icon="arrow-right" subtitle="Moving data reliably from source systems into a data platform" >}}
 {{< card link="processing/" title="Data Processing" icon="chip" subtitle="Transforming source and intermediate data into useful datasets" >}}
 {{< card link="orchestration/" title="Data Orchestration" icon="share" subtitle="Coordinating workloads, dependencies, state, and failure handling" >}}
 {{< card link="observability/" title="Data Observability" icon="eye" subtitle="Understanding pipeline health, data-flow behavior, and dependencies" >}}
 {{< /cards >}}
+
+Together, these capabilities provide a focused engineering view: move data, process it, coordinate the work, and observe the resulting system so it can operate reliably as conditions change.
 
 ### Data Ingestion
 
@@ -115,7 +117,7 @@ flowchart TB
 
 Data Architecture defines structural choices, system boundaries, architectural patterns, and how components fit together. Data Engineering implements and operates the pipelines and platform capabilities that realize those choices. For example, an architectural decision to use event-driven ingestion leads to engineering work on connectors, event processing, retries, checkpointing, monitoring, and deployment.
 
-Data Architecture remains a sibling perspective. Its dedicated hub is planned but is not linked here until it exists.
+Data Architecture remains a sibling perspective.
 
 ### Data Engineering and Data Management
 
@@ -130,13 +132,3 @@ Engineering systems both produce and consume [Metadata](/docs/data/metadata/): s
 ### Data Engineering and Data Privacy
 
 Engineering pipelines implement requirements established by [Data Privacy](/docs/data/privacy/), including appropriate access controls, minimization, masking or transformation, retention and deletion workflows, and secure transport and storage. Privacy principles, governance, lawful processing, and rights remain in the dedicated privacy documentation.
-
-## Topic Map
-
-- **Move Data:** [Data Ingestion](ingestion/), with future expansion into CDC, event ingestion, and batch ingestion
-- **Process Data:** [Data Processing](processing/), including ETL and ELT, batch processing, and stream processing
-- **Coordinate Work:** [Data Orchestration](orchestration/), including scheduling, dependency management, and backfills
-- **Operate Reliably:** [Data Observability](observability/), reliability, recovery, and pipeline monitoring
-- **Automate Delivery:** testing, CI/CD, Infrastructure as Code, environment promotion, and deployment automation
-
-Together, these capabilities provide a focused engineering view: move data, process it, coordinate the work, and observe the resulting system so it can operate reliably as conditions change.
