@@ -6,7 +6,7 @@ description: Conceptual diagram showing the applications enabled by embeddings.
 
 # Image Generation Prompt — What Embeddings Enable
 
-Create a polished 1672 × 941 pixel (16:9) technical infographic titled **What Embeddings Enable**.
+Create a polished 1672 × 941 pixels (16:9) technical infographic titled **What Embeddings Enable**.
 
 Place a strong but flat rounded block labeled **Embedding Vector** at the center. Arrange ten compact, evenly weighted capability blocks in two balanced columns, connected directly to the center with thin clean lines: **Semantic Search**, **Recommendation**, **Clustering**, **Classification**, **Deduplication**, **Entity Matching**, **Anomaly Detection**, **Multimodal Retrieval**, **Agent Memory**, and **RAG**. Show a hub-and-spoke relationship: one learned numerical representation supports many applications, but the applications do not form a sequential pipeline.
 
