@@ -220,7 +220,7 @@ A disciplined workflow combines automated evidence with metadata, lineage, domai
 
 ## References
 
-- [IBM SPSS Modeler: Data Understanding Overview](https://www.ibm.com/docs/en/spss-modeler/18.6.0?topic=understanding-data-overview) — CRISP-DM's data-understanding phase and its relationship to exploration, quality, and documentation
+- [IBM SPSS Modeler: Data Understanding Overview](https://www.ibm.com/docs/en/spss-modeler/19.0.0?topic=understanding-data-overview) — CRISP-DM's data-understanding phase and its relationship to exploration, quality, and documentation
 - [W3C Data Catalog Vocabulary (DCAT) Version 3](https://www.w3.org/TR/vocab-dcat-3/) — a standard vocabulary for dataset and data-service catalog metadata and discoverability
 - [ISO/IEC 25012:2008](https://www.iso.org/standard/35736.html) — a general data-quality model
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — risk-management guidance relevant to governed use of AI-assisted interpretation
