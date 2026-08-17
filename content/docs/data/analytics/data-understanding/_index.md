@@ -11,6 +11,10 @@ It is an umbrella activity rather than a single technique. Discovery, metadata i
 
 The term appears in data mining and data science methods such as CRISP-DM, but its scope varies across communities. This page uses a broader editorial synthesis that applies before analytics, data engineering, machine learning, and generative AI; it is not presented as a universal industry taxonomy.
 
+![Data Understanding shown as a cohesive set of discovery, structural and semantic understanding, profiling, relationship understanding, provenance and context, quality assessment, and suitability assessment activities](data-understanding-activities.webp "Data Understanding")
+
+This diagram presents Data Understanding as the umbrella concept. The connected activities contribute different evidence and may be performed iteratively rather than in a fixed sequence.
+
 ## Why Data Understanding Matters
 
 Access to a table, file, event stream, log, or API does not imply that it is ready to use. A schema may show that `customer_id` is a string without showing whether it is stable, unique, reused, or absent for guest purchases. A timestamp type does not reveal its timezone or the business event it represents. A statistically clean field can still encode the wrong population for a decision.
@@ -58,19 +62,7 @@ Quality assessment compares data with explicit expectations such as completeness
 
 Suitability goes further by relating those observations to an intended use. It considers population coverage, representativeness, permissible use, uncertainty, and the cost of error. Quality is evidence in that decision; it is not the decision itself.
 
-```mermaid
-flowchart TD
-    A["Raw data"] --> B["Metadata and schema"]
-    B --> C["Profiling and statistics"]
-    C --> D["Relationships and lineage"]
-    D --> E["Semantic and domain context"]
-    E --> F["Quality and suitability"]
-    F --> G["Data understanding"]
-    G --> H["Engineering"]
-    G --> I["Analytics"]
-    G --> J["Machine learning"]
-    G --> K["Generative AI"]
-```
+![Five dimensions of Data Understanding: structural, statistical, semantic, operational, and quality and suitability](data-understanding-dimensions.webp "Dimensions of Data Understanding")
 
 ## Data Understanding and Data Profiling
 
