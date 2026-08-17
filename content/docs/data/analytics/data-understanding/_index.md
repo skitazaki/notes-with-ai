@@ -9,7 +9,7 @@ Data Understanding is the process of building sufficient knowledge about data—
 
 It is an umbrella activity rather than a single technique. Discovery, metadata inspection, profiling, relationship analysis, lineage investigation, quality assessment, and domain interpretation each reveal a different part of the dataset. The result is a reliable mental and computational model of the data: what it is, what it means, how it behaves, and whether it is fit for a particular purpose.
 
-The term appears in data mining and data science methods such as CRISP-DM, but its scope varies across communities. This page uses a broader editorial synthesis that applies before analytics, data engineering, machine learning, and generative AI; it is not presented as a universal industry taxonomy.
+CRISP-DM is a widely used iterative process model for data-mining projects, and data understanding is one of its phases. The term's scope varies across communities, however. This page uses a broader editorial synthesis that applies before analytics, data engineering, machine learning, and generative AI; it is not presented as a universal industry taxonomy.
 
 ![Data Understanding shown as a cohesive set of discovery, structural and semantic understanding, profiling, relationship understanding, provenance and context, quality assessment, and suitability assessment activities](data-understanding-activities.webp "Data Understanding")
 
@@ -212,7 +212,7 @@ A disciplined workflow combines automated evidence with metadata, lineage, domai
 
 ## References
 
-- [IBM SPSS Modeler: Data Understanding Overview](https://www.ibm.com/docs/en/spss-modeler/19.0.0?topic=understanding-data-overview) — CRISP-DM's data-understanding phase and its relationship to exploration, quality, and documentation
 - [W3C Data Catalog Vocabulary (DCAT) Version 3](https://www.w3.org/TR/vocab-dcat-3/) — a standard vocabulary for dataset and data-service catalog metadata and discoverability
 - [ISO/IEC 25012:2008](https://www.iso.org/standard/35736.html) — a general data-quality model
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — risk-management guidance relevant to governed use of AI-assisted interpretation
+- Further reading: [Cross-industry standard process for data mining](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) — a supplementary overview of CRISP-DM and its phases
