@@ -1,7 +1,7 @@
 ---
 date: "2026-05-08T10:00:00+09:00"
 title: "メタデータ"
-weight: 3
+weight: 5
 prev: "/docs/data"
 ---
 
