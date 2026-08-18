@@ -118,22 +118,13 @@ The cross-cutting concerns need enforcement points at several boundaries. [Metad
 
 ## Architecture Landscape
 
-Architecture labels describe different dimensions, so they are often combined rather than selected as mutually exclusive packages.
+Architecture labels describe different dimensions rather than one list of competing solutions:
 
-| Family                                          | Defining idea and useful context                                                                         | Important trade-offs                                                                                          |
-| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Operational / transactional**                 | Maintain current application state with transactional consistency and workload-specific models           | Strong operational behavior can conflict with broad analytical scans and historical modeling                  |
-| **Data warehouse**                              | Integrate curated, structured data in an analytical system for reporting and governed analysis           | Consistency and performance require modeling, ingestion, and controlled change                                |
-| **Data lake**                                   | Retain large volumes and varied formats in scalable storage for flexible processing                      | Flexibility without metadata, quality, and table management can produce opaque or unreliable assets           |
-| **Lakehouse**                                   | Add transactional tables, governance, and analytical engine access over lake-style object storage        | Open storage can broaden choice, while catalogs, engines, and operational semantics still create dependencies |
-| **Lambda**                                      | Run batch and speed paths, then reconcile their serving results to combine completeness with low latency | Duplicated logic and operational paths increase complexity                                                    |
-| **Kappa / streaming-oriented**                  | Treat an ordered event log and stream processing as the primary path; reprocess by replay                | Replay, state, ordering, retention, and source completeness become central constraints                        |
-| **Event-driven**                                | Publish meaningful events so loosely coupled consumers can react independently                           | Event contracts, delivery semantics, observability, and unintended coupling need active design                |
-| [**Data Mesh**](/docs/data/metadata/data-mesh/) | Combine domain ownership, data products, self-service platform capabilities, and federated governance    | Distribution can scale context and ownership, but raises coordination and interoperability costs              |
-| **Data Fabric**                                 | Use integrated metadata and automation to connect and govern a heterogeneous estate                      | The term is broad and vendor-influenced; concrete capabilities and boundaries matter more than the label      |
-| **Federated / distributed**                     | Keep authority or data across systems and organizations while coordinating access and meaning            | Preserves autonomy and locality but makes identity, semantics, policy, and failure handling harder            |
+- **Workload and storage:** operational systems, warehouses, lakes, and lakehouses
+- **Movement and processing:** batch, Lambda, Kappa, streaming, and event-driven approaches
+- **Ownership and coordination:** centralized, federated, distributed, [Data Mesh](/docs/data/metadata/data-mesh/), and Data Fabric approaches
 
-An organization might use domain ownership inspired by Data Mesh, store analytical tables in a lakehouse, integrate applications through events, and publish metrics through a semantic layer. [Data Architecture Patterns](patterns/) provides a more precise vocabulary for recognizing such combinations.
+These dimensions are commonly combined. An organization might use domain ownership inspired by Data Mesh, store analytical tables in a lakehouse, and integrate applications through events. See [Data Architecture Patterns](patterns/) for definitions, useful contexts, and trade-offs across the major patterns.
 
 ## Navigate Through Multiple Lenses
 
