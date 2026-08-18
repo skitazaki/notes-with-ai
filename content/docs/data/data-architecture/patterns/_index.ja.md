@@ -2,6 +2,8 @@
 date: "2026-08-17T00:00:00+09:00"
 title: "データアーキテクチャパターン"
 weight: 2
+prev: "/docs/data/data-architecture/principles"
+next: "/docs/data/data-architecture/integration-and-flow"
 ---
 
 データアーキテクチャパターンは、責務、保存、移動、オーナーシップの繰り返し現れる構成です。完成済みの設計ではなく、構造を認識するための道具として使います。実際の環境では複数パターンを組み合わせます。また、同じ名称がストレージ技術、処理モデル、統合スタイル、組織モデルのいずれかを表す場合があります。

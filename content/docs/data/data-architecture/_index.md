@@ -2,6 +2,8 @@
 date: "2026-08-17T00:00:00+09:00"
 title: "Data Architecture"
 weight: 2
+prev: "/docs/data/analytics"
+next: "/docs/data/data-architecture/principles"
 ---
 
 Organizations rarely operate one database or one pipeline. Data is created and consumed across operational applications, analytical systems, SaaS services, event streams, AI systems, external providers, and organizational boundaries. Each connection introduces choices about persistence, movement, semantics, control, and responsibility.
@@ -126,7 +128,7 @@ Architecture labels describe different dimensions rather than one list of compet
 
 These dimensions are commonly combined. An organization might use domain ownership inspired by Data Mesh, store analytical tables in a lakehouse, and integrate applications through events. See [Data Architecture Patterns](patterns/) for definitions, useful contexts, and trade-offs across the major patterns.
 
-## Navigate Through Multiple Lenses
+### Navigate Through Multiple Lenses
 
 The same topic appears under several lenses because the architecture is multidimensional.
 
@@ -138,7 +140,7 @@ The same topic appears under several lenses because the architecture is multidim
 | **Workload**              | [Analytics](/docs/data/analytics/); operational applications; real-time decisions; [Machine Learning](/docs/ai/machine-learning/); [Data for AI](/docs/ai/data-for-ai/)                                          |
 | **Organizational model**  | Centralized, federated, domain-oriented, and platform-oriented ownership; [Data Teams](/docs/data/teams/)                                                                                                        |
 
-## Choose by Problem
+### Choose by Problem
 
 | If you are trying to...           | Start with...                                                                                                                                                        |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -158,16 +160,6 @@ AI expands the set of data representations and consumers an architecture must su
 AI agents are data consumers with the added ability to select tools and initiate actions. Their access should preserve enterprise identity, authorization, lineage, and purpose boundaries rather than create an ungoverned copy of enterprise data. Vector search is one retrieval mechanism, not a substitute for source quality, metadata, ranking, or authorization.
 
 The architectural task is to connect trustworthy sources to bounded AI interfaces while retaining evidence about origin, transformation, retrieval, and use. Detailed model and retrieval design belongs in [Data for AI](/docs/ai/data-for-ai/), [AI Infrastructure](/docs/ai/ai-infrastructure/), [Context Engineering](/docs/ai/context-engineering/), and [Retrieval-Augmented Generation](/docs/ai/context-engineering/rag/).
-
-## Related Areas
-
-- [Data](/docs/data/) — the overall lifecycle, enablement, value, and control landscape
-- [Data Management](/docs/data/management/) — quality, accessibility, lifecycle, and sustainability
-- [Metadata](/docs/data/metadata/) — discovery, semantics, lineage, contracts, and automation
-- [Data Sharing](/docs/data/sharing/) — governed producer-consumer relationships across boundaries
-- [Data Products](/docs/data/metadata/data-products/) — consumable interfaces with ownership and service expectations
-- [Software Architecture](/docs/arch/) — concerns, views, layers, flows, ownership boundaries, and decision frameworks
-- [Data for AI](/docs/ai/data-for-ai/) — trustworthy data and retrieval context for AI systems
 
 ## Where to Go Next
 
