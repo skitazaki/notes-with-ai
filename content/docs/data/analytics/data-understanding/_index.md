@@ -9,11 +9,9 @@ Data Understanding is the process of building sufficient knowledge about data—
 
 It is an umbrella activity rather than a single technique. Discovery, metadata inspection, profiling, relationship analysis, lineage investigation, quality assessment, and domain interpretation each reveal a different part of the dataset. The result is a reliable mental and computational model of the data: what it is, what it means, how it behaves, and whether it is fit for a particular purpose.
 
-CRISP-DM is a widely used iterative process model for data-mining projects, and data understanding is one of its phases. The term's scope varies across communities, however. This page uses a broader editorial synthesis that applies before analytics, data engineering, machine learning, and generative AI; it is not presented as a universal industry taxonomy.
+![Unfamiliar data is investigated through complementary activities to build a reliable model that supports engineering, analytics, machine learning, and AI](data-understanding-overview.webp "Data Understanding overview")
 
-![Data Understanding shown as a cohesive set of discovery, structural and semantic understanding, profiling, relationship understanding, provenance and context, quality assessment, and suitability assessment activities](data-understanding-activities.webp "Data Understanding")
-
-This diagram presents Data Understanding as the umbrella concept. The connected activities contribute different evidence and may be performed iteratively rather than in a fixed sequence.
+The diagram summarizes Data Understanding as an investigation: practitioners move iteratively among complementary activities, accumulating evidence until they have a reliable model of the data. Engineering, analytics, machine learning, and AI then use that model as a foundation; they are downstream applications rather than stages of Data Understanding itself.
 
 ## Why Data Understanding Matters
 
