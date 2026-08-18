@@ -1,7 +1,7 @@
 ---
 date: "2026-02-18T20:00:00+09:00"
 title: "Data Management"
-weight: 3
+weight: 4
 prev: "/docs/data/sharing"
 ---
 
