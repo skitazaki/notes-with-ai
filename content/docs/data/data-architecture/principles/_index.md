@@ -77,5 +77,3 @@ A practical decision record includes the context, options, decision, consequence
 - Are security, privacy, quality, and governance attached to enforceable boundaries?
 - Can the responsible team control the outcome?
 - Which trade-offs were accepted, and what would cause the decision to change?
-
-Return to the [Data Architecture hub](../) or compare recurring structures in [Data Architecture Patterns](../patterns/).

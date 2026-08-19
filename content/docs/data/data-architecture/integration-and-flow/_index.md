@@ -91,4 +91,4 @@ Keeping those abstractions separate prevents downstream consumers from depending
 - Test failure at ownership boundaries, including a slow consumer, unavailable source, poison message, expired credential, and incompatible change.
 - Reconcile derived state against an authoritative source where the risk warrants it.
 
-Implementation belongs to data engineering, but the allowed failure modes and responsibilities belong to architecture. [Data Exchange Mechanisms](/docs/data/sharing/data-exchange-mechanisms/) continues into governed sharing boundaries; [Data Architecture Principles](../principles/) provides broader design criteria.
+Implementation belongs to data engineering, but the allowed failure modes and responsibilities belong to architecture.

@@ -109,5 +109,3 @@ Ask concrete questions:
 - Can AI consumers receive current, authorized, attributable context?
 
 “Modern” should describe architectural capabilities and constraints: evolvability, interoperability, automation, timely data, governed self-service, observable reliability, and support for diverse consumers. A new product is modern only when it improves those properties for the organization's actual problems.
-
-Return to the [Data Architecture hub](../), use [Data Architecture Patterns](../patterns/) to classify structural choices, or apply [Data Architecture Principles](../principles/) to a modernization decision.

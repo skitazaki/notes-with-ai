@@ -93,4 +93,4 @@ Separate these questions:
 | Federated              | Autonomy, locality, and residency           | Cross-boundary semantics, policy, and failure handling |
 | Domain-oriented        | Contextual ownership and scaling teams      | Interoperability and organizational readiness          |
 
-Select patterns by constraints and quality attributes, then make their combination explicit. Continue with [Data Integration and Flow](../integration-and-flow/) for movement mechanisms, or return to the [Data Architecture hub](../).
+Select patterns by constraints and quality attributes, then make their combination explicit.
