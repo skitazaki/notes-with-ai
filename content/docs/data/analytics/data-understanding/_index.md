@@ -9,11 +9,9 @@ Data Understanding is the process of building sufficient knowledge about data—
 
 It is an umbrella activity rather than a single technique. Discovery, metadata inspection, profiling, relationship analysis, lineage investigation, quality assessment, and domain interpretation each reveal a different part of the dataset. The result is a reliable mental and computational model of the data: what it is, what it means, how it behaves, and whether it is fit for a particular purpose.
 
-CRISP-DM is a widely used iterative process model for data-mining projects, and data understanding is one of its phases. The term's scope varies across communities, however. This page uses a broader editorial synthesis that applies before analytics, data engineering, machine learning, and generative AI; it is not presented as a universal industry taxonomy.
+![Unfamiliar data is investigated through complementary activities to build a reliable model that supports engineering, analytics, machine learning, and AI](data-understanding-overview.webp "Data Understanding overview")
 
-![Data Understanding shown as a cohesive set of discovery, structural and semantic understanding, profiling, relationship understanding, provenance and context, quality assessment, and suitability assessment activities](data-understanding-activities.webp "Data Understanding")
-
-This diagram presents Data Understanding as the umbrella concept. The connected activities contribute different evidence and may be performed iteratively rather than in a fixed sequence.
+The diagram summarizes Data Understanding as an investigation: practitioners move iteratively among complementary activities, accumulating evidence until they have a reliable model of the data. Engineering, analytics, machine learning, and AI then use that model as a foundation; they are downstream applications rather than stages of Data Understanding itself.
 
 ## Why Data Understanding Matters
 
@@ -31,6 +29,8 @@ Suitability is always purpose-dependent. A delayed daily snapshot may be adequat
 ## Dimensions of Data Understanding
 
 The following dimensions overlap and reinforce one another. They are a working model for investigation, not a formal standard.
+
+![Five dimensions of Data Understanding: structural, statistical, semantic, operational, and quality and suitability](data-understanding-dimensions.webp "Dimensions of Data Understanding")
 
 ### Structural Understanding
 
@@ -61,8 +61,6 @@ Operational context is essential when apparent anomalies are consequences of pip
 Quality assessment compares data with explicit expectations such as completeness, validity, consistency, uniqueness, accuracy where measurable, and timeliness. [Data Quality Dimensions](../../management/data-quality-dimensions/) provides a more complete quality model.
 
 Suitability goes further by relating those observations to an intended use. It considers population coverage, representativeness, permissible use, uncertainty, and the cost of error. Quality is evidence in that decision; it is not the decision itself.
-
-![Five dimensions of Data Understanding: structural, statistical, semantic, operational, and quality and suitability](data-understanding-dimensions.webp "Dimensions of Data Understanding")
 
 ## Data Understanding and Data Profiling
 
@@ -100,7 +98,11 @@ Data Understanding is iterative. Later discoveries often require returning to ea
 
 The workflow applies to relational tables, CSV and Parquet files, JSON documents, events, logs, and APIs. The exact inspection methods change, but the need to connect representation, behavior, context, and intended use remains.
 
-## Metadata and Context
+## Enablers, Automation, and Ecosystem
+
+Data Understanding depends on more than manual inspection. Metadata supplies context, automation makes evidence gathering repeatable, generative AI supports interpretation, and a broader tool ecosystem connects these capabilities. Each can accelerate investigation, but none replaces validation against observed data and domain knowledge.
+
+### Metadata and Context
 
 Metadata can reduce the need to inspect raw records and can direct attention to the most relevant evidence:
 
@@ -110,9 +112,9 @@ Metadata can reduce the need to inspect raw records and can direct attention to 
 - **Lineage** connects sources, transformations, outputs, and dependencies.
 - **Inferred metadata** adds candidate types, classifications, relationships, descriptions, and similarity signals derived by tools.
 
-A [data catalog](../../metadata/#data-discovery) can make these signals searchable and a shared [metadata](../../metadata/) layer can connect them. Metadata is still evidence rather than unquestionable truth. Descriptions can be stale, lineage can omit manual steps, declared constraints may not be enforced, and automatically inferred labels may be wrong. Good understanding compares metadata with observed data and domain testimony.
+A data catalog can make these signals searchable and a shared [metadata](../../metadata/) layer can connect them. Metadata is still evidence rather than unquestionable truth. Descriptions can be stale, lineage can omit manual steps, declared constraints may not be enforced, and automatically inferred labels may be wrong. Good understanding compares metadata with observed data and domain testimony.
 
-## Automated Data Understanding
+### Automated Data Understanding
 
 Automation makes broad, repeatable inspection practical. Deterministic and statistical techniques can enumerate schemas, infer primitive types, compute profiles, detect patterns and anomalies, test candidate foreign keys, compare distributions, identify entities, and measure similarity between datasets. Quality frameworks can turn known expectations into repeatable checks, while metadata platforms can enrich catalog records with lineage and operational signals.
 
@@ -120,7 +122,7 @@ These techniques are strongest when the target property is measurable and the me
 
 AI-assisted interpretation addresses less structured work: generating candidate descriptions, mapping similar concepts, summarizing profiles, and translating technical structure into domain language. Its outputs are probabilistic hypotheses. A plausible description is not an authoritative definition, and semantic similarity is not proof that two fields are interchangeable.
 
-## Generative AI for Data Understanding
+### Generative AI for Data Understanding
 
 Large language models and data agents can synthesize evidence that would otherwise remain scattered across schemas, profiles, catalogs, tickets, documentation, and query history. They can:
 
@@ -149,6 +151,12 @@ flowchart LR
 The model should generally reason over metadata, statistics, carefully selected samples, lineage, and retrieved domain context rather than blindly ingesting an entire dataset. This improves traceability and reduces context-window and cost pressure. It can also reduce data exposure, although metadata and samples may themselves contain sensitive information.
 
 The architecture needs access controls, data minimization, approved model boundaries, auditability, and clear retention rules. Prompt injection can also arise when descriptions, documents, or data values are placed into an agent's context. Retrieved content must remain evidence to evaluate, not trusted instructions. Human review should be proportional to sensitivity and impact, and generated metadata should preserve provenance and confidence rather than silently replacing authoritative definitions.
+
+### Tools and Ecosystem
+
+No single tool produces Data Understanding. SQL engines, notebooks, and dataframe tools support inspection and exploration. Profiling libraries and quality frameworks calculate evidence and encode expectations. Catalogs and metadata platforms expose discovery, ownership, lineage, and definitions. Observability platforms add runtime behavior. Semantic layers stabilize shared analytical meaning. AI-assisted tools synthesize these signals and help formulate the next questions.
+
+Tool choice should follow the data scale, sensitivity, interfaces, and intended decision. The durable capability is the workflow and its evidence trail, not a particular product.
 
 ## Human and Domain Knowledge
 
@@ -197,12 +205,6 @@ Before indexing or retrieval, teams need to understand source authority, semanti
 ### Data Governance
 
 Governance connects technical observations with ownership, definitions, lineage, classifications, policies, and accountability. Understanding surfaces the evidence and ambiguity that governance must resolve; governance makes the resulting decisions durable and enforceable.
-
-## Tools and Ecosystem
-
-No single tool produces Data Understanding. SQL engines, notebooks, and dataframe tools support inspection and exploration. Profiling libraries and quality frameworks calculate evidence and encode expectations. Catalogs and metadata platforms expose discovery, ownership, lineage, and definitions. Observability platforms add runtime behavior. Semantic layers stabilize shared analytical meaning. AI-assisted tools synthesize these signals and help formulate the next questions.
-
-Tool choice should follow the data scale, sensitivity, interfaces, and intended decision. The durable capability is the workflow and its evidence trail, not a particular product.
 
 ## Summary
 
