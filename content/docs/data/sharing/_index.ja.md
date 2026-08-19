@@ -1,8 +1,8 @@
 ---
 date: "2026-08-13T00:00:00+09:00"
 title: "データ共有"
-weight: 2
-prev: "/docs/data/analytics"
+weight: 3
+prev: "/docs/data/data-architecture/modern-data-architecture"
 next: "/docs/data/management"
 ---
 

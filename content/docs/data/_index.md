@@ -33,6 +33,7 @@ Use these pages to move from the overall data landscape into a specific capabili
 
 {{< cards >}}
 {{< card link="analytics/" title="Data Analytics" icon="chart-bar" subtitle="Turning data into evidence, predictions, decisions, and measurable outcomes" >}}
+{{< card link="data-architecture/" title="Data Architecture" icon="template" subtitle="Structural decisions about data systems, flows, boundaries, and evolution" >}}
 {{< card link="sharing/" title="Data Sharing" icon="share" subtitle="Extending governed data value across organizational and ecosystem boundaries" >}}
 {{< card link="engineering/" title="Data Engineering" icon="server" subtitle="Building and operating reliable data flows, pipelines, and platform capabilities" >}}
 {{< card link="management/" title="Data Management" icon="cog" subtitle="Maintaining data quality, accessibility, lifecycle, and operational sustainability" >}}
