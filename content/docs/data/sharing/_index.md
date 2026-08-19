@@ -1,7 +1,7 @@
 ---
 date: "2026-08-13T00:00:00+09:00"
 title: "Data Sharing"
-weight: 2
+weight: 3
 prev: "/docs/data/data-architecture/modern-data-architecture"
 next: "/docs/data/management"
 ---
