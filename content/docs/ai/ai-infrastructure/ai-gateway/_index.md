@@ -16,9 +16,9 @@ Model endpoints differ in authentication, request schemas, streaming behavior, t
 
 Agents make the traffic graph larger. They discover and invoke tools, delegate work to other agents, and may run longer than a conventional request. A direct point-to-point design distributes credentials and policy decisions across every agent. It also makes it difficult to answer which identity invoked which tool, under whose authority, with what data, and at what cost.
 
-The architectural progression is therefore less about replacing one proxy with another than about widening the boundary's understanding of traffic.
+This broader role is not a linear progression in which an AI gateway replaces an LLM gateway or API gateway. It is an expanding infrastructure boundary where applications, APIs, models, tools, data, and agents converge under shared connectivity, policy, routing, and observability controls.
 
-![Evolution from an API Gateway, through an LLM Gateway, to an AI Gateway connecting applications and agents to APIs, models, tools, and other agents.](gateway-evolution.png)
+![AI Gateway connecting applications and APIs, models, tools and data, and agents through a shared boundary for connectivity, policy, routing, and observability.](ai-gateway-overview.webp "AI Gateway")
 
 Ordinary API gateways remain useful for TLS termination, authentication, HTTP routing, rate limiting, and other general controls. They are not always sufficient abstractions for AI workloads because they do not necessarily understand model providers, tokens and context limits, streaming inference, prompt policies, semantic caches, tool calls, or agent protocols. Some API management products are adding these capabilities, so the distinction is about responsibility and traffic awareness rather than a fixed product boundary.
 
