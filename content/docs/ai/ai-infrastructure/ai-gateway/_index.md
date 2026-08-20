@@ -111,28 +111,6 @@ MCP changes the infrastructure graph because tools and contextual resources beco
 
 Aggregation has risks. Combining several servers into one catalog can create naming collisions, broaden discovery, and make a compromise more consequential. A gateway should present only the capabilities appropriate to the caller and keep server, tenant, and trust-domain isolation explicit.
 
-## MCP `2026-07-28`: The “MCP v2” Transition
-
-“MCP v2” is informal ecosystem shorthand. Normative behavior is defined by the dated [MCP `2026-07-28` specification](https://modelcontextprotocol.io/specification/2026-07-28), not by that nickname or by any vendor's interpretation.
-
-The revision changes MCP from a bidirectional, session-oriented protocol core into stateless, self-contained requests with per-request capability information. The normal request path no longer uses the required `initialize` / `initialized` handshake or `Mcp-Session-Id`. Optional `server/discover` supports up-front capability discovery, but an ordinary request can be handled independently by any compatible server instance. Application state can still exist; the protocol no longer hides it in a transport session.
-
-Multi Round-Trip Requests (MRTR) preserve interactions such as eliciting confirmation without requiring a continuously open bidirectional stream. A server returns an input-required result, and the client retries the original operation with the requested responses. Long-running work is addressed separately through the optional Tasks extension.
-
-For Streamable HTTP, `Mcp-Method` and `Mcp-Name` expose operation and capability names as HTTP headers. Gateways, web application firewalls, rate limiters, and telemetry systems can therefore route, meter, and apply coarse-grained policy using normal HTTP metadata rather than always parsing JSON-RPC bodies. Payload-aware controls may still be needed for arguments and results.
-
-The revision also adds caching hints and deterministic ordering to list and read results, making tool and resource catalogs more stable and reducing repeated discovery. Authorization hardening includes issuer validation and a move away from Dynamic Client Registration toward Client ID Metadata Documents. A formal extension mechanism allows optional capabilities to evolve outside the core. Features now move through Active, Deprecated, and Removed states, with a minimum deprecation window intended to make migration more predictable.
-
-Together, stateless requests, visible routing metadata, cache hints, extensions, and lifecycle rules make MCP easier to operate on ordinary load-balanced, serverless, and HTTP security infrastructure. This strengthens the potential gateway role: standard infrastructure can understand more of an MCP operation without becoming a full MCP endpoint. It does not eliminate version negotiation, authorization design, payload security, or backward compatibility with session-based revisions. See the MCP maintainers' [release overview](https://blog.modelcontextprotocol.io/posts/2026-07-28/) and Cloudflare's [infrastructure-oriented interpretation](https://blog.cloudflare.com/mcp-v2/) for complementary explanations.
-
-## The agentgateway project as an Architectural Example
-
-[agentgateway](https://agentgateway.dev/) is an open-source implementation of an AI gateway designed for agentic and conventional traffic. Solo.io originally created the project and contributed it to the Linux Foundation. In June 2026 it became a hosted initiative of the [Agentic AI Foundation (AAIF)](https://agentgateway.dev/blog/2026-06-04-agentgateway-joins-aaif/), under the Linux Foundation. That governance history is important: it is an ecosystem project rather than merely a Solo.io product.
-
-The project handles conventional HTTP and gRPC traffic alongside LLM inference, MCP, and A2A. It supports multi-provider model routing, security and policy controls, observability, MCP federation, and deployment through a standalone data plane or a Kubernetes control plane integrated with Gateway API.
-
-Its architectural significance is convergence. A platform can apply related identity, routing, policy, and telemetry mechanisms to ordinary APIs and agent protocols without operating an unrelated proxy stack for each traffic type. This does not prove that every organization needs one unified gateway, nor that one data plane should own every AI concern. It demonstrates that conventional and agentic connectivity can share infrastructure primitives while retaining protocol-specific policy.
-
 ## AI Gateway vs. Model Router
 
 A model router primarily answers:
@@ -182,6 +160,10 @@ The largest design risk is an oversized “AI middleware” layer that owns rout
 ## Ecosystem
 
 The ecosystem includes cloud-provider gateways tied closely to managed model platforms, independent commercial gateways, open-source LLM proxies, Kubernetes-native AI gateways, AI gateways with agentic-protocol support, and API management platforms adding AI-aware policies.
+
+Protocol evolution is making conventional infrastructure more relevant to AI traffic. The [MCP `2026-07-28` specification](https://modelcontextprotocol.io/specification/2026-07-28) introduced stateless requests and HTTP headers that expose method and capability names, making MCP operations easier to load balance, route, meter, and govern. These features strengthen the potential role of gateways without removing the need for version negotiation, authorization design, or payload-aware controls.
+
+[agentgateway](https://agentgateway.dev/) is one implementation example of this convergence. The open-source project handles HTTP, gRPC, LLM inference, MCP, and A2A traffic through shared infrastructure and became a hosted initiative of the [Agentic AI Foundation](https://agentgateway.dev/blog/2026-06-04-agentgateway-joins-aaif/) in 2026. It demonstrates that conventional and agentic connectivity can share infrastructure primitives, but it does not imply that every organization needs one gateway or one data plane for all AI concerns.
 
 The useful evaluation questions are more stable than a vendor list: Which traffic and protocols can the gateway understand? Where is its control plane? Which identities and policies can it preserve? Can it operate streaming and long-running workloads? How portable are its abstractions? What data does it inspect or retain? How does it fail?
 
