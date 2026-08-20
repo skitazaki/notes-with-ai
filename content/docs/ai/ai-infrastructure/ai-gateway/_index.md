@@ -2,6 +2,7 @@
 date: "2026-08-13T09:00:00+09:00"
 title: "AI Gateway"
 weight: 1
+prev: "/docs/ai/ai-infrastructure"
 ---
 
 An application that calls one model through one provider can keep routing, credentials, retries, and usage records in application code. That approach becomes fragile when the same organization uses several models, agents, tools, [Model Context Protocol (MCP)](../../context-engineering/tools-and-mcp/) servers, internal APIs, and external services. Each direct integration otherwise recreates security, policy, observability, and cost controls at a different point.
@@ -19,27 +20,6 @@ Agents make the traffic graph larger. They discover and invoke tools, delegate w
 This broader role is not a linear progression in which an AI gateway replaces an LLM gateway or API gateway. It is an expanding infrastructure boundary where applications, APIs, models, tools, data, and agents converge under shared connectivity, policy, routing, and observability controls.
 
 ![AI Gateway connecting applications and APIs, models, tools and data, and agents through a shared boundary for connectivity, policy, routing, and observability.](ai-gateway-overview.webp "AI Gateway")
-
-Ordinary API gateways remain useful for TLS termination, authentication, HTTP routing, rate limiting, and other general controls. They are not always sufficient abstractions for AI workloads because they do not necessarily understand model providers, tokens and context limits, streaming inference, prompt policies, semantic caches, tool calls, or agent protocols. Some API management products are adding these capabilities, so the distinction is about responsibility and traffic awareness rather than a fixed product boundary.
-
-## What Is an AI Gateway?
-
-An AI gateway is an intermediary that connects AI applications and agents to models, tools, agents, and related services while providing shared traffic management, security, policy, and observability controls.
-
-The terminology is still evolving:
-
-- An **API gateway** typically governs external or north-south API traffic using general HTTP, API, and identity controls.
-- An **LLM gateway** focuses on access to language-model providers, often normalizing APIs, routing requests, and tracking tokens or cost.
-- An **AI gateway** is the broader category. It can include multimodal models, retrieval and policy services, AI-specific operational controls, and connectivity to tools and agents through protocols such as MCP and Agent2Agent (A2A).
-
-```mermaid
-flowchart TB
-    C["Applications and agents"] --> G["AI Gateway<br/>connectivity, policy, observability"]
-    G --> M["Models<br/>provider APIs and inference"]
-    G --> T["MCP servers<br/>tools, resources, data"]
-    G --> A["Remote agents<br/>A2A"]
-    G --> S["APIs and services<br/>HTTP / gRPC"]
-```
 
 The gateway is a control point, not necessarily the owner of every control. Identity providers establish identities; policy engines may make authorization decisions; model-serving platforms execute inference; workflow engines own durable process state. A gateway integrates and enforces relevant decisions at the connectivity boundary.
 
@@ -210,13 +190,6 @@ The useful evaluation questions are more stable than a vendor list: Which traffi
 The gateway role is moving from model access, through AI traffic management, toward agent connectivity and an agentic infrastructure control point. MCP brings tools and resources into the managed traffic graph. A2A brings discovery, delegation, task state, and artifacts across independently operated agents. Both increase the need for a programmable boundary that can carry identity, enforce policy, and produce end-to-end evidence.
 
 The labels API gateway, inference gateway, AI gateway, MCP gateway, and agent gateway may continue to blur as general platforms add protocol awareness and specialized projects adopt conventional traffic support. The durable architectural idea is not a particular category or product. It is the need for an explicit, programmable infrastructure boundary around AI and agent communication—and for disciplined decisions about what belongs inside that boundary.
-
-## Related Topics Across Documentation Areas
-
-- [AI Infrastructure](../) places gateways within the broader compute, serving, storage, retrieval, and orchestration stack.
-- [Tools and Model Context Protocol](../../context-engineering/tools-and-mcp/) explains tool contracts, MCP concepts, and authorization boundaries.
-- [Agent-to-Agent Communication and Interoperability](../../agent-to-agent/) covers A2A discovery, tasks, artifacts, and delegated trust.
-- [AI Engineering](../../ai-engineering/) covers the application discipline that uses these infrastructure capabilities.
 
 ## Summary
 
