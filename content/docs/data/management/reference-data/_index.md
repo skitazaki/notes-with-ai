@@ -45,11 +45,11 @@ A controlled vocabulary defines the terms or values permitted for a concept. A c
 
 Labels can change while codes remain stable. Definitions matter because two values with similar names may not be equivalent. Free-text fields may still be appropriate for descriptive information, but they should not replace controlled values where validation, interoperability, or consistent aggregation is required.
 
-A composite code concatenates several controlled values when a system needs one compact identifier. For example, mapping `JPN-YEN-LIVE` into shared vocabulary may require a rule that splits and validates the three segments, then maps country `JPN` to `JP`, currency `YEN` to `JPY`, and status `LIVE` to `ACTIVE`. The component order, delimiter, missing-value handling, and transformations must be governed explicitly because this mapping depends on parsing and normalization rules, not only on a simple code-to-code substitution.
-
 ## Crosswalks and Mappings
 
 Different systems often retain local attribute names and codes for valid operational reasons. A CRM may store `Status = Active`, an ERP may use `State Code = A`, and an analytical model may represent the same concept as `is_status = 1`. A crosswalk records how both the local attributes and their values relate to a shared enterprise concept such as `Status = ACTIVE`.
+
+A composite code concatenates several controlled values when a system needs one compact identifier. For example, mapping `JPN-YEN-LIVE` into shared vocabulary may require a rule that splits and validates the three segments, then maps country `JPN` to `JP`, currency `YEN` to `JPY`, and status `LIVE` to `ACTIVE`. The component order, delimiter, missing-value handling, and transformations must be governed explicitly because this mapping depends on parsing and normalization rules, not only on a simple code-to-code substitution.
 
 Mappings are data products in their own right. They should identify their source and target code sets, direction, effective period, approval state, and any transformation rule. Not every mapping is one-to-one: several local values may collapse into one enterprise value, or one source value may require context before it can map safely.
 
