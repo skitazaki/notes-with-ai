@@ -5,7 +5,7 @@ weight: 3
 prev: "/docs/data/management/mdm"
 ---
 
-Reference Data Management is the discipline of defining, governing, and distributing the controlled values that systems use to classify data. Country codes, currencies, account statuses, product categories, and regulatory classifications are common examples. These values are usually small in volume, but differences in their meaning or representation can disrupt integrations, controls, and reporting across an enterprise.
+Reference Data Management is the discipline of defining, governing, and distributing the controlled values that systems use to classify, constrain, and standardize data. Country codes, currencies, account statuses, product categories, and regulatory classifications are common examples. These values are usually small in volume, but differences in their meaning or representation can disrupt integrations, controls, and reporting across an enterprise.
 
 Reference Data Management establishes shared vocabulary. It does not require every system to store the same literal value. It requires each local value to map predictably to an agreed meaning.
 
@@ -49,7 +49,7 @@ Labels can change while codes remain stable. Definitions matter because two valu
 
 Different systems often retain local attribute names and codes for valid operational reasons. A CRM may store `Status = Active`, an ERP may use `State Code = A`, and an analytical model may represent the same concept as `is_status = 1`. A crosswalk records how both the local attributes and their values relate to a shared enterprise concept such as `Status = ACTIVE`.
 
-A composite code concatenates several controlled values when a system needs one compact identifier. For example, mapping `JPN-YEN-LIVE` into shared vocabulary may require a rule that splits and validates the three segments, then maps country `JPN` to `JP`, currency `YEN` to `JPY`, and status `LIVE` to `ACTIVE`. The component order, delimiter, missing-value handling, and transformations must be governed explicitly because this mapping depends on parsing and normalization rules, not only on a simple code-to-code substitution.
+A local or legacy composite code may concatenate several values into one compact identifier. For example, mapping `JPN-YEN-LIVE` into shared vocabulary may require a rule that splits and validates the three source segments, then maps country `JPN` to `JP`, currency `YEN` to `JPY`, and status `LIVE` to `ACTIVE`. The component order, delimiter, missing-value handling, and transformations must be governed explicitly because this mapping depends on parsing and normalization rules, not only on a simple code-to-code substitution.
 
 Mappings are data products in their own right. They should identify their source and target code sets, direction, effective period, approval state, and any transformation rule. Not every mapping is one-to-one: several local values may collapse into one enterprise value, or one source value may require context before it can map safely.
 
@@ -65,7 +65,7 @@ Reference values change even when the underlying concepts appear stable. New val
 4. Notify and support consuming systems.
 5. Deprecate or retire it without erasing historical meaning.
 
-Effective dating distinguishes when a value is valid from when a system learned about it. Versions make a complete set reproducible for audits and historical processing. Retired codes should remain resolvable for old records even when new transactions can no longer use them.
+Effective dating records when a value is valid for business use. Distinguishing that valid time from when a system recorded or learned about the value requires a separate system or transaction timestamp. Versions make a complete set reproducible for audits and historical processing. Retired codes should remain resolvable for old records even when new transactions can no longer use them.
 
 In analytical stores, Slowly Changing Dimension (SCD) Type 2 is one common way to preserve successive versions as separate effective-dated records.
 
