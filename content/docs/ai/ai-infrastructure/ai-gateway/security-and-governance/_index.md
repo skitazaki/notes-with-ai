@@ -27,6 +27,8 @@ Prompt and response inspection can detect sensitive data, prohibited destination
 
 MCP tool descriptions and results, A2A messages and artifacts, and retrieved content should be treated as untrusted input. Schema validation and content controls reduce risk but do not establish factual correctness or safe business behavior.
 
+AI-aware controls can validate context and token limits, apply model-specific policies, invoke guardrails, and serve a semantic cache. These features are implementation-dependent. In particular, semantic caching changes behavior: similarity thresholds, tenant isolation, freshness, and authorization must be explicit because a semantically similar response is not necessarily interchangeable or safe to share.
+
 ## Governance and Auditability
 
 Auditable records should connect caller, delegated subject, selected route, policy version, decision, model or capability, and outcome. They should avoid storing complete prompts, responses, or tool results unless a defined requirement justifies it. Denials should be explainable enough for operators to distinguish policy behavior from service failure.
