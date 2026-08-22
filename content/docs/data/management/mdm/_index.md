@@ -3,6 +3,7 @@ date: "2026-07-23T10:00:00+09:00"
 title: "Master Data Management (MDM)"
 weight: 2
 prev: "/docs/data/management"
+next: "/docs/data/management/reference-data"
 ---
 
 Master Data Management (MDM) is the discipline of maintaining authoritative, consistent representations of core business entities across systems. It exists because enterprises do not run on one application. Customers, products, suppliers, employees, and business locations such as stores, warehouses, offices, and sites are usually created and updated in multiple operational systems, each with its own identifiers, validation rules, timing, and data quality problems. MDM provides a way to reconcile that fragmentation without pretending that the enterprise is actually one database.
@@ -44,7 +45,7 @@ These entities are usually referenced by transactional systems, analytical syste
 | Reference data   | Country code, currency, status code    | Provide controlled vocabularies and classifications |
 | Analytical data  | Daily sales summary, churn feature set | Support reporting, modeling, and decision-making    |
 
-Master data is often confused with reference data. The difference is practical. Reference data controls allowed values and shared code sets. Master data represents the entities themselves. A product category code is reference data. The product that uses that category is master data.
+Master data is often confused with reference data. The difference is practical. [Reference data](/docs/data/management/reference-data/) controls allowed values and shared code sets. Master data represents the entities themselves. A product category code is reference data. The product that uses that category is master data.
 
 ## Why MDM Matters
 
