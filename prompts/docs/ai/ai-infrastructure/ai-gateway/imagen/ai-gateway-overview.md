@@ -1,6 +1,6 @@
 ---
 type: image
-path: /docs/ai/ai-gateway
+path: /docs/ai/ai-infrastructure/ai-gateway
 description: Conceptual overview of the AI Gateway as an infrastructure boundary across applications, models, tools, data, and agents.
 ---
 
