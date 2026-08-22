@@ -8,6 +8,8 @@ next: "/docs/data/metadata/maturity-model"
 
 Federated governance is the operating model that lets many domains move independently without giving up policy consistency, accountability, or auditability.
 
+This page focuses on the metadata mechanisms that make federation executable. See [Federated Data Governance](/docs/data/governance/federated-data-governance/) for the operating model, distribution of decision rights, and enterprise-versus-domain boundary.
+
 ## Executive Summary
 
 Metadata is the infrastructure that makes federated governance executable. Policies require a description of the thing being governed, its owner, its classification, its lifecycle state, and the controls that apply to it. If those attributes remain implicit, governance depends on meetings and manual interpretation.

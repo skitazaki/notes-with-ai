@@ -41,7 +41,7 @@ Adjacent disciplines overlap with this scope, but emphasize different questions.
 | **Data Engineering**                          | Building and operating the pipelines, transformations, and services that implement those decisions                                                                                       |
 | **Data Platform**                             | Reusable infrastructure and capabilities on which data producers and consumers run workloads                                                                                             |
 | [**Data Management**](/docs/data/management/) | Keeping data trustworthy, accessible, usable, and sustainable throughout its lifecycle                                                                                                   |
-| **Data Governance**                           | Decision rights, policies, accountability, and controls; see the [Data control layer](/docs/data/#4-control-layer) and [Federated Governance](/docs/data/metadata/federated-governance/) |
+| **Data Governance**                           | Decision rights, policies, accountability, and controls; see [Data Governance](/docs/data/governance/) and [Federated Data Governance](/docs/data/governance/federated-data-governance/) |
 
 These are working boundaries, not exclusive territories. A data contract, for example, can be an architectural interface, an engineering artifact, a platform capability, and a governance control at the same time.
 
@@ -147,10 +147,10 @@ The same topic appears under several lenses because the architecture is multidim
 | Build an analytical foundation    | Warehouse and lakehouse in [Architecture Patterns](patterns/) and [Modern Data Architecture](modern-data-architecture/)                                              |
 | Reduce batch latency              | CDC and streaming in [Data Integration and Flow](integration-and-flow/)                                                                                              |
 | Integrate loosely coupled systems | Event-driven patterns in [Data Architecture Patterns](patterns/)                                                                                                     |
-| Scale ownership across domains    | [Data Mesh](/docs/data/metadata/data-mesh/) and [Federated Governance](/docs/data/metadata/federated-governance/)                                                    |
+| Scale ownership across domains    | [Data Mesh](/docs/data/metadata/data-mesh/) and [Federated Data Governance](/docs/data/governance/federated-data-governance/)                                        |
 | Understand how information moves  | [Data Integration and Flow](integration-and-flow/)                                                                                                                   |
 | Establish reusable infrastructure | The Data Platform boundary in [What Data Architecture Covers](#what-data-architecture-covers) and [Modern Data Architecture](modern-data-architecture/)              |
-| Govern distributed data           | [Metadata](/docs/data/metadata/) and [Federated Governance](/docs/data/metadata/federated-governance/)                                                               |
+| Govern distributed data           | [Data Governance](/docs/data/governance/) and [Metadata](/docs/data/metadata/)                                                                                       |
 | Feed ML or AI applications        | [Data for AI](/docs/ai/data-for-ai/), [Semantic Layer](/docs/data/metadata/semantic-layer/), and [Retrieval-Augmented Generation](/docs/ai/context-engineering/rag/) |
 
 ## Data Architecture for AI
