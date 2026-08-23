@@ -1,6 +1,6 @@
 ---
 type: image
-path: /docs/data/data-architecture
+path: /docs/data/architecture
 description: Hero visual showing six dimensions of data architecture supported by shared cross-cutting concerns.
 ---
 

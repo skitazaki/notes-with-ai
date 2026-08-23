@@ -2,8 +2,8 @@
 date: "2026-08-17T00:00:00+09:00"
 title: "Data Integration and Flow"
 weight: 3
-prev: "/docs/data/data-architecture/patterns"
-next: "/docs/data/data-architecture/modern-data-architecture"
+prev: "/docs/data/architecture/patterns"
+next: "/docs/data/architecture/modern-data-architecture"
 ---
 
 Data integration connects systems so information produced in one boundary becomes useful in another. The movement mechanism determines latency, coupling, consistency, failure behavior, replayability, and who must operate the connection. It is therefore an architectural decision, not merely pipeline implementation.

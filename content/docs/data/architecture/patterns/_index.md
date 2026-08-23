@@ -2,8 +2,8 @@
 date: "2026-08-17T00:00:00+09:00"
 title: "Data Architecture Patterns"
 weight: 2
-prev: "/docs/data/data-architecture/principles"
-next: "/docs/data/data-architecture/integration-and-flow"
+prev: "/docs/data/architecture/principles"
+next: "/docs/data/architecture/integration-and-flow"
 ---
 
 Data architecture patterns are recurring arrangements of responsibilities, storage, movement, and ownership. They are useful as recognition tools, not complete designs. Real data estates combine patterns, and the same label can describe a storage technology, processing model, integration style, or organizational model.

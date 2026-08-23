@@ -3,7 +3,7 @@ date: "2026-08-17T00:00:00+09:00"
 title: "データアーキテクチャ"
 weight: 2
 prev: "/docs/data/analytics"
-next: "/docs/data/data-architecture/principles"
+next: "/docs/data/architecture/principles"
 ---
 
 組織が運用するデータベースやパイプラインは、通常一つではありません。データは業務アプリケーション、分析システム、SaaS、イベントストリーム、AI システム、外部提供元、組織境界をまたいで生成・利用されます。接続点が増えるたびに、永続化、移動、意味、統制、責任に関する判断が必要になります。

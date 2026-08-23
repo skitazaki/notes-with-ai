@@ -3,7 +3,7 @@ date: "2026-08-17T00:00:00+09:00"
 title: "Data Architecture"
 weight: 2
 prev: "/docs/data/analytics"
-next: "/docs/data/data-architecture/principles"
+next: "/docs/data/architecture/principles"
 ---
 
 Organizations rarely operate one database or one pipeline. Data is created and consumed across operational applications, analytical systems, SaaS services, event streams, AI systems, external providers, and organizational boundaries. Each connection introduces choices about persistence, movement, semantics, control, and responsibility.
