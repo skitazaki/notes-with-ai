@@ -49,6 +49,8 @@ These are working boundaries, not exclusive territories. A data contract, for ex
 
 Architectures become easier to compare when described as decisions rather than product inventories.
 
+![Six dimensions of data architecture—origin, movement, storage and processing, serving, ownership, and trade-offs—supported by metadata, governance, security, privacy, quality, and observability](data-architecture-dimensions.webp "Data Architecture dimensions")
+
 ### Where does data originate?
 
 Operational databases, applications, SaaS systems, files, APIs, devices, external datasets, and event streams differ in authority, change behavior, interface stability, and ownership. Identify the system of record and the events or snapshots it can reliably expose.
