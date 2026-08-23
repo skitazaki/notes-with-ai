@@ -8,7 +8,7 @@ next: "/docs/data/governance/principles-and-operating-model"
 
 Data Governance is the organizational control system that determines who is accountable for data, what policies and decision rights apply, how those policies become operational controls, and how the organization verifies that governance is working.
 
-Governance exists so people can use data with justified confidence. It makes authority, obligations, and exceptions explicit across organizational and system boundaries. Effective governance enables trusted decentralized use; it does not require every decision to pass through a central approval queue.
+Governance exists so people can use data with justified confidence. It makes authority, obligations, and exceptions explicit across organizational and system boundaries. Effective governance supports trusted data use through clear decision boundaries and proportionate controls. It can operate within centralized, federated, or hybrid models; no one model is an inherent target state.
 
 Within the Data section, governance is part of the cross-cutting **Control Layer**. It establishes the rules and accountability that apply from collection through management, analysis, sharing, and retirement.
 
@@ -20,22 +20,7 @@ Within the Data section, governance is part of the cross-cutting **Control Layer
 
 Ownership and stewardship apply throughout this loop. Metadata connects policies to assets and controls, then captures the lineage, decisions, and observations needed as evidence.
 
-```mermaid
-flowchart TB
-  SP["Strategy and principles"] --> PS["Policies and standards"]
-  PS --> DR["Decision rights"]
-  DR --> C["Controls"]
-  C --> OS["Operational systems"]
-  OS --> EM["Evidence and monitoring"]
-  EM --> RC["Review and change"]
-  RC --> SP
-  A["Ownership and stewardship"] --- SP
-  A --- DR
-  A --- EM
-  M["Metadata: assets, classifications, lineage, controls, evidence"] --- PS
-  M --- C
-  M --- EM
-```
+![The Data Governance control loop progressing clockwise through seven icon-labeled stages from strategy to review, centered on trusted data use across centralized, federated, and hybrid models, with accountability above and metadata as a supporting layer below](data-governance-control-loop.png "Data Governance Control Loop")
 
 Traditional governance often relied on centralized committees, documents, and manual approvals. Those mechanisms can remain appropriate for high-impact decisions. Domain ownership, policy-as-code, metadata-driven controls, and federated forums add other ways to coordinate decisions at scale. These are design choices, not a universal maturity sequence.
 
