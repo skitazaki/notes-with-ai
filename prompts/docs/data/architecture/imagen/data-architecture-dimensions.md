@@ -8,7 +8,7 @@ description: Hero visual showing six dimensions of data architecture supported b
 
 Create a polished 1672 × 941 pixels (16:9) technical infographic titled exactly **Data Architecture**.
 
-Communicate one clear idea: data architecture requires decisions across six dimensions, while metadata, governance, security, privacy, quality, and observability apply across all of them. Keep the image conceptual, calm, spacious, and immediately understandable.
+Communicate one clear idea: data architecture requires decisions across six dimensions, while metadata, governance, security, privacy, reliability, and observability apply across all of them. Keep the image conceptual, calm, spacious, and immediately understandable.
 
 ## Composition
 
@@ -29,7 +29,7 @@ The six areas must read as parts of one coherent decision framework, not as inde
 
 Place one visually quiet foundation or horizontal layer beneath the six decision areas. Label it **Cross-Cutting Concerns** and include exactly these terms:
 
-**Metadata · Governance · Security · Privacy · Quality · Observability**
+**Metadata · Governance · Security · Privacy · Reliability · Observability**
 
 Use a subtle shared plane, band, or underlay to show that this layer applies across all six dimensions. Do not place the concerns around the perimeter or give them separate icons, definitions, callouts, boxes, or connectors.
 
