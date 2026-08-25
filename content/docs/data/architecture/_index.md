@@ -49,7 +49,7 @@ These are working boundaries, not exclusive territories. A data contract, for ex
 
 Architectures become easier to compare when described as decisions rather than product inventories.
 
-![Six dimensions of data architecture—origin, movement, storage and processing, serving, ownership, and trade-offs—supported by metadata, governance, security, privacy, quality, and observability](data-architecture-dimensions.webp "Data Architecture dimensions")
+![Six dimensions of data architecture—origin, movement, storage and processing, serving, ownership, and trade-offs—supported by metadata, governance, security, privacy, reliability, and observability](data-architecture-dimensions.webp "Data Architecture dimensions")
 
 ### Where does data originate?
 
