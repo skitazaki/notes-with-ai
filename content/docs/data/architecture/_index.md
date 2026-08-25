@@ -3,7 +3,7 @@ date: "2026-08-17T00:00:00+09:00"
 title: "Data Architecture"
 weight: 2
 prev: "/docs/data/analytics"
-next: "/docs/data/data-architecture/principles"
+next: "/docs/data/architecture/principles"
 ---
 
 Organizations rarely operate one database or one pipeline. Data is created and consumed across operational applications, analytical systems, SaaS services, event streams, AI systems, external providers, and organizational boundaries. Each connection introduces choices about persistence, movement, semantics, control, and responsibility.
@@ -49,6 +49,8 @@ These are working boundaries, not exclusive territories. A data contract, for ex
 
 Architectures become easier to compare when described as decisions rather than product inventories.
 
+![Six dimensions of data architecture—origin, movement, storage and processing, serving, ownership, and trade-offs—supported by metadata, governance, security, privacy, reliability, and observability](data-architecture-dimensions.webp "Data Architecture dimensions")
+
 ### Where does data originate?
 
 Operational databases, applications, SaaS systems, files, APIs, devices, external datasets, and event streams differ in authority, change behavior, interface stability, and ownership. Identify the system of record and the events or snapshots it can reliably expose.
@@ -77,46 +79,9 @@ Central data teams can create consistency and economies of scale. Domain teams c
 
 The following model is a lens, not a mandatory pipeline. A request may bypass storage, a stream may feed an application directly, and a federated query may reach a source at consumption time.
 
-```mermaid
-flowchart LR
-  subgraph S["Sources"]
-    s1["Applications"]
-    s2["Operational databases"]
-    s3["SaaS and APIs"]
-    s4["Events, devices, external data"]
-  end
-  subgraph I["Ingestion and integration"]
-    i1["Batch and files"]
-    i2["CDC and replication"]
-    i3["APIs and messaging"]
-    i4["Event streaming"]
-  end
-  subgraph P["Storage and processing"]
-    p1["Warehouse, lake, lakehouse"]
-    p2["Stream processing"]
-    p3["Specialized databases"]
-  end
-  subgraph V["Serving and semantic access"]
-    v1["SQL and semantic layers"]
-    v2["APIs and data products"]
-    v3["Search, features, AI context"]
-  end
-  subgraph C["Consumers"]
-    c1["Analytics"]
-    c2["Applications"]
-    c3["ML and AI agents"]
-    c4["Downstream systems"]
-  end
-  S --> I --> P --> V --> C
-  X["Cross-cutting control plane<br/>Metadata · Governance · Security · Privacy · Quality · Observability"]
-  X -.-> S
-  X -.-> I
-  X -.-> P
-  X -.-> V
-  X -.-> C
-```
+![Data architecture reference model showing data moving from sources through ingestion and integration, storage and processing, and serving and semantic access to consumers, with metadata, governance, security, privacy, reliability, and observability spanning every stage](architectural-reference-model.webp "Data Architecture Reference Model")
 
-The cross-cutting concerns need enforcement points at several boundaries. [Metadata](/docs/data/metadata/) connects definitions, lineage, ownership, and automation; [Data Privacy](/docs/data/privacy/) shapes collection and use; quality and observability reveal whether interfaces meet their promises.
+The cross-cutting concerns need enforcement points at several boundaries. [Metadata](/docs/data/metadata/) connects definitions, lineage, ownership, and automation; [Data Privacy](/docs/data/privacy/) shapes collection and use; reliability and observability reveal whether interfaces meet their promises.
 
 ## Architecture Landscape
 
