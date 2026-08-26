@@ -52,9 +52,11 @@ Use [Metadata](/docs/data/metadata/) to connect policies with assets, lineage, o
 
 ## Make Ownership Match Control
 
-An owner needs authority and capability to change the system for which they are accountable. Assigning a domain team ownership of data while a central queue controls every schema, pipeline, and access decision creates responsibility without control. Giving teams autonomy without shared interfaces and governance produces fragmentation.
+State accountability and responsibility separately. **Accountability** means being answerable for the outcome and having authority to make or approve the final decision. It should resolve to one clearly identified role or governing body for each outcome. **Responsibility** means performing the work needed to achieve that outcome; it may be distributed across several teams. Naming an “owner” without stating which of these obligations it carries leaves the operating model ambiguous.
 
-Document the responsibilities of source owners, platform operators, product owners, governance authorities, and consumers. [Ownership Boundaries](/docs/arch/ownership-boundaries/) provides a broader architectural lens.
+Accountability must match control. An accountable owner needs the authority and capability to change the system, accept risk, prioritize remediation, and resolve conflicts within the stated boundary. Assigning a domain team accountability for data while a central queue controls every schema, pipeline, and access decision makes that accountability ineffective. Giving teams autonomy without shared interfaces and governance produces fragmentation.
+
+For every material data asset, interface, and architectural decision, document the accountable role, the responsible roles, the decision rights, and the escalation path. Make the responsibilities of source owners, platform operators, product owners, governance authorities, and consumers explicit, including where responsibilities are shared or handed off. [Ownership Boundaries](/docs/arch/ownership-boundaries/) provides a broader architectural lens.
 
 ## Design for Scale and Evolution
 
@@ -75,5 +77,7 @@ A practical decision record includes the context, options, decision, consequence
 - Is every movement or copy justified?
 - Are failure, reconciliation, replay, and observability designed end to end?
 - Are security, privacy, quality, and governance attached to enforceable boundaries?
-- Can the responsible team control the outcome?
+- Is one role or governing body explicitly accountable for each material outcome?
+- Are the responsible roles, their work, and their handoffs explicit?
+- Does the accountable role have the authority and capability to control the outcome?
 - Which trade-offs were accepted, and what would cause the decision to change?
