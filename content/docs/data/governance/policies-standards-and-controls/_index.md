@@ -6,11 +6,13 @@ prev: "/docs/data/governance/ownership-and-stewardship"
 next: "/docs/data/governance/data-classification"
 ---
 
-Governance connects intent to observable behavior through a rule hierarchy.
+Governance connects intent to observable behavior by linking policies, standards, and controls.
 
-The hierarchy prevents two common problems: high-level statements that cannot be implemented, and technical controls that have no clear policy purpose. Each layer should be traceable to the layer above it while remaining appropriate to its own audience. Executives and policy owners state required outcomes; domain and technical specialists translate those outcomes into common requirements; delivery and platform teams operate the controls.
+![Policies, standards, and controls shown as three connected responsibilities, with principles providing direction and control objectives and evidence supporting control design and operation](policies-standards-controls.webp "Policies, Standards, and Controls")
 
-## The Hierarchy
+This connection prevents two common problems: high-level statements that cannot be implemented, and technical controls that have no clear policy purpose. Each element should be traceable to the intent it serves while remaining appropriate to its own audience. Executives and policy owners state required outcomes; domain and technical specialists translate those outcomes into common requirements; delivery and platform teams operate the controls.
+
+## From Direction to Operation
 
 | Element       | Purpose                                                 | Example                                                          |
 | ------------- | ------------------------------------------------------- | ---------------------------------------------------------------- |
@@ -20,7 +22,7 @@ The hierarchy prevents two common problems: high-level statements that cannot be
 | **Control**   | Mechanism that prevents, detects, or corrects deviation | Block publication when required metadata is absent               |
 | **Evidence**  | Record that demonstrates design and operation           | Validation result, approval, exception, or audit event           |
 
-The terms are related but not interchangeable. A principle guides judgment when no detailed rule exists. A policy makes an outcome mandatory for a defined scope. A standard reduces unnecessary variation by describing a testable requirement. A control is an action or mechanism, not another document. Evidence is the retained result that supports review and assurance.
+These elements form a traceable chain, but they are not all layers of the same kind. A principle guides judgment when no detailed rule exists. A policy makes an outcome mandatory for a defined scope. A standard reduces unnecessary variation by describing a testable common requirement. A control is an action or mechanism that operates against that requirement, not another document. Evidence is the retained result that supports review and assurance.
 
 A **control objective** states the result a control must achieve without prescribing one implementation. Preventive controls stop an unacceptable action; detective controls reveal it; corrective controls restore an acceptable state. Each can be manual or automated.
 

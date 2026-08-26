@@ -6,7 +6,9 @@ prev: "/docs/data/governance/data-classification"
 next: "/docs/data/governance/federated-data-governance"
 ---
 
-Governance becomes demonstrable when an organization can connect an obligation to accountable owners, control objectives, operating controls, and reliable evidence.
+Governance becomes demonstrable when applicable requirements are mapped to control objectives, controls operate as intended, and reliable evidence makes the result auditable.
+
+![Compliance mapping applicable requirements to controls, controls producing evidence through operation, and auditability using that evidence for assurance and improvement](compliance-controls-auditability.webp "Compliance, Controls, and Auditability")
 
 **Compliance** means satisfying an applicable requirement. The source may be a law, regulation, contract, industry commitment, or internal policy. **Auditability** is the ability to reconstruct and evaluate how the organization addressed that requirement. Governance provides the decision ownership and traceability that connect the two; it does not replace the legal, risk, privacy, security, or other specialists who interpret particular obligations.
 
@@ -14,7 +16,8 @@ Governance becomes demonstrable when an organization can connect an obligation t
 
 ```mermaid
 flowchart LR
-  O["Obligation"] --> P["Policy"] --> CO["Control objective"] --> C["Control"] --> E["Evidence"] --> A["Assurance"]
+  CMP["Compliance<br/>Applicable requirements and mapping"] --> CTRL["Controls<br/>Objectives and operation"] --> AUD["Auditability<br/>Evidence and assurance"]
+  AUD --> F["Finding"] --> R["Remediation and verification"] --> CTRL
 ```
 
 Compliance mapping records how regulatory, contractual, and internal obligations relate to policies and controls. It should avoid duplicating a separate control for every source when one control objective satisfies several obligations.

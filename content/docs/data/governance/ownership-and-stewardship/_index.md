@@ -8,6 +8,8 @@ next: "/docs/data/governance/policies-standards-and-controls"
 
 Data ownership assigns accountability for decisions and outcomes. It is not merely the team that stores a table or runs a pipeline.
 
+![Overview of accountable ownership, stewardship, producers, consumers, and platform responsibilities across data scopes](data-ownership-stewardship.webp "Data Ownership and Stewardship")
+
 Ownership is needed because data decisions often span business meaning, risk, and technical operation. A platform administrator may be able to grant access, but should not have to decide whether a proposed use is acceptable. A steward may recognize that two definitions conflict, but may not have authority to choose which definition becomes an enterprise standard. Ownership connects those decisions to a person or body with an explicit mandate.
 
 ## Roles and Boundaries

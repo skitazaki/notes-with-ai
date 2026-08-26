@@ -20,7 +20,7 @@ Within the Data section, governance is part of the cross-cutting **Control Layer
 
 Ownership and stewardship apply throughout this loop. Metadata connects policies to assets and controls, then captures the lineage, decisions, and observations needed as evidence.
 
-![The Data Governance control loop progressing clockwise through seven icon-labeled stages from strategy to review, centered on trusted data use across centralized, federated, and hybrid models, with accountability above and metadata as a supporting layer below](data-governance-control-loop.png "Data Governance Control Loop")
+![The Data Governance control loop progressing clockwise through seven topic-aligned stages from principles and operating model to review and change, centered on trusted data use across centralized, federated, and hybrid models, with accountability above and metadata below](data-governance-control-loop.webp "Data Governance Control Loop")
 
 Traditional governance often relied on centralized committees, documents, and manual approvals. Those mechanisms can remain appropriate for high-impact decisions. Domain ownership, policy-as-code, metadata-driven controls, and federated forums add other ways to coordinate decisions at scale. These are design choices, not a universal maturity sequence.
 

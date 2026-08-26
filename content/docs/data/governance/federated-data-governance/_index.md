@@ -8,6 +8,8 @@ next: "/docs/data/governance"
 
 Federated Data Governance distributes defined decision rights to domains while preserving the policies, interoperability, and evidence the organization needs as a whole. It is not uncoordinated decentralization.
 
+![Overview of enterprise, shared, and domain decision rights in federated data governance](federated-data-governance.webp "Federated Data Governance")
+
 Federation is one governance operating model, not the destination of every governance program. It is useful when business domains have distinct context and sufficient capability to exercise delegated authority, while still depending on one another's data. Organizations with simpler boundaries, limited domain capacity, or requirements for direct centralized control may be better served by a centralized or hybrid model.
 
 > Centralize what must be consistent; federate what requires domain context.

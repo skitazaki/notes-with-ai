@@ -8,6 +8,8 @@ next: "/docs/data/governance/ownership-and-stewardship"
 
 Data governance turns organizational intent into repeatable decisions about data. Its operating model defines scope, authority, forums, escalation paths, and the lifecycle through which rules are proposed, approved, applied, reviewed, and retired.
 
+![Overview of peer governance foundations, decision forums, escalation, decision records, and centralized, federated, or hybrid operating-model choices](governance-principles-operating-model.webp "Governance Principles and Operating Model")
+
 An operating model is the practical arrangement through which governance work gets done. It does not prescribe one organization chart. A small organization may rely on named owners and existing leadership meetings, while a larger organization may need dedicated governance roles and several decision forums. In either case, the model should make it possible to answer the same questions: what requires a decision, who may make it, who must be consulted, how the decision is recorded, and where unresolved issues go.
 
 ## Foundations

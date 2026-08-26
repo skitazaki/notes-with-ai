@@ -8,6 +8,8 @@ next: "/docs/data/governance/compliance-and-auditability"
 
 Data classification assigns governance-relevant attributes to data so that obligations can vary according to context. It is broader than a single security label.
 
+![Overview of classification dimensions and how they lead to proportionate governance obligations](data-classification.webp "Data Classification")
+
 Without classification, an organization must either treat all data alike or rely on people to rediscover its context for every decision. The first approach applies excessive controls to low-risk data or inadequate controls to high-risk data. The second is slow and inconsistent. Classification creates a shared basis for selecting proportionate access, handling, retention, sharing, and monitoring requirements.
 
 ## Classification Dimensions
