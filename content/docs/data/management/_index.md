@@ -7,6 +7,8 @@ prev: "/docs/data/sharing"
 
 Data Management ensures that data remains trustworthy, usable, and sustainable over time.
 
+[Data Governance](/docs/data/governance/) defines expectations, decision rights, and accountability; Data Management performs the ongoing quality, accessibility, lifecycle, and service work required to satisfy them.
+
 Positioned within the Enablement Layer, Data Management defines the practices and controls that preserve the integrity and utility of data as it moves from collection to consumption. It does not focus on generating analytical insights or enforcing governance policy directly. Instead, it establishes the structural conditions that allow analytics, governance, and operational systems to function reliably.
 
 Data becomes valuable when it can be trusted, understood, accessed without excessive friction, and maintained efficiently. Without structured management, data environments tend to fragment: definitions diverge,duplication increases, quality issues accumulate, and operational complexity grows. Data Management addresses these risks by providing continuity and coherence across the data estate.
