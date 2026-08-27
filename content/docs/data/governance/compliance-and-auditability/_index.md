@@ -17,7 +17,7 @@ Governance becomes demonstrable when applicable requirements are mapped to contr
 ```mermaid
 flowchart LR
   CMP["Compliance<br/>Applicable requirements and mapping"] --> CTRL["Controls<br/>Objectives and operation"] --> AUD["Auditability<br/>Evidence and assurance"]
-  AUD --> F["Finding"] --> R["Remediation"] --> V["Verification and closure"] --> CTRL
+  AUD --> F["Finding"] --> R["Remediation"] --> V["Verification"] --> CTRL
 ```
 
 Compliance mapping records how regulatory, contractual, and internal obligations relate to policies and controls. It should avoid duplicating a separate control for every source when one control objective satisfies several obligations.
