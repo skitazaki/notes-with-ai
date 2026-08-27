@@ -15,20 +15,7 @@ Modern data is copied into warehouses, lakehouses, object stores, notebooks, cac
 
 Data-centric security follows the asset across boundaries. It combines defense in depth, least privilege, blast-radius reduction, and assume-breach thinking: prevent compromise, limit what a compromised identity or component can reach, detect misuse, and preserve recovery.
 
-```mermaid
-flowchart BT
-  Data["Data<br/>at rest, in transit, and in use"]
-  Protect["Protection controls<br/>encryption, masking, tokenization"]
-  Policy["Access & policy controls<br/>least privilege, isolation, egress"]
-  Platform["Platform & workload controls<br/>secure processing, credentials, backups"]
-  Environment["Network & environment controls<br/>boundaries, segmentation, secure transport"]
-  Monitor["Monitoring & detection<br/>audit trails, anomalies, extraction signals"]
-  Environment --> Platform --> Policy --> Protect --> Data
-  Monitor -. spans .-> Environment
-  Monitor -. spans .-> Platform
-  Monitor -. spans .-> Policy
-  Monitor -. spans .-> Protect
-```
+![Data-centric defense-in-depth model with data protected by four layers of controls and monitoring and detection spanning every layer](data-centric-defense-in-depth.webp "Data-Centric Defense in Depth")
 
 The principle is to protect data across systems and boundaries, not merely the perimeter around one system.
 
