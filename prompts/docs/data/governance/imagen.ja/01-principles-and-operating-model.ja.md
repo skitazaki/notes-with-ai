@@ -1,6 +1,6 @@
 ---
 type: image
-path: /ja/docs/data/governance/principles-and-operating-model
+path: /docs/data/governance/principles-and-operating-model
 description: 同列の基礎概念、ガバナンス会議体、エスカレーション、意思決定記録、運用モデルの選択肢を示す図
 ---
 

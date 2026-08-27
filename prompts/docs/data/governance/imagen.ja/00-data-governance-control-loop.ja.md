@@ -1,6 +1,6 @@
 ---
 type: image
-path: /ja/docs/data/governance
+path: /docs/data/governance
 description: ハブのトピック順序と、横断的な説明責任、メタデータ、運用モデル選択肢を対応させたデータガバナンス制御ループ
 ---
 

@@ -54,7 +54,7 @@ These capabilities meet at interfaces rather than forming isolated silos. Govern
 {{< card link="ownership-and-stewardship/" title="Ownership and Stewardship" icon="users" subtitle="Decision rights for domains, assets, and data products" >}}
 {{< card link="policies-standards-and-controls/" title="Policies, Standards, and Controls" icon="shield-check" subtitle="From principles to enforceable controls and evidence" >}}
 {{< card link="data-classification/" title="Data Classification" icon="tag" subtitle="Multiple dimensions that drive differentiated obligations" >}}
-{{< card link="compliance-and-auditability/" title="Compliance and Auditability" icon="clipboard-check" subtitle="Traceability, assurance, monitoring, and demonstrable control" >}}
+{{< card link="compliance-and-auditability/" title="Compliance, Controls, and Auditability" icon="clipboard-check" subtitle="Traceability, assurance, monitoring, and demonstrable control" >}}
 {{< card link="federated-data-governance/" title="Federated Data Governance" icon="share" subtitle="Enterprise consistency with contextual domain decisions" >}}
 {{< /cards >}}
 

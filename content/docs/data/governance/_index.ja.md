@@ -52,7 +52,7 @@ next: "/docs/data/governance/principles-and-operating-model"
 {{< card link="ownership-and-stewardship/" title="オーナーシップとスチュワードシップ" icon="users" subtitle="ドメイン、資産、データプロダクトの意思決定権" >}}
 {{< card link="policies-standards-and-controls/" title="ポリシー、標準、管理策" icon="shield-check" subtitle="原則から実行可能な管理策と証跡へ" >}}
 {{< card link="data-classification/" title="データ分類" icon="tag" subtitle="異なる義務を駆動する複数の分類軸" >}}
-{{< card link="compliance-and-auditability/" title="コンプライアンスと監査可能性" icon="clipboard-check" subtitle="トレーサビリティ、保証、モニタリング、実証可能な統制" >}}
+{{< card link="compliance-and-auditability/" title="コンプライアンス、管理策、監査可能性" icon="clipboard-check" subtitle="トレーサビリティ、保証、モニタリング、実証可能な統制" >}}
 {{< card link="federated-data-governance/" title="フェデレーテッド・データガバナンス" icon="share" subtitle="全社的一貫性とドメインの文脈に基づく判断" >}}
 {{< /cards >}}
 

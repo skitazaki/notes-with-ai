@@ -1,6 +1,6 @@
 ---
 type: image
-path: /ja/docs/data/governance/policies-standards-and-controls
+path: /docs/data/governance/policies-standards-and-controls
 description: ポリシー、標準、管理策の接続を主役とし、原則、統制目標、証跡を補助的位置に置いた日本語図
 ---
 

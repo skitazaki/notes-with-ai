@@ -1,6 +1,6 @@
 ---
 type: image
-path: /ja/docs/data/governance/compliance-and-auditability
+path: /docs/data/governance/compliance-and-auditability
 description: コンプライアンス、管理策、監査可能性を三つの接続された責務として示し、改善経路を閉じた日本語図
 ---
 
