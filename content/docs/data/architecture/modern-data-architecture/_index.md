@@ -2,7 +2,7 @@
 date: "2026-08-17T00:00:00+09:00"
 title: "Modern Data Architecture"
 weight: 4
-prev: "/docs/data/data-architecture/integration-and-flow"
+prev: "/docs/data/architecture/integration-and-flow"
 next: "/docs/data/sharing"
 ---
 
@@ -23,27 +23,7 @@ This model remains useful. It creates a controlled analytical boundary, reconcil
 
 Modern estates commonly evolve toward a graph of interacting capabilities:
 
-```mermaid
-flowchart LR
-  S["Applications · SaaS · files · events · external data"]
-  M["Batch · APIs · CDC · messaging · streaming"]
-  D["Object storage · warehouse · lakehouse · specialized stores"]
-  P["Batch and stream processing · orchestration"]
-  V["SQL · semantic layer · APIs · search · features · data products"]
-  C["BI · applications · ML · generative AI"]
-  S --> M
-  M --> D
-  M --> P
-  D <--> P
-  D --> V
-  P --> V
-  V --> C
-  X["Metadata · quality · lineage · security · governance · observability"]
-  X -.-> M
-  X -.-> D
-  X -.-> P
-  X -.-> V
-```
+![Modern data architecture as a graph of interacting capabilities, with data moving from diverse sources through movement mechanisms into parallel storage and processing paths that converge on serving interfaces and consumers, supported by metadata, reliability, lineage, security, governance, and observability](modern-data-architecture.webp "Modern Data Architecture capabilities")
 
 The second diagram is not a target topology. It shows why architecture shifts from selecting one central store to governing interactions among several paths.
 

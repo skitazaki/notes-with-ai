@@ -35,15 +35,15 @@ Traditional governance often relied on centralized committees, documents, and ma
 
 ## Relationships with Neighboring Data Topics
 
-| Domain                                             | Primary question                                                                    |
-| -------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| **Data Governance**                                | Who decides, what rules apply, and how is accountability demonstrated?              |
-| [Data Management](/docs/data/management/)          | How do we keep data reliable, usable, and sustainable?                              |
-| [Metadata](/docs/data/metadata/)                   | What do we know about the data and its context?                                     |
-| [Data Privacy](/docs/data/privacy/)                | Under what conditions should information about people be processed?                 |
-| Data Security                                      | How is data protected against unauthorized access, alteration, disclosure, or loss? |
-| [Data Architecture](/docs/data/data-architecture/) | How should data systems, boundaries, and flows be structured?                       |
-| [Data Teams](/docs/data/teams/)                    | Who builds, operates, analyzes, and supports the data ecosystem?                    |
+| Domain                                        | Primary question                                                                    |
+| --------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Data Governance**                           | Who decides, what rules apply, and how is accountability demonstrated?              |
+| [Data Management](/docs/data/management/)     | How do we keep data reliable, usable, and sustainable?                              |
+| [Metadata](/docs/data/metadata/)              | What do we know about the data and its context?                                     |
+| [Data Privacy](/docs/data/privacy/)           | Under what conditions should information about people be processed?                 |
+| Data Security                                 | How is data protected against unauthorized access, alteration, disclosure, or loss? |
+| [Data Architecture](/docs/data/architecture/) | How should data systems, boundaries, and flows be structured?                       |
+| [Data Teams](/docs/data/teams/)               | Who builds, operates, analyzes, and supports the data ecosystem?                    |
 
 These capabilities meet at interfaces rather than forming isolated silos. Governance defines classification and control objectives; Metadata represents and propagates their context; Security and Privacy implement specialized safeguards; Architecture places structural boundaries; and Management performs sustained operational work.
 

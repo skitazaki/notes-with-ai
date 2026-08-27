@@ -2,8 +2,8 @@
 date: "2026-08-17T00:00:00+09:00"
 title: "データ統合とフロー"
 weight: 3
-prev: "/docs/data/data-architecture/patterns"
-next: "/docs/data/data-architecture/modern-data-architecture"
+prev: "/docs/data/architecture/patterns"
+next: "/docs/data/architecture/modern-data-architecture"
 ---
 
 データ統合は、一つの境界で生成された情報を別の境界で利用できるようにシステムを接続します。移動メカニズムは、遅延、結合度、整合性、障害時の振る舞い、再生可能性、接続を運用する責任主体を決めます。そのため、単なるパイプライン実装ではなく、アーキテクチャ上の意思決定です。

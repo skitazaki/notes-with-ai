@@ -3,7 +3,7 @@ date: "2026-02-17T22:00:00+09:00"
 title: "Data Analytics"
 weight: 1
 prev: "/docs/data"
-next: "/docs/data/data-architecture"
+next: "/docs/data/architecture"
 ---
 
 Data analytics is the disciplined use of data to reduce uncertainty and improve decisions. It turns observations about a business, product, or system into evidence that people can interpret and act on.
