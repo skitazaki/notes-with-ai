@@ -38,6 +38,7 @@ Use these pages to move from the overall data landscape into a specific capabili
 {{< card link="engineering/" title="Data Engineering" icon="server" subtitle="Building and operating reliable data flows, pipelines, and platform capabilities" >}}
 {{< card link="management/" title="Data Management" icon="cog" subtitle="Maintaining data quality, accessibility, lifecycle, and operational sustainability" >}}
 {{< card link="metadata/" title="Metadata" icon="tag" subtitle="Enabling discovery, meaning, lineage, interoperability, and automated control" >}}
+{{< card link="security/" title="Data Security" icon="shield-check" subtitle="Protecting data against unauthorized disclosure, alteration, destruction, leakage, and misuse" >}}
 {{< card link="privacy/" title="Data Privacy" icon="lock-closed" subtitle="Governing responsible processing and protection of data about people" >}}
 {{< card link="teams/" title="Data Teams" icon="users" subtitle="Organizing roles, ownership, collaboration, and capability development" >}}
 {{< /cards >}}
@@ -163,12 +164,21 @@ It ensures that value creation is balanced with risk management, regulatory alig
 - **Roles, Ownership & Stewardship** – Clear accountability models for data domains and assets
 - **Auditability & Control Monitoring** – Traceability, reporting, and continuous compliance verification
 
-### Data Security & Privacy
+### [Data Security](/docs/data/security/)
 
-- **Risk Assessment & Threat Management** – Identification, evaluation, and mitigation of data-related risks
-- **Sensitive Data Protection** – Classification, encryption, masking, and secure handling controls
-- **Personal Data Governance** – Consent management, lawful processing, and data subject rights support
-- **Access Control & Continuous Monitoring** – Identity-based access, logging, anomaly detection, and incident response
+- **Threat & Exposure Assessment** – Identification of assets, copies, boundaries, and credible disclosure, integrity, and availability threats
+- **Protection & Handling Controls** – Classification, encryption, masking, tokenization, secure transport, and storage safeguards
+- **Loss Prevention & Monitoring** – Egress restrictions, access telemetry, anomaly detection, and extraction signals
+- **Response & Recovery** – Containment, credential and key rotation, integrity verification, and trusted restoration
+
+### [Data Privacy](/docs/data/privacy/)
+
+- **Appropriate Processing** – Purpose limitation, minimization, transparency, and justified use of information about people
+- **Personal Data Concepts** – Identifiability, sensitivity, inference, and context-dependent privacy risk
+- **Individual Interests** – Consent where appropriate, participation, rights, and expectations
+- **Privacy by Design** – Embedding responsible processing, retention, and deletion into data flows
+
+Governance, security, and privacy overlap but remain independent sibling concerns. Governance establishes ownership, policy, decision rights, and evidence. Security protects data against compromise and loss. Privacy determines whether processing information about people is appropriate.
 
 ## Operating Model: PPT
 
