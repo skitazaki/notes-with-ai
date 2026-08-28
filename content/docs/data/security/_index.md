@@ -11,7 +11,7 @@ Confidentiality limits disclosure, integrity protects against unauthorized or un
 
 ## A Data-Centric Boundary
 
-Modern data is copied into warehouses, lakehouses, object stores, notebooks, caches, temporary files, extracts, analytics tools, backups, SaaS platforms, partner environments, and AI systems. Protecting one database or network perimeter therefore leaves other copies and transfer paths exposed.
+Modern data rarely remains in one system. It is copied across operational databases, analytical platforms, object storage, SaaS services, backups, partner environments, and AI systems. Protecting one database or network perimeter therefore leaves other copies and transfer paths exposed.
 
 Data-centric security follows the asset across boundaries. It combines defense in depth, least privilege, blast-radius reduction, and assume-breach thinking: prevent compromise, limit what a compromised identity or component can reach, detect misuse, and preserve recovery.
 
@@ -19,26 +19,13 @@ Data-centric security follows the asset across boundaries. It combines defense i
 
 The principle is to protect data across systems and boundaries, not merely the perimeter around one system.
 
-## From Understanding to Recovery
+## Two Complementary Lifecycles
 
-```mermaid
-flowchart LR
-  U["Understand<br/>inventory, location, lineage"] --> C["Classify & Assess<br/>sensitivity, exposure, threats"]
-  C --> P["Protect<br/>encryption, masking, secure handling"]
-  P --> O["Control<br/>least privilege, isolation, egress"]
-  O --> D["Detect<br/>audit, anomalies, extraction"]
-  D --> R["Respond & Recover<br/>contain, investigate, restore, verify"]
-  R -. lessons .-> U
-```
+Data security has two related but distinct lifecycle views. The **data lifecycle** follows the protected asset as it is collected, stored, processed, shared, backed up, and deleted. The **security operating cycle** describes the recurring activities used to understand risk, apply safeguards, detect failure, and restore protection. The first asks where the data is and what can happen to it; the second asks how protection is maintained as systems and threats change.
 
-- **Understand** important data, copies, flows, locations, and dependencies.
-- **Classify and assess** sensitivity, criticality, exposure, trust boundaries, and threats.
-- **Protect** data and credentials through encryption, representation-changing techniques, and secure storage and transport.
-- **Control** permitted paths using least privilege, isolation, policy enforcement, controlled sharing, and egress restrictions. Identity and authorization models belong in [Access Control](/docs/acc/).
-- **Detect** security-relevant access, permission changes, abnormal queries, bulk extraction, and exfiltration signals.
-- **Respond and recover** by containing access, rotating credentials and keys, investigating affected data, restoring trusted copies, and validating integrity.
+### The Data Lifecycle: Where Protection Changes
 
-## Security Across the Lifecycle
+Security requirements change with the state of the data and the boundary it is crossing. A control that protects a stored object does not automatically protect a query result, a partner copy, or a value exposed in memory.
 
 | Lifecycle or state | Representative concerns                                                      |
 | ------------------ | ---------------------------------------------------------------------------- |
@@ -52,11 +39,37 @@ flowchart LR
 
 Cloud storage, streams, warehouses, lakehouses, SaaS analytics, clean rooms, data products, cross-cloud transfers, and AI consumption are contexts in which controls operate—not separate security taxonomies.
 
-## Lightweight Data Threat Modeling
+### The Security Operating Cycle: How Protection Is Sustained
+
+The operating cycle is not another sequence of data states. It is a continuous management loop applied across every state in the data lifecycle. A change in classification, lineage, destination, workload, or threat can cause the cycle to reassess and adjust existing controls.
+
+```mermaid
+flowchart LR
+  U["Understand<br/>inventory, location, lineage"] --> C["Classify & Assess<br/>sensitivity, exposure, threats"]
+  C --> P["Protect<br/>encryption, masking, secure handling"]
+  P --> O["Control<br/>least privilege, isolation, egress"]
+  O --> D["Detect<br/>audit, anomalies, extraction"]
+  D --> R["Respond & Recover<br/>contain, investigate, restore, verify"]
+  R -. lessons .-> U
+```
+
+- **Understand and assess** important data, copies, flows, dependencies, sensitivity, exposure, trust boundaries, and credible threats.
+- **Protect and control** data and credentials with encryption, representation-changing techniques, secure storage and transport, least privilege, isolation, controlled sharing, and egress restrictions.
+- **Detect, respond, and recover** by observing security-relevant activity, containing access, rotating credentials and keys, investigating affected data, restoring trusted copies, and validating integrity.
+
+The cycle produces feedback rather than a one-time progression. Detection and incidents reveal unknown copies or weak boundaries; recovery tests expose gaps in backups or key management; new metadata can change classification and handling. Detailed identity and authorization models used within the Control activity belong in [Access Control](/docs/acc/).
+
+## Scope, Threats, and Relationships
+
+The two lifecycle views define the coverage of Data Security. Threat modeling tests that coverage against credible failure paths, while neighboring disciplines provide policy, context, system design, and specialized controls without becoming subdomains of Data Security.
+
+### Data-Focused Threat Modeling
 
 Start with the data. Identify sensitive or business-critical assets, enumerate copies and flows, mark trust boundaries, and ask how confidentiality, integrity, availability, or authenticity could fail. Relevant threats include unauthorized reading or modification, accidental disclosure, public exposure, credential compromise, privilege escalation, insiders, exfiltration, ransomware, backup compromise, cross-tenant exposure, third-party compromise, and inference from protected data. Prioritize credible paths by impact and ease, then map preventive, detective, and recovery controls.
 
-## Boundaries with Neighboring Disciplines
+Threat modeling connects the two lifecycles: it examines threats at each data state and tests whether the operating cycle can prevent, detect, contain, and recover from them.
+
+### Relationships with Neighboring Disciplines
 
 | Discipline                                                                                         | Primary question                                                                  | Relationship to data security                                                                                                    |
 | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -78,4 +91,4 @@ Start with the data. Identify sensitive or business-critical assets, enumerate c
 
 ## Summary
 
-Data security protects the asset across its lifecycle. It starts by understanding and classifying data, applies layered protections and controlled paths, observes access and movement, and preserves the ability to contain and recover.
+Data security protects the asset as its state changes throughout the data lifecycle and sustains that protection through a continuous operating cycle. Together, these views connect changing data states with the activities needed to assess risk, apply controls, detect failure, and recover trusted data.
