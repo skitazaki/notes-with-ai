@@ -43,15 +43,7 @@ Cloud storage, streams, warehouses, lakehouses, SaaS analytics, clean rooms, dat
 
 The operating cycle is not another sequence of data states. It is a continuous management loop applied across every state in the data lifecycle. A change in classification, lineage, destination, workload, or threat can cause the cycle to reassess and adjust existing controls.
 
-```mermaid
-flowchart LR
-  U["Understand<br/>inventory, location, lineage"] --> C["Classify & Assess<br/>sensitivity, exposure, threats"]
-  C --> P["Protect<br/>encryption, masking, secure handling"]
-  P --> O["Control<br/>least privilege, isolation, egress"]
-  O --> D["Detect<br/>audit, anomalies, extraction"]
-  D --> R["Respond & Recover<br/>contain, investigate, restore, verify"]
-  R -. lessons .-> U
-```
+![A continuous six-stage security operating cycle linking understanding, assessment, protection, control, detection, response, and recovery through lessons learned](security-operating-cycle.webp "Security Operating Cycle")
 
 - **Understand and assess** important data, copies, flows, dependencies, sensitivity, exposure, trust boundaries, and credible threats.
 - **Protect and control** data and credentials with encryption, representation-changing techniques, secure storage and transport, least privilege, isolation, controlled sharing, and egress restrictions.
