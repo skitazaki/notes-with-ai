@@ -38,6 +38,7 @@ Use these pages to move from the overall data landscape into a specific capabili
 {{< card link="engineering/" title="Data Engineering" icon="server" subtitle="Building and operating reliable data flows, pipelines, and platform capabilities" >}}
 {{< card link="management/" title="Data Management" icon="cog" subtitle="Maintaining data quality, accessibility, lifecycle, and operational sustainability" >}}
 {{< card link="metadata/" title="Metadata" icon="tag" subtitle="Enabling discovery, meaning, lineage, interoperability, and automated control" >}}
+{{< card link="governance/" title="Data Governance" icon="shield-check" subtitle="Defining accountability, decision rights, policies, controls, and evidence" >}}
 {{< card link="security/" title="Data Security" icon="shield-check" subtitle="Protecting data against unauthorized disclosure, alteration, destruction, leakage, and misuse" >}}
 {{< card link="privacy/" title="Data Privacy" icon="lock-closed" subtitle="Governing responsible processing and protection of data about people" >}}
 {{< card link="teams/" title="Data Teams" icon="users" subtitle="Organizing roles, ownership, collaboration, and capability development" >}}
@@ -157,7 +158,7 @@ This layer defines the boundaries between external reality and internal data pla
 The Control Layer safeguards the data ecosystem by embedding governance, security, privacy, and compliance mechanisms across all stages of the lifecycle.
 It ensures that value creation is balanced with risk management, regulatory alignment, and accountability. Rather than acting as a constraint, this layer provides the trust framework that enables sustainable, scalable, and responsible data operations.
 
-### Data Governance
+### [Data Governance](/docs/data/governance/)
 
 - **Policy Framework & Enforcement** – Definition, operationalization, and automated enforcement of data policies
 - **Regulatory & Compliance Management** – Alignment with legal, industry, and contractual requirements
@@ -165,6 +166,8 @@ It ensures that value creation is balanced with risk management, regulatory alig
 - **Auditability & Control Monitoring** – Traceability, reporting, and continuous compliance verification
 
 ### [Data Security](/docs/data/security/)
+
+Governance defines expectations and accountability; [Data Management](/docs/data/management/) performs the ongoing work required to satisfy them. [Metadata](/docs/data/metadata/) supplies the context and signals that connect policies, assets, controls, and evidence.
 
 - **Threat & Exposure Assessment** – Identification of assets, copies, boundaries, and credible disclosure, integrity, and availability threats
 - **Protection & Handling Controls** – Classification, encryption, masking, tokenization, secure transport, and storage safeguards
