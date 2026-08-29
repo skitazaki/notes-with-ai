@@ -160,6 +160,8 @@ It ensures that value creation is balanced with risk management, regulatory alig
 
 ### [Data Governance](/docs/data/governance/)
 
+Governance defines expectations and accountability; [Data Management](/docs/data/management/) performs the ongoing work required to satisfy them. [Metadata](/docs/data/metadata/) supplies the context and signals that connect policies, assets, controls, and evidence.
+
 - **Policy Framework & Enforcement** – Definition, operationalization, and automated enforcement of data policies
 - **Regulatory & Compliance Management** – Alignment with legal, industry, and contractual requirements
 - **Roles, Ownership & Stewardship** – Clear accountability models for data domains and assets
@@ -167,7 +169,7 @@ It ensures that value creation is balanced with risk management, regulatory alig
 
 ### [Data Security](/docs/data/security/)
 
-Governance defines expectations and accountability; [Data Management](/docs/data/management/) performs the ongoing work required to satisfy them. [Metadata](/docs/data/metadata/) supplies the context and signals that connect policies, assets, controls, and evidence.
+Data Security protects information against unauthorized disclosure, improper alteration, loss, and disruption across systems and lifecycle states.
 
 - **Threat & Exposure Assessment** – Identification of assets, copies, boundaries, and credible disclosure, integrity, and availability threats
 - **Protection & Handling Controls** – Classification, encryption, masking, tokenization, secure transport, and storage safeguards

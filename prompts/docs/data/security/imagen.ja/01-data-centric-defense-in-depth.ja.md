@@ -37,7 +37,7 @@ description: システムや境界を越えてデータを守る多層統制と�
 - `boundaries, segmentation, secure transport` -> `境界、セグメンテーション、安全な転送`
 - `Monitoring & detection` -> `監視と検知`
 - `audit trails, anomalies, extraction signals` -> `監査証跡、異常、抽出シグナル`
-- `Protect data across systems and boundaries—not merely one perimeter.` -> `1つの境界だけでなく、システムと境界を越えてデータを守る。`
+- `Protect data across systems and boundaries—not merely one perimeter.` -> `1 つの境界だけでなく、システムと境界を越えてデータを守る。`
 
 制約：
 
