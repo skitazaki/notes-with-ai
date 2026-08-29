@@ -39,6 +39,7 @@ Use these pages to move from the overall data landscape into a specific capabili
 {{< card link="management/" title="Data Management" icon="cog" subtitle="Maintaining data quality, accessibility, lifecycle, and operational sustainability" >}}
 {{< card link="metadata/" title="Metadata" icon="tag" subtitle="Enabling discovery, meaning, lineage, interoperability, and automated control" >}}
 {{< card link="governance/" title="Data Governance" icon="shield-check" subtitle="Defining accountability, decision rights, policies, controls, and evidence" >}}
+{{< card link="security/" title="Data Security" icon="shield-check" subtitle="Protecting data against unauthorized disclosure, alteration, destruction, leakage, and misuse" >}}
 {{< card link="privacy/" title="Data Privacy" icon="lock-closed" subtitle="Governing responsible processing and protection of data about people" >}}
 {{< card link="teams/" title="Data Teams" icon="users" subtitle="Organizing roles, ownership, collaboration, and capability development" >}}
 {{< /cards >}}
@@ -159,19 +160,30 @@ It ensures that value creation is balanced with risk management, regulatory alig
 
 ### [Data Governance](/docs/data/governance/)
 
+Governance defines expectations and accountability; [Data Management](/docs/data/management/) performs the ongoing work required to satisfy them. [Metadata](/docs/data/metadata/) supplies the context and signals that connect policies, assets, controls, and evidence.
+
 - **Policy Framework & Enforcement** – Definition, operationalization, and automated enforcement of data policies
 - **Regulatory & Compliance Management** – Alignment with legal, industry, and contractual requirements
 - **Roles, Ownership & Stewardship** – Clear accountability models for data domains and assets
 - **Auditability & Control Monitoring** – Traceability, reporting, and continuous compliance verification
 
-Governance defines expectations and accountability; [Data Management](/docs/data/management/) performs the ongoing work required to satisfy them. [Metadata](/docs/data/metadata/) supplies the context and signals that connect policies, assets, controls, and evidence.
+### [Data Security](/docs/data/security/)
 
-### Data Security & Privacy
+Data Security protects information against unauthorized disclosure, improper alteration, loss, and disruption across systems and lifecycle states.
 
-- **Risk Assessment & Threat Management** – Identification, evaluation, and mitigation of data-related risks
-- **Sensitive Data Protection** – Classification, encryption, masking, and secure handling controls
-- **Personal Data Governance** – Consent management, lawful processing, and data subject rights support
-- **Access Control & Continuous Monitoring** – Identity-based access, logging, anomaly detection, and incident response
+- **Threat & Exposure Assessment** – Identification of assets, copies, boundaries, and credible disclosure, integrity, and availability threats
+- **Protection & Handling Controls** – Classification, encryption, masking, tokenization, secure transport, and storage safeguards
+- **Loss Prevention & Monitoring** – Egress restrictions, access telemetry, anomaly detection, and extraction signals
+- **Response & Recovery** – Containment, credential and key rotation, integrity verification, and trusted restoration
+
+### [Data Privacy](/docs/data/privacy/)
+
+- **Appropriate Processing** – Purpose limitation, minimization, transparency, and justified use of information about people
+- **Personal Data Concepts** – Identifiability, sensitivity, inference, and context-dependent privacy risk
+- **Individual Interests** – Consent where appropriate, participation, rights, and expectations
+- **Privacy by Design** – Embedding responsible processing, retention, and deletion into data flows
+
+Governance, security, and privacy overlap but remain independent sibling concerns. Governance establishes ownership, policy, decision rights, and evidence. Security protects data against compromise and loss. Privacy determines whether processing information about people is appropriate.
 
 ## Operating Model: PPT
 
