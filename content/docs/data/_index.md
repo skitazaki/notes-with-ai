@@ -135,11 +135,13 @@ Metadata provides the connective tissue across the data ecosystem, enabling tran
 
 ## 3. Source Layer
 
-The Source Layer establishes the entry point of data into the ecosystem.
-It governs how data is acquired from internal systems, external partners, devices, and public sources, ensuring authenticity, integrity, and traceability from the moment of ingestion.
-This layer defines the boundaries between external reality and internal data platforms, forming the foundation upon which all downstream processing and value creation depend.
+The Source Layer describes where data originates and how it is obtained from operational systems, applications, people, devices, partners, and external providers.
+It establishes provenance and relevant consent or legal basis at acquisition, before engineering mechanisms transfer the data into the managed platform.
+This is a lifecycle view of the source boundary, not a requirement that collection and platform entry be implemented as separate physical systems.
 
 ### Landing Zone
+
+A landing zone sits close to the source boundary but is generally already part of the managed data platform. It is the durable arrival point created by [Data Ingestion](/docs/data/engineering/ingestion/), rather than a source or collection mechanism.
 
 - **Raw Data Ingestion Storage** – Immutable storage for incoming data in its original format
 - **Schema & Format Validation** – Structural checks and basic integrity validation upon arrival
@@ -148,10 +150,14 @@ This layer defines the boundaries between external reality and internal data pla
 
 ### Data Collection
 
-- **Source Integration** – APIs, databases, streaming systems, third-party feeds, CDC (Change Data Capture)
-- **Automated Extraction** – Scheduled scraping, batch ingestion, and event-driven capture
-- **Open Data & External Acquisition** – Public datasets, partner data, licensed sources
-- **Consent & Compliance Handling** – Legal basis tracking, usage restrictions, and policy alignment
+Data Collection asks: **Where does the data come from, and how is it obtained?**
+
+- **Operational & Application Sources** – Business systems, application-generated records, and producer interfaces such as APIs
+- **Devices & Human Input** – Sensors, telemetry generation, application instrumentation, surveys, forms, and manual collection
+- **External Acquisition** – Partner feeds, externally supplied files, public datasets, and licensed sources
+- **Acquisition Context** – Provenance, consent or legal basis where relevant, usage restrictions, and source ownership
+
+Once data is produced or collected, [Data Ingestion](/docs/data/engineering/ingestion/) handles its reliable transfer across the platform boundary into a durable, platform-managed state. CDC, incremental reads, retries, checkpoints, replay, and delivery guarantees are ingestion mechanics rather than collection concepts.
 
 ## 4. Control Layer
 

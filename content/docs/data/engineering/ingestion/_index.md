@@ -6,16 +6,16 @@ prev: "/docs/data/engineering"
 next: "/docs/data/engineering/processing"
 ---
 
-Data Ingestion moves data from source systems into a data platform reliably enough for downstream processing and use. Sources may be operational databases, files, APIs, applications, devices, partner systems, or public datasets. The engineering challenge is not merely transferring bytes; it is preserving useful meaning and delivery guarantees while limiting impact on the producer.
+Data Ingestion is the engineering process of reliably transferring produced or collected data across the data-platform boundary into a durable, platform-managed state for downstream processing and use. Sources may be operational databases, files, APIs, applications, devices, partner systems, or public datasets. The engineering challenge is not merely transferring bytes; it is preserving useful meaning and delivery guarantees while limiting impact on the producer.
+
+Its central question is: **How do we reliably bring data into the platform?** The origin and acquisition of data are described as [Data Collection in the Source Layer](/docs/data/#data-collection); ingestion begins where that data is transferred into the managed platform.
 
 ```mermaid
 flowchart LR
-  DB["Operational DB"] --> Ingestion
-  API --> Ingestion
-  Files --> Ingestion
-  Events --> Ingestion
-  External["External Data"] --> Ingestion
-  Ingestion --> Platform["Data Platform"]
+  Sources["Sources"] --> Collection["Data Collection"]
+  Collection -->|"platform boundary"| Ingestion["Data Ingestion"]
+  Ingestion --> Landing["Durable Landing / Raw State"]
+  Landing --> Processing["Data Processing"]
 ```
 
 ## Ingestion Modes
@@ -84,6 +84,6 @@ Credentials should be narrowly scoped and rotated. Data should be protected in t
 
 ## Where Ingestion Ends
 
-Ingestion is primarily responsible for acquiring and durably landing data with identifiable delivery and provenance. [Data Processing](../processing/) changes that data into representations intended for use through filtering, joins, aggregation, enrichment, or business rules.
+Ingestion is primarily responsible for reading from a technical source interface, reliably transferring the data, and landing it durably with identifiable delivery and provenance. [Data Processing](../processing/) changes that data into representations intended for use through filtering, joins, aggregation, enrichment, or business rules.
 
 Real platforms sometimes combine light normalization or validation with ingestion. The useful boundary is responsibility: transport-level checks and safe landing belong near ingestion, while reusable domain transformations belong to processing. Keeping that distinction visible makes failures, replay, and ownership easier to reason about.
