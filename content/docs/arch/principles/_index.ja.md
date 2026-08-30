@@ -2,6 +2,7 @@
 date: "2026-08-30T00:00:00+09:00"
 title: "アーキテクチャ原則"
 weight: 9
+prev: "/docs/arch/decision-frameworks"
 ---
 
 アーキテクチャ原則は、組織の優先事項を、設計判断に使える持続的な指針へ変換します。

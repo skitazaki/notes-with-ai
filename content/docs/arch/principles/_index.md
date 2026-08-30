@@ -2,6 +2,7 @@
 date: "2026-08-30T00:00:00+09:00"
 title: "Architecture Principles"
 weight: 9
+prev: "/docs/arch/decision-frameworks"
 ---
 
 Architecture principles turn organizational priorities into durable guidance for design decisions. They make a preferred direction explicit before a team becomes attached to a particular technology or implementation.

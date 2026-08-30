@@ -43,12 +43,12 @@ flowchart LR
   container --> component["コンポーネント<br/>コンテナ内の責務"]
 ```
 
-| ナビゲーションレベル       | 代表的なトピック                                                                                        |
-| -------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **システムランドスケープ** | [責任境界](ownership-boundaries/)、[ビューとビューポイント](views-and-viewpoints/)                      |
-| **システム**               | [アーキテクチャの観点](dimensions/)、[ピラー](pillars/)、[意思決定フレームワーク](decision-frameworks/) |
-| **コンテナ**               | [レイヤー](layers/)、[プレーン](planes/)                                                                |
-| **コンポーネント**         | [フローとパイプライン](flows-and-pipelines/)、[レイヤー](layers/)                                       |
+| ナビゲーションレベル       | 代表的なトピック                                                                                                                           |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **システムランドスケープ** | [責任境界](ownership-boundaries/)、[ビューとビューポイント](views-and-viewpoints/)                                                         |
+| **システム**               | [アーキテクチャの観点](dimensions/)、[ピラー](pillars/)、[アーキテクチャ原則](principles/)、[意思決定フレームワーク](decision-frameworks/) |
+| **コンテナ**               | [レイヤー](layers/)、[プレーン](planes/)                                                                                                   |
+| **コンポーネント**         | [フローとパイプライン](flows-and-pipelines/)、[レイヤー](layers/)                                                                          |
 
 スコープ、ラベル、関係を明示し、1 つの図に異なる抽象度を混在させないことが、図を理解しやすく保つために重要です。[^c4-introduction]
 
@@ -141,6 +141,7 @@ flowchart LR
 {{< card link="pillars/" title="ピラー" icon="library" subtitle="アーキテクチャ上のトレードオフを導く戦略的な品質軸" >}}
 {{< card link="ownership-boundaries/" title="責任境界" icon="map" subtitle="変更、運用、契約、説明責任の分担" >}}
 {{< card link="views-and-viewpoints/" title="ビューとビューポイント" icon="eye" subtitle="関心事から導かれる、対象読者別の伝達成果物" >}}
+{{< card link="principles/" title="アーキテクチャ原則" icon="light-bulb" subtitle="組織の優先事項を制約や選好へ変換する持続的な指針" >}}
 {{< card link="decision-frameworks/" title="意思決定フレームワーク" icon="scale" subtitle="関心事、観点、トレードオフ、判断をつなぐ方法" >}}
 {{< /cards >}}
 

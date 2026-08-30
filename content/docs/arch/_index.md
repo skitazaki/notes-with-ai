@@ -43,12 +43,12 @@ flowchart LR
   container --> component["Component<br/>Responsibilities within a container"]
 ```
 
-| Navigation level     | Representative topics                                                                                    |
-| -------------------- | -------------------------------------------------------------------------------------------------------- |
-| **System Landscape** | [Ownership Boundaries](ownership-boundaries/), [Views and Viewpoints](views-and-viewpoints/)             |
-| **System**           | [Architecture Dimensions](dimensions/), [Pillars](pillars/), [Decision Frameworks](decision-frameworks/) |
-| **Container**        | [Layers](layers/), [Planes](planes/)                                                                     |
-| **Component**        | [Flows and Pipelines](flows-and-pipelines/), [Layers](layers/)                                           |
+| Navigation level     | Representative topics                                                                                                                            |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **System Landscape** | [Ownership Boundaries](ownership-boundaries/), [Views and Viewpoints](views-and-viewpoints/)                                                     |
+| **System**           | [Architecture Dimensions](dimensions/), [Pillars](pillars/), [Architecture Principles](principles/), [Decision Frameworks](decision-frameworks/) |
+| **Container**        | [Layers](layers/), [Planes](planes/)                                                                                                             |
+| **Component**        | [Flows and Pipelines](flows-and-pipelines/), [Layers](layers/)                                                                                   |
 
 Keeping scope, labels, and relationships explicit prevents a single diagram from mixing abstraction levels and becoming difficult to interpret.[^c4-introduction]
 
@@ -132,6 +132,7 @@ Use the topic pages below to move directly to the areas that match the question 
 {{< card link="pillars/" title="Pillars" icon="library" subtitle="Strategic qualities that guide architectural tradeoffs" >}}
 {{< card link="ownership-boundaries/" title="Ownership Boundaries" icon="map" subtitle="Responsibility for change, operation, contracts, and accountability" >}}
 {{< card link="views-and-viewpoints/" title="Views and Viewpoints" icon="eye" subtitle="Audience-specific communication artifacts derived from architecture concerns" >}}
+{{< card link="principles/" title="Architecture Principles" icon="light-bulb" subtitle="Durable guidance that turns organizational priorities into constraints and preferences" >}}
 {{< card link="decision-frameworks/" title="Decision Frameworks" icon="scale" subtitle="How to connect concerns, dimensions, tradeoffs, and decisions" >}}
 {{< /cards >}}
 

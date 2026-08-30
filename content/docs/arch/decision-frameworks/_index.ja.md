@@ -3,6 +3,7 @@ date: "2026-06-28T00:00:00+09:00"
 title: "意思決定フレームワーク"
 weight: 8
 prev: "/docs/arch/views-and-viewpoints"
+next: "/docs/arch/principles"
 ---
 
 アーキテクチャ用語が役に立つのは、判断の質を高めるときだけです。
