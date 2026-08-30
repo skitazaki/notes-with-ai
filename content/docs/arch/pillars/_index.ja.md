@@ -91,6 +91,8 @@ next: "/docs/arch/ownership-boundaries"
 
 この考え方は、主要なクラウドの設計ガイダンスにも見られます。[AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)、[Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)、[Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) は、いずれもベンダー固有の形でアーキテクチャ上の優先順位を整理した文書です。これらはピラーにもとづく設計思考の実例として有用ですが、どれか 1 つを普遍的な定義とみなすべきではありません。
 
+[アーキテクチャ原則](../principles/) は、こうした広い優先事項を、多くの意思決定へ適用できる持続的な指針に変換します。運用性のようなピラーは何が重要かを示し、差別化につながらないインフラにはマネージドサービスを優先するという原則は、その改善へ向けて繰り返し適用する選好を示します。
+
 ## 実務で使うフレームワークの例
 
 公開されているアーキテクチャフレームワークが有用なのは、戦略的な優先順位を明示してくれるからです。

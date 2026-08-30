@@ -11,6 +11,8 @@ Architecture terminology is useful only when it improves judgment. Teams make we
 
 An architecture decision framework is a repeatable way to connect concerns, options, tradeoffs, evidence, and consequences. It helps teams move from vocabulary to judgment without turning architecture into ceremony for its own sake.
 
+[Architecture Principles](../principles/) provide durable guidance across many decisions; a decision framework applies that guidance while reasoning through one particular choice. A principle can establish a default or burden of proof, but the framework still tests options against context, evidence, and consequences.
+
 ## Why Decision Frameworks Matter
 
 Many architecture debates fail for the same reason: the team is comparing labels instead of answering a question. One person may be thinking about reliability, another about team ownership, and another about latency. Without a framework, the conversation appears technical but remains misaligned.

@@ -30,7 +30,7 @@ Move inward to the system's large structural and operational parts. [Layers](lay
 
 ### How do those building blocks interact?
 
-Use [Flows and Pipelines](flows-and-pipelines/) to trace requests, events, data, and failure paths between parts. Use [Decision Frameworks](decision-frameworks/) to connect those interactions to concerns, tradeoffs, and architectural decisions, and return to [Views and Viewpoints](views-and-viewpoints/) when the interaction needs to be communicated to a specific audience.
+Use [Flows and Pipelines](flows-and-pipelines/) to trace requests, events, data, and failure paths between parts. Use [Architecture Principles](principles/) to carry persistent organizational guidance into [Decision Frameworks](decision-frameworks/), which connect those interactions to concerns, tradeoffs, and architectural decisions. Return to [Views and Viewpoints](views-and-viewpoints/) when the result needs to be communicated to a specific audience.
 
 ### Architecture Zoom Map
 
@@ -52,7 +52,13 @@ flowchart LR
 
 Keeping scope, labels, and relationships explicit prevents a single diagram from mixing abstraction levels and becoming difficult to interpret.[^c4-introduction]
 
-## Architecture as Reasoning
+## Architecture as Reasoning and Communication
+
+Architecture has two closely connected roles. It helps teams reason about a system, and it helps them communicate that reasoning to people who need to understand, challenge, approve, build, or operate it.
+
+Reasoning without communication remains private and difficult to review. Communication without reasoning produces polished artifacts that may not reflect sound decisions. Useful architecture moves repeatedly between the two.
+
+### Reasoning about the System
 
 Architecture helps engineers think before the cost of change becomes high.
 It gives teams a way to examine structure, behavior, constraints, and consequences without reducing the system to source code or runtime infrastructure alone.
@@ -69,9 +75,8 @@ Reasoning artifacts are not always polished publication artifacts.
 They may be incomplete, temporary, or focused on one narrow decision.
 Their value comes from making complexity visible enough that a team can think together.
 
-## Architecture as Communication
+### Communicating the Reasoning
 
-Architecture also helps people communicate.
 Executives, engineers, operators, security reviewers, and product teams do not need the same view of a system.
 A useful architecture document selects the details that matter for a specific audience and purpose.
 
@@ -87,18 +92,17 @@ Communication views help teams:
 A single master architecture diagram is usually less useful than several intentional views.
 Each view should answer a question, support a decision, or help a specific audience understand a concern.
 
-## From Concerns to Views
+### From Concerns to Views
 
-Clear architecture documentation usually starts with a concern rather than a diagram.
-The concern determines the dimension to reason about, the tradeoffs to evaluate, and the view needed for communication.
+Reasoning and communication connect through concerns. A concern determines what the team needs to understand, which dimensions and tradeoffs it should examine, and which view will communicate the result to the intended audience.
 
-One useful progression is:
+The progression is iterative:
 
 1. Identify the concern.
 2. Choose the relevant dimension.
 3. Reason about options and tradeoffs.
 4. Create a view for the intended audience.
-5. Use the view to communicate or decide.
+5. Use feedback from the view to refine the reasoning or support a decision.
 
 ![From Concerns to Views: five steps from identifying a concern through reasoning about dimensions and tradeoffs to communicating or deciding with an audience-specific view](from-concerns-to-views.webp)
 
@@ -106,6 +110,14 @@ For example, if the concern is dependency direction, a structural layer view may
 If the concern is runtime policy enforcement, a plane or flow view may be better.
 If the concern is accountability, an ownership boundary view may be the right artifact.
 If the concern is executive alignment, the best view may hide most implementation detail.
+
+## From Concern to Architecture
+
+In practical architecture work, this reasoning-and-communication loop draws on the concepts in this section as a connected system rather than a flat vocabulary. Pillars identify what matters. Principles translate those priorities into persistent guidance. Decision frameworks apply that guidance to a specific choice. Layers, planes, and flows describe the resulting architecture, while views present the relevant parts to specific audiences.
+
+![From Concern to Architecture: pillars inform architecture principles, which guide decision frameworks and produce architecture decisions expressed through layers, planes, flows and pipelines, and views and viewpoints](from-concern-to-architecture.webp "From Concern to Architecture")
+
+This map is a practical progression, not a mandatory one-way sequence. A decision may expose a new concern, a view may reveal that a principle is difficult to apply, and structural or runtime analysis may change the evidence. The topic pages below explain each part of the system and the questions it helps answer.
 
 ## Topic Pages
 
