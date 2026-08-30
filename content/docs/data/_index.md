@@ -139,15 +139,6 @@ The Source Layer describes where data originates and how it is obtained from ope
 It establishes provenance and relevant consent or legal basis at acquisition, before engineering mechanisms transfer the data into the managed platform.
 This is a lifecycle view of the source boundary, not a requirement that collection and platform entry be implemented as separate physical systems.
 
-### Landing Zone
-
-A landing zone sits close to the source boundary but is generally already part of the managed data platform. It is the durable arrival point created by [Data Ingestion](/docs/data/engineering/ingestion/), rather than a source or collection mechanism.
-
-- **Raw Data Ingestion Storage** – Immutable storage for incoming data in its original format
-- **Schema & Format Validation** – Structural checks and basic integrity validation upon arrival
-- **Data Isolation & Access Control** – Segregated environments with controlled permissions
-- **Initial Metadata Capture** – Source, timestamp, lineage, and ingestion context recording
-
 ### Data Collection
 
 Data Collection asks: **Where does the data come from, and how is it obtained?**
@@ -158,6 +149,15 @@ Data Collection asks: **Where does the data come from, and how is it obtained?**
 - **Acquisition Context** – Provenance, consent or legal basis where relevant, usage restrictions, and source ownership
 
 Once data is produced or collected, [Data Ingestion](/docs/data/engineering/ingestion/) handles its reliable transfer across the platform boundary into a durable, platform-managed state. CDC, incremental reads, retries, checkpoints, replay, and delivery guarantees are ingestion mechanics rather than collection concepts.
+
+### Landing Zone
+
+A landing zone sits close to the source boundary but is generally already part of the managed data platform. It is the durable arrival point created by [Data Ingestion](/docs/data/engineering/ingestion/), rather than a source or collection mechanism. In a zoned storage design, it keeps landed or raw data distinct from later processed and curated states.
+
+- **Raw Data Ingestion Storage** – Immutable storage for incoming data in its original format
+- **Schema & Format Validation** – Structural checks and basic integrity validation upon arrival
+- **Data Isolation & Access Control** – Segregated environments with controlled permissions
+- **Initial Metadata Capture** – Source, timestamp, lineage, and ingestion context recording
 
 ## 4. Control Layer
 
