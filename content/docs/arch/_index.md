@@ -104,7 +104,7 @@ The progression is iterative:
 4. Create a view for the intended audience.
 5. Use feedback from the view to refine the reasoning or support a decision.
 
-![From Concerns to Views: five steps from identifying a concern through reasoning about dimensions and tradeoffs to communicating or deciding with an audience-specific view](from-concerns-to-views.webp)
+![From Concerns to Views: five steps from identifying a concern through reasoning about dimensions and tradeoffs to refining the reasoning and supporting a decision with an audience-specific view](from-concerns-to-views.webp)
 
 For example, if the concern is dependency direction, a structural layer view may help.
 If the concern is runtime policy enforcement, a plane or flow view may be better.
