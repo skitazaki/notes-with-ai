@@ -74,6 +74,8 @@ For example, if reliability is a top pillar, teams may prefer simpler dependenci
 
 This way of thinking also appears in major cloud guidance. [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html), [Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/), and [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) each publish vendor-specific sets of architectural priorities. Those guides are useful real-world examples of pillar-based design thinking, even though no single vendor framework should be treated as the universal definition.
 
+[Architecture Principles](../principles/) turn those broad priorities into durable guidance that can be applied across many decisions. A pillar such as operability identifies what matters; a principle such as preferring managed services for undifferentiated infrastructure states a repeatable preference intended to improve it.
+
 ## Real-World Framework Examples
 
 Published architecture frameworks are useful because they make strategic priorities explicit. They give teams a shared vocabulary for review, tradeoff analysis, and governance. They are examples of pillar-based thinking, not final authorities on what every architecture must optimize for.
