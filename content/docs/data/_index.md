@@ -34,6 +34,7 @@ Use these pages to move from the overall data landscape into a specific capabili
 {{< cards >}}
 {{< card link="analytics/" title="Data Analytics" icon="chart-bar" subtitle="Turning data into evidence, predictions, decisions, and measurable outcomes" >}}
 {{< card link="architecture/" title="Data Architecture" icon="template" subtitle="Structural decisions about data systems, flows, boundaries, and evolution" >}}
+{{< card link="collection/" title="Data Collection" icon="collection" subtitle="Selecting and capturing data at its source with known purpose, provenance, and constraints" >}}
 {{< card link="sharing/" title="Data Sharing" icon="share" subtitle="Extending governed data value across organizational and ecosystem boundaries" >}}
 {{< card link="engineering/" title="Data Engineering" icon="server" subtitle="Building and operating reliable data flows, pipelines, and platform capabilities" >}}
 {{< card link="management/" title="Data Management" icon="cog" subtitle="Maintaining data quality, accessibility, lifecycle, and operational sustainability" >}}
@@ -139,16 +140,16 @@ The Source Layer describes where data originates and how it is obtained from ope
 It establishes provenance and relevant consent or legal basis at acquisition, before engineering mechanisms transfer the data into the managed platform.
 This is a lifecycle view of the source boundary, not a requirement that collection and platform entry be implemented as separate physical systems.
 
-### Data Collection
+### [Data Collection](/docs/data/collection/)
 
-Data Collection asks: **Where does the data come from, and how is it obtained?**
+Data Collection asks: **What data should we acquire, from where, under what conditions, and how is it captured at the source?**
 
-- **Operational & Application Sources** – Business systems, application-generated records, and producer interfaces such as APIs
-- **Devices & Human Input** – Sensors, telemetry generation, application instrumentation, surveys, forms, and manual collection
-- **External Acquisition** – Partner feeds, externally supplied files, public datasets, and licensed sources
-- **Acquisition Context** – Provenance, consent or legal basis where relevant, usage restrictions, and source ownership
+- **Source Selection** – Operational systems, applications, people, devices, partners, public sources, and commercial providers evaluated for authority and fitness
+- **Collection Design** – Purpose, population, observation unit, scope, granularity, frequency, timing, and sampling
+- **Capture Methods** – Instrumentation, transactional capture, measurement, telemetry, surveys, forms, and external acquisition
+- **Acquisition Context** – Provenance, source ownership, reliability, limitations, authorized basis, and usage restrictions
 
-Once data is produced or collected, [Data Ingestion](/docs/data/engineering/ingestion/) handles its reliable transfer across the platform boundary into a durable, platform-managed state. CDC, incremental reads, retries, checkpoints, replay, and delivery guarantees are ingestion mechanics rather than collection concepts.
+Collection determines what becomes observable before engineering begins. Once data is produced or collected, [Data Ingestion](/docs/data/engineering/ingestion/) handles its reliable transfer across the platform boundary into a durable, platform-managed state. CDC, incremental reads, retries, checkpoints, replay, and delivery guarantees remain ingestion mechanics rather than collection concepts.
 
 ### Landing Zone
 
