@@ -1,7 +1,7 @@
 ---
 type: image
 path: /docs/data/governance/policies-standards-and-controls
-description: Policy, Standard, and Control grouped as one governance mechanism informed by Principle and producing Evidence for assurance and feedback.
+description: Policy, Standard, and Control grouped as one governance mechanism informed by Principle, producing Evidence whose review returns as Feedback.
 ---
 
 # Image Generation Prompt — Policies, Standards, and Controls
@@ -10,11 +10,11 @@ Create a polished 1536 × 1024 pixels technical infographic titled **Policies, S
 
 ## Purpose
 
-Help readers distinguish the three subjects named by the page title and understand how they connect. Show Policy, Standard, and Control as equally important but different elements inside one clearly bounded governance mechanism. Grouping is more important than a rigid pipeline. Place Principle outside and above the group, and Evidence downstream as support for assurance and feedback.
+Help readers distinguish the three subjects named by the page title and understand how they connect. Show Policy, Standard, and Control as equally important but different elements inside one clearly bounded governance mechanism. Grouping is more important than a rigid pipeline. Place Principle outside and above the group. Show Evidence as an output of the mechanism and Feedback as the return path through which review informs the mechanism.
 
 ## Core Message
 
-Policy defines a mandatory outcome and scope. Standard translates expectations into testable common requirements. Control is the operating mechanism that prevents, detects, or corrects deviation. Principle provides stable direction to the grouped mechanism as a whole. Evidence demonstrates design and operation and supports feedback. These are traceable relationships, not a universal one-to-one hierarchy.
+Policy defines a mandatory outcome and scope. Standard translates expectations into testable common requirements. Control is the operating mechanism that prevents, detects, or corrects deviation. Principle provides stable direction to the grouped mechanism as a whole. The mechanism produces Evidence that demonstrates design and operation. Review of that evidence returns as Feedback that can improve the mechanism. These are traceable relationships, not a universal one-to-one hierarchy.
 
 ## Composition
 
@@ -40,7 +40,7 @@ Inside the Control column, place a compact inset labeled **Control Objective** w
 
 Control Objective and the three modes are details of Control. Do not give them the same visual rank as Policy, Standard, or Control. Do not connect the three modes to one another.
 
-Place a slim tray labeled **Evidence & Feedback** below the grouped mechanism. Include compact icons for validation, approval, exception, and audit event. Connect the tray to the group as observable output and feedback, not as another policy level or document.
+Place a slim tray labeled **Evidence** below the grouped mechanism. Include compact icons for validation, approval, exception, and audit event. Use one clear downward arrow from the grouped mechanism to Evidence to show that operation creates observable records. Separately, draw a curved return arrow from Evidence back to the outer Governance Mechanism boundary and label that path **Feedback**. Feedback is the result of reviewing evidence and informing improvement; it is not a document, tray, or synonym for Evidence.
 
 ## Visual Hierarchy
 
@@ -48,8 +48,9 @@ Place a slim tray labeled **Evidence & Feedback** below the grouped mechanism. I
 - Governance Mechanism visibly groups Policy, Standard, and Control as the three dominant and equally weighted subjects
 - Principle is a quiet directional context above them
 - Control Objective and Prevent, Detect, Correct are subordinate details inside Control
-- Evidence & Feedback is a subordinate operational output below the group
-- First reading: Principle informs the grouped mechanism; second reading: the three related elements and their evidence
+- Evidence is a subordinate operational output below the group
+- Feedback is a labeled return path from Evidence to the Governance Mechanism
+- First reading: Principle informs the grouped mechanism; second reading: the mechanism produces Evidence and receives Feedback
 
 ## Style
 
@@ -84,14 +85,16 @@ Use only these exact labels:
 - **Prevent**
 - **Detect**
 - **Correct**
-- **Evidence & Feedback**
+- **Evidence**
+- **Feedback**
 
 ## Do
 
 - Give Policy, Standard, and Control equal column width and equal title prominence.
 - Use document-like cues for Policy and Standard, but not for Control.
 - Use a target for Control Objective and a gear or switch for Control.
-- Show Evidence as a retained record produced by Control operation.
+- Show Evidence as retained records produced by operation.
+- Show Feedback only as the return path created by reviewing Evidence.
 - Make the shared Governance Mechanism boundary visually unambiguous.
 - Connect Principle to the group as a whole.
 - Render all required text exactly as written.
@@ -103,6 +106,7 @@ Use only these exact labels:
 - Show Prevent, Detect, and Correct as sequential stages.
 - Leave Policy, Standard, and Control ungrouped, or show Control Objective as a peer of Control.
 - Make Principle, Control Objective, or Evidence a fourth main column.
+- Combine Evidence and Feedback into one label or box.
 - Point Principle directly to Standard or any one inner card.
 - Present Policy → Standard → Control as a strict maturity sequence or universal one-to-one hierarchy.
 - Use multiple competing paths, crossing connectors, or branching arrows.
