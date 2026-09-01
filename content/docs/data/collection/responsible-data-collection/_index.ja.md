@@ -3,7 +3,7 @@ date: "2026-08-30T00:00:00+09:00"
 title: "責任あるデータ収集"
 weight: 5
 prev: "/docs/data/collection/external-and-third-party-data"
-next: "/docs/data/engineering"
+next: "/docs/data/collection"
 ---
 
 責任あるデータ収集は、データを収集すべきか、どのように収集するかを決める時点で、ガバナンス、プライバシー、セキュリティ、説明責任を適用します。これらの領域を重複して説明するのではなく、収集によって取り消しにくいリスク、義務、期待、コピーが生まれる前に、必要な問いを提示することが目的です。

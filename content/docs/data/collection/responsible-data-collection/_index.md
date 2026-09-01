@@ -3,7 +3,7 @@ date: "2026-08-30T00:00:00+09:00"
 title: "Responsible Data Collection"
 weight: 5
 prev: "/docs/data/collection/external-and-third-party-data"
-next: "/docs/data/engineering"
+next: "/docs/data/collection"
 ---
 
 Responsible Data Collection applies governance, privacy, security, and accountability when deciding whether and how data should be collected. Its purpose is not to reproduce those disciplines, but to bring their questions to the earliest point—before collection creates risk, obligations, expectations, and copies that may be difficult to reverse.
