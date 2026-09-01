@@ -99,6 +99,18 @@ When the user asks for a new documentation area, decide first whether the reques
 - a landing hub page for a broader field, or
 - a topic page under an existing hub
 
+### Hub and topic navigation
+
+When a documentation hub has an ordered set of child topic pages, use the front matter `prev` and `next` fields to create a closed navigation path within that hub:
+
+- the hub's `next` points to its first child topic
+- the first child topic's `prev` points to the hub
+- intermediate topic pages link to the preceding and following sibling topics
+- the final topic page's `next` points back to the hub, not to the next unrelated documentation section
+- localized pages preserve the same navigation structure and resolve to the corresponding localized routes
+
+For example, a hub with three topics should navigate as `Hub → Topic A → Topic B → Topic C → Hub`. Apply this rule when creating a new hub, adding or removing topics, reordering topics, or updating navigation metadata on an existing hub.
+
 ## Workflow For AI Services
 
 ### 1. Work as content director first
