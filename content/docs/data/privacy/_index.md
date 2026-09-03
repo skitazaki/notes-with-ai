@@ -3,6 +3,7 @@ date: "2026-07-30T00:00:00+09:00"
 title: "Data Privacy"
 weight: 7
 prev: "/docs/data"
+next: "/docs/data/privacy/privacy-fundamentals"
 ---
 
 Data privacy is the discipline of deciding when and how information about people may be collected, used, shared, retained, and deleted. It makes the effects of data processing on individuals visible, so that organizations can create value from data without treating people merely as sources of information.
@@ -90,14 +91,14 @@ This section is organized as a documentation library rather than one long articl
 Use the topic pages below to move directly to the area that matches the question you need to answer.
 
 {{< cards >}}
-{{< card link="privacy-fundamentals/" title="Privacy Fundamentals (TBD)" icon="book-open" subtitle="Core principles, terminology, and decision lenses" >}}
-{{< card link="personal-data-and-pii/" title="Personal Data and PII (TBD)" icon="identification" subtitle="Identifiers, sensitive data, and re-identification risk" >}}
-{{< card link="privacy-harms/" title="Privacy Harms (TBD)" icon="exclamation" subtitle="How collection, use, disclosure, and interference can affect people" >}}
-{{< card link="data-classification/" title="Data Classification (TBD)" icon="tag" subtitle="Classifying data according to sensitivity and handling needs" >}}
-{{< card link="de-identification/" title="De-identification (TBD)" icon="eye-off" subtitle="Reducing identifiability through anonymization, pseudonymization, and related techniques" >}}
-{{< card link="privacy-engineering/" title="Privacy Engineering (TBD)" icon="cog" subtitle="Embedding privacy requirements into systems and data flows" >}}
-{{< card link="sensitive-data-protection/" title="Sensitive Data Protection (TBD)" icon="lock-closed" subtitle="Safeguards for data that requires stronger handling controls" >}}
-{{< card link="privacy-governance/" title="Privacy Governance (TBD)" icon="scale" subtitle="Accountability, policies, roles, and evidence across the lifecycle" >}}
+{{< card link="privacy-fundamentals/" title="Privacy Fundamentals" icon="book-open" subtitle="Core principles, terminology, and decision lenses" >}}
+{{< card link="personal-data-and-pii/" title="Personal Data and PII" icon="identification" subtitle="Identifiers, sensitive data, and re-identification risk" >}}
+{{< card link="privacy-harms/" title="Privacy Harms" icon="exclamation" subtitle="How collection, use, disclosure, and interference can affect people" >}}
+{{< card link="data-classification/" title="Data Classification" icon="tag" subtitle="Classifying data according to sensitivity and handling needs" >}}
+{{< card link="de-identification/" title="De-identification" icon="eye-off" subtitle="Reducing identifiability through anonymization, pseudonymization, and related techniques" >}}
+{{< card link="privacy-engineering/" title="Privacy Engineering" icon="cog" subtitle="Embedding privacy requirements into systems and data flows" >}}
+{{< card link="sensitive-data-protection/" title="Sensitive Data Protection" icon="lock-closed" subtitle="Safeguards for data that requires stronger handling controls" >}}
+{{< card link="privacy-governance/" title="Privacy Governance" icon="scale" subtitle="Accountability, policies, roles, and evidence across the lifecycle" >}}
 {{< /cards >}}
 
 ## Summary

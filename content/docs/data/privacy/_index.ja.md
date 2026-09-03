@@ -3,6 +3,7 @@ date: "2026-07-30T00:00:00+09:00"
 title: "データプライバシー"
 weight: 7
 prev: "/docs/data"
+next: "/docs/data/privacy/privacy-fundamentals"
 ---
 
 データプライバシーとは、人に関する情報を、いつ、どのように収集し、利用・共有・保持・削除してよいかを判断するための実践です。データ処理が個人に与える影響を可視化し、組織が人を単なる情報源として扱うことなく、データから価値を生み出せるようにします。
@@ -90,14 +91,14 @@ prev: "/docs/data"
 以下のトピックページから、解決したい問いに合う領域へ直接進んでください。
 
 {{< cards >}}
-{{< card link="privacy-fundamentals/" title="プライバシーの基礎（予定）" icon="book-open" subtitle="中核原則、用語、意思決定の視点" >}}
-{{< card link="personal-data-and-pii/" title="個人データと PII（予定）" icon="identification" subtitle="識別子、機微データ、再識別リスク" >}}
-{{< card link="privacy-harms/" title="プライバシー侵害の類型（予定）" icon="exclamation" subtitle="収集、利用、開示、干渉が人に与える影響" >}}
-{{< card link="data-classification/" title="データ分類（予定）" icon="tag" subtitle="機微性と取り扱い要件に基づくデータ分類" >}}
-{{< card link="de-identification/" title="非識別化（予定）" icon="eye-off" subtitle="匿名化、仮名化、関連手法によって識別可能性を下げる" >}}
-{{< card link="privacy-engineering/" title="プライバシーエンジニアリング（予定）" icon="cog" subtitle="システムとデータフローへプライバシー要件を組み込む" >}}
-{{< card link="sensitive-data-protection/" title="機微データ保護（予定）" icon="lock-closed" subtitle="より強い取り扱い管理を必要とするデータへの保護策" >}}
-{{< card link="privacy-governance/" title="プライバシーガバナンス（予定）" icon="scale" subtitle="ライフサイクル全体にわたる説明責任、方針、役割、証跡" >}}
+{{< card link="privacy-fundamentals/" title="プライバシーの基礎" icon="book-open" subtitle="中核原則、用語、意思決定の視点" >}}
+{{< card link="personal-data-and-pii/" title="個人データと PII" icon="identification" subtitle="識別子、機微データ、再識別リスク" >}}
+{{< card link="privacy-harms/" title="プライバシー侵害の類型" icon="exclamation" subtitle="収集、利用、開示、干渉が人に与える影響" >}}
+{{< card link="data-classification/" title="データ分類" icon="tag" subtitle="機微性と取り扱い要件に基づくデータ分類" >}}
+{{< card link="de-identification/" title="非識別化" icon="eye-off" subtitle="匿名化、仮名化、関連手法によって識別可能性を下げる" >}}
+{{< card link="privacy-engineering/" title="プライバシーエンジニアリング" icon="cog" subtitle="システムとデータフローへプライバシー要件を組み込む" >}}
+{{< card link="sensitive-data-protection/" title="機微データ保護" icon="lock-closed" subtitle="より強い取り扱い管理を必要とするデータへの保護策" >}}
+{{< card link="privacy-governance/" title="プライバシーガバナンス" icon="scale" subtitle="ライフサイクル全体にわたる説明責任、方針、役割、証跡" >}}
 {{< /cards >}}
 
 ## まとめ
