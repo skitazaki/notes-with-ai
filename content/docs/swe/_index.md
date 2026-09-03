@@ -9,9 +9,9 @@ Software engineering is the discipline of designing, building, delivering, opera
 
 This hub presents several ways to navigate that discipline. The domains below describe its major bodies of knowledge; the lifecycle follows work from framing requirements to evolving a production system; and cross-cutting concerns show qualities that influence every stage. These views overlap by design. A topic has one canonical home in the documentation tree but may be approached from several conceptual paths.
 
-![Software engineering landscape organized into building the system, proving and delivering it, and running and evolving it, with security, lifecycle, cross-cutting concerns, and AI-assisted engineering spanning the field](software-engineering-landscape.webp "Software Engineering landscape")
+![Real-world context—including user needs, business goals, constraints, risk, change, and uncertainty—flows into an iterative software engineering lifecycle; cross-cutting concerns span the work, and operational evidence from software systems in use feeds back into engineering](software-engineering-landscape.webp "Software engineering from real-world context to systems in use")
 
-The three columns group the field by its central work: shaping the system, proving quality and delivering change, and running and evolving software in production. They are not isolated phases. Security spans every activity; the lifecycle supplies a recurring flow of feedback; cross-cutting concerns such as reliability, maintainability, and cost influence decisions throughout; and AI-assisted and agentic engineering changes both how the work is performed and what kinds of systems must be engineered.
+Software engineering responds to an imperfect and changing real-world context: user needs, business goals, constraints, risk, and uncertainty. Requirements framing, design, building, testing, delivery, and operation form a recognizable lifecycle, but feedback connects the activities rather than separating them into a one-way sequence. Security, reliability, maintainability, and performance shape decisions throughout. Once software is in use, operational evidence feeds back into engineering and can refine the understanding of the context, supporting continued improvement and adaptation.
 
 ## Where to start
 
