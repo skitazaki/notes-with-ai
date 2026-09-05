@@ -20,7 +20,7 @@ A practical data quality architecture therefore needs two things:
 
 This approach preserves conceptual clarity while making implementation more realistic. It supports measurable controls, metadata-driven governance, and automated quality operations without collapsing fundamentally different concerns into one overloaded taxonomy.
 
-![Layered data quality model showing a stable core of six dimensions surrounded by structural, runtime, semantic, governance, and AI extension layers](data-quality-dimensions-ChatGPT.webp)
+![Layered data quality model showing a stable core of six dimensions surrounded by structural, runtime, semantic, governance, and AI extension layers](data-quality-dimensions-ChatGPT.webp "Data Quality Dimensions")
 
 ## Why Modern Platforms Need a Layered Model
 
@@ -226,7 +226,7 @@ The dimension might be completeness. The metric could be the percentage of order
 
 The same distinction appears in runtime quality. Freshness may be treated as a dimension in some tooling, but operationally it is often better modeled as a signal or SLA-backed metric tied to timeliness and delivery behavior. Separating the concepts improves architecture because it allows platforms to manage controls precisely: dimensions organize meaning, metrics quantify, checks enforce, signals observe, and incidents trigger response.
 
-![Data quality control concepts showing the relationship between dimensions, metrics, checks, constraints, rules, signals, incidents, and SLAs](data-quality-control-concepts-ChatGPT.webp)
+![Data quality control concepts organized into Define and Measure, Evaluate, and Operate groups](data-quality-control-concepts-ChatGPT.webp "From Quality Dimension to Operational Control")
 
 ## Designing a Metadata-Driven Quality System
 
