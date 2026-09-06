@@ -228,27 +228,14 @@ Include a table similar to:
 
 Explain why separating these concepts improves architecture design.
 
-## Required Architectural Diagram
+## Image Coordination
 
-Describe a conceptual diagram that contains:
+The article uses two separately generated diagrams. Keep the prose and terminology aligned with these durable image briefs:
 
-```text
-Data Quality
-│
-├── Core Dimensions
-│
-├── Structural Extensions
-│
-├── Runtime Extensions
-│
-├── Semantic Extensions
-│
-├── Governance Extensions
-│
-└── AI Extensions
-```
+- `prompts/docs/data/data-quality/imagen/01-data-quality-dimensions.md`
+- `prompts/docs/data/data-quality/imagen/02-data-quality-control-concepts.md`
 
-The diagram should be explained in prose rather than rendered as ASCII art.
+Explain each diagram's model in the surrounding prose. Do not reproduce either diagram as ASCII art or embed image-generation instructions in the article.
 
 ## Writing Style
 
