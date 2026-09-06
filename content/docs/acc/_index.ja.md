@@ -7,10 +7,10 @@ weight: 5
 アクセス制御は、誰または何が、どの条件で、どの程度の保証を伴って、どの操作を実行できるかを定義するアーキテクチャ上の中核領域です。
 現代のシステムでは、この問いは従業員や顧客だけでなく、ワークロード、API、外部サービス、AI エージェント、そしてクラウドとオンプレミスをまたぐ信頼境界全体に広がります。
 
-本セクションは、単一の長文レポートではなく、セキュリティアーキテクチャのライブラリとして構成しています。
-基本原則、技術ドメイン、運用統制、再利用可能な参照資料を分離し、戦略から実装までを一貫した概念モデルのまま辿れるようにしています。
+本セクションは、単一の長文レポートではなく、3 階層のセキュリティアーキテクチャライブラリとして構成しています。
+領域全体の概要からドメインハブへ進み、各ハブから個別のトピックページへ移動できます。基本原則、技術ドメイン、運用統制、再利用可能な参照資料を分離し、戦略から実装までを一貫した概念モデルのまま辿れるようにしています。
 
-![人、ワークロード、AI エージェントに対して、アイデンティティ源、ポリシー判断と適用ポイント、ガバナンス統制、監査ログをつないだアクセス制御アーキテクチャの全体図](access-control-overview-ChatGPT.webp)
+![人、ワークロード、AI エージェントの主体が、アイデンティティと文脈、中央のポリシー判断、適用を経て保護対象リソースへ到達し、ガバナンスとライフサイクル、および監視と監査がシステム全体を横断するアクセス制御のマップ](access-control-map.ja.webp "アクセス制御")
 
 推奨する読書順は次のとおりです。
 
@@ -26,23 +26,16 @@ weight: 5
 - **主要概念**: 概念モデルの理解
 - **実装と運用**: 実装・運用上の論点
 
-## トピックページ
+## アクセス制御の領域を探る
 
-このセクションには、読みたい領域が決まっているときに直接開けるトピックページも用意しています。
-以下のリンクから、いまの問いに合うドメイン、統制モデル、参照資料へそのまま進んでください。
+以下のハブから、アクセス制御の全体像を起点として、特定のドメイン、運用上の論点、参照資料へ進んでください。
 
 {{< cards >}}
-{{< card link="vision/" title="ビジョンと原則" icon="sparkles" subtitle="アイデンティティ中心のセキュリティを支える北極星" >}}
-{{< card link="landscape/" title="アクセス制御の全体像" icon="map" subtitle="アクセス制御の全体像と分類体系" >}}
-{{< card link="human-identity/" title="人のアイデンティティとエンタープライズ IAM" icon="users" subtitle="ライフサイクル、連携、PAM、統制" >}}
-{{< card link="authorization-models/" title="認可モデルとポリシーシステム" icon="shield-check" subtitle="DAC、MAC、RBAC、ABAC、ReBAC、PBAC とポリシー評価" >}}
-{{< card link="nonhuman-identity/" title="ワークロード、マシン、非人間 ID" icon="server" subtitle="機械の認証情報、動的ワークロード ID、非人間 ID の整理" >}}
-{{< card link="ai-agents/" title="AI エージェントと自律的認可" icon="chip" subtitle="エージェント ID、制約付き実行、承認境界" >}}
-{{< card link="defense-in-depth/" title="多層防御アーキテクチャ" icon="shield-exclamation" subtitle="ID、ネットワーク、ランタイム、可観測性をまたぐ防御" >}}
-{{< card link="governance/" title="ガバナンス、コンプライアンス、監査可能性" icon="clipboard-list" subtitle="証跡、説明可能性、権限統制、規制対応" >}}
-{{< card link="patterns/" title="アーキテクチャパターン集" icon="collection" subtitle="再利用可能な適用・配置パターン" >}}
-{{< card link="threat-models/" title="脅威モデル集" icon="exclamation" subtitle="典型的な攻撃経路、失敗モード、緩和策" >}}
-{{< card link="decision-frameworks/" title="意思決定フレームワークとトレードオフ" icon="scale" subtitle="設計選択を整理するための比較軸" >}}
-{{< card link="reference-architectures/" title="参照アーキテクチャ" icon="cube" subtitle="全体像を掴むための代表構成" >}}
-{{< card link="concept-dictionary/" title="用語集" icon="book-open" subtitle="主体、ポリシー、スコープ、信頼境界などの共通語彙" >}}
+{{< card link="introduction/" title="はじめに" icon="map" subtitle="ビジョン、原則、アクセス制御全体の見取り図" >}}
+{{< card link="identity-foundations/" title="アイデンティティ基盤" icon="users" subtitle="人、ワークロード、マシン、非人間 ID" >}}
+{{< card link="authorization-systems/" title="認可システム" icon="shield-check" subtitle="認可モデル、ポリシーシステム、評価のトレードオフ" >}}
+{{< card link="ai-emerging-systems/" title="AI と新興システム" icon="chip" subtitle="エージェント ID、制約付き実行、承認境界" >}}
+{{< card link="security-operations/" title="セキュリティ運用" icon="shield-exclamation" subtitle="多層防御、脅威モデル、監視、対応" >}}
+{{< card link="governance-compliance/" title="ガバナンスとコンプライアンス" icon="clipboard-list" subtitle="証跡、説明可能性、権限統制、規制対応" >}}
+{{< card link="reference-materials/" title="参照資料" icon="book-open" subtitle="パターン、意思決定、参照アーキテクチャ、共通語彙" >}}
 {{< /cards >}}

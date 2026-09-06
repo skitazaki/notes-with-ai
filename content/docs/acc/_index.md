@@ -7,10 +7,10 @@ weight: 5
 Access control is the architectural discipline that decides who or what may do what, under which conditions, and with what degree of assurance.
 In modern systems, that question spans employees, customers, workloads, APIs, third-party services, and AI agents operating across cloud and on-premises boundaries.
 
-This section is organized as a security architecture library rather than a single long report.
-It separates guiding principles, technical domains, operational controls, and reusable reference material so readers can move from strategy to implementation without losing the conceptual model.
+This section is organized as a three-level security architecture library rather than a single long report.
+The field overview leads to domain hubs, and each hub leads to focused topic pages. This structure separates guiding principles, technical domains, operational controls, and reusable reference material so readers can move from strategy to implementation without losing the conceptual model.
 
-![Access control architecture map showing identity sources, policy decision and enforcement points, governance controls, and end-to-end audit logging across humans, workloads, and AI agents](access-control-overview-ChatGPT.webp)
+![Access control map showing human, workload, and AI agent principals passing through identity and context, a central policy decision, and enforcement before reaching protected resources, with governance and lifecycle plus monitoring and audit spanning the system](access-control-map.webp "Access Control")
 
 The recommended reading flow is:
 
@@ -26,23 +26,16 @@ Every document follows a similar shape:
 - **Core Concepts** for the conceptual model
 - **Implementation and Operations** for architecture tradeoffs and operating guidance
 
-## Topic Pages
+## Explore Access Control Domains
 
-This section also provides topic pages that you can open directly when you already know the area you want to explore.
-Use the links below to move straight to the domain, control model, or reference material that matches your question.
+Use these hubs to move from the overall access-control landscape into a specific domain, operating concern, or reference collection.
 
 {{< cards >}}
-{{< card link="vision/" title="Vision & Principles" icon="sparkles" subtitle="North-star principles for identity-centric security" >}}
-{{< card link="landscape/" title="Landscape Overview" icon="map" subtitle="Taxonomy of the access-control ecosystem" >}}
-{{< card link="human-identity/" title="Human Identity & Enterprise IAM" icon="users" subtitle="Lifecycle, federation, PAM, and governance" >}}
-{{< card link="authorization-models/" title="Authorization Models & Policy Systems" icon="shield-check" subtitle="DAC, MAC, RBAC, ABAC, ReBAC, PBAC, and policy engines" >}}
-{{< card link="nonhuman-identity/" title="Workload, Machine, and Non-Human Identity" icon="server" subtitle="Machine credentials, dynamic runtime identity, and non-human identity" >}}
-{{< card link="ai-agents/" title="AI Agents & Autonomous Authorization" icon="chip" subtitle="Agent identities, constrained execution, and approval boundaries" >}}
-{{< card link="defense-in-depth/" title="Defense-in-Depth Architecture" icon="shield-exclamation" subtitle="Layered controls across identity, network, runtime, and telemetry" >}}
-{{< card link="governance/" title="Governance, Compliance & Auditability" icon="clipboard-list" subtitle="Evidence, explainability, entitlement governance, and regulation" >}}
-{{< card link="patterns/" title="Architecture Patterns Catalog" icon="collection" subtitle="Reusable enforcement and deployment patterns" >}}
-{{< card link="threat-models/" title="Threat Model Catalog" icon="exclamation" subtitle="Common failure modes, attack paths, and mitigations" >}}
-{{< card link="decision-frameworks/" title="Decision Frameworks & Tradeoffs" icon="scale" subtitle="How to choose between competing designs" >}}
-{{< card link="reference-architectures/" title="Reference Architectures" icon="cube" subtitle="End-to-end example architectures" >}}
-{{< card link="concept-dictionary/" title="Concept Dictionary" icon="book-open" subtitle="Shared terminology for principals, policies, scopes, and trust boundaries" >}}
+{{< card link="introduction/" title="Introduction" icon="map" subtitle="Vision, principles, and a map of the access-control landscape" >}}
+{{< card link="identity-foundations/" title="Identity Foundations" icon="users" subtitle="Human, workload, machine, and non-human identity" >}}
+{{< card link="authorization-systems/" title="Authorization Systems" icon="shield-check" subtitle="Authorization models, policy systems, and evaluation tradeoffs" >}}
+{{< card link="ai-emerging-systems/" title="AI & Emerging Systems" icon="chip" subtitle="Agent identities, constrained execution, and approval boundaries" >}}
+{{< card link="security-operations/" title="Security Operations" icon="shield-exclamation" subtitle="Layered controls, threat models, monitoring, and response" >}}
+{{< card link="governance-compliance/" title="Governance & Compliance" icon="clipboard-list" subtitle="Evidence, explainability, entitlement governance, and regulation" >}}
+{{< card link="reference-materials/" title="Reference Materials" icon="book-open" subtitle="Patterns, decision frameworks, architectures, and shared terminology" >}}
 {{< /cards >}}

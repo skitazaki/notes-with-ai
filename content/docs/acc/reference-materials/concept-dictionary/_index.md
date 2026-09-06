@@ -1,0 +1,76 @@
+---
+date: "2026-05-10T14:10:00+09:00"
+title: "Concept Dictionary"
+aliases: ["/docs/acc/concept-dictionary/"]
+weight: 4
+prev: "/docs/acc/reference-materials/reference-architectures"
+next: "/docs/acc/reference-materials"
+---
+
+Shared terminology is essential in access-control architecture because small differences in language often hide large differences in trust assumptions.
+
+## Executive Summary
+
+This dictionary defines core terms used across the library so policy, engineering, platform, and governance teams can discuss the same concepts without ambiguity.
+
+## Core Concepts
+
+### Principal
+
+The active entity requesting or performing an action. A principal may be a human user, service, workload, device, or AI agent.
+
+### Identity
+
+The asserted and validated representation of a principal within a trust domain. One principal may hold multiple identities across systems.
+
+### Subject
+
+The entity about which a policy decision is evaluated. In many systems subject and principal are effectively the same, but the distinction matters when delegated action is involved.
+
+### Resource
+
+The object, service, dataset, endpoint, or capability being accessed.
+
+### Entitlement
+
+A granted permission, role, or capability that allows some class of action.
+
+### Capability
+
+A bounded authority to perform a specific operation, often designed to be delegated, scoped, or time-limited.
+
+### Delegation
+
+The act of granting a principal limited authority to act on behalf of another principal or policy domain.
+
+### Policy
+
+The formal rule set used to decide whether access should be allowed, denied, constrained, or escalated.
+
+### Scope
+
+The bounded range within which a credential, permission, or delegated authority is valid.
+
+### Trust boundary
+
+The point across which assumptions about identity, control, or data handling must be re-evaluated.
+
+### Non-human identity
+
+The management concept for all identities that do not belong to people, including services, workloads, CI/CD systems, robots, devices, agents, and other automation.
+
+### Machine identity
+
+The broad category of credentials and identifiers used by machines, such as certificates, keys, tokens, service accounts, cloud roles, and device credentials.
+
+### Workload identity
+
+The dynamic, machine-verifiable identity of a running workload such as a service, job, container, function, VM, or pod. It is part of machine identity, but narrower than it.
+
+### Agent
+
+A software system that can plan and execute actions with some degree of autonomy, often using tools, memory, and delegated permissions.
+
+## Implementation and Operations
+
+Terminology should be standardized in policy code, audit records, architecture diagrams, and review processes. If teams use the same word to mean different things, control failures usually follow.
