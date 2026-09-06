@@ -10,7 +10,7 @@ In modern systems, that question spans employees, customers, workloads, APIs, th
 This section is organized as a three-level security architecture library rather than a single long report.
 The field overview leads to domain hubs, and each hub leads to focused topic pages. This structure separates guiding principles, technical domains, operational controls, and reusable reference material so readers can move from strategy to implementation without losing the conceptual model.
 
-![Access control map showing human, workload, and AI-agent principals passing through identity and context, a central policy decision, and enforcement before reaching protected resources, with governance and audit spanning the system](access-control-map.webp "Access Control")
+![Access control map showing human, workload, and AI agent principals passing through identity and context, a central policy decision, and enforcement before reaching protected resources, with governance and lifecycle plus monitoring and audit spanning the system](access-control-map.webp "Access Control")
 
 The recommended reading flow is:
 

@@ -257,6 +257,8 @@ When creating or revising an image-generation prompt:
 
 Place prompts in the directory that mirrors the eventual content location as closely as practical.
 
+Do not make committed content, prompts, configuration, or metadata depend on source or reference files outside this repository. In particular, never commit contributor-specific absolute paths or references to home directories, Downloads folders, temporary directories, or another checkout. When an external file is required as a durable input or reference, copy it into the appropriate repository directory and refer to it with a repository-relative path. Absolute runtime paths are allowed in executable configuration examples only when the path itself is part of the documented runtime behavior and is not contributor-specific.
+
 Image-generation prompts follow a dedicated subfolder convention:
 
 - place English image-generation briefs in an `imagen/` subfolder under the corresponding prompt directory

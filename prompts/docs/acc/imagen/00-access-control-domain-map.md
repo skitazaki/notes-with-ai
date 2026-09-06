@@ -20,8 +20,8 @@ The image should orient the reader without summarizing every model, technology, 
 
 Use these generated images as visual references:
 
-- English reference: `/Users/skitazaki/Downloads/ChatGPT Image 2026年9月6日 12_46_14.png`
-- Japanese reference: `/Users/skitazaki/Downloads/ChatGPT Image 2026年9月6日 12_46_10.png`
+- English reference: `content/docs/acc/access-control-map.png`
+- Japanese reference: `content/docs/acc/access-control-map.ja.png`
 
 Use the **English reference as the base** for the overall composition, proportions, five primary cards, information density, icon treatment, typography scale, and policy-decision detail.
 
@@ -84,7 +84,7 @@ The solid outer enclosure suggests defense in depth. Do not expand it into a sep
 ## Visual Hierarchy and Style
 
 - Make the policy decision the central focal point.
-- Give human, workload, and AI-agent identities equal visual weight.
+- Give human, workload, and AI agent identities equal visual weight.
 - Use icons only as supporting cues for the exact labels.
 - Keep all labels legible at normal article width.
 - Use a clean flat-vector editorial style with a warm off-white background.
@@ -131,4 +131,4 @@ Do not add a subtitle, definition, caption, acronym expansion, product name, sta
 - Target page: `content/docs/acc/_index.md`
 - Suggested filename: `access-control-map.webp`
 - Suggested title: `Access Control`
-- Suggested alt text: `Access control map showing human, workload, and AI-agent principals passing through identity and context, a central policy decision, and enforcement before reaching protected resources, with governance and audit spanning the system.`
+- Suggested alt text: `Access control map showing human, workload, and AI agent principals passing through identity and context, a central policy decision, and enforcement before reaching protected resources, with governance and lifecycle plus monitoring and audit spanning the system.`
