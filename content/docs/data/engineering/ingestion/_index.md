@@ -10,13 +10,7 @@ Data Ingestion is the engineering process of reliably transferring produced or c
 
 Its central question is: **How do we reliably bring data into the platform?** The source-side decisions about what to acquire, from where, under what conditions, and how it is captured are described in [Data Collection](/docs/data/collection/); ingestion begins where that data is transferred into the managed platform.
 
-```mermaid
-flowchart LR
-  Sources["Sources"] --> Collection["Data Collection"]
-  Collection -->|"platform boundary"| Ingestion["Data Ingestion"]
-  Ingestion --> Landing["Durable Landing / Raw State"]
-  Landing --> Processing["Data Processing"]
-```
+![Flow from source data and collection across the platform boundary into data ingestion, a durable landing or raw state, and data processing](ingestion-boundary.webp "From Collection to Ingestion")
 
 ## Ingestion Modes
 

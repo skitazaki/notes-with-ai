@@ -10,15 +10,7 @@ next: "/docs/data/engineering/observability"
 
 ## ワークフローと DAG
 
-```mermaid
-flowchart LR
-  Ingest["取り込み"] --> Validate["検証"]
-  Validate --> Transform["変換"]
-  Transform --> Publish["公開"]
-  Transform --> QualityChecks["品質チェック"]
-  QualityChecks --> Publish
-  Publish --> Notify["通知"]
-```
+![取り込み、検証、変換から品質チェックを必須ゲートとして公開と通知へ進み、状態、再試行、タイムアウトを全体で管理するワークフロー](orchestration-flow.ja.webp "信頼できるワークフローのオーケストレーション")
 
 ワークフローは作業単位とその関係を記述します。有向非巡回グラフ（DAG）では、ノードがタスク、辺が依存関係を表します。前提条件を可視化し、独立した分岐を並列に実行できます。長時間のイベント処理やフィードバックループには別の調整モデルが必要な場合もあります。
 

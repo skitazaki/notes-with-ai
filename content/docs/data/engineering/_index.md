@@ -13,13 +13,7 @@ The discipline is broader than ETL. It includes pipelines, distributed processin
 
 A useful mental model follows data from its producers to its consumers:
 
-```mermaid
-flowchart LR
-  Sources["Source Systems"] --> Ingestion["Data Ingestion"]
-  Ingestion --> Processing["Processing & Transformation"]
-  Processing --> Delivery["Delivery & Serving"]
-  Delivery --> Consumers["Analytics, Applications & AI"]
-```
+![Data engineering lifecycle from source systems through ingestion, processing and transformation, delivery and serving, to analytics, applications, and AI, supported throughout by orchestration, observability, automation, and reliability](data-engineering-lifecycle.webp "Data Engineering Lifecycle")
 
 This is a conceptual flow, not a required linear architecture. Real systems contain branches, feedback loops, event streams, multiple storage layers, independent producers and consumers, and combinations of batch and streaming paths. Orchestration, observability, automation, and reliability span the entire flow and make it operable.
 
@@ -85,11 +79,7 @@ The platform should reduce repeated operational work while preserving clear owne
 
 Data Engineering applies software-engineering practices to data systems:
 
-```mermaid
-flowchart LR
-  Code --> Test --> Build --> Deploy --> Operate --> Observe
-  Observe -. feedback .-> Code
-```
+![Continuous engineering delivery loop moving from code through test, build, deploy, operate, and observe, with feedback returning to code](engineering-delivery-loop.webp "Engineering Delivery Loop")
 
 Automated tests, controlled builds, environment promotion, Infrastructure as Code, schema migration, deployment automation, and post-deployment validation make changes repeatable and auditable. These practices are a natural future expansion area; they are introduced here without creating placeholder pages.
 
@@ -97,21 +87,7 @@ Automated tests, controlled builds, environment promotion, Infrastructure as Cod
 
 The boundaries below are conceptual views of the same ecosystem, not a literal organizational hierarchy.
 
-```mermaid
-flowchart TB
-  Data
-  Data --> Architecture["Architecture<br/>Structure & Patterns"]
-  Data --> Engineering["Engineering<br/>Implementation & Operations"]
-  Data --> Management["Management<br/>Trust & Sustainability"]
-  Engineering --> Ingestion
-  Engineering --> Processing
-  Engineering --> Orchestration
-  Engineering --> Observability
-  Metadata["Metadata: describes and connects the ecosystem"] -. spans .-> Architecture
-  Metadata -. spans .-> Engineering
-  Metadata -. spans .-> Management
-  Privacy["Privacy: constrains responsible data handling"] -. constrains .-> Engineering
-```
+![Data Architecture, Data Engineering, and Data Management as peer perspectives, with ingestion, processing, orchestration, and observability inside engineering, metadata spanning the ecosystem, and privacy constraining responsible handling](data-engineering-ecosystem.webp "Data Engineering in the Data Ecosystem")
 
 ### Data Engineering and Data Architecture
 

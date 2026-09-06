@@ -10,13 +10,7 @@ next: "/docs/data/engineering/processing"
 
 中心となる問いは、**データをプラットフォームへどのように確実に取り込むか**です。どのデータを、どこから、どの条件のもとで取得し、ソース側でどのように記録するかは、 [データ収集](/ja/docs/data/collection/) が扱います。取り込みは、そのデータを管理対象のプラットフォームへ移す境界から始まります。
 
-```mermaid
-flowchart LR
-  Sources["ソース"] --> Collection["データ収集"]
-  Collection -->|"プラットフォーム境界"| Ingestion["データ取り込み"]
-  Ingestion --> Landing["永続的なランディング／生データ状態"]
-  Landing --> Processing["データ処理"]
-```
+![ソースとデータ収集からプラットフォーム境界を越えて、データ取り込み、永続的なランディングまたは生データ、データ処理へ進む流れ](ingestion-boundary.ja.webp "収集から取り込みへ")
 
 ## 取り込み方式
 
