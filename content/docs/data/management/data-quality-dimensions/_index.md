@@ -20,7 +20,7 @@ A practical data quality architecture therefore needs two things:
 
 This approach preserves conceptual clarity while making implementation more realistic. It supports measurable controls, metadata-driven governance, and automated quality operations without collapsing fundamentally different concerns into one overloaded taxonomy.
 
-![Layered data quality model showing a stable core of six dimensions surrounded by structural, runtime, semantic, governance, and AI extension layers](data-quality-dimensions-ChatGPT.webp "Data Quality Dimensions")
+![Three-column data quality model with a central core panel for Accuracy, Completeness, Consistency, Timeliness, Uniqueness, and Validity, and separate Structural, Runtime, Semantic, Governance, and AI extension panels connected to the core by short lines](data-quality-dimensions-ChatGPT.webp "Data Quality Dimensions")
 
 ## Why Modern Platforms Need a Layered Model
 
