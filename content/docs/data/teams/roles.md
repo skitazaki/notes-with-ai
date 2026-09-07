@@ -249,32 +249,39 @@ Statisticians provide formal grounding that strengthens analytical credibility.
 
 ### Data Owner
 
-A Data Owner is accountable for a specific data domain from a business perspective.
+A Data Owner is accountable for decisions and outcomes within a defined governance scope, such as a business domain, dataset, or data product. The role connects data decisions to someone with the business authority to set expectations, resolve material trade-offs, and accept outcomes.
 
 Primary focus:
 
-- Defining acceptable data usage
-- Ensuring alignment with business objectives
-- Approving access and policies
-- Defining critical data elements
+- Defining acceptable uses and aligning them with business objectives
+- Approving quality, access, retention, and lifecycle expectations
+- Identifying critical data elements and the level of control they require
+- Assigning delegated decision rights and operational responsibilities
+- Resolving conflicts that exceed delegated authority
+- Escalating material policy or risk exceptions to the appropriate authority
 
-The Data Owner holds decision authority over how data within a domain is used.
+The Data Owner remains accountable when work is delegated to stewards, engineers, or platform teams. The role does not imply personally maintaining metadata, operating pipelines, or implementing every control. For example, an owner may approve the permitted uses and quality threshold for customer data while specialists implement access controls and stewards monitor whether definitions and practices remain aligned with that decision.
+
+An ownership assignment should name the governed scope, effective period, delegated authority, and escalation path. Without those boundaries, an owner recorded in a catalog may have a title but no practical way to exercise accountability.
 
 ---
 
 ### Data Steward
 
-A Data Steward is accountable for the definition, quality, and proper use of specific data domains (e.g., customer, product, finance). They ensure that shared data assets are consistent, accurate, and well-documented.
+A Data Steward carries out the continuous governance practice for a defined scope, such as customer, product, or finance data. Stewards maintain the shared context needed to understand and use data responsibly, and they coordinate work across the people who produce, operate, and consume it.
 
 Typical responsibilities include:
 
-- Defining business terms and data definitions
-- Monitoring quality issues
-- Coordinating remediation of inconsistencies
-- Acting as domain experts for shared datasets
+- Maintaining business terms, definitions, classifications, and other governance metadata
+- Monitoring quality and governance issues and preserving their history
+- Coordinating remediation of inconsistencies across producers and consumers
+- Interpreting policies and standards in the context of a domain or data asset
+- Preparing evidence, impact analysis, and recommendations for decisions
+- Escalating matters that exceed delegated authority to the Data Owner or governance forum
 
-Data stewardship formalizes ownership at the domain level and supports long-term trust.
-If a metric definition changes, the Data Steward ensures the change is documented and consistently applied.
+Stewardship is not subordinate administrative support, but it does not automatically carry the owner's decision authority. A steward can identify conflicting metric definitions, bring the affected teams together, and recommend a shared definition. The Data Owner decides when the choice has material business or risk consequences; the steward then records the rationale and coordinates consistent adoption.
+
+The title “Data Steward” is optional, but the practice is not. Whether assigned to a dedicated steward, a domain team, or several specialists, someone must keep definitions, decisions, exceptions, and issue status current. Active stewardship gives an owner reliable evidence and follow-through, while clear ownership gives stewards a route for decisions they should not make alone. See [Data Ownership and Stewardship](/docs/data/governance/ownership-and-stewardship/) for a fuller treatment of this relationship.
 
 ---
 
