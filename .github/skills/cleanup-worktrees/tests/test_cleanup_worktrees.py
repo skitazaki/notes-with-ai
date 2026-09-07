@@ -149,6 +149,7 @@ class CleanupWorktreesTest(unittest.TestCase):
 
         self.assertEqual("SAFE", result.category)
         self.assertIn("contained in merged PR base history", result.reason)
+        self.assertIn("(origin/main)", result.reason)
 
     def test_closed_pr_does_not_use_base_ancestry_fallback(self) -> None:
         path, local_oid = self.add_worktree("closed-behind")
@@ -197,6 +198,7 @@ class CleanupWorktreesTest(unittest.TestCase):
             )
 
         self.assertEqual("REVIEW", result.category)
+        self.assertIn("(origin/not-fetched)", result.reason)
         self.assertIn("run again with --fetch", result.reason)
 
     def test_apply_refuses_review_worktree(self) -> None:

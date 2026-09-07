@@ -143,7 +143,7 @@ def classify(repo: str, worktree: Worktree) -> Result:
     if not base:
         return Result(worktree, "REVIEW", "local tip differs from PR head and PR base is unavailable", number, state)
 
-    remote_base = f"refs/remotes/origin/{base}"
+    remote_base = f"origin/{base}"
     if not ref_exists(repo, remote_base):
         return Result(
             worktree,
