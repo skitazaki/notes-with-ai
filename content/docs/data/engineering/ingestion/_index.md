@@ -76,6 +76,22 @@ When producers are faster than consumers, ingestion needs buffering, flow contro
 
 Credentials should be narrowly scoped and rotated. Data should be protected in transit and at rest, and sensitive fields should be collected only when required. See [Data Privacy](/docs/data/privacy/) for the governing principles and [Metadata](/docs/data/metadata/) for classification, schemas, and lineage context.
 
+## Landing and Raw State
+
+A landing zone is the durable, platform-managed location or state where ingestion first commits incoming data. It sits close to the source boundary, but it is not a source or collection mechanism. Reaching it marks the transition from data controlled by the producer or transfer process to data that the platform can retain, identify, and operate.
+
+Landing commonly preserves the received representation so that a failed or changed downstream process can run again without extracting the data from its source. Depending on the ingestion mode, that durable state may be an immutable file or object, an append-only log, or a source-shaped table rather than a literal storage directory named `landing` or `raw`.
+
+A landing design should make the following responsibilities explicit:
+
+- **Durability and replay** — Retain accepted data long enough to recover or reproduce downstream processing, with clear retention and deletion rules.
+- **Identity and provenance** — Record the source, arrival time, ingestion run or position, schema context, and other identifiers needed for traceability and deduplication.
+- **Validation and quarantine** — Perform transport-level, format, and basic integrity checks without quietly turning landing into business transformation; isolate data that cannot be accepted safely.
+- **Isolation and access** — Restrict direct use of source-shaped data, particularly when it contains sensitive fields or has not passed downstream quality controls.
+- **Completion semantics** — Define when data counts as durably accepted so that acknowledgments and checkpoints do not advance before recovery is possible.
+
+Landing, staging, raw, and bronze are sometimes used interchangeably, but they do not have universal meanings. A platform should define each state by its responsibility, mutability, retention, and permitted transformations rather than relying on the zone name alone.
+
 ## Where Ingestion Ends
 
 Ingestion is primarily responsible for reading from a technical source interface, reliably transferring the data, and landing it durably with identifiable delivery and provenance. [Data Processing](../processing/) changes that data into representations intended for use through filtering, joins, aggregation, enrichment, or business rules.

@@ -8,7 +8,7 @@ Data is a structured or unstructured representation of real-world or system-gene
 This section organizes principles, architectures, practices, and operational models that enable scalable, reliable, and compliant data systems.
 It covers the full lifecycle of data — from acquisition and engineering to analytics, governance, security, and value realization, which is required to manage **data as a strategic asset**.
 
-![Conceptual overview of data as a strategic asset, showing source, enablement, and value layers from left to right with a cross-cutting control layer beneath them](data-hero.webp)
+![Conceptual overview of data as a strategic asset: source systems converge on data collection, ingestion begins inside the enablement layer and moves data through raw, transform, curate, and trusted states, while engineering, architecture, management, and metadata support the flow and control applies across all layers](data-hero.webp "Data as a Strategic Asset")
 
 The data can be understood as a layered system:
 
@@ -150,15 +150,6 @@ Data Collection asks: **What data should we acquire, from where, under what cond
 - **Acquisition Context** – Provenance, source ownership, reliability, limitations, authorized basis, and usage restrictions
 
 Collection determines what becomes observable before engineering begins. Once data is produced or collected, [Data Ingestion](/docs/data/engineering/ingestion/) handles its reliable transfer across the platform boundary into a durable, platform-managed state. CDC, incremental reads, retries, checkpoints, replay, and delivery guarantees remain ingestion mechanics rather than collection concepts.
-
-### Landing Zone
-
-A landing zone sits close to the source boundary but is generally already part of the managed data platform. It is the durable arrival point created by [Data Ingestion](/docs/data/engineering/ingestion/), rather than a source or collection mechanism. In a zoned storage design, it keeps landed or raw data distinct from later processed and curated states.
-
-- **Raw Data Ingestion Storage** – Immutable storage for incoming data in its original format
-- **Schema & Format Validation** – Structural checks and basic integrity validation upon arrival
-- **Data Isolation & Access Control** – Segregated environments with controlled permissions
-- **Initial Metadata Capture** – Source, timestamp, lineage, and ingestion context recording
 
 ## 4. Control Layer
 
