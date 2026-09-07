@@ -107,6 +107,63 @@ class CleanupWorktreesTest(unittest.TestCase):
         self.assertTrue(dirty_path.exists())
         self.assertIn("dirty", git(self.repo, "branch", "--format=%(refname:short)").splitlines())
 
+    def test_merged_pr_accepts_older_local_tip_contained_in_base_history(self) -> None:
+        path, local_oid = self.add_worktree("web-edited")
+        (path / "web-edit.txt").write_text("edited on GitHub\n")
+        git(path, "add", "web-edit.txt")
+        git(path, "commit", "-m", "web edit")
+        pr_head_oid = git(path, "rev-parse", "HEAD")
+
+        git(self.repo, "merge", "--no-ff", "web-edited", "-m", "merge web-edited")
+        git(self.repo, "update-ref", "refs/remotes/origin/main", "main")
+        git(path, "reset", "--hard", local_oid)
+
+        with patch.object(
+            MODULE,
+            "find_pr",
+            return_value=(
+                {
+                    "number": 13,
+                    "state": "MERGED",
+                    "headRefOid": pr_head_oid,
+                    "baseRefName": "main",
+                },
+                None,
+            ),
+        ):
+            result = MODULE.classify(
+                str(self.repo),
+                MODULE.Worktree(path=str(path), oid=local_oid, branch="web-edited"),
+            )
+
+        self.assertEqual("SAFE", result.category)
+        self.assertIn("contained in merged PR base history", result.reason)
+
+    def test_closed_pr_does_not_use_base_ancestry_fallback(self) -> None:
+        path, local_oid = self.add_worktree("closed-behind")
+        git(self.repo, "merge", "--no-ff", "closed-behind", "-m", "merge closed-behind")
+        git(self.repo, "update-ref", "refs/remotes/origin/main", "main")
+
+        with patch.object(
+            MODULE,
+            "find_pr",
+            return_value=(
+                {
+                    "number": 14,
+                    "state": "CLOSED",
+                    "headRefOid": "0" * 40,
+                    "baseRefName": "main",
+                },
+                None,
+            ),
+        ):
+            result = MODULE.classify(
+                str(self.repo),
+                MODULE.Worktree(path=str(path), oid=local_oid, branch="closed-behind"),
+            )
+
+        self.assertEqual("REVIEW", result.category)
+
     def test_apply_refuses_review_worktree(self) -> None:
         dirty_path, dirty_oid = self.add_worktree("dirty", dirty=True)
         with patch.object(
