@@ -1,6 +1,6 @@
 ---
 type: image
-path: /ja/docs/data/engineering/processing
+path: /docs/data/engineering/processing
 ---
 
 # 画像ローカライズプロンプト — データ処理の契約

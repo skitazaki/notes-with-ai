@@ -1,6 +1,6 @@
 ---
 type: image
-path: /ja/docs/data/engineering
+path: /docs/data/engineering
 ---
 
 # 画像ローカライズプロンプト — データエンジニアリングのライフサイクル

@@ -1,6 +1,6 @@
 ---
 type: image
-path: /ja/docs/data/engineering/orchestration
+path: /docs/data/engineering/orchestration
 ---
 
 # 画像ローカライズプロンプト — 信頼できるワークフローのオーケストレーション

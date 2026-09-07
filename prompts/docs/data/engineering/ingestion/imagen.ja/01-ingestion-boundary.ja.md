@@ -1,6 +1,6 @@
 ---
 type: image
-path: /ja/docs/data/engineering/ingestion
+path: /docs/data/engineering/ingestion
 ---
 
 # 画像ローカライズプロンプト — 収集から取り込みへ
