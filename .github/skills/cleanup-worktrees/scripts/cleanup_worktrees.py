@@ -100,6 +100,11 @@ def is_ancestor(repo: str, ancestor: str, descendant: str) -> bool:
     return proc.returncode == 0
 
 
+def ref_exists(repo: str, ref: str) -> bool:
+    proc = run(["git", "rev-parse", "--verify", "--quiet", ref], cwd=repo, check=False)
+    return proc.returncode == 0
+
+
 def classify(repo: str, worktree: Worktree) -> Result:
     if worktree.primary:
         return Result(worktree, "KEEP", "primary worktree")
@@ -131,9 +136,24 @@ def classify(repo: str, worktree: Worktree) -> Result:
     if worktree.oid == pr_head:
         return Result(worktree, "SAFE", "clean and local tip matches completed PR head", number, state)
 
+    if state == "CLOSED":
+        return Result(worktree, "REVIEW", "local branch tip differs from closed PR head", number, state)
+
     base = pr.get("baseRefName")
-    remote_base = f"refs/remotes/origin/{base}" if base else ""
-    if state == "MERGED" and remote_base and is_ancestor(repo, worktree.oid, remote_base):
+    if not base:
+        return Result(worktree, "REVIEW", "local tip differs from PR head and PR base is unavailable", number, state)
+
+    remote_base = f"refs/remotes/origin/{base}"
+    if not ref_exists(repo, remote_base):
+        return Result(
+            worktree,
+            "REVIEW",
+            f"merged PR base ref is unavailable ({remote_base}); run again with --fetch",
+            number,
+            state,
+        )
+
+    if is_ancestor(repo, worktree.oid, remote_base):
         return Result(
             worktree,
             "SAFE",
@@ -142,8 +162,6 @@ def classify(repo: str, worktree: Worktree) -> Result:
             state,
         )
 
-    if state == "MERGED" and not base:
-        return Result(worktree, "REVIEW", "local tip differs from PR head and PR base is unavailable", number, state)
     return Result(
         worktree,
         "REVIEW",

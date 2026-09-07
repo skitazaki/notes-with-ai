@@ -30,7 +30,7 @@ Interpret the groups as follows:
   - its `MERGED` or `CLOSED` PR records a `headRefOid` exactly matching the local branch tip; or
   - its PR is `MERGED` and the local branch tip is an ancestor of the fetched `origin/<baseRefName>` history. This covers GitHub-side commits added to the PR after the local checkout stopped updating.
 - `KEEP`: the primary worktree or a worktree whose associated PR is `OPEN`.
-- `REVIEW`: any dirty worktree, detached HEAD, missing PR, failed GitHub lookup, missing PR head evidence, multiple ambiguous PRs, or divergent local tip that neither matches the PR head nor appears in the merged base history.
+- `REVIEW`: any dirty worktree, detached HEAD, missing PR, failed GitHub lookup, missing PR head evidence, multiple ambiguous PRs, a `CLOSED` PR whose head differs from the local tip, an unavailable merged-PR base ref, or a merged-PR local tip that is not in the base history.
 
 Never promote `KEEP` or `REVIEW` to `SAFE` merely because the remote branch is missing or `git branch --merged` reports the branch as merged. The ancestry fallback requires a GitHub-confirmed `MERGED` PR and tests the local tip against the PR's fetched remote base ref.
 
