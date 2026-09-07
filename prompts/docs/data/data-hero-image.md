@@ -88,7 +88,7 @@ Do:
 - make the four layers immediately legible as a single integrated model
 - keep Data Collection inside Source and Data Ingestion entirely inside Enablement, separated by a visible platform boundary
 - distinguish the sequential Raw → Transform → Curate → Trusted flow from the non-sequential Enablement capabilities that support it
-- make the left-to-right dependency between Source, Enablement, and Value immediately clear
+- make the left-to-right relationship between Source, Enablement, and Value immediately clear without implying they are sequential processing steps or adding arrows outside the data-flow lane
 - emphasize that value depends on strong enablement foundations
 - show control as cross-cutting and continuous even when it is drawn beneath the other layers
 - keep the visual balance between business value and operational rigor
