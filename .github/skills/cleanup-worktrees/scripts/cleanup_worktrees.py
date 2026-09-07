@@ -69,7 +69,7 @@ def parse_worktrees(text: str) -> list[Worktree]:
 
 
 def find_pr(repo: str, branch: str) -> tuple[dict | None, str | None]:
-    fields = "number,state,headRefOid,url,updatedAt"
+    fields = "number,state,headRefOid,baseRefName,url,updatedAt"
     proc = run(
         ["gh", "pr", "list", "--head", branch, "--state", "all", "--limit", "100", "--json", fields],
         cwd=repo,
@@ -89,6 +89,20 @@ def find_pr(repo: str, branch: str) -> tuple[dict | None, str | None]:
     if len(candidates) > 1 and candidates[0].get("updatedAt") == candidates[1].get("updatedAt"):
         return None, "multiple ambiguous PRs found"
     return candidates[0], None
+
+
+def is_ancestor(repo: str, ancestor: str, descendant: str) -> bool:
+    proc = run(
+        ["git", "merge-base", "--is-ancestor", ancestor, descendant],
+        cwd=repo,
+        check=False,
+    )
+    return proc.returncode == 0
+
+
+def ref_exists(repo: str, ref: str) -> bool:
+    proc = run(["git", "rev-parse", "--verify", "--quiet", ref], cwd=repo, check=False)
+    return proc.returncode == 0
 
 
 def classify(repo: str, worktree: Worktree) -> Result:
@@ -119,9 +133,42 @@ def classify(repo: str, worktree: Worktree) -> Result:
     pr_head = pr.get("headRefOid")
     if not pr_head:
         return Result(worktree, "REVIEW", "PR head OID is unavailable", number, state)
-    if worktree.oid != pr_head:
-        return Result(worktree, "REVIEW", "local branch tip differs from PR head", number, state)
-    return Result(worktree, "SAFE", "clean and local tip matches completed PR head", number, state)
+    if worktree.oid == pr_head:
+        return Result(worktree, "SAFE", "clean and local tip matches completed PR head", number, state)
+
+    if state == "CLOSED":
+        return Result(worktree, "REVIEW", "local branch tip differs from closed PR head", number, state)
+
+    base = pr.get("baseRefName")
+    if not base:
+        return Result(worktree, "REVIEW", "local tip differs from PR head and PR base is unavailable", number, state)
+
+    remote_base = f"origin/{base}"
+    if not ref_exists(repo, remote_base):
+        return Result(
+            worktree,
+            "REVIEW",
+            f"merged PR base ref is unavailable ({remote_base}); run again with --fetch",
+            number,
+            state,
+        )
+
+    if is_ancestor(repo, worktree.oid, remote_base):
+        return Result(
+            worktree,
+            "SAFE",
+            f"clean and local tip is contained in merged PR base history ({remote_base})",
+            number,
+            state,
+        )
+
+    return Result(
+        worktree,
+        "REVIEW",
+        "local branch tip differs from PR head and is not contained in merged PR base history",
+        number,
+        state,
+    )
 
 
 def scan(repo: str) -> list[Result]:
