@@ -12,13 +12,7 @@ next: "/docs/data/engineering/ingestion"
 
 ## データエンジニアリングのライフサイクル
 
-```mermaid
-flowchart LR
-  Sources["ソースシステム"] --> Ingestion["データ取り込み"]
-  Ingestion --> Processing["処理と変換"]
-  Processing --> Delivery["配信と提供"]
-  Delivery --> Consumers["分析、アプリケーション、AI"]
-```
+![ソースシステムからデータ取り込み、処理と変換、配信と提供を経て、分析・アプリケーション・AIへ至る流れと、全工程を支えるオーケストレーション、可観測性、自動化、信頼性](data-engineering-lifecycle.ja.webp "データエンジニアリングのライフサイクル")
 
 これは概念モデルであり、必須の直線的アーキテクチャではありません。実際のシステムには分岐、フィードバックループ、イベントストリーム、複数のストレージ層、独立したデータ提供側と利用側、バッチとストリーミングの経路があります。オーケストレーション、可観測性、自動化、信頼性がフロー全体を横断し、運用可能にします。
 
@@ -75,29 +69,13 @@ flowchart LR
 
 ## CI/CD と自動化
 
-```mermaid
-flowchart LR
-  Code["コード"] --> Test["テスト"] --> Build["ビルド"] --> Deploy["デプロイ"] --> Operate["運用"] --> Observe["観測"]
-  Observe -. フィードバック .-> Code
-```
+![コード、テスト、ビルド、デプロイ、運用、観測を循環し、観測結果をコードへフィードバックするエンジニアリングのデリバリーループ](engineering-delivery-loop.ja.webp "エンジニアリングのデリバリーループ")
 
 自動テスト、制御されたビルド、環境昇格、Infrastructure as Code、スキーマ移行、デプロイ自動化、デプロイ後の検証により、変更を再現可能かつ監査可能にします。
 
 ## 隣接するデータ領域との関係
 
-```mermaid
-flowchart TB
-  Data["データ"]
-  Data --> Architecture["アーキテクチャ<br/>構造とパターン"]
-  Data --> Engineering["エンジニアリング<br/>実装と運用"]
-  Data --> Management["マネジメント<br/>信頼と持続性"]
-  Engineering --> Ingestion["取り込み"]
-  Engineering --> Processing["処理"]
-  Engineering --> Orchestration["オーケストレーション"]
-  Engineering --> Observability["可観測性"]
-  Metadata["メタデータ：エコシステムを記述し接続する"] -. 横断 .-> Engineering
-  Privacy["プライバシー：責任ある取扱いを制約する"] -. 制約 .-> Engineering
-```
+![データアーキテクチャ、データエンジニアリング、データマネジメントを同格の視点として示し、取り込み、処理、オーケストレーション、可観測性をエンジニアリングの能力として、メタデータとプライバシーを横断要素として配置した図](data-engineering-ecosystem.ja.webp "データエコシステムにおけるデータエンジニアリング")
 
 ### データエンジニアリングとデータアーキテクチャ
 

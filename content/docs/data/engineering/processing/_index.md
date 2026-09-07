@@ -8,10 +8,7 @@ next: "/docs/data/engineering/orchestration"
 
 Data Processing transforms source or intermediate data into datasets that applications, analytics, and AI systems can use. Processing may filter records, join related entities, aggregate measures, enrich values from reference data, reshape schemas, or validate assumptions.
 
-```mermaid
-flowchart LR
-  Ingestion --> Processing --> Delivery
-```
+![Data processing contract showing ingested data transformed through filtering, joining, aggregation, enrichment, and validation into published data, with repeatability, recoverability, and observability](data-processing-contract.webp "Data Processing Contract")
 
 This simple relationship describes responsibility, not a mandatory physical layout. Processing may occur before or after durable storage, in a database, in a distributed compute system, or continuously as events arrive.
 

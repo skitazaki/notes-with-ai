@@ -8,10 +8,7 @@ next: "/docs/data/engineering/orchestration"
 
 データ処理（Data Processing）は、ソースデータや中間データを、アプリケーション、分析、AI システムが利用できるデータセットへ変換します。フィルタリング、結合、集計、参照データによる付加、スキーマ変換、前提条件の検証などを行います。
 
-```mermaid
-flowchart LR
-  Ingestion["取り込み"] --> Processing["処理"] --> Delivery["配信"]
-```
+![取り込み済みデータを抽出、結合、集計、付加、検証によって公開データへ変換し、反復可能性、復旧可能性、観測可能性を備えるデータ処理の契約](data-processing-contract.ja.webp "データ処理の契約")
 
 ## 変換操作
 

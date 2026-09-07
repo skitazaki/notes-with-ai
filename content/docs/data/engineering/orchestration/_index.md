@@ -12,15 +12,7 @@ Data Orchestration coordinates data workloads so they execute in the required or
 
 A workflow describes units of work and the relationships between them. A Directed Acyclic Graph (DAG) is a common representation: nodes are tasks and directed edges express dependencies.
 
-```mermaid
-flowchart LR
-  Ingest --> Validate
-  Validate --> Transform
-  Transform --> Publish
-  Transform --> QualityChecks["Quality Checks"]
-  QualityChecks --> Publish
-  Publish --> Notify
-```
+![Orchestrated workflow moving from ingest through validation and transformation, requiring quality checks before publication and notification, with state, retries, and timeouts managed across the flow](orchestration-flow.webp "Orchestrating a Reliable Workflow")
 
 A DAG makes prerequisites visible and permits independent branches to run concurrently. Not every workflow is naturally acyclic—long-running event systems and feedback loops may use other coordination models—but DAGs remain useful for bounded data jobs.
 
