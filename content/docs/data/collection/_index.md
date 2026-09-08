@@ -12,19 +12,19 @@ Collection is broader than extracting records from a database. It determines wha
 
 ## The Source-Side Boundary
 
-```mermaid
-flowchart LR
-  Phenomena["Phenomena / Activities"] --> Sources["Data Sources"]
-  Sources --> Collection["Data Collection"]
-  Collection --> Boundary["Platform Boundary"]
-  Boundary --> Ingestion["Data Ingestion"]
-
-  Controls["Metadata · Governance · Privacy · Security"] -.-> Sources
-  Controls -.-> Collection
-  Controls -.-> Ingestion
-```
+![Source-side flow from phenomena and activities through source discovery, data sources, and data collection before crossing the platform boundary into data ingestion, supported by metadata, governance, privacy, and security](source-side-boundary.webp "The Source-Side Boundary")
 
 This is a conceptual boundary, not a requirement for separate physical systems. An application may capture an event and publish it immediately, but the decisions that define the event belong to collection; the mechanism that transfers it reliably into a managed platform belongs to ingestion.
+
+## Source Discovery and Inventory
+
+Collection begins before a specific source is selected. Organizations must first establish what systems, applications, devices, interfaces, providers, and existing data holdings could supply evidence for the intended purpose. **Source discovery and inventory** makes that landscape visible enough to support an informed collection decision.
+
+Discovery should identify candidate sources and record their basic context: what they produce or hold, who owns and operates them, which populations and activities they represent, how they can be accessed, how often they change, and which legal, contractual, security, or technical constraints apply. The inventory should also expose duplicate sources, undocumented interfaces, unclear ownership, and important gaps where the required phenomenon is not observable.
+
+This activity does not authorize collection or prove that a source is fit for use. Candidate sources still require evaluation for authority, relevance, provenance, quality limitations, continuity, cost, and permissible use. Discovery provides the map; source selection and collection design determine what the organization should acquire from it.
+
+Source discovery is distinct from the [Data Discovery](/docs/data/metadata/#data-discovery) supported by metadata catalogs. Source discovery looks outward or toward the source boundary to identify possible inputs before acquisition. Data discovery helps people and systems find data assets that are already represented within the managed data environment. The two activities should exchange metadata, but they serve different lifecycle decisions.
 
 Three questions organize the capability:
 
