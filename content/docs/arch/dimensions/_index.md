@@ -3,10 +3,12 @@ date: "2026-06-28T00:00:00+09:00"
 title: "Architecture Dimensions"
 weight: 1
 prev: "/docs/arch"
-next: "/docs/arch/layers"
+next: "/docs/arch/dimensions/layers"
 ---
 
 Architecture becomes confusing when teams try to force every concern into one diagram or one vocabulary. Dependency direction, runtime control, design priorities, team accountability, and stakeholder communication are all architectural concerns, but they are not the same kind of concern. An architecture dimension is the lens that makes one of those concerns legible.
+
+This section is a hub for six complementary dimensions. Start with the comparison below, then follow the topic pages to examine each lens in depth.
 
 ## Definition
 
@@ -42,7 +44,7 @@ The structural dimension focuses on form and dependency. It helps answer questio
 
 #### Layers
 
-[Layers](../layers/) represent structural abstraction. They help answer what depends on what, which abstractions build on others, where dependencies should flow, and which parts should be insulated from change.
+[Layers](layers/) represent structural abstraction. They help answer what depends on what, which abstractions build on others, where dependencies should flow, and which parts should be insulated from change.
 
 Layers are useful for reasoning about application architecture, platform stacks, protocol models, and runtime abstractions. They become misleading when teams use them to describe every horizontal box in a diagram or confuse them with deployment topology.
 
@@ -52,13 +54,13 @@ The operational dimension focuses on runtime behavior. It explains how requests,
 
 #### Planes
 
-[Planes](../planes/) represent operational responsibility. They help identify who controls execution, who processes traffic or data, which paths handle policy or telemetry, and which concerns cross structural boundaries.
+[Planes](planes/) represent operational responsibility. They help identify who controls execution, who processes traffic or data, which paths handle policy or telemetry, and which concerns cross structural boundaries.
 
 Control planes, data planes, observability planes, policy planes, and workflow planes often cut across layers. A system can therefore be structurally layered while also having operational planes that move through those layers.
 
 #### Flows and Pipelines
 
-[Flows and Pipelines](../flows-and-pipelines/) represent movement over time. They show how requests, events, data, jobs, approvals, or feedback loops pass through system boundaries.
+[Flows and Pipelines](flows-and-pipelines/) represent movement over time. They show how requests, events, data, jobs, approvals, or feedback loops pass through system boundaries.
 
 Flow-oriented views make sequencing, transformations, failure points, queues, retries, and handoffs visible. They complement structural views by showing what happens during execution.
 
@@ -68,7 +70,7 @@ The strategic dimension focuses on priorities and tradeoffs. It captures what th
 
 #### Pillars
 
-[Pillars](../pillars/) represent architectural priorities such as reliability, security, scalability, cost efficiency, maintainability, operability, and developer experience.
+[Pillars](pillars/) represent architectural priorities such as reliability, security, scalability, cost efficiency, maintainability, operability, and developer experience.
 
 Pillars are decision lenses rather than runtime components. They help teams explain why one design is preferable to another under a specific set of constraints.
 
@@ -78,7 +80,7 @@ The ownership dimension focuses on responsibility. It helps teams reason about w
 
 #### Ownership Boundaries
 
-[Ownership Boundaries](../ownership-boundaries/) describe responsibility for change and operation. They are related to technical boundaries, but they are not the same thing as services, layers, deployment units, or organization charts.
+[Ownership Boundaries](ownership-boundaries/) describe responsibility for change and operation. They are related to technical boundaries, but they are not the same thing as services, layers, deployment units, or organization charts.
 
 Ownership views clarify who can change a system safely, who operates it, who handles incidents, who defines contracts, and who pays the long-term complexity cost.
 
@@ -88,7 +90,7 @@ The communication dimension focuses on explanation. It helps teams decide which 
 
 #### Views and Viewpoints
 
-A [view](../views-and-viewpoints/) is a deliberate communication artifact that selects the concerns, level of detail, and representation needed for a particular audience and purpose. A viewpoint defines the framing used to construct that view.
+A [view](views-and-viewpoints/) is a deliberate communication artifact that selects the concerns, level of detail, and representation needed for a particular audience and purpose. A viewpoint defines the framing used to construct that view.
 
 Developer, platform operations, security review, and executive views may all describe the same system while emphasizing different information. A layered diagram may explain dependency direction, a flow diagram may explain request movement, and an ownership map may explain responsibility.
 
