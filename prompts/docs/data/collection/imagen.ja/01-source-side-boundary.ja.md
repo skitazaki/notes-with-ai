@@ -1,6 +1,6 @@
 ---
 type: image
-path: /ja/docs/data/collection
+path: /docs/data/collection
 ---
 
 # 画像ローカライズプロンプト — ソース側の境界
