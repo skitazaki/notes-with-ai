@@ -1,10 +1,13 @@
 A good structure here is to think of the content as a _security architecture library_ rather than a single long report.
 
-You want:
+You want four clearly differentiated collections:
 
-- one executive/introduction layer,
-- several deep technical domain documents,
-- and a set of cross-cutting reference documents.
+- orientation material,
+- core access-control domain documents,
+- cross-cutting operational and governance practices,
+- and reusable reference materials.
+
+Do not label all four collections as domains. Link orientation pages directly from the Access Control hub. Operations and governance apply across domains; reference materials support readers as they design and evaluate systems.
 
 The biggest mistake in access-control documentation is mixing:
 
@@ -88,7 +91,7 @@ This becomes the table-of-contents hub for the whole library.
 
 ---
 
-# Layer 2 — Core Domain Documents
+## Layer 2 — Core Access-Control Domain Documents
 
 These are the primary technical pillars.
 
@@ -220,6 +223,12 @@ Focus on:
 
 ---
 
+# Layer 3 — Cross-Cutting Practice Documents
+
+These concerns apply across the core domains rather than forming peer technical domains.
+
+---
+
 ## 7. Defense-in-Depth Architecture
 
 Focus:
@@ -277,7 +286,7 @@ Audience:
 
 ---
 
-# Layer 3 — Cross-Cutting Reference Documents
+# Layer 4 — Reference Materials
 
 These become reusable supporting references.
 
@@ -362,42 +371,43 @@ These are extremely helpful for readers.
 
 # Recommended Reading Flow
 
-Organize the docs like this:
+Organize the docs by conceptual role rather than presenting every top-level hub as a domain:
 
 ```text
-0. Introduction
-   ├── Vision & Principles
-   └── Landscape Overview
+Getting Started
+├── Vision & Principles
+└── Landscape Overview
 
-1. Identity Foundations
+Core Access-Control Domains
+├── Identity Foundations
    ├── Human Identity
    ├── Machine Identity
    └── Federation & Trust
-
-2. Authorization Systems
+├── Authorization Systems
    ├── RBAC / ABAC / ReBAC
    ├── Policy Engines
    └── Authorization Architectures
-
-3. AI & Emerging Systems
+└── AI & Emerging Systems
    ├── AI Agents
    ├── Autonomous Workflows
    └── Future Trust Models
 
-4. Security Operations
+Cross-Cutting Practices
+├── Security Operations
    ├── Defense in Depth
    ├── Threat Models
    └── Monitoring & Audit
-
-5. Governance & Compliance
+└── Governance & Compliance
    ├── Access Governance
    ├── Regulatory Mapping
    └── Auditability
 
-6. Reference Materials
+Reference Library
+└── Reference Materials
    ├── Architecture Patterns
    ├── Decision Frameworks
-   └── Reference Architectures
+   ├── Reference Architectures
+   └── Concept Dictionary
 ```
 
 # A Very Effective Additional Pattern

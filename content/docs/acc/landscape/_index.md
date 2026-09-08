@@ -1,10 +1,9 @@
 ---
 date: "2026-05-10T12:20:00+09:00"
 title: "Landscape Overview"
-aliases: ["/docs/acc/landscape/"]
 weight: 2
-prev: "/docs/acc/introduction/vision"
-next: "/docs/acc/introduction"
+prev: "/docs/acc/vision"
+next: "/docs/acc"
 ---
 
 The access-control landscape is best understood as an ecosystem of interacting systems rather than a single product category.

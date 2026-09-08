@@ -1,10 +1,9 @@
 ---
 date: "2026-05-10T12:10:00+09:00"
 title: "ビジョンと原則"
-aliases: ["/docs/acc/vision/"]
 weight: 1
-prev: "/docs/acc/introduction"
-next: "/docs/acc/introduction/landscape"
+prev: "/docs/acc"
+next: "/docs/acc/landscape"
 ---
 
 アクセス制御は、アプリケーションの片隅で判定される単なる認可機能ではありません。主体、リソース、ポリシー、実行環境の間で、信頼できる意図を継続的に確立するための全体アーキテクチャです。

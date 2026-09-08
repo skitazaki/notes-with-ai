@@ -1,10 +1,9 @@
 ---
 date: "2026-05-10T12:20:00+09:00"
 title: "アクセス制御の全体像"
-aliases: ["/docs/acc/landscape/"]
 weight: 2
-prev: "/docs/acc/introduction/vision"
-next: "/docs/acc/introduction"
+prev: "/docs/acc/vision"
+next: "/docs/acc"
 ---
 
 アクセス制御の世界は、単一製品の比較ではなく、相互に連携するシステム群として理解するのが適切です。
