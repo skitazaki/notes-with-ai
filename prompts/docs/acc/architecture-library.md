@@ -91,7 +91,7 @@ This becomes the table-of-contents hub for the whole library.
 
 ---
 
-# Layer 2 — Core Access-Control Domain Documents
+## Layer 2 — Core Access-Control Domain Documents
 
 These are the primary technical pillars.
 
