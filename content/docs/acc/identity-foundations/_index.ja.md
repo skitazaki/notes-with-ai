@@ -2,7 +2,7 @@
 date: "2026-05-10T12:02:00+09:00"
 title: "アイデンティティ基盤"
 weight: 2
-prev: "/docs/acc/introduction"
+prev: "/docs/acc"
 next: "/docs/acc/identity-foundations/human-identity"
 ---
 

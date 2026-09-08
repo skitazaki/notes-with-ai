@@ -1,10 +1,9 @@
 ---
 date: "2026-05-10T12:10:00+09:00"
 title: "Vision & Principles"
-aliases: ["/docs/acc/vision/"]
 weight: 1
-prev: "/docs/acc/introduction"
-next: "/docs/acc/introduction/landscape"
+prev: "/docs/acc"
+next: "/docs/acc/landscape"
 ---
 
 Access control is no longer a narrow authorization concern at the edge of an application. It is a system-wide discipline for continuously establishing trustworthy intent between principals, resources, policies, and execution environments.
