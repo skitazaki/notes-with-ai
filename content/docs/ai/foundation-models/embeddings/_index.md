@@ -3,7 +3,7 @@ date: "2026-08-17T09:00:00+09:00"
 title: "Embeddings"
 weight: 1
 prev: "/docs/ai/foundation-models"
-next: "/docs/ai/context-engineering/vector-search"
+next: "/docs/ai/foundation-models"
 ---
 
 An embedding is a learned numerical representation of information. It maps text, images, code, audio, entities, or other inputs to vectors whose positions capture relationships useful to a model or application. Similar inputs can therefore be compared, grouped, retrieved, or classified through operations on those vectors.

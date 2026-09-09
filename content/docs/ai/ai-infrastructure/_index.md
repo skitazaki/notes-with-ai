@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "AI Infrastructure"
 weight: 9
 prev: "/docs/ai/ai-engineering"
-next: "/docs/ai/data-for-ai"
+next: "/docs/ai/ai-infrastructure/ai-gateway"
 ---
 
 AI infrastructure is the technical substrate that makes model training, inference, and large-scale AI operations feasible. It includes more than accelerators. Storage, serving layers, routing, orchestration, retrieval systems, and observability all shape what kinds of AI systems can actually be built and sustained.

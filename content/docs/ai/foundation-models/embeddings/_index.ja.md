@@ -3,7 +3,7 @@ date: "2026-08-17T09:00:00+09:00"
 title: "埋め込み"
 weight: 1
 prev: "/docs/ai/foundation-models"
-next: "/docs/ai/context-engineering/vector-search"
+next: "/docs/ai/foundation-models"
 ---
 
 埋め込みとは、情報を学習済みの数値表現に変換したものです。テキスト、画像、コード、音声、エンティティなどの入力を、モデルやアプリケーションにとって有用な関係を位置として表すベクトルへ写像します。これにより、類似する入力をベクトル演算によって比較、グループ化、検索、分類できます。

@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "基盤モデル"
 weight: 4
 prev: "/docs/ai/deep-learning"
-next: "/docs/ai/generative-ai"
+next: "/docs/ai/foundation-models/embeddings"
 ---
 
 基盤モデルは、広く再利用できる能力と狭いアプリケーションロジックを分けることで、AI システム設計の形を変えました。下流タスクごとに別のモデルを学習する代わりに、大規模に事前学習した基盤から始め、プロンプト、検索、チューニング、ワークフローの構成で適応できます。

@@ -1,8 +1,8 @@
 ---
 date: "2026-08-10T12:00:00+09:00"
 title: "Agent-to-Agent Communication and Interoperability"
-weight: 7
-prev: "/docs/ai/context-engineering/tools-and-mcp"
+weight: 2
+prev: "/docs/ai/ai-engineering/system-design"
 next: "/docs/ai/ai-engineering"
 ---
 

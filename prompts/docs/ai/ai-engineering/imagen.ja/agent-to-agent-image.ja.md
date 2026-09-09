@@ -1,12 +1,12 @@
 ---
 type: image
-path: /docs/ai/agent-to-agent
+path: /docs/ai/ai-engineering/agent-to-agent
 description: エージェント間の発見、タスク委任、メッセージ、成果物交換を示す日本語の概念図。
 ---
 
 # 画像生成プロンプト — エージェント間の通信
 
-`content/docs/ai/agent-to-agent/agent-to-agent.png` のレイアウト、アイコン、矢印、余白、配色、線、視覚的階層を保持し、画像内のテキストだけを日本語化してください。
+`content/docs/ai/ai-engineering/agent-to-agent/agent-to-agent.png` のレイアウト、アイコン、矢印、余白、配色、線、視覚的階層を保持し、画像内のテキストだけを日本語化してください。
 
 次の表記を正確に使用してください。
 

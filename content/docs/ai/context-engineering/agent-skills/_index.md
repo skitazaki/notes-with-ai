@@ -4,7 +4,7 @@ title: "Agent Skills, SKILL.md, and Agent Plugins"
 linkTitle: "Agent Skills"
 weight: 5
 prev: "/docs/ai/context-engineering/agents-md"
-next: "/docs/ai/agent-to-agent"
+next: "/docs/ai/context-engineering"
 ---
 
 A capable foundation model is not enough for dependable real-world work. An agent also needs procedures, coding conventions, deployment rules, domain references, templates, scripts, and access to external systems. When every application embeds those capabilities in one large prompt or a vendor-specific extension, instructions are duplicated, difficult to version, expensive to keep in context, and hard to move between agent environments.
@@ -161,7 +161,7 @@ Clients and organizations still need provenance checks, publisher policy, packag
 
 **Use a client-specific extension when** required behavior is outside the portable specification and intentionally depends on a particular agent environment.
 
-Agent Skills are simultaneously an agent-capability topic, a progressive context-engineering mechanism, and part of the emerging interoperability ecosystem. They complement repository-wide guidance such as [`AGENTS.md`](../agents-md/), runtime connectivity through [Tools and MCP](../tools-and-mcp/), and communication between independent agents through [Agent-to-Agent Interoperability](../../agent-to-agent/).
+Agent Skills are simultaneously an agent-capability topic, a progressive context-engineering mechanism, and part of the emerging interoperability ecosystem. They complement repository-wide guidance such as [`AGENTS.md`](../agents-md/), runtime connectivity through [Tools and MCP](../tools-and-mcp/), and communication between independent agents through [Agent-to-Agent Interoperability](../../ai-engineering/agent-to-agent/).
 
 ## Summary
 

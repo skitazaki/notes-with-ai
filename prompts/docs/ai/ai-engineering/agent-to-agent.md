@@ -1,6 +1,6 @@
 ---
 type: docs
-path: /docs/ai/agent-to-agent
+path: /docs/ai/ai-engineering/agent-to-agent
 ---
 
 Write a concise reference page titled:
