@@ -52,6 +52,11 @@ func main() {
 		log.Fatalf("invalid Redis URL: %v", err)
 	}
 	rdb := redis.NewClient(opt)
+	defer func() {
+		if err := rdb.Close(); err != nil {
+			log.Printf("failed to close Redis client: %v", err)
+		}
+	}()
 
 	app := &App{DB: db, Redis: rdb}
 
@@ -70,26 +75,34 @@ func main() {
 		Handler: mux,
 	}
 
-	// --- Start server
+	// --- Start server and wait for either an error or a shutdown signal.
+	serverErr := make(chan error, 1)
 	go func() {
 		log.Printf("Starting server on %s", srv.Addr)
-		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
-			log.Fatalf("listen error: %v", err)
-		}
+		serverErr <- srv.ListenAndServe()
 	}()
 
 	// --- Graceful shutdown
 	stop := make(chan os.Signal, 1)
 	signal.Notify(stop, syscall.SIGTERM, syscall.SIGINT)
+	defer signal.Stop(stop)
 
-	<-stop
+	select {
+	case err := <-serverErr:
+		if err != nil && err != http.ErrServerClosed {
+			log.Printf("listen error: %v", err)
+		}
+		return
+	case <-stop:
+	}
 	log.Println("Shutting down gracefully...")
 
-	ctx, cancel = context.WithTimeout(context.Background(), 8*time.Second)
+	shutdownCtx, cancel := context.WithTimeout(context.Background(), 8*time.Second)
 	defer cancel()
 
-	if err := srv.Shutdown(ctx); err != nil {
-		log.Fatalf("Server Shutdown: %v", err)
+	if err := srv.Shutdown(shutdownCtx); err != nil {
+		log.Printf("server shutdown: %v", err)
+		return
 	}
 
 	log.Println("Goodbye!")
