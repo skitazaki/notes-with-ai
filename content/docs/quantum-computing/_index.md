@@ -2,6 +2,7 @@
 date: "2025-07-26T16:34:59+09:00"
 title: "Quantum Computing"
 weight: 50
+next: "/docs/quantum-computing/foundations"
 ---
 
 Quantum computing has emerged from the realm of theoretical physics into the edge of enterprise innovation. While still
@@ -66,6 +67,19 @@ For enterprises, this translates to:
 - **Post-quantum cryptography** is a growing field aimed at developing encryption resistant to quantum attacks.
 - NIST is already standardizing quantum-resistant algorithms for future-proof security.
 
+## Topic Pages
+
+Use the following pages to move from the computational foundations to system architecture and ecosystem context.
+
+{{< cards >}}
+{{< card link="foundations/" title="Foundations" icon="book-open" subtitle="Qubits, superposition, entanglement, interference, and measurement" >}}
+{{< card link="computing-models/" title="Computing Models and Hardware" icon="chip" subtitle="Gate-based systems, annealing, analog simulation, and hardware modalities" >}}
+{{< card link="algorithms-and-advantage/" title="Algorithms and Quantum Advantage" icon="document-text" subtitle="Algorithm families and a disciplined framework for evaluating advantage" >}}
+{{< card link="error-correction/" title="Errors and Fault Tolerance" icon="shield-check" subtitle="Noise, mitigation, quantum error correction, and reliable logical computation" >}}
+{{< card link="hybrid-systems/" title="Hybrid Quantum-Classical Systems" icon="server" subtitle="Execution workflows, integration boundaries, reliability, and governance" >}}
+{{< card link="layers/" title="Players by Layers" icon="users" subtitle="Cloud services, developer tools, algorithms, and hardware providers" >}}
+{{< /cards >}}
+
 ## The Technology Landscape
 
 ### Major Players
@@ -86,12 +100,7 @@ For enterprises, this translates to:
 Each architecture has trade-offs in fidelity, scalability, and error correction. **Quantum error correction** remains
 one of the biggest engineering challenges today.
 
-Here shows just major players and hardware architectures. For more details about "Players by Layers", see the page
-below.
-
-{{< cards >}}
-{{< card link="layers" title="Players by Layers" icon="document-text" >}}
-{{< /cards >}}
+This is only a short orientation. See **Computing Models and Hardware** for the architectural tradeoffs and **Players by Layers** for a more detailed ecosystem view.
 
 ## The Road Ahead: 2025–2030
 
