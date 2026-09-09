@@ -14,7 +14,7 @@ Audience:
 Purpose:
 
 - Explain the topic at a stable conceptual level
-- Clarify its role within the mlops and llmops hub
+- Clarify its role within the MLOps and LLMOps hub
 - Help readers distinguish related concepts and evaluate tradeoffs
 
 Scope and style:

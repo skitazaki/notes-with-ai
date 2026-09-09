@@ -41,4 +41,4 @@ Fragmented tooling leads to duplicated cost and inconsistent security. Shadow AI
 
 ## Summary
 
-Understanding enterprise ai operating models makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.
+Understanding Enterprise AI operating models makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.

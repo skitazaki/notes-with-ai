@@ -41,4 +41,4 @@ Responsible AI needs clear ownership. Product teams, platform teams, security te
 
 ## Summary
 
-Understanding responsible ai controls makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.
+Understanding Responsible AI controls makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.

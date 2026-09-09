@@ -40,4 +40,4 @@ This component view matters because it keeps teams from treating the model itsel
 
 ## Summary
 
-Understanding ai system design makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.
+Understanding AI system design makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.

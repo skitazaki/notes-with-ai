@@ -6,7 +6,7 @@ prev: "/docs/ai/foundations"
 next: "/docs/ai/foundations"
 ---
 
-AI Paradigms and Boundaries provides a conceptual framework for competing traditions, field boundaries, and enduring tensions that shape ai. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
+AI Paradigms and Boundaries provides a conceptual framework for competing traditions, field boundaries, and enduring tensions that shape AI. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
 
 ## Core Traditions
 
@@ -64,4 +64,4 @@ Several tensions reappear across generations of AI systems.
 
 ## Summary
 
-Understanding ai paradigms and boundaries makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.
+Understanding AI paradigms and boundaries makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.

@@ -48,4 +48,4 @@ That is why AI applications should be categorized by workflow role and design co
 
 ## Summary
 
-Understanding ai application patterns makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.
+Understanding AI application patterns makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.

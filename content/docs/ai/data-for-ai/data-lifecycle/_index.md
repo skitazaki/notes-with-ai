@@ -40,4 +40,4 @@ These concerns apply differently across system types, but none of them disappear
 
 ## Summary
 
-Understanding the ai data lifecycle makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.
+Understanding the AI data lifecycle makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.

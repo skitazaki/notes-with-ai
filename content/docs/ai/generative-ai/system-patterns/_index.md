@@ -6,7 +6,7 @@ prev: "/docs/ai/generative-ai"
 next: "/docs/ai/generative-ai"
 ---
 
-Generative AI System Patterns provides a conceptual framework for building blocks and recurring patterns for generative ai systems. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
+Generative AI System Patterns provides a conceptual framework for building blocks and recurring patterns for Generative AI systems. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
 
 ## Core Building Blocks
 
@@ -42,4 +42,4 @@ These are related but not identical patterns. The difference lies in how much au
 
 ## Summary
 
-Understanding generative ai system patterns makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.
+Understanding Generative AI system patterns makes it possible to place individual methods and technologies in context according to their role, assumptions, and tradeoffs.
