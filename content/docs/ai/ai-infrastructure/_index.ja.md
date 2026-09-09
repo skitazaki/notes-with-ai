@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "AI インフラストラクチャ"
 weight: 9
 prev: "/docs/ai/ai-engineering"
-next: "/docs/ai/data-for-ai"
+next: "/docs/ai/ai-infrastructure/ai-gateway"
 ---
 
 AI インフラストラクチャは、モデルの学習、推論、大規模な AI 運用を実現する技術的な基盤です。アクセラレータだけでなく、ストレージ、サービングレイヤー、ルーティング、オーケストレーション、検索システム、オブザーバビリティも含まれます。どのような AI システムを構築し、持続できるかを形作る層です。

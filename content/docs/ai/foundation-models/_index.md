@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "Foundation Models"
 weight: 4
 prev: "/docs/ai/deep-learning"
-next: "/docs/ai/generative-ai"
+next: "/docs/ai/foundation-models/embeddings"
 ---
 
 Foundation models changed the shape of AI system design by separating broad reusable capability from narrow application logic. Instead of training a distinct model for every downstream task, organizations can start from a large pretrained base and adapt it through prompting, retrieval, tuning, or workflow composition.

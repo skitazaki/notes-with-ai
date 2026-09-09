@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "Generative AI"
 weight: 5
 prev: "/docs/ai/foundation-models"
-next: "/docs/ai/context-engineering"
+next: "/docs/ai/generative-ai/system-patterns"
 ---
 
 Generative AI became widely useful when model output was combined with context, interaction, and control rather than treated as raw text or image synthesis alone. The practical question is not simply whether a model can generate. It is whether the broader system can guide, constrain, and apply that generation in a way that is reliable enough to create user value.
@@ -24,37 +24,11 @@ Generative AI matters because it lowers the cost of building interfaces around l
 
 At the same time, the flexibility of the model means the surrounding system must define boundaries. Reliability does not emerge automatically from capability.
 
-## Core Building Blocks
+## Topic Pages
 
-The following building blocks are combined to shape generative behavior into a usable system.
-
-| Building block             | System role                                         | Why it matters                                               |
-| -------------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
-| Prompts and instructions   | Frame the task                                      | Shapes intent, style, and operating boundaries               |
-| Context engineering        | Select relevant runtime information                 | Reduces ambiguity and improves fit to the task               |
-| Retrieval                  | Bring external knowledge into the interaction       | Grounds the system in current or domain-specific information |
-| Fine-tuning and adaptation | Specialize the model                                | Improve fit for recurring use patterns                       |
-| Tool calling               | Connect model output to external actions or systems | Turns generation into workflow capability                    |
-| Structured outputs         | Constrain the response format                       | Makes downstream automation safer and easier                 |
-| Memory and planning        | Preserve continuity and manage multistep work       | Supports longer tasks and more coherent execution            |
-
-### Prompts and Context
-
-Prompts matter because they define task framing, but context matters even more because it determines what the system can use at runtime. A weak prompt with strong grounding often outperforms a clever prompt with weak information.
-
-### Retrieval and Tools
-
-Retrieval-augmented generation expands what the system can answer by attaching relevant documents, records, or knowledge objects at runtime. Tool calling expands what the system can do by giving it controlled access to search, APIs, workflow systems, or internal services.
-
-### Structured Outputs, Memory, and Planning
-
-Structured outputs help turn generative behavior into reliable software interfaces. Memory supports continuity across a session or task. Planning matters when the system must break work into stages rather than produce one direct answer.
-
-## Major System Patterns
-
-Chat assistants emphasize interaction and question answering. Copilots embed assistance inside a host workflow such as coding, writing, or operations. Retrieval-based assistants prioritize grounding in enterprise or domain knowledge. Workflow automation systems use generation and tools to complete bounded tasks. Agents extend these patterns through multistep execution, branching, and approval-aware action.
-
-These are related but not identical patterns. The difference lies in how much autonomy the system has, what external actions it can take, and what control surfaces surround it.
+{{< cards >}}
+{{< card link="system-patterns/" title="Generative AI System Patterns" icon="document-text" subtitle="Building blocks and recurring patterns for generative AI systems" >}}
+{{< /cards >}}
 
 ## Main Risks and Limits
 

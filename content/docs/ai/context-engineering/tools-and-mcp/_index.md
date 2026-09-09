@@ -49,7 +49,7 @@ Tool results should be labeled as external data. This reduces the chance that te
 
 ## Relationship to Adjacent Topics
 
-Tools and MCP are part of context engineering because tool results and resources influence runtime behavior. [RAG](../rag/) specializes in retrieving evidence; tool interfaces may expose retrieval or many other capabilities. [Agent-to-Agent Communication](../../agent-to-agent/) addresses delegation and task exchange between independent agents. [AI Engineering](../../ai-engineering/) covers the broader application discipline around these integrations.
+Tools and MCP are part of context engineering because tool results and resources influence runtime behavior. [RAG](../rag/) specializes in retrieving evidence; tool interfaces may expose retrieval or many other capabilities. [Agent-to-Agent Communication](../../ai-engineering/agent-to-agent/) addresses delegation and task exchange between independent agents. [AI Engineering](../../ai-engineering/) covers the broader application discipline around these integrations.
 
 ## Summary
 

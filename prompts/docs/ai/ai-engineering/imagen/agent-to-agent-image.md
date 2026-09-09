@@ -1,6 +1,6 @@
 ---
 type: image
-path: /docs/ai/agent-to-agent
+path: /docs/ai/ai-engineering/agent-to-agent
 description: Conceptual overview of Agent-to-Agent discovery, task delegation, and result exchange.
 ---
 
