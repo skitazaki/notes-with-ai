@@ -64,7 +64,7 @@ State accountability and responsibility separately. **Accountability** means bei
 
 Accountability must match control. An accountable owner needs the authority and capability to change the system, accept risk, prioritize remediation, and resolve conflicts within the stated boundary. Assigning a domain team accountability for data while a central queue controls every schema, pipeline, and access decision makes that accountability ineffective. Giving teams autonomy without shared interfaces and governance produces fragmentation.
 
-For every material data asset, interface, and architectural decision, document the accountable role, the responsible roles, the decision rights, and the escalation path. Make the responsibilities of source owners, platform operators, product owners, governance authorities, and consumers explicit, including where responsibilities are shared or handed off. [Ownership Boundaries](/docs/arch/ownership-boundaries/) provides a broader architectural lens.
+For every material data asset, interface, and architectural decision, document the accountable role, the responsible roles, the decision rights, and the escalation path. Make the responsibilities of source owners, platform operators, product owners, governance authorities, and consumers explicit, including where responsibilities are shared or handed off. [Ownership Boundaries](/docs/arch/dimensions/ownership-boundaries/) provides a broader architectural lens.
 
 ### Design for Scale and Evolution
 

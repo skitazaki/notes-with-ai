@@ -2,7 +2,7 @@
 date: "2026-06-28T00:00:00+09:00"
 title: "Decision Frameworks"
 weight: 8
-prev: "/docs/arch/views-and-viewpoints"
+prev: "/docs/arch"
 next: "/docs/arch/principles"
 ---
 

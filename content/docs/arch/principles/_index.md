@@ -3,6 +3,7 @@ date: "2026-08-30T00:00:00+09:00"
 title: "Architecture Principles"
 weight: 9
 prev: "/docs/arch/decision-frameworks"
+next: "/docs/arch"
 ---
 
 Architecture principles turn organizational priorities into durable guidance for design decisions. They make a preferred direction explicit before a team becomes attached to a particular technology or implementation.
@@ -63,7 +64,7 @@ A complete principle can be written as follows:
 
 ## Principles vs. Pillars
 
-[Pillars](../pillars/) and principles both influence tradeoffs, but they work at different levels.
+[Pillars](../dimensions/pillars/) and principles both influence tradeoffs, but they work at different levels.
 
 | Concept       | Question answered                         | Typical form                                          | Example                                                     |
 | ------------- | ----------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------------- |
@@ -86,7 +87,7 @@ A practical sequence is:
 2. Find the principles that apply and state how they shape the default.
 3. Use a decision framework to compare viable options against evidence and constraints.
 4. Record whether the result follows a principle or uses an explicit exception.
-5. Express the chosen architecture through appropriate [views and viewpoints](../views-and-viewpoints/).
+5. Express the chosen architecture through appropriate [views and viewpoints](../dimensions/views-and-viewpoints/).
 
 Multiple principles may point in different directions. A preference for managed services may conflict with data residency or latency guidance. The team should not hide that tension or count which option satisfies the most principles. It should identify which concern dominates in this context and preserve the reasoning in the decision record.
 

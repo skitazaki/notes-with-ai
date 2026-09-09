@@ -22,15 +22,15 @@ Start with the question you need to answer, then move only as far into the syste
 
 ### Where does the system fit?
 
-Begin with the system's purpose, its environment, and the people or systems around it. Use [Architecture Dimensions](dimensions/) to choose a useful reasoning lens, [Ownership Boundaries](ownership-boundaries/) to clarify responsibility, and [Views and Viewpoints](views-and-viewpoints/) to frame the explanation for a particular audience.
+Begin with the system's purpose, its environment, and the people or systems around it. Use [Architecture Dimensions](dimensions/) to choose a useful reasoning lens, [Ownership Boundaries](dimensions/ownership-boundaries/) to clarify responsibility, and [Views and Viewpoints](dimensions/views-and-viewpoints/) to frame the explanation for a particular audience.
 
 ### What are its major building blocks?
 
-Move inward to the system's large structural and operational parts. [Layers](layers/) explains abstraction and dependency direction, [Planes](planes/) separates operational responsibilities, and [Pillars](pillars/) identifies the qualities and constraints that shape those choices.
+Move inward to the system's large structural and operational parts. [Layers](dimensions/layers/) explains abstraction and dependency direction, [Planes](dimensions/planes/) separates operational responsibilities, and [Pillars](dimensions/pillars/) identifies the qualities and constraints that shape those choices.
 
 ### How do those building blocks interact?
 
-Use [Flows and Pipelines](flows-and-pipelines/) to trace requests, events, data, and failure paths between parts. Use [Architecture Principles](principles/) to carry persistent organizational guidance into [Decision Frameworks](decision-frameworks/), which connect those interactions to concerns, tradeoffs, and architectural decisions. Return to [Views and Viewpoints](views-and-viewpoints/) when the result needs to be communicated to a specific audience.
+Use [Flows and Pipelines](dimensions/flows-and-pipelines/) to trace requests, events, data, and failure paths between parts. Use [Architecture Principles](principles/) to carry persistent organizational guidance into [Decision Frameworks](decision-frameworks/), which connect those interactions to concerns, tradeoffs, and architectural decisions. Return to [Views and Viewpoints](dimensions/views-and-viewpoints/) when the result needs to be communicated to a specific audience.
 
 ### Architecture Zoom Map
 
@@ -43,12 +43,12 @@ flowchart LR
   container --> component["Component<br/>Responsibilities within a container"]
 ```
 
-| Navigation level     | Representative topics                                                                                                                            |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **System Landscape** | [Ownership Boundaries](ownership-boundaries/), [Views and Viewpoints](views-and-viewpoints/)                                                     |
-| **System**           | [Architecture Dimensions](dimensions/), [Pillars](pillars/), [Architecture Principles](principles/), [Decision Frameworks](decision-frameworks/) |
-| **Container**        | [Layers](layers/), [Planes](planes/)                                                                                                             |
-| **Component**        | [Flows and Pipelines](flows-and-pipelines/), [Layers](layers/)                                                                                   |
+| Navigation level     | Representative topics                                                                                                                                       |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **System Landscape** | [Ownership Boundaries](dimensions/ownership-boundaries/), [Views and Viewpoints](dimensions/views-and-viewpoints/)                                          |
+| **System**           | [Architecture Dimensions](dimensions/), [Pillars](dimensions/pillars/), [Architecture Principles](principles/), [Decision Frameworks](decision-frameworks/) |
+| **Container**        | [Layers](dimensions/layers/), [Planes](dimensions/planes/)                                                                                                  |
+| **Component**        | [Flows and Pipelines](dimensions/flows-and-pipelines/), [Layers](dimensions/layers/)                                                                        |
 
 Keeping scope, labels, and relationships explicit prevents a single diagram from mixing abstraction levels and becoming difficult to interpret.[^c4-introduction]
 
