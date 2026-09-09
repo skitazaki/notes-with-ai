@@ -3,7 +3,8 @@ date: "2026-08-13T16:00:00+09:00"
 title: "ソフトウェアエンジニアリングのツールとしての AI"
 linkTitle: "ツールとしての AI"
 weight: 60
-prev: "/docs/swe/reliability-operations"
+prev: "/docs/swe"
+next: "/docs/swe/ai-as-software-engineering-tool/coding-agents"
 ---
 
 AI は、リポジトリの理解、コードの作成と変換、テスト作成、変更レビュー、障害調査、範囲を限定したワークフローの自動化を支援できます。その価値は、エンジニアリング上の判断や説明責任を取り除くことではなく、フィードバックを改善し、機械的な作業を減らすことにあります。
@@ -52,6 +53,14 @@ Human-in-the-loop は一つの確認ダイアログではありません。人�
 - **コンテキストは多いほど良いとは限りません。** 無関係または競合する情報は性能を下げ、不要な情報を露出します。
 - **自律性は一つの設定ではありません。** 読み取り、編集、実行、ネットワークアクセス、外部作用は別々の権限です。
 - **AI 導入を出力量だけで測るべきではありません。** レビュー負荷、欠陥率、リードタイム、学習、運用結果も重要です。
+
+## トピック
+
+{{< cards >}}
+{{< card link="coding-agents/" title="コーディングエージェント" icon="chip" subtitle="リポジトリを扱うエージェントの役割、ワークフロー、境界" >}}
+{{< card link="harness-engineering/" title="ハーネスエンジニアリング" icon="puzzle" subtitle="コンテキスト、ツール、権限、フィードバックを設計する" >}}
+{{< card link="evaluation-and-security/" title="評価とセキュリティ" icon="shield-check" subtitle="変更を検証し、重大な操作を制約する" >}}
+{{< /cards >}}
 
 ## まとめ
 

@@ -55,7 +55,7 @@ next: "/docs/swe/software-development"
 
 {{< cards >}}
 {{< card link="delivery-devops/" title="デリバリーと DevOps" icon="refresh" subtitle="ソースコードの変更から制御された本番結果までの経路" >}}
-{{< card link="idp/" title="内部開発者ポータル（IDP）" icon="server" subtitle="プラットフォームエンジニアリングと開発者セルフサービスを支えるポータル" >}}
+{{< card link="delivery-devops/internal-developer-portal/" title="内部開発者ポータル（IDP）" icon="server" subtitle="プラットフォームエンジニアリングと開発者セルフサービスを支えるポータル" >}}
 {{< /cards >}}
 
 **次に探るトピック：** 継続的デリバリー、再現可能なビルド、アーティファクトの来歴、プログレッシブデリバリー、プラットフォームエンジニアリング、開発者体験。
@@ -66,7 +66,7 @@ next: "/docs/swe/software-development"
 
 {{< cards >}}
 {{< card link="reliability-operations/" title="信頼性と運用" icon="status-online" subtitle="目標、オブザーバビリティ、レジリエンス、本番環境からの学習" >}}
-{{< card link="12factor/" title="Twelve-Factor App" icon="cube" subtitle="移植可能で観測しやすく、運用管理しやすいサービスの原則" >}}
+{{< card link="reliability-operations/twelve-factor-app/" title="Twelve-Factor App" icon="cube" subtitle="移植可能で観測しやすく、運用管理しやすいサービスの原則" >}}
 {{< /cards >}}
 
 **次に探るトピック：** オブザーバビリティ、SRE、インシデントからの学習、レジリエンスパターン、キャパシティプランニング、パフォーマンスエンジニアリング。

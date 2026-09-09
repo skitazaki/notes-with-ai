@@ -2,8 +2,8 @@
 date: "2026-08-13T16:00:00+09:00"
 title: "Delivery & DevOps"
 weight: 40
-prev: "/docs/swe/testing-quality-engineering"
-next: "/docs/swe/reliability-operations"
+prev: "/docs/swe"
+next: "/docs/swe/delivery-devops/continuous-delivery"
 ---
 
 Delivery connects a source change to a controlled outcome in a running environment. DevOps connects the people, practices, and platform capabilities needed to make that path fast, repeatable, observable, and accountable.
@@ -28,7 +28,7 @@ Progressive delivery uses production evidence to expand or stop a release. It wo
 
 Infrastructure as Code represents environmental intent in versioned, reviewable definitions. GitOps applies reconciliation so a declared state can be compared continuously with a running environment. Both improve traceability, but neither guarantees safe change without validation, access control, drift management, and recovery procedures.
 
-Platform engineering packages recurring delivery and operational capabilities into supported paths that product teams can use without rebuilding every mechanism. An [Internal Developer Portal](../idp/) may make those capabilities discoverable, while the platform supplies the underlying workflows, environments, policies, and services.
+Platform engineering packages recurring delivery and operational capabilities into supported paths that product teams can use without rebuilding every mechanism. An [Internal Developer Portal](internal-developer-portal/) may make those capabilities discoverable, while the platform supplies the underlying workflows, environments, policies, and services.
 
 Developer experience is an outcome of this delivery system. Engineers need fast feedback, understandable failures, predictable environments, and a clear path from intent to production. A platform should reduce incidental complexity without concealing the system knowledge required to operate software responsibly.
 
@@ -44,6 +44,14 @@ Delivery metrics can reveal waiting time and system friction, but they require c
 - **Automation does not remove accountability.** It moves decisions into code, policy, and exception handling.
 - **Rollback is not always reversal.** Data migrations, messages, and external side effects may require forward recovery.
 - **Standardization should not erase legitimate differences.** Good platforms standardize recurring needs while allowing explicit escape paths.
+
+## Topics
+
+{{< cards >}}
+{{< card link="continuous-delivery/" title="Continuous Delivery" icon="refresh" subtitle="A releasable state supported by fast, credible feedback" >}}
+{{< card link="deployment-strategies/" title="Deployment Strategies" icon="switch-horizontal" subtitle="Control replacement, exposure, and recovery" >}}
+{{< card link="internal-developer-portal/" title="Internal Developer Portal" icon="server" subtitle="A discoverable front door to platform capabilities" >}}
+{{< /cards >}}
 
 ## Summary
 

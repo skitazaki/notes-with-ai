@@ -55,7 +55,7 @@ Delivery connects a source change to a controlled production outcome. Build syst
 
 {{< cards >}}
 {{< card link="delivery-devops/" title="Delivery & DevOps" icon="refresh" subtitle="The path from source change to a controlled production outcome" >}}
-{{< card link="idp/" title="Internal Developer Portal" icon="server" subtitle="How portals support platform engineering and developer self-service" >}}
+{{< card link="delivery-devops/internal-developer-portal/" title="Internal Developer Portal" icon="server" subtitle="How portals support platform engineering and developer self-service" >}}
 {{< /cards >}}
 
 **Explore next:** continuous delivery, build reproducibility, artifact provenance, progressive delivery, platform engineering, and developer experience.
@@ -66,7 +66,7 @@ Operations tests software against reality. Observability, logging, metrics, trac
 
 {{< cards >}}
 {{< card link="reliability-operations/" title="Reliability & Operations" icon="status-online" subtitle="Objectives, observability, resilience, and production learning" >}}
-{{< card link="12factor/" title="Twelve-Factor App" icon="cube" subtitle="Principles for portable, observable, and operationally manageable services" >}}
+{{< card link="reliability-operations/twelve-factor-app/" title="Twelve-Factor App" icon="cube" subtitle="Principles for portable, observable, and operationally manageable services" >}}
 {{< /cards >}}
 
 **Explore next:** observability, SRE, incident learning, resilience patterns, capacity planning, and performance engineering.

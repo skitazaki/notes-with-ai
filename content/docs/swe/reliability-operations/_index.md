@@ -2,8 +2,8 @@
 date: "2026-08-13T16:00:00+09:00"
 title: "Reliability & Operations"
 weight: 50
-prev: "/docs/swe/delivery-devops"
-next: "/docs/swe/ai-as-software-engineering-tool"
+prev: "/docs/swe"
+next: "/docs/swe/reliability-operations/observability-and-slos"
 ---
 
 Reliability and operations connect software design with the conditions a system encounters in the real world. They make behavior visible, define acceptable service, prepare for failure, and turn production evidence into better engineering decisions.
@@ -36,7 +36,7 @@ Incident management coordinates detection, response, communication, mitigation, 
 
 Operational ownership means that teams remain connected to the consequences of their software. It does not require every engineer to perform every operational role. Clear escalation, sustainable on-call practices, platform support, and well-defined ownership boundaries distribute responsibility without separating builders from production learning.
 
-The [Twelve-Factor App](../12factor/) describes useful principles for deployable and operationally manageable services. [Delivery & DevOps](../delivery-devops/) explains how changes reach production; operations closes that loop by returning evidence about their real behavior.
+The [Twelve-Factor App](twelve-factor-app/) describes useful principles for deployable and operationally manageable services. [Delivery & DevOps](../delivery-devops/) explains how changes reach production; operations closes that loop by returning evidence about their real behavior.
 
 ## Common misconceptions
 
@@ -44,6 +44,14 @@ The [Twelve-Factor App](../12factor/) describes useful principles for deployable
 - **Observability is not a telemetry product.** It is an investigative capability built from signals, context, and operating practice.
 - **More retries do not always improve resilience.** Unbounded retries can magnify failure.
 - **An incident review is not complete when a document is published.** Learning must change the system or its operation.
+
+## Topics
+
+{{< cards >}}
+{{< card link="observability-and-slos/" title="Observability & SLOs" icon="chart-bar" subtitle="Connect telemetry to user-relevant reliability targets" >}}
+{{< card link="incident-management-and-resilience/" title="Incident Management & Resilience" icon="shield-check" subtitle="Prepare for failure, coordinate response, and learn" >}}
+{{< card link="twelve-factor-app/" title="Twelve-Factor App" icon="cube" subtitle="Principles for deployable and operable services" >}}
+{{< /cards >}}
 
 ## Summary
 
