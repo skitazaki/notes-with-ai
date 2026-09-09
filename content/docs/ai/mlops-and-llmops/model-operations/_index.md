@@ -6,7 +6,7 @@ prev: "/docs/ai/mlops-and-llmops"
 next: "/docs/ai/mlops-and-llmops"
 ---
 
-Model Operations provides a conceptual framework for lifecycle control, observability, and operating concerns for ml and llm systems. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
+Model Operations provides a conceptual framework for lifecycle control, observability, and operating concerns for ML and LLM systems. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
 
 ## Core MLOps Concerns
 
