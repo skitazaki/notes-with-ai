@@ -3,7 +3,9 @@ date: "2025-10-18T16:00:00+09:00"
 title: "Players by Layers"
 description: |-
   Here is a technical report on **Quantum Computing Players by Layers**, covering the technical landscape, companies & solutions, and underlying mechanisms.
-weight: 10
+weight: 6
+prev: "/docs/quantum-computing/hybrid-systems"
+next: "/docs/quantum-computing"
 ---
 
 Here is a technical report on **Quantum Computing Players by Layers**, covering the technical landscape, companies &

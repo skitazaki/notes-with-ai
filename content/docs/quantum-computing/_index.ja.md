@@ -2,6 +2,7 @@
 date: "2025-07-26T16:34:59+09:00"
 title: "量子コンピューティング"
 weight: 50
+next: "/ja/docs/quantum-computing/foundations"
 ---
 
 かつては物理学者の専門領域だった「量子コンピューティング」が、いまや企業における次世代のイノベーション源として注目を集めています。商用利用はまだ限定的ですが、物流、金融、製薬、サイバーセキュリティといった分野で、従来のコンピュータでは実現困難だった問題を解決できる可能性があります。
@@ -55,6 +56,19 @@ weight: 50
   Cryptography) の標準化が進行中。
 - 米国 NIST が2024年から標準化に向けて動いており、企業の対応が求められます。
 
+## トピックページ
+
+計算の基礎からシステムアーキテクチャ、エコシステムまで、次のページを順に参照できます。
+
+{{< cards >}}
+{{< card link="foundations/" title="基本概念" icon="book-open" subtitle="量子ビット、重ね合わせ、量子もつれ、干渉、測定" >}}
+{{< card link="computing-models/" title="計算モデルとハードウェア" icon="chip" subtitle="ゲート型、アニーリング、アナログシミュレーション、物理方式" >}}
+{{< card link="algorithms-and-advantage/" title="アルゴリズムと量子優位性" icon="document-text" subtitle="アルゴリズムの分類と、優位性を評価するための枠組み" >}}
+{{< card link="error-correction/" title="誤りとフォールトトレランス" icon="shield-check" subtitle="ノイズ、誤り緩和、量子誤り訂正、信頼できる論理計算" >}}
+{{< card link="hybrid-systems/" title="量子・古典ハイブリッドシステム" icon="server" subtitle="実行ワークフロー、統合境界、信頼性、ガバナンス" >}}
+{{< card link="layers/" title="レイヤー別のプレイヤー" icon="users" subtitle="クラウドサービス、開発ツール、アルゴリズム、ハードウェア" >}}
+{{< /cards >}}
+
 ## 技術とプレイヤーの現状
 
 ### 主なプレイヤー
@@ -74,11 +88,7 @@ weight: 50
 
 それぞれに長所と課題があり、特に「量子誤り訂正（Quantum Error Correction）」の確立が今後の技術的鍵です。
 
-ここでは主なプレイヤーとハードウェアの簡単な記載に留めます。 詳細は「レイヤー別のプレイヤー」の文書を確認してください。
-
-{{< cards >}}
-{{< card link="layers" title="レイヤー別のプレイヤー" icon="document-text" >}}
-{{< /cards >}}
+ここでは主なプレイヤーとハードウェアの簡単な記載に留めます。アーキテクチャ上のトレードオフは「計算モデルとハードウェア」、エコシステムの詳細は「レイヤー別のプレイヤー」を参照してください。
 
 ## 今後の展望: 2025年–2030年
 
