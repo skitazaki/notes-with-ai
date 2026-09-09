@@ -2,8 +2,8 @@
 date: "2026-09-09T09:00:00+09:00"
 title: "基本概念"
 weight: 1
-prev: "/ja/docs/quantum-computing"
-next: "/ja/docs/quantum-computing/computing-models"
+prev: "/docs/quantum-computing"
+next: "/docs/quantum-computing/computing-models"
 ---
 
 量子コンピューティングは、量子力学に従って情報を表現し、変換する計算モデルです。あらゆる計算を高速化するものではありません。重ね合わせ、量子もつれ、干渉を利用して、対象となる解空間の探索方法を変えられることに価値があります。

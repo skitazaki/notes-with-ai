@@ -4,8 +4,8 @@ title: "レイヤー別のプレイヤー"
 description: |-
   量子コンピューティングの主要プレイヤーをレイヤー別に技術的に整理した報告です。クラウドサービス、開発者ツール（言語含む）、量子アルゴリズム、ハードウェアの観点でまとめています。
 weight: 6
-prev: "/ja/docs/quantum-computing/hybrid-systems"
-next: "/ja/docs/quantum-computing"
+prev: "/docs/quantum-computing/hybrid-systems"
+next: "/docs/quantum-computing"
 ---
 
 量子コンピューティングの主要プレイヤーを「レイヤー別」に技術的に整理します。クラウドアクセス可能なサービス、開発者ツール（プログラミング言語を含む）、量子アルゴリズム、量子ハードウェアの4つのカテゴリで構成しています。

@@ -2,8 +2,8 @@
 date: "2026-09-09T09:00:00+09:00"
 title: "計算モデルとハードウェア"
 weight: 2
-prev: "/ja/docs/quantum-computing/foundations"
-next: "/ja/docs/quantum-computing/algorithms-and-advantage"
+prev: "/docs/quantum-computing/foundations"
+next: "/docs/quantum-computing/algorithms-and-advantage"
 ---
 
 量子コンピュータには複数の計算モデルと物理アーキテクチャがあります。両者は関係しますが、同じものではありません。計算モデルは問題をどのように表現するかを定め、ハードウェア方式は量子情報を物理的にどのように保持、制御、測定するかを定めます。

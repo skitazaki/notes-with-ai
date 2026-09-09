@@ -2,8 +2,8 @@
 date: "2026-09-09T09:00:00+09:00"
 title: "量子・古典ハイブリッドシステム"
 weight: 5
-prev: "/ja/docs/quantum-computing/error-correction"
-next: "/ja/docs/quantum-computing/layers"
+prev: "/docs/quantum-computing/error-correction"
+next: "/docs/quantum-computing/layers"
 ---
 
 量子プロセッサは、古典コンピューティング環境の構成要素として動作します。問題の準備、回路のコンパイル、ハードウェア制御、最適化、結果分析、アプリケーション統合には古典システムが必要です。実用的な量子ワークロードは、独立した量子プログラムではなく、異なる計算資源にまたがる分散ワークフローです。

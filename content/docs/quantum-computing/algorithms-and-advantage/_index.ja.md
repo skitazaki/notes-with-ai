@@ -2,8 +2,8 @@
 date: "2026-09-09T09:00:00+09:00"
 title: "アルゴリズムと量子優位性"
 weight: 3
-prev: "/ja/docs/quantum-computing/computing-models"
-next: "/ja/docs/quantum-computing/error-correction"
+prev: "/docs/quantum-computing/computing-models"
+next: "/docs/quantum-computing/error-correction"
 ---
 
 量子アルゴリズムの価値は、意味のあるエンドツーエンドの計算を改善できる場合に成立します。量子ビットや重ね合わせが存在すること、あるいは部分処理が数学的に高速であることだけでは、実用的な優位性を示したことにはなりません。入力、出力、求める精度、ハードウェア要件、既知の最良の古典手法を含めて評価する必要があります。

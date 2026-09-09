@@ -2,8 +2,8 @@
 date: "2026-09-09T09:00:00+09:00"
 title: "誤り、誤り訂正、フォールトトレランス"
 weight: 4
-prev: "/ja/docs/quantum-computing/algorithms-and-advantage"
-next: "/ja/docs/quantum-computing/hybrid-systems"
+prev: "/docs/quantum-computing/algorithms-and-advantage"
+next: "/docs/quantum-computing/hybrid-systems"
 ---
 
 量子情報は壊れやすく、環境との意図しない相互作用、不完全な制御、状態準備や測定の誤りによって計算の信頼性が低下します。未知の量子状態は単純にコピーして検査できないため、誤りへの対処は古典系の冗長化と根本的に異なります。
