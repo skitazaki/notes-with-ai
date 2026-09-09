@@ -2,8 +2,8 @@
 date: "2026-08-13T16:00:00+09:00"
 title: "Testing & Quality Engineering"
 weight: 30
-prev: "/docs/swe/software-development"
-next: "/docs/swe/delivery-devops"
+prev: "/docs/swe"
+next: "/docs/swe/testing-quality-engineering/test-strategy"
 ---
 
 Testing and quality engineering create evidence about whether software is fit for its intended use. They do not prove that a system is perfect. They reduce uncertainty by checking behavior, contracts, system qualities, and important failure modes at useful points in the engineering lifecycle.
@@ -46,6 +46,14 @@ Quality work starts while requirements and architecture are being shaped. Accept
 - **The test pyramid is not a fixed quota.** The right distribution depends on system boundaries, risks, and feedback cost.
 - **Quality is not owned by a separate testing phase.** Specialists can provide deep expertise, but delivery teams remain accountable for outcomes.
 - **Production monitoring is not a substitute for pre-release testing.** The two provide different evidence and should reinforce each other.
+
+## Topics
+
+{{< cards >}}
+{{< card link="test-strategy/" title="Test Strategy" icon="clipboard-list" subtitle="Match evidence to risks, boundaries, and feedback cost" >}}
+{{< card link="test-levels/" title="Test Levels" icon="collection" subtitle="Unit, integration, contract, and end-to-end testing" >}}
+{{< card link="non-functional-quality/" title="Non-Functional Quality" icon="shield-check" subtitle="Performance, security, accessibility, and resilience evidence" >}}
+{{< /cards >}}
 
 ## Summary
 

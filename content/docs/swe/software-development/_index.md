@@ -3,7 +3,7 @@ date: "2026-08-13T16:00:00+09:00"
 title: "Software Development"
 weight: 20
 prev: "/docs/swe"
-next: "/docs/swe/testing-quality-engineering"
+next: "/docs/swe/software-development/version-control-and-integration"
 ---
 
 Software development turns intent and design into executable behavior that people can understand, verify, and change. Programming is central to that work, but development also includes the practices that keep code coherent as requirements, dependencies, teams, and production environments evolve.
@@ -36,7 +36,7 @@ Refactoring changes internal structure without intentionally changing externally
 
 Editors, language servers, formatters, linters, build tools, local environments, and repository automation form an engineering feedback system. Good tooling reduces the time between an action and useful evidence. It should make the preferred path easy while preserving enough transparency to diagnose failures.
 
-Developer experience is therefore not cosmetic convenience. Slow builds, inconsistent environments, unclear errors, and fragile setup procedures consume attention and discourage small, safe changes. Platform capabilities and [Internal Developer Portals](../idp/) can reduce that friction, but they should expose meaningful system context rather than hide every operational detail.
+Developer experience is therefore not cosmetic convenience. Slow builds, inconsistent environments, unclear errors, and fragile setup procedures consume attention and discourage small, safe changes. Platform capabilities and [Internal Developer Portals](../delivery-devops/internal-developer-portal/) can reduce that friction, but they should expose meaningful system context rather than hide every operational detail.
 
 ## Common misconceptions
 
@@ -44,6 +44,14 @@ Developer experience is therefore not cosmetic convenience. Slow builds, inconsi
 - **More abstraction is not automatically better design.** An abstraction should clarify a stable relationship or variation point.
 - **A framework does not remove architectural responsibility.** It supplies defaults and mechanisms; teams still own boundaries and trade-offs.
 - **Code review cannot replace automated evidence.** Human attention is most valuable for intent, risk, and design judgment.
+
+## Topics
+
+{{< cards >}}
+{{< card link="version-control-and-integration/" title="Version Control & Integration" icon="document-text" subtitle="Small changes, shared history, and integration practices" >}}
+{{< card link="code-review-and-refactoring/" title="Code Review & Refactoring" icon="document-text" subtitle="Human feedback and disciplined structural change" >}}
+{{< card link="dependency-management/" title="Dependency Management" icon="cube" subtitle="Controlling external code across its lifecycle" >}}
+{{< /cards >}}
 
 ## Summary
 

@@ -1,7 +1,9 @@
 ---
 date: "2026-02-14T12:00:00+09:00"
 title: "内部開発者ポータル（IDP）"
-weight: 10
+weight: 30
+prev: "/docs/swe/delivery-devops/deployment-strategies"
+next: "/docs/swe/delivery-devops"
 ---
 
 ## 1. 内部開発者ポータルとは？

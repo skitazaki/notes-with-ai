@@ -1,5 +1,6 @@
 ---
 type: docs
+path: /docs/swe/delivery-devops/internal-developer-portal
 ---
 
 Write a concise overview (roughly 1,000–1,200 words) titled:

@@ -2,8 +2,8 @@
 date: "2026-08-13T16:00:00+09:00"
 title: "信頼性と運用"
 weight: 50
-prev: "/docs/swe/delivery-devops"
-next: "/docs/swe/ai-as-software-engineering-tool"
+prev: "/docs/swe"
+next: "/docs/swe/reliability-operations/observability-and-slos"
 ---
 
 信頼性と運用は、ソフトウェア設計を、現実の環境でシステムが遭遇する条件へ結び付けます。振る舞いを可視化し、許容できるサービスを定義し、障害に備え、本番環境から得られる情報をより良いエンジニアリング判断へつなげます。
@@ -36,7 +36,7 @@ next: "/docs/swe/ai-as-software-engineering-tool"
 
 運用の所有とは、チームが自らのソフトウェアの結果とのつながりを保つことです。すべてのエンジニアがすべての運用役割を担うことではありません。明確なエスカレーション、持続可能なオンコール、プラットフォーム支援、明確な所有境界により、構築者を本番から切り離さず責任を分配できます。
 
-[Twelve-Factor App](../12factor/) は、デプロイ可能で運用管理しやすいサービスの原則を説明します。[デリバリーと DevOps](../delivery-devops/) は変更が本番へ到達する方法を扱い、運用は実際の振る舞いをフィードバックしてループを閉じます。
+[Twelve-Factor App](twelve-factor-app/) は、デプロイ可能で運用管理しやすいサービスの原則を説明します。 [デリバリーと DevOps](../delivery-devops/) は変更が本番へ到達する方法を扱い、運用は実際の振る舞いをフィードバックしてループを閉じます。
 
 ## よくある誤解
 
@@ -44,6 +44,14 @@ next: "/docs/swe/ai-as-software-engineering-tool"
 - **オブザーバビリティはテレメトリ製品ではありません。** シグナル、コンテキスト、運用プラクティスから成る調査能力です。
 - **再試行を増やせば常に強くなるわけではありません。** 制限のない再試行は障害を増幅します。
 - **文書を公開しただけでは事後レビューは完了しません。** 学習をシステムや運用の変更へつなげます。
+
+## トピック
+
+{{< cards >}}
+{{< card link="observability-and-slos/" title="オブザーバビリティと SLO" icon="chart-bar" subtitle="テレメトリを利用者視点の信頼性目標へ結び付ける" >}}
+{{< card link="incident-management-and-resilience/" title="インシデント管理とレジリエンス" icon="shield-check" subtitle="障害へ備え、対応を調整し、学習する" >}}
+{{< card link="twelve-factor-app/" title="Twelve-Factor App" icon="cube" subtitle="デプロイ可能で運用しやすいサービスの原則" >}}
+{{< /cards >}}
 
 ## まとめ
 

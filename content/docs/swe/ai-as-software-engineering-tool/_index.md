@@ -3,7 +3,8 @@ date: "2026-08-13T16:00:00+09:00"
 title: "AI as a Software-Engineering Tool"
 linkTitle: "AI as a Tool"
 weight: 60
-prev: "/docs/swe/reliability-operations"
+prev: "/docs/swe"
+next: "/docs/swe/ai-as-software-engineering-tool/coding-agents"
 ---
 
 AI can support software-engineering work by helping people understand repositories, draft and transform code, create tests, review changes, investigate failures, and automate bounded workflows. Its value comes from improving feedback and reducing mechanical effort—not from removing engineering judgment or accountability.
@@ -52,6 +53,14 @@ Human-in-the-loop control is not a single confirmation dialog. It means placing 
 - **More context is not always better.** Irrelevant or conflicting context can reduce performance and expose information unnecessarily.
 - **Autonomy is not one setting.** Reading, editing, executing, accessing networks, and creating external effects are separate authorities.
 - **AI adoption is not measured only by output volume.** Review load, defect rate, lead time, learning, and operational outcomes also matter.
+
+## Topics
+
+{{< cards >}}
+{{< card link="coding-agents/" title="Coding Agents" icon="chip" subtitle="Roles, workflows, and boundaries for repository-level agents" >}}
+{{< card link="harness-engineering/" title="Harness Engineering" icon="puzzle" subtitle="Design context, tools, permissions, and feedback" >}}
+{{< card link="evaluation-and-security/" title="Evaluation & Security" icon="shield-check" subtitle="Validate changes and constrain consequential actions" >}}
+{{< /cards >}}
 
 ## Summary
 
