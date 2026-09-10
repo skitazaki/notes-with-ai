@@ -24,7 +24,7 @@ Decision   → What do we choose in this situation?
 
 Constraints arise from the environment in which a system operates, not only from its codebase. Common sources include:
 
-- Laws, regulation, contracts, and data-residency commitments
+- Laws, regulations, contracts, and data-residency commitments
 - Security requirements, trust boundaries, and risk acceptance decisions
 - Existing platforms, interfaces, data formats, and migration commitments
 - Budget, delivery date, staffing, and operational capability
