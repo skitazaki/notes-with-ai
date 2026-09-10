@@ -30,7 +30,7 @@ Move inward to the system's large structural and operational parts. [Layers](dim
 
 ### How do those building blocks interact?
 
-Use [Flows and Pipelines](dimensions/flows-and-pipelines/) to trace requests, events, data, and failure paths between parts. Use [Architecture Principles](principles/) to carry persistent organizational guidance into [Decision Frameworks](decision-frameworks/), which connect those interactions to concerns, tradeoffs, and architectural decisions. Return to [Views and Viewpoints](dimensions/views-and-viewpoints/) when the result needs to be communicated to a specific audience.
+Use [Flows and Pipelines](dimensions/flows-and-pipelines/) to trace requests, events, data, and failure paths between parts. Use [Architecture Principles](principles/) for persistent organizational guidance and [Architecture Constraints](constraints/) to establish the limits an option must satisfy before it reaches [Decision Frameworks](decision-frameworks/). Return to [Views and Viewpoints](dimensions/views-and-viewpoints/) when the result needs to be communicated to a specific audience.
 
 ### Architecture Zoom Map
 
@@ -43,12 +43,12 @@ flowchart LR
   container --> component["Component<br/>Responsibilities within a container"]
 ```
 
-| Navigation level     | Representative topics                                                                                                                                       |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **System Landscape** | [Ownership Boundaries](dimensions/ownership-boundaries/), [Views and Viewpoints](dimensions/views-and-viewpoints/)                                          |
-| **System**           | [Architecture Dimensions](dimensions/), [Pillars](dimensions/pillars/), [Architecture Principles](principles/), [Decision Frameworks](decision-frameworks/) |
-| **Container**        | [Layers](dimensions/layers/), [Planes](dimensions/planes/)                                                                                                  |
-| **Component**        | [Flows and Pipelines](dimensions/flows-and-pipelines/), [Layers](dimensions/layers/)                                                                        |
+| Navigation level     | Representative topics                                                                                                                                                                                 |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **System Landscape** | [Ownership Boundaries](dimensions/ownership-boundaries/), [Views and Viewpoints](dimensions/views-and-viewpoints/)                                                                                    |
+| **System**           | [Architecture Dimensions](dimensions/), [Pillars](dimensions/pillars/), [Architecture Principles](principles/), [Architecture Constraints](constraints/), [Decision Frameworks](decision-frameworks/) |
+| **Container**        | [Layers](dimensions/layers/), [Planes](dimensions/planes/)                                                                                                                                            |
+| **Component**        | [Flows and Pipelines](dimensions/flows-and-pipelines/), [Layers](dimensions/layers/)                                                                                                                  |
 
 Keeping scope, labels, and relationships explicit prevents a single diagram from mixing abstraction levels and becoming difficult to interpret.[^c4-introduction]
 
@@ -113,9 +113,9 @@ If the concern is executive alignment, the best view may hide most implementatio
 
 ## From Concern to Architecture
 
-In practical architecture work, this reasoning-and-communication loop draws on the concepts in this section as a connected system rather than a flat vocabulary. Pillars identify what matters. Principles translate those priorities into persistent guidance. Decision frameworks apply that guidance to a specific choice. Layers, planes, and flows describe the resulting architecture, while views present the relevant parts to specific audiences.
+In practical architecture work, this reasoning-and-communication loop draws on the concepts in this section as a connected system rather than a flat vocabulary. Pillars identify what matters. Principles translate those priorities into persistent guidance, while constraints bound the options that can be considered. Decision frameworks apply both to a specific choice. Layers, planes, and flows describe the resulting architecture, while views present the relevant parts to specific audiences.
 
-![From Concern to Architecture: pillars inform architecture principles, which guide decision frameworks and produce architecture decisions expressed through layers, planes, flows and pipelines, and views and viewpoints](from-concern-to-architecture.webp "From Concern to Architecture")
+![From Concern to Architecture: a concern informs pillars and constraints; pillars inform principles; principles and constraints enter decision frameworks, which produce architecture decisions expressed through layers, planes, flows and pipelines, and views and viewpoints](from-concern-to-architecture.webp "From Concern to Architecture")
 
 This map is a practical progression, not a mandatory one-way sequence. A decision may expose a new concern, a view may reveal that a principle is difficult to apply, and structural or runtime analysis may change the evidence. The topic pages below explain each part of the system and the questions it helps answer.
 
@@ -133,6 +133,7 @@ Use the topic pages below to move directly to the areas that match the question 
 {{< card link="ownership-boundaries/" title="Ownership Boundaries" icon="map" subtitle="Responsibility for change, operation, contracts, and accountability" >}}
 {{< card link="views-and-viewpoints/" title="Views and Viewpoints" icon="eye" subtitle="Audience-specific communication artifacts derived from architecture concerns" >}}
 {{< card link="principles/" title="Architecture Principles" icon="light-bulb" subtitle="Durable guidance that turns organizational priorities into constraints and preferences" >}}
+{{< card link="constraints/" title="Architecture Constraints" icon="lock-closed" subtitle="The conditions that bound viable options before an architecture decision" >}}
 {{< card link="decision-frameworks/" title="Decision Frameworks" icon="scale" subtitle="How to connect concerns, dimensions, tradeoffs, and decisions" >}}
 {{< /cards >}}
 

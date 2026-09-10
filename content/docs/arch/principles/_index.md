@@ -3,7 +3,7 @@ date: "2026-08-30T00:00:00+09:00"
 title: "Architecture Principles"
 weight: 9
 prev: "/docs/arch/decision-frameworks"
-next: "/docs/arch"
+next: "/docs/arch/constraints"
 ---
 
 Architecture principles turn organizational priorities into durable guidance for design decisions. They make a preferred direction explicit before a team becomes attached to a particular technology or implementation.
@@ -74,6 +74,12 @@ A complete principle can be written as follows:
 A pillar is a lens used to judge alternatives. A principle converts one or more of those lenses into guidance that applies across decisions. Operability and cost efficiency may together motivate a managed-services principle. Security and auditability may motivate a principle that every privileged action must produce attributable evidence.
 
 The relationship is not one-to-one. One pillar can produce several principles, and one principle can support several pillars. Keeping the distinction clear prevents pillars from becoming vague slogans and prevents principles from appearing as arbitrary rules.
+
+## Principles vs. Constraints
+
+[Architecture Constraints](../constraints/) and principles both affect choices, but they have different force. A constraint says what must or cannot be done before the team compares designs. A principle states the direction the team normally prefers among the designs that remain viable.
+
+For example, **customer data must remain in Japan** eliminates options that store or process that data outside Japan. **Prefer managed services for undifferentiated infrastructure** does not eliminate every self-hosted option; it makes managed services the default unless evidence justifies an exception. Constraints bound the solution space, while principles guide judgment within it.
 
 ## Principles in Decision-Making
 
