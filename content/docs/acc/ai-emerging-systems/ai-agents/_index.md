@@ -44,19 +44,7 @@ For delegated agent flows, policy evaluation should usually preserve both identi
 
 In this flow, a user delegates a bounded task to an AI agent, the agent request is enforced by a Policy Enforcement Point (PEP), the Policy Decision Point (PDP) evaluates principal/subject plus delegation constraints, and every allow-or-deny outcome is recorded to the audit log.
 
-```mermaid
-flowchart LR
-	U[User / Delegator] -->|defines task and grants bounded delegation| A[AI Agent]
-	A -->|requests tool action with agent credential| PEP[Policy Enforcement Point]
-	PEP -->|sends principal, subject, task scope, resource, action| PDP[Policy Decision Point]
-	PDP -->|principal = agent identity| C1[Execution Context]
-	PDP -->|subject = delegating user or business owner| C2[Delegation Context]
-	PDP -->|checks policy, approvals, expiry, tool scope| D{Allow?}
-	D -->|yes| T[Tool / Target System]
-	D -->|no| X[Deny and log]
-	T --> L[Audit Log]
-	X --> L
-```
+![Delegated AI-agent authorization flow showing a user granting a bounded task to an AI agent; the agent request is evaluated by a policy enforcement point and policy decision point using the executing principal, delegated subject, task scope, resource, action, approvals, expiry, and tool scope; the resulting allow or deny outcome is recorded in an audit log.](ai-agents-autonomous-authorization.webp "AI Agents & Autonomous Authorization")
 
 In practice, this means logs and policy inputs should retain at least five fields: executing principal, delegated subject, target resource, requested action, and delegation constraints. Without that structure, post-incident reconstruction becomes unnecessarily difficult.
 
