@@ -253,6 +253,14 @@ When creating or revising an image-generation prompt:
 - specify the required output dimensions or aspect ratio explicitly
 - keep titles, dimensions, layout, and terminology consistent across localized variants unless the brief requires a deliberate difference
 
+### Self-contained image-generation prompts
+
+Every image-generation prompt must be self-contained. A writer or image-generation model must be able to determine the intended image from the prompt alone, without consulting an existing article, diagram, generated image, or other source file.
+
+Specify the complete composition, element hierarchy, relationships, required text, visual style, and prohibitions in the prompt itself. When structural fidelity matters, include an ASCII layout and explicit constraints that identify both required and forbidden connections, branches, and element groupings.
+
+Repository paths may appear in front matter or an asset-delivery section, but they must not be necessary to interpret the image specification. Do not rely on a reference image or an existing Mermaid diagram to supply unspecified layout, labels, or relationships.
+
 ## File Placement Rules
 
 Place prompts in the directory that mirrors the eventual content location as closely as practical.
