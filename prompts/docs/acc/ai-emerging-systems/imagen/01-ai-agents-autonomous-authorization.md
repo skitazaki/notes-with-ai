@@ -29,7 +29,6 @@ Policy Enforcement Point (PEP)
 ┌────────────────────────────────────────────────────┐
 │ Policy Decision Point (PDP)                          │
 │                                                      │
-│ Authorization input panel:                           │
 │ Principal: agent identity                            │
 │ Subject: delegating user or business owner           │
 │ Task scope                                           │
@@ -58,13 +57,11 @@ At the top, **User / Delegator** grants **Bounded delegation** to **AI Agent**. 
 
 The agent requests a tool action with its own credential. **Policy Enforcement Point (PEP) is not a policy-decision node.** It does not decide Allow or Deny. It only intercepts the request, forwards it to the PDP, and enforces the PDP result. Draw no deny icon, deny label, deny branch, or other side path from the PEP.
 
-Make the PDP the central focal point. Put Principal, Subject, Task scope, and Resource & action together as four separate rows in one shared **authorization input panel** inside the PDP. Principal and Subject are distinct authorization attributes, not separate actor cards. Do not duplicate Task scope or Resource & action in any other card.
+Make the PDP the central focal point. Put Principal, Subject, Task scope, and Resource & action together as four separate rows in one shared panel inside the PDP. Principal and Subject are distinct authorization attributes, not separate actor cards. Do not duplicate Task scope or Resource & action in any other card.
 
-Place **Execution Context** and **Delegation Context** as two small supporting cards inside the PDP beneath the single authorization input panel. Visually associate Execution Context with Principal and Delegation Context with Subject, but do not draw them as independent inputs flowing into the PDP.
+Place **Execution Context** and **Delegation Context** as two small supporting cards inside the PDP beneath the shared panel. Visually associate Execution Context with Principal and Delegation Context with Subject, but do not draw them as independent inputs flowing into the PDP.
 
 The only Allow/Deny split begins at **Allow?**, after the PDP. Deny must go directly and only to **Deny and log**. Allow must go directly to **Tool / Target System**. Both outcomes then converge at **Audit Log**.
-
-The phrase “authorization input panel” is a layout instruction only; do not render it as text in the image.
 
 ## Visual hierarchy and style
 
@@ -106,7 +103,7 @@ Do not add a subtitle, explanatory paragraph, acronym expansion beyond these lab
 ## Do not
 
 - Do not imply that the AI agent is identical to the user or inherits unrestricted user permissions.
-- Do not show Principal and Subject as two independent actor cards or as two separate input panels; keep them as separate rows within one authorization input panel.
+- Do not show Principal and Subject as two independent actor cards or as two separate panels; keep them as separate rows within one shared panel.
 - Do not draw a direct AI-agent-to-tool path that bypasses the PEP and PDP.
 - Do not draw an Allow or Deny decision, a deny icon, or a deny branch from the PEP.
 - Do not make only allowed actions auditable; denied actions must also reach the audit log.
