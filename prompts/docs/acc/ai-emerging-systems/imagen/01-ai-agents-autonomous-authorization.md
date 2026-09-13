@@ -1,5 +1,6 @@
 ---
 type: image
+path: /docs/acc/ai-emerging-systems/ai-agents
 description: A delegated-authorization flow for an AI agent, distinguishing the executing principal from the delegated subject, with enforcement, policy decisions, bounded authority, and audit evidence.
 ---
 

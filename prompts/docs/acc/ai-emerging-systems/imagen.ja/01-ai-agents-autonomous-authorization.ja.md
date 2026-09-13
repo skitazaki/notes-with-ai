@@ -1,5 +1,6 @@
 ---
 type: image
+path: /docs/acc/ai-emerging-systems/ai-agents
 description: AI エージェントの実行 Principal と委譲元 Subject を分け、PEP と PDP、境界付き委譲、監査証跡を示す委譲認可フロー。
 ---
 
