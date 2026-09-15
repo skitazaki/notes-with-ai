@@ -8,6 +8,8 @@ next: "/docs/acc"
 
 The access-control landscape is best understood as an ecosystem of interacting systems rather than a single product category.
 
+![Conceptual diagram of a modern access control architecture with four complementary layers: identity, decision, enforcement, and governance.](access-control-layers.png "Four Layers of Access Control")
+
 ## Executive Summary
 
 At minimum, a modern architecture spans identity proofing, authentication, authorization, credential issuance, enforcement points, telemetry, governance, and recovery workflows. Enterprises often implement these functions using multiple systems: identity providers, directories, federation brokers, policy engines, PAM tools, secret managers, certificate authorities, workload identity platforms, API gateways, and SIEM pipelines.
