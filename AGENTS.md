@@ -246,6 +246,7 @@ When adding an image to a content page:
 - set a concise, descriptive image title so the image has a useful visible label and accessible context
 - write meaningful alternative text that communicates the image's purpose or key information
 - localize both the title and alternative text for translated pages
+- convert display images to WebP before committing them, and reference the WebP asset from the content page
 
 When creating or revising an image-generation prompt:
 
