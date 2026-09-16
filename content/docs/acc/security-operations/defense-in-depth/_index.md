@@ -21,7 +21,7 @@ For access control, those layers often include authentication strength, device t
 
 A high-risk request may encounter multiple gates:
 
-![A high-risk access request passes through identity proofing and MFA, device or workload trust, network and session policy, authorization policy, anomaly monitoring, and logging with containment, while continuous monitoring and response span the full control path.](layered-enforcement.png "Layered Enforcement")
+![A high-risk access request passes through identity proofing and MFA, device or workload trust, network and session policy, authorization policy, anomaly detection and transaction monitoring, and logging with containment, while continuous monitoring and response span the full control path.](layered-enforcement.webp "Layered Enforcement")
 
 1. identity proofing and MFA
 2. device or workload trust evaluation

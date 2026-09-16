@@ -8,7 +8,7 @@ next: "/docs/acc"
 
 The access-control landscape is best understood as an ecosystem of interacting systems rather than a single product category.
 
-![Conceptual diagram of a modern access control architecture with four complementary layers: identity, decision, enforcement, and governance.](access-control-layers.png "Four Layers of Access Control")
+![Conceptual diagram of a modern access control architecture with four complementary layers: identity, decision, enforcement, and governance.](access-control-layers.webp "Four Layers of Access Control")
 
 ## Executive Summary
 

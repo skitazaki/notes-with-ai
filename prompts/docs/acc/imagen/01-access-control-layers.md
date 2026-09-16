@@ -6,7 +6,7 @@ description: An English conceptual diagram of an access control architecture com
 
 # Image Generation Prompt — Four Layers of Access Control
 
-Create a polished 1600 × 900 pixel technical illustration titled **Four Layers of Access Control**.
+Create a polished 1600 × 900 pixels technical illustration titled **Four Layers of Access Control**.
 
 ## Purpose
 

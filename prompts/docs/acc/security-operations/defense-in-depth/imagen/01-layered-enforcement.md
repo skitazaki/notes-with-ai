@@ -74,4 +74,4 @@ Use only the following text, exactly as written:
 - Target page: `content/docs/acc/security-operations/defense-in-depth/_index.md`
 - Suggested filename: `layered-enforcement.webp`
 - Suggested title: `Layered Enforcement`
-- Suggested alt text: `A high-risk access request passes through identity proofing and MFA, device or workload trust, network and session policy, authorization policy, anomaly monitoring, and logging with containment, while continuous monitoring and response span the full control path.`
+- Suggested alt text: `A high-risk access request passes through identity proofing and MFA, device or workload trust, network and session policy, authorization policy, anomaly detection and transaction monitoring, and logging with containment, while continuous monitoring and response span the full control path.`
