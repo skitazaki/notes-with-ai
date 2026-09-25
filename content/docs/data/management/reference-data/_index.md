@@ -3,6 +3,7 @@ date: "2026-08-20T08:00:00+09:00"
 title: "Reference Data Management"
 weight: 3
 prev: "/docs/data/management/mdm"
+next: "/docs/data/management/lifecycle-management"
 ---
 
 Reference Data Management is the discipline of defining, governing, and distributing the controlled values that systems use to classify, constrain, and standardize data. Country codes, currencies, account statuses, product categories, and regulatory classifications are common examples. These values are usually small in volume, but differences in their meaning or representation can disrupt integrations, controls, and reporting across an enterprise.

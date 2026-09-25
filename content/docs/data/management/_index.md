@@ -3,6 +3,7 @@ date: "2026-02-18T20:00:00+09:00"
 title: "Data Management"
 weight: 4
 prev: "/docs/data/sharing"
+next: "/docs/data/management/data-quality-dimensions"
 ---
 
 Data Management ensures that data remains trustworthy, usable, and sustainable over time.
@@ -87,6 +88,8 @@ Essential elements include:
 Without lifecycle discipline, data environments accumulate outdated and redundant assets. Storage expands without clear purpose, and users may rely on deprecated datasets whose status is unclear.
 
 Lifecycle management clarifies the state of data assets: active, historical, or retired. It aligns retention with legal, regulatory, and operational requirements while avoiding unnecessary persistence.
+
+See [Data Lifecycle Management](/docs/data/management/lifecycle-management/) for the operational state model covering creation, active use, retention, archival, controlled decommissioning, and the evidence required at each transition.
 
 From a usability perspective, lifecycle clarity prevents confusion over which datasets are authoritative. From an operational perspective, it reduces complexity and storage overhead. By managing data intentionally from creation to retirement, organizations maintain a coherent and navigable data landscape.
 

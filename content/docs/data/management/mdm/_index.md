@@ -2,7 +2,7 @@
 date: "2026-07-23T10:00:00+09:00"
 title: "Master Data Management (MDM)"
 weight: 2
-prev: "/docs/data/management"
+prev: "/docs/data/management/data-quality-dimensions"
 next: "/docs/data/management/reference-data"
 ---
 
