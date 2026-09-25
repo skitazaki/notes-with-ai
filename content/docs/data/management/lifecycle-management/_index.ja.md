@@ -2,8 +2,8 @@
 date: "2026-09-25T00:00:00+09:00"
 title: "データライフサイクル管理"
 weight: 4
-prev: "/ja/docs/data/management/reference-data"
-next: "/ja/docs/data/management"
+prev: "/docs/data/management/reference-data"
+next: "/docs/data/management"
 ---
 
 データライフサイクル管理（Data Lifecycle Management）は、データセットが作成されてから廃止されるまでに、どのような状態変化を経るのかを明確にし、各段階で何を管理すべきかを定義する実務です。単なるストレージ管理ではありません。データの所有者、アクセス制御、保持義務、アーカイブ戦略、計画的な廃棄、そして移行時の証跡がひとつの運用体系として結びついています。

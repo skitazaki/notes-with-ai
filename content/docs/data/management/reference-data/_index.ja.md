@@ -2,8 +2,8 @@
 date: "2026-08-20T08:00:00+09:00"
 title: "参照データ管理"
 weight: 3
-prev: "/ja/docs/data/management/mdm"
-next: "/ja/docs/data/management/lifecycle-management"
+prev: "/docs/data/management/mdm"
+next: "/docs/data/management/lifecycle-management"
 ---
 
 参照データ管理（Reference Data Management）は、システムがデータを分類し、値を制約し、表現を標準化するために使用する、統制された値を定義、管理、配信する取り組みです。国コード、通貨、アカウントの状態、製品カテゴリ、規制上の分類などが代表例です。参照データの量は通常それほど多くありませんが、意味や表現が一致しなければ、企業全体のシステム統合、統制、レポーティングに支障をきたします。
