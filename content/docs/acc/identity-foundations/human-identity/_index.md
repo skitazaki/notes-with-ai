@@ -4,7 +4,7 @@ title: "Human Identity & Enterprise IAM"
 aliases: ["/docs/acc/human-identity/"]
 weight: 1
 prev: "/docs/acc/identity-foundations"
-next: "/docs/acc/identity-foundations/nonhuman-identity"
+next: "/docs/acc/identity-foundations/sso-federation"
 ---
 
 Human identity remains the foundation of enterprise access control because business accountability, approvals, and legal obligations are still anchored to people.

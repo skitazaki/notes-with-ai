@@ -2,8 +2,8 @@
 date: "2026-05-10T12:50:00+09:00"
 title: "Workload, Machine, and Non-Human Identity"
 aliases: ["/docs/acc/nonhuman-identity/"]
-weight: 2
-prev: "/docs/acc/identity-foundations/human-identity"
+weight: 4
+prev: "/docs/acc/identity-foundations/scim-provisioning"
 next: "/docs/acc/identity-foundations"
 ---
 
