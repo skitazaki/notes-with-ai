@@ -12,5 +12,7 @@ next: "/docs/acc/identity-foundations/human-identity"
 
 {{< cards >}}
 {{< card link="human-identity/" title="人のアイデンティティとエンタープライズ IAM" icon="users" subtitle="ライフサイクル、連携、PAM、統制" >}}
+{{< card link="sso-federation/" title="SSO とフェデレーション" icon="key" subtitle="利用者認証、信頼境界、アイデンティティプロトコル" >}}
+{{< card link="scim-provisioning/" title="SCIM とプロビジョニング" icon="switch-horizontal" subtitle="ライフサイクル同期、権限の健全性、離脱反映" >}}
 {{< card link="nonhuman-identity/" title="ワークロード、マシン、非人間 ID" icon="server" subtitle="動的なランタイム ID、認証情報、マシン間の信頼" >}}
 {{< /cards >}}
