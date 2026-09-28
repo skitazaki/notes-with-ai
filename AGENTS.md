@@ -48,7 +48,7 @@ Content is organized into source pages and prompt briefs.
 
 English is the default content language. Japanese is handled as a localized follow-up where appropriate.
 
-When writing Japanese prose, place one half-width space before and after an inline Markdown link. This improves readability at the boundary between Japanese text and linked text. Standalone links, such as a link that occupies an entire list item, do not require surrounding spaces.
+When writing Japanese prose, place one half-width space before and after an inline Markdown link. This improves readability at the boundary between Japanese text and linked text. Do not insert a space immediately after Japanese punctuation such as 「、」 or 「。」 when a link follows; keep the punctuation attached to the preceding text and place the space before the link instead. Standalone links, such as a link that occupies an entire list item, do not require surrounding spaces.
 
 ## Japanese Translation Terminology
 

@@ -12,5 +12,7 @@ Identity foundations establish how people, workloads, machines, and other non-hu
 
 {{< cards >}}
 {{< card link="human-identity/" title="Human Identity & Enterprise IAM" icon="users" subtitle="Lifecycle, federation, PAM, and governance" >}}
+{{< card link="sso-federation/" title="SSO & Federation" icon="key" subtitle="User authentication, trust domains, and identity protocols" >}}
+{{< card link="scim-provisioning/" title="SCIM & Provisioning" icon="switch-horizontal" subtitle="Lifecycle synchronization, entitlement hygiene, and deprovisioning" >}}
 {{< card link="nonhuman-identity/" title="Workload, Machine, and Non-Human Identity" icon="server" subtitle="Dynamic runtime identity, credentials, and machine trust" >}}
 {{< /cards >}}
