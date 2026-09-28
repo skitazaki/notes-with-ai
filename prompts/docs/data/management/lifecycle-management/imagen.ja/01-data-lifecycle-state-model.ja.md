@@ -1,6 +1,6 @@
 ---
 type: image
-path: /ja/docs/data/management/lifecycle-management
+path: /docs/data/management/lifecycle-management
 description: 所有者、アクセス、保持、証跡の要件を各状態で示す、4段階のデータライフサイクル管理モデル。
 ---
 
