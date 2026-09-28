@@ -12,12 +12,7 @@ The practical question is not whether data should be kept forever. The practical
 
 This page uses a simple state model as the organizing structure. Ownership, access, retention, and evidence matter throughout the lifecycle; the diagram highlights the decision that is most distinctive in each state rather than repeating the same control questions in every box.
 
-```mermaid
-flowchart LR
-    A["Created<br/>Define purpose and accountable owner<br/>Set initial access and retention<br/>Record approval to activate"] --> B["Active / Maintained<br/>Confirm current operational need<br/>Monitor quality and dependencies<br/>Review access and retention controls"]
-    B --> C["Historical / Archived<br/>Preserve historical or compliance value<br/>Restrict retrieval access<br/>Maintain lineage and retention schedule<br/>Record archival and recoverability"]
-    C --> D["Retired / Decommissioned<br/>Verify no remaining purpose, hold, or dependency<br/>Approve final disposition<br/>Close access and delivery paths<br/>Retain closure evidence"]
-```
+![Data lifecycle management model showing created, active or maintained, historical or archived, and retired or decommissioned states, with each state tied to ownership, access, retention, and evidence.](lifecycle-management.webp "Data Lifecycle Management")
 
 The lifecycle should be managed as a progression, not as an afterthought. A dataset is usually created to satisfy a business or operational purpose, then maintained while it remains useful and required, then either archived for historical value or retired when it no longer has a valid purpose. At each transition, the organization still needs clear ownership and traceable evidence.
 
