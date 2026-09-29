@@ -19,6 +19,6 @@
     "*.lock",
     "vendor/",
     "Godeps/",
-    "layouts/shortcodes/codefile.html"
+    "layouts/**/*.html"
   ]
 }
