@@ -111,13 +111,19 @@ If the concern is runtime policy enforcement, a plane or flow view may be better
 If the concern is accountability, an ownership boundary view may be the right artifact.
 If the concern is executive alignment, the best view may hide most implementation detail.
 
-## From Concern to Architecture
+In practical architecture work, these concepts are strongest when used as one connected reasoning system instead of a vocabulary checklist.
+Pillars clarify what matters most in context.
+Principles turn those priorities into durable guidance.
+Constraints bound which options are viable before discussion becomes expensive.
+Decision frameworks structure comparison and tradeoffs for a specific choice.
+Layers, planes, and flows describe the architecture that results.
+Views and viewpoints then package the result for the audience that must review, approve, implement, or operate it.
 
-In practical architecture work, this reasoning-and-communication loop draws on the concepts in this section as a connected system rather than a flat vocabulary. Pillars identify what matters. Principles translate those priorities into persistent guidance, while constraints bound the options that can be considered. Decision frameworks apply both to a specific choice. Layers, planes, and flows describe the resulting architecture, while views present the relevant parts to specific audiences.
-
-![From Concern to Architecture: a concern informs pillars and constraints; pillars inform principles; principles and constraints enter decision frameworks, which produce architecture decisions expressed through layers, planes, flows and pipelines, and views and viewpoints](from-concern-to-architecture.webp "From Concern to Architecture")
-
-This map is a practical progression, not a mandatory one-way sequence. A decision may expose a new concern, a view may reveal that a principle is difficult to apply, and structural or runtime analysis may change the evidence. The topic pages below explain each part of the system and the questions it helps answer.
+This progression is useful, but not rigidly one-way.
+A decision can expose a new concern.
+A communication artifact can reveal missing evidence.
+Runtime behavior can force a principle to be refined.
+Architecture stays effective when teams move intentionally between reasoning and communication as they iterate.
 
 ## Topic Pages
 
