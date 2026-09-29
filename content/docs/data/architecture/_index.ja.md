@@ -14,6 +14,7 @@ next: "/docs/data/architecture/principles"
 
 {{< cards >}}
 {{< card link="principles/" title="データアーキテクチャの原則" icon="light-bulb" subtitle="明示的で進化可能なデータ設計を支える普遍的な指針" >}}
+{{< card link="data-mesh/" title="データメッシュ" icon="light-bulb" subtitle="ドメイン所有、プロダクト思考、フェデレーテッドガバナンスをスケールする設計" >}}
 {{< card link="patterns/" title="データアーキテクチャパターン" icon="template" subtitle="繰り返し現れる構造と、それが生むトレードオフ" >}}
 {{< card link="integration-and-flow/" title="データ統合とフロー" icon="switch-horizontal" subtitle="バッチ、API、CDC、メッセージング、ストリーミング、複製、フェデレーション" >}}
 {{< card link="modern-data-architecture/" title="モダンデータアーキテクチャ" icon="cloud" subtitle="クラウド時代の異種混在データ環境が備える能力と複雑性" >}}
