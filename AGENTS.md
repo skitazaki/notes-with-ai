@@ -2,6 +2,20 @@
 
 This file defines how generative AI services should work in this repository.
 
+## Commit message conventions
+
+Use Conventional Commits for all repository changes. The commit message format should be:
+
+`<type>(<scope>): <summary>`
+
+Use a lowercase type and an imperative summary. Keep the scope optional when it would add noise. Examples:
+
+- `docs: clarify AGENTS guidance`
+- `chore: align repo rules with local Codex setup`
+- `fix: correct broken link in navigation`
+
+Preferred types include `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `style`, `perf`, `build`, `ci`, and `revert`. Avoid vague messages such as `update`, `changes`, or `fix stuff`.
+
 ## Mission
 
 This repository is a Hugo-based knowledge site for technical documentation and blog posts about software engineering, data, and AI. AI services operating here should primarily help by writing high-quality prompt files for downstream writing agents, not by defaulting to full article generation.
