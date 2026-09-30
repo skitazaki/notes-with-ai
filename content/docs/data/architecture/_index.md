@@ -14,6 +14,7 @@ This page is a map of that decision space. It establishes a reusable mental mode
 
 {{< cards >}}
 {{< card link="principles/" title="Data Architecture Principles" icon="light-bulb" subtitle="Durable guidance for making explicit, evolvable data decisions" >}}
+{{< card link="data-mesh/" title="Data Mesh" icon="light-bulb" subtitle="Domain ownership, product thinking, and federated governance at scale" >}}
 {{< card link="patterns/" title="Data Architecture Patterns" icon="template" subtitle="Recurring structural patterns and the trade-offs they create" >}}
 {{< card link="integration-and-flow/" title="Data Integration and Flow" icon="switch-horizontal" subtitle="Batch, APIs, CDC, messaging, streaming, replication, and federation" >}}
 {{< card link="modern-data-architecture/" title="Modern Data Architecture" icon="cloud" subtitle="Capabilities and complexity in heterogeneous cloud-era data estates" >}}

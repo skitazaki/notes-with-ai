@@ -3,7 +3,7 @@ date: "2026-08-17T00:00:00+09:00"
 title: "Data Architecture Principles"
 weight: 1
 prev: "/docs/data/architecture"
-next: "/docs/data/architecture/patterns"
+next: "/docs/data/architecture/data-mesh"
 ---
 
 Data architecture principles are durable criteria for making decisions across changing technologies. They do not select a product or produce one ideal topology. They help teams expose trade-offs, keep local choices compatible, and recognize when an architecture no longer fits its workload or organization.
