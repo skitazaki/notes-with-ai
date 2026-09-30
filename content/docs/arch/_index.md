@@ -57,11 +57,11 @@ flowchart TD
   arch --> decisions["Decision Frameworks"]
 ```
 
-| Category | Representative topics |
-| -------- | -------------------- |
+| Category                    | Representative topics                                                                                                                                                                                                                                  |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Architecture Dimensions** | [Architecture Dimensions](dimensions/), [Layers](dimensions/layers/), [Planes](dimensions/planes/), [Pillars](dimensions/pillars/), [Ownership Boundaries](dimensions/ownership-boundaries/), [Views and Viewpoints](dimensions/views-and-viewpoints/) |
-| **Architecture Guidance** | [Architecture Principles](principles/), [Architecture Constraints](constraints/) |
-| **Decision-Making** | [Decision Frameworks](decision-frameworks/) |
+| **Architecture Guidance**   | [Architecture Principles](principles/), [Architecture Constraints](constraints/)                                                                                                                                                                       |
+| **Decision-Making**         | [Decision Frameworks](decision-frameworks/)                                                                                                                                                                                                            |
 
 This keeps the navigation honest: the section is organized by reasoning lens first, and by decision-making context second. That is more useful than mixing abstraction level and classification in the same diagram.[^c4-introduction]
 
@@ -163,9 +163,5 @@ Layers, planes, pillars, flows, boundaries, and views exist because software sys
 
 The goal of architecture is not to produce one complete diagram.
 The goal is to help people reason about systems, make better decisions, and communicate those decisions clearly enough that teams can build and operate software with shared understanding.
-
-[^c4-diagrams]: [C4 model: Diagrams](https://c4model.com/diagrams)
-
-[^c4-code]: [C4 model: Code diagram](https://c4model.com/diagrams/code)
 
 [^c4-introduction]: [C4 model: Introduction](https://c4model.com/introduction)

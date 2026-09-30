@@ -57,11 +57,11 @@ flowchart TD
   arch --> decisions["Decision Frameworks"]
 ```
 
-| カテゴリ | 代表的なトピック |
-| -------- | ---------------- |
+| カテゴリ                    | 代表的なトピック                                                                                                                                                                                                                             |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Architecture Dimensions** | [アーキテクチャの観点](dimensions/)、[レイヤー](dimensions/layers/)、[プレーン](dimensions/planes/)、[ピラー](dimensions/pillars/)、[責任境界](dimensions/ownership-boundaries/)、[ビューとビューポイント](dimensions/views-and-viewpoints/) |
-| **Architecture Guidance** | [アーキテクチャ原則](principles/)、[アーキテクチャ制約](constraints/) |
-| **Decision-Making** | [意思決定フレームワーク](decision-frameworks/) |
+| **Architecture Guidance**   | [アーキテクチャ原則](principles/)、[アーキテクチャ制約](constraints/)                                                                                                                                                                        |
+| **Decision-Making**         | [意思決定フレームワーク](decision-frameworks/)                                                                                                                                                                                               |
 
 この構成により、ナビゲーションの意図が明確になります。セクションはまず思考レンズで整理され、そのうえで意思決定の文脈が接続されます。抽象度と分類を同じ図で混在させるよりも、こちらのほうが実務で使いやすい構造です。[^c4-introduction]
 
@@ -165,9 +165,5 @@ flowchart TD
 
 アーキテクチャの目的は、1 枚の完全な図を作ることではありません。
 システムについて考え、より良い意思決定を行い、その判断をチームが共有理解のもとで構築・運用できる程度に明確に伝えることです。
-
-[^c4-diagrams]: [C4 model: Diagrams](https://c4model.com/diagrams)
-
-[^c4-code]: [C4 model: Code diagram](https://c4model.com/diagrams/code)
 
 [^c4-introduction]: [C4 model: Introduction](https://c4model.com/introduction)
