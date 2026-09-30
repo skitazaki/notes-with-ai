@@ -34,23 +34,36 @@ Use [Flows and Pipelines](dimensions/flows-and-pipelines/) to trace requests, ev
 
 ### Architecture Zoom Map
 
-The map is a navigation aid, not a requirement that every topic fit a strict hierarchy. Move one abstraction level at a time and stop when the view answers the question. In practice, landscape, system, and container views are often enough; code-level detail is intentionally outside this long-lived navigation map and can usually be generated on demand.[^c4-diagrams][^c4-code]
+The map below separates classification from zoom level. [Architecture Dimensions](dimensions/) is the organizing hub for how teams reason about the same system from different perspectives. The supporting sections then describe the principles, constraints, and decision process that shape the final design.
 
 ```mermaid
-flowchart LR
-  landscape["System Landscape<br/>Ecosystem and external relationships"] --> system["System<br/>Purpose, scope, and boundaries"]
-  system --> container["Container<br/>Major applications and data stores"]
-  container --> component["Component<br/>Responsibilities within a container"]
+flowchart TD
+  arch["Architecture"] --> dims["Architecture Dimensions"]
+  dims --> structural["Structural"]
+  dims --> operational["Operational"]
+  dims --> strategic["Strategic"]
+  dims --> ownership["Ownership"]
+  dims --> communication["Communication"]
+
+  structural --> layers["Layers"]
+  operational --> planes["Planes"]
+  operational --> flows["Flows and Pipelines"]
+  strategic --> pillars["Pillars"]
+  ownership --> ownerBoundaries["Ownership Boundaries"]
+  communication --> views["Views and Viewpoints"]
+
+  arch --> principles["Architecture Principles"]
+  arch --> constraints["Architecture Constraints"]
+  arch --> decisions["Decision Frameworks"]
 ```
 
-| Navigation level     | Representative topics                                                                                                                                                                                 |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **System Landscape** | [Ownership Boundaries](dimensions/ownership-boundaries/), [Views and Viewpoints](dimensions/views-and-viewpoints/)                                                                                    |
-| **System**           | [Architecture Dimensions](dimensions/), [Pillars](dimensions/pillars/), [Architecture Principles](principles/), [Architecture Constraints](constraints/), [Decision Frameworks](decision-frameworks/) |
-| **Container**        | [Layers](dimensions/layers/), [Planes](dimensions/planes/)                                                                                                                                            |
-| **Component**        | [Flows and Pipelines](dimensions/flows-and-pipelines/), [Layers](dimensions/layers/)                                                                                                                  |
+| Category | Representative topics |
+| -------- | -------------------- |
+| **Architecture Dimensions** | [Architecture Dimensions](dimensions/), [Layers](dimensions/layers/), [Planes](dimensions/planes/), [Pillars](dimensions/pillars/), [Ownership Boundaries](dimensions/ownership-boundaries/), [Views and Viewpoints](dimensions/views-and-viewpoints/) |
+| **Architecture Guidance** | [Architecture Principles](principles/), [Architecture Constraints](constraints/) |
+| **Decision-Making** | [Decision Frameworks](decision-frameworks/) |
 
-Keeping scope, labels, and relationships explicit prevents a single diagram from mixing abstraction levels and becoming difficult to interpret.[^c4-introduction]
+This keeps the navigation honest: the section is organized by reasoning lens first, and by decision-making context second. That is more useful than mixing abstraction level and classification in the same diagram.[^c4-introduction]
 
 ## Architecture as Reasoning and Communication
 

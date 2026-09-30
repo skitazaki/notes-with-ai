@@ -68,6 +68,32 @@ The table below provides a simple structure for comparing options on terms that 
 
 The goal is not to make the table exhaustive. The goal is to force tradeoffs into the open.
 
+## Architecture Trade-offs
+
+Every architecture decision is a trade-off. A design that improves one quality often reduces another. Teams do not choose the option with the highest score on every criterion. They choose the option that best fits the context, the constraints, and the evidence available at the time.
+
+That is why a trade-off is not a sign of indecision. It is a way to make the decision explicit. The architecture question is not "How do we maximize every quality at once?" It is "Which objective matters most here, and what are we giving up to support it?"
+
+A useful trade-off review asks five questions:
+
+- Benefit: what value does this option create?
+- Cost: what does it consume, such as latency, complexity, coordination, or operational burden?
+- Risk: what can fail, drift, or become brittle?
+- Reversibility: how easy is it to change, unwind, or undo later?
+- Evidence: what data or experience supports the expected outcome, and what assumptions remain unproven?
+
+This is where the architecture chain becomes visible:
+
+- [Pillars](../dimensions/pillars/) articulate what matters most in context.
+- [Architecture Principles](../principles/) translate those priorities into durable guidance.
+- [Architecture Constraints](../constraints/) narrow the field of viable options.
+- Trade-offs explain why one viable option is preferable to another.
+- A final decision turns the reasoning into an explicit choice.
+
+The same pattern appears in the comparison between centralized and distributed policy enforcement. Centralized enforcement usually provides stronger consistency, easier auditing, and simpler governance. Distributed enforcement usually reduces local latency and keeps enforcement closer to the execution path. Neither option is universally better. The decision depends on which quality is more important in context, how much operational risk the team can absorb, and what evidence exists that the chosen pattern will behave well under real conditions.
+
+A trade-off is therefore not a contradiction between principles and practice. It is the moment where principles and constraints are translated into a concrete choice with visible consequences.
+
 ## Example Decision
 
 Consider a decision about whether an internal platform should separate control-plane orchestration from the main request path for AI-assisted workflows.
