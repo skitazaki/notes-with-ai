@@ -1,8 +1,8 @@
 ---
 date: "2026-08-17T00:00:00+09:00"
 title: "データアーキテクチャパターン"
-weight: 2
-prev: "/docs/data/architecture/principles"
+weight: 3
+prev: "/docs/data/architecture/data-mesh"
 next: "/docs/data/architecture/integration-and-flow"
 ---
 

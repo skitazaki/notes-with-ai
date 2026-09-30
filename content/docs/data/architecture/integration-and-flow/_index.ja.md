@@ -1,7 +1,7 @@
 ---
 date: "2026-08-17T00:00:00+09:00"
 title: "データ統合とフロー"
-weight: 3
+weight: 4
 prev: "/docs/data/architecture/patterns"
 next: "/docs/data/architecture/modern-data-architecture"
 ---

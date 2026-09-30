@@ -1,7 +1,7 @@
 ---
 date: "2026-08-17T00:00:00+09:00"
 title: "Modern Data Architecture"
-weight: 4
+weight: 5
 prev: "/docs/data/architecture/integration-and-flow"
 next: "/docs/data/sharing"
 ---
