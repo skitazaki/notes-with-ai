@@ -2,16 +2,19 @@
 
 This file defines how generative AI services should work in this repository.
 
-## Codex Worktree Development
+## Commit message conventions
 
-- Use a dedicated Git worktree and branch for each independent Codex task. Do not run unrelated tasks in the same worktree.
-- Keep mutable runtime state isolated. Each worktree owns its dependencies, `.codex-runtime/` directory, Hugo process, port, PID, and logs. Never reuse or stop another worktree's runtime state.
-- Use `pnpm` as the package manager. After creating or entering a new worktree, run `pnpm codex:setup`; it installs dependencies with the frozen lockfile and starts that worktree's preview server.
-- Share only immutable or download caches, such as the pnpm store and Hugo or Go module caches, when useful.
-- Run one Hugo development server per active worktree. The Codex lifecycle scripts dynamically allocate a unique localhost port and print the preview URL.
-- Use Oxfmt for formatting and formatting checks. Run `pnpm format` after making changes.
-- Verify rendered documentation changes in a browser through the worktree-specific preview URL.
-- Before completing any task, run `pnpm lint`, run `pnpm build`, and validate the relevant behavior. For documentation changes, confirm that the development server responds successfully and inspect the affected page in the browser.
+Use Conventional Commits for all repository changes. The commit message format should be:
+
+`<type>(<scope>): <summary>`
+
+Use a lowercase type and an imperative summary. Keep the scope optional when it would add noise. Examples:
+
+- `docs: clarify AGENTS guidance`
+- `chore: align repo rules with local Codex setup`
+- `fix: correct broken link in navigation`
+
+Preferred types include `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `style`, `perf`, `build`, `ci`, and `revert`. Avoid vague messages such as `update`, `changes`, or `fix stuff`.
 
 ## Mission
 
