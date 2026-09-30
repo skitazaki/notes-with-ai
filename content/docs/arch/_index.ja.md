@@ -34,23 +34,36 @@ weight: 1
 
 ### アーキテクチャ・ズームマップ
 
-このマップは概念的なナビゲーションであり、すべてのトピックを厳密な階層に当てはめるためのものではありません。一度に 1 つの抽象度だけを移動し、問いに答えられたところで止めます。実際には、ランドスケープ、システム、コンテナのビューで十分な場合が多くあります。長期的に維持するこのナビゲーションマップではコードレベルを意図的に除外しています。コードの詳細は通常、必要に応じてツールから生成できます。[^c4-diagrams][^c4-code]
+このマップは、分類とズームレベルを分けて示します。 [アーキテクチャの観点](dimensions/) は、同じシステムを異なる視点で考えるためのハブです。関連セクションは、その設計を形づくる原則、制約、意思決定プロセスを補足します。
 
 ```mermaid
-flowchart LR
-  landscape["システムランドスケープ<br/>エコシステムと外部との関係"] --> system["システム<br/>目的、スコープ、境界"]
-  system --> container["コンテナ<br/>主要なアプリケーションとデータストア"]
-  container --> component["コンポーネント<br/>コンテナ内の責務"]
+flowchart TD
+  arch["アーキテクチャ"] --> dims["アーキテクチャの観点"]
+  dims --> structural["構造"]
+  dims --> operational["運用"]
+  dims --> strategic["戦略"]
+  dims --> ownership["責任分担"]
+  dims --> communication["表現"]
+
+  structural --> layers["レイヤー"]
+  operational --> planes["プレーン"]
+  operational --> flows["フローとパイプライン"]
+  strategic --> pillars["ピラー"]
+  ownership --> ownerBoundaries["責任境界"]
+  communication --> views["ビューとビューポイント"]
+
+  arch --> principles["アーキテクチャ原則"]
+  arch --> constraints["アーキテクチャ制約"]
+  arch --> decisions["意思決定フレームワーク"]
 ```
 
-| ナビゲーションレベル       | 代表的なトピック                                                                                                                                                                          |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **システムランドスケープ** | [責任境界](dimensions/ownership-boundaries/)、[ビューとビューポイント](dimensions/views-and-viewpoints/)                                                                                  |
-| **システム**               | [アーキテクチャの観点](dimensions/)、[ピラー](dimensions/pillars/)、[アーキテクチャ原則](principles/)、[アーキテクチャ制約](constraints/)、[意思決定フレームワーク](decision-frameworks/) |
-| **コンテナ**               | [レイヤー](dimensions/layers/)、[プレーン](dimensions/planes/)                                                                                                                            |
-| **コンポーネント**         | [フローとパイプライン](dimensions/flows-and-pipelines/)、[レイヤー](dimensions/layers/)                                                                                                   |
+| カテゴリ                     | 代表的なトピック                                                                                                                                                                                                                                                                                      |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **アーキテクチャの観点**     | [アーキテクチャの観点](dimensions/)、[レイヤー](dimensions/layers/)、[プレーン](dimensions/planes/)、[フローとパイプライン](dimensions/flows-and-pipelines/)、[ピラー](dimensions/pillars/)、[責任境界](dimensions/ownership-boundaries/)、[ビューとビューポイント](dimensions/views-and-viewpoints/) |
+| **アーキテクチャガイダンス** | [アーキテクチャ原則](principles/)、[アーキテクチャ制約](constraints/)                                                                                                                                                                                                                                 |
+| **意思決定**                 | [意思決定フレームワーク](decision-frameworks/)                                                                                                                                                                                                                                                        |
 
-スコープ、ラベル、関係を明示し、1 つの図に異なる抽象度を混在させないことが、図を理解しやすく保つために重要です。[^c4-introduction]
+この構成により、ナビゲーションの意図が明確になります。セクションはまず思考レンズで整理され、そのうえで意思決定の文脈が接続されます。抽象度と分類を同じ図で混在させるよりも、こちらのほうが実務で使いやすい構造です。[^c4-introduction]
 
 ## 判断と共有のためのアーキテクチャ
 
@@ -152,9 +165,5 @@ flowchart LR
 
 アーキテクチャの目的は、1 枚の完全な図を作ることではありません。
 システムについて考え、より良い意思決定を行い、その判断をチームが共有理解のもとで構築・運用できる程度に明確に伝えることです。
-
-[^c4-diagrams]: [C4 model: Diagrams](https://c4model.com/diagrams)
-
-[^c4-code]: [C4 model: Code diagram](https://c4model.com/diagrams/code)
 
 [^c4-introduction]: [C4 model: Introduction](https://c4model.com/introduction)
