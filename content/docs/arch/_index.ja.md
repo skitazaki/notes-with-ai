@@ -38,30 +38,30 @@ weight: 1
 
 ```mermaid
 flowchart TD
-  arch["Architecture"] --> dims["Architecture Dimensions"]
-  dims --> structural["Structural"]
-  dims --> operational["Operational"]
-  dims --> strategic["Strategic"]
-  dims --> ownership["Ownership"]
-  dims --> communication["Communication"]
+  arch["アーキテクチャ"] --> dims["アーキテクチャの観点"]
+  dims --> structural["構造"]
+  dims --> operational["運用"]
+  dims --> strategic["戦略"]
+  dims --> ownership["責任分担"]
+  dims --> communication["表現"]
 
-  structural --> layers["Layers"]
-  operational --> planes["Planes"]
-  operational --> flows["Flows and Pipelines"]
-  strategic --> pillars["Pillars"]
-  ownership --> ownerBoundaries["Ownership Boundaries"]
-  communication --> views["Views and Viewpoints"]
+  structural --> layers["レイヤー"]
+  operational --> planes["プレーン"]
+  operational --> flows["フローとパイプライン"]
+  strategic --> pillars["ピラー"]
+  ownership --> ownerBoundaries["責任境界"]
+  communication --> views["ビューとビューポイント"]
 
-  arch --> principles["Architecture Principles"]
-  arch --> constraints["Architecture Constraints"]
-  arch --> decisions["Decision Frameworks"]
+  arch --> principles["アーキテクチャ原則"]
+  arch --> constraints["アーキテクチャ制約"]
+  arch --> decisions["意思決定フレームワーク"]
 ```
 
-| カテゴリ                    | 代表的なトピック                                                                                                                                                                                                                             |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Architecture Dimensions** | [アーキテクチャの観点](dimensions/)、[レイヤー](dimensions/layers/)、[プレーン](dimensions/planes/)、[ピラー](dimensions/pillars/)、[責任境界](dimensions/ownership-boundaries/)、[ビューとビューポイント](dimensions/views-and-viewpoints/) |
-| **Architecture Guidance**   | [アーキテクチャ原則](principles/)、[アーキテクチャ制約](constraints/)                                                                                                                                                                        |
-| **Decision-Making**         | [意思決定フレームワーク](decision-frameworks/)                                                                                                                                                                                               |
+| カテゴリ                     | 代表的なトピック                                                                                                                                                                                                                             |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **アーキテクチャの観点**     | [アーキテクチャの観点](dimensions/)、[レイヤー](dimensions/layers/)、[プレーン](dimensions/planes/)、[ピラー](dimensions/pillars/)、[責任境界](dimensions/ownership-boundaries/)、[ビューとビューポイント](dimensions/views-and-viewpoints/) |
+| **アーキテクチャガイダンス** | [アーキテクチャ原則](principles/)、[アーキテクチャ制約](constraints/)                                                                                                                                                                        |
+| **意思決定**                 | [意思決定フレームワーク](decision-frameworks/)                                                                                                                                                                                               |
 
 この構成により、ナビゲーションの意図が明確になります。セクションはまず思考レンズで整理され、そのうえで意思決定の文脈が接続されます。抽象度と分類を同じ図で混在させるよりも、こちらのほうが実務で使いやすい構造です。[^c4-introduction]
 
