@@ -14,17 +14,7 @@ An architecture principle is a durable statement that guides a class of decision
 
 A principle does not select an architecture by itself. It narrows the acceptable options, makes the burden of proof visible, and creates consistency across decisions made by different people at different times.
 
-```text
-Business and engineering goals
-             ↓
-Architecture principles
-             ↓
-Decision framework
-             ↓
-Architecture decision
-             ↓
-Views and implementation
-```
+![Architecture principles flow from business and engineering goals into a decision framework, a concrete decision, and the resulting views and implementation.](principles.webp)
 
 For example, a company trying to reduce operational load might adopt the principle **Prefer managed services for undifferentiated infrastructure**. That statement does not mandate one provider or prohibit self-hosting. It establishes the default direction and requires a deliberate reason to depart from it.
 
