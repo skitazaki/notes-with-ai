@@ -36,26 +36,7 @@ Use [Flows and Pipelines](dimensions/flows-and-pipelines/) to trace requests, ev
 
 The map below separates classification from zoom level. [Architecture Dimensions](dimensions/) is the organizing hub for how teams reason about the same system from different perspectives. The supporting sections then describe the principles, constraints, and decision process that shape the final design.
 
-```mermaid
-flowchart TD
-  arch["Architecture"] --> dims["Architecture Dimensions"]
-  dims --> structural["Structural"]
-  dims --> operational["Operational"]
-  dims --> strategic["Strategic"]
-  dims --> ownership["Ownership"]
-  dims --> communication["Communication"]
-
-  structural --> layers["Layers"]
-  operational --> planes["Planes"]
-  operational --> flows["Flows and Pipelines"]
-  strategic --> pillars["Pillars"]
-  ownership --> ownerBoundaries["Ownership Boundaries"]
-  communication --> views["Views and Viewpoints"]
-
-  arch --> principles["Architecture Principles"]
-  arch --> constraints["Architecture Constraints"]
-  arch --> decisions["Decision Frameworks"]
-```
+![Architecture Zoom Map showing architecture organized by dimensions, including structural, operational, strategic, ownership, and communication lenses, with supporting guidance from principles, constraints, and decision frameworks.](architecture-zoom-map.webp "Architecture Zoom Map")
 
 | Category                    | Representative topics                                                                                                                                                                                                                                                                                          |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
