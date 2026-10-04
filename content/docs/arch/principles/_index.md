@@ -10,7 +10,7 @@ Architecture principles turn organizational priorities into durable guidance for
 
 ## Definition
 
-An architecture principle is a durable statement that guides a class of decisions. It translates business goals, engineering goals, and architectural priorities into a constraint or preference that teams can apply repeatedly.
+An architecture principle is a durable statement that guides a class of decisions. It translates business goals, engineering goals, and architectural priorities into a repeatable preference or default that teams can apply across many decisions. Unlike a constraint, it does not define the hard boundary of what is permissible; it shapes the preferred direction and the burden of proof within that boundary.
 
 A principle does not select an architecture by itself. It narrows the acceptable options, makes the burden of proof visible, and creates consistency across decisions made by different people at different times.
 
