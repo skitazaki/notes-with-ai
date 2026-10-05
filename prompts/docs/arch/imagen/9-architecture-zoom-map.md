@@ -21,6 +21,7 @@ Add a subtle left-to-right or top-to-bottom flow: Architecture -> Dimensions -> 
 Suggested alt text: "Architecture Zoom Map showing architecture organized by dimensions, including structural, operational, strategic, ownership, and communication lenses, with supporting guidance from principles, constraints, and decision frameworks."
 
 Do:
+
 - keep the diagram clean, readable, and editorial
 - emphasize the distinction between reasoning lenses and guidance layers
 - make the structure easy to scan in one glance
@@ -28,6 +29,7 @@ Do:
 - keep labels concise and publication-ready
 
 Do not:
+
 - turn the image into a deployment diagram or cloud topology
 - make it look like an org chart or product architecture map
 - clutter the canvas with tiny text or excessive detail

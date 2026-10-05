@@ -109,12 +109,8 @@
           modalCaption.appendChild(document.createElement("br"))
         }
 
-        if (alt) {
+        if (alt && alt !== title) {
           modalCaption.appendChild(document.createTextNode(alt))
-        }
-
-        if (!title && !alt) {
-          modalCaption.textContent = ""
         }
 
         modal.style.display = "flex"
