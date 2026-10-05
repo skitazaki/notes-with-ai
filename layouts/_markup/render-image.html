@@ -96,7 +96,23 @@
 
         modalImage.src = src || ""
         modalImage.alt = alt
-        modalCaption.textContent = title || alt
+
+        modalCaption.textContent = ""
+
+        if (title) {
+          const titleNode = document.createElement("strong")
+          titleNode.textContent = title
+          modalCaption.appendChild(titleNode)
+        }
+
+        if (title && alt && title !== alt) {
+          modalCaption.appendChild(document.createElement("br"))
+        }
+
+        if (alt && alt !== title) {
+          modalCaption.appendChild(document.createTextNode(alt))
+        }
+
         modal.style.display = "flex"
         modal.setAttribute("aria-hidden", "false")
         document.body.style.overflow = "hidden"
