@@ -2,6 +2,7 @@
 date: "2026-06-28T00:00:00+09:00"
 title: "ソフトウェアアーキテクチャ"
 weight: 1
+next: "/docs/arch/dimensions"
 ---
 
 ソフトウェアアーキテクチャは、システムをどのように捉え、そこで何を判断し、その考え方をどう明確に共有するかを扱う専門領域です。
@@ -128,12 +129,12 @@ weight: 1
 
 {{< cards >}}
 {{< card link="dimensions/" title="アーキテクチャの観点" icon="cube" subtitle="1 つのシステムを複数の視点から理解するための中核的な考え方" >}}
-{{< card link="layers/" title="レイヤー" icon="collection" subtitle="構造上の抽象化、依存方向、変更の隔離" >}}
-{{< card link="planes/" title="プレーン" icon="server" subtitle="制御、データ、ポリシー、可観測性などの運用責務" >}}
-{{< card link="flows-and-pipelines/" title="フローとパイプライン" icon="arrow-right" subtitle="時間の中での移動、順序、変換、障害経路" >}}
-{{< card link="pillars/" title="ピラー" icon="library" subtitle="アーキテクチャ上のトレードオフを導く戦略的な品質軸" >}}
-{{< card link="ownership-boundaries/" title="責任境界" icon="map" subtitle="変更、運用、契約、説明責任の分担" >}}
-{{< card link="views-and-viewpoints/" title="ビューとビューポイント" icon="eye" subtitle="関心事から導かれる、対象読者別の伝達成果物" >}}
+{{< card link="dimensions/layers/" title="レイヤー" icon="collection" subtitle="構造上の抽象化、依存方向、変更の隔離" >}}
+{{< card link="dimensions/planes/" title="プレーン" icon="server" subtitle="制御、データ、ポリシー、可観測性などの運用責務" >}}
+{{< card link="dimensions/flows-and-pipelines/" title="フローとパイプライン" icon="arrow-right" subtitle="時間の中での移動、順序、変換、障害経路" >}}
+{{< card link="dimensions/pillars/" title="ピラー" icon="library" subtitle="アーキテクチャ上のトレードオフを導く戦略的な品質軸" >}}
+{{< card link="dimensions/ownership-boundaries/" title="責任境界" icon="map" subtitle="変更、運用、契約、説明責任の分担" >}}
+{{< card link="dimensions/views-and-viewpoints/" title="ビューとビューポイント" icon="eye" subtitle="関心事から導かれる、対象読者別の伝達成果物" >}}
 {{< card link="principles/" title="アーキテクチャ原則" icon="light-bulb" subtitle="組織の優先事項を制約や選好へ変換する持続的な指針" >}}
 {{< card link="constraints/" title="アーキテクチャ制約" icon="lock-closed" subtitle="アーキテクチャ上の判断の前に、実行可能な選択肢を境界づける条件" >}}
 {{< card link="decision-frameworks/" title="意思決定フレームワーク" icon="scale" subtitle="関心事、観点、トレードオフ、判断をつなぐ方法" >}}
