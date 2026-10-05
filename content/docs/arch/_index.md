@@ -126,12 +126,12 @@ Use the topic pages below to move directly to the areas that match the question 
 
 {{< cards >}}
 {{< card link="dimensions/" title="Architecture Dimensions" icon="cube" subtitle="The core reasoning lenses for understanding one system from multiple perspectives" >}}
-{{< card link="layers/" title="Layers" icon="collection" subtitle="Structural abstraction, dependency direction, and change isolation" >}}
-{{< card link="planes/" title="Planes" icon="server" subtitle="Operational responsibilities such as control, data, policy, and observability" >}}
-{{< card link="flows-and-pipelines/" title="Flows and Pipelines" icon="arrow-right" subtitle="Movement, sequencing, transformation, and failure paths over time" >}}
-{{< card link="pillars/" title="Pillars" icon="library" subtitle="Strategic qualities that guide architectural tradeoffs" >}}
-{{< card link="ownership-boundaries/" title="Ownership Boundaries" icon="map" subtitle="Responsibility for change, operation, contracts, and accountability" >}}
-{{< card link="views-and-viewpoints/" title="Views and Viewpoints" icon="eye" subtitle="Audience-specific communication artifacts derived from architecture concerns" >}}
+{{< card link="dimensions/layers/" title="Layers" icon="collection" subtitle="Structural abstraction, dependency direction, and change isolation" >}}
+{{< card link="dimensions/planes/" title="Planes" icon="server" subtitle="Operational responsibilities such as control, data, policy, and observability" >}}
+{{< card link="dimensions/flows-and-pipelines/" title="Flows and Pipelines" icon="arrow-right" subtitle="Movement, sequencing, transformation, and failure paths over time" >}}
+{{< card link="dimensions/pillars/" title="Pillars" icon="library" subtitle="Strategic qualities that guide architectural tradeoffs" >}}
+{{< card link="dimensions/ownership-boundaries/" title="Ownership Boundaries" icon="map" subtitle="Responsibility for change, operation, contracts, and accountability" >}}
+{{< card link="dimensions/views-and-viewpoints/" title="Views and Viewpoints" icon="eye" subtitle="Audience-specific communication artifacts derived from architecture concerns" >}}
 {{< card link="principles/" title="Architecture Principles" icon="light-bulb" subtitle="Durable guidance that turns organizational priorities into constraints and preferences" >}}
 {{< card link="constraints/" title="Architecture Constraints" icon="lock-closed" subtitle="The conditions that bound viable options before an architecture decision" >}}
 {{< card link="decision-frameworks/" title="Decision Frameworks" icon="scale" subtitle="How to connect concerns, dimensions, tradeoffs, and decisions" >}}
