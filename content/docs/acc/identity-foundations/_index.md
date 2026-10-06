@@ -56,14 +56,14 @@ These are cross-cutting capabilities rather than separate identity architectures
 
 The key distinction is this: human vs. non-human describes the identity subject; the other items describe the capabilities used to manage trust and access for that subject.
 
-| Human Identity | Non-Human Identity |
-| --- | --- |
-| People | Workloads, machines, services, agents |
-| Workforce and customer accounts | Runtime and infrastructure identities |
+| Human Identity                                 | Non-Human Identity                                       |
+| ---------------------------------------------- | -------------------------------------------------------- |
+| People                                         | Workloads, machines, services, agents                    |
+| Workforce and customer accounts                | Runtime and infrastructure identities                    |
 | Passwords, passkeys, MFA, and session controls | Certificates, keys, short-lived credentials, attestation |
-| SSO and federation across user-facing domains | Service-to-service trust and workload identity patterns |
-| Provisioning, deprovisioning, privilege review | Registration, rotation, revocation, and runtime trust |
-| Human lifecycle and governance | Machine and runtime lifecycle governance |
+| SSO and federation across user-facing domains  | Service-to-service trust and workload identity patterns  |
+| Provisioning, deprovisioning, privilege review | Registration, rotation, revocation, and runtime trust    |
+| Human lifecycle and governance                 | Machine and runtime lifecycle governance                 |
 
 The point of the comparison is conceptual clarity, not exhaustive completeness. The same identity discipline applies to both sides: establish the subject, prove control, bind trust, grant scope, and maintain accountability over time.
 
