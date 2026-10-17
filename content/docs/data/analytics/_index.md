@@ -3,7 +3,7 @@ date: "2026-02-17T22:00:00+09:00"
 title: "Data Analytics"
 weight: 1
 prev: "/docs/data"
-next: "/docs/data/architecture"
+next: "/docs/data/analytics/data-understanding"
 ---
 
 Data analytics is the disciplined use of data to reduce uncertainty and improve decisions. It turns observations about a business, product, or system into evidence that people can interpret and act on.
@@ -22,6 +22,8 @@ The work is often described as a four-level model. Each level answers a differen
 The levels form a progression from observation to action, but they are not a ranking of business value or technical sophistication. A reliable descriptive metric can be more useful than an inaccurate prediction, and a prescriptive recommendation is only as trustworthy as the evidence beneath it. In practice, mature analytics teams move between the levels as a decision requires.
 
 Before applying these methods to unfamiliar data, [Data Understanding](data-understanding/) establishes what the data means, how it behaves, and whether it is suitable for the intended analysis.
+
+When an analysis needs to communicate a finding and support a decision, [Data Storytelling](data-storytelling/) connects its evidence to a clear narrative and useful visualizations.
 
 ## The Four-Level Model
 

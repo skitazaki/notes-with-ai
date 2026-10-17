@@ -3,6 +3,7 @@ date: "2026-08-17T09:00:00+09:00"
 title: "Data Understanding"
 weight: 1
 prev: "/docs/data/analytics"
+next: "/docs/data/analytics/data-storytelling"
 ---
 
 Data Understanding is the process of building sufficient knowledge about data—its meaning, structure, behavior, provenance, relationships, quality, and limitations—to use it appropriately.

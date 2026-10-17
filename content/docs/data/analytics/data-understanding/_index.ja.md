@@ -3,6 +3,7 @@ date: "2026-08-17T09:00:00+09:00"
 title: "データ理解"
 weight: 1
 prev: "/docs/data/analytics"
+next: "/docs/data/analytics/data-storytelling"
 ---
 
 データ理解（Data Understanding）とは、データの意味、構造、振る舞い、来歴、関係性、品質、制約について、適切に利用するために十分な知識を構築するプロセスです。
