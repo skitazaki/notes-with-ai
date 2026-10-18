@@ -1,9 +1,9 @@
 ---
 date: "2026-09-29T00:00:00+09:00"
 title: "Data Mesh"
-weight: 2
-prev: "/docs/data/architecture/principles"
-next: "/docs/data/architecture/patterns"
+weight: 6
+prev: "/docs/data/architecture/modern-data-architecture"
+next: "/docs/data/sharing"
 ---
 
 Data Mesh is a data architecture pattern for scaling data ownership and delivery across many domains without recreating a centralized bottleneck. It treats data like a product, places accountability near the domain that knows the meaning and business context, and relies on shared platform capabilities and governance standards to keep the overall system coherent.

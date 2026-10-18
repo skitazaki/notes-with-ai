@@ -3,7 +3,7 @@ date: "2026-08-17T00:00:00+09:00"
 title: "Modern Data Architecture"
 weight: 5
 prev: "/docs/data/architecture/integration-and-flow"
-next: "/docs/data/sharing"
+next: "/docs/data/architecture/data-mesh"
 ---
 
 “Modern data architecture” is a flexible industry term, not a precise standard. At its most useful, it describes capabilities for operating a heterogeneous, cloud-era data estate: elastic storage and compute, batch and streaming flows, multiple workload-specific stores, automated metadata and controls, reusable platform services, and governed access for analytics, applications, machine learning, and AI.

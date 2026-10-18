@@ -2,7 +2,7 @@
 date: "2026-08-17T00:00:00+09:00"
 title: "データアーキテクチャパターン"
 weight: 3
-prev: "/docs/data/architecture/data-mesh"
+prev: "/docs/data/architecture/principles"
 next: "/docs/data/architecture/integration-and-flow"
 ---
 
@@ -72,7 +72,7 @@ next: "/docs/data/architecture/integration-and-flow"
 
 ### ドメイン指向アーキテクチャとデータメッシュ
 
-ドメイン指向アーキテクチャは、業務と運用の文脈を持つチームの近くに責任を置きます。 [データメッシュ](/ja/docs/data/metadata/data-mesh/) は、ドメインオーナーシップ、 [データプロダクト](/ja/docs/data/metadata/data-products/) 、セルフサービス基盤、 [フェデレーテッドガバナンス](/ja/docs/data/metadata/federated-governance/) を通じて、これをより広い社会技術的モデルとして定義します。
+ドメイン指向アーキテクチャは、業務と運用の文脈を持つチームの近くに責任を置きます。 [データメッシュ](/ja/docs/data/architecture/data-mesh/) は、ドメインオーナーシップ、 [データプロダクト](/ja/docs/data/metadata/data-products/) 、セルフサービス基盤、 [フェデレーテッドガバナンス](/ja/docs/data/metadata/federated-governance/) を通じて、これをより広い社会技術的モデルとして定義します。
 
 中央のボトルネックを減らし、文脈に基づくオーナーシップを改善できます。一方、相互運用可能なインターフェース、共通ポリシー、プロダクト発見、組織能力が一層必要になります。データセットを「プロダクト」と呼び替えたり、ドメイン名を割り当てたりするだけでは実装できません。
 
