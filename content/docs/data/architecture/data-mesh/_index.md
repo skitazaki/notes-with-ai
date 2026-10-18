@@ -99,31 +99,13 @@ Important to the architecture is the distinction between centralized standards a
 
 The key is not uniformity; it is coherence. Domains may differ in implementation details, but they should not differ arbitrarily in the meaning of ownership, product contracts, policy posture, or discoverability.
 
-## Metadata as an Enabling Capability
-
-Metadata matters in Data Mesh, but it is not the whole story. It is the shared coordination layer that makes the four principles workable at scale.
-
-Metadata helps domains operate independently without becoming opaque to the rest of the organization. It captures and connects:
-
-- ownership and domain boundaries
-- product descriptions and responsibilities
-- schemas, contracts, and versioning
-- lineage and impact analysis
-- quality and freshness signals
-- access policy and compliance context
-- semantic meaning and shared terminology
-
-A Data Mesh without usable metadata becomes a collection of local data silos with better labels. A mesh with strong metadata becomes easier to discover, reason about, govern, and evolve. Metadata does not replace governance or ownership; it makes those decisions visible and enforceable across boundaries.
-
-This is why metadata should be treated as an enabling capability rather than the primary subject of the architecture. The central question is not “how do we catalog everything?” but “how do we create the conditions for data to be discoverable, trusted, and consumable across domains?”
-
 ## Architectural Operating Model
 
 Data Mesh changes the operating model of data architecture.
 
 ### Domain teams are first-class producers
 
-Domains become the primary producers of their data and the custodians of its meaning. This creates better alignment between business reality and data representation. It shifts accountability closer to where the knowledge lives and reduces the mismatch between operational systems and analytical products.
+Domains become the primary producers of their data and the custodians of its meaning. This creates better alignment between business reality and data representation. It shifts accountability closer to where the knowledge lives and reduces the mismatch between operational systems and analytical products. Shared metadata about domain boundaries, ownership, product descriptions, contracts and schemas, lineage, quality and freshness, and policy lets each domain remain autonomous while making its data discoverable and trustworthy across the organization.
 
 ### Platform teams enable common capability
 
@@ -131,7 +113,7 @@ Platform teams still matter, but their role changes. Instead of being the bottle
 
 ### Shared standards prevent fragmentation
 
-The architecture only works when standards are thin and enforceable. A domain should not be forced into a single monolithic semantic model or one rigid technology stack, but it should still comply with a common metadata model, product contract expectations, identity and access conventions, and policy requirements.
+The architecture only works when standards are thin and enforceable. A domain should not be forced into a single monolithic semantic model or one rigid technology stack, but it should still comply with interoperable metadata models, product contract expectations, identity and access conventions, and policy requirements. Metadata should be built into the platform as a practical coordination capability for discovery, impact analysis, quality and freshness checks, and policy enforcement, rather than collected only for cataloging.
 
 These shared standards are what let a mesh remain connected rather than become a patchwork of isolated local systems.
 
