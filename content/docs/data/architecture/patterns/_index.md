@@ -1,8 +1,8 @@
 ---
 date: "2026-08-17T00:00:00+09:00"
 title: "Data Architecture Patterns"
-weight: 3
-prev: "/docs/data/architecture/data-mesh"
+weight: 2
+prev: "/docs/data/architecture/principles"
 next: "/docs/data/architecture/integration-and-flow"
 ---
 
@@ -72,7 +72,7 @@ Remote availability, performance, identity, semantic alignment, policy evaluatio
 
 ### Domain-Oriented Architecture and Data Mesh
 
-Domain-oriented architecture places responsibility near teams with business and operational context. [Data Mesh](/docs/data/metadata/data-mesh/) makes this a broader socio-technical model through domain ownership, [data products](/docs/data/metadata/data-products/), self-service platform capabilities, and [federated governance](/docs/data/metadata/federated-governance/).
+Domain-oriented architecture places responsibility near teams with business and operational context. [Data Mesh](/docs/data/architecture/data-mesh/) makes this a broader socio-technical model through domain ownership, [data products](/docs/data/metadata/data-products/), self-service platform capabilities, and [federated governance](/docs/data/metadata/federated-governance/).
 
 This model can reduce central bottlenecks and improve contextual ownership. It also increases the need for interoperable interfaces, common policy, product discovery, and organizational capability. Renaming datasets “products” or assigning domain labels does not implement the pattern.
 

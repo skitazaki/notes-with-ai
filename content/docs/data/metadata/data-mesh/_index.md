@@ -25,6 +25,8 @@ For this reason, metadata should be treated as the control plane of data mesh ra
 
 Without these elements, data mesh becomes organizational relabeling without technical coordination.
 
+For the architecture and operating model behind these principles, see [Data Mesh](/docs/data/architecture/data-mesh/).
+
 ### Metadata as distributed coordination fabric
 
 In a mesh, metadata must connect multiple domains without forcing all implementation into one central platform team. That usually means:
