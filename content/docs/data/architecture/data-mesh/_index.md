@@ -20,6 +20,8 @@ The problem is not simply technology volume. It is coordination at organizationa
 
 Data Mesh responds to that problem by distributing ownership while creating a shared framework for interoperability. It does not reject central standards; it shifts the center of gravity from central control of every data asset to a common set of contracts, interfaces, and governance principles that domains can implement locally.
 
+For an influential architectural discussion of this shift from monolithic data lakes to distributed data mesh, see Zhamak Dehghani’s [“How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh”](https://martinfowler.com/articles/data-monolith-to-mesh.html).
+
 ## What Data Mesh Is
 
 At a high level, Data Mesh is an architectural and organizational model for data. It is not merely a technology stack or a distributed data platform. It is a way to organize responsibility, value creation, and control around domains.
