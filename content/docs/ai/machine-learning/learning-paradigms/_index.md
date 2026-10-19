@@ -3,7 +3,7 @@ date: "2026-09-09T09:00:00+09:00"
 title: "Machine Learning Paradigms"
 weight: 1
 prev: "/docs/ai/machine-learning"
-next: "/docs/ai/machine-learning"
+next: "/docs/ai/machine-learning/supervised-learning"
 ---
 
 Machine Learning Paradigms provides a conceptual framework for supervised, unsupervised, self-supervised, and reinforcement learning. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.

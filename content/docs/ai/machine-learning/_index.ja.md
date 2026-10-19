@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "機械学習"
 weight: 2
 prev: "/docs/ai/foundations"
-next: "/docs/ai/machine-learning/supervised-learning"
+next: "/docs/ai/machine-learning/learning-paradigms"
 ---
 
 機械学習が AI の中心になったのは、有用なタスクの多くが固定的なルールだけでは扱えないほど変化に富むからです。不正のパターン、顧客行動、画像の分類、言語の使われ方は変化し続けます。あらゆる条件を手作業で記述する代わりに、機械学習は例とフィードバックから有用なパターンを推定させます。

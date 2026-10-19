@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "Machine Learning"
 weight: 2
 prev: "/docs/ai/foundations"
-next: "/docs/ai/machine-learning/supervised-learning"
+next: "/docs/ai/machine-learning/learning-paradigms"
 ---
 
 Machine learning became central to AI because many useful tasks are too variable to solve with fixed rules alone. Fraud patterns shift, customer behavior changes, image categories multiply, and language use never stays still. Rather than encoding every condition manually, machine learning lets systems infer useful patterns from examples and feedback.
