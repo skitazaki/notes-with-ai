@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "Machine Learning"
 weight: 2
 prev: "/docs/ai/foundations"
-next: "/docs/ai/machine-learning/learning-paradigms"
+next: "/docs/ai/machine-learning/supervised-learning"
 ---
 
 Machine learning became central to AI because many useful tasks are too variable to solve with fixed rules alone. Fraud patterns shift, customer behavior changes, image categories multiply, and language use never stays still. Rather than encoding every condition manually, machine learning lets systems infer useful patterns from examples and feedback.
@@ -24,12 +24,6 @@ Machine learning matters when the world contains too much variation for manual l
 
 The tradeoff is that learned systems are probabilistic. They do not guarantee perfect behavior. They must be judged through evidence, error analysis, and operational monitoring rather than only through code inspection.
 
-## Topic Pages
-
-{{< cards >}}
-{{< card link="learning-paradigms/" title="Machine Learning Paradigms" icon="document-text" subtitle="Supervised, unsupervised, self-supervised, and reinforcement learning" >}}
-{{< /cards >}}
-
 ## The Lifecycle of a Machine Learning System
 
 A machine-learning system begins with data collection and problem framing. Teams need to decide what signal matters, what success looks like, and how examples will be gathered or labeled. That framing step is often more decisive than algorithm choice.
@@ -47,6 +41,15 @@ Inference is the point where the model is used in a live workflow. That stage in
 **Overfitting and underfitting** are practical symptoms of those problems. Overfitting means the model learns the training data too specifically. Underfitting means it never learns enough useful structure.
 
 **Offline and online evaluation** serve different needs. Offline testing offers controlled comparison. Online behavior reveals how the model performs under real user interaction, changing inputs, and feedback loops.
+
+## Topic Pages
+
+{{< cards >}}
+{{< card link="supervised-learning/" title="Supervised Learning" icon="document-text" subtitle="Learning from labeled examples for classification and regression" >}}
+{{< card link="unsupervised-learning/" title="Unsupervised Learning" icon="document-text" subtitle="Finding structure in data without target labels" >}}
+{{< card link="self-supervised-learning/" title="Self-Supervised Learning" icon="document-text" subtitle="Creating training signals from the data itself" >}}
+{{< card link="reinforcement-learning/" title="Reinforcement Learning" icon="document-text" subtitle="Learning actions from sequential interaction and reward" >}}
+{{< /cards >}}
 
 ## Relationship to Neighboring Topics
 

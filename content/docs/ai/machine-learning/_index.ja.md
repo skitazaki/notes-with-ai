@@ -3,7 +3,7 @@ date: "2026-08-09T09:00:00+09:00"
 title: "機械学習"
 weight: 2
 prev: "/docs/ai/foundations"
-next: "/docs/ai/machine-learning/learning-paradigms"
+next: "/docs/ai/machine-learning/supervised-learning"
 ---
 
 機械学習が AI の中心になったのは、有用なタスクの多くが固定的なルールだけでは扱えないほど変化に富むからです。不正のパターン、顧客行動、画像の分類、言語の使われ方は変化し続けます。あらゆる条件を手作業で記述する代わりに、機械学習は例とフィードバックから有用なパターンを推定させます。
@@ -24,12 +24,6 @@ next: "/docs/ai/machine-learning/learning-paradigms"
 
 その代償として、学習システムは確率的です。完全な振る舞いを保証するものではなく、コードの検査だけではなく、証拠、誤り分析、運用監視によって判断する必要があります。
 
-## トピックページ
-
-{{< cards >}}
-{{< card link="learning-paradigms/" title="機械学習の学習パラダイム" icon="document-text" subtitle="教師あり学習、教師なし学習、自己教師あり学習、強化学習" >}}
-{{< /cards >}}
-
 ## 機械学習システムのライフサイクル
 
 機械学習システムは、データ収集と問題設定から始まります。どのシグナルが重要か、成功をどう定義するか、例をどう収集・ラベル付けするかを決めます。この段階は、アルゴリズム選択以上に結果を左右することがあります。
@@ -47,6 +41,21 @@ next: "/docs/ai/machine-learning/learning-paradigms"
 **過学習と過少適合**はその実務的な現れです。過学習は学習データを具体的に覚えすぎること、過少適合は十分に有用な構造を学べないことです。
 
 **オフライン評価とオンライン評価**は異なる目的に役立ちます。オフラインのテストは統制された比較を可能にし、オンラインの振る舞いは実際の利用者との相互作用、変化する入力、フィードバックループの下での性能を示します。
+
+## トピックページ
+
+{{< cards >}}
+{{< card link="supervised-learning/" title="教師あり学習" icon="document-text" subtitle="分類や回帰のためにラベル付きの例から学ぶ" >}}
+{{< card link="unsupervised-learning/" title="教師なし学習" icon="document-text" subtitle="正解ラベルなしでデータの構造を見つける" >}}
+{{< card link="self-supervised-learning/" title="自己教師あり学習" icon="document-text" subtitle="データ自体から学習シグナルを作る" >}}
+{{< card link="reinforcement-learning/" title="強化学習" icon="document-text" subtitle="逐次的な相互作用と報酬から行動を学ぶ" >}}
+{{< /cards >}}
+
+## 関連するトピックとの関係
+
+ディープラーニングは、機械学習の中でも多層ニューラルネットワークを使い、より豊かな表現を大規模に学ぶ専門領域です。基盤モデルは、大規模な事前学習と再利用を通じて、こうしたディープラーニングの手法を発展させます。
+
+MLOps は、バージョン管理、デプロイ、監視、再学習、ドリフト管理を担い、機械学習を運用可能にします。この運用基盤がなければ、優れたモデルであっても世界の変化とともに性能が低下します。
 
 ## まとめ
 
