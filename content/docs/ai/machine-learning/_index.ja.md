@@ -45,6 +45,7 @@ next: "/docs/ai/machine-learning/supervised-learning"
 ## トピックページ
 
 {{< cards >}}
+{{< card link="learning-paradigms/" title="機械学習の学習パラダイム" icon="document-text" subtitle="4つの学習パラダイムの概要" >}}
 {{< card link="supervised-learning/" title="教師あり学習" icon="document-text" subtitle="分類や回帰のためにラベル付きの例から学ぶ" >}}
 {{< card link="unsupervised-learning/" title="教師なし学習" icon="document-text" subtitle="正解ラベルなしでデータの構造を見つける" >}}
 {{< card link="self-supervised-learning/" title="自己教師あり学習" icon="document-text" subtitle="データ自体から学習シグナルを作る" >}}

@@ -45,6 +45,7 @@ Inference is the point where the model is used in a live workflow. That stage in
 ## Topic Pages
 
 {{< cards >}}
+{{< card link="learning-paradigms/" title="Machine Learning Paradigms" icon="document-text" subtitle="Overview of the four learning paradigms" >}}
 {{< card link="supervised-learning/" title="Supervised Learning" icon="document-text" subtitle="Learning from labeled examples for classification and regression" >}}
 {{< card link="unsupervised-learning/" title="Unsupervised Learning" icon="document-text" subtitle="Finding structure in data without target labels" >}}
 {{< card link="self-supervised-learning/" title="Self-Supervised Learning" icon="document-text" subtitle="Creating training signals from the data itself" >}}
