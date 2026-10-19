@@ -1,7 +1,7 @@
 ---
 date: "2026-10-19T09:00:00+09:00"
 title: "教師なし学習"
-weight: 2
+weight: 3
 prev: "/docs/ai/machine-learning/supervised-learning"
 next: "/docs/ai/machine-learning/self-supervised-learning"
 ---

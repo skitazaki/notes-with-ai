@@ -1,7 +1,7 @@
 ---
 date: "2026-10-19T09:00:00+09:00"
 title: "Reinforcement Learning"
-weight: 4
+weight: 5
 prev: "/docs/ai/machine-learning/self-supervised-learning"
 next: "/docs/ai/machine-learning"
 ---

@@ -1,7 +1,7 @@
 ---
 date: "2026-10-19T09:00:00+09:00"
 title: "Supervised Learning"
-weight: 1
+weight: 2
 prev: "/docs/ai/machine-learning"
 next: "/docs/ai/machine-learning/unsupervised-learning"
 ---

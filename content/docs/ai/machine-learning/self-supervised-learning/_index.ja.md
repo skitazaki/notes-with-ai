@@ -1,7 +1,7 @@
 ---
 date: "2026-10-19T09:00:00+09:00"
 title: "自己教師あり学習"
-weight: 3
+weight: 4
 prev: "/docs/ai/machine-learning/unsupervised-learning"
 next: "/docs/ai/machine-learning/reinforcement-learning"
 ---
