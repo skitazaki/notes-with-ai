@@ -1,7 +1,7 @@
 ---
 date: "2026-08-17T00:00:00+09:00"
 title: "Data Architecture Patterns"
-weight: 3
+weight: 2
 prev: "/docs/data/architecture/principles"
 next: "/docs/data/architecture/integration-and-flow"
 ---

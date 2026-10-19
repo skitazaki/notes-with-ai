@@ -1,9 +1,9 @@
 ---
 date: "2026-09-29T00:00:00+09:00"
 title: "データメッシュ"
-weight: 6
+weight: 5
 prev: "/docs/data/architecture/modern-data-architecture"
-next: "/docs/data/sharing"
+next: "/docs/data/architecture"
 ---
 
 データメッシュは、多数のドメインにまたがるデータの所有と提供を拡張するためのデータアーキテクチャのパターンです。データを単なる副産物ではなくプロダクトとして扱い、意味や業務コンテキストを知っているドメインに責任を近づけつつ、共有基盤とガバナンス標準を使って全体の一貫性を保つことを重視します。
