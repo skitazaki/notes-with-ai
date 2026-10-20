@@ -3,7 +3,7 @@ date: "2026-10-20T09:00:00+09:00"
 title: "Graph Neural Networks"
 weight: 8
 prev: "/docs/ai/deep-learning/state-space-models"
-next: "/docs/ai/deep-learning"
+next: "/docs/ai/deep-learning/diffusion-models"
 ---
 
 Graph neural networks (GNNs) are neural models for data represented as entities and relationships. A graph can describe social connections, molecules, knowledge, infrastructure, or interactions among items. GNNs use both node features and graph structure to produce representations or predictions.

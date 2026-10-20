@@ -35,6 +35,7 @@ next: "/docs/ai/deep-learning/neural-architectures"
 {{< card link="mixture-of-experts/" title="Mixture of Experts（MoE）" icon="document-text" subtitle="専門化したエキスパートによる条件付き計算" >}}
 {{< card link="state-space-models/" title="状態空間モデル（SSM）" icon="document-text" subtitle="変化する潜在状態に基づく系列モデル" >}}
 {{< card link="graph-neural-networks/" title="グラフニューラルネットワーク（GNN）" icon="document-text" subtitle="グラフ構造データを扱うニューラルネットワーク" >}}
+{{< card link="diffusion-models/" title="拡散モデル" icon="document-text" subtitle="反復的なノイズ除去に基づく生成モデル" >}}
 {{< /cards >}}
 
 ## 強みと限界
