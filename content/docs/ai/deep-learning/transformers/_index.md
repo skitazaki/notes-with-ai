@@ -32,6 +32,10 @@ The cost of attention and memory generally grows with sequence length, making lo
 
 Transformers are one family of neural architecture, not a synonym for deep learning. Mixture of Experts (MoE) can be used inside transformer layers to activate only selected feed-forward experts for each token. Diffusion systems may also use transformer blocks to process image patches or other structured inputs.
 
+## Foundational Paper
+
+The Transformer architecture was introduced in [Attention Is All You Need](https://arxiv.org/abs/1706.03762) (2017).
+
 ## Summary
 
 Transformers use attention to build context-dependent representations and have become a flexible backbone for sequence and multimodal learning. Their capabilities come with compute, memory, and data requirements that shape how they are trained and used.

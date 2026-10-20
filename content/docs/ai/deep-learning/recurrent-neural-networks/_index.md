@@ -20,6 +20,10 @@ RNNs and their gated variants have been used for language, speech, time series, 
 
 Sequential computation limits parallelism across positions during training and inference. This can make long sequences slower to process than with architectures that handle positions more independently. Transformers and state space models offer different tradeoffs for sequence modeling.
 
+## Foundational Papers
+
+An influential early account of a simple recurrent network is [Finding Structure in Time](https://doi.org/10.1207/S15516709COG1402_1) (1990). LSTM was introduced by Hochreiter and Schmidhuber in [Long Short-Term Memory](https://doi.org/10.1162/neco.1997.9.8.1735) (1997).
+
 ## Summary
 
 RNNs represent sequence history through a recurrent hidden state. LSTMs and GRUs use gates to manage that state and improve learning over longer intervals, while retaining the sequential nature of recurrent computation.

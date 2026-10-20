@@ -20,6 +20,10 @@ GNNs support node classification, link prediction, graph classification, and ran
 
 Large or highly connected graphs can make neighborhood aggregation expensive. Handling changes in the graph, sparse features, and relationships across distant nodes also requires deliberate design. A graph representation does not by itself establish causal relationships between connected entities.
 
+## Foundational Paper
+
+The paper [The Graph Neural Network Model](https://doi.org/10.1109/TNN.2008.2005605) (published in 2009) explicitly proposed a neural network model for data represented in graph domains.
+
 ## Summary
 
 GNNs learn from both entity attributes and relationships by propagating information through graph neighborhoods. They are a natural fit for relational data, with effectiveness tied to the quality and meaning of the graph structure.

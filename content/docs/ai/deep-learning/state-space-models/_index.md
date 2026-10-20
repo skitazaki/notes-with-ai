@@ -20,6 +20,10 @@ SSMs can offer efficient handling of long sequences and can maintain a compact s
 
 Efficiency depends on the model and workload. Some tasks benefit from direct content-based interactions between distant positions, while other sequence patterns can be represented effectively through state evolution. SSMs and Transformers therefore involve different inductive biases and engineering tradeoffs rather than a universal winner.
 
+## Foundational Paper
+
+An influential modern deep-learning sequence model based on structured state spaces is S4, introduced in [Efficiently Modeling Long Sequences with Structured State Spaces](https://arxiv.org/abs/2111.00396) (2021). State space models themselves predate this work and are not attributed to a single deep-learning paper.
+
 ## Summary
 
 Deep-learning SSMs use structured latent-state dynamics to model sequences. They provide an alternative family for long-sequence processing, with behavior and efficiency determined by the specific model design and task.

@@ -20,6 +20,10 @@ Autoencoders have been used for dimensionality reduction, representation learnin
 
 Reconstruction quality alone does not guarantee that the latent representation captures the properties a user cares about. Anomaly detection based on reconstruction error, for example, can miss unusual cases that the model reconstructs well.
 
+## Foundational Paper
+
+An influential demonstration of deep autoencoders for dimensionality reduction is [Reducing the Dimensionality of Data with Neural Networks](https://doi.org/10.1126/science.1127647) (2006).
+
 ## Summary
 
 Autoencoders learn representations through an encoder-decoder reconstruction task. Their usefulness depends on how the objective and constraints shape those representations for the intended analysis or downstream use.

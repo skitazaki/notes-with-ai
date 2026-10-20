@@ -28,6 +28,10 @@ Training must keep the workload reasonably balanced across experts. If routing s
 
 MoE is a design pattern that can be applied to parts of a neural network, rather than a standalone architecture family with one fixed structure. A common approach replaces the feed-forward sublayer in selected transformer blocks with a set of experts and a router. Attention may remain dense while expert computation is sparse.
 
+## Foundational Papers
+
+The original mixture-of-experts formulation was presented in [Adaptive Mixtures of Local Experts](https://doi.org/10.1162/NECO.1991.3.1.79) (1991). The sparsely gated layer used to scale neural networks through conditional computation was introduced in [Outrageously Large Neural Networks](https://arxiv.org/abs/1701.06538) (2017).
+
 ## Summary
 
 MoE uses input-dependent routing to activate a subset of expert networks. It can expand model capacity without proportionally increasing per-token computation, while introducing memory, communication, load-balancing, and serving tradeoffs.

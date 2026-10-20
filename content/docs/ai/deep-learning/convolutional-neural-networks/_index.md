@@ -20,6 +20,10 @@ CNNs provide an effective inductive bias for images and other grid-like signals:
 
 The same design can make global relationships less direct to represent than local ones. CNNs are not limited to images, but applying them to data without meaningful neighborhood structure may offer little benefit. Their performance also depends on training data, objective, and architecture choices.
 
+## Foundational Paper
+
+[Gradient-Based Learning Applied to Document Recognition](https://doi.org/10.1109/5.726791) (1998) is a classic account of convolutional networks and their application to handwritten document recognition.
+
 ## Summary
 
 CNNs use local filters and shared weights to learn spatial features at multiple levels. They remain useful when the structure of the input is local and grid-like, and can be combined with other neural components when broader context is needed.
