@@ -28,6 +28,14 @@ next: "/docs/ai/deep-learning/neural-architectures"
 
 {{< cards >}}
 {{< card link="neural-architectures/" title="ニューラルアーキテクチャ" icon="document-text" subtitle="表現、学習信号、主要なニューラルアーキテクチャファミリー" >}}
+{{< card link="convolutional-neural-networks/" title="畳み込みニューラルネットワーク（CNN）" icon="document-text" subtitle="局所的な空間構造を活用するニューラルネットワーク" >}}
+{{< card link="recurrent-neural-networks/" title="再帰型ニューラルネットワーク（RNN・LSTM）" icon="document-text" subtitle="系列データと状態を扱うニューラルネットワーク" >}}
+{{< card link="transformers/" title="Transformer" icon="document-text" subtitle="系列やマルチモーダルデータを扱うアテンションベースのモデル" >}}
+{{< card link="autoencoders/" title="オートエンコーダー" icon="document-text" subtitle="圧縮と再構成を通じた表現学習" >}}
+{{< card link="mixture-of-experts/" title="Mixture of Experts（MoE）" icon="document-text" subtitle="専門化したエキスパートによる条件付き計算" >}}
+{{< card link="state-space-models/" title="状態空間モデル（SSM）" icon="document-text" subtitle="変化する潜在状態に基づく系列モデル" >}}
+{{< card link="graph-neural-networks/" title="グラフニューラルネットワーク（GNN）" icon="document-text" subtitle="グラフ構造データを扱うニューラルネットワーク" >}}
+{{< card link="diffusion-models/" title="拡散モデル" icon="document-text" subtitle="反復的なノイズ除去に基づく生成モデル" >}}
 {{< /cards >}}
 
 ## 強みと限界

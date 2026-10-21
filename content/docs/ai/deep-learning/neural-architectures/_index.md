@@ -3,7 +3,7 @@ date: "2026-09-09T09:00:00+09:00"
 title: "Neural Architectures"
 weight: 1
 prev: "/docs/ai/deep-learning"
-next: "/docs/ai/deep-learning"
+next: "/docs/ai/deep-learning/convolutional-neural-networks"
 ---
 
 Neural Architectures provides a conceptual framework for representations, training signals, and major neural architecture families. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.

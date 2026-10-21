@@ -28,6 +28,14 @@ Three conditions reinforced this shift: larger datasets, more capable accelerato
 
 {{< cards >}}
 {{< card link="neural-architectures/" title="Neural Architectures" icon="document-text" subtitle="Representations, training signals, and major neural architecture families" >}}
+{{< card link="convolutional-neural-networks/" title="Convolutional Neural Networks (CNNs)" icon="document-text" subtitle="Neural networks that exploit local spatial structure" >}}
+{{< card link="recurrent-neural-networks/" title="Recurrent Neural Networks (RNNs and LSTMs)" icon="document-text" subtitle="Neural networks for sequences and persistent state" >}}
+{{< card link="transformers/" title="Transformers" icon="document-text" subtitle="Attention-based models for sequences and multimodal data" >}}
+{{< card link="autoencoders/" title="Autoencoders" icon="document-text" subtitle="Learning representations through compression and reconstruction" >}}
+{{< card link="mixture-of-experts/" title="Mixture of Experts (MoE)" icon="document-text" subtitle="Conditional computation through specialized expert networks" >}}
+{{< card link="state-space-models/" title="State Space Models (SSMs)" icon="document-text" subtitle="Sequence models based on evolving latent states" >}}
+{{< card link="graph-neural-networks/" title="Graph Neural Networks (GNNs)" icon="document-text" subtitle="Neural networks for graph-structured data" >}}
+{{< card link="diffusion-models/" title="Diffusion Models" icon="document-text" subtitle="Generative models built around iterative denoising" >}}
 {{< /cards >}}
 
 ## Strengths and Limits
