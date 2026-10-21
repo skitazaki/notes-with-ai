@@ -50,6 +50,7 @@ next: "/docs/swe/reliability-operations/observability-and-slos"
 {{< cards >}}
 {{< card link="observability-and-slos/" title="オブザーバビリティと SLO" icon="chart-bar" subtitle="テレメトリを利用者視点の信頼性目標へ結び付ける" >}}
 {{< card link="incident-management-and-resilience/" title="インシデント管理とレジリエンス" icon="shield-check" subtitle="障害へ備え、対応を調整し、学習する" >}}
+{{< card link="security-operations-and-governance/" title="セキュリティ運用とガバナンス" icon="lock-closed" subtitle="CSIRT・SOC・SIEM・CISO の意思決定ループを接続する" >}}
 {{< card link="twelve-factor-app/" title="Twelve-Factor App" icon="cube" subtitle="デプロイ可能で運用しやすいサービスの原則" >}}
 {{< /cards >}}
 
