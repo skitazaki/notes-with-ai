@@ -3,7 +3,7 @@ date: "2026-09-09T09:00:00+09:00"
 title: "Generative AI System Patterns"
 weight: 1
 prev: "/docs/ai/generative-ai"
-next: "/docs/ai/generative-ai"
+next: "/docs/ai/generative-ai/generative-models-and-deep-learning"
 ---
 
 Generative AI System Patterns provides a conceptual framework for building blocks and recurring patterns for Generative AI systems. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.

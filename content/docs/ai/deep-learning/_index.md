@@ -36,6 +36,7 @@ Three conditions reinforced this shift: larger datasets, more capable accelerato
 {{< card link="state-space-models/" title="State Space Models (SSMs)" icon="document-text" subtitle="Sequence models based on evolving latent states" >}}
 {{< card link="graph-neural-networks/" title="Graph Neural Networks (GNNs)" icon="document-text" subtitle="Neural networks for graph-structured data" >}}
 {{< card link="diffusion-models/" title="Diffusion Models" icon="document-text" subtitle="Generative models built around iterative denoising" >}}
+{{< card link="../generative-ai/generative-models-and-deep-learning/" title="Generative Models and Deep Learning" icon="document-text" subtitle="How generative approaches relate to neural architectures and AI systems" >}}
 {{< /cards >}}
 
 ## Strengths and Limits

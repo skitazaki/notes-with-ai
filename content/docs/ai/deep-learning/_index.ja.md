@@ -36,6 +36,7 @@ next: "/docs/ai/deep-learning/neural-architectures"
 {{< card link="state-space-models/" title="状態空間モデル（SSM）" icon="document-text" subtitle="変化する潜在状態に基づく系列モデル" >}}
 {{< card link="graph-neural-networks/" title="グラフニューラルネットワーク（GNN）" icon="document-text" subtitle="グラフ構造データを扱うニューラルネットワーク" >}}
 {{< card link="diffusion-models/" title="拡散モデル" icon="document-text" subtitle="反復的なノイズ除去に基づく生成モデル" >}}
+{{< card link="../generative-ai/generative-models-and-deep-learning/" title="生成モデルと深層学習" icon="document-text" subtitle="生成アプローチとニューラルアーキテクチャ、AI システムの関係" >}}
 {{< /cards >}}
 
 ## 強みと限界
