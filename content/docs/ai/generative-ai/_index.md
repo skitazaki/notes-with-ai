@@ -28,6 +28,7 @@ At the same time, the flexibility of the model means the surrounding system must
 
 {{< cards >}}
 {{< card link="system-patterns/" title="Generative AI System Patterns" icon="document-text" subtitle="Building blocks and recurring patterns for generative AI systems" >}}
+{{< card link="generative-models-and-deep-learning/" title="Generative Models and Deep Learning" icon="document-text" subtitle="How generative model families relate to deep-learning architectures" >}}
 {{< /cards >}}
 
 ## Main Risks and Limits

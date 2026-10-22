@@ -3,7 +3,7 @@ date: "2026-09-09T09:00:00+09:00"
 title: "生成 AI のシステムパターン"
 weight: 1
 prev: "/docs/ai/generative-ai"
-next: "/docs/ai/generative-ai"
+next: "/docs/ai/generative-ai/generative-models-and-deep-learning"
 ---
 
 生成 AI のシステムパターンは、生成 AI システムの構成要素と代表的なパターンを整理するための概念的な枠組みです。ここでは、個別の製品や実装手順ではなく、設計や判断に長く利用できる考え方に焦点を当てます。

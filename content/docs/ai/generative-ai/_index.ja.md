@@ -28,6 +28,7 @@ next: "/docs/ai/generative-ai/system-patterns"
 
 {{< cards >}}
 {{< card link="system-patterns/" title="生成 AI のシステムパターン" icon="document-text" subtitle="生成 AI システムの構成要素と代表的なパターン" >}}
+{{< card link="generative-models-and-deep-learning/" title="生成モデルと深層学習" icon="document-text" subtitle="生成モデルの種類と深層学習アーキテクチャの関係" >}}
 {{< /cards >}}
 
 ## 主なリスクと限界
