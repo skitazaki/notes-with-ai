@@ -50,6 +50,7 @@ The [Twelve-Factor App](twelve-factor-app/) describes useful principles for depl
 {{< cards >}}
 {{< card link="observability-and-slos/" title="Observability & SLOs" icon="chart-bar" subtitle="Connect telemetry to user-relevant reliability targets" >}}
 {{< card link="incident-management-and-resilience/" title="Incident Management & Resilience" icon="shield-check" subtitle="Prepare for failure, coordinate response, and learn" >}}
+{{< card link="security-operations-and-governance/" title="Security Operations & Governance" icon="lock-closed" subtitle="Align CSIRT, SOC, SIEM, and CISO decision loops" >}}
 {{< card link="twelve-factor-app/" title="Twelve-Factor App" icon="cube" subtitle="Principles for deployable and operable services" >}}
 {{< /cards >}}
 

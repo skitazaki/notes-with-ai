@@ -3,7 +3,7 @@ date: "2026-09-09T00:00:00+09:00"
 title: "Incident Management & Resilience"
 weight: 20
 prev: "/docs/swe/reliability-operations/observability-and-slos"
-next: "/docs/swe/reliability-operations/twelve-factor-app"
+next: "/docs/swe/reliability-operations/security-operations-and-governance"
 ---
 
 Resilience is the ability to continue, degrade deliberately, or recover when components, dependencies, people, or assumptions fail. Incident management coordinates action when a disruption is occurring; incident learning changes the system afterward.
