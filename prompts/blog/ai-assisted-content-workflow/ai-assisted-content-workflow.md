@@ -247,7 +247,7 @@ The diagram should distinguish the main path from optional image-production path
 
 - Practical, neutral, and technically credible.
 - Clear enough for readers who are new to multi-tool AI workflows.
-- Written in a first-person plural voice where appropriate, such as describing how "we use" the tools.
+- Written in a first-person singular voice where appropriate, such as describing how "I use" the tools.
 - Specific about responsibilities and deliverables.
 - Focused on lessons learned and reusable principles rather than product promotion.
 - Avoid hype, exaggerated productivity claims, and unsupported comparisons between AI products.
