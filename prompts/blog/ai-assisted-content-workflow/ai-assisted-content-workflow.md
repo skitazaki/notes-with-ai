@@ -35,15 +35,15 @@ Help readers understand:
 
 1. How the three AI tools complement one another.
 2. How an article moves from an initial idea to a published page.
-3. How image generation and Mermaid-based diagrams fit into the workflow.
+3. How image generation and Mermaid-based diagrams fit into a workflow for figure-rich content.
 4. Why clear briefs, explicit deliverables, and human review remain important when using multiple AI tools.
 5. How a repository-based workflow makes content and visual assets maintainable.
 
-The article should provide a reusable mental model rather than a rigid recipe that every writer must follow.
+The article should provide a reusable mental model for building content that is richer with diagrams and illustrations when they materially improve comprehension, rather than treating visual assets as optional decoration.
 
 ## Context: Notes with AI
 
-Notes with AI is a Hugo-based knowledge site covering software engineering, data, and AI.
+Notes with AI is a knowledge site built from Markdown content and published as a static HTML site. Hugo is one example of a static site generator that converts Markdown into browsable pages, and this repository follows that pattern for technical documentation and blog posts covering software engineering, data, and AI.
 
 The repository separates content from the prompts used to produce it:
 
@@ -59,17 +59,19 @@ Inspect the repository's `AGENTS.md`, relevant existing prompts, representative 
 
 Explain the following division of responsibilities. These are primary roles, not exclusive capabilities.
 
-### ChatGPT: Planning and Image Generation
+### ChatGPT: Planning, Review, and Image Generation
 
 ChatGPT is primarily used for:
 
-- Exploring and refining article ideas.
-- Planning the article's scope, structure, and narrative.
+- Exploring and refining article ideas as part of an ongoing content cycle.
+- Planning the article's scope, structure, and narrative in a way that can be revisited and adjusted as the work evolves.
 - Preparing briefs and prompts for subsequent work.
 - Generating images when a visual asset is needed.
 - Helping decide whether an idea is best communicated through an illustration, a conceptual image, or a structured diagram.
+- Reviewing changes over time, including by examining Git history and recent diffs to identify where content, structure, or clarity could be improved.
+- Providing periodic improvement suggestions, such as when the repository has new commits and the content can be revisited for sharper framing, clearer logic, or better narrative flow.
 
-Emphasize that planning produces actionable direction for the writing stage, not merely a collection of ideas.
+Emphasize that planning is not a one-off kickoff activity but a recurring part of the workflow, and that the starting point may come from a human writer, an AI assistant, or a conversation between the two.
 
 ### Codex: Writing and Repository-Oriented Work
 
@@ -84,7 +86,7 @@ Its work may include:
 - Integrating visual assets into the article.
 - Checking links, metadata, paths, and consistency with repository conventions.
 
-Do not imply that Codex always generates images or that every article requires a diagram. Image creation is an optional branch of the workflow, depending on the article's needs.
+This workflow is designed for content that benefits from visual explanation. Not every article needs a figure, but when an article needs a diagram, illustration, or process map, Codex can carry that work through the repository in a structured way rather than treating it as an afterthought.
 
 ### GitHub Copilot: Writing Assistance and Review
 
@@ -129,7 +131,7 @@ Explain that the brief constrains the writing task and reduces unnecessary impro
 
 ### 3. Visual Planning and Prompt Design
 
-Explain why images and diagrams should be planned around the article's message instead of added as decoration.
+Explain why images and diagrams should be planned around the article's message instead of being added as decoration. This is a workflow for content that aims to communicate clearly through visuals, not simply a fallback for text-only posts.
 
 Describe how an image prompt specifies the concept, composition, hierarchy, relationships, required labels, style, and output dimensions.
 
@@ -140,11 +142,11 @@ For image-generation prompts, follow the repository's four-part structure:
 3. Visual cues
 4. Style
 
-Explain that a good prompt should be self-contained and sufficiently precise for an image-generation model to execute without guessing important relationships or text.
+Explain that a good prompt should be self-contained and sufficiently precise for an image-generation model to execute without guessing important relationships or text, especially when the article depends on the figure to carry part of the explanation.
 
 ### 4. Visual Production: Two Complementary Paths
 
-Present two approaches and explain when each is useful.
+Present two approaches and explain when each is useful. Frame the workflow as one that supports richly illustrated content when a concept is clearer with a visual aid, while still recognizing that the article's message is primary and the figure is a means of communicating it.
 
 **Path A — AI-generated images**
 
@@ -257,7 +259,7 @@ The diagram should distinguish the main path from optional image-production path
 - Treat the tool-role assignments in this brief as the author's stated working model.
 - Do not imply that each tool has an exclusive capability; explain its primary role in this workflow.
 - Do not invent specific prompts, integrations, API calls, automated handoffs, or internal practices.
-- Do not claim that every article follows every stage or requires image generation.
+- Do not claim that every article follows every stage or requires image generation; instead, present the workflow as a repeatable way to create figure-rich content when the subject benefits from it.
 - Distinguish conceptual images from diagrams that require structural precision.
 - Do not claim that generated images are automatically correct or that AI reviews guarantee factual accuracy.
 - Verify repository-specific paths, scripts, build steps, and deployment details before documenting them.
