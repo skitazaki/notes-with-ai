@@ -5,6 +5,8 @@ title: "An AI-Assisted Content Creation Workflow: From Planning to Publication"
 
 Producing a technical article involves more than drafting paragraphs. The process includes understanding what readers need, gathering and checking evidence, choosing how to explain ideas, preparing figures, and integrating everything into a site that can be maintained over time. AI tools can support each stage most effectively when they have clear roles and the work moves through explicit deliverables.
 
+![Five stages of the AI-assisted content workflow: plan the idea, prepare the brief, draft the page, review it, and publish and learn; Git history and reader response inform future plans.](ai-content-workflow.webp "AI-Assisted Content Workflow")
+
 I use ChatGPT, Codex, and GitHub Copilot as complementary tools in a repository-based workflow. ChatGPT helps me shape the editorial plan and can generate images. Codex turns briefs into repository changes, including article drafts and diagrams. GitHub Copilot supports writing and review. The tools assist the process; I remain responsible for the subject, evidence, and final decisions.
 
 ## The Three Tools and Their Primary Responsibilities
@@ -25,22 +27,9 @@ Codex is my repository-oriented writing tool. I use it to create the article, dr
 
 An article moves through a sequence of connected decisions and deliverables. The idea becomes a brief, the brief guides the draft, and visual planning helps determine how to explain the subject. The resulting page and its assets are reviewed together before publication.
 
-```mermaid
-flowchart TD
-    A[Idea from me, an assistant, or discussion] --> B[ChatGPT: clarify audience, purpose, scope, and outline]
-    B --> C[Brief: agreed handoff for writing]
-    C --> D[Codex: draft Markdown in the repository]
-    D --> E[Plan how visual material supports the explanation]
-    E --> F[Create selected image or diagram]
-    F --> G[Review visual and integrate it with the article]
-    G --> H[Copilot-supported writing review and repository revision]
-    H --> I[Human review, checks, and rendered-page inspection]
-    I --> J[Pull request and GitHub Pages publication workflow]
-    J --> K[Reader response and later improvements]
-    K -. informs future planning .-> B
-```
-
 The brief is the handoff between editorial planning and implementation. It captures decisions in a form I can reuse and revise, instead of relying on the context of an earlier conversation. Visual planning is part of developing the article: I choose a form that fits the explanation, create or prepare the asset, and integrate it with the page. Review then considers the prose and visuals together before the changes move through the repository's publication process.
+
+![Three stages from planning and brief-driven writing, through image generation or Mermaid diagrams, to repository integration and publication.](three-stages-from-draft-to-publication.webp "Three Stages from Draft to Publication")
 
 ## Planning and Brief-Driven Writing
 
