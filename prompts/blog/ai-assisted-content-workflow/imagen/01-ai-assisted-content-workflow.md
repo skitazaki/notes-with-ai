@@ -27,7 +27,7 @@ Arrange the five cards in this order:
 Include these elements inside the cards:
 
 1. **Plan the idea** — ChatGPT helps clarify the audience, purpose, scope, and article structure. An idea can begin with the author, an AI assistant, or a discussion.
-2. **Prepare the brief** — record the intended reader, outline, evidence needs, and scope boundaries. Label the handoff location `prompts/`.
+2. **Prepare the brief** — ChatGPT turns the article plan into a concrete writing brief that records the intended reader, outline, evidence needs, and scope boundaries. Show ChatGPT as the primary tool for this stage, and label the handoff location `prompts/`. Do not assign brief preparation to Codex.
 3. **Draft the page** — Codex turns the brief into Markdown in `content/`, which contains both documentation and blog content. Include a small note that visual material is planned when it helps explain the article.
 4. **Review together** — GitHub Copilot supports clarity and gap review; Codex can revise repository files. The author verifies evidence, links, metadata, any visual assets, and the rendered page.
 5. **Publish and learn** — show pull-request checks before merge, then a merge to `main` leading to a production build and GitHub Pages publication. Reader response and later repository review inform future planning.
@@ -55,6 +55,8 @@ Render these labels exactly, with capitalization and punctuation preserved:
 - `GitHub Pages`
 - `Git history and reader response inform new plans`
 
+Show `ChatGPT` as the primary tool in both the planning and brief-preparation stages. If a compact tool-role legend appears below the workflow, describe ChatGPT's role as `Planning, brief creation, and image generation`.
+
 Use short supporting phrases only; do not add explanatory paragraphs inside the cards. Use generic, consistent line icons if needed, never product logos. Make the five forward stages visually distinct from the one return arrow.
 
 The required connections are only:
@@ -64,7 +66,7 @@ Plan the idea → Prepare the brief → Draft the page → Review together → P
 Publish and learn → Plan the idea (feedback loop)
 ```
 
-Do not add a branch that bypasses the brief or review. Do not make image generation a required workflow stage: show visual planning as a conditional note within the drafting stage. Do not show ChatGPT, Codex, or GitHub Copilot as exclusive to every capability; present only their primary roles described above. Do not imply that AI output or AI review guarantees factual correctness.
+Do not add a branch that bypasses the brief or review. Do not make image generation a required workflow stage: show visual planning as a conditional note within the drafting stage. Do not imply that ChatGPT, Codex, or GitHub Copilot is limited to only one capability; present their primary roles described above. In particular, show ChatGPT preparing the brief and Codex drafting from it. Do not imply that AI output or AI review guarantees factual correctness.
 
 ## Style
 
