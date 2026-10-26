@@ -29,7 +29,7 @@ An article moves through a sequence of connected decisions and deliverables. The
 
 The brief is the handoff between editorial planning and implementation. It captures decisions in a form I can reuse and revise, instead of relying on the context of an earlier conversation. Visual planning is part of developing the article: I choose a form that fits the explanation, create or prepare the asset, and integrate it with the page. Review then considers the prose and visuals together before the changes move through the repository's publication process.
 
-![Three stages from planning and brief-driven writing, through image generation or Mermaid diagrams, to repository integration and publication.](three-stages-from-draft-to-publication.webp "Three Stages from Draft to Publication")
+![Three panels show planning and writing through a brief, Markdown draft, and collaborative review; visual creation through a conceptual image or precise Mermaid diagram, both reviewed; and complete-page checks grouped before merging to main and publishing on GitHub Pages.](three-stages-from-draft-to-publication.webp "Three Stages from Draft to Publication")
 
 ## Planning and Brief-Driven Writing
 

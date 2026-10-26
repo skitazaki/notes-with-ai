@@ -8,7 +8,7 @@ description: Three-stage visual guide for the article sections on planning, visu
 
 ## Concept
 
-Create a publication-ready infographic that previews and clarifies the three consecutive sections following the article's main workflow overview. Show how a focused brief guides a draft, how the draft is reviewed and revised collaboratively with AI assistance until the article is ready, how a suitable visual is selected and prepared, and how the complete page is integrated and published.
+Create a publication-ready infographic that previews and clarifies the three consecutive sections following the article's main workflow overview. Show how planning produces a focused writing brief, how that brief guides a Markdown draft, and how a person and AI collaborate through review and revision to finish the article. Then show how suitable visual material is created and reviewed, and how the complete page is checked and integrated before it is merged to `main` and published on GitHub Pages.
 
 The central message is that writing, visual production, and repository integration are connected stages. In the visual-production stage, conceptual images and structurally precise Mermaid diagrams are alternative methods chosen according to what the reader needs to understand. Both methods converge on review and integration before publication.
 
@@ -27,7 +27,7 @@ Use this composition:
                          [Review visual]
 ```
 
-Panel 1 represents the section **“Planning and Brief-Driven Writing”**. Show four numbered steps in a vertical top-to-bottom flow, connected by downward arrows: define the audience, purpose, scope, and central message; prepare a reusable brief; use the brief to create a Markdown draft; collaborate with AI-assisted review and revision to finish the article. Make clear that the draft is an intermediate deliverable, not the finished article. Do not display AI product names in the image.
+Panel 1 represents the section **“Planning and Brief-Driven Writing”**. Show exactly four numbered steps in a vertical top-to-bottom flow, connected by downward arrows. The four steps are: clarify the audience, purpose, and topic; set the outline and prepare a reusable writing brief; create a Markdown draft from that brief; have a person and AI review and revise together until the article is finished. Make the last step visibly distinct from drafting so readers understand that the draft is an intermediate deliverable and collaborative review and revision produce the finished article. Do not display AI product names in the image.
 
 Render the four steps with these labels, in this order:
 
@@ -43,7 +43,22 @@ Panel 2 represents **“Image Generation and Diagrams”**. Show two alternative
 
 Bring both alternatives to one shared step labelled **“Review visual”**, then connect the panel to Panel 3.
 
-Panel 3 represents **“Review, Repository Integration, and Publication”**. Show the complete page being integrated and checked: documentation metadata and sidebar order; previous/next and related-page links; content and visual assets with useful alternative text; formatting and site-build review; merge to `main` and GitHub Pages publication. Place the pre-merge checks in one lightly shaded group without arrows between the items. Use only these arrows in Panel 3: the check group to `Merge to main`, then `Merge to main` to `GitHub Pages`. Make it clear that repository integration includes the page structure, metadata, and navigation as well as any images.
+Panel 3 represents **“Review, Repository Integration, and Publication”** and must clearly show three sequential stages: (1) a grouped review and integration checklist for the complete page, (2) `Merge to main`, and (3) publication on `GitHub Pages`. Put the pre-merge review and integration items together inside one lightly shaded group. Include documentation metadata and sidebar order; previous/next and related-page links; content and visual assets with useful alternative text; and formatting and site-build checks. Treat the checklist items as parallel review concerns, not as an ordered sequence: do not connect checklist items to one another with arrows. Below the group, show `Merge to main`, followed by `GitHub Pages`, with a clear downward arrow from the group to the merge and another from the merge to publication. Do not add any other arrows inside Panel 3. Make clear that repository integration covers the complete page structure, metadata, and navigation as well as any images. The three stages must read visually as review/integration → merge → publication.
+
+Use this Panel 3 arrangement:
+
+```text
+┌ Lightly shaded review and integration group ───────┐
+│ Metadata and docs navigation                      │
+│ Sidebar order and prev/next links                  │
+│ Links and accessible image text                    │
+│ Formatting and site-build checks                   │
+└──────────────────────────┬────────────────────────┘
+                           ↓
+                    [Merge to main]
+                           ↓
+                     [GitHub Pages]
+```
 
 ## Visual cues
 
@@ -72,7 +87,7 @@ Render these labels exactly, with capitalization and punctuation preserved:
 - `Merge to main`
 - `GitHub Pages`
 
-Show exactly two alternatives within Panel 2: a conceptual-image path and a precise-diagram path. Make both paths converge on `Review visual`, then continue to Panel 3. The main sequence must remain:
+Show exactly two alternatives within Panel 2: a conceptual-image path and a precise-diagram path. Make both paths converge on `Review visual`, then continue to Panel 3. Within Panel 3, group all pre-merge review and integration checks together, then show the distinct sequence `Merge to main` → `GitHub Pages`. The main sequence must remain:
 
 ```text
 Plan and write → Create visual aids → Integrate and publish
