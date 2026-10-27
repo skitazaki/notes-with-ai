@@ -7,6 +7,7 @@ prev: "/docs/acc/ai-emerging-systems"
 next: "/docs/acc/ai-emerging-systems"
 ---
 
+
 AI エージェントは、既存権限の上に載る単なる UI 機能ではなく、制約付きで動作する運用上のアイデンティティとして扱うべきです。
 
 ## 概要

@@ -6,6 +6,7 @@ prev: "/docs/swe/software-development"
 next: "/docs/swe/software-development/code-review-and-refactoring"
 ---
 
+
 バージョン管理はソフトウェア変更に識別子、履歴、共同作業の基準点を与えます。統合とは、変更の意図とリスクを理解できるうちに、それらを一貫したシステムへ組み合わせる営みです。
 
 ## 判断可能な変更単位

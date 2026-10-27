@@ -7,6 +7,7 @@ prev: "/docs/acc/identity-foundations"
 next: "/docs/acc/identity-foundations/sso-federation"
 ---
 
+
 人のアイデンティティは、説明責任、承認、法的義務が最終的には人に紐づくため、依然としてエンタープライズアクセス制御の基盤です。
 
 ## 概要

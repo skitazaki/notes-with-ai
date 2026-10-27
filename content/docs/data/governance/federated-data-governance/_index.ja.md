@@ -6,6 +6,7 @@ prev: "/docs/data/governance/compliance-and-auditability"
 next: "/docs/data/governance"
 ---
 
+
 フェデレーテッド・データガバナンス（Federated Data Governance）は、定義された意思決定権をドメインへ分配しながら、組織全体に必要なポリシー、相互運用性、証跡を維持する運用モデルです。無秩序な分散化ではありません。
 
 ![フェデレーテッド・データガバナンスにおける全社、共同、ドメインの意思決定権の概要](federated-data-governance.ja.webp "フェデレーテッド・データガバナンス")

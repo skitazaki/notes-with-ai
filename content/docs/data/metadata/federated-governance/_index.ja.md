@@ -6,6 +6,7 @@ prev: "/docs/data/metadata/semantic-layer"
 next: "/docs/data/metadata/maturity-model"
 ---
 
+
 フェデレーテッドガバナンスは、多くのドメインが独立して動きながらも、ポリシー整合性、説明責任、監査可能性を失わないための運用モデルです。
 
 このページは、連合型運営を実行可能にするメタデータ機構に焦点を当てます。運用モデル、意思決定権の分配、全社とドメインの境界は [フェデレーテッド・データガバナンス](/ja/docs/data/governance/federated-data-governance/) を参照してください。

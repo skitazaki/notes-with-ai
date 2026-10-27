@@ -5,6 +5,7 @@ prev: "/docs/data/privacy/privacy-harms"
 next: "/docs/data/privacy/de-identification"
 ---
 
+
 プライバシーのためのデータ分類は、人に関する情報の取り扱いに影響する性質を表します。抽象的な義務をメタデータへ変換し、アクセス、再利用、共有、保持の判断で利用できるようにします。
 
 ## 分類する観点

@@ -6,6 +6,7 @@ prev: "/docs/ai/deep-learning/convolutional-neural-networks"
 next: "/docs/ai/deep-learning/transformers"
 ---
 
+
 再帰型ニューラルネットワーク（RNN）は、系列を順に処理しながら隠れ状態を次のステップへ引き継ぎます。この状態が過去の入力を要約するため、各ステップの出力は系列の履歴に応じて変わります。
 
 ## 再帰状態

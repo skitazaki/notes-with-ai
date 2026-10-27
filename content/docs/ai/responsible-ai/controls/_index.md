@@ -6,6 +6,9 @@ prev: "/docs/ai/responsible-ai"
 next: "/docs/ai/responsible-ai"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Responsible AI Controls provides a conceptual framework for lifecycle controls for fairness, transparency, privacy, security, and safety. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
 
 ## Core Concern Areas

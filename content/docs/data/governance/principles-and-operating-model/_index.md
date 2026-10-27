@@ -6,6 +6,9 @@ prev: "/docs/data/governance"
 next: "/docs/data/governance/ownership-and-stewardship"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Data governance turns organizational intent into repeatable decisions about data. Its operating model defines scope, authority, forums, escalation paths, and the lifecycle through which rules are proposed, approved, applied, reviewed, and retired.
 
 ![Overview of peer governance foundations, decision forums, escalation, decision records, and centralized, federated, or hybrid operating-model choices](governance-principles-operating-model.webp "Governance Principles and Operating Model")

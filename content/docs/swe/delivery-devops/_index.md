@@ -6,6 +6,9 @@ prev: "/docs/swe"
 next: "/docs/swe/delivery-devops/continuous-delivery"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Delivery connects a source change to a controlled outcome in a running environment. DevOps connects the people, practices, and platform capabilities needed to make that path fast, repeatable, observable, and accountable.
 
 ![Delivery and DevOps: a traceable path carries a change through build, artifact creation, deployment, and release, while production feedback returns to the next change](delivery-devops-overview.webp "Delivery & DevOps")

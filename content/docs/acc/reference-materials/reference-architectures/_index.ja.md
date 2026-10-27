@@ -7,6 +7,7 @@ prev: "/docs/acc/reference-materials/decision-frameworks"
 next: "/docs/acc/reference-materials/concept-dictionary"
 ---
 
+
 参照アーキテクチャは万能の設計図ではありません。原則、制御、トレードオフが現実的な環境でどう組み合わさるかを示す、調整済みの例です。
 
 ## 概要

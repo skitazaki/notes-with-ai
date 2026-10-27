@@ -7,6 +7,7 @@ prev: "/docs/acc/reference-materials/patterns"
 next: "/docs/acc/reference-materials/reference-architectures"
 ---
 
+
 良いアクセス制御設計は、普遍的な正解よりも、明示的なトレードオフ管理に依存します。
 
 ## 概要

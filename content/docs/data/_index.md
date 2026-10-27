@@ -4,9 +4,12 @@ title: "Data"
 weight: 10
 ---
 
+
 Data is a structured or unstructured representation of real-world or system-generated phenomena, stored in a persistent form to enable processing, analysis, sharing, and control.
 This section organizes principles, architectures, practices, and operational models that enable scalable, reliable, and compliant data systems.
 It covers the full lifecycle of data — from acquisition and engineering to analytics, governance, security, and value realization, which is required to manage **data as a strategic asset**.
+
+In this site, a domain is a broad field with a stable vocabulary and a set of topic pages. A topic page is a more focused article on a concept, operating model, practice, or technology area within that field. The sections in this hub are organized by concern and layer; they are not all equally named domains.
 
 ![Conceptual overview of data as a strategic asset: source systems converge on data collection, ingestion begins inside the enablement layer and moves data through raw, transform, curate, and trusted states, while engineering, architecture, management, and metadata support the flow and control applies across all layers](data-hero.webp "Data as a Strategic Asset")
 

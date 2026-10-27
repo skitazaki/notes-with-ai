@@ -6,6 +6,7 @@ prev: "/docs/acc/governance-compliance"
 next: "/docs/acc/reference-materials/patterns"
 ---
 
+
 参照資料は、このライブラリの概念を、設計、評価、コミュニケーション、アーキテクチャレビューで再利用できる支援資料へ落とし込みます。
 
 ## 参照資料のトピック

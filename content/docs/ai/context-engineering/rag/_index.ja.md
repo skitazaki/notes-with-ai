@@ -6,6 +6,7 @@ prev: "/docs/ai/context-engineering/vector-search"
 next: "/docs/ai/context-engineering/tools-and-mcp"
 ---
 
+
 検索拡張生成（RAG: Retrieval-Augmented Generation）は、外部の根拠を実行時に取得し、モデル対話のコンテキストとして構成するパターンです。モデルのパラメータだけでは確実に得られない、最新の情報、領域固有の情報、組織固有の情報に基づく回答を支えます。
 
 RAG はベクトル検索の同義語ではありません。その品質は、情報源から回答までの経路全体、すなわちコーパス、メタデータ、アクセスルール、検索、ランキング、コンテキスト構成、モデルの振る舞い、評価に依存します。

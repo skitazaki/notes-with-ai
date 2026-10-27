@@ -6,6 +6,9 @@ weight: 4
 prev: "/docs/ai/ai-infrastructure/ai-gateway/security-and-governance"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 AI systems need ordinary service telemetry plus evidence about model usage, tool activity, agent delegation, and cost. A gateway sees many of these interactions at a common boundary, making it a useful observation point. Its view remains partial: application outcomes, model quality, and business value must be joined from the systems that own them.
 
 ## From Request Traces to Agentic Traces

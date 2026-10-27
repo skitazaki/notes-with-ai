@@ -5,6 +5,7 @@ prev: "/docs/data/privacy/personal-data-and-pii"
 next: "/docs/data/privacy/data-classification"
 ---
 
+
 プライバシーリスクとは、データ処理が個人、集団、社会に不利益をもたらす可能性です。情報漏えいだけが原因ではありません。認可された収集、分析、開示でも、過度な監視、不公平、望ましくない干渉につながることがあります。
 
 ## どこで侵害が生じるか

@@ -6,6 +6,7 @@ prev: "/docs/data/governance/principles-and-operating-model"
 next: "/docs/data/governance/policies-standards-and-controls"
 ---
 
+
 データオーナーシップ（Data Ownership）は、判断と成果に対する説明責任を割り当てます。スチュワードシップ（Stewardship）は、日々の実務でガバナンスを継続的に機能させます。どちらも、テーブルを保存するチームやパイプラインを運用するチームを指すだけではありません。
 
 ![データオーナーとデータスチュワードが判断とエスカレーションを双方向に受け渡し、ドメイン、データセット、データプロダクトに共に関与する補完関係](data-ownership-stewardship.ja.webp "データオーナーシップとスチュワードシップ")

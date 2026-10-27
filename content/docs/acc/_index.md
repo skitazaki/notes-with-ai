@@ -5,11 +5,14 @@ weight: 5
 next: "/docs/acc/vision"
 ---
 
+
 Access control is the architectural discipline that decides who or what may do what, under which conditions, and with what degree of assurance.
 In modern systems, that question spans employees, customers, workloads, APIs, third-party services, and AI agents operating across cloud and on-premises boundaries.
 
+In this library, a domain is a broad field with a stable conceptual vocabulary and a set of focused topic pages. A topic page is a more focused explanation of a specific model, capability, concern, or operating pattern inside that field. The collections here—orientation material, capability areas, cross-cutting practices, and reference material—are reading modes, not additional domains.
+
 This section is organized as a security architecture library rather than a single long report.
-Orientation material establishes the shared model, core domains cover the main access-control capabilities, cross-cutting practices address operation and oversight, and reference materials support design decisions. Each collection leads to focused topic pages so readers can move from principles to implementation without mixing different kinds of guidance.
+Orientation material establishes the shared model, capability areas cover the main access-control functions, cross-cutting practices address operation and oversight, and reference materials support design decisions. Each collection leads to focused topic pages so readers can move from principles to implementation without mixing different kinds of guidance.
 
 ![Access control map showing human, workload, and AI agent principals passing through identity and context, a central policy decision, and enforcement before reaching protected resources, with governance and lifecycle plus monitoring and audit spanning the system](access-control-map.webp "Access Control")
 

@@ -6,6 +6,7 @@ prev: "/docs/data/collection/collection-methods"
 next: "/docs/data/collection/external-and-third-party-data"
 ---
 
+
 収集設計は、データセットが現実のどの範囲を表現できるかを定義します。実装に先立って、母集団、観測単位、範囲、粒度、タイミング、選択方法を定めます。この判断は、分析用データだけでなく、処理の開始、資源配分、状態管理に使う運用データにも影響します。
 
 ## 観測対象を定義する

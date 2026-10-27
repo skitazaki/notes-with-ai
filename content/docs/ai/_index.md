@@ -4,8 +4,11 @@ title: "Artificial Intelligence"
 weight: 20
 ---
 
+
 Artificial Intelligence is the broad discipline of building systems that perform tasks requiring perception, prediction, generation, decision-making, or adaptation.
 In practice, AI is not one thing. It is a collection of related fields that span statistical learning, neural architectures, software systems, data pipelines, infrastructure, governance, and domain applications.
+
+In this documentation, a domain is a broad field with its own vocabulary, major concepts, and topic pages. A topic page is a more focused article on a model family, practice, pattern, or operational concern inside that field. The sections in this hub are organized by reader question and conceptual cluster, not by treating every collection as a separate domain.
 
 That breadth is why this section should be treated as a documentation hub rather than a single long article.
 The main task is not memorizing every model family or tool category.

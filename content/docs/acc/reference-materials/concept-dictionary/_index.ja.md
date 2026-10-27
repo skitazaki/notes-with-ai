@@ -7,6 +7,7 @@ prev: "/docs/acc/reference-materials/reference-architectures"
 next: "/docs/acc/reference-materials"
 ---
 
+
 アクセス制御アーキテクチャでは、言葉の小さな違いが信頼前提の大きな違いを隠すため、共通語彙が不可欠です。
 
 ## 概要
@@ -65,7 +66,7 @@ next: "/docs/acc/reference-materials"
 
 ### ワークロードアイデンティティ（Workload Identity）
 
-実行中のサービス、ジョブ、コンテナ、関数、VM、Pod のようなワークロードに対する、機械的に検証可能な動的アイデンティティ。マシン ID の一部だが、それより狭い概念。
+実行中のサービス、ジョブ、コンテナ、関数、VM、Pod のようなワークロードに対する、機械的に検証可能な動的アイデンティティ。マシン ID の一部だが、それより焦点を絞った概念。
 
 ### エージェント（Agent）
 

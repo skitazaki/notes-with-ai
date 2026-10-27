@@ -7,6 +7,7 @@ prev: "/docs/acc/reference-materials"
 next: "/docs/acc/reference-materials/decision-frameworks"
 ---
 
+
 アーキテクチャパターンは、繰り返し現れる適用と信頼分配の問題に対する再利用可能な答えです。
 
 ## 概要

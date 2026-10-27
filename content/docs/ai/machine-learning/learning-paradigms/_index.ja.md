@@ -6,6 +6,7 @@ prev: "/docs/ai/machine-learning"
 next: "/docs/ai/machine-learning/supervised-learning"
 ---
 
+
 機械学習の学習パラダイムは、教師あり学習、教師なし学習、自己教師あり学習、強化学習を整理するための概念的な枠組みです。ここでは、個別の製品や実装手順ではなく、設計や判断に長く利用できる考え方に焦点を当てます。
 
 ## 主な学習パラダイム

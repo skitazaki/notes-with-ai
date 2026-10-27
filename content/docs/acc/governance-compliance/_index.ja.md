@@ -6,6 +6,7 @@ prev: "/docs/acc/security-operations"
 next: "/docs/acc/governance-compliance/governance"
 ---
 
+
 ガバナンスとコンプライアンスは、アクセス判断のライフサイクル全体を通じて、説明責任、レビュー可能性、ポリシーや外部要件への適合を確立します。
 
 ## ガバナンスとコンプライアンスのトピック

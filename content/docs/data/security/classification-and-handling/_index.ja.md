@@ -6,6 +6,7 @@ prev: "/docs/data/security"
 next: "/docs/data/security/data-protection-techniques"
 ---
 
+
 データ分類は、機密性と事業上の重要度を、保護、アクセス、共有、監視、保持、廃棄で利用できる取り扱い要件へ変換します。システム動作や運用判断を変えないラベルは保護に寄与しません。
 
 ## 分類の軸

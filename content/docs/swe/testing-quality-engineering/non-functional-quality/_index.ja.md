@@ -6,6 +6,7 @@ prev: "/docs/swe/testing-quality-engineering/test-levels"
 next: "/docs/swe/testing-quality-engineering"
 ---
 
+
 ソフトウェアは正しい答えを返しても利用に適さない場合があります。性能、セキュリティ、アクセシビリティ、レジリエンス、使いやすさ、運用性は、現実の条件下で振る舞いが許容できるかを左右します。
 
 ## 品質をテスト可能にする

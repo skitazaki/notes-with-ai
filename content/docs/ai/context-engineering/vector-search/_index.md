@@ -6,6 +6,9 @@ prev: "/docs/ai/context-engineering/memory"
 next: "/docs/ai/context-engineering/rag"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Vector search is a retrieval technique that finds vectors near a query vector according to a defined similarity or distance measure. In context-engineering systems, it is one mechanism for selecting information that may be relevant to the current task.
 
 Vector search is not synonymous with semantic search, RAG, or a vector database. Keeping those boundaries clear makes retrieval systems easier to design and evaluate.

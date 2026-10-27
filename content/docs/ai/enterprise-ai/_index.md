@@ -6,6 +6,9 @@ prev: "/docs/ai/responsible-ai"
 next: "/docs/ai/enterprise-ai/operating-model"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Enterprise AI is what happens when isolated AI capability has to operate inside the realities of a large organization. Prototypes are no longer enough. Systems must integrate with existing platforms, identity models, governance controls, procurement constraints, risk policies, and cost management practices.
 
 This makes enterprise AI a distinct topic from model innovation alone. The challenge is not only what the model can do. It is how the organization can adopt that capability repeatedly, safely, and economically across many teams and domains.

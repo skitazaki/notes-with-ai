@@ -7,11 +7,14 @@ prev: "/docs/acc/identity-foundations/scim-provisioning"
 next: "/docs/acc/identity-foundations"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Identity for non-human actors is now one of the fastest-growing parts of access-control architecture because modern systems contain far more services, workloads, pipelines, devices, and agents than human operators.
 
 ## Executive Summary
 
-This domain needs three related but distinct terms. Non-human identity is the umbrella concept for managing every identity that does not belong to a person. Machine identity refers more broadly to the credentials and identifiers used by machines, services, devices, jobs, bots, and automation. Workload identity is the narrower concept of a dynamic identity bound to a running workload such as a pod, container, VM, function, job, or service instance.
+This domain needs three related but distinct terms. Non-human identity is the umbrella concept for managing every identity that does not belong to a person. Machine identity refers more broadly to the credentials and identifiers used by machines, services, devices, jobs, bots, and automation. Workload identity is the more focused concept of a dynamic identity bound to a running workload such as a pod, container, VM, function, job, or service instance.
 
 Traditional designs relied heavily on static secrets and long-lived service accounts. Modern designs favor attestation, short-lived credentials, certificate-based identity, and tightly scoped service-to-service authorization. This domain spans Kubernetes, serverless platforms, CI/CD pipelines, APIs, service meshes, robotic automation, and IoT fleets. The security challenge is not only authenticating workloads. It is giving running workloads the minimum dynamic identity and capability required for their runtime role while governing the broader non-human identity estate.
 

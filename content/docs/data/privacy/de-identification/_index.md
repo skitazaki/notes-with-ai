@@ -5,6 +5,9 @@ prev: "/docs/data/privacy/data-classification"
 next: "/docs/data/privacy/privacy-engineering"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 De-identification reduces the likelihood that data can be connected to a person. It can enable lower-risk analytics, testing, research, and sharing, but it is not a binary property or a permanent guarantee. Risk depends on the released data, recipients, external information, and permitted uses.
 
 ## Techniques and Trade-offs

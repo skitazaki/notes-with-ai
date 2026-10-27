@@ -6,6 +6,9 @@ prev: "/docs/quantum-computing"
 next: "/docs/quantum-computing/computing-models"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Quantum computing is a model of computation in which information is represented and transformed according to quantum mechanics. It does not make every calculation faster. Its value comes from arranging a computation so that superposition, entanglement, and interference change how the relevant solution space is explored.
 
 This page introduces the minimum conceptual model needed to reason about quantum systems without treating them as mysterious or as faster versions of classical computers.

@@ -6,6 +6,7 @@ prev: "/docs/ai/deep-learning/state-space-models"
 next: "/docs/ai/deep-learning/diffusion-models"
 ---
 
+
 グラフニューラルネットワーク（GNN）は、実体と関係で表されるデータを扱うニューラルモデルです。グラフは、ソーシャルネットワーク、分子、知識、インフラストラクチャ、アイテム間の相互作用などを表せます。GNN はノードの特徴とグラフ構造の両方を使って、表現や予測を生成します。
 
 ## メッセージパッシング

@@ -6,6 +6,7 @@ prev: "/docs/data/engineering/processing"
 next: "/docs/data/engineering/observability"
 ---
 
+
 データオーケストレーション（Data Orchestration）は、データワークロードを必要な順序で実行し、状態を可視化し、成功・失敗への対応を制御します。取り込み、処理、検証、公開、運用アクションをワークフローとして接続しますが、すべての処理を自身で実行するものではありません。
 
 ## ワークフローと DAG

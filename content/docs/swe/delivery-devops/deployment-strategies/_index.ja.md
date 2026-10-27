@@ -6,6 +6,7 @@ prev: "/docs/swe/delivery-devops/continuous-delivery"
 next: "/docs/swe/delivery-devops/internal-developer-portal"
 ---
 
+
 デプロイはソフトウェアのバージョンを環境へ配置し、リリースはその振る舞いを利用者やワークロードへ公開します。二つを別の判断として扱うと、リスクを制御しやすくなります。
 
 ## 置換と公開範囲

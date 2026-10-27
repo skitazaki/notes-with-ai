@@ -6,6 +6,7 @@ prev: "/docs/data/metadata/data-mesh"
 next: "/docs/data/metadata/semantic-layer"
 ---
 
+
 データ中心の組織において、データプロダクトは単なるデータセットではありません。明確なインターフェース、オーナーシップ、信頼性期待値、ライフサイクルを持つ消費可能な資産です。
 
 ## 概要

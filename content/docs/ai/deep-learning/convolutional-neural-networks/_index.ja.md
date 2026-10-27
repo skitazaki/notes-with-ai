@@ -6,6 +6,7 @@ prev: "/docs/ai/deep-learning/neural-architectures"
 next: "/docs/ai/deep-learning/recurrent-neural-networks"
 ---
 
+
 畳み込みニューラルネットワーク（CNN）は、データの局所構造を活用するニューラルアーキテクチャです。特にコンピュータビジョンで大きな役割を果たしてきました。画像では、近接する画素同士の関係が離れた画素同士より強く、同じ視覚パターンが画像内の異なる位置に現れるためです。
 
 ## 畳み込みと重み共有

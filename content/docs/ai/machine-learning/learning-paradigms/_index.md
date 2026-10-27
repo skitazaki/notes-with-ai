@@ -6,6 +6,9 @@ prev: "/docs/ai/machine-learning"
 next: "/docs/ai/machine-learning/supervised-learning"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Machine Learning Paradigms provides a conceptual framework for supervised, unsupervised, self-supervised, and reinforcement learning. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
 
 ## Main Learning Paradigms

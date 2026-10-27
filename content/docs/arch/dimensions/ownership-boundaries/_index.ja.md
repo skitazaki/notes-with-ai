@@ -6,6 +6,7 @@ prev: "/docs/arch/dimensions/pillars"
 next: "/docs/arch/dimensions/views-and-viewpoints"
 ---
 
+
 ソフトウェアアーキテクチャは、技術的な構造だけでなく、その構造を誰が安全に変更し、誰が運用できるかによっても形づくられます。
 責任境界が重要なのは、結合が純粋に技術的なものではないからです。
 そこには運用、組織、契約も関わっています。

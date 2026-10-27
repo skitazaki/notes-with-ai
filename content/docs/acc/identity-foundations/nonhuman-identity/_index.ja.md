@@ -7,6 +7,7 @@ prev: "/docs/acc/identity-foundations/scim-provisioning"
 next: "/docs/acc/identity-foundations"
 ---
 
+
 人間以外の主体に対するアイデンティティ管理は、アクセス制御アーキテクチャの中でも急速に重要性を増している領域です。現代のシステムには、人間の運用者よりもはるかに多くのサービス、ワークロード、パイプライン、デバイス、エージェントが存在します。
 
 ## 概要

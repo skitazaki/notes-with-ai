@@ -6,6 +6,7 @@ prev: "/docs/swe/ai-as-software-engineering-tool/coding-agents"
 next: "/docs/swe/ai-as-software-engineering-tool/evaluation-and-security"
 ---
 
+
 ハーネスエンジニアリングは、AI エージェントが作業する環境を設計します。ハーネスは指示、コンテキスト、ツール、権限、実行分離、フィードバック、状態、人の確認点を、信頼できるワークフローへまとめます。
 
 ## 作業環境を形作る

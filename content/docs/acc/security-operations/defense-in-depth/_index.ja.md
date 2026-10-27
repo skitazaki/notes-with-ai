@@ -7,6 +7,7 @@ prev: "/docs/acc/security-operations"
 next: "/docs/acc/security-operations/threat-models"
 ---
 
+
 アクセス制御は、アイデンティティと認可を取り巻く追加制御によって、誤設定・誤用・侵害の影響を抑えられるときに最も強くなります。
 
 ## 概要

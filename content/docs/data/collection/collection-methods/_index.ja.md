@@ -6,6 +6,7 @@ prev: "/docs/data/collection/data-sources"
 next: "/docs/data/collection/collection-design-and-sampling"
 ---
 
+
 収集方法とは、事象、活動、主張、測定結果がデータになる方法です。収集方法によって、観測できる対象、見落とす対象、結果の精度、観測による人やシステムの行動変化が決まります。
 
 ## 主な方法

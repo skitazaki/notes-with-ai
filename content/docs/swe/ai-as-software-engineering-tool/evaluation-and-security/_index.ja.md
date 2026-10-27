@@ -6,6 +6,7 @@ prev: "/docs/swe/ai-as-software-engineering-tool/harness-engineering"
 next: "/docs/swe/ai-as-software-engineering-tool"
 ---
 
+
 AI が生成したエンジニアリング成果は、説得力のある文章ではなくシステムへの変更として評価します。セキュリティは、どの入力がエージェントへ影響でき、どの作用を許可するかを決めます。
 
 ## ワークフロー全体を評価する

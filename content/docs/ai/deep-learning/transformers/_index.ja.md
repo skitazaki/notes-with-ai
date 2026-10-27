@@ -6,6 +6,7 @@ prev: "/docs/ai/deep-learning/recurrent-neural-networks"
 next: "/docs/ai/deep-learning/autoencoders"
 ---
 
+
 Transformer は、アテンションを使って系列内の要素同士を関連付けるニューラルアーキテクチャです。同じ構造でさまざまな種類のトークンやパッチ間の関係を表現できるため、言語、コード、画像、音声、マルチモーダルモデルの汎用的な基盤になりました。
 
 ## アテンションと文脈

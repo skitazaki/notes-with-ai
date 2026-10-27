@@ -6,6 +6,9 @@ prev: "/docs/data/security"
 next: "/docs/data/security/data-protection-techniques"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Data classification translates sensitivity and business criticality into handling requirements that protection, access, sharing, monitoring, retention, and disposal controls can use. A catalog label that does not change system behavior or operating decisions provides little protection.
 
 ## Classification Dimensions

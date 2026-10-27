@@ -6,6 +6,9 @@ prev: "/docs/ai/ai-infrastructure"
 next: "/docs/ai/ai-infrastructure"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 An application that calls one model through one provider can keep routing, credentials, retries, and usage records in application code. That approach becomes fragile when the same organization uses several models, agents, tools, [Model Context Protocol (MCP)](../../context-engineering/tools-and-mcp/) servers, internal APIs, and external services. Each direct integration otherwise recreates security, policy, observability, and cost controls at a different point.
 
 An AI gateway creates a shared infrastructure boundary for this traffic. It can connect applications and agents to models and capabilities while applying routing, governance, and telemetry consistently. As AI systems become agentic, this boundary is expanding beyond model inference: it increasingly mediates agent-to-model, agent-to-tool, and [agent-to-agent](../../ai-engineering/agent-to-agent/) communication.

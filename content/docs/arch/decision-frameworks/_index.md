@@ -6,6 +6,9 @@ prev: "/docs/arch"
 next: "/docs/arch/principles"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Architecture terminology is useful only when it improves judgment. Teams make weak decisions when they argue about whether something is a layer, a plane, or a service before they have clarified the concern, the constraints, and the tradeoffs involved.
 
 ## Definition

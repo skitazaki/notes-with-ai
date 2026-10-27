@@ -6,6 +6,9 @@ prev: "/docs/data/collection/collection-methods"
 next: "/docs/data/collection/external-and-third-party-data"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Collection design defines which parts of reality a dataset can represent. Before implementation, it establishes the population, observation unit, scope, granularity, timing, and selection method. These choices matter for analytical datasets and for operational data used to trigger actions, allocate resources, or maintain state.
 
 ## Define the Observation

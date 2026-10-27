@@ -6,6 +6,7 @@ prev: "/docs/acc/authorization-systems"
 next: "/docs/acc/ai-emerging-systems/ai-agents"
 ---
 
+
 AI と新興システムは、権限委譲、自律実行、ツール利用、新たな信頼境界をもたらします。このハブでは、変化する運用モデルに対して、長期的に有効なアクセス制御の原則を適用します。
 
 ## AI と新興システムのトピック

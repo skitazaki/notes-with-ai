@@ -6,6 +6,7 @@ prev: "/docs/data/metadata"
 next: "/docs/data/metadata/data-mesh"
 ---
 
+
 アクティブメタデータは、メタデータが受動的な説明情報にとどまらず、システム挙動に直接関与し始める段階を指します。
 
 ## 概要

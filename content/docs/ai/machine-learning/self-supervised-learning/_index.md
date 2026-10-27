@@ -6,6 +6,9 @@ prev: "/docs/ai/machine-learning/unsupervised-learning"
 next: "/docs/ai/machine-learning/reinforcement-learning"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Self-supervised learning trains a model using targets generated from the input data itself. It turns an unlabeled collection into prediction tasks, allowing a model to learn patterns and representations without manually annotating every example. The resulting model is usually a starting point for later use, rather than proof that a downstream task has been solved.
 
 ## How the learning signal is created

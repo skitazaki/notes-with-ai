@@ -6,6 +6,9 @@ prev: "/docs/quantum-computing/computing-models"
 next: "/docs/quantum-computing/error-correction"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 A quantum algorithm is valuable only when it improves a meaningful end-to-end computation. The presence of qubits, superposition, or a mathematically faster subroutine does not by itself establish practical advantage. The input, output, accuracy target, hardware requirements, and best known classical alternative all matter.
 
 This page provides a durable way to classify quantum algorithms and evaluate claims about quantum advantage.

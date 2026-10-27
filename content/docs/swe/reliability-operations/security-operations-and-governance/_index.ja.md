@@ -6,6 +6,7 @@ prev: "/docs/swe/reliability-operations/incident-management-and-resilience"
 next: "/docs/swe/reliability-operations/twelve-factor-app"
 ---
 
+
 信頼性と運用におけるセキュリティは、独立した管理塔ではありません。リーダーシップの意図、検知能力、対応実行が継続的に相互作用する運用ループとして設計する必要があります。
 
 多くの組織では、CISO 機能、SOC、CSIRT、SIEM 基盤が主要な構成要素です。これらは別々の組織単位ではなく、接続された役割として扱います。

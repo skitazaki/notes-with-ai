@@ -7,6 +7,9 @@ prev: "/docs/swe"
 next: "/docs/swe/ai-as-software-engineering-tool/coding-agents"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 AI can support software-engineering work by helping people understand repositories, draft and transform code, create tests, review changes, investigate failures, and automate bounded workflows. Its value comes from improving feedback and reducing mechanical effort—not from removing engineering judgment or accountability.
 
 ![AI as a Software-Engineering Tool: human intent enters a bounded agent workspace with context, tools, and a sandbox before tests and review produce a validated change under human accountability](ai-as-tool-overview.webp "AI as a Software-Engineering Tool")

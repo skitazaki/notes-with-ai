@@ -6,6 +6,7 @@ prev: "/docs/ai/deep-learning/mixture-of-experts"
 next: "/docs/ai/deep-learning/graph-neural-networks"
 ---
 
+
 状態空間モデル（SSM）は、新たな入力に応じて変化する隠れ状態を通じて系列を表します。深層学習における構造化状態空間モデルは、長い入力でも計算を管理しやすくしながら、長距離の系列関係を捉えることを目指します。
 
 ## 状態と系列処理

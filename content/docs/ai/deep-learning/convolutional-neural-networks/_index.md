@@ -6,6 +6,9 @@ prev: "/docs/ai/deep-learning/neural-architectures"
 next: "/docs/ai/deep-learning/recurrent-neural-networks"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Convolutional neural networks (CNNs) are neural architectures designed to use local structure in data. They became especially influential in computer vision, where nearby pixels are more closely related than distant ones and the same visual pattern can appear in different parts of an image.
 
 ## Convolution and Shared Weights

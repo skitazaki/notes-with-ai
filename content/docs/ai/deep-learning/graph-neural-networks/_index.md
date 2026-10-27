@@ -6,6 +6,9 @@ prev: "/docs/ai/deep-learning/state-space-models"
 next: "/docs/ai/deep-learning/diffusion-models"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Graph neural networks (GNNs) are neural models for data represented as entities and relationships. A graph can describe social connections, molecules, knowledge, infrastructure, or interactions among items. GNNs use both node features and graph structure to produce representations or predictions.
 
 ## Message Passing

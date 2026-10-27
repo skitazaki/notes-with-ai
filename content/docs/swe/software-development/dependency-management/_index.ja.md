@@ -6,6 +6,7 @@ prev: "/docs/swe/software-development/code-review-and-refactoring"
 next: "/docs/swe/software-development"
 ---
 
+
 依存関係により、チームは自ら構築する必要のない機能を再利用できます。同時に、可用性、互換性、セキュリティ、ライセンス、進化がシステムへ影響する外部境界も生まれます。
 
 ## 依存対象を把握する

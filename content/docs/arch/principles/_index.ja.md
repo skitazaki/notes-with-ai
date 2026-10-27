@@ -6,6 +6,7 @@ prev: "/docs/arch/decision-frameworks"
 next: "/docs/arch/constraints"
 ---
 
+
 アーキテクチャ原則は、組織の優先事項を、設計判断に使える持続的な指針へ変換します。
 チームが特定の技術や実装へ固執する前に、望ましい方向を明示します。
 

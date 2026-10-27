@@ -6,6 +6,7 @@ prev: "/docs/swe/software-development/version-control-and-integration"
 next: "/docs/swe/software-development/dependency-management"
 ---
 
+
 コードレビューとリファクタリングは、変更を理解可能に保つための相互補完的なプラクティスです。レビューは提案された変更を共有知識に照らして検討し、リファクタリングは内部構造を改善して将来の変更コストを抑えます。
 
 ## 意図とリスクをレビューする

@@ -6,6 +6,9 @@ prev: "/docs/ai/deep-learning/convolutional-neural-networks"
 next: "/docs/ai/deep-learning/transformers"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Recurrent neural networks (RNNs) process a sequence one step at a time while carrying a hidden state forward. The state provides a compact summary of earlier inputs, allowing the model's output at each step to depend on sequence history.
 
 ## Recurrent State

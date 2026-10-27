@@ -6,6 +6,9 @@ prev: "/docs/ai/context-engineering/rag"
 next: "/docs/ai/context-engineering/agents-md"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Tools connect a model-driven application to external information and actions. They can search a knowledge base, read a business record, execute a calculation, create a ticket, or request approval. This makes them powerful context sources and potential side-effect boundaries at the same time.
 
 The Model Context Protocol (MCP) provides a standard protocol for connecting AI clients to external servers that expose contextual capabilities. It improves interoperability, but it does not remove the need for application-level authorization, validation, and operational controls.

@@ -6,6 +6,9 @@ prev: "/docs/data/management/data-quality-dimensions"
 next: "/docs/data/management/reference-data"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Master Data Management (MDM) is the discipline of maintaining authoritative, consistent representations of core business entities across systems. It exists because enterprises do not run on one application. Customers, products, suppliers, employees, and business locations such as stores, warehouses, offices, and sites are usually created and updated in multiple operational systems, each with its own identifiers, validation rules, timing, and data quality problems. MDM provides a way to reconcile that fragmentation without pretending that the enterprise is actually one database.
 
 ## Executive Summary

@@ -6,6 +6,9 @@ prev: "/docs/arch/dimensions/flows-and-pipelines"
 next: "/docs/arch/dimensions/ownership-boundaries"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Pillars exist because architecture is not only about structure and runtime behavior. It is also about judgment. Teams need a way to express what matters most so they can evaluate design options consistently instead of arguing from intuition alone.
 
 ## Definition

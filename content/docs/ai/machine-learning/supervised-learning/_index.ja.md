@@ -6,6 +6,7 @@ prev: "/docs/ai/machine-learning/learning-paradigms"
 next: "/docs/ai/machine-learning/unsupervised-learning"
 ---
 
+
 教師あり学習は、入力と正解の目的変数を対にした例からモデルを学習させる方法です。モデルは入力から目的変数への対応を学び、新しい入力に適用します。目的変数はタスクに応じて、カテゴリ、数値、順位、構造化された出力などになります。
 
 ## 分類と回帰

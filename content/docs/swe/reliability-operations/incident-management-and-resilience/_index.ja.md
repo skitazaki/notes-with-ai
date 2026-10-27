@@ -6,6 +6,7 @@ prev: "/docs/swe/reliability-operations/observability-and-slos"
 next: "/docs/swe/reliability-operations/security-operations-and-governance"
 ---
 
+
 レジリエンスとは、構成要素、依存先、人、前提が失敗したときに、継続、意図的な縮退、復旧ができる能力です。インシデント管理は障害の発生中に行動を調整し、インシデントからの学習はその後のシステムを変えます。
 
 ## 障害の影響を限定する設計

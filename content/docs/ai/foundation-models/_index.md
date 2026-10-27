@@ -6,6 +6,9 @@ prev: "/docs/ai/deep-learning"
 next: "/docs/ai/foundation-models/embeddings"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Foundation models changed the shape of AI system design by separating broad reusable capability from narrow application logic. Instead of training a distinct model for every downstream task, organizations can start from a large pretrained base and adapt it through prompting, retrieval, tuning, or workflow composition.
 
 That shift affects more than model selection. It changes how teams think about platforms, interfaces, evaluation, security, cost, and governance. Once a model becomes a reusable capability layer, the surrounding system takes on a larger share of the responsibility for control and fit.

@@ -6,6 +6,9 @@ prev: "/docs/data/governance/data-classification"
 next: "/docs/data/governance/federated-data-governance"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Governance becomes demonstrable when applicable requirements are mapped to control objectives, controls operate as intended, and reliable evidence makes the result auditable.
 
 ![Compliance mapping applicable requirements to controls, controls producing evidence through operation, and auditability using that evidence for assurance and improvement](compliance-controls-auditability.webp "Compliance, Controls, and Auditability")

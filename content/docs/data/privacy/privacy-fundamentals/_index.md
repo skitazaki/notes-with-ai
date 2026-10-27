@@ -5,6 +5,9 @@ prev: "/docs/data/privacy"
 next: "/docs/data/privacy/personal-data-and-pii"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Privacy is the discipline of governing how information about people is collected, inferred, used, shared, retained, and deleted. It is broader than secrecy: data may remain confidential and still be used for an unexpected or unjustified purpose. Security protects information; privacy determines whether and how processing should occur.
 
 ## A Practical Decision Model

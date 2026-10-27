@@ -6,6 +6,7 @@ prev: "/docs/swe"
 next: "/docs/swe/reliability-operations/observability-and-slos"
 ---
 
+
 信頼性と運用は、ソフトウェア設計を、現実の環境でシステムが遭遇する条件へ結び付けます。振る舞いを可視化し、許容できるサービスを定義し、障害に備え、本番環境から得られる情報をより良いエンジニアリング判断へつなげます。
 
 ![信頼性と運用：目標設定、観測、対応と復旧、学習と改善を繰り返す運用ループが、信頼できるサービスを支える](reliability-operations-overview.ja.webp "信頼性と運用")

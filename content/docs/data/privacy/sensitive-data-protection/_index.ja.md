@@ -5,6 +5,7 @@ prev: "/docs/data/privacy/privacy-engineering"
 next: "/docs/data/privacy/privacy-governance"
 ---
 
+
 機微データとは、悪用、漏えい、改ざん、損失によって重大な被害を生じ得る情報です。健康、生体、金融、認証、通信、正確な位置、子どもに関するデータなどが代表例ですが、機微性は文脈、組み合わせ、対象集団、利用方法によって変わります。
 
 ## リスクに保護を合わせる

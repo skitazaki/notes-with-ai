@@ -7,6 +7,7 @@ prev: "/docs/acc/identity-foundations/human-identity"
 next: "/docs/acc/identity-foundations/scim-provisioning"
 ---
 
+
 シングルサインオンとフェデレーションは、利用者が一度だけ身元を証明し、そのアイデンティティを複数のアプリケーションや信頼ドメインで使えるようにする仕組みです。各システムごとにパスワードやアカウントモデルを別個に持つ必要がなくなります。
 
 ## 概要

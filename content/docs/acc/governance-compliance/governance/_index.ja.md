@@ -7,6 +7,7 @@ prev: "/docs/acc/governance-compliance"
 next: "/docs/acc/governance-compliance"
 ---
 
+
 アクセス制御が組織規模で信頼できるものになるのは、権限、ポリシー、例外が時間を通じて統制可能で、説明可能で、レビュー可能である場合だけです。
 
 ## 概要

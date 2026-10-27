@@ -5,6 +5,9 @@ prev: "/docs/data/privacy/privacy-fundamentals"
 next: "/docs/data/privacy/privacy-harms"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Personal data is information that relates to an identified or identifiable person. Personally identifiable information (PII) is a common, but context-dependent, label for information that can distinguish or trace an identity. The terms overlap, yet legal and organizational definitions vary; teams should record the definition and obligations they actually apply.
 
 ## Identifiability Is Contextual

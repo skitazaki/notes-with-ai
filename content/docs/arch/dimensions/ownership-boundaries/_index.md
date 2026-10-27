@@ -6,6 +6,9 @@ prev: "/docs/arch/dimensions/pillars"
 next: "/docs/arch/dimensions/views-and-viewpoints"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Software architecture is shaped not only by technical structure, but by who can safely change and operate that structure. Ownership boundaries matter because coupling is never purely technical. It is also operational, organizational, and contractual.
 
 ## Definition

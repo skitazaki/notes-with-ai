@@ -6,6 +6,9 @@ prev: "/docs/acc/ai-emerging-systems"
 next: "/docs/acc/security-operations/defense-in-depth"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Security operations surround identity and authorization with preventive, detective, and responsive controls. This hub connects layered enforcement with explicit threat analysis and operational response.
 
 ## Explore Security Operations

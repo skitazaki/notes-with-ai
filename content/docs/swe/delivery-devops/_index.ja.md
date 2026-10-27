@@ -6,6 +6,7 @@ prev: "/docs/swe"
 next: "/docs/swe/delivery-devops/continuous-delivery"
 ---
 
+
 デリバリーはソースコードの変更を、稼働環境における制御された結果へつなげます。DevOps は、その経路を高速で再現可能、観測可能、説明可能にするための人、プラクティス、プラットフォーム機能を結び付けます。
 
 ![デリバリーと DevOps：変更がビルド、アーティファクト作成、デプロイ、リリースを通り、本番フィードバックが次の変更へ戻る](delivery-devops-overview.ja.webp "デリバリーと DevOps")

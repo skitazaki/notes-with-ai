@@ -6,6 +6,7 @@ prev: "/docs/ai/machine-learning/supervised-learning"
 next: "/docs/ai/machine-learning/self-supervised-learning"
 ---
 
+
 教師なし学習は、各例に明示的な正解ラベルを付けずにデータを分析する方法です。あらかじめ定めた入力と正解の対応を学ぶ代わりに、データの説明、整理、単純化に役立つ可能性のある構造を探します。得られるのは候補となる表現やパターンであり、特定の目的に役立つかどうかは別途判断します。
 
 ## 主なタスク

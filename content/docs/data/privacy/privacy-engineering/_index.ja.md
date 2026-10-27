@@ -5,6 +5,7 @@ prev: "/docs/data/privacy/de-identification"
 next: "/docs/data/privacy/sensitive-data-protection"
 ---
 
+
 プライバシーエンジニアリングは、プライバシー原則と義務を、システム要件、アーキテクチャ、管理策、証跡へ変換します。リリース直前に機能を追加するのではなく、ライフサイクル全体で予測可能かつ見直し可能な処理を実現します。
 
 ## データと目的から始める

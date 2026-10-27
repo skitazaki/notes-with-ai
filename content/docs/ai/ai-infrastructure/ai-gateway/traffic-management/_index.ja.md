@@ -7,6 +7,7 @@ prev: "/docs/ai/ai-infrastructure/ai-gateway/connectivity-and-abstraction"
 next: "/docs/ai/ai-infrastructure/ai-gateway/security-and-governance"
 ---
 
+
 AI トラフィック管理は、一般的な分散システムの制御を、処理時間、コスト、失敗時の振る舞いが特有なワークロードへ適用します。ゲートウェイはルーティングと保護を一貫させますが、処理がストリーミングか、アプリケーションレベルで状態を持つか、高コストか、副作用を発生させるかを理解する必要があります。
 
 ## ルーティングと容量

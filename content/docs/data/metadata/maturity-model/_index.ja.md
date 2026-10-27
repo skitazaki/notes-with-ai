@@ -5,6 +5,7 @@ weight: 6
 prev: "/docs/data/metadata/federated-governance"
 ---
 
+
 メタデータ成熟度は、文書中心のデータ基盤が、自動化可能で、最終的には適応的なプラットフォームへ進化していく過程を理解するうえで有効な見方です。
 
 ## 概要

@@ -5,6 +5,7 @@ prev: "/docs/data/privacy/data-classification"
 next: "/docs/data/privacy/privacy-engineering"
 ---
 
+
 非識別化は、データを特定の人へ結び付けられる可能性を下げます。分析、テスト、研究、共有のリスクを減らせますが、一度の処理で永久に安全になるわけではありません。リスクはデータ、受け手、外部情報、許可された利用によって変わります。
 
 ## 手法とトレードオフ

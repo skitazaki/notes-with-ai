@@ -7,6 +7,7 @@ prev: "/docs/acc/authorization-systems"
 next: "/docs/acc/authorization-systems"
 ---
 
+
 認可は、認証済みの主体が、特定の文脈において、特定のリソースに対して、特定の操作を実行できるかを判断する仕組みです。
 
 ## 概要

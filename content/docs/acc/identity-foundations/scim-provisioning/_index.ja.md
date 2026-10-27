@@ -7,6 +7,7 @@ prev: "/docs/acc/identity-foundations/sso-federation"
 next: "/docs/acc/identity-foundations/nonhuman-identity"
 ---
 
+
 SCIM とプロビジョニングは、デジタルアイデンティティを事業の現状に合わせて維持するためのライフサイクル制御です。利用者が入社したときにアカウントを作成し、役割が変わったときに属性やグループを更新し、不要になったときにアクセスを撤去する仕組みを提供します。
 
 ## 概要

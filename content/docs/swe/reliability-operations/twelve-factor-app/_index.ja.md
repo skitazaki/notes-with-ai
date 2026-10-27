@@ -6,6 +6,7 @@ prev: "/docs/swe/reliability-operations/security-operations-and-governance"
 next: "/docs/swe/reliability-operations"
 ---
 
+
 **Twelve-Factor** は、クラウドネイティブな SaaS
 アプリを構築するための簡潔で言語に依存しないマニフェストです。単一のコードベースをバージョン管理システムで管理し、設定とコードを明確に分離し、ステートレスなプロセス、バックエンドサービスをアタッチされたリソースとして扱い、ログをイベントストリームとして扱うなど、様々な原則をまとめています。
 

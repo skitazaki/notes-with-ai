@@ -6,6 +6,7 @@ prev: "/docs/ai/machine-learning/unsupervised-learning"
 next: "/docs/ai/machine-learning/reinforcement-learning"
 ---
 
+
 自己教師あり学習は、入力データ自体から作った目的変数を使ってモデルを学習させる方法です。ラベルのないデータ集合を予測タスクに変換することで、すべての例に人手でラベルを付けずにパターンや表現を学べます。得られるモデルは通常、後続用途への出発点であり、下流タスクが解決済みであることを示すものではありません。
 
 ## 学習シグナルの作り方

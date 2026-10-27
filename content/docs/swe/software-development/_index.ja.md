@@ -6,6 +6,7 @@ prev: "/docs/swe"
 next: "/docs/swe/software-development/version-control-and-integration"
 ---
 
+
 ソフトウェア開発は、意図と設計を、人が理解、検証、変更できる実行可能な振る舞いへ変換します。プログラミングは中心的な活動ですが、要求、依存関係、チーム、本番環境が変化してもコードの一貫性を保つためのプラクティスも含みます。
 
 ![ソフトウェア開発：意図と設計が、コード、レビューと統合を経て保守可能な変更となり、依存関係、ツール、フィードバックがその流れを支える](software-development-overview.ja.webp "ソフトウェア開発")

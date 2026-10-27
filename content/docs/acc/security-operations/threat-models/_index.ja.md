@@ -7,6 +7,7 @@ prev: "/docs/acc/security-operations/defense-in-depth"
 next: "/docs/acc/security-operations"
 ---
 
+
 脅威モデルは、一般論の不安を、具体的な攻撃経路、信頼境界分析、緩和策の選択へ落とし込むための道具です。
 
 ## 概要

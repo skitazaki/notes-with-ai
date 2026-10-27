@@ -6,6 +6,7 @@ prev: "/docs/swe/ai-as-software-engineering-tool"
 next: "/docs/swe/ai-as-software-engineering-tool/harness-engineering"
 ---
 
+
 コーディングエージェントはモデルとツールを使い、リポジトリの探索、ファイル編集、検査の実行、判断材料の提示といった複数段階のソフトウェアエンジニアリング作業を行います。行動できるため、モデルの能力と同じくらいワークフロー設計と権限が重要です。
 
 ## 役割とタスク境界

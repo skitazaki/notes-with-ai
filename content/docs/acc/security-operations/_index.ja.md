@@ -6,6 +6,7 @@ prev: "/docs/acc/ai-emerging-systems"
 next: "/docs/acc/security-operations/defense-in-depth"
 ---
 
+
 セキュリティ運用は、予防、検知、対応の統制によってアイデンティティと認可を補強します。このハブでは、多層的な適用を明示的な脅威分析と運用上の対応へ結び付けます。
 
 ## セキュリティ運用のトピック

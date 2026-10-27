@@ -7,6 +7,7 @@ prev: "/docs/ai/ai-infrastructure/ai-gateway"
 next: "/docs/ai/ai-infrastructure/ai-gateway/traffic-management"
 ---
 
+
 接続はゲートウェイの最も分かりやすい責任ですが、プロバイダーやプロトコルが変化しても接続を有用に保つのは抽象化です。AI ゲートウェイは、モデル API、MCP サーバー、リモートエージェント、通常のサービスへトラフィックを適応させながら、アプリケーションやエージェントに安定した入口を提供します。
 
 ## 安定したインターフェースと可変のバックエンド

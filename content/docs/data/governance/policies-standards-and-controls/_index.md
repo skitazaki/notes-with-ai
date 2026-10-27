@@ -6,6 +6,9 @@ prev: "/docs/data/governance/ownership-and-stewardship"
 next: "/docs/data/governance/data-classification"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Governance connects intent to observable behavior through a related mechanism of policies, standards, and controls.
 
 ![Principle informing a grouped governance mechanism of Policy, Standard, and Control; the mechanism produces Evidence, whose review returns as Feedback](policies-standards-controls.webp "Policies, Standards, and Controls")

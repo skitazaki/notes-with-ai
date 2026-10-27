@@ -6,6 +6,7 @@ prev: "/docs/arch/dimensions/flows-and-pipelines"
 next: "/docs/arch/dimensions/ownership-boundaries"
 ---
 
+
 ピラーが必要なのは、アーキテクチャが構造や実行時の振る舞いだけで決まるものではないからです。
 そこには判断があります。
 チームは、何を最も重視するのかを表現する方法を持たなければ、直感だけで設計案を争うことになります。

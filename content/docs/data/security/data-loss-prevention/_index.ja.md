@@ -6,6 +6,7 @@ prev: "/docs/data/security/encryption-and-key-management"
 next: "/docs/data/security/monitoring-and-incident-response"
 ---
 
+
 データ損失防止（DLP）は、正規に見える経路からの不正開示を抑えます。誤共有、公開クラウドストレージ、侵害された認証情報、内部不正、大量クエリ、SaaS 連携、端末、パートナー交換、分析や AI の出力が流出経路になります。
 
 [アクセス制御](/ja/docs/acc/) は操作の許可を判断します。DLP はさらに、許可された操作の量、宛先、表現、連続性が許容できない開示を生まないかを判断します。

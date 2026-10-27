@@ -6,6 +6,9 @@ prev: "/docs/ai/ai-engineering/system-design"
 next: "/docs/ai/ai-engineering"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Agent-to-agent communication is the exchange of requests, task state, and results between independently operating AI agents. Unlike components inside one application, collaborating agents may be built with different models, frameworks, tools, and internal workflows. Interoperability therefore depends on a shared external contract rather than knowledge of each agent's implementation.
 
 The Agent2Agent (A2A) Protocol is an open standard for this boundary. It gives an agent a way to describe its capabilities and lets a client delegate work without requiring either side to expose its internal reasoning, memory, or tool implementation. The protocol structures communication, but it does not establish trust or decide what an agent should be allowed to do.

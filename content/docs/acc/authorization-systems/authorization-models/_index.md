@@ -7,6 +7,9 @@ prev: "/docs/acc/authorization-systems"
 next: "/docs/acc/authorization-systems"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Authorization determines whether an authenticated principal may perform a specific action on a specific resource in a specific context.
 
 ## Executive Summary

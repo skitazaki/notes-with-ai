@@ -6,6 +6,7 @@ prev: "/docs/swe/testing-quality-engineering/test-strategy"
 next: "/docs/swe/testing-quality-engineering/non-functional-quality"
 ---
 
+
 テストレベルは、検査する振る舞いの範囲と境界を表します。価値の低いものから高いものへの順位ではなく、相互補完する視点です。
 
 ## 局所と境界の検証

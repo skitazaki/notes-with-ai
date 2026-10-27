@@ -6,6 +6,9 @@ prev: "/docs/data/engineering"
 next: "/docs/data/engineering/processing"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
+
 Data Ingestion is the engineering process of reliably transferring produced or collected data across the data-platform boundary into a durable, platform-managed state for downstream processing and use. Sources may be operational databases, files, APIs, applications, devices, partner systems, or public datasets. The engineering challenge is not merely transferring bytes; it is preserving useful meaning and delivery guarantees while limiting impact on the producer.
 
 Its central question is: **How do we reliably bring data into the platform?** The source-side decisions about what to acquire, from where, under what conditions, and how it is captured are described in [Data Collection](/docs/data/collection/); ingestion begins where that data is transferred into the managed platform.

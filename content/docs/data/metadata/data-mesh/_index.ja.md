@@ -6,6 +6,7 @@ prev: "/docs/data/metadata/active-metadata"
 next: "/docs/data/metadata/data-products"
 ---
 
+
 データメッシュは、ドメインオーナーシップ、セルフサービス基盤、フェデレーテッドガバナンスに依存しますが、それらを協調的な運用体系に変えるのはメタデータです。
 
 ## 概要

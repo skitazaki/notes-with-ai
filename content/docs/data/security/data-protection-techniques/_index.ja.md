@@ -6,6 +6,7 @@ prev: "/docs/data/security/classification-and-handling"
 next: "/docs/data/security/encryption-and-key-management"
 ---
 
+
 データ保護技術は、値の表現や利用者へ示す詳細度を変えて露出を抑えます。マスキング、トークン化、墨消し、ハッシュ化、仮名化、集約は異なる問題を解決し、相互に交換できません。
 
 | 技術       | 可逆性                     | 参照整合性               | 用途                                   |

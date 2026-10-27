@@ -6,6 +6,7 @@ prev: "/docs/data/governance"
 next: "/docs/data/governance/ownership-and-stewardship"
 ---
 
+
 データガバナンスは、組織の意図をデータに関する反復可能な意思決定へ変換します。運用モデルは、適用範囲、権限、会議体、エスカレーション経路、ルールの提案・承認・適用・レビュー・廃止のライフサイクルを定義します。
 
 ![同列の基礎概念、ガバナンス会議体、エスカレーション、意思決定記録、中央集権・連合型・ハイブリッドの運用モデル選択肢の概要](governance-principles-operating-model.ja.webp "ガバナンスの原則と運用モデル")

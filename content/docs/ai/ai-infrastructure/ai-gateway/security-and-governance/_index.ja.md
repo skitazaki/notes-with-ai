@@ -7,6 +7,7 @@ prev: "/docs/ai/ai-infrastructure/ai-gateway/traffic-management"
 next: "/docs/ai/ai-infrastructure/ai-gateway/observability-and-economics"
 ---
 
+
 AI ゲートウェイは、モデル、ツール、エージェント、API のトラフィックが信頼境界を越える場所にあります。一貫した強制点として有用ですが、ID、同意、業務権限の源泉になるわけではありません。接続に関係するコンテキストを保持し、決定を強制することが役割です。
 
 ## ID と認証情報

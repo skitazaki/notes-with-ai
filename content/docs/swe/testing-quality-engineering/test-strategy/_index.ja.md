@@ -6,6 +6,7 @@ prev: "/docs/swe/testing-quality-engineering"
 next: "/docs/swe/testing-quality-engineering/test-levels"
 ---
 
+
 テスト戦略は、重要な品質とリスクについて信頼できる判断材料をどう得るかを説明します。固定されたテスト種別の比率を示すのではなく、製品の意図、アーキテクチャ、デリバリー、本番からの学習を結び付けます。
 
 ## リスクと意思決定から始める

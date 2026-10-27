@@ -6,6 +6,7 @@ prev: "/docs/data/governance/data-classification"
 next: "/docs/data/governance/federated-data-governance"
 ---
 
+
 適用要件を統制目標へ対応付け、管理策が意図どおりに作動し、信頼できる証跡によって結果を監査できるとき、ガバナンスは実証可能になります。
 
 ![コンプライアンスが適用要件を管理策へ対応付け、管理策が運用を通じて証跡を生成し、監査可能性が証跡を保証と改善に用いる関係](compliance-controls-auditability.ja.webp "コンプライアンス、管理策、監査可能性")
