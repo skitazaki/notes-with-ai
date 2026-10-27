@@ -3,11 +3,11 @@ date: "2025-05-06T20:18:15+09:00"
 title: "Technology Documentation"
 ---
 
-This technical documentation is organized into hub pages that explain each technical field and its relationships, along with more focused topic pages.
-Start with a hub page when you want the overall picture.
-Move to a topic page when you want a deeper article on a specific concept, model, or practice.
+This technical documentation is organized around technical domains and the topics within them.
+Start with a domain overview when you want the big picture.
+Move to a relevant topic page when you want a deeper explanation of a specific concept, model, or practice.
 
-## Read By Technical Field
+## Read By Technical Domain
 
 {{< cards >}}
 {{< card link="arch" title="Software Architecture" icon="scale" >}}
@@ -18,29 +18,30 @@ Move to a topic page when you want a deeper article on a specific concept, model
 {{< card link="quantum-computing" title="Quantum Computing" icon="sparkles" >}}
 {{< /cards >}}
 
-Each field is relatively independent, but many of them are also connected.
+Each domain is relatively independent, but many of them are also connected.
 The structure is meant to show those practical relationships, such as how architecture shapes engineering choices, how data platforms rely on governance, or how access control supports trustworthy systems.
 
-Read with conceptual foundations, operating models, organizational concerns, and implementation domains all in view.
-Start by understanding the major concepts and boundaries of a field, then move into the topics that matter for your current question.
+Within each domain, broader themes can be broken into topic pages, and those topic pages may themselves contain nested subtopics.
+Read with conceptual foundations, operating models, organizational concerns, and implementation domains in view.
+Start by understanding the major concepts and boundaries of a domain, then move into the topics that matter for your current question.
 
-## What The Hub Pages Provide
+## What Domain Overviews and Topic Pages Provide
 
-The hub page for a technical field is meant to orient the reader before they enter a detailed topic article.
+A domain overview is meant to orient the reader before they enter a more detailed topic article.
 
-- Introduce the field in plain language
-- Explain relationships with nearby fields and disciplines
+- Introduce the domain in plain language
+- Explain relationships with nearby domains and disciplines
 - Clarify the perspectives readers should keep in mind
 - Surface core principles and core concepts
 - Show practical paths from principles to operating models or applied domains
-- Link to focused topic pages for deeper reading
+- Link to the topic pages that provide deeper reading
 
 ## Navigation Model
 
 The reading flow is simple.
 
-For example, you might begin with the Data page to understand layers, controls, and operating models, then move into specific topics such as metadata, governance, or data platforms.
-Over time, some topic pages may grow into their own hubs as related topics accumulate.
+For example, you might begin with the Data domain to understand layers, controls, and operating models, then move into specific topics such as metadata, governance, or data platforms.
+Over time, related topics may grow into nested subtopics, and a topic may even become its own broader domain entry.
 
 **Documentation Entry Points**
 
@@ -54,5 +55,5 @@ Over time, some topic pages may grow into their own hubs as related topics accum
 ## Summary
 
 Think of this documentation as a layered map rather than a flat archive.
-The landing hub pages provide orientation, principles, and navigation, while the topic pages provide sustained explanation.
-If a topic area expands enough, it can later become a hub of its own.
+Domain overviews provide orientation, principles, and navigation, while topic pages provide sustained explanation.
+If a topic area grows enough, it can contain nested subtopics and eventually become a broader domain in its own right.
