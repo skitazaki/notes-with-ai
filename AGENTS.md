@@ -25,6 +25,7 @@ Never commit directly to `main`. Before making repository changes, inspect the c
 - Whether to create a new branch for a task depends on the context. Consider whether the work is part of an existing task, needs isolation, or will be committed. Regardless, commits must be made on a branch other than `main`.
 - Before committing, verify the current branch again. If it is `main`, switch to an appropriate task branch first, preserving the changes and commits.
 - For independent parallel tasks, use a separate worktree and branch for each task. Never let two agents modify the same worktree.
+- When creating a pull request, identify and run the repository's standard lint or format checks, then record the commands and results in the PR body.
 
 ## Mission
 
