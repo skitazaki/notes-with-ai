@@ -29,6 +29,8 @@ Never commit directly to `main`. Before making repository changes, inspect the c
 - For independent parallel tasks, use a separate worktree and branch for each task. Never let two agents modify the same worktree.
 - Default branch naming to the work being done; reserve tool-specific prefixes for truly separate agent-specific tasks that run alongside other workstreams.
 - When creating a pull request, identify and run the repository's standard lint or format checks, then record the commands and results in the PR body.
+- For this repository, the standard format check is `pnpm exec oxfmt --check .` and the standard build validation is `hugo --quiet`.
+- If a PR changes Markdown or repository formatting, run the formatter check before considering the work ready to review.
 
 ## Mission
 
