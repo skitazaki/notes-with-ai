@@ -55,7 +55,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v5
       - name: Install Node.js dependencies
-        run: "[[ -f pnpm-lock.yaml ]] && pnpm install || true"
+        run: "[[ -f pnpm-lock.yaml ]] && pnpm install --frozen-lockfile || true"
       - name: Cache Restore
         id: cache-restore
         uses: actions/cache/restore@v5
