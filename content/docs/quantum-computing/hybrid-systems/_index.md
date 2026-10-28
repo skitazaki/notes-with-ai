@@ -8,7 +8,6 @@ next: "/docs/quantum-computing/layers"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Quantum processors operate as components within classical computing environments. They depend on classical systems for problem preparation, circuit compilation, hardware control, optimization, result analysis, and application integration. A practical quantum workload is therefore a distributed workflow across different computing resources, not an isolated quantum program.
 
 This hybrid view applies both to near-term experiments and to future fault-tolerant systems.

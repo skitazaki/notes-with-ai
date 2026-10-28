@@ -9,7 +9,6 @@ next: "/docs/acc/identity-foundations/nonhuman-identity"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 SCIM and provisioning are the lifecycle controls that keep digital identities aligned with the business. They ensure that accounts, attributes, and group memberships are created when a person joins, updated when roles change, and removed when access is no longer needed.
 
 ## Executive Summary

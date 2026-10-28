@@ -8,7 +8,6 @@ next: "/docs/swe/software-development/dependency-management"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Code review and refactoring are complementary practices for keeping change understandable. Review tests a proposed change against shared knowledge; refactoring improves internal structure so later changes remain economical.
 
 ## Reviewing intent and risk

@@ -9,7 +9,6 @@ next: "/docs/ai/ai-infrastructure/ai-gateway/observability-and-economics"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 An AI gateway sits where model, tool, agent, and API traffic crosses trust boundaries. That position makes it useful for consistent enforcement, but it does not make the gateway the source of identity, consent, or business authority. Its role is to preserve context and enforce decisions that apply to connectivity.
 
 ## Identity and Credentials

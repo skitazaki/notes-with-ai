@@ -8,7 +8,6 @@ next: "/docs/data/governance/policies-standards-and-controls"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data ownership assigns accountability for decisions and outcomes. Stewardship makes governance work continuously in day-to-day practice. Neither role is merely the team that stores a table or runs a pipeline.
 
 ![Data Owner and Data Steward shown as complementary roles that exchange decisions and escalation while both act on a shared domain, dataset, and data-product context](data-ownership-stewardship.webp "Data Ownership and Stewardship")

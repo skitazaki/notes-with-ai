@@ -8,7 +8,6 @@ next: "/docs/swe/reliability-operations/incident-management-and-resilience"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Observability provides the evidence needed to investigate system behavior. Service-level objectives focus that evidence on reliability that users can experience and teams can manage.
 
 ## From telemetry to understanding

@@ -4,7 +4,6 @@ title: "Artificial Intelligence"
 weight: 20
 ---
 
-
 Artificial Intelligence is the broad discipline of building systems that perform tasks requiring perception, prediction, generation, decision-making, or adaptation.
 In practice, AI is not one thing. It is a collection of related fields that span statistical learning, neural architectures, software systems, data pipelines, infrastructure, governance, and domain applications.
 

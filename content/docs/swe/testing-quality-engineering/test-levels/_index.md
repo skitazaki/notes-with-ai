@@ -8,7 +8,6 @@ next: "/docs/swe/testing-quality-engineering/non-functional-quality"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Test levels describe the scope of behavior and boundaries exercised by a check. They are complementary viewpoints, not a ranking from less to more valuable.
 
 ## Local and boundary evidence

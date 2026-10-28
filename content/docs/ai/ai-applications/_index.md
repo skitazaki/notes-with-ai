@@ -8,7 +8,6 @@ next: "/docs/ai/ai-applications/application-patterns"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 AI applications are the point where abstract capability becomes concrete value. Models, data, infrastructure, and operations matter because they make this layer possible, but the application layer is where users, workflows, and business outcomes finally meet the system. That is why many AI projects succeed or fail here rather than in model selection alone.
 
 The core design question is simple: what useful task is being supported, for whom, under what constraints? Once that question is clear, the rest of the AI stack can be evaluated in terms of whether it helps the application behave well enough for that purpose.

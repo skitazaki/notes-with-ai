@@ -8,7 +8,6 @@ next: "/docs/data/management/mdm"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data quality is often discussed as a flat list of attributes such as accuracy, completeness, and timeliness. That list is useful, but it is no longer sufficient on its own. Modern data platforms operate across batch and streaming pipelines, metadata systems, semantic layers, governance controls, and AI workloads. In that environment, quality is not a single checklist. It is an architectural model.
 
 ## Executive Summary

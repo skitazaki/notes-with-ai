@@ -9,7 +9,6 @@ next: "/docs/acc/identity-foundations"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Identity for non-human actors is now one of the fastest-growing parts of access-control architecture because modern systems contain far more services, workloads, pipelines, devices, and agents than human operators.
 
 ## Executive Summary

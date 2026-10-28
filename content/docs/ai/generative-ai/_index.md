@@ -8,7 +8,6 @@ next: "/docs/ai/generative-ai/system-patterns"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Generative AI became widely useful when model output was combined with context, interaction, and control rather than treated as raw text or image synthesis alone. The practical question is not simply whether a model can generate. It is whether the broader system can guide, constrain, and apply that generation in a way that is reliable enough to create user value.
 
 That is why generative AI is best understood as an application pattern. Models provide the generative capability, but the product depends on prompts, retrieved context, tool access, approval boundaries, structured outputs, and evaluation loops.

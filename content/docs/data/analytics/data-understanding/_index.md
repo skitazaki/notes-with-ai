@@ -8,7 +8,6 @@ next: "/docs/data/analytics/data-storytelling"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data Understanding is the process of building sufficient knowledge about data—its meaning, structure, behavior, provenance, relationships, quality, and limitations—to use it appropriately.
 
 It is an umbrella activity rather than a single technique. Discovery, metadata inspection, profiling, relationship analysis, lineage investigation, quality assessment, and domain interpretation each reveal a different part of the dataset. The result is a reliable mental and computational model of the data: what it is, what it means, how it behaves, and whether it is fit for a particular purpose.

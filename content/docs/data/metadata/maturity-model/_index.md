@@ -7,7 +7,6 @@ prev: "/docs/data/metadata/federated-governance"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Metadata maturity is a useful way to understand how organizations evolve from documentation-heavy data estates into automation-capable and eventually adaptive platforms.
 
 ## Executive Summary

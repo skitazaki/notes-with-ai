@@ -8,7 +8,6 @@ next: "/docs/data/architecture/principles"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Organizations rarely operate one database or one pipeline. Data is created and consumed across operational applications, analytical systems, SaaS services, event streams, AI systems, external providers, and organizational boundaries. Each connection introduces choices about persistence, movement, semantics, control, and responsibility.
 
 Data architecture is the set of structural decisions that determines where data lives, how it moves, how systems interact, how operational and analytical workloads are separated or combined, where controls apply, and how the landscape can evolve. A diagram of databases may describe part of an architecture, but the architecture also includes interfaces, flows, ownership boundaries, and the reasoning behind them.

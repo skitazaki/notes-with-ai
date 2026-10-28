@@ -9,7 +9,6 @@ next: "/docs/acc/ai-emerging-systems"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 AI agents should be treated as constrained operating identities rather than as a user-interface feature layered on top of existing permissions.
 
 ## Executive Summary

@@ -8,7 +8,6 @@ next: "/docs/arch/dimensions/flows-and-pipelines"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Plane terminology appears whenever engineers need to explain runtime responsibility that cuts across structural boundaries. Control planes, data planes, management planes, and observability planes are useful because they describe how work is directed, executed, governed, and observed while the system is running.
 
 ## Definition

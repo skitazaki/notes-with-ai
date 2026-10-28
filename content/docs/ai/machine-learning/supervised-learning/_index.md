@@ -8,7 +8,6 @@ next: "/docs/ai/machine-learning/unsupervised-learning"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Supervised learning trains a model from examples that pair inputs with known targets. The model learns a mapping that can be applied to new inputs. Targets may be categories, numbers, rankings, or structured outputs, depending on the task.
 
 ## Classification and regression

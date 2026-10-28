@@ -5,7 +5,6 @@ weight: 50
 next: "/docs/quantum-computing/foundations"
 ---
 
-
 Quantum computing has emerged from the realm of theoretical physics into the edge of enterprise innovation. While still
 in its early stages, it holds the promise to revolutionize fields like logistics, cybersecurity, finance, and drug
 discovery　— offering computational power far beyond what classical systems can achieve. For technology leaders,

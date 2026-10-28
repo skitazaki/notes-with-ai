@@ -9,7 +9,6 @@ next: "/docs/ai/context-engineering"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 A capable foundation model is not enough for dependable real-world work. An agent also needs procedures, coding conventions, deployment rules, domain references, templates, scripts, and access to external systems. When every application embeds those capabilities in one large prompt or a vendor-specific extension, instructions are duplicated, difficult to version, expensive to keep in context, and hard to move between agent environments.
 
 Agent Skills and Agent Plugins create reusable boundaries around this material. A **skill** packages procedural knowledge and supporting resources. Its required **`SKILL.md`** file tells an agent what the capability is and how to perform it. **Model Context Protocol (MCP)** connects an agent application to runtime tools and contextual data. An **Agent Plugin** can package skills and MCP server configuration in a predictable directory for compatible clients.

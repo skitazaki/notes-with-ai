@@ -9,7 +9,6 @@ next: "/docs/acc/reference-materials"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Shared terminology is essential in access-control architecture because small differences in language often hide large differences in trust assumptions.
 
 ## Executive Summary

@@ -4,7 +4,6 @@ title: "Data"
 weight: 10
 ---
 
-
 Data is a structured or unstructured representation of real-world or system-generated phenomena, stored in a persistent form to enable processing, analysis, sharing, and control.
 This section organizes principles, architectures, practices, and operational models that enable scalable, reliable, and compliant data systems.
 It covers the full lifecycle of data — from acquisition and engineering to analytics, governance, security, and value realization, which is required to manage **data as a strategic asset**.

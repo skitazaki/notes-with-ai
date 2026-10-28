@@ -8,7 +8,6 @@ next: "/docs/ai/responsible-ai/controls"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Responsible AI is the discipline of keeping AI systems trustworthy under real-world conditions. It exists because model capability alone is not enough. Systems that affect people, decisions, knowledge, or operations also need fairness, security, privacy, transparency, accountability, and bounded control.
 
 The practical mistake is to treat these concerns as a final approval step after the system is already designed. In reality, responsible AI is a cross-cutting design and operating discipline that begins with data selection and continues through deployment, monitoring, and incident response.

@@ -6,6 +6,7 @@ prev: "/docs/swe/reliability-operations/incident-management-and-resilience"
 next: "/docs/swe/reliability-operations/twelve-factor-app"
 ---
 
+このドキュメントでは、領域とはより広い対象分野のことを指し、トピックページは、その中で特定の概念、パターン、運用上の懸念をより焦点を絞って説明するページです。このページは、そのより広い領域に属し、関連するトピックページへつながります。
 
 信頼性と運用におけるセキュリティは、独立した管理塔ではありません。リーダーシップの意図、検知能力、対応実行が継続的に相互作用する運用ループとして設計する必要があります。
 

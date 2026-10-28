@@ -8,7 +8,6 @@ next: "/docs/data/collection/data-sources"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data Collection is the process of identifying, selecting, acquiring, and capturing data from real-world phenomena and source systems so that it can enter the data ecosystem with a known purpose, provenance, and set of constraints. Its central question is: **What data should we acquire, from where, under what conditions, and how is it captured at the source?**
 
 Collection is broader than extracting records from a database. It determines what becomes observable to an organization in the first place. Decisions about instrumentation, source selection, sampling, timing, and permitted use shape the evidence available to every later process.

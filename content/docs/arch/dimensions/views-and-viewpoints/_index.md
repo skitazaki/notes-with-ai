@@ -8,7 +8,6 @@ next: "/docs/arch/dimensions"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Architecture communication fails when teams assume one diagram can satisfy every stakeholder. Executives, developers, operators, and security reviewers do not need the same level of detail or the same framing. Views and viewpoints exist to make that difference intentional.
 
 ## Definition

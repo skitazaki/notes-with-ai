@@ -8,7 +8,6 @@ next: "/docs/swe/reliability-operations/observability-and-slos"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Reliability and operations connect software design with the conditions a system encounters in the real world. They make behavior visible, define acceptable service, prepare for failure, and turn production evidence into better engineering decisions.
 
 ![Reliability and Operations: dependable service emerges from a recurring loop of setting objectives, observing behavior, responding and recovering, and learning and improving](reliability-operations-overview.webp "Reliability & Operations")

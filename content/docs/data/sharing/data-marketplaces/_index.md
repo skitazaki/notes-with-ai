@@ -8,7 +8,6 @@ next: "/docs/data/sharing/data-clean-rooms"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 A data marketplace connects producers and consumers around shareable data products. It combines discovery with the workflow needed to request, evaluate, authorize, fulfill, operate, and measure a sharing relationship.
 
 The marketplace is therefore not the data plane itself. It is a product, governance, and transaction layer that can provision files, APIs, streams, live shares, clean-room access, or other [exchange mechanisms](/docs/data/sharing/data-exchange-mechanisms/).

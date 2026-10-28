@@ -8,7 +8,6 @@ next: "/docs/data/architecture/data-mesh"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 “Modern data architecture” is a flexible industry term, not a precise standard. At its most useful, it describes capabilities for operating a heterogeneous, cloud-era data estate: elastic storage and compute, batch and streaming flows, multiple workload-specific stores, automated metadata and controls, reusable platform services, and governed access for analytics, applications, machine learning, and AI.
 
 It should not mean “an architecture that bought newer products.”

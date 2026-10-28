@@ -5,7 +5,6 @@ weight: 5
 next: "/docs/acc/vision"
 ---
 
-
 Access control is the architectural discipline that decides who or what may do what, under which conditions, and with what degree of assurance.
 In modern systems, that question spans employees, customers, workloads, APIs, third-party services, and AI agents operating across cloud and on-premises boundaries.
 

@@ -8,7 +8,6 @@ next: "/docs/swe/software-development/code-review-and-refactoring"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Version control gives software changes identity, history, and a shared point of coordination. Integration is the practice of combining those changes into a coherent system while the intent and risks are still understandable.
 
 ## Changes as units of reasoning

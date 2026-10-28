@@ -8,7 +8,6 @@ next: "/docs/ai/generative-ai/generative-models-and-deep-learning"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Generative AI System Patterns provides a conceptual framework for building blocks and recurring patterns for Generative AI systems. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
 
 ## Core Building Blocks

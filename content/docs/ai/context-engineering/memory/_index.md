@@ -8,7 +8,6 @@ next: "/docs/ai/context-engineering/vector-search"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Memory in an AI system is information retained beyond one immediate interaction so that later work can use relevant continuity. It is not simply a longer conversation transcript and it is not a guarantee of truth. A remembered fact may be stale, incorrectly inferred, no longer authorized, or irrelevant to the current task.
 
 Memory is therefore a context source with its own design and governance requirements. A useful system decides what to retain, who may use it, how long it remains valid, and how it can be corrected or removed.

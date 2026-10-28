@@ -8,7 +8,6 @@ next: "/docs/data/analytics"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data storytelling is the practice of communicating an analytical finding through evidence, narrative, and visual representation. It helps an audience understand what the data shows, why the finding matters, and what decision or action may follow.
 
 A chart or report can answer a narrow question without making its implications clear. A data story adds the context and reasoning that let people interpret the evidence. It is especially useful when an analysis concerns a specific decision, event, or change. A dashboard remains better suited to recurring monitoring and exploration; a story is usually a deliberate, focused communication.

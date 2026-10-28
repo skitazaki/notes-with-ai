@@ -8,7 +8,6 @@ next: "/docs/arch/dimensions/layers"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Architecture becomes confusing when teams try to force every concern into one diagram or one vocabulary. Dependency direction, runtime control, design priorities, team accountability, and stakeholder communication are all architectural concerns, but they are not the same kind of concern. An architecture dimension is the lens that makes one of those concerns legible.
 
 This section is a hub for six complementary dimensions. Start with the comparison below, then follow the topic pages to examine each lens in depth.

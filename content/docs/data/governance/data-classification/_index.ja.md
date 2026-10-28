@@ -6,6 +6,7 @@ prev: "/docs/data/governance/policies-standards-and-controls"
 next: "/docs/data/governance/compliance-and-auditability"
 ---
 
+このドキュメントでは、領域とはより広い対象分野のことを指し、トピックページは、その中で特定の概念、パターン、運用上の懸念をより焦点を絞って説明するページです。このページは、そのより広い領域に属し、関連するトピックページへつながります。
 
 データ分類（Data Classification）は、文脈に応じて義務を変えられるように、ガバナンスに必要な属性をデータへ割り当てます。単一のセキュリティラベルより広い仕組みです。
 

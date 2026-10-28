@@ -8,7 +8,6 @@ next: "/docs/swe/testing-quality-engineering/test-levels"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 A test strategy explains how a team will obtain credible evidence about the qualities and risks that matter. It connects product intent, architecture, delivery, and production learning rather than prescribing a fixed ratio of test types.
 
 ## Start with risk and decisions

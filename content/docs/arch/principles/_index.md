@@ -8,7 +8,6 @@ next: "/docs/arch/constraints"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Architecture principles turn organizational priorities into durable guidance for design decisions. They make a preferred direction explicit before a team becomes attached to a particular technology or implementation.
 
 ## Definition

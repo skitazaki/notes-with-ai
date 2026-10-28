@@ -8,7 +8,6 @@ next: "/docs/swe/delivery-devops"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 ## 1. What is an Internal Developer Portal?
 
 An **Internal Developer Portal (IDP)** is a centralized, internal-facing interface that presents developers with a curated view of the systems, services, and resources they interact with in their daily work. Its primary purpose is to make the software ecosystem of an organization understandable, discoverable, and navigable from a developer’s perspective.

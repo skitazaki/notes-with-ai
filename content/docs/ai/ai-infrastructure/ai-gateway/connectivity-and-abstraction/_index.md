@@ -9,7 +9,6 @@ next: "/docs/ai/ai-infrastructure/ai-gateway/traffic-management"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Connectivity is the most visible gateway responsibility, but abstraction determines whether that connectivity remains useful as providers and protocols change. An AI gateway can give applications and agents stable entry points while adapting traffic to model APIs, MCP servers, remote agents, and conventional services.
 
 ## Stable Interfaces, Variable Backends

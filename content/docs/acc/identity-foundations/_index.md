@@ -8,7 +8,6 @@ next: "/docs/acc/identity-foundations/human-identity"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Identity foundations establish how people, workloads, machines, services, and other actors are recognized, verified, governed, and connected to accountable access decisions.
 
 The first question is not only "Which protocol should we use?" but "What kind of thing are we identifying?" Human identity and non-human identity are different classes of identity subject, even though the underlying identity capabilities are often shared.

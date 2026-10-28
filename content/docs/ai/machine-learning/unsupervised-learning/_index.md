@@ -8,7 +8,6 @@ next: "/docs/ai/machine-learning/self-supervised-learning"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Unsupervised learning studies data without an explicit target label for each example. Instead of learning a specified input-to-answer mapping, a method searches for structure that may help describe, organize, or simplify the data. The result is a candidate representation or pattern; people still need to decide whether it is useful for a particular purpose.
 
 ## Common tasks

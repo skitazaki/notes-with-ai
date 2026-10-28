@@ -8,7 +8,6 @@ next: "/docs/ai/ai-infrastructure/ai-gateway"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 AI infrastructure is the technical substrate that makes model training, inference, and large-scale AI operations feasible. It includes more than accelerators. Storage, serving layers, routing, orchestration, retrieval systems, and observability all shape what kinds of AI systems can actually be built and sustained.
 
 This layer matters because AI capability is expensive, stateful, and operationally sensitive. A strong model is not useful if it cannot be served within cost, latency, reliability, or governance constraints.

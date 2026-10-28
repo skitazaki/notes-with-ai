@@ -8,7 +8,6 @@ next: "/docs/data/management/data-quality-dimensions"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data Management ensures that data remains trustworthy, usable, and sustainable over time.
 
 [Data Governance](/docs/data/governance/) defines expectations, decision rights, and accountability; Data Management performs the ongoing quality, accessibility, lifecycle, and service work required to satisfy them.

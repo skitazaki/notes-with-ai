@@ -8,7 +8,6 @@ next: "/docs/ai/deep-learning/autoencoders"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Transformers are neural architectures that use attention to relate elements in a sequence. They became a general-purpose foundation for language, code, image, audio, and multimodal models because the same architecture can represent relationships across many kinds of tokens or patches.
 
 ## Attention and Context

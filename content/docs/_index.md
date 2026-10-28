@@ -3,7 +3,6 @@ date: "2025-05-06T20:18:15+09:00"
 title: "Technology Documentation"
 ---
 
-
 This technical documentation is organized around broad technical domains and the more focused topic pages inside them.
 A domain is the larger field: it has a stable vocabulary, a recognizable body of concepts, and a set of topic pages that deepen it.
 A topic page is a more focused article about a concept, model, practice, or operating concern within that domain.

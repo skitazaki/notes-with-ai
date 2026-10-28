@@ -5,7 +5,6 @@ weight: 1
 next: "/docs/arch/dimensions"
 ---
 
-
 Software architecture is the discipline of reasoning about systems and communicating that reasoning clearly.
 It helps teams understand complexity, evaluate tradeoffs, identify risks, and align people around decisions that shape how software is built, operated, and changed over time.
 

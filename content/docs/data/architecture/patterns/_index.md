@@ -8,7 +8,6 @@ next: "/docs/data/architecture/integration-and-flow"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data architecture patterns are recurring arrangements of responsibilities, storage, movement, and ownership. They are useful as recognition tools, not complete designs. Real data estates combine patterns, and the same label can describe a storage technology, processing model, integration style, or organizational model.
 
 ## Read Patterns Across Multiple Dimensions

@@ -8,7 +8,6 @@ next: "/docs/ai/context-engineering/agent-skills"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 `AGENTS.md` is a Markdown file for giving coding agents the repository-specific context and instructions they need to work effectively. It can describe setup commands, validation steps, code conventions, architectural boundaries, security considerations, and contribution workflows. Its role is similar to a `README.md`, but its primary audience is an AI coding agent rather than a human contributor.
 
 The format is intentionally simple. It does not replace application-level controls or a user's request. Instead, it supplies durable project context that would otherwise have to be repeated in every task. See the [official AGENTS.md site](https://agents.md/) for the format overview, examples, and FAQ.

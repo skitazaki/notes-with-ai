@@ -5,7 +5,6 @@ weight: 2
 next: "/docs/swe/software-development"
 ---
 
-
 Software engineering is the discipline of designing, building, delivering, operating, and evolving software systems under real-world constraints. It extends beyond programming: engineers must continually balance correctness, maintainability, reliability, security, performance, delivery speed, developer productivity, organizational complexity, and cost.
 
 In this documentation, a domain is a broad body of practice with a recognizable vocabulary and topic pages. A topic page is a more focused explanation of a specific concept, technique, or operating concern inside that body of practice. This hub uses several kinds of groupings—domains, lifecycle stages, and cross-cutting concerns—and those are different navigation lenses, not different kinds of domain definitions.

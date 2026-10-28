@@ -8,7 +8,6 @@ next: "/docs/ai/ai-engineering/system-design"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 AI engineering is where model capability becomes product behavior. A strong model alone does not create a dependable system. Real applications need interfaces, fallbacks, observability, guardrails, evaluation criteria, and operational discipline. Without those layers, even impressive model outputs remain difficult to trust in day-to-day workflows.
 
 This is why AI engineering should be treated as a software discipline rather than as a thin wrapper around model APIs. The model is only one component in a broader system that must behave predictably enough for users, operators, and stakeholders.

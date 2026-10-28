@@ -7,7 +7,6 @@ next: "/docs/data/privacy"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Privacy governance is the operating model for making consistent, accountable decisions about information relating to people. It connects principles and obligations to ownership, policies, technical controls, review, and evidence across decentralized systems and teams.
 
 ## Decision Rights and Roles

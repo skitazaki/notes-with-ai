@@ -8,7 +8,6 @@ next: "/docs/swe/reliability-operations"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 **Twelve-Factor** is a concise, language-agnostic manifesto for building cloud-native SaaS apps, which are single
 codebase tracked in VCS, clear separation of config from code, stateless processes, backing services as attached
 resources, logs as event streams, etc.

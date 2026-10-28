@@ -8,7 +8,6 @@ next: "/docs/data/privacy/privacy-fundamentals"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data privacy is the discipline of deciding when and how information about people may be collected, used, shared, retained, and deleted. It makes the effects of data processing on individuals visible, so that organizations can create value from data without treating people merely as sources of information.
 
 Privacy is a cross-cutting concern in a data ecosystem. A dataset can move from an application into a platform, be combined with other records, used for analytics or AI, shared with a partner, and retained for years. Each stage can change what the data reveals and who is affected by it. Privacy provides the principles and controls for reasoning about those changes.

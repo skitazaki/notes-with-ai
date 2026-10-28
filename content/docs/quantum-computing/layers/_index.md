@@ -10,7 +10,6 @@ next: "/docs/quantum-computing"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Here is a technical report on **Quantum Computing Players by Layers**, covering the technical landscape, companies &
 solutions, and underlying mechanisms. This is structured by four categories: cloud-accessible services, developer tools
 (including programming languages), quantum algorithms, and quantum hardware.

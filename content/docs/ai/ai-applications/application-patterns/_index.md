@@ -8,7 +8,6 @@ next: "/docs/ai/ai-applications"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 AI Application Patterns provides a conceptual framework for application categories, design dimensions, and domain-specific variation. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
 
 ## Major Application Categories

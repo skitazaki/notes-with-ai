@@ -9,7 +9,6 @@ next: "/docs/acc/governance-compliance"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Access control becomes trustworthy at organizational scale only when permissions, policies, and exceptions are governable, explainable, and reviewable over time.
 
 ## Executive Summary

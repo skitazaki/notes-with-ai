@@ -8,7 +8,6 @@ next: "/docs/data/engineering/observability"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data Orchestration coordinates data workloads so they execute in the required order, with visible state and controlled responses to success or failure. It connects ingestion, processing, validation, publication, and operational actions into workflows without performing all of that work itself.
 
 ## Workflows and DAGs

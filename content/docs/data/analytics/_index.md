@@ -8,7 +8,6 @@ next: "/docs/data/analytics/data-understanding"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data analytics is the disciplined use of data to reduce uncertainty and improve decisions. It turns observations about a business, product, or system into evidence that people can interpret and act on.
 
 ![The four levels of data analytics connected in a continuous learning loop: descriptive, diagnostic, predictive, and prescriptive analytics](data-analytics.webp)

@@ -8,7 +8,6 @@ next: "/docs/ai/foundation-models"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 An embedding is a learned numerical representation of information. It maps text, images, code, audio, entities, or other inputs to vectors whose positions capture relationships useful to a model or application. Similar inputs can therefore be compared, grouped, retrieved, or classified through operations on those vectors.
 
 Embeddings are a general representation-learning technique, not merely a component of retrieval-augmented generation. They support semantic search, recommendations, clustering, classification, deduplication, entity matching, anomaly detection, multimodal retrieval, agent memory, and RAG.

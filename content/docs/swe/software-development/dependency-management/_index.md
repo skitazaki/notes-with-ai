@@ -8,7 +8,6 @@ next: "/docs/swe/software-development"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Dependencies let teams reuse capabilities they do not need to build themselves. Every dependency also creates an external boundary whose availability, compatibility, security, licensing, and evolution affect the system.
 
 ## Know what the system depends on

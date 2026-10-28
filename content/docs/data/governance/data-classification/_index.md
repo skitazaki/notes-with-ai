@@ -8,7 +8,6 @@ next: "/docs/data/governance/compliance-and-auditability"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Data classification assigns governance-relevant attributes to data so that obligations can vary according to context. It is broader than a single security label.
 
 ![Overview of classification dimensions and how they lead to proportionate governance obligations](data-classification.webp "Data Classification")

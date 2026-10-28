@@ -8,7 +8,6 @@ next: "/docs/ai/deep-learning/mixture-of-experts"
 
 Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
 
-
 Autoencoders are neural networks trained to reconstruct their inputs. An encoder maps an input into a representation, often called a latent code, and a decoder uses that representation to produce a reconstruction. By constraining the representation or the model, training can encourage the network to capture useful structure rather than simply copy the input.
 
 ## Compression and Reconstruction
