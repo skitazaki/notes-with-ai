@@ -6,6 +6,8 @@ prev: "/docs/data/sharing/data-clean-rooms"
 next: "/docs/data/sharing/open-data"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 A data space is a federated environment in which independent participants share and use data through common rules, trust mechanisms, and interoperable services. It coordinates an ecosystem without requiring all data, infrastructure, or authority to be centralized in one platform.
 
 “Data space” names a family of organizational and architectural approaches, not one universal protocol. Implementations differ by industry, jurisdiction, governance, technical stack, and the degree of control retained by each participant.

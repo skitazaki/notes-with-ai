@@ -6,6 +6,8 @@ prev: "/docs/data/architecture"
 next: "/docs/data/management"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Data sharing is the capability that makes governed data available beyond the system, team, or organization that produced it. It turns data into something another party can safely discover, understand, consume, exchange, collaborate on, and sometimes monetize.
 
 Within the Data landscape, sharing belongs to the **Value Layer**. [Data Analytics](/docs/data/analytics/) creates value by interpreting data; Data Sharing extends that value across organizational and ecosystem boundaries. The objective is not simply to move bytes. It is to preserve meaning, trust, control, and accountability as data crosses a boundary.

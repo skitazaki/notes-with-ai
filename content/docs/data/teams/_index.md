@@ -6,6 +6,8 @@ prev: /docs/data
 next: /docs/data/teams/roles
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Data-team design is an organizational architecture decision. The central question is: **who owns data work, and how is that work coordinated across the organization?**
 
 The answer determines where decisions are made, who is accountable for outcomes, and how business context connects to shared technical capabilities. It is not a maturity ladder. A distributed model is not inherently more advanced than a centralized one; each model is appropriate only when it fits the organization’s boundaries, obligations, skills, and ability to coordinate.

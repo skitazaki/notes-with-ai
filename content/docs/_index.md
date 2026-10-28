@@ -3,7 +3,11 @@ date: "2025-05-06T20:18:15+09:00"
 title: "Technology Documentation"
 ---
 
-This technical documentation is organized around technical domains and the topics within them.
+This technical documentation is organized around broad technical domains and the more focused topic pages inside them.
+A domain is the larger field: it has a stable vocabulary, a recognizable body of concepts, and a set of topic pages that deepen it.
+A topic page is a more focused article about a concept, model, practice, or operating concern within that domain.
+Within a domain, content may be grouped as orientation material, operational guidance, governance, or reference material; those are reading modes, not separate domains.
+
 Start with a domain overview when you want the big picture.
 Move to a relevant topic page when you want a deeper explanation of a specific concept, model, or practice.
 

@@ -6,6 +6,8 @@ prev: "/docs/data/metadata/data-products"
 next: "/docs/data/metadata/federated-governance"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 A semantic layer gives data a stable business meaning that can be reused across dashboards, notebooks, applications, and AI systems. It prevents every consumer from having to translate physical tables and locally defined calculations into concepts such as customer, order, revenue, inventory, or risk.
 
 ## Executive Summary

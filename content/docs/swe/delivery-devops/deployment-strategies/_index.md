@@ -6,6 +6,8 @@ prev: "/docs/swe/delivery-devops/continuous-delivery"
 next: "/docs/swe/delivery-devops/internal-developer-portal"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Deployment places a software version into an environment; release exposes its behavior to users or workloads. Treating these as separate decisions makes risk easier to control.
 
 ## Replacement and exposure

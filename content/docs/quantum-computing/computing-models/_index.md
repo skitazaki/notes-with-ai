@@ -6,6 +6,8 @@ prev: "/docs/quantum-computing/foundations"
 next: "/docs/quantum-computing/algorithms-and-advantage"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Quantum computers are built through several computing models and physical architectures. These choices are related but distinct: a computing model defines how a problem is expressed, while a hardware modality defines how quantum information is physically stored, controlled, and measured.
 
 Keeping the two levels separate makes comparisons more useful. A platform should not be judged by qubit count alone, and a computing model should not be confused with one vendor or device type.

@@ -6,6 +6,8 @@ prev: "/docs/ai/mlops-and-llmops"
 next: "/docs/ai/mlops-and-llmops"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Model Operations provides a conceptual framework for lifecycle control, observability, and operating concerns for ML and LLM systems. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
 
 ## Core MLOps Concerns

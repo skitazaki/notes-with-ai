@@ -5,6 +5,8 @@ prev: "/docs/data/privacy/personal-data-and-pii"
 next: "/docs/data/privacy/data-classification"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Privacy risk is the possibility that data processing will create adverse effects for people, groups, or society. A breach is one source of harm, but authorized collection, analysis, or disclosure can also be intrusive, unfair, or damaging. Harm-based analysis complements rules by asking what processing actually does to people.
 
 ## Where Harms Arise

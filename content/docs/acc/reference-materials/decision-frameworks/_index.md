@@ -7,6 +7,8 @@ prev: "/docs/acc/reference-materials/patterns"
 next: "/docs/acc/reference-materials/reference-architectures"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Good access-control design depends less on universal best practices than on explicit tradeoff management.
 
 ## Executive Summary

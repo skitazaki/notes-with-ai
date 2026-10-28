@@ -6,6 +6,8 @@ prev: "/docs/data/sharing/data-marketplaces"
 next: "/docs/data/sharing/data-spaces"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 A data clean room is a controlled architecture and governance pattern for deriving permitted insights from sensitive data without giving every participant unrestricted access to the underlying records.
 
 The term describes a collaboration boundary, not one product or privacy-enhancing technology. A credible clean room states its participants, purposes, threat model, allowed computations, output controls, evidence, and responsibility boundaries.

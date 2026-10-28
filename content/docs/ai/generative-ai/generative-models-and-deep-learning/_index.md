@@ -6,6 +6,8 @@ prev: "/docs/ai/generative-ai/system-patterns"
 next: "/docs/ai/generative-ai"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Generative models and deep learning describe different aspects of machine learning. Generative modeling is concerned with learning patterns in data so a model can produce new samples. Deep learning uses neural networks with multiple layers to learn representations and relationships in data. Many generative models use deep learning, but the terms describe different things: one refers to a model's purpose, the other to a family of methods.
 
 Generative adversarial networks (GANs) combine both. They are generative models trained using two neural networks in competition, and those networks are commonly deep neural networks.

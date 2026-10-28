@@ -5,6 +5,8 @@ prev: "/docs/data/privacy/de-identification"
 next: "/docs/data/privacy/sensitive-data-protection"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Privacy engineering translates privacy principles and obligations into system requirements, architectures, controls, and evidence. Its goal is predictable, reviewable processing throughout the lifecycle—not a collection of features added immediately before release.
 
 ## Start with Data and Purpose

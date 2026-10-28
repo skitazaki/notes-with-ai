@@ -7,6 +7,8 @@ prev: "/docs/ai/ai-infrastructure/ai-gateway/connectivity-and-abstraction"
 next: "/docs/ai/ai-infrastructure/ai-gateway/security-and-governance"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 AI traffic management applies familiar distributed-systems controls to workloads with unusual duration, cost, and failure behavior. A gateway can route and protect requests consistently, but it must understand when an operation is streaming, stateful at the application layer, expensive, or capable of producing side effects.
 
 ## Routing and Capacity

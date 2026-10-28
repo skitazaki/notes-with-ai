@@ -11,6 +11,8 @@ discovery　— offering computational power far beyond what classical systems c
 understanding quantum computing is no longer optional. It's a key part of preparing for the next decade of competitive
 advantage.
 
+In this documentation, a domain is a broad field with a stable vocabulary and a set of topic pages. A topic page is a more focused explanation of a concept, algorithm class, hardware model, or ecosystem concern inside that field. This section is a focused domain overview, so its child pages are topic pages rather than separate domains of equal status.
+
 This article outlines the core principles, current enterprise use cases, limitations, and strategic opportunities
 quantum computing presents over the next 3–7 years.
 

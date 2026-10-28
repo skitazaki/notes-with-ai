@@ -6,6 +6,8 @@ prev: "/docs/ai/data-for-ai"
 next: "/docs/ai/mlops-and-llmops/model-operations"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Model deployment is not the end of AI delivery. It is the beginning of operational responsibility. Once a model influences real workflows, teams need repeatable ways to version it, observe it, evaluate drift, manage change, and improve behavior without losing control of production risk.
 
 That is the shared logic behind MLOps and LLMOps. Both disciplines exist because AI systems are probabilistic, data-dependent, and sensitive to change in ways that traditional software delivery alone does not fully capture.

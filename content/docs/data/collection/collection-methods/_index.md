@@ -6,6 +6,8 @@ prev: "/docs/data/collection/data-sources"
 next: "/docs/data/collection/collection-design-and-sampling"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 A collection method is the way a phenomenon, activity, assertion, or measurement becomes data. The method shapes what is visible, what is missed, how precise the result is, and how people or systems may change their behavior in response to observation.
 
 ## Common Methods

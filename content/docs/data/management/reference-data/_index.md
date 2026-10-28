@@ -6,6 +6,8 @@ prev: "/docs/data/management/mdm"
 next: "/docs/data/management/lifecycle-management"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Reference Data Management is the discipline of defining, governing, and distributing the controlled values that systems use to classify, constrain, and standardize data. Country codes, currencies, account statuses, product categories, and regulatory classifications are common examples. These values are usually small in volume, but differences in their meaning or representation can disrupt integrations, controls, and reporting across an enterprise.
 
 Reference Data Management establishes shared vocabulary. It does not require every system to store the same literal value. It requires each local value to map predictably to an agreed meaning.

@@ -6,6 +6,8 @@ prev: "/docs/data/architecture/modern-data-architecture"
 next: "/docs/data/architecture"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Data Mesh is a data architecture pattern for scaling data ownership and delivery across many domains without recreating a centralized bottleneck. It treats data like a product, places accountability near the domain that knows the meaning and business context, and relies on shared platform capabilities and governance standards to keep the overall system coherent.
 
 The idea is simple: when an organization becomes large enough that no single team can understand all data, a more federated model becomes necessary. The challenge is not only to distribute work, but to preserve discoverability, interoperability, trust, and accountability. Data Mesh addresses that challenge by combining domain-oriented ownership with shared standards, platform services, and a clear operating model.

@@ -6,6 +6,8 @@ prev: "/docs/swe"
 next: "/docs/swe/software-development/version-control-and-integration"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Software development turns intent and design into executable behavior that people can understand, verify, and change. Programming is central to that work, but development also includes the practices that keep code coherent as requirements, dependencies, teams, and production environments evolve.
 
 ![Software Development: intent and design move through code, review, and integration to produce maintainable change, supported by dependencies, tooling, and feedback](software-development-overview.webp "Software Development")

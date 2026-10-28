@@ -6,6 +6,8 @@ prev: "/docs/ai/context-engineering/vector-search"
 next: "/docs/ai/context-engineering/tools-and-mcp"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Retrieval-augmented generation (RAG) is a pattern that retrieves external evidence at runtime and assembles it into the context for a model interaction. It helps systems answer with current, domain-specific, or organization-specific information that is not reliably available in the model's parameters.
 
 RAG is not a synonym for vector search. Its quality depends on the complete path from source material to answer: the corpus, metadata, access rules, retrieval, ranking, context construction, model behavior, and evaluation all matter.

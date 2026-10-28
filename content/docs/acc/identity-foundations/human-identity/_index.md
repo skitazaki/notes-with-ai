@@ -7,6 +7,8 @@ prev: "/docs/acc/identity-foundations"
 next: "/docs/acc/identity-foundations/sso-federation"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Human identity remains the foundation of enterprise access control because business accountability, approvals, and legal obligations are still anchored to people.
 
 ## Executive Summary

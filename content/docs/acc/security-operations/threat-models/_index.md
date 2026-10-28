@@ -7,6 +7,8 @@ prev: "/docs/acc/security-operations/defense-in-depth"
 next: "/docs/acc/security-operations"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Threat models help teams move from generic security concern to explicit attack paths, trust-boundary analysis, and mitigation choices.
 
 ## Executive Summary

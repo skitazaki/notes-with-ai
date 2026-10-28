@@ -6,6 +6,8 @@ prev: "/docs/ai/machine-learning"
 next: "/docs/ai/deep-learning/neural-architectures"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Deep learning changed AI by making representation learning practical at large scale. Earlier machine-learning systems often depended heavily on hand-crafted features and task-specific pipelines. Deep neural networks shifted more of that burden into the model itself by learning layered internal representations from raw or lightly processed data.
 
 That shift matters because many high-value AI tasks involve signals that are hard to describe explicitly. Images, audio, code, and natural language contain structure that is rich, hierarchical, and context-dependent. Deep learning gave the field a way to absorb that structure more effectively.

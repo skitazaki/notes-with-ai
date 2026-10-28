@@ -7,6 +7,8 @@ prev: "/docs/acc/reference-materials/patterns"
 next: "/docs/acc/reference-materials/reference-architectures"
 ---
 
+このドキュメントでは、領域とはより広い対象分野のことを指し、トピックページは、その中で特定の概念、パターン、運用上の懸念をより焦点を絞って説明するページです。このページは、そのより広い領域に属し、関連するトピックページへつながります。
+
 良いアクセス制御設計は、普遍的な正解よりも、明示的なトレードオフ管理に依存します。
 
 ## 概要

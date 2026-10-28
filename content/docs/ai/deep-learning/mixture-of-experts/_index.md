@@ -6,6 +6,8 @@ prev: "/docs/ai/deep-learning/autoencoders"
 next: "/docs/ai/deep-learning/state-space-models"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Mixture of Experts (MoE) is a model design that combines multiple expert networks with a routing mechanism. For each input, the router selects a subset of experts to process it. This conditional computation can increase a model's total parameter capacity without requiring every parameter to be active for every input.
 
 ## Experts and Routing

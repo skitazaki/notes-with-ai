@@ -6,6 +6,8 @@ prev: "/docs/ai/deep-learning/graph-neural-networks"
 next: "/docs/ai/deep-learning"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Diffusion models are generative models that learn to produce data by reversing a gradual corruption process. During training, noise is added to examples and a neural network learns to estimate or remove it. During generation, the model starts from noise and repeatedly denoises toward a sample from the learned data distribution.
 
 ## Forward and Reverse Processes

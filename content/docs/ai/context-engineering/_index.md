@@ -6,6 +6,8 @@ prev: "/docs/ai/generative-ai"
 next: "/docs/ai/context-engineering/memory"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Context engineering is the discipline of deliberately designing the information that an AI system can use while it performs a task. It is broader than writing a prompt. A dependable model interaction may depend on instructions, the user's goal, conversation state, retrieved evidence, memory, tool results, and policy constraints. The system must decide which of those inputs to include, how to order them, and which must remain unavailable.
 
 This matters because a model does not act on an abstract task alone. It responds to the particular context delivered at that moment. Even a capable model can give an irrelevant, unsafe, or inconsistent answer when that context is incomplete, stale, conflicting, excessive, or untrusted.

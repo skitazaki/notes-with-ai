@@ -6,6 +6,8 @@ prev: "/docs/swe/ai-as-software-engineering-tool/coding-agents"
 next: "/docs/swe/ai-as-software-engineering-tool/evaluation-and-security"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Harness engineering designs the environment in which an AI agent performs work. The harness combines instructions, context, tools, permissions, execution isolation, feedback, state, and human checkpoints into a dependable workflow.
 
 ## Shape the work environment

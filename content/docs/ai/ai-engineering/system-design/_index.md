@@ -6,6 +6,8 @@ prev: "/docs/ai/ai-engineering"
 next: "/docs/ai/ai-engineering/agent-to-agent"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 AI System Design provides a conceptual framework for contracts, orchestration, evaluation, and runtime components. It focuses on durable ideas for design and decision-making rather than particular products or implementation steps.
 
 ## Core Engineering Concerns

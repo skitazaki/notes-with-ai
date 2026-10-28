@@ -8,6 +8,8 @@ next: "/docs/arch/dimensions"
 Software architecture is the discipline of reasoning about systems and communicating that reasoning clearly.
 It helps teams understand complexity, evaluate tradeoffs, identify risks, and align people around decisions that shape how software is built, operated, and changed over time.
 
+In this documentation, a domain is a broad subject area with a stable vocabulary and a set of topic pages. A topic page is a more focused article on a concept, view, pattern, or decision lens inside that area. Architecture is unusual here because the section is organized primarily around reasoning lenses rather than by a single top-level domain taxonomy. The dimensions, principles, constraints, and decision frameworks are navigation categories, not competing definitions of the field.
+
 Experienced teams often argue about whether something should be called a layer, a plane, a service, a module, a component, or a pillar.
 Those arguments usually hide a deeper issue.
 The terminology differs because architects are often reasoning about different dimensions of the same system.

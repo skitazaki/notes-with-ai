@@ -5,6 +5,8 @@ prev: "/docs/data/privacy/privacy-harms"
 next: "/docs/data/privacy/de-identification"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Privacy classification describes data properties that affect how information about people should be handled. It turns abstract obligations into metadata that systems and teams can use when granting access, approving reuse, sharing data, or applying retention.
 
 ## Useful Classification Dimensions

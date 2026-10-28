@@ -7,6 +7,8 @@ prev: "/docs/acc/reference-materials/decision-frameworks"
 next: "/docs/acc/reference-materials/concept-dictionary"
 ---
 
+Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
+
 Reference architectures are not universal blueprints. They are calibrated examples that show how principles, controls, and tradeoffs fit together in realistic environments.
 
 ## Executive Summary
