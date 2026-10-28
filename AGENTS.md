@@ -21,10 +21,13 @@ Preferred types include `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `sty
 Never commit directly to `main`. Before making repository changes, inspect the current branch and working tree so existing work is preserved and the destination for any commit is clear.
 
 - Reuse the current branch when it is already an appropriate task branch. Do not create another branch just because a new request arrived; follow-up work on the same task can stay on its existing branch.
-- When starting work from `main` that is expected to be committed, create or select an appropriate task branch before committing. Use the `codex/` prefix for new Codex branches, for example `codex/data-mesh-navigation`.
+- When starting work from `main` that is expected to be committed, create or select an appropriate task branch before committing.
+- Prefer descriptive task prefixes such as `docs/`, `fix/`, `chore/`, or `refactor/` for normal work.
+- Use tool-specific prefixes such as `codex/`, `claude/`, or `copilot/` only for independent, parallel workstreams owned by separate assistants.
 - Whether to create a new branch for a task depends on the context. Consider whether the work is part of an existing task, needs isolation, or will be committed. Regardless, commits must be made on a branch other than `main`.
 - Before committing, verify the current branch again. If it is `main`, switch to an appropriate task branch first, preserving the changes and commits.
 - For independent parallel tasks, use a separate worktree and branch for each task. Never let two agents modify the same worktree.
+- Default branch naming to the work being done; reserve tool-specific prefixes for truly separate agent-specific tasks that run alongside other workstreams.
 - When creating a pull request, identify and run the repository's standard lint or format checks, then record the commands and results in the PR body.
 
 ## Mission
