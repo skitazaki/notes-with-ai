@@ -7,6 +7,7 @@ next: "/docs/swe/ai-as-software-engineering-tool/harness-engineering"
 ---
 
 Coding agents are not just code-generation utilities; they execute concrete software-engineering tasks such as repository understanding, implementation, validation, and review handoff. Because they chain these tasks, design decisions must cover not only model quality but also endpoint selection, runtime environment, and authority boundaries.
+
 Coding agents use models and tools to perform multi-step software-engineering work: exploring a repository, editing files, running checks, and presenting evidence. Their ability to act makes workflow design and authority as important as model capability.
 
 ## Interaction surfaces
@@ -14,6 +15,7 @@ Coding agents use models and tools to perform multi-step software-engineering wo
 The same coding agent can appear through different interaction surfaces: terminal interfaces, dedicated desktop applications, and editor or plugin integrations. Each surface changes how users issue instructions, review actions, and approve side effects.
 
 Surface choice also determines practical constraints such as available tools, context visibility, execution permissions, and collaboration flow. In practice, it is useful to design the operating surface first, then choose model and endpoint combinations that fit that surface.
+
 How those constraints are enforced in execution depends on harness design; for details, see [Harness Engineering](/docs/swe/ai-as-software-engineering-tool/harness-engineering/).
 
 ## Models, endpoints, and access patterns
@@ -43,6 +45,7 @@ Before editing, an agent should inspect local conventions and current state. Dur
 Autonomy is multidimensional. Permission to read a repository does not imply permission to execute arbitrary code, access a network, use credentials, modify production, or communicate externally. Reversibility, impact, and observability should determine which steps can proceed automatically and where human review belongs.
 
 Agents can parallelize independent work, but coordination overhead and merge risk remain. Shared files, runtime state, and unclear ownership can erase the benefit. When splitting work, define independent scopes and assign clear ownership for integrating the outputs.
+
 For parallel execution, isolating each workstream with `git worktree` helps reduce cross-task interference by giving each agent or contributor a separate working directory and branch context.
 
 ## Summary
