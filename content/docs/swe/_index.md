@@ -145,4 +145,4 @@ These are boundaries of primary ownership, not walls. Software engineering conne
 
 ## Summary
 
-Software engineering coordinates structure, implementation, evidence, delivery, operations, security, and human practice. No single hierarchy captures all of those relationships. Use domains to understand the bodies of knowledge, the lifecycle to follow feedback through a system, and concerns to examine qualities that span both. The filesystem stores the documentation; the hub explains the landscape.
+Software engineering coordinates structure, implementation, evidence, delivery, operations, security, and human practice. No single hierarchy captures all of those relationships. Use domains to understand the bodies of knowledge, the lifecycle to follow feedback through a system, and concerns to examine qualities that span both.
