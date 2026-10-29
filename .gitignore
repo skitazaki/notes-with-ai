@@ -31,4 +31,4 @@ go.work.sum
 public/
 resources/
 node_modules/
-.codex-runtime/
+.worktree-runtime/

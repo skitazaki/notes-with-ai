@@ -3,7 +3,7 @@
 set -eu
 
 ROOT=$(git rev-parse --show-toplevel)
-RUNTIME="$ROOT/.codex-runtime"
+RUNTIME="$ROOT/.worktree-runtime"
 PID_FILE="$RUNTIME/hugo.pid"
 PORT_FILE="$RUNTIME/hugo.port"
 

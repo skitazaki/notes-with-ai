@@ -9,9 +9,9 @@
     "format": "oxfmt .",
     "lint": "oxfmt --check .",
     "check": "pnpm lint && pnpm build",
-    "codex:setup": "./scripts/codex/setup.sh",
-    "codex:server": "./scripts/codex/server.sh",
-    "codex:stop": "./scripts/codex/stop.sh"
+    "worktree:setup": "./scripts/worktree/setup.sh",
+    "worktree:server": "./scripts/worktree/server.sh",
+    "worktree:stop": "./scripts/worktree/stop.sh"
   },
   "repository": {
     "type": "git",
