@@ -142,12 +142,6 @@ For example, observability supports reliability, distributed-systems diagnosis, 
 
 These are boundaries of primary ownership, not walls. Software engineering connects them through the practices used to design, build, deliver, and operate real systems.
 
-## How this hub grows
-
-The filesystem stores each page at one canonical location; hub pages provide conceptual navigation; metadata or taxonomies may later describe cross-cutting relationships. This separation allows a topic to remain stable while new routes to it are added.
-
-New topics should become pages when they can provide meaningful, durable guidance—not merely to fill a box in the map. Until then, this hub names important parts of the landscape without creating empty destinations. As the section grows, domain summaries should continue to emphasize a few starting points, with deeper indexes or metadata-driven related-topic navigation introduced only where the volume of content justifies it.
-
 ## Summary
 
-Software engineering coordinates structure, implementation, evidence, delivery, operations, security, and human practice. No single hierarchy captures all of those relationships. Use domains to understand the bodies of knowledge, the lifecycle to follow feedback through a system, and concerns to examine qualities that span both. The filesystem stores the documentation; the hub explains the landscape.
+Software engineering coordinates structure, implementation, evidence, delivery, operations, security, and human practice. No single hierarchy captures all of those relationships. Use domains to understand the bodies of knowledge, the lifecycle to follow feedback through a system, and concerns to examine qualities that span both.
