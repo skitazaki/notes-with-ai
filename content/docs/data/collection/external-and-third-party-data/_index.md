@@ -6,8 +6,6 @@ prev: "/docs/data/collection/collection-design-and-sampling"
 next: "/docs/data/collection/responsible-data-collection"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 External and third-party data is acquired from outside the organization's direct operational control. Sources include partners, suppliers, commercial providers, public bodies, open-data publishers, research institutions, and web-accessible resources. Acquisition can broaden coverage or provide knowledge that would be impractical to collect directly, while introducing dependencies and restrictions that internal pipelines cannot remove.
 
 ## Establish the Provenance Chain

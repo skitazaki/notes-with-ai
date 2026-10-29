@@ -6,8 +6,6 @@ prev: "/docs/acc/governance-compliance"
 next: "/docs/acc/reference-materials/patterns"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Reference materials turn the library's concepts into reusable aids for design, evaluation, communication, and architecture review.
 
 ## Explore Reference Materials

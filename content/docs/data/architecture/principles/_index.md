@@ -6,8 +6,6 @@ prev: "/docs/data/architecture"
 next: "/docs/data/architecture/patterns"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data architecture principles are durable criteria for making decisions across changing technologies. They do not select a product or produce one ideal topology. They help teams expose trade-offs, keep local choices compatible, and recognize when an architecture no longer fits its workload or organization.
 
 ## Boundaries, Interfaces, and Interoperability

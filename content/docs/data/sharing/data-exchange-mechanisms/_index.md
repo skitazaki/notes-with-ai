@@ -6,8 +6,6 @@ prev: "/docs/data/sharing"
 next: "/docs/data/sharing/data-marketplaces"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data exchange mechanisms are the technical means by which a sharing relationship delivers data, exposes a query surface, or permits computation against an asset. They implement part of [Data Sharing](/docs/data/sharing/), but they do not by themselves define the complete producer-consumer relationship.
 
 A mechanism can move a copy, expose live state, deliver changes, or execute a request near the data. The right choice depends on freshness, scale, sensitivity, interoperability, cost, revocation, and the degree of runtime dependency that participants can accept.

@@ -6,8 +6,6 @@ prev: "/docs/ai/deep-learning/mixture-of-experts"
 next: "/docs/ai/deep-learning/graph-neural-networks"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 State space models (SSMs) represent a sequence through a hidden state that evolves as new inputs arrive. In deep learning, structured state space models use parameterized state transitions to capture long-range sequence relationships while aiming to keep computation manageable for long inputs.
 
 ## State and Sequence Processing

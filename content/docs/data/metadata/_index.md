@@ -5,8 +5,6 @@ weight: 5
 prev: "/docs/data"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Metadata describes data about data. It provides the structural, operational, and semantic context that allows people and systems to find, understand, trust, and govern data assets at scale.
 
 Metadata acts as a coordination mechanism across data engineering, architecture, analytics, governance, and platform operations. Without metadata, data assets remain technically present but operationally opaque: teams struggle to discover relevant datasets, definitions drift across domains, lineage becomes unclear, and automation is limited.

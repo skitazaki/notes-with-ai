@@ -6,8 +6,6 @@ prev: "/docs/data/metadata/active-metadata"
 next: "/docs/data/metadata/data-products"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data mesh depends on domain ownership, self-serve infrastructure, and federated governance, but metadata is what turns those principles into a coordinated operating system.
 
 ## Executive Summary

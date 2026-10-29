@@ -6,8 +6,6 @@ prev: "/docs/acc/vision"
 next: "/docs/acc"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 The access-control landscape is best understood as an ecosystem of interacting systems rather than a single product category.
 
 ![Conceptual diagram of a modern access control architecture with four complementary layers: identity, decision, enforcement, and governance.](access-control-layers.webp "Four Layers of Access Control")

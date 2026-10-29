@@ -6,8 +6,6 @@ prev: "/docs/data/metadata/semantic-layer"
 next: "/docs/data/metadata/maturity-model"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Federated governance is the operating model that lets many domains move independently without giving up policy consistency, accountability, or auditability.
 
 This page focuses on the metadata mechanisms that make federation executable. See [Federated Data Governance](/docs/data/governance/federated-data-governance/) for the operating model, distribution of decision rights, and enterprise-versus-domain boundary.

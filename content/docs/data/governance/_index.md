@@ -6,8 +6,6 @@ prev: "/docs/data/metadata"
 next: "/docs/data/governance/principles-and-operating-model"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data Governance is the organizational control system that determines who is accountable for data, what policies and decision rights apply, how those policies become operational controls, and how the organization verifies that governance is working.
 
 Governance exists so people can use data with justified confidence. It makes authority, obligations, and exceptions explicit across organizational and system boundaries. Effective governance supports trusted data use through clear decision boundaries and proportionate controls. It can operate within centralized, federated, or hybrid models; no one model is an inherent target state.

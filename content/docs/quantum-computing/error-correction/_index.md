@@ -6,8 +6,6 @@ prev: "/docs/quantum-computing/algorithms-and-advantage"
 next: "/docs/quantum-computing/hybrid-systems"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Quantum information is fragile. Unwanted interaction with the environment, imperfect control, state preparation errors, and measurement errors all reduce the reliability of a computation. Because unknown quantum states cannot simply be copied and inspected, error management differs fundamentally from classical redundancy.
 
 The path from noisy experiments to dependable quantum computation involves three related but distinct ideas: characterization, error mitigation, and quantum error correction.

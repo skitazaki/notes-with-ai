@@ -6,8 +6,6 @@ prev: "/docs/ai"
 next: "/docs/ai/foundations/ai-paradigms"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Artificial Intelligence is easiest to misunderstand when it is treated as one recent technology wave. In practice, it is a broad field formed from several traditions that each try to answer a different question about intelligent behavior. Some traditions focus on rules and reasoning, some on search and planning, some on uncertainty and probability, and some on learning patterns from data.
 
 That broader view matters because modern AI systems are rarely explained well by one tradition alone. A retrieval-based assistant may depend on neural language models, probabilistic ranking, symbolic policy rules, and explicit workflow control at the same time. Foundations provide the conceptual map that keeps those layers distinct.

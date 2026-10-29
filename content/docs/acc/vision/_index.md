@@ -6,8 +6,6 @@ prev: "/docs/acc"
 next: "/docs/acc/landscape"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Access control is no longer a narrow authorization concern at the edge of an application. It is a system-wide discipline for continuously establishing trustworthy intent between principals, resources, policies, and execution environments.
 
 ## Executive Summary

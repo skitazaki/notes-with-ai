@@ -6,8 +6,6 @@ prev: "/docs/arch/dimensions/planes"
 next: "/docs/arch/dimensions/pillars"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Flow-oriented views matter because many architectural questions are really questions about movement over time. They are not primarily about what exists, but about what happens: what starts an action, which boundaries it crosses, where data changes shape, where waiting occurs, and where failure must be detected or recovered.
 
 ## Definition

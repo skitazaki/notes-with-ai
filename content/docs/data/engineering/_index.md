@@ -5,8 +5,6 @@ weight: 3
 prev: "/docs/data"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data Engineering is the discipline of designing, implementing, automating, and operating systems that move and transform data into forms that downstream systems and people can use. Its central question is: **How do we build and operate reliable data flows and data platforms?**
 
 The discipline is broader than ETL. It includes pipelines, distributed processing, reusable platform capabilities, infrastructure, deployment, and operational practices. A production data flow must be reliable, scalable, repeatable, recoverable, observable, maintainable, performant, and cost-aware.

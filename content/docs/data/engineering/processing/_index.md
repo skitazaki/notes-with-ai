@@ -6,8 +6,6 @@ prev: "/docs/data/engineering/ingestion"
 next: "/docs/data/engineering/orchestration"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data Processing transforms source or intermediate data into datasets that applications, analytics, and AI systems can use. Processing may filter records, join related entities, aggregate measures, enrich values from reference data, reshape schemas, or validate assumptions.
 
 ![Data processing contract showing ingested data transformed through filtering, joining, aggregation, enrichment, and validation into published data, with repeatability, recoverability, and observability](data-processing-contract.webp "Data Processing Contract")

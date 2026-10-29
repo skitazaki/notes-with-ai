@@ -7,8 +7,6 @@ prev: "/docs/acc/reference-materials"
 next: "/docs/acc/reference-materials/decision-frameworks"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Architecture patterns are reusable answers to recurring enforcement and trust-distribution problems.
 
 ## Executive Summary

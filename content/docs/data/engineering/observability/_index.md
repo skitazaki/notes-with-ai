@@ -6,8 +6,6 @@ prev: "/docs/data/engineering/orchestration"
 next: "/docs/data/engineering"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data Observability provides the signals and context needed to understand the operational state of data pipelines and data flows. It helps operators answer: **What is happening in the data system, and why?**
 
 Monitoring checks known conditions. Observability combines multiple signals and dependencies so teams can investigate conditions they did not predict in advance. Effective observability connects execution behavior to the data assets and consumers affected by it.

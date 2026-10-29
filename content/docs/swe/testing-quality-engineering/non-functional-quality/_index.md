@@ -6,8 +6,6 @@ prev: "/docs/swe/testing-quality-engineering/test-levels"
 next: "/docs/swe/testing-quality-engineering"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Software can produce correct answers and still be unfit for use. Performance, security, accessibility, resilience, usability, and operability shape whether behavior remains acceptable under real conditions.
 
 ## Make qualities testable
