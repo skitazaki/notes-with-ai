@@ -36,6 +36,8 @@ Never commit directly to `main`. Before making repository changes, inspect the c
 
 This repository is a Hugo-based knowledge site for technical documentation and blog posts about software engineering, data, and AI. AI services operating here should primarily help by writing high-quality prompt files for downstream writing agents, not by defaulting to full article generation.
 
+Public-facing documentation should explain the domain for readers, not internal repository mechanics or agent operating details. Internal decisions about site structure, taxonomy, workflow, and writing process belong in AGENTS.md, prompt briefs, or other repository-internal guidance rather than in pages under `content/`.
+
 The expected operating model is:
 
 1. An AI service acts as a content director.
