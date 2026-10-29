@@ -142,7 +142,6 @@ For example, observability supports reliability, distributed-systems diagnosis, 
 
 These are boundaries of primary ownership, not walls. Software engineering connects them through the practices used to design, build, deliver, and operate real systems.
 
-
 ## Summary
 
 Software engineering coordinates structure, implementation, evidence, delivery, operations, security, and human practice. No single hierarchy captures all of those relationships. Use domains to understand the bodies of knowledge, the lifecycle to follow feedback through a system, and concerns to examine qualities that span both.
