@@ -6,8 +6,6 @@ prev: "/docs/arch/dimensions"
 next: "/docs/arch/dimensions/planes"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Layers are one of the oldest and most useful architecture concepts because they help engineers reason about structural abstraction. They are not a universal design mandate, and they do not explain every property of a system, but they remain a practical way to understand what builds on what.
 
 ## Definition

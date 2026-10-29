@@ -7,8 +7,6 @@ prev: "/docs/acc/identity-foundations/human-identity"
 next: "/docs/acc/identity-foundations/scim-provisioning"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Single sign-on and federation are the mechanisms that let users prove their identity once and then use that identity across multiple applications and trust domains without creating a separate password, credential, or account model for each system.
 
 ## Executive Summary

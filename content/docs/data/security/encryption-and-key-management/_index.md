@@ -6,8 +6,6 @@ prev: "/docs/data/security/data-protection-techniques"
 next: "/docs/data/security/data-loss-prevention"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Encryption makes data unintelligible without authorized keys. It protects data at rest and in transit and can narrow exposure while data is in use. Its effectiveness depends on where plaintext appears, who can use keys, and how the key lifecycle is controlled—not merely whether an encryption setting is enabled.
 
 Encryption protects confidentiality. Cryptographic authentication can protect integrity and authenticity, but encryption alone does not prevent an authorized application from leaking plaintext, an overprivileged user from querying it, or ransomware from destroying accessible copies.

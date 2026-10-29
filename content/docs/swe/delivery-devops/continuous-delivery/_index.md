@@ -6,8 +6,6 @@ prev: "/docs/swe/delivery-devops"
 next: "/docs/swe/delivery-devops/deployment-strategies"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Continuous delivery is the capability to keep software in a releasable state through frequent integration, automated evidence, and a repeatable path to production. Continuous deployment is a policy that automatically releases qualified changes; it is not required to gain the benefits of continuous delivery.
 
 ## A controlled flow of change

@@ -6,8 +6,6 @@ prev: "/docs/data/security/encryption-and-key-management"
 next: "/docs/data/security/monitoring-and-incident-response"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data loss prevention (DLP) reduces unauthorized disclosure through channels that can appear legitimate. Data may leave through accidental sharing, public cloud storage, compromised credentials, insiders, bulk queries, SaaS integrations, endpoints, partner exchanges, or analytics and AI outputs.
 
 Authentication and authorization remain necessary, but an authorized session can still become an exfiltration path. [Access Control](/docs/acc/) determines whether an action is allowed; DLP also asks whether the volume, destination, representation, and sequence of allowed actions create unacceptable disclosure.

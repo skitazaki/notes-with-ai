@@ -6,8 +6,6 @@ prev: "/docs/swe/ai-as-software-engineering-tool/harness-engineering"
 next: "/docs/swe/ai-as-software-engineering-tool"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 AI-generated engineering work should be evaluated as a change to a system, not as persuasive text. Security determines which inputs may influence the agent and which effects it is allowed to create.
 
 ## Evaluate the complete workflow

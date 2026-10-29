@@ -6,8 +6,6 @@ prev: "/docs/data/sharing/data-spaces"
 next: "/docs/data/sharing"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Open data is data that anyone is free to access, use, modify, and share, subject at most to conditions that preserve provenance and openness. It is a publication and reuse model within the broader [Data Sharing](/docs/data/sharing/) landscape.
 
 Open data is not merely data that can be viewed without payment. Durable openness depends on legal permission, practical accessibility, machine-readable formats, adequate documentation, and governance that protects rights and legitimate restrictions.

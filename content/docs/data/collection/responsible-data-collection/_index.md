@@ -6,8 +6,6 @@ prev: "/docs/data/collection/external-and-third-party-data"
 next: "/docs/data/collection"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Responsible Data Collection applies governance, privacy, security, and accountability when deciding whether and how data should be collected. Its purpose is not to reproduce those disciplines, but to bring their questions to the earliest point—before collection creates risk, obligations, expectations, and copies that may be difficult to reverse.
 
 ## A Collection Decision

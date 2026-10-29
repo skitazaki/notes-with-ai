@@ -6,8 +6,6 @@ prev: "/docs/swe/reliability-operations/incident-management-and-resilience"
 next: "/docs/swe/reliability-operations/twelve-factor-app"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Security in reliability operations is not a standalone control tower. It is a coordinated operating loop where leadership intent, detection capability, and response execution continuously influence each other.
 
 In many organizations, the key anchors are the CISO function, SOC, CSIRT, and SIEM platform. They should be designed as connected roles rather than independent silos.

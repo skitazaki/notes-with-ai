@@ -6,8 +6,6 @@ prev: "/docs/data/management/reference-data"
 next: "/docs/data/management"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data Lifecycle Management is the operational discipline of deciding what happens to a dataset as it moves from creation to retirement. It is not solely a storage problem. It is a combination of ownership, access control, retention obligations, archival strategy, and controlled decommissioning.
 
 The practical question is not whether data should be kept forever. The practical question is whether the organization can explain why a dataset is active, historical, or retired at any given time. That explanation must be grounded in business purpose, legal obligation, operational need, and evidence.

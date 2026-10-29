@@ -6,8 +6,6 @@ prev: "/docs/arch/principles"
 next: "/docs/arch"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Architecture constraints define the limits of the solution space before a team makes a design decision. They state what a solution must do, must not do, or cannot rely on, so teams do not spend time defending options that were never viable.
 
 ## Definition

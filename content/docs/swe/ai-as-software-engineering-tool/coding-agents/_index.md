@@ -6,8 +6,6 @@ prev: "/docs/swe/ai-as-software-engineering-tool"
 next: "/docs/swe/ai-as-software-engineering-tool/harness-engineering"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Coding agents use models and tools to perform multi-step software-engineering work: exploring a repository, editing files, running checks, and presenting evidence. Their ability to act makes workflow design and authority as important as model capability.
 
 ## Roles and task boundaries

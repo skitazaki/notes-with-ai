@@ -6,8 +6,6 @@ prev: "/docs/swe/testing-quality-engineering/test-strategy"
 next: "/docs/swe/testing-quality-engineering/non-functional-quality"
 ---
 
-このドキュメントでは、領域とはより広い対象分野のことを指し、トピックページは、その中で特定の概念、パターン、運用上の懸念をより焦点を絞って説明するページです。このページは、そのより広い領域に属し、関連するトピックページへつながります。
-
 テストレベルは、検査する振る舞いの範囲と境界を表します。価値の低いものから高いものへの順位ではなく、相互補完する視点です。
 
 ## 局所と境界の検証

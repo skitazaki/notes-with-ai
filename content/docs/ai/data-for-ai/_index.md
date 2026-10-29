@@ -6,8 +6,6 @@ prev: "/docs/ai/ai-infrastructure"
 next: "/docs/ai/data-for-ai/data-lifecycle"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data is the information supply chain behind every AI system. It trains models, grounds responses, shapes evaluation, supports governance, and determines whether outputs remain useful as the world changes. Treating data as only model input is therefore too narrow. In modern AI systems, data is also runtime context, evidence, control input, and measurement substrate.
 
 This broader view matters because many AI failures are data failures before they become model failures. Weak provenance, poor coverage, stale retrieval sources, inconsistent labeling, or unclear rights can all distort system behavior long before anyone starts tuning the model.

@@ -6,8 +6,6 @@ prev: "/docs/data/governance/compliance-and-auditability"
 next: "/docs/data/governance"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Federated Data Governance distributes defined decision rights to domains while preserving the policies, interoperability, and evidence the organization needs as a whole. It is not uncoordinated decentralization.
 
 ![Overview of enterprise, shared, and domain decision rights in federated data governance](federated-data-governance.webp "Federated Data Governance")

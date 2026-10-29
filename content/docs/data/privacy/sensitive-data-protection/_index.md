@@ -5,8 +5,6 @@ prev: "/docs/data/privacy/privacy-engineering"
 next: "/docs/data/privacy/privacy-governance"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Sensitive data is information whose misuse, exposure, alteration, or loss could cause substantial harm. It often includes health, biometric, financial, authentication, communications, precise location, and children's data, but sensitivity depends on context, combination, population, and use.
 
 ## Match Protection to Risk

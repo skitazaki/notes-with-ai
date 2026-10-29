@@ -5,8 +5,6 @@ weight: 5
 prev: "/docs/data/security/data-loss-prevention"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data security monitoring observes how sensitive and business-critical data is accessed, changed, exported, and administered. Incident response uses that evidence to determine what happened, contain harm, recover trusted assets, and improve controls.
 
 [Data Observability](/docs/data/engineering/observability/) asks whether flows are healthy, timely, and behaving as expected. Data security monitoring asks whether activity represents unauthorized disclosure, alteration, destruction, or misuse. Telemetry may overlap, but detection and response differ.

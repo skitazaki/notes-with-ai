@@ -6,8 +6,6 @@ prev: "/docs/ai/machine-learning/self-supervised-learning"
 next: "/docs/ai/machine-learning"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Reinforcement learning (RL) studies how an agent can learn to make decisions by interacting with an environment. At each step, the agent receives an observation, chooses an action, and receives feedback such as a reward or cost. The goal is to learn a policy that achieves good outcomes over time, including when feedback is delayed.
 
 ## The interaction model

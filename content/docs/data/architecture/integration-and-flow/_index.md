@@ -6,8 +6,6 @@ prev: "/docs/data/architecture/patterns"
 next: "/docs/data/architecture/modern-data-architecture"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data integration connects systems so information produced in one boundary becomes useful in another. The movement mechanism determines latency, coupling, consistency, failure behavior, replayability, and who must operate the connection. It is therefore an architectural decision, not merely pipeline implementation.
 
 ## Begin with the Boundary

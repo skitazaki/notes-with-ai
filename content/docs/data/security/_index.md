@@ -5,8 +5,6 @@ weight: 7
 prev: "/docs/data"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data security protects data against unauthorized disclosure, alteration, destruction, leakage, and misuse wherever it resides or moves. Its central question is: **How do we maintain appropriate protection as data crosses systems, teams, clouds, regions, partners, analytics environments, and AI workloads?**
 
 Confidentiality limits disclosure, integrity protects against unauthorized or undetected change, availability keeps data and recovery capabilities usable, and authenticity establishes confidence in sources and actions. These objectives are foundations, but effective security follows the data lifecycle and realistic threats rather than organizing everything mechanically around the CIA triad.

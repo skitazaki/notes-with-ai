@@ -6,8 +6,6 @@ prev: "/docs/data/security/classification-and-handling"
 next: "/docs/data/security/encryption-and-key-management"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Data protection techniques reduce exposure by changing how values are represented or what detail consumers receive. Masking, tokenization, redaction, hashing, pseudonymization, and aggregation solve different problems and are not interchangeable.
 
 | Technique        | Reversible?                                  | Referential consistency                | Typical use                                                   |

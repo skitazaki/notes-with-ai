@@ -6,8 +6,6 @@ prev: "/docs/swe/reliability-operations/observability-and-slos"
 next: "/docs/swe/reliability-operations/security-operations-and-governance"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 Resilience is the ability to continue, degrade deliberately, or recover when components, dependencies, people, or assumptions fail. Incident management coordinates action when a disruption is occurring; incident learning changes the system afterward.
 
 ## Design for bounded failure

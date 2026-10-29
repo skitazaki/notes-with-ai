@@ -6,8 +6,6 @@ prev: "/docs/data/collection"
 next: "/docs/data/collection/collection-methods"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 A data source is the origin from which observations, records, measurements, or assertions are acquired. A source is defined by its relationship to the information—not by the connector used to reach it. The same API or file interface can expose an authoritative operational record, a delayed replica, a vendor-curated dataset, or an undocumented derivative, each with different implications.
 
 ## Major Source Categories

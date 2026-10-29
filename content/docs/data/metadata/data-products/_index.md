@@ -6,8 +6,6 @@ prev: "/docs/data/metadata/data-mesh"
 next: "/docs/data/metadata/semantic-layer"
 ---
 
-Within this documentation, a domain is the broader subject area, and a topic page is the more focused explanation of a concept, pattern, or operating concern within it. This page belongs to that broader domain and connects the related topic pages.
-
 In data-centric organizations, a data product is not just a dataset. It is a consumable asset with a clear interface, ownership model, reliability expectation, and lifecycle.
 
 ## Executive Summary
