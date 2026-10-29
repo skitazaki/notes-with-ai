@@ -31,6 +31,19 @@ Build a coherent argument. “An AI-Assisted Content Creation Workflow: From Pla
 
 Keep the prompt scoped to the requested page. Do not create the final article unless asked. When writing Japanese prompts or localized content, follow the terminology and link-spacing guidance in the repository's root `AGENTS.md`.
 
+## Japanese translation prompts
+
+Translation prompts should identify the source page and the matching Japanese output path. For a documentation page at `content/docs/<section>/<topic>/_index.md`, save the localized page as `content/docs/<section>/<topic>/_index.ja.md` in the same directory. Preserve the source structure and metadata, including dates, titles, and weight values.
+
+Write natural, publication-ready Japanese while preserving the source's meaning and level of detail. Use consistent polite `です・ます` prose, and prefer Japanese section headings while retaining established abbreviations such as ID, AI, and SQL where useful. Translate `Executive Summary` as 「概要」 and `Summary` as 「まとめ」. When an English technical term must remain, explain it in Japanese at first use where needed. Follow the terminology guidance in the root `AGENTS.md` and any task-specific confirmed terms.
+
+Use these confirmed translations when the terms occur:
+
+- `Internal Developer Portal` → 「内部開発者ポータル」
+- `cataloging` → 「カタログ化」
+
+Preserve code blocks, Mermaid diagrams, link path structures, tables, lists, numbered procedures, and JSON, SQL, and YAML examples. Keep Markdown image syntax and translate its alternative text. If a Japanese-specific image is available in the same directory, a localized asset such as a `.ja.webp` file may be referenced. Avoid vendor-oriented paraphrases and wording that blurs conceptual boundaries. Keep the translation close to the source in length while making the Japanese natural and easy to read; do not translate mechanically.
+
 ## Image-generation prompts
 
 Place English image-generation prompts in an `imagen/` subfolder under the matching prompt directory, and Japanese versions in `imagen.ja/`. Keep the image brief self-contained: the image model must be able to determine the intended message, composition, labels, relationships, and style from that prompt alone. Do not make a source article, diagram, reference image, or other file necessary to interpret it.
