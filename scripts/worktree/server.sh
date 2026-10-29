@@ -3,7 +3,7 @@
 set -eu
 
 ROOT=$(git rev-parse --show-toplevel)
-RUNTIME="$ROOT/.codex-runtime"
+RUNTIME="$ROOT/.worktree-runtime"
 PID_FILE="$RUNTIME/hugo.pid"
 PORT_FILE="$RUNTIME/hugo.port"
 LOG_FILE="$RUNTIME/hugo.log"
@@ -40,7 +40,7 @@ if [ -f "$PID_FILE" ] && [ -f "$PORT_FILE" ]; then
       printf 'Hugo server is already running at http://127.0.0.1:%s/\n' "$port"
       exit 0
     fi
-    printf 'Hugo server process %s is running on port %s but is not responding; see %s or run pnpm codex:stop.\n' "$pid" "$port" "$LOG_FILE" >&2
+    printf 'Hugo server process %s is running on port %s but is not responding; see %s or run pnpm worktree:stop.\n' "$pid" "$port" "$LOG_FILE" >&2
     exit 1
   fi
 fi
