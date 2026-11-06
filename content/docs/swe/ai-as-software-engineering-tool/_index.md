@@ -15,7 +15,11 @@ AI can support software-engineering work by helping people understand repositori
 
 This topic concerns **AI as a tool used during software engineering**. It is distinct from software engineering for systems whose product behavior depends on models or autonomous agents. The latter belongs primarily in [AI Engineering](/docs/ai/ai-engineering/), where evaluation, model behavior, data, guardrails, and AI operations are properties of the delivered system.
 
-An AI coding assistant usually responds within an editor or conversation. A coding agent can inspect a repository, plan changes, use tools, edit files, run commands, and respond to test results. Repository-level agents operate across a larger context and longer sequence of actions. Greater autonomy increases both potential leverage and the need for explicit boundaries.
+This domain is best understood as a layered operating model rather than a single product category. The practical distinction is not whether an AI is "smart" enough; it is how much repository context it can use, what actions it can take, and what harness governs those actions.
+
+The same model can act as a small assistant in a focused conversation or as a repository-aware coding agent for a larger task. What changes is not the underlying model alone but the scope of context, authority, and feedback around it. A larger operating scope can increase leverage, but it also increases the need for clear boundaries, validation, and human checkpoints.
+
+The harness is the execution environment around the model: the instructions, context, tools, permissions, sandboxing, feedback, and human checkpoints that govern how the model works. It is the layer that turns a general-purpose model into a dependable engineering workflow.
 
 ## Where AI can help
 
@@ -56,8 +60,10 @@ Human-in-the-loop control is not a single confirmation dialog. It means placing 
 
 ## Topics
 
+This domain is organized around a practical sequence: coding work first, then the harness that makes it dependable, then validation and security controls.
+
 {{< cards >}}
-{{< card link="coding-agents/" title="Coding Agents" icon="chip" subtitle="Roles, workflows, and boundaries for repository-level agents" >}}
+{{< card link="coding-agents/" title="Coding Agents" icon="chip" subtitle="Roles, workflows, and boundaries for repository-aware work" >}}
 {{< card link="harness-engineering/" title="Harness Engineering" icon="puzzle" subtitle="Design context, tools, permissions, and feedback" >}}
 {{< card link="evaluation-and-security/" title="Evaluation & Security" icon="shield-check" subtitle="Validate changes and constrain consequential actions" >}}
 {{< /cards >}}

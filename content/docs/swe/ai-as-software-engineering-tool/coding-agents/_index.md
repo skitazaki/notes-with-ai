@@ -8,6 +8,8 @@ next: "/docs/swe/ai-as-software-engineering-tool/harness-engineering"
 
 Coding agents are not just code-generation utilities; they execute concrete software-engineering tasks such as repository understanding, implementation, validation, and review handoff. Because they chain these tasks, design decisions must cover not only model quality but also endpoint selection, runtime environment, and authority boundaries.
 
+A coding agent differs from a focused assistant mainly in scope. An assistant usually helps in an editor or a single conversation, while a coding agent can plan a sequence of repository operations and use tools to carry them out. The same task may be handled at a narrow or broader scope depending on risk, required context, and verification cost.
+
 Coding agents use models and tools to perform multi-step software-engineering work: exploring a repository, editing files, running checks, and presenting evidence. Their ability to act makes workflow design and authority as important as model capability.
 
 ## Interaction surfaces
