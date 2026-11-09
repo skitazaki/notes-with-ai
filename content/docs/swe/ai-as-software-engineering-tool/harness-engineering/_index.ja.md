@@ -10,7 +10,7 @@ next: "/docs/swe/ai-as-software-engineering-tool/evaluation-and-security"
 
 分かりやすく言えば、モデルは意思決定エンジンであり、ハーネスはそのまわりに置かれる実行基盤です。モデルが提案する行動を、どこまで許し、どのデータを見せ、どのツールを使わせ、どの環境で動かし、どの検証を通して変更を受け入れるかを決めるのがハーネスです。
 
-リポジトリ固有の運用指示は [AGENTS.md](/docs/ai/context-engineering/agents-md/) に置き、再利用可能な手順や資源は [エージェントスキル](/docs/ai/context-engineering/agent-skills/) にまとめます。[ツールと MCP](/docs/ai/context-engineering/tools-and-mcp/) はツールアクセスと標準の定義場所です。これらは同じハーネスの一部であり、エージェントが何をできるか、何を知っているか、どのように作業を検証するかを定義します。
+リポジトリ固有の運用指示は [AGENTS.md](/ja/docs/ai/context-engineering/agents-md/) に置き、再利用可能な手順や資源は [エージェントスキル](/ja/docs/ai/context-engineering/agent-skills/) にまとめます。[ツールと MCP](/ja/docs/ai/context-engineering/tools-and-mcp/) はツールアクセスと標準の定義場所です。これらは同じハーネスの一部であり、エージェントが何をできるか、何を知っているか、どのように作業を検証するかを定義します。
 
 ## ハーネスが担う責務
 

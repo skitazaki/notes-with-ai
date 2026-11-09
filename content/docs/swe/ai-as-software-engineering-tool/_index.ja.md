@@ -54,7 +54,7 @@ Human-in-the-loop は一つの確認ダイアログではありません。人�
 
 ## トピック
 
-この分野では、まずコード作業、その後にそれを安全に支えるハーネス、最後に検証とセキュリティ制約を扱うように、実務順に整理しています。リポジトリ固有の指示や再利用可能な運用パターンは [AGENTS.md](/docs/ai/context-engineering/agents-md/)、[エージェントスキル](/docs/ai/context-engineering/agent-skills/)、[ツールと MCP](/docs/ai/context-engineering/tools-and-mcp/) を参照してください。
+この分野では、まずコード作業、その後にそれを安全に支えるハーネス、最後に検証とセキュリティ制約を扱うように、実務順に整理しています。リポジトリ固有の指示や再利用可能な運用パターンは [AGENTS.md](/ja/docs/ai/context-engineering/agents-md/)、[エージェントスキル](/ja/docs/ai/context-engineering/agent-skills/)、[ツールと MCP](/ja/docs/ai/context-engineering/tools-and-mcp/) を参照してください。
 
 {{< cards >}}
 {{< card link="coding-agents/" title="コーディングエージェント" icon="chip" subtitle="リポジトリを扱うエージェントの役割、ワークフロー、境界" >}}
