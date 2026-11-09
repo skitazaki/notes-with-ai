@@ -31,14 +31,6 @@ The harness is the execution environment around the model: the instructions, con
 
 **Delivery and operations** includes updating configuration, interpreting logs, preparing runbooks, and proposing remediation. Actions that affect environments, credentials, data, or users require stronger permissions, preview, approval, and audit controls than read-only analysis.
 
-## The agent harness
-
-A coding agent's results depend on the harness around the model. Harness engineering designs the instructions, repository context, tools, permissions, sandbox, feedback, evaluation, and human checkpoints that shape an agent's work.
-
-Specifications should state the desired outcome, boundaries, invariants, and validation criteria. Context should supply the smallest authoritative set of instructions and artifacts needed for the task. Tools should expose clear schemas and constrained operations. Sandboxes should limit filesystem, network, process, and credential access. Human approval should be placed before consequential or difficult-to-reverse actions.
-
-[AGENTS.md](/docs/ai/context-engineering/agents-md/) can provide repository-scoped operating instructions, while [Agent Skills](/docs/ai/context-engineering/agent-skills/) package reusable procedures and resources. [Tools and MCP](/docs/ai/context-engineering/tools-and-mcp/) explains interoperable tool access. These mechanisms improve context and capability, but they do not replace authorization, validation, or review.
-
 ## Evaluating agent work
 
 Generated code should be evaluated as a change to the system, not as convincing text. Useful evidence includes focused tests, broader regression checks, static analysis, build results, security checks, diff inspection, and direct validation of the requested behavior. High-impact tasks may also need independent review or evaluation against known scenarios.
@@ -60,7 +52,7 @@ Human-in-the-loop control is not a single confirmation dialog. It means placing 
 
 ## Topics
 
-This domain is organized around a practical sequence: coding work first, then the harness that makes it dependable, then validation and security controls.
+This domain is organized around a practical sequence: coding work first, then the harness that makes it dependable, then validation and security controls. For repository-specific instructions and reusable operating patterns, see [AGENTS.md](/docs/ai/context-engineering/agents-md/), [Agent Skills](/docs/ai/context-engineering/agent-skills/), and [Tools and MCP](/docs/ai/context-engineering/tools-and-mcp/).
 
 {{< cards >}}
 {{< card link="coding-agents/" title="Coding Agents" icon="chip" subtitle="Roles, workflows, and boundaries for repository-aware work" >}}
