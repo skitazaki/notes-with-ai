@@ -41,6 +41,8 @@ Agent reliability is task- and environment-specific. A benchmark score does not 
 
 Treat prompts, repository content, issue text, webpages, and tool output as potentially untrusted input. An agent should receive only the authority required for the current task. Credentials should remain out of model context where possible, external effects should be explicit, and actions should be attributable to the initiating person, agent, tools, and approvals.
 
+It is useful to separate accountability from responsibility. Accountability defines who can explain and justify a decision; responsibility defines who executes the action and owns follow-through.
+
 Human-in-the-loop control is not a single confirmation dialog. It means placing meaningful review at decision points where a person has enough context and time to intervene. Low-risk, reversible transformations can be more autonomous than production changes, data modification, permission changes, or security-sensitive work.
 
 ## Common misconceptions

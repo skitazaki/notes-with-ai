@@ -8,7 +8,7 @@ next: "/docs/swe/ai-as-software-engineering-tool"
 
 AI-generated engineering work should be evaluated as a change to a system, not as persuasive text. Security determines which inputs may influence the agent and which effects it is allowed to create.
 
-A useful way to think about this topic is that evaluation and security are the same discipline from two angles. Evaluation asks, "How do we know this work is good enough?" Security asks, "What could go wrong if the agent is wrong, misled, or overly powerful?" In both cases, the goal is not to make the agent more convincing; it is to make its actions inspectable, attributable, and proportionate to risk.
+A useful way to think about this topic is that evaluation and security are the same discipline from two angles. Evaluation asks, "How do we know this work is good enough?" Security asks, "What could go wrong if the agent is wrong, misled, or overly powerful?" In both cases, the goal is not to make the agent more convincing; it is to make its actions inspectable, attributable, and proportionate to risk. This also requires separating accountability from responsibility: accountability identifies who can justify a decision, while responsibility identifies who executes it and owns remediation when something fails.
 
 ## Evaluate the complete workflow
 
@@ -30,7 +30,7 @@ An independent evaluator can reduce correlated mistakes, but independence requir
 
 Prompts, repository files, issues, webpages, and tool output may contain untrusted instructions. The harness should separate data from authority, prioritize trusted policy, and prevent retrieved content from silently expanding permissions.
 
-Use least privilege and short-lived access. Keep secrets outside model-visible context where possible, scope credentials to the operation, and record external effects. Approval should occur before the consequential action, with exact targets and impact visible. Logs must support accountability without becoming a new store of sensitive data.
+Use least privilege and short-lived access. Keep secrets outside model-visible context where possible, scope credentials to the operation, and record external effects. Approval should occur before the consequential action, with exact targets and impact visible. Logs must support accountability and responsibility handoff without becoming a new store of sensitive data.
 
 Several design patterns make this easier:
 
