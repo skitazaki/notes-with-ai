@@ -10,6 +10,8 @@ A coding agent coordinates a software-engineering task by combining a model with
 
 The model and the agent have different roles. A model interprets context and proposes or selects actions. The agent runtime organizes those actions, invokes tools, manages task state, and reports results. The surrounding harness determines what context, tools, permissions, and execution environments are available; see [Harness Engineering](/docs/swe/ai-as-software-engineering-tool/harness-engineering/).
 
+![Coding-agent architecture showing interaction surfaces and multiple model endpoints around a central agent, with local or remote repository runtime and external systems both supplying checks and evidence for developer review](coding-agents-architecture.webp "Coding Agents")
+
 ## A coding-agent architecture
 
 The architecture has several dimensions that should be considered separately. An interaction surface is how a person reaches the agent. Model access describes how the agent obtains reasoning capability. Tools are classified by the work they do, while execution location describes where they run and what they can reach. These choices meet in an engineering workflow, but they are not one fixed stack.
