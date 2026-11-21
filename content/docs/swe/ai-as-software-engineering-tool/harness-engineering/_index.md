@@ -6,15 +6,19 @@ prev: "/docs/swe/ai-as-software-engineering-tool/coding-agents"
 next: "/docs/swe/ai-as-software-engineering-tool/evaluation-and-security"
 ---
 
-Harness engineering designs the environment in which an AI agent performs work. The harness combines instructions, context, tools, permissions, execution isolation, feedback, state, and human checkpoints into a dependable workflow.
+Harness engineering designs the system around a model so that an agent can perform bounded, observable, and verifiable work. A harness is the software and configuration that frames a task, selects and assembles the information and reusable procedures given to the model, exposes controlled tools, constrains where those tools run, records state and results, and places human review at consequential decision points.
 
-A useful way to think about it is that the model is the decision engine, while the harness is the operating system around it. The model proposes actions; the harness decides which actions are possible, which data the model can see, which tools it may call, what environment it runs in, and how results are validated before they become part of the system.
+The model reasons and proposes actions; the harness mediates the model's contact with the task and the outside world. It is not just a prompt, a collection of tools, or the runtime sandbox by itself. The diagram summarizes this relationship from inputs through execution to human review.
 
-Repository-specific operating guidance belongs in [AGENTS.md](/docs/ai/context-engineering/agents-md/). Reusable procedures and resources live in [Agent Skills](/docs/ai/context-engineering/agent-skills/). Tool access and standards sit in [Tools and MCP](/docs/ai/context-engineering/tools-and-mcp/). These pieces are part of the same harness stack: they shape what the agent can do, what it knows, and how its work is checked.
+![Three-column harness diagram: task, references, and skill library enter a central harness; prepared instructions, context, and skills guide a model through governed tool access and a bounded runtime; evidence goes to human review, whose feedback returns to the harness](harness-engineering-feedback-loop.webp "Harness Engineering")
+
+Task requests, references, and a reusable skill library provide inputs to the harness. The harness prepares relevant instructions and context and supplies selected skills to guide the model. The model proposes actions through governed tools, while the bounded runtime contains their effects. Execution results are presented as evidence for human review; that review feeds the next iteration. Skills provide reusable instructions and resources, but do not execute operations or grant permission.
+
+Repository-specific operating guidance belongs in [AGENTS.md](/docs/ai/context-engineering/agents-md/). Reusable procedures and resources live in [Agent Skills](/docs/ai/context-engineering/agent-skills/). Tool access and standards sit in [Tools and MCP](/docs/ai/context-engineering/tools-and-mcp/). These are harness inputs and components with different roles: instructions and skills guide the model, context assembly chooses what information is relevant, tools expose operations, and permissions and runtime controls constrain those operations.
 
 ## What the harness is responsible for
 
-The harness is not a single switch or a single prompt. It is the full substrate that governs agent behavior across a task. In practical terms, it is a set of control layers that shape how the agent works and how its output is verified.
+The harness is not a single switch or prompt. It is the surrounding system that mediates a model's work from task framing through execution and review. Its control layers shape what the model receives, what actions it can request, where those actions take effect, and how results are evaluated.
 
 ### 1. Task framing and constraints
 
@@ -32,7 +36,7 @@ The strongest task definitions are operational rather than literary. They descri
 
 ### 2. Authoritative context
 
-Context is not a bag of information; it is a curated set of facts the agent can rely on. The best context is small, current, and aligned with the code it must modify. Repository instructions, architecture docs, issue descriptions, recent diffs, failing logs, and test outputs all become useful only when they help answer the actual question.
+Context is not a bag of information; it is a curated set of facts the agent can rely on. The harness assembles context from sources such as repository instructions, architecture docs, issue descriptions, recent diffs, failing logs, and test outputs. The source material may live outside the harness; selecting, filtering, and presenting the relevant parts is a harness responsibility. The best context is small, current, and aligned with the code the agent must modify.
 
 A common mistake is to overfeed the model with broad repository context or historical chatter. This increases noise, exposes unnecessary details, and makes important constraints harder to find. Instead, the harness should provide the smallest authoritative context needed for the decision at hand, and it should distinguish source-of-truth data from commentary or untrusted input.
 

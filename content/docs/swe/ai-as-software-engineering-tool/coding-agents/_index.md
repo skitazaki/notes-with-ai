@@ -6,50 +6,94 @@ prev: "/docs/swe/ai-as-software-engineering-tool"
 next: "/docs/swe/ai-as-software-engineering-tool/harness-engineering"
 ---
 
-Coding agents are not just code-generation utilities; they execute concrete software-engineering tasks such as repository understanding, implementation, validation, and review handoff. Because they chain these tasks, design decisions must cover not only model quality but also endpoint selection, runtime environment, and authority boundaries.
+A coding agent coordinates a software-engineering task by combining a model with interaction surfaces, repository tools, external systems, and a runtime environment. It can gather context, make bounded changes, run checks, and return results for review. Its engineering value comes from coordinating this work across steps and systems, not from code generation alone.
 
-A coding agent differs from a focused assistant mainly in scope. An assistant usually helps in an editor or a single conversation, while a coding agent can plan a sequence of repository operations and use tools to carry them out. The same task may be handled at a narrow or broader scope depending on risk, required context, and verification cost.
+The model and the agent have different roles. A model interprets context and proposes or selects actions. The agent runtime organizes those actions, invokes tools, manages task state, and reports results. The surrounding harness determines what context, tools, permissions, and execution environments are available; see [Harness Engineering](/docs/swe/ai-as-software-engineering-tool/harness-engineering/).
 
-Coding agents use models and tools to perform multi-step software-engineering work: exploring a repository, editing files, running checks, and presenting evidence. Their ability to act makes workflow design and authority as important as model capability.
+![Coding-agent architecture showing interaction surfaces and multiple model endpoints around a central agent, with local or remote repository runtime and external systems both supplying checks and evidence for developer review](coding-agents-architecture.webp "Coding Agents")
+
+## A coding-agent architecture
+
+The architecture has several dimensions that should be considered separately. An interaction surface is how a person reaches the agent. Model access describes how the agent obtains reasoning capability. Tools are classified by the work they do, while execution location describes where they run and what they can reach. These choices meet in an engineering workflow, but they are not one fixed stack.
+
+```mermaid
+flowchart LR
+    P[Developer / reviewer] <--> S[Interaction surface<br/>Terminal · desktop · editor / plugin]
+    S <--> A[Coding agent<br/>Task orchestration and state]
+    A <--> M[Model interaction<br/>Model family · endpoint · access pattern]
+    A <--> R[Local or remote runtime<br/>Repository checkout · filesystem · Git · shell]
+    R <--> E[External systems over governed network paths<br/>Issue tracker · knowledge base · hosted repository · CI]
+    R --> V[Checks and evidence]
+    E --> V
+    V --> P
+```
+
+The diagram shows common relationships, not mandatory integrations. A particular agent may use only some surfaces, models, tools, or systems, and it may run in a local or remote environment. Capabilities and connections depend on the product and its configuration.
 
 ## Interaction surfaces
 
-The same coding agent can appear through different interaction surfaces: terminal interfaces, dedicated desktop applications, and editor or plugin integrations. Each surface changes how users issue instructions, review actions, and approve side effects.
+An interaction surface is the interface through which a person gives work to the agent and reviews its progress. Common surfaces include terminal interfaces, dedicated desktop applications, and editor or plugin integrations. A surface affects how instructions are entered, how context and changes are shown, and how people approve consequential actions.
 
-Surface choice also determines practical constraints such as available tools, context visibility, execution permissions, and collaboration flow. In practice, it is useful to design the operating surface first, then choose model and endpoint combinations that fit that surface.
+A surface is not the same as the execution environment. A terminal can be the user interface while the agent's commands run in a remote workspace. Conversely, an editor integration can control tools that operate directly on a local checkout. Choose a surface for the way people need to steer and inspect work; evaluate execution location and permissions separately.
 
-How those constraints are enforced in execution depends on harness design; for details, see [Harness Engineering](/docs/swe/ai-as-software-engineering-tool/harness-engineering/).
+## Model families, endpoints, and access patterns
 
-## Models, endpoints, and access patterns
+Model interaction has three distinct choices:
 
-At the core of a coding-agent stack is a combination choice: which model family, through which endpoint, running in which environment. Major model providers include OpenAI, Anthropic, Google, and Microsoft, and each access pattern changes available resources and constraints such as permission scope, latency profile, data-boundary options, and cost controls.
+- **Model family:** the model capability used to interpret context and reason about the task.
+- **Endpoint:** the service or runtime through which the model is reached.
+- **Access pattern:** how the endpoint is provided and operated, such as a cloud-managed service, a self-managed cloud deployment, or local model execution.
 
-- Cloud-managed access: examples include GitHub Copilot, OpenAI API, Anthropic API, Google Gemini API, and Azure OpenAI. This usually improves elasticity, but introduces policy, region, network-path, and quota constraints.
-- Self-managed cloud execution: teams run their own inference stack on AWS, Azure, or Google Cloud. This increases control, while shifting operations, observability, security hardening, and cost optimization to the team.
-- Local execution: models run on developer workstations or internal infrastructure. This can fit privacy or offline requirements, but is constrained by local GPU/CPU/memory and model size.
+These dimensions are related but not one-to-one. A model family may be available through multiple endpoints, and one endpoint may provide access to multiple model families. Access patterns introduce different trade-offs in latency, capacity, operations, data handling, and cost; none is universally preferable.
 
-Hosting services and models are not one-to-one. For example, OpenAI-family models can be consumed directly through OpenAI endpoints, through Azure OpenAI, or through GitHub Copilot. Anthropic models can be reached through Anthropic APIs and cloud-provider-hosted offerings, including Claude on Amazon Bedrock and Claude Platform on AWS. Google models can be used through Gemini API or Gemini Enterprise Agent Platform, while Microsoft model families can be accessed through Microsoft Foundry.
+Model execution location is also separate from coding-agent tool execution location. A model may run locally while repository tools run in a remote workspace, or a cloud model may be paired with tools running on a developer workstation. The model endpoint's network path and the agent runtime's network permissions therefore need separate consideration.
 
-The platform layer can also include patterns where teams use models through platforms such as [Databricks Unity Gateway](https://www.databricks.com/product/artificial-intelligence/unity-gateway) and [Snowflake Cortex AI](https://www.snowflake.com/en/product/features/cortex/). In these patterns, coding-agent requests are accepted through the platform gateway and routed to underlying model providers, including Claude-family models depending on provider availability and region. In hybrid setups, services such as [ngrok](https://ngrok.com/) can be used as a model-routing layer that routes and secures traffic across cloud and local model endpoints.
+## Tools and connected systems by role
 
-For open-source or open-weight options, common candidates include Llama, Mistral, and Qwen. They can run in cloud or local environments, but teams must own evaluation quality, guardrails, and update cadence.
+Tools should be understood by the work they perform, rather than treated as one undifferentiated list. Some tools operate directly inside the agent's runtime; other systems are independent services reached through an integration.
 
-## Roles and task boundaries
+| Role                     | Examples                                                                   | Typical interaction                                                                                          |
+| ------------------------ | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Development resources    | Local repository checkout, hosted repository service, issue tracker        | Read source and task context; make authorized edits; create branches or update pull requests where permitted |
+| Knowledge resources      | Documentation, specifications, architecture decisions, team knowledge base | Retrieve relevant guidance and decisions; usually read-oriented                                              |
+| Execution and validation | Local shell, build tools, tests, CI service                                | Run commands and checks; return logs, status, and evidence                                                   |
 
-Agents can support understanding, implementation, testing, review, migration, and operational investigation. A good task states the desired outcome, scope, invariants, and completion evidence. It distinguishes read-only exploration from modification and identifies effects—such as deployments, messages, or data changes—that require separate authority.
+A repository has both a local and, often, a hosted aspect. The checked-out working tree is data in the execution workspace: filesystem and Git tools can inspect or modify it according to their permissions. A hosted repository service is a separate networked system that may provide remote branches, issues, or pull requests and may receive authorized pushes or updates. Treating these as one object hides where an operation occurs and which boundary controls it.
 
-Repository instructions, issue context, source code, and tool output may conflict or contain untrusted text. Agents need a clear instruction hierarchy (for example: platform/system constraints, then repository policies, then task-specific requests) and the smallest relevant context. More context can add noise, expose information, and make critical constraints harder to find.
+Tool availability also depends on the surface and integration design. For example, a terminal interaction surface lets a person steer an agent, while a shell tool lets the agent execute a command. They may be connected, but they have different roles and authority.
 
-## A collaborative workflow
+## Execution location and network boundaries
 
-Before editing, an agent should inspect local conventions and current state. During implementation it should make bounded changes and obtain feedback from tests, linters, builds, or rendered behavior. The final handoff should describe the outcome, residual risks (such as unexecuted tests or unverified production impact), and validation—not merely claim success.
+Repository tools execute in a runtime environment that determines which files, processes, and services they can reach. Common choices include a developer workstation, an isolated local worktree, a managed remote workspace, or a CI runner. These locations affect isolation, collaboration, reproducibility, latency, and access to local resources.
 
-Autonomy is multidimensional. Permission to read a repository does not imply permission to execute arbitrary code, access a network, use credentials, modify production, or communicate externally. Reversibility, impact, and observability should determine which steps can proceed automatically and where human review belongs.
+Execution location is independent of tool role. Filesystem, Git, and shell tools may operate on a checkout in either a local or remote workspace. A local workspace does not imply unrestricted access to the developer's machine or network; a remote runner is not automatically isolated or trusted. The environment must define what the agent can actually touch.
 
-Agents can parallelize independent work, but coordination overhead and merge risk remain. Shared files, runtime state, and unclear ownership can erase the benefit. When splitting work, define independent scopes and assign clear ownership for integrating the outputs.
+A CI service and its runner also have different roles. The CI service receives a job request and returns status and logs; a runner or workspace executes the build and test commands. The service is an external integration, while the runner is an execution environment whose filesystem, process, and network access need their own boundaries.
 
-For parallel execution, isolating each workstream with `git worktree` helps reduce cross-task interference by giving each agent or contributor a separate working directory and branch context.
+Network access forms another boundary. Local repository operations may require no network, while model endpoints, issue trackers, knowledge bases, hosted repositories, and CI services are reached over network paths. The harness should make allowed destinations and data flows explicit, and manage network permission separately from filesystem and process permissions. Credentials should be scoped to the integrations and actions that need them, and should not be exposed as ordinary model context.
+
+## Roles, task boundaries, and authority
+
+Coding agents can assist with repository understanding, implementation, testing, review preparation, migration, and operational investigation. A task should state its intended outcome, scope, invariants, and completion evidence. The agent can then separate read-oriented investigation from changes and execution.
+
+Authority should be defined by action and boundary. Permission to read a repository does not imply permission to modify it. Permission to edit files does not automatically permit arbitrary command execution, network access, credential use, pull-request updates, external communication, or production changes. Filesystem access, process execution, network access, and credentials should each have explicit scopes. Human review belongs before actions whose impact or reversibility calls for it, and reviewers should receive the proposed scope and relevant evidence.
+
+Instructions and retrieved content also have different trust levels. Platform constraints, repository policies, task instructions, source files, issue comments, and tool output may conflict. A reliable workflow preserves the applicable instruction hierarchy and distinguishes authoritative project guidance from untrusted or incidental text. Context should be sufficient for the task without burying important constraints in irrelevant material.
+
+## A collaborative engineering workflow
+
+A typical task may start with an issue, use a knowledge base or specification for context, inspect a repository checkout, make a scoped change, run local checks, and use CI or other services to gather further evidence. The agent can then summarize the change and results in a pull request or another handoff for human review. This is one example, not a required sequence: integrations are optional, and the agent should use only the systems needed for the task.
+
+The collaboration loop should make ownership and evidence visible:
+
+1. **Frame the task:** define the goal, scope, constraints, and acceptance evidence.
+2. **Gather context:** retrieve relevant issue, repository, and knowledge resources through permitted paths.
+3. **Work in a bounded environment:** inspect and change the assigned checkout using available local or remote tools.
+4. **Validate:** run appropriate checks and capture their results as evidence.
+5. **Review and hand off:** explain what changed, what was checked, what remains uncertain, and what decision or follow-up is needed.
+
+People and agents may divide work or run independent workstreams in parallel. This helps only when each stream has clear ownership, an isolated workspace or explicit file boundaries, and a defined integration point. Shared state, plans, diffs, and validation results should be recorded so collaborators can tell what is current and what still needs review.
 
 ## Summary
 
-Coding agents are participants in an engineering workflow, not autonomous sources of truth. Clear tasks, bounded authority, repository-aware execution, and evidence-based handoff make their work useful and reviewable.
+A coding agent is an orchestrator that connects people and model capability to repository tools and independent engineering systems. The interface, model access, tool roles, execution location, network paths, and permissions are separate design dimensions. A dependable workflow makes those boundaries explicit, validates changes in the environment where they run, and returns evidence that people can review and use to coordinate the next step.
