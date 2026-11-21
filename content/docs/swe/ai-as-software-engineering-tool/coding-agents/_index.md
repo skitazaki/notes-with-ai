@@ -18,11 +18,11 @@ The architecture has several dimensions that should be considered separately. An
 
 ```mermaid
 flowchart LR
-    P[Developer / reviewer] <--> S[Interaction surface\nTerminal · desktop · editor / plugin]
-    S <--> A[Coding agent\nTask orchestration and state]
-    A <--> M[Model interaction\nModel family · endpoint · access pattern]
-    A <--> R[Local or remote runtime\nRepository checkout · filesystem · Git · shell]
-    R <--> E[External systems over governed network paths\nIssue tracker · knowledge base · hosted repository · CI]
+    P[Developer / reviewer] <--> S[Interaction surface<br/>Terminal · desktop · editor / plugin]
+    S <--> A[Coding agent<br/>Task orchestration and state]
+    A <--> M[Model interaction<br/>Model family · endpoint · access pattern]
+    A <--> R[Local or remote runtime<br/>Repository checkout · filesystem · Git · shell]
+    R <--> E[External systems over governed network paths<br/>Issue tracker · knowledge base · hosted repository · CI]
     R --> V[Checks and evidence]
     E --> V
     V --> P

@@ -1,5 +1,6 @@
 ---
 type: blog
+path: /blog/coding-agent-architecture
 description: Future standalone blog brief for exploring concrete model, endpoint, runtime, and integration choices in coding-agent architectures.
 ---
 
