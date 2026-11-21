@@ -14,7 +14,7 @@ next: "/docs/swe/ai-as-software-engineering-tool/evaluation-and-security"
 
 タスク依頼、参照資料、再利用可能なスキルライブラリがハーネスへの入力になります。ハーネスは関連する指示とコンテキストを整え、選択したスキルをモデルに渡します。モデルは制御されたツールを通じて操作を提案し、実行環境がその影響範囲を制限します。実行結果は証拠として人のレビューに示され、そのレビューが次の反復に活用されます。スキルは再利用可能な指示とリソースを提供しますが、それ自体が操作を実行したり権限を与えたりするものではありません。
 
-リポジトリ固有の運用指示は [AGENTS.md](/ja/docs/ai/context-engineering/agents-md/) に置き、再利用可能な手順やリソースは [エージェントスキル](/ja/docs/ai/context-engineering/agent-skills/) にまとめます。[ツールと MCP](/ja/docs/ai/context-engineering/tools-and-mcp/) はツールアクセスと標準の定義場所です。これらは役割の異なるハーネスの入力や構成要素です。指示とスキルはモデルを導き、コンテキストの組み立ては必要な情報を選び、ツールは操作を公開し、権限と実行環境は操作を制約します。
+リポジトリ固有の運用指示は [AGENTS.md](/ja/docs/ai/context-engineering/agents-md/) に置き、再利用可能な手順やリソースは [エージェントスキル](/ja/docs/ai/context-engineering/agent-skills/) にまとめます。 [ツールと MCP](/ja/docs/ai/context-engineering/tools-and-mcp/) はツールアクセスと標準の定義場所です。これらは役割の異なるハーネスの入力や構成要素です。指示とスキルはモデルを導き、コンテキストの組み立ては必要な情報を選び、ツールは操作を公開し、権限と実行環境は操作を制約します。
 
 ## ハーネスが担う責務
 
