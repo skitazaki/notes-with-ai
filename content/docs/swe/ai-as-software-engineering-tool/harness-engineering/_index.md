@@ -8,9 +8,9 @@ next: "/docs/swe/ai-as-software-engineering-tool/evaluation-and-security"
 
 Harness engineering designs the system around a model so that an agent can perform bounded, observable, and verifiable work. A harness is the software and configuration that frames a task, selects and assembles the information and reusable procedures given to the model, exposes controlled tools, constrains where those tools run, records state and results, and places human review at consequential decision points.
 
-The model reasons and proposes actions; the harness mediates the model's contact with the task and the outside world. It is not just a prompt, a collection of tools, or the runtime sandbox by itself. The diagram summarizes this relationship from inputs through execution to human review.
+The model reasons and proposes actions; the harness mediates the model's contact with the task and the outside world. It is not just a prompt, a collection of tools, or the runtime sandbox by itself. The diagram shows the main execution path, separates runtime feedback from human review feedback, and shows how state and coordination preserve working context across iterations.
 
-![Three-column harness diagram: task, references, and skill library enter a central harness; prepared instructions, context, and skills guide a model through governed tool access and a bounded runtime; evidence goes to human review, whose feedback returns to the harness](harness-engineering-feedback-loop.webp "Harness Engineering")
+![Harness diagram with task framing and authoritative context preparing work for a model, tool authority governing actions, execution isolation enclosing the runtime, runtime feedback returning to the model, evidence reaching human review, human feedback returning to task framing, and state recorded across the loop](harness-engineering-feedback-loop.webp "Harness Engineering")
 
 Task requests, references, and a reusable skill library provide inputs to the harness. The harness prepares relevant instructions and context and supplies selected skills to guide the model. The model proposes actions through governed tools, while the bounded runtime contains their effects. Execution results are presented as evidence for human review; that review feeds the next iteration. Skills provide reusable instructions and resources, but do not execute operations or grant permission.
 
