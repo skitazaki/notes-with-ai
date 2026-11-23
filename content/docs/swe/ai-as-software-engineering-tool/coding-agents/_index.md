@@ -14,21 +14,7 @@ The model and the agent have different roles. A model interprets context and pro
 
 ## A coding-agent architecture
 
-The architecture has several dimensions that should be considered separately. An interaction surface is how a person reaches the agent. Model access describes how the agent obtains reasoning capability. Tools are classified by the work they do, while execution location describes where they run and what they can reach. These choices meet in an engineering workflow, but they are not one fixed stack.
-
-```mermaid
-flowchart LR
-    P[Developer / reviewer] <--> S[Interaction surface<br/>Terminal · desktop · editor / plugin]
-    S <--> A[Coding agent<br/>Task orchestration and state]
-    A <--> M[Model interaction<br/>Model family · endpoint · access pattern]
-    A <--> R[Local or remote runtime<br/>Repository checkout · filesystem · Git · shell]
-    R <--> E[External systems over governed network paths<br/>Issue tracker · knowledge base · hosted repository · CI]
-    R --> V[Checks and evidence]
-    E --> V
-    V --> P
-```
-
-The diagram shows common relationships, not mandatory integrations. A particular agent may use only some surfaces, models, tools, or systems, and it may run in a local or remote environment. Capabilities and connections depend on the product and its configuration.
+The cover diagram shows common architectural relationships, not mandatory integrations. An interaction surface is how a person reaches the agent; model access is how the agent obtains reasoning capability; tools are classified by the work they do; and execution location describes where they run and what they can reach. These are separate design dimensions, not one fixed stack. A particular agent may use only some surfaces, models, tools, or systems, and capabilities depend on its product and configuration.
 
 ## Interaction surfaces
 
