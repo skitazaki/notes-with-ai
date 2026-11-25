@@ -3,7 +3,7 @@ date: "2026-10-20T23:33:34+09:00"
 title: "Security Operations & Governance"
 weight: 30
 prev: "/docs/swe/reliability-operations/incident-management-and-resilience"
-next: "/docs/swe/reliability-operations/twelve-factor-app"
+next: "/docs/swe/reliability-operations/finops"
 ---
 
 Security in reliability operations is not a standalone control tower. It is a coordinated operating loop where leadership intent, detection capability, and response execution continuously influence each other.

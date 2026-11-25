@@ -3,7 +3,7 @@ date: "2026-10-20T23:33:34+09:00"
 title: "セキュリティ運用とガバナンス"
 weight: 30
 prev: "/docs/swe/reliability-operations/incident-management-and-resilience"
-next: "/docs/swe/reliability-operations/twelve-factor-app"
+next: "/docs/swe/reliability-operations/finops"
 ---
 
 信頼性と運用におけるセキュリティは、独立した管理塔ではありません。リーダーシップの意図、検知能力、対応実行が継続的に相互作用する運用ループとして設計する必要があります。

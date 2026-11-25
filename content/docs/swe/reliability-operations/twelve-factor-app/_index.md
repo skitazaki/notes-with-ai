@@ -1,8 +1,8 @@
 ---
 date: "2025-12-04T22:29:49+09:00"
 title: "Twelve-Factor App"
-weight: 40
-prev: "/docs/swe/reliability-operations/security-operations-and-governance"
+weight: 50
+prev: "/docs/swe/reliability-operations/finops"
 next: "/docs/swe/reliability-operations"
 ---
 
