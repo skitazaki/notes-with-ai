@@ -56,8 +56,3 @@ FOCUS はデータ仕様であり、FinOps の運用モデルでも、プロバ�
 
 FinOps は、共有データ、説明責任、継続的な最適化を通じて、テクノロジーの利用をビジネス価値へ結び付けます。信頼性と運用の領域では、コストを SLO、キャパシティ、レジリエンス、利用者の成果と並ぶ重要なエンジニアリングシグナルとして扱います。FOCUS は、テクノロジープロバイダー間の請求データに共通形式を提供することで、その実践を支援します。
 
-## 参考資料
-
-- [FinOps Foundation](https://www.finops.org/)
-- [FinOps Framework](https://www.finops.org/framework/)
-- [FOCUS — FinOps Open Cost and Usage Specification](https://focus.finops.org/)
