@@ -56,8 +56,3 @@ Learn more at the [FOCUS website](https://focus.finops.org/), including the spec
 
 FinOps connects technology usage to business value through shared data, accountability, and continuous optimization. In reliability and operations, it makes cost a first-class engineering signal—considered alongside SLOs, capacity, resilience, and user outcomes. FOCUS helps by providing a common format for billing data across technology providers.
 
-## Further reading
-
-- [FinOps Foundation](https://www.finops.org/)
-- [FinOps Framework](https://www.finops.org/framework/)
-- [FOCUS — FinOps Open Cost and Usage Specification](https://focus.finops.org/)
