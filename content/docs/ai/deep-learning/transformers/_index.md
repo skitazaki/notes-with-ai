@@ -18,7 +18,7 @@ Transformers usually combine attention with feed-forward layers, residual connec
 
 Self-attention starts with a representation for each input token. Learned linear projections transform each representation into a **query (Q)**, **key (K)**, and **value (V)**:
 
-`Q = XW_Q,quad K = XW_K,quad V = XW_V`
+`Q = X W_Q; K = X W_K; V = X W_V`
 
 A query represents what a position is looking for, a key represents what it can be matched on, and a value carries the information that can be mixed into the output. These are useful intuitions rather than literal roles assigned by the model.
 
