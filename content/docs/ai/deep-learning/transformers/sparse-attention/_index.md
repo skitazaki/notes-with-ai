@@ -123,13 +123,13 @@ Sparse attention is therefore best evaluated end to end: include index construct
 
 Sparse attention is one part of a broader set of attention and inference optimizations.
 
-| Technique | What it changes |
-| --- | --- |
-| Sparse attention | Which query-key interactions are computed |
-| Linear attention | The formulation of attention to avoid explicit all-pairs computation under particular assumptions |
-| FlashAttention | The exact dense attention computation's memory traffic and kernel organization |
-| GQA / MQA | How query heads share key and value heads, reducing KV-cache size and bandwidth |
-| KV-cache optimization | How past keys and values are stored, quantized, paged, or reused |
+| Technique             | What it changes                                                                                   |
+| --------------------- | ------------------------------------------------------------------------------------------------- |
+| Sparse attention      | Which query-key interactions are computed                                                         |
+| Linear attention      | The formulation of attention to avoid explicit all-pairs computation under particular assumptions |
+| FlashAttention        | The exact dense attention computation's memory traffic and kernel organization                    |
+| GQA / MQA             | How query heads share key and value heads, reducing KV-cache size and bandwidth                   |
+| KV-cache optimization | How past keys and values are stored, quantized, paged, or reused                                  |
 
 These techniques can be combined. For example, a model may use grouped-query attention, a KV cache, and a sparse attention selector. The combination should be described by the actual model architecture rather than inferred from any one label.
 
