@@ -24,7 +24,7 @@ Query は各位置が探している情報、Key は照合に使う表現、Valu
 
 Scaled Dot-Product Attention は Query と Key の類似度を計算し、重みを正規化して Value を混ぜ合わせます。
 
-`Attention(Q,K,V)=softmax(QK^T/\sqrt{d_k}+M)V`
+`Attention(Q, K, V) = softmax((Q K^T) / sqrt(d_k) + M) V`
 
 `d_k` は Key の次元、`M` は必要に応じて加えるマスクです。Causal self-attention では、未来のトークンを参照しないようにマスクします。Multi-head attention は複数の学習された部分空間でこの計算を行い、各 Head の出力をまとめます。
 
