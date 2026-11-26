@@ -60,7 +60,7 @@ Transformer は系列内の位置を並列に計算して効率よく学習で�
 
 Transformer はニューラルアーキテクチャの一群であり、深層学習と同義ではありません。Mixture of Experts（MoE）は Transformer 層の内部に組み込まれ、トークンごとに選択したフィードフォワード・エキスパートだけを有効にできます。拡散システムでも、画像パッチなどの構造化入力を処理するために Transformer ブロックを使うことがあります。
 
-Attention が計算するトークン間の接続を減らす方法については、[Sparse Attention](sparse-attention/) を参照してください。Sparse Attention は Attention の接続を制限する一方、KV Cache は生成時に過去の Key と Value を再利用します。両者は異なる仕組みです。
+Attention が計算するトークン間の接続を減らす方法は、Sparse Attention が挙げられます。Sparse Attention は Attention の接続を制限する一方、KV Cache は生成時に過去の Key と Value を再利用します。両者は異なる仕組みです。
 
 ## 基礎となる論文
 

@@ -151,7 +151,6 @@ The indexer may score individual keys, blocks, or latent clusters. The selected 
 
 ## Foundational and Further Reading
 
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — the original Transformer architecture.
 - [Longformer: The Long-Document Transformer](https://arxiv.org/abs/2004.05150) — local window and global attention.
 - [Big Bird: Transformers for Longer Sequences](https://arxiv.org/abs/2007.14062) — local, global, and random sparse connections.
 - [FlashAttention](https://arxiv.org/abs/2205.14135) — exact attention with IO-aware computation.
@@ -163,5 +162,3 @@ The indexer may score individual keys, blocks, or latent clusters. The selected 
 ## Summary
 
 Sparse attention reduces the set of token interactions computed by an attention layer. Local, global, block, and dynamic patterns make different trade-offs between access to distant information, selection cost, and hardware efficiency. The most useful design is not simply the sparsest one: it is the one that preserves task-relevant information and delivers a measurable end-to-end benefit on the intended workload.
-
-For the basic Transformer mechanics, see [Transformers](/docs/ai/deep-learning/transformers/).
