@@ -87,7 +87,7 @@ BigBird combines local, global, and random attention connections. The mixture is
 
 ### Mistral and Sliding-Window Models
 
-Mistral 7B popularized sliding-window attention in an efficient decoder-only language model. Sliding windows limit the context directly attended to by a layer; the effective receptive field can grow across stacked layers. Exact behavior depends on the model configuration and inference implementation.
+Mistral 7B is a well-known decoder-only model that uses sliding-window attention. Sliding windows limit the context directly attended to by a layer; the effective receptive field can grow across stacked layers. Exact behavior depends on the model configuration and inference implementation.
 
 ### Native Sparse Attention (NSA)
 
@@ -99,7 +99,7 @@ DeepSeek Sparse Attention uses a learned Lightning Indexer to select a subset of
 
 ## Latent Sparse Attention
 
-The term **Latent Sparse Attention (LSA)** has a specific recent usage in the paper [Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention](https://arxiv.org/abs/2610.42147) (October 2026). In this method, keys are hierarchically clustered in a learned latent space. Queries score the cluster hierarchy and use it to narrow the keys considered for attention, rather than scoring every key individually.
+The name **Latent Sparse Attention** is used in the paper [Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention](https://arxiv.org/abs/2610.42147) (October 2026). In this method, keys are hierarchically clustered in a learned latent space. Queries score the cluster hierarchy and use it to narrow the keys considered for attention, rather than scoring every key individually. The acronym **LSA is ambiguous** in recent literature: [LongCat Sparse Attention](https://arxiv.org/abs/2608.01662) also uses LSA for a different method based on streaming-aware, cross-layer, and hierarchical indexing. Use the full paper name when referring to either approach.
 
 The paper describes two training variants: Distilled-LSA, which adapts a pretrained model through distillation, and Native-LSA, which is trained with the next-token objective. The authors report experiments at ultra-long context lengths, including up to 10 million tokens. These are paper-reported results, not a guarantee for arbitrary models, hardware, or workloads; the work is a recent preprint and should be treated as emerging research.
 
