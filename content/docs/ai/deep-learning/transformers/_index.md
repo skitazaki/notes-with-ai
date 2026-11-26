@@ -24,7 +24,7 @@ A query represents what a position is looking for, a key represents what it can 
 
 Scaled dot-product attention compares queries with keys, normalizes the scores, and uses the resulting weights to combine values:
 
-`Attention(Q,K,V)=softmax(QK^T/\sqrt{d_k}+M)V`
+`Attention(Q, K, V) = softmax((Q K^T) / sqrt(d_k) + M) V`
 
 Here, `d_k` is the key dimension and `M` is an optional mask. In causal self-attention, the mask prevents a token from attending to future positions. Multi-head attention performs this operation in multiple learned subspaces and combines the head outputs.
 
