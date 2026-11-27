@@ -88,13 +88,11 @@ Indexer、選択、Cache 読み出し、Attention Kernel、対象タスクでの
 
 ## 関連する効率化技術
 
-| 技術 | 変えるもの |
-| --- | --- |
-| Sparse Attention | 計算する Query-Key の接続 |
-| Linear Attention | 特定の仮定のもとで、全組み合わせ計算を避ける Attention の定式化 |
-| FlashAttention | Dense Attention のメモリ移動と Kernel 構成 |
-| GQA / MQA | Query Head が共有する Key / Value Head の数 |
-| KV Cache 最適化 | 過去の Key と Value の保存、量子化、ページング、再利用 |
+- **Sparse Attention**：計算する Query-Key の接続を変えます。
+- **Linear Attention**：特定の仮定のもとで、全組み合わせ計算を避ける Attention の定式化を使います。
+- **FlashAttention**：Dense Attention のメモリ移動と Kernel 構成を改善します。
+- **GQA / MQA**：Query Head が共有する Key / Value Head の数を変えます。
+- **KV Cache 最適化**：過去の Key と Value の保存、量子化、ページング、再利用を改善します。
 
 これらは組み合わせて使えます。たとえば、Grouped-Query Attention、KV Cache、Sparse Attention Selector を同時に採用するモデルも考えられます。実際の構成は名称だけから推測せず、モデルの設計を確認してください。
 
