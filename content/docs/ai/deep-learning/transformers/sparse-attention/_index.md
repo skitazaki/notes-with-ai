@@ -1,6 +1,9 @@
 ---
 date: "2026-11-26T10:39:00+09:00"
 title: "Sparse Attention"
+weight: 1
+prev: "/docs/ai/deep-learning/transformers"
+next: "/docs/ai/deep-learning/transformers"
 ---
 
 Sparse attention reduces the number of token pairs that participate in attention. Instead of letting every query attend to every key, a sparse pattern or selection mechanism restricts the set of keys that each query can use. The goal is to make long-context attention more efficient while preserving the information paths a model needs.
@@ -11,7 +14,7 @@ Sparse attention is not one algorithm. It is a family of designs that make diffe
 
 In self-attention, each token produces a query, key, and value vector. The attention score between a query and a key determines how much of the corresponding value contributes to the output.
 
-For a sequence of length \(N\) and head dimension \(d\), the score and value operations in standard dense attention require work proportional to \(O(N^2d)\). The attention matrix has \(N^2\) entries, so its size grows quadratically with sequence length.
+For a sequence of length `N` and head dimension `d`, the score and value operations in standard dense attention require work proportional to `O(N^2d)`. The attention matrix has `N^2` entries, so its size grows quadratically with sequence length.
 
 This cost is especially significant during long-context prefill, when a model processes many prompt tokens at once. During autoregressive decoding, each new token may need to access the keys and values of all preceding tokens. A KV cache avoids recomputing those past projections, but reading and attending to a long cache can still be expensive.
 
@@ -37,7 +40,7 @@ The following patterns describe design dimensions, not mutually exclusive algori
 
 ### Local or Sliding-Window Attention
 
-Each query attends to a neighborhood around its position, often a fixed number of preceding tokens in a causal model. This gives a predictable sparse pattern and can reduce the attention work to roughly \(O(Nwd)\), where \(w\) is the window size.
+Each query attends to a neighborhood around its position, often a fixed number of preceding tokens in a causal model. This gives a predictable sparse pattern and can reduce the attention work to roughly `O(Nwd)`, where `w` is the window size.
 
 Local attention is effective when nearby context carries much of the useful signal. However, information from far away must travel through multiple layers or another global pathway. A fixed window does not provide direct access to every distant token.
 
