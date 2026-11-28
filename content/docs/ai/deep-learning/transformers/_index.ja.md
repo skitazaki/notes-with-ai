@@ -1,5 +1,5 @@
 ---
-date: "2026-10-20T09:00:00+09:00"
+date: "2026-11-26T10:39:00+09:00"
 title: "Transformer"
 weight: 4
 prev: "/docs/ai/deep-learning/recurrent-neural-networks"
@@ -13,6 +13,34 @@ Transformer は、アテンションを使って系列内の要素同士を関�
 アテンションでは、各位置が系列内のほかの位置を重み付けして参照します。たとえば、代名詞と前に出てきた名詞を結び付けたり、画像の離れた領域同士を関連付けたりできます。Self-attention は1つの入力系列内の関係を計算し、Cross-attention はテキスト指示と画像特徴のように2つの系列を結び付けます。
 
 Transformer は通常、アテンションにフィードフォワード層、残差接続、正規化、位置情報を組み合わせます。アテンションだけでは系列要素の順序を表さないため、位置情報が必要です。
+
+## Query、Key、Value
+
+Self-attention では、各入力トークンの表現を学習可能な線形変換に通し、**Query（Q）**、**Key（K）**、**Value（V）** を生成します。
+
+`Q = X W_Q; K = X W_K; V = X W_V`
+
+Query は各位置が探している情報、Key は照合に使う表現、Value は出力に取り込む情報を運ぶもの、と考えると理解しやすくなります。ただし、これは直感的な説明であり、モデルが明示的にその役割を割り当てているわけではありません。
+
+Scaled Dot-Product Attention は Query と Key の類似度を計算し、重みを正規化して Value を混ぜ合わせます。
+
+`Attention(Q, K, V) = softmax((Q K^T) / sqrt(d_k) + M) V`
+
+`d_k` は Key の次元、`M` は必要に応じて加えるマスクです。Causal self-attention では、未来のトークンを参照しないようにマスクします。Multi-head attention は複数の学習された部分空間でこの計算を行い、各 Head の出力をまとめます。
+
+## 生成時の KV Cache
+
+自己回帰モデルはトークンを1つずつ生成します。各ステップで新しい Query は、それ以前のトークンの Key と Value を参照する必要があります。キャッシュがなければ、過去のトークンの Key と Value の射影を繰り返し計算することになります。
+
+**KV Cache** は、各 Attention 層で過去のトークンから生成した Key と Value を保存する仕組みです。新しいトークンを生成するときは、そのトークンの Q、K、V を計算し、新しい K と V をキャッシュに追加して、マスクで許可されたキャッシュ内の要素に Attention を行います。キャッシュに保存するのは K と V であり、Attention の重みや最終出力ではありません。
+
+キャッシュによって過去の射影や計算の繰り返しを避けられ、逐次生成が実用的になります。一方、キャッシュのメモリ使用量は、トークン数、層数、KV Head 数、Head の次元に応じて増加します。圧縮されていないキャッシュの概算は次のとおりです。
+
+`2 × layers × tokens × KV-heads × head-dimension × bytes-per-element`
+
+係数 2 は Key と Value の両方を保存することを表します。実際の使用量は割り当て方式、Padding、量子化、キャッシュ実装などにも左右されます。Grouped-Query Attention（GQA）と Multi-Query Attention（MQA）は Query Head 間で KV Head を共有し、キャッシュ容量とメモリ帯域を削減します。Multi-head Latent Attention（MLA）は KV 表現を潜在ベクトルに圧縮する別の方法です。
+
+KV Cache は推論時の最適化であり、Attention が参照できるトークンの範囲自体を変えるものではありません。Sparse Attention は参照する接続を制限する技術です。KV Cache が過去の K と V の再計算を避けるのに対し、Sparse Attention はキャッシュから読み出す量も減らせる場合があります。両者は組み合わせて利用できます。
 
 ## 代表的な設計
 
@@ -32,10 +60,12 @@ Transformer は系列内の位置を並列に計算して効率よく学習で�
 
 Transformer はニューラルアーキテクチャの一群であり、深層学習と同義ではありません。Mixture of Experts（MoE）は Transformer 層の内部に組み込まれ、トークンごとに選択したフィードフォワード・エキスパートだけを有効にできます。拡散システムでも、画像パッチなどの構造化入力を処理するために Transformer ブロックを使うことがあります。
 
+Attention が計算するトークン間の接続を減らす方法として、 [Sparse Attention](sparse-attention/) があります。Sparse Attention は Attention の接続を制限する一方、KV Cache は生成時に過去の Key と Value を再利用します。両者は異なる仕組みです。
+
 ## 基礎となる論文
 
 Transformer アーキテクチャは、2017年の論文 [Attention Is All You Need](https://arxiv.org/abs/1706.03762) で提案されました。
 
 ## まとめ
 
-Transformer はアテンションによって文脈に応じた表現を作り、系列学習やマルチモーダル学習の柔軟な基盤になりました。その能力には計算資源、メモリ、データの要件が伴い、学習方法や利用方法にも影響します。
+Transformer はアテンションによって文脈に応じた表現を作り、系列学習やマルチモーダル学習の柔軟な基盤になりました。Query、Key、Value の射影は Attention が情報を比較・統合する仕組みを説明し、KV Cache は過去の Key と Value を保持して自己回帰生成を効率化します。その能力には計算資源、メモリ、データの要件が伴い、学習方法や利用方法にも影響します。
